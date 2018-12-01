@@ -53,8 +53,7 @@ public class ChildCharacter : Character {
 
     public void GiveOrder (IPType ipType)
     {
-        SetCurrentInterestPoint(hm.GetRandomInterestPoint(IpTypeFun, lastInterestPoint));
-        SetState(ChildAIState.MOVING_TO_ACTIVITY);
+        SetCurrentInterestPoint(hm.GetRandomInterestPoint(ipType, lastInterestPoint));
     }
 
     void SetCurrentInterestPoint(IPType ipType)
@@ -85,7 +84,7 @@ public class ChildCharacter : Character {
     {
         MoveTo(transform.position);
     }
-    #endregion
+    #endregion 
 
     #region State Management
     void SetState (ChildAIState newState)
