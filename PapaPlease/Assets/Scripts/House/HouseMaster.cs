@@ -2,12 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HouseMaster : MonoBehaviour {
+public class HouseMaster : MonoBehaviour
+{
     public GameMaster gm = null;
 
     public List<InterestPoint> allInterestPoints;
 
-    public InterestPoint GetRandomInterestPoint ()
+    private void Start()
+    {
+        allInterestPoints = new List<InterestPoint>(GetComponentsInChildren<InterestPoint>());
+    }
+
+    public InterestPoint GetRandomInterestPoint()
     {
         InterestPoint ip = null;
 
@@ -18,7 +24,7 @@ public class HouseMaster : MonoBehaviour {
         return ip;
     }
 
-    public InterestPoint GetRandomInterestPoint (IPType type)
+    public InterestPoint GetRandomInterestPoint(IPType type)
     {
         InterestPoint ip = null;
 
