@@ -267,7 +267,7 @@ GameObject:
   m_Layer: 0
   m_Name: IP_Vaisselle
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -396,7 +396,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1627810136435712}
   m_LocalRotation: {x: -0, y: 0.7071069, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -5.11, y: -7.639076e-16, z: 4.293}
+  m_LocalPosition: {x: -5.1100006, y: 0, z: 4.293}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4060127090980454}
@@ -1546,7 +1546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ipName: 
   pivotPoint: {fileID: 4060127090980454}
-  type: {fileID: 0}
+  type: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114900431433536196}
 --- !u!114 &114900431433536196
 MonoBehaviour:
