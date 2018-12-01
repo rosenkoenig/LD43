@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public struct IPTypeInfo
+{
+    public IPType IPType;
+    public bool isAvailable;
+}
+
 public class HouseMaster : MonoBehaviour
 {
     public GameMaster gm = null;
@@ -53,5 +59,41 @@ public class HouseMaster : MonoBehaviour
         return ip;
     }
 
+    public List<IPTypeInfo> GetAllIPTypeInfos ()
+    {
+        List<IPType> allIpType = new List<IPType>();
+        List<IPTypeInfo> allIPTypeInfos = new List<IPTypeInfo>();
+        foreach (InterestPoint ip in allInterestPoints)
+        {
+            if (allIpType.Contains(ip.type) == false)
+                allIpType.Add(ip.type);
+        }
 
+        List<IPType> availableIpType = GetAllAvailableIPTypes();
+
+        foreach(IPType ipType in allIpType)
+        {
+            IPTypeInfo info = new IPTypeInfo();
+            info.IPType = ipType;
+
+            info.isAvailable = availableIpType.Contains(ipType);
+
+            allIPTypeInfos.Add(info);
+        }
+
+        return allIPTypeInfos;
+    }
+
+    List<IPType> GetAllAvailableIPTypes ()
+    {
+        List<IPType> availableIPType = new List<IPType>();
+
+        foreach (InterestPoint ip in allInterestPoints)
+        {
+            if (ip.activity.IsAvailable() && availableIPType.Contains(ip.type) == false)
+                availableIPType.Add(ip.type);
+        }        
+
+        return availableIPType;
+    }
 }

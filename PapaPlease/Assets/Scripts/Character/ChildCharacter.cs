@@ -66,7 +66,7 @@ public class ChildCharacter : Character {
         currentInterestPoint = interestPoint;
         if (currentInterestPoint)
         {
-            SetState(ChildAIState.MOVING_TO_ACTIVITY);
+            SetState(ChildAIState.MOVING_TO_ACTIVITY, true);
         }
         else
             SetState(ChildAIState.WAITING);
@@ -90,7 +90,11 @@ public class ChildCharacter : Character {
     #region State Management
     void SetState (ChildAIState newState)
     {
-        if (state != newState)
+        SetState(newState, false);
+    }
+    void SetState (ChildAIState newState, bool force)
+    {
+        if (force || state != newState)
         {
             ChildAIState oldState = state;
             state = newState;
