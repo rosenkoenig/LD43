@@ -64,10 +64,10 @@ public class GameControls : MonoBehaviour {
 
     private void DebugPlayChildInteraction()
     {
-        if(Input.GetKeyDown(KeyCode.U))
-        {
-            GameMaster.Instance.uIMaster.DisplayMenuInteractChild();
-        }
+        //if(Input.GetKeyDown(KeyCode.U))
+        //{
+        //    GameMaster.Instance.uIMaster.DisplayMenuInteractChild();
+        //}
     }
 
     private void ManageInteraction()

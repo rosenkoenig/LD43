@@ -5,19 +5,25 @@ using UnityEngine;
 
 public class UIMaster : MonoBehaviour
 {
-    [SerializeField] GameObject _menuInteractChild;
+    [SerializeField] ChildInteractionMenu _childInteractionMenu;
     [SerializeField] GameObject _centerCursor;
+
+    public Action HideMenuInteractChildEvent;
 
     private void Start()
     {
         ShowOrHideCursor(false);
     }
     
-    public bool DisplayMenuInteractChild()
+    public bool DisplayMenuInteractChild(ChildCharacter child, Action hideMenuEvent)
     {
-        if(_menuInteractChild.gameObject.activeSelf == false)
+
+        HideMenuInteractChildEvent = hideMenuEvent;
+
+        if (_childInteractionMenu.gameObject.activeSelf == false)
         { 
-            _menuInteractChild.gameObject.SetActive(true);
+            _childInteractionMenu.gameObject.SetActive(true);
+            _childInteractionMenu.SetupMenu(child);
             ShowOrHideCursor(true);
             _centerCursor.SetActive(false);
             GameMaster.Instance.player.GetPlayerMover.FreezeMovement(true);
@@ -29,11 +35,14 @@ public class UIMaster : MonoBehaviour
     
     public void HideMenuInteractChild()
     {
-        _menuInteractChild.gameObject.SetActive(false);
+        _childInteractionMenu.gameObject.SetActive(false);
         ShowOrHideCursor(false);
         _centerCursor.SetActive(true);
         GameMaster.Instance.player.GetPlayerMover.FreezeMovement(false);
         GameMaster.Instance.player.GetPlayerHeadBehaviour.SetFreezeHeadControl(false);
+        HideMenuInteractChildEvent();
+
+        HideMenuInteractChildEvent = null;
     }
 
     private static void ShowOrHideCursor(bool b)

@@ -252,7 +252,7 @@ MonoBehaviour:
   currentActivity: {fileID: 0}
   _playerMover: {fileID: 114119490901102206}
   _playerHeadBehaviour: {fileID: 114893964280441714}
-  _interactRange: 1
+  _interactRange: 10
   _interactLayerMask:
     serializedVersion: 2
     m_Bits: 1
