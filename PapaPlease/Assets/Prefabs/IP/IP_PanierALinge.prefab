@@ -54,7 +54,7 @@ GameObject:
   m_Layer: 0
   m_Name: IP_PanierALinge
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ipName: 
   pivotPoint: {fileID: 4651062504808628}
-  type: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
+  type: {fileID: 11400000, guid: 2fea2dac64659854a93001188d2ab1e1, type: 2}
   activity: {fileID: 114508955630155528}
 --- !u!114 &114508955630155528
 MonoBehaviour:
