@@ -10,6 +10,8 @@ public class PlayerBehaviour : Character {
     [SerializeField] float _interactRange;
     [SerializeField] LayerMask _interactLayerMask;
 
+    [SerializeField] Animator arm;
+
     public PlayerMover GetPlayerMover { get { return _playerMover; } }
     public PlayerHeadBehaviour GetPlayerHeadBehaviour { get { return _playerHeadBehaviour; } }
 
@@ -77,5 +79,38 @@ public class PlayerBehaviour : Character {
 
         }
             return ip;
+    }
+
+    public ChildCharacter GetHoveredChildCharacter ()
+    {
+        ChildCharacter child = null;
+
+        RaycastHit rcHit = new RaycastHit();
+        if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _interactLayerMask))
+        {
+            child = rcHit.collider.GetComponentInParent<ChildCharacter>();
+
+        }
+        return child;
+    }
+
+    public void BeginSlap ()
+    {
+        arm.Play("Prepare");
+    }
+
+    public void LaunchSlap ()
+    {
+        arm.Play("SlapIt");
+        ChildCharacter child = GetHoveredChildCharacter();
+        if(child)
+        {
+            child.IsSlapped();
+        }
+    }
+
+    public void CancelSlap ()
+    {
+        arm.Play("Idle");
     }
 }
