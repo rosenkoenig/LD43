@@ -1,41 +1,39 @@
 fileFormatVersion: 2
-guid: 429243910c94b144fa82aff805acd1ea
+guid: f62dc4d56288abe4daac5177aab6aef7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: ArmRig
-    100004: ArmRig_Arm_ClavicleSHJnt
-    100006: ArmRig_Arm_ElbowSHJnt
-    100008: ArmRig_Arm_ShoulderSHJnt
-    100010: ArmRig_Arm_WristSHJnt
-    100012: ArmRig_Hand_01_01SHJnt
-    100014: ArmRig_Hand_01_02SHJnt
-    100016: ArmRig_Hand_01_03SHJnt
-    100018: ArmRig_Hand_02_01SHJnt
-    100020: ArmRig_Hand_02_02SHJnt
-    100022: ArmRig_Hand_02_03SHJnt
-    100024: ArmRig_ROOTSHJnt
-    100026: ArmRig_SHJntGrp
-    100028: ArmRig_TrajectorySHJnt
-    100030: CondomHand
+    100002: ArmRig_Arm_ClavicleSHJnt
+    100004: ArmRig_Arm_ElbowSHJnt
+    100006: ArmRig_Arm_ShoulderSHJnt
+    100008: ArmRig_Arm_WristSHJnt
+    100010: ArmRig_Hand_01_01SHJnt
+    100012: ArmRig_Hand_01_02SHJnt
+    100014: ArmRig_Hand_01_03SHJnt
+    100016: ArmRig_Hand_02_01SHJnt
+    100018: ArmRig_Hand_02_02SHJnt
+    100020: ArmRig_Hand_02_03SHJnt
+    100022: ArmRig_ROOTSHJnt
+    100024: ArmRig_SHJntGrp
+    100026: ArmRig_TrajectorySHJnt
+    100028: CondomHand
     400000: //RootNode
-    400002: ArmRig
-    400004: ArmRig_Arm_ClavicleSHJnt
-    400006: ArmRig_Arm_ElbowSHJnt
-    400008: ArmRig_Arm_ShoulderSHJnt
-    400010: ArmRig_Arm_WristSHJnt
-    400012: ArmRig_Hand_01_01SHJnt
-    400014: ArmRig_Hand_01_02SHJnt
-    400016: ArmRig_Hand_01_03SHJnt
-    400018: ArmRig_Hand_02_01SHJnt
-    400020: ArmRig_Hand_02_02SHJnt
-    400022: ArmRig_Hand_02_03SHJnt
-    400024: ArmRig_ROOTSHJnt
-    400026: ArmRig_SHJntGrp
-    400028: ArmRig_TrajectorySHJnt
-    400030: CondomHand
-    2100000: lambert1
+    400002: ArmRig_Arm_ClavicleSHJnt
+    400004: ArmRig_Arm_ElbowSHJnt
+    400006: ArmRig_Arm_ShoulderSHJnt
+    400008: ArmRig_Arm_WristSHJnt
+    400010: ArmRig_Hand_01_01SHJnt
+    400012: ArmRig_Hand_01_02SHJnt
+    400014: ArmRig_Hand_01_03SHJnt
+    400016: ArmRig_Hand_02_01SHJnt
+    400018: ArmRig_Hand_02_02SHJnt
+    400020: ArmRig_Hand_02_03SHJnt
+    400022: ArmRig_ROOTSHJnt
+    400024: ArmRig_SHJntGrp
+    400026: ArmRig_TrajectorySHJnt
+    400028: CondomHand
+    2100000: lambert2
     4300000: CondomHand
     7400000: Take 001
     9500000: //RootNode
