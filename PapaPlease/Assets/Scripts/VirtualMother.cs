@@ -14,11 +14,21 @@ public class VirtualMother : MonoBehaviour {
     string[] possibleNamesMale, possibleNamesFemale;
     List<string> availableNamesMale = new List<string>(), availableNamesFemale = new List<string>();
 
+    public int baseChildsQuantity = 2;
+
     // Use this for initialization
     public void Init ()
     {
         availableNamesMale = new List<string>(possibleNamesMale);
         availableNamesFemale = new List<string>(possibleNamesFemale);
+    }
+
+    public void SpawnBaseChilds ()
+    {
+        for (int i = 0; i < baseChildsQuantity; i++)
+        {
+            GiveBirth();
+        }
     }
 
     void Start () {

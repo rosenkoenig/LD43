@@ -38,7 +38,7 @@ public class GameMaster : MonoBehaviour {
 
     void StartGame ()
     {
-        //  vm.GiveBirth();
+        vm.SpawnBaseChilds();
     }
 
 
