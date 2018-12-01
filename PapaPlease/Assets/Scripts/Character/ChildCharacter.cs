@@ -44,18 +44,99 @@ public class ChildCharacter : Character {
     public void SetCurrentInterestPoint (InterestPoint interestPoint)
     {
         currentInterestPoint = interestPoint;
-        if(currentInterestPoint)
+        if (currentInterestPoint)
             MoveTo(currentInterestPoint.pivotPoint);
     }
 
     void MoveTo (Vector3 destination)
-    {        
+    {
         navAgent.SetDestination(destination);
+       /* _targetPoint = destination;
+        CalculateNavMesh();*/
     }
     void MoveTo (Transform transform)
     {
         MoveTo(transform.position);
     }
+
+    #region PathFinding
+    /*
+    private Vector3 _targetPoint;
+    private NavMeshPath _path;
+    private bool _hasPath;
+    private NavMeshAgent _agent;
+    private Queue<Vector3> _cornerQueue;
+    private Vector3 _currentDestination;
+    private Vector3 _direction;
+    private float _currentDistance;
+    NavMeshObstacle _obstacle;
+
+    void OnEnable()
+    {
+        InitVars();
+    }
+
+    private void CalculateNavMesh()
+    {
+        _path = new NavMeshPath();
+        _obstacle.enabled = false;
+        _agent.enabled = true;
+        _agent.CalculatePath(_targetPoint, _path);
+        SetupPath(_path);
+        _agent.enabled = false;
+        _obstacle.enabled = true;
+    }
+
+    private void InitVars()
+    {
+        //_targetPoint = GameObject.Find("EndPoint").transform.position; // Set target point here
+        _obstacle = GetComponent<NavMeshObstacle>();
+        _agent = GetComponent<NavMeshAgent>();
+        _path = new NavMeshPath();
+    }
+
+    void SetupPath(NavMeshPath path)
+    {
+        _cornerQueue = new Queue<Vector3>();
+        foreach (var corner in path.corners)
+        {
+            _cornerQueue.Enqueue(corner);
+        }
+
+        GetNextCorner();
+        _hasPath = true;
+    }
+
+    private void GetNextCorner()
+    {
+        if (_cornerQueue.Count > 0)
+        {
+            _currentDestination = _cornerQueue.Dequeue();
+            _direction = (_currentDestination - transform.position).normalized;
+            _hasPath = true;
+        }
+        else
+        {
+            _hasPath = false;
+        }
+    }
+
+    
+
+    private void MoveAlongPath()
+    {
+        if (_hasPath)
+        {
+            _currentDistance = Vector3.Distance(transform.position, _currentDestination);
+
+            if (_currentDistance > 1f)
+                transform.position += _direction * navAgent.speed * Time.deltaTime;
+            else
+                GetNextCorner();
+        }
+    }*/
+
+    #endregion
 
     #region State Management
     void SetState (ChildAIState newState)
@@ -128,7 +209,10 @@ public class ChildCharacter : Character {
         {
             //wait a little time before starting a new activity
             GetRoamingInterestPoint();
-            SetState(ChildAIState.MOVING_TO_ACTIVITY);
+            if (currentInterestPoint)
+                SetState(ChildAIState.MOVING_TO_ACTIVITY);
+            else
+                StartRoaming();
         }
     }
 
@@ -140,11 +224,12 @@ public class ChildCharacter : Character {
     void UpdateMovingToActivity ()
     {
         //Debug.Log("remaining distance = " + navAgent.remainingDistance);
-        if(navAgent.remainingDistance <= 1f)
+       // MoveAlongPath();
+
+        if (navAgent.remainingDistance <= 1f)
         {
             //has reached IP
             HasReachedIP();
-            IsInRangeForSnap();
         }
         
     }
@@ -161,14 +246,13 @@ public class ChildCharacter : Character {
     Quaternion startRot;
     Coroutine lerpCoroutine = null;
     IEnumerator LerpCoroutine ()
-    {
-        navAgent.enabled = false;
-
+    {        
         factor = 0f;
         startPosition = transform.position;
         startRot = transform.rotation;
         while (factor < 1f)
         {
+            Debug.Log("coroutine");
             factor += Time.deltaTime * lerpSpeed;
 
             factor = Mathf.Clamp01(factor);
@@ -181,8 +265,17 @@ public class ChildCharacter : Character {
 
     void HasReachedIP ()
     {
-        Debug.Log("begin");
-        SetState(ChildAIState.IN_ACTIVITY);
+        if(currentInterestPoint.activity.IsAvailable(this))
+        {
+
+            Debug.Log("begin");
+            SetState(ChildAIState.IN_ACTIVITY);
+            IsInRangeForSnap();
+        }
+        else
+        {
+            SetState(ChildAIState.ROAMING);
+        }
     }
 
     void UpdateInActivity ()
@@ -194,8 +287,6 @@ public class ChildCharacter : Character {
     {
         base.OnActivityEnds();
         currentActivity = null;
-
-        navAgent.enabled = true;
 
         Debug.Log("ends");
         SetState(ChildAIState.ROAMING);
