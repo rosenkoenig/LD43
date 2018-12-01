@@ -28,7 +28,7 @@ public class PlayerBehaviour : Character {
         RaycastHit rcHit = new RaycastHit();
         if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _interactLayerMask))
         {
-            InterestPoint ip = rcHit.collider.GetComponent<InterestPoint>();
+            InterestPoint ip = rcHit.collider.GetComponentInParent<InterestPoint>();
 
             ChildCharacter child = rcHit.collider.GetComponentInParent<ChildCharacter>();
 
@@ -65,4 +65,17 @@ public class PlayerBehaviour : Character {
         _playerMover.FreezeMovement(state);
     }
 
+
+    public InterestPoint GetHoveredIP ()
+    {
+        InterestPoint ip = null;
+
+        RaycastHit rcHit = new RaycastHit();
+        if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _interactLayerMask))
+        {
+            ip = rcHit.collider.GetComponentInParent<InterestPoint>();
+
+        }
+            return ip;
+    }
 }
