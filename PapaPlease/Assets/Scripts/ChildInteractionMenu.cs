@@ -7,8 +7,10 @@ public class ChildInteractionMenu : MonoBehaviour
 {
 
     [SerializeField] ChildOrderButton _childOrderButtonRef;
-    List<ChildOrderButton> _childOrderButtons;
     [SerializeField] RectTransform childOrderButtonsParent;
+    [SerializeField] Text _childNameText;
+
+    List<ChildOrderButton> _childOrderButtons;
     List<IPTypeInfo> allIPTypeInfos;
 
     ChildCharacter curChild;
@@ -28,6 +30,7 @@ public class ChildInteractionMenu : MonoBehaviour
     public void SetupMenu(ChildCharacter child)
     {
         curChild = child;
+        _childNameText.text = child.childName;
         for (int i = 0; i < allIPTypeInfos.Count; i++)
         {
             _childOrderButtons[i]._button.interactable = allIPTypeInfos[i].isAvailable;

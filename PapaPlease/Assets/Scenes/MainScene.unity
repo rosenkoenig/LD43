@@ -1171,7 +1171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000014118319}
+  m_AnchoredPosition: {x: 0, y: 0.00003156936}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &573551915
@@ -2037,7 +2037,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kylian
+  m_Text: '[Child name]'
 --- !u!222 &1172333371
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2156,6 +2156,7 @@ MonoBehaviour:
   _childOrderButtonRef: {fileID: 114246057800735440, guid: 542dc80c830aaae4e9e9ee25509c145d,
     type: 2}
   childOrderButtonsParent: {fileID: 573551914}
+  _childNameText: {fileID: 0}
 --- !u!1 &1373435035 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100018, guid: fd489d90f9eb8c54cb097a3316918ff8,
