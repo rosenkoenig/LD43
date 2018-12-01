@@ -11,13 +11,16 @@ public class InterestPoint : MonoBehaviour {
     public Activity activity;
     
 
-    public void Interact (ChildCharacter child)
+    public bool Interact (Character character)
     {
-        if (activity.IsAvailable(child))
+        bool interacts = activity.IsAvailable(character);
+        if (interacts)
         {
-            activity.Begin(child);
-            child.currentActivity = activity;            
+            activity.Begin(character);
+            character.currentActivity = activity; 
         }
+
+        return interacts;
     }
 
     void Update ()
