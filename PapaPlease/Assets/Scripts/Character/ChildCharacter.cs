@@ -13,6 +13,7 @@ public class ChildCharacter : Character {
 
 
     InterestPoint currentInterestPoint;
+    InterestPoint lastInterestPoint;
 
     public string childName = "";
     public bool isMale = false;
@@ -40,7 +41,8 @@ public class ChildCharacter : Character {
     public void SetCurrentInterestPoint (InterestPoint interestPoint)
     {
         currentInterestPoint = interestPoint;
-        MoveTo(currentInterestPoint.pivotPoint);
+        if(currentInterestPoint)
+            MoveTo(currentInterestPoint.pivotPoint);
     }
 
     void MoveTo (Vector3 destination)
@@ -86,6 +88,8 @@ public class ChildCharacter : Character {
     void StartRoaming ()
     {
         stateBeginTime = Time.time;
+        lastInterestPoint = currentInterestPoint;
+        currentInterestPoint = null;
     }
 
     void StartMovingToActivity ()
@@ -127,12 +131,12 @@ public class ChildCharacter : Character {
 
     void GetRoamingInterestPoint()
     {
-        SetCurrentInterestPoint(hm.GetRandomInterestPoint(InterestPointCategory.FUN));
+        SetCurrentInterestPoint(hm.GetRandomInterestPoint(InterestPointCategory.FUN, lastInterestPoint));
     }
 
     void UpdateMovingToActivity ()
     {
-        Debug.Log("remaining distance = " + navAgent.remainingDistance);
+        //Debug.Log("remaining distance = " + navAgent.remainingDistance);
         if(navAgent.remainingDistance <= 1f)
         {
             //has reached IP
@@ -151,6 +155,7 @@ public class ChildCharacter : Character {
     float factor = 0f;
     float lerpSpeed = 3f;
     Vector3 startPosition;
+    Quaternion startRot;
     Coroutine lerpCoroutine = null;
     IEnumerator LerpCoroutine ()
     {
@@ -158,7 +163,7 @@ public class ChildCharacter : Character {
 
         factor = 0f;
         startPosition = transform.position;
-
+        startRot = transform.rotation;
         while (factor < 1f)
         {
             factor += Time.deltaTime * lerpSpeed;
@@ -166,10 +171,9 @@ public class ChildCharacter : Character {
             factor = Mathf.Clamp01(factor);
 
             transform.position = Vector3.Lerp(startPosition, currentInterestPoint.pivotPoint.position, factor);
+            transform.rotation = Quaternion.Lerp(startRot, currentInterestPoint.pivotPoint.rotation, factor);
             yield return new WaitForEndOfFrame();
         }
-
-        Debug.Log("caca");
     }
 
     void HasReachedIP ()

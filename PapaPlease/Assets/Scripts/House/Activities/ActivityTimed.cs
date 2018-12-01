@@ -23,7 +23,7 @@ public class ActivityTimed : Activity {
         
         foreach(ActivityHolder holder in holdersToEnd)
         {
-            End(holder.child);
+            End(holder.character);
         }    
     }
 }

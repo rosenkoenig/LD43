@@ -5,7 +5,7 @@ using UnityEngine;
 public class ActivityHolder
 {
     public float startTime = 0f;
-    public ChildCharacter child;
+    public Character character;
 }
 
 public enum ActivityState { WAITING, RUNNING, COMPLETE }
@@ -21,15 +21,15 @@ public class Activity : MonoBehaviour {
 
     public System.Action OnBegin, OnEnd;
 
-    public virtual bool IsAvailable (ChildCharacter child)
+    public virtual bool IsAvailable (Character character)
     {
         return holders.Count < maxHolder && state != ActivityState.COMPLETE;
     }
 
-    public virtual void Begin (ChildCharacter child)
+    public virtual void Begin (Character character)
     {
         ActivityHolder holder = new ActivityHolder();
-        holder.child = child;
+        holder.character = character;
         holder.startTime = Time.time;
 
         holders.Add(holder);
@@ -41,9 +41,9 @@ public class Activity : MonoBehaviour {
         if (OnBegin != null) OnBegin();
     }
 
-    protected virtual void End (ChildCharacter child)
+    protected virtual void End (Character character)
     {
-        ActivityHolder holder = GetHolderForChild(child);
+        ActivityHolder holder = GetHolderForCharacter(character);
         if(holder != null)
         {
             holders.Remove(holder);
@@ -62,13 +62,13 @@ public class Activity : MonoBehaviour {
             }
         }
 
-        child.OnActivityEnds();
+        character.OnActivityEnds();
         if (OnEnd != null) OnEnd();
     }
 
-    ActivityHolder GetHolderForChild (ChildCharacter child)
+    ActivityHolder GetHolderForCharacter (Character character)
     {
-        return holders.Find(x => x.child == child);
+        return holders.Find(x => x.character == character);
     }
 
     protected virtual void SetState (ActivityState newState)
