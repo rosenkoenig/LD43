@@ -18,11 +18,11 @@ public class HouseMaster : MonoBehaviour {
         return ip;
     }
 
-    public InterestPoint GetRandomInterestPoint (InterestPointCategory category)
+    public InterestPoint GetRandomInterestPoint (IPType type)
     {
         InterestPoint ip = null;
 
-        List<InterestPoint> ipMatchingCategory = allInterestPoints.FindAll(x => x.category == category);
+        List<InterestPoint> ipMatchingCategory = allInterestPoints.FindAll(x => x.type == type);
 
         int idx = Random.Range(0, ipMatchingCategory.Count);
 
@@ -30,11 +30,11 @@ public class HouseMaster : MonoBehaviour {
 
         return ip;
     }
-    public InterestPoint GetRandomInterestPoint(InterestPointCategory category, InterestPoint excludedIP)
+    public InterestPoint GetRandomInterestPoint(IPType type, InterestPoint excludedIP)
     {
         InterestPoint ip = null;
 
-        List<InterestPoint> ipMatchingCategory = allInterestPoints.FindAll(x => x.category == category && x != excludedIP);
+        List<InterestPoint> ipMatchingCategory = allInterestPoints.FindAll(x => x.type == type && x != excludedIP);
 
         int idx = Random.Range(0, ipMatchingCategory.Count);
 

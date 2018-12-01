@@ -26,6 +26,9 @@ public class ChildCharacter : Character {
     float currentInactivityDuration = 0f;
     float stateBeginTime = 0f;
 
+    [SerializeField]
+    IPType IpTypeFun = null;
+
 	// Use this for initialization
 	void Start () {
         SetState(ChildAIState.ROAMING);
@@ -131,7 +134,7 @@ public class ChildCharacter : Character {
 
     void GetRoamingInterestPoint()
     {
-        SetCurrentInterestPoint(hm.GetRandomInterestPoint(InterestPointCategory.FUN, lastInterestPoint));
+        SetCurrentInterestPoint(hm.GetRandomInterestPoint(IpTypeFun, lastInterestPoint));
     }
 
     void UpdateMovingToActivity ()

@@ -133,6 +133,7 @@ MonoBehaviour:
   isMale: 0
   state: 0
   inactivityDurationRange: {x: 0, y: 0}
+  IpTypeFun: {fileID: 11400000, guid: 88b7a2a5fee7ce241b5954fc4ede72f0, type: 2}
 --- !u!136 &136824139974650648
 CapsuleCollider:
   m_ObjectHideFlags: 1
