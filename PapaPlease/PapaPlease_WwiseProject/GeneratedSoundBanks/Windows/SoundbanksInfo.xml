@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>C:\Users\droui\Desktop\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\droui\Desktop\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\droui\Desktop\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\droui\Desktop\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2678230382" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Level1</ObjectPath>
+			<ShortName>Level1</ShortName>
+			<Path>Level1.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
