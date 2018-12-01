@@ -45,16 +45,19 @@ public class ChildCharacter : Character {
 
     public void Freeze(bool state)
     {
+        Debug.Log("freeze set to " + state);
         if (state)
             navAgent.isStopped = true;
         else
+        {
             navAgent.isStopped = false;
+        }
     }
 
     public void GiveOrder (IPType ipType)
     {
-        SetCurrentInterestPoint(hm.GetRandomInterestPoint(IpTypeFun, lastInterestPoint));
-        SetState(ChildAIState.MOVING_TO_ACTIVITY);
+        SetCurrentInterestPoint(hm.GetRandomInterestPoint(ipType, lastInterestPoint));
+        Freeze(false);
     }
 
     void SetCurrentInterestPoint(IPType ipType)
@@ -66,10 +69,15 @@ public class ChildCharacter : Character {
         currentInterestPoint = interestPoint;
         if (currentInterestPoint)
         {
+            Debug.Log(childName + "has received a new IP");
             SetState(ChildAIState.MOVING_TO_ACTIVITY, true);
         }
         else
+        {
+            Debug.LogWarning(childName + "has received a null IP");
             SetState(ChildAIState.WAITING);
+        }
+            
     }
 
     #region PathFinding
@@ -85,7 +93,7 @@ public class ChildCharacter : Character {
     {
         MoveTo(transform.position);
     }
-    #endregion
+    #endregion 
 
     #region State Management
     void SetState (ChildAIState newState)

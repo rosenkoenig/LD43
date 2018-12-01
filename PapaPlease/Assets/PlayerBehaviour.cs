@@ -13,15 +13,31 @@ public class PlayerBehaviour : Character {
     public PlayerMover GetPlayerMover { get { return _playerMover; } }
     public PlayerHeadBehaviour GetPlayerHeadBehaviour { get { return _playerHeadBehaviour; } }
 
+    bool isInteractActive = true;
+
+    public void SetInteractActive()
+    {
+        isInteractActive = true;
+    }
+
     public void Interact()
     {
+        if (isInteractActive == false)
+            return;
+
         RaycastHit rcHit = new RaycastHit();
         if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _interactLayerMask))
         {
-            Debug.Log("Paul ! J'interagis !");
-
             InterestPoint ip = rcHit.collider.GetComponent<InterestPoint>();
-            if (ip)
+
+            ChildCharacter child = rcHit.collider.GetComponentInParent<ChildCharacter>();
+
+            if (child)
+            {
+                child.Freeze(true);
+                GameMaster.Instance.uIMaster.DisplayMenuInteractChild(child, SetInteractActive);
+            }
+            else if (ip)
             {
                 if(ip.Interact(this))
                 {

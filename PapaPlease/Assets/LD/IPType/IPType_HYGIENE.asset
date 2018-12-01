@@ -11,3 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e70b0733de2b646905d51a5f7b94dd, type: 3}
   m_Name: IPType_HYGIENE
   m_EditorClassIdentifier: 
+  _ipName: Wash yourself
