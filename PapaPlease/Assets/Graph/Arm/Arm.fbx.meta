@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: 3a4f2121a73ba954ab57812c4d533e91
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ArmRig
+    100004: ArmRig_Arm_ClavicleJnt
+    100006: ArmRig_Arm_ElbowJnt
+    100008: ArmRig_Arm_ElbowJntIk
+    100010: ArmRig_Arm_ScaleGrp
+    100012: ArmRig_Arm_ShoulderJnt
+    100014: ArmRig_Arm_ShoulderJntFk
+    100016: ArmRig_Arm_ShoulderJntIk
+    100018: ArmRig_Arm_WristJnt
+    100020: ArmRig_Arm_WristJntDummy
+    100022: ArmRig_Arm_WristJntGrp1
+    100024: ArmRig_Arm_WristJntGrp2
+    100026: ArmRig_Arm_WristJntIk
+    100028: ArmRig_ArmGrp
+    100030: ArmRig_Hand_01_01Jnt
+    100032: ArmRig_Hand_01_02Jnt
+    100034: ArmRig_Hand_01_03Jnt
+    100036: ArmRig_Hand_01JntGrp
+    100038: ArmRig_Hand_01JntGrp2
+    100040: ArmRig_Hand_02_01Jnt
+    100042: ArmRig_Hand_02_02Jnt
+    100044: ArmRig_Hand_02_03Jnt
+    100046: ArmRig_Hand_02JntGrp
+    100048: ArmRig_Hand_02JntGrp2
+    100050: ArmRig_Hand_ScaleGrp
+    100052: ArmRig_HandGrp
+    100054: ArmRig_MAIN_Ctrl
+    100056: ArmRig_MAIN_Ctrl_RestPoseGrp
+    100058: ArmRig_MAIN_Inner_Ctrl
+    100060: ArmRig_MAIN_Inner_Ctrl_RestPoseGrp
+    100062: ArmRig_MAIN_Offset_Ctrl
+    100064: ArmRig_MAIN_Offset_Ctrl_RestPoseGrp
+    100066: ArmRig_ROOT_CtrlGrp
+    100068: ArmRig_ROOTGrp
+    100070: ArmRig_ROOTJnt
+    100072: ArmRig_ROOTParent_CtrlGrp2
+    100074: CondomHand
+    400000: //RootNode
+    400002: ArmRig
+    400004: ArmRig_Arm_ClavicleJnt
+    400006: ArmRig_Arm_ElbowJnt
+    400008: ArmRig_Arm_ElbowJntIk
+    400010: ArmRig_Arm_ScaleGrp
+    400012: ArmRig_Arm_ShoulderJnt
+    400014: ArmRig_Arm_ShoulderJntFk
+    400016: ArmRig_Arm_ShoulderJntIk
+    400018: ArmRig_Arm_WristJnt
+    400020: ArmRig_Arm_WristJntDummy
+    400022: ArmRig_Arm_WristJntGrp1
+    400024: ArmRig_Arm_WristJntGrp2
+    400026: ArmRig_Arm_WristJntIk
+    400028: ArmRig_ArmGrp
+    400030: ArmRig_Hand_01_01Jnt
+    400032: ArmRig_Hand_01_02Jnt
+    400034: ArmRig_Hand_01_03Jnt
+    400036: ArmRig_Hand_01JntGrp
+    400038: ArmRig_Hand_01JntGrp2
+    400040: ArmRig_Hand_02_01Jnt
+    400042: ArmRig_Hand_02_02Jnt
+    400044: ArmRig_Hand_02_03Jnt
+    400046: ArmRig_Hand_02JntGrp
+    400048: ArmRig_Hand_02JntGrp2
+    400050: ArmRig_Hand_ScaleGrp
+    400052: ArmRig_HandGrp
+    400054: ArmRig_MAIN_Ctrl
+    400056: ArmRig_MAIN_Ctrl_RestPoseGrp
+    400058: ArmRig_MAIN_Inner_Ctrl
+    400060: ArmRig_MAIN_Inner_Ctrl_RestPoseGrp
+    400062: ArmRig_MAIN_Offset_Ctrl
+    400064: ArmRig_MAIN_Offset_Ctrl_RestPoseGrp
+    400066: ArmRig_ROOT_CtrlGrp
+    400068: ArmRig_ROOTGrp
+    400070: ArmRig_ROOTJnt
+    400072: ArmRig_ROOTParent_CtrlGrp2
+    400074: CondomHand
+    2100000: lambert1
+    2300000: CondomHand
+    3300000: CondomHand
+    4300000: CondomHand
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
