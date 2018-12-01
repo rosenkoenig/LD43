@@ -7,7 +7,7 @@ public class InterestPoint : MonoBehaviour {
 
     public string ipName = "";
     public Transform pivotPoint;
-    public InterestPointCategory category;
+    public IPType type;
     public Activity activity;
     
 
