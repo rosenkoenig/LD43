@@ -147,8 +147,7 @@ MonoBehaviour:
   navAgent: {fileID: 195460895285877458}
   childName: 
   isMale: 0
-  state: 0
-  inactivityDurationRange: {x: 0.5, y: 2}
+  inactivityDurationRange: {x: 3, y: 5}
   IpTypeFun: {fileID: 11400000, guid: 88b7a2a5fee7ce241b5954fc4ede72f0, type: 2}
 --- !u!136 &136824139974650648
 CapsuleCollider:
