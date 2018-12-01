@@ -29,6 +29,8 @@ ModelImporter:
     100046: Wall7
     100048: Wall8
     100050: Wall9
+    100052: Ground
+    100054: Not_Walkable
     400000: //RootNode
     400002: Balcoony_Floor
     400004: Balcoony_Wall
@@ -55,8 +57,11 @@ ModelImporter:
     400046: Wall7
     400048: Wall8
     400050: Wall9
+    400052: Ground
+    400054: Not_Walkable
     2100000: lambert1
     2100002: lambert2
+    2100004: lambert3
     2300000: Balcoony_Floor
     2300002: Balcoony_Wall
     2300004: Door

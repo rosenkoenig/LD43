@@ -75,6 +75,8 @@ public class Activity : MonoBehaviour {
     {
         if (state != newState)
             state = newState;
+
+        Debug.Log("Activity state = " + newState, this);
     }
 
     public void Update ()
