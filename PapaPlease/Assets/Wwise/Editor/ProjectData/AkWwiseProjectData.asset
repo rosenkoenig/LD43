@@ -11,14 +11,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915f3e3ba35bc4d46a39eb9f94d831fd, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: ba6e0470ca50ae4c9ec6557aac707c6e
+    m_lastTime: -8586579309364471671
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 113e7d036b66dc4198f959140bea53d3
+    m_lastTime: -8586579309364744492
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 6f132defb2c71049a6f53d87da95cd84
+    m_lastTime: -8586579269309556293
+    List:
+    - name: Level1
+      guid: 8d2980dcd83a2e41bee28915e6078444
+      id: 2678230382
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Level1
+        ObjectType: 7
+      Path: Default Work Unit\Level1
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 977a627e74acd84a9f6dacd27fa04f19
+    m_lastTime: -8586579309364928168
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: ef15d11cc07d234785a2cefa5888678d
+    m_lastTime: -8586579309364873608
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 8365a82de9493c4e89f42dac2fa1c04e
+    m_lastTime: -8586579309364079851
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 974c102ed40b1846818d82dec6008181
+    m_lastTime: -8586579309363980643
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2b81f266f0a2664a8e9f51757991eec9
+    m_lastTime: -8586579309364129447
+    List: []
+  ExpandedItems:
+  - /PapaPlease_WwiseProject
+  - /PapaPlease_WwiseProject/SoundBanks
+  - /PapaPlease_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
