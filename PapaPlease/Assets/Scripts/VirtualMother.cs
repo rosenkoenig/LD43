@@ -32,7 +32,7 @@ public class VirtualMother : MonoBehaviour {
 
     void AddChild ()
     {
-        ChildCharacter newChild = InstantiateAndCreateChild();
+        InstantiateAndCreateChild();
 
     }
 
