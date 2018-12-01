@@ -36,7 +36,7 @@ public class ChildInteractionMenu : MonoBehaviour
 
     public void MakeGiveOrder(IPTypeInfo ipTypeInfo)
     {
-        Debug.Log("Give Order to child: " + ipTypeInfo.IPType.name);
+        Debug.Log("Give Order " + ipTypeInfo.IPType.name + " to " + curChild.childName);
         curChild.GiveOrder(ipTypeInfo.IPType);
     }
 }

@@ -31,13 +31,11 @@ public class PlayerBehaviour : Character {
             InterestPoint ip = rcHit.collider.GetComponent<InterestPoint>();
 
             ChildCharacter child = rcHit.collider.GetComponentInParent<ChildCharacter>();
-            Debug.Log("found item: " + rcHit.collider.name);
 
             if (child)
             {
                 child.Freeze(true);
                 GameMaster.Instance.uIMaster.DisplayMenuInteractChild(child, SetInteractActive);
-                Debug.Log("interact with child !");
             }
             else if (ip)
             {
