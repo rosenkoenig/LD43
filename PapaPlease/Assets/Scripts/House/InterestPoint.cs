@@ -9,10 +9,17 @@ public class InterestPoint : MonoBehaviour {
     public Transform pivotPoint;
     public IPType type;
     public Activity activity;
+    public bool onlyUsableByChild = false;
     
 
     public bool Interact (Character character)
     {
+        if(onlyUsableByChild && character.GetComponent<PlayerBehaviour>())
+        {
+            return false;
+        }
+
+
         bool interacts = activity.IsAvailable(character);
         if (interacts)
         {

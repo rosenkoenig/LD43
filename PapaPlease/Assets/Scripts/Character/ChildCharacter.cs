@@ -80,6 +80,34 @@ public class ChildCharacter : Character {
             
     }
 
+
+    [SerializeField]
+    float fallDownDistance = 1f;
+
+    public void IsSlapped ()
+    {
+        SetState(ChildAIState.WAITING);
+
+        StartCoroutine(waitAndApplySlapHit());
+    }
+
+    IEnumerator waitAndApplySlapHit ()
+    {
+        yield return new WaitForSeconds(1f);
+        ApplyHit();
+    }
+
+    void ApplyHit ()
+    {
+        Vector3 fallDownDest = transform.position + (transform.position - GameMaster.Instance.player.transform.position) * fallDownDistance;
+
+        NavMeshHit hit;
+        NavMesh.SamplePosition(fallDownDest, out hit, waitingDistance, 1);
+        Vector3 finalPosition = hit.position;
+
+        transform.position = finalPosition;
+    }
+
     #region PathFinding
 
 
