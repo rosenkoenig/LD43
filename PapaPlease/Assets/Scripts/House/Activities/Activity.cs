@@ -25,6 +25,10 @@ public class Activity : MonoBehaviour {
     {
         return holders.Count < maxHolder && state != ActivityState.COMPLETE;
     }
+    public virtual bool IsAvailable()
+    {
+        return holders.Count < maxHolder && state != ActivityState.COMPLETE;
+    }
 
     public virtual void Begin (Character character)
     {

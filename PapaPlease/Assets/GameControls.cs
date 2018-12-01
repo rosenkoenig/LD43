@@ -10,13 +10,7 @@ public class GameControls : MonoBehaviour {
     bool _moveFrozen = false;
     bool _headFrozen = false;
     bool _interactionControlsFrozen = false;
-
-    private void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
-
+    
     public void FreezeMove(bool b)
     {
         _moveFrozen = b;
@@ -65,6 +59,15 @@ public class GameControls : MonoBehaviour {
     void Update()
     {
         ManageInteraction();
+        DebugPlayChildInteraction();
+    }
+
+    private void DebugPlayChildInteraction()
+    {
+        if(Input.GetKeyDown(KeyCode.U))
+        {
+            GameMaster.Instance.uIMaster.DisplayMenuInteractChild();
+        }
     }
 
     private void ManageInteraction()
