@@ -44,7 +44,7 @@ public class ChildCharacter : Character {
     }
 
     void MoveTo (Vector3 destination)
-    {
+    {        
         navAgent.SetDestination(destination);
     }
     void MoveTo (Transform transform)
@@ -66,6 +66,8 @@ public class ChildCharacter : Character {
     void OnStateChange (ChildAIState oldState, ChildAIState newState)
     {
         currentInactivityDuration = Mathf.Lerp(inactivityDurationRange.x, inactivityDurationRange.y, Random.Range(0f, 1f));
+
+        Debug.Log("New state : " + newState);
 
         switch(newState)
         {
@@ -130,12 +132,50 @@ public class ChildCharacter : Character {
 
     void UpdateMovingToActivity ()
     {
-        if(navAgent.remainingDistance == 0f)
+        Debug.Log("remaining distance = " + navAgent.remainingDistance);
+        if(navAgent.remainingDistance <= 1f)
         {
             //has reached IP
-            SetState(ChildAIState.IN_ACTIVITY);
-            Debug.Log("begin");
+            HasReachedIP();
+            IsInRangeForSnap();
         }
+        
+    }
+
+    void IsInRangeForSnap ()
+    {
+        if (lerpCoroutine != null) StopCoroutine(lerpCoroutine);
+        lerpCoroutine = StartCoroutine(LerpCoroutine());
+    }
+
+    float factor = 0f;
+    float lerpSpeed = 3f;
+    Vector3 startPosition;
+    Coroutine lerpCoroutine = null;
+    IEnumerator LerpCoroutine ()
+    {
+        navAgent.enabled = false;
+
+        factor = 0f;
+        startPosition = transform.position;
+
+        while (factor < 1f)
+        {
+            factor += Time.deltaTime * lerpSpeed;
+
+            factor = Mathf.Clamp01(factor);
+
+            transform.position = Vector3.Lerp(startPosition, currentInterestPoint.pivotPoint.position, factor);
+            yield return new WaitForEndOfFrame();
+        }
+
+        Debug.Log("caca");
+    }
+
+    void HasReachedIP ()
+    {
+        Debug.Log("begin");
+        SetState(ChildAIState.IN_ACTIVITY);
     }
 
     void UpdateInActivity ()
@@ -148,8 +188,10 @@ public class ChildCharacter : Character {
         base.OnActivityEnds();
         currentActivity = null;
 
-        SetState(ChildAIState.ROAMING);
+        navAgent.enabled = true;
+
         Debug.Log("ends");
+        SetState(ChildAIState.ROAMING);
     }
     #endregion
 }
