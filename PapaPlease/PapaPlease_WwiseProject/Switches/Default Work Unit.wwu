@@ -20,6 +20,14 @@
 						<Switch Name="AI_Idle" ID="{FE876CA7-2F09-497D-AA4A-50F353EF223D}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Player_Slap" ID="{79D247B4-1C41-407E-BF23-E0776A971D1F}">
+					<ChildrenList>
+						<Switch Name="Wood" ID="{3C24FAC7-05DF-445C-900C-ACFF97627173}"/>
+						<Switch Name="Kid" ID="{4853AA7A-ECC7-4AD7-8563-A5B7D90637F3}"/>
+						<Switch Name="Concrete" ID="{7E3AD1FA-5F80-4FDE-B827-EFDF3752F745}"/>
+						<Switch Name="Nothing" ID="{5A332AFB-8F7A-40E3-B94D-7963C73BC20A}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
