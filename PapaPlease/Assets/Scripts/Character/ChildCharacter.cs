@@ -115,11 +115,6 @@ public class ChildCharacter : Character {
         StartCoroutine(waitAndApplySlapHit());
         LaunchSlapAnim();
 
-
-        if(state == ChildAIState.IN_ACTIVITY)
-        {
-            SetState(ChildAIState.WAITING);
-        }
     }
 
     IEnumerator waitAndApplySlapHit ()
@@ -187,7 +182,7 @@ public class ChildCharacter : Character {
         {
             ChildAIState oldState = state;
             state = newState;
-            OnStateChange(oldState, newState);
+            OnStateChange(state, newState);
         }
     }
 
@@ -197,13 +192,6 @@ public class ChildCharacter : Character {
         stateBeginTime = Time.time;
 
         Debug.Log(childName + " changes state for : " + newState);
-
-        switch(oldState)
-        {
-            case ChildAIState.IN_ACTIVITY:
-                CancelActivity();
-                break;
-        }
 
         switch(newState)
         {
@@ -221,32 +209,8 @@ public class ChildCharacter : Character {
                 break;
         }
     }
+    
 
-    void UpdateStates()
-    {
-        CheckIsWalking();
-
-        switch (state)
-        {
-            case ChildAIState.WAITING:
-                UpdateWaiting();
-                break;
-            case ChildAIState.ROAMING:
-                UpdateRoaming();
-                break;
-            case ChildAIState.MOVING_TO_ACTIVITY:
-                UpdateMovingToActivity();
-                break;
-            case ChildAIState.IN_ACTIVITY:
-                UpdateInActivity();
-                break;
-        }
-    }
-
-
-    /// <summary>
-    /// WAITING STATE WAITING
-    /// </summary>
     void StartWaiting  ()
     {
         if (waitForIdleCoroutine != null) StopCoroutine(waitForIdleCoroutine);
@@ -274,7 +238,56 @@ public class ChildCharacter : Character {
         MoveTo(finalPosition);
     }
 
-    void UpdateWaiting()
+    void StartRoaming ()
+    {
+        SetCurrentInterestPoint(hm.GetRandomInterestPoint(IpTypeFun, lastInterestPoint));
+    }
+
+    void StartMovingToActivity ()
+    {
+        MoveTo(currentInterestPoint.pivotPoint);
+    }
+
+    void StartInActivity ()
+    {
+        currentInterestPoint.Interact(this);
+        
+    }
+
+    void UpdateStates ()
+    {
+        CheckIsWalking();
+
+        switch(state)
+        {
+            case ChildAIState.WAITING:
+                UpdateWaiting();
+                break;
+            case ChildAIState.ROAMING:
+                UpdateRoaming();
+                break;
+            case ChildAIState.MOVING_TO_ACTIVITY:
+                UpdateMovingToActivity();
+                break;
+            case ChildAIState.IN_ACTIVITY:
+                UpdateInActivity();
+                break;
+        }
+    }
+
+    Vector3 lastPosition;
+    bool isWalking = false;
+    void CheckIsWalking ()
+    {
+        
+        isWalking = Vector3.Distance(lastPosition, transform.position) > 0.005f;
+
+        lastPosition = transform.position;
+
+        SetIsWalking(isWalking);
+    }
+
+    void UpdateWaiting ()
     {
         if (Time.time - stateBeginTime >= currentInactivityDuration && animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") == true)
         {
@@ -283,47 +296,31 @@ public class ChildCharacter : Character {
         }
     }
 
-    /// <summary>
-    /// ROAMING STATE ROAMING
-    /// </summary>
-    void StartRoaming ()
+    void UpdateRoaming ()
     {
-        SetCurrentInterestPoint(hm.GetRandomInterestPoint(IpTypeFun, lastInterestPoint));
+        
+        
+        
     }
 
-    void UpdateRoaming()
-    {
-
-
-
-    }
-
-    /// <summary>
-    /// MOVING TO ACTIVITY STATE MOVING TO ACTIVITY
-    /// </summary>
-    void StartMovingToActivity ()
-    {
-        MoveTo(currentInterestPoint.pivotPoint);
-    }
-
-    void UpdateMovingToActivity()
+    void UpdateMovingToActivity ()
     {
         //Debug.Log("remaining distance = " + navAgent.remainingDistance);
-        // MoveAlongPath();
+       // MoveAlongPath();
 
         if (navAgent.remainingDistance <= 1f)
         {
             //has reached IP
             HasReachedIP();
         }
-
+        
     }
 
-    void HasReachedIP()
+    void HasReachedIP ()
     {
-        if (currentInterestPoint.activity.IsAvailable(this))
+        if(currentInterestPoint.activity.IsAvailable(this))
         {
-            if (!isLerping)
+            if(!isLerping)
                 IsInRangeForSnap();
         }
         else
@@ -368,26 +365,7 @@ public class ChildCharacter : Character {
         SetState(ChildAIState.IN_ACTIVITY);
     }
 
-
-    /// <summary>
-    /// IN ACTIVITY STATE IN ACTIVITY
-    /// </summary>
-    void StartInActivity ()
-    {
-        currentInterestPoint.Interact(this);
-        
-    }
-
-    void CancelActivity ()
-    {
-        if(currentActivity)
-        {
-            currentActivity.CancelActivity(this);
-            currentActivity = null;
-        }
-    }
-
-    void UpdateInActivity()
+    void UpdateInActivity ()
     {
         currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.DURING_ACTIVITY, statsContainer);
     }
@@ -397,7 +375,7 @@ public class ChildCharacter : Character {
         base.OnActivityEnds();
         Debug.Log(childName + " ends activity on " + currentInterestPoint.ipName);
         currentActivity = null;
-
+        
         currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.END_ACTIVITY, statsContainer);
         currentInterestPoint.TryMakeGlobalModification(InterestPointModification.ON_COMPLETED);
 
@@ -407,19 +385,6 @@ public class ChildCharacter : Character {
         SetState(ChildAIState.WAITING);
     }
 
-    
-    Vector3 lastPosition;
-    bool isWalking = false;
-    void CheckIsWalking ()
-    {
-        
-        isWalking = Vector3.Distance(lastPosition, transform.position) > 0.005f;
-
-        lastPosition = transform.position;
-
-        SetIsWalking(isWalking);
-    }
-    
     
     #endregion
 

@@ -15,7 +15,6 @@ namespace AK
     {
         static const AkUniqueID AI_FOOTSTEPS = 2561178547U;
         static const AkUniqueID PLAY_AI_COOKING = 1056168201U;
-        static const AkUniqueID PLAY_AI_DISHES = 2890421503U;
         static const AkUniqueID PLAY_AI_FLUSHTOILET = 498135132U;
         static const AkUniqueID PLAY_AI_SHOWER_LP = 4083355364U;
         static const AkUniqueID PLAY_AI_SHOWER_OFF = 150416599U;
@@ -28,7 +27,8 @@ namespace AK
         static const AkUniqueID PLAY_AMB_PARENTSBEDROOM_LP = 525979915U;
         static const AkUniqueID PLAY_AMBOUT_BATHROOM_NEIGHBORHOOD_LP = 1945404897U;
         static const AkUniqueID PLAY_AMBOUT_WALL_NEIGHBORHOOD_LP = 1682472951U;
-        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_DOOR_CLOSE = 2292458263U;
+        static const AkUniqueID PLAY_DOOR_OPEN = 1660008929U;
         static const AkUniqueID PLAY_PLANE = 2689642136U;
         static const AkUniqueID PLAY_WASHER_CLOSE = 55201595U;
         static const AkUniqueID PLAY_WASHER_OPEN = 3531545949U;
