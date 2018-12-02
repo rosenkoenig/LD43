@@ -24,25 +24,30 @@ public class ChildStatGauge : MonoBehaviour {
         _statNameText.text = childStatID.StatName;
     }
 
-    public void RefreshGauge(ChildStatsContainer.ChildStatInfo childStat)
+    public void RefreshGauge(ChildStatsContainer.ChildStatInfo childStatInfo)
     {
-        _valueText.text = Mathf.Round(childStat.currentValue).ToString();
-        if(_isFromCenter)
+        _valueText.text = Mathf.Round(childStatInfo.currentValue).ToString();
+        if (childStatInfo.childStatID.GetAddedJaugeText != "")
+            _valueText.text += " " + childStatInfo.childStatID.GetAddedJaugeText;
+        if (_isFromCenter)
         {
-            if(childStat.currentValue < 0)
+            if(childStatInfo.currentValue < 0)
             {
                 _gaugePositive.sizeDelta = new Vector2 (0, _gaugePositive.sizeDelta.y);
-                _gaugeNegative.sizeDelta = new Vector2(_gaugeParent.sizeDelta.x / 2, _gaugeNegative.sizeDelta.y);
+                _gaugeNegative.sizeDelta = new Vector2((_gaugeParent.sizeDelta.x / 2) * Mathf.Abs(childStatInfo.currentValue) / childStatInfo.childStatID.MaxValue,
+                    _gaugeNegative.sizeDelta.y);
             }
             else
             {
                 _gaugeNegative.sizeDelta = new Vector2(0, _gaugeNegative.sizeDelta.y);
-                _gaugePositive.sizeDelta = new Vector2(_gaugeParent.sizeDelta.x / 2, _gaugePositive.sizeDelta.y);
+                _gaugePositive.sizeDelta = new Vector2((_gaugeParent.sizeDelta.x / 2) * childStatInfo.currentValue / childStatInfo.childStatID.MaxValue,
+                    _gaugePositive.sizeDelta.y);
             }
         }
         else
         {
-
+            _gaugePositive.sizeDelta = new Vector2(_gaugeParent.sizeDelta.x * childStatInfo.currentValue / childStatInfo.childStatID.MaxValue,
+                    _gaugePositive.sizeDelta.y);
         }
     }
 

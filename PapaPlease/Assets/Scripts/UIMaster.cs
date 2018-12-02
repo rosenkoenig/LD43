@@ -13,11 +13,13 @@ public class UIMaster : MonoBehaviour
     [SerializeField]
     UIPlayerInteraction playerInteractionPanel;
 
+    [SerializeField] ActivityProgressInfo _activityProgressInfoRef;
 
     ChildCharacter curChild;
     
     public Action HideMenuInteractChildEvent;
 
+    public ActivityProgressInfo GetActivityProgressInfoRef { get { return _activityProgressInfoRef; } }
     public bool childInteractionMenuIsDisplayed {  get { return _childInteractionMenu.isActiveAndEnabled; } }
 
     private void Start()

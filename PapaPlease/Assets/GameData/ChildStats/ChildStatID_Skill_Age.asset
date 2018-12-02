@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: ChildStatID_Skill_Age
   m_EditorClassIdentifier: 
   _statName: Age
-  _minValue: 0
-  _maxValue: 100
-  _isDisplayedAsGauge: 0
+  _maxValue: 15
+  _startValue: 5
+  _addedJaugeText: years old
+  _isBetweenNegativeAndPositive: 0

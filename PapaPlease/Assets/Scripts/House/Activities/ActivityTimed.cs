@@ -13,15 +13,20 @@ public class ActivityTimed : Activity {
 
         List<ActivityHolder> holdersToEnd = new List<ActivityHolder>();
 
-        foreach(ActivityHolder holder in holders)
+        foreach (ActivityHolder holder in holders)
         {
+            holder.completionPercentage = Mathf.Clamp01((Time.time - holder.startTime) / duration);
             if (Time.time - holder.startTime >= duration)
             {
                 holdersToEnd.Add(holder);
+                holder.completionPercentage = 1f;
             }
-        }    
-        
-        foreach(ActivityHolder holder in holdersToEnd)
+        }
+
+        if (holders.Count > 0)
+            GetCompletionRatio = holders[0].completionPercentage;
+
+        foreach (ActivityHolder holder in holdersToEnd)
         {
             End(holder.character);
         }    
