@@ -86,4 +86,12 @@ public class VirtualMother : MonoBehaviour {
     {
         return activeChilds.Find(x => x.childName == childName);
     }
+
+    public void ApplyGlobalModifier(ChildStatsModificator statsModificator)
+    {
+        foreach (var item in activeChilds)
+        {
+            statsModificator.TryModifyStats(item.statsContainer);
+        }
+    }
 }

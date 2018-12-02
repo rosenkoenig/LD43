@@ -11,6 +11,7 @@ public class ChildCharacter : Character {
     [SerializeField]
     NavMeshAgent navAgent;
 
+    public ChildStatsContainer statsContainer;
 
     InterestPoint currentInterestPoint;
     InterestPoint lastInterestPoint;
