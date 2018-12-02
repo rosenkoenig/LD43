@@ -3,27 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ChildInitialSkillsPack", menuName = "Gameplay/ChildInitialSkillsPack")]
-public class ChildInitialSkillsPack : ScriptableObject {
+public class ChildInitialSkillsPack : ScriptableObject
+{
 
     [SerializeField] ChildStatIDsContainer _skillsContainer;
     [SerializeField] float _budget;
+    [SerializeField] float _disparity;
 
     public void GenerateChildStats(ChildStatsContainer childStatsCont)
     {
         float curBudget = _budget;
-        foreach (var curStatID in _skillsContainer.GetChildStatIDs)
+        while (curBudget > 0)
         {
-            foreach (var curStatInfo in childStatsCont._childStatInfos)
+            foreach (var curStatID in _skillsContainer.GetChildStatIDs)
             {
-                if (curStatInfo.childStatID == curStatID)
+                foreach (var curStatInfo in childStatsCont._childStatInfos)
                 {
-                    float maxAddedValue = curBudget;
-                    if (maxAddedValue > curStatID.MaxValue)
-                        maxAddedValue = curStatID.MaxValue;
+                    if (curStatInfo.childStatID == curStatID)
+                    {
+                        float randomValue = Mathf.Min(curBudget, UnityEngine.Random.Range(1, _disparity));
+                        float remainingValue = curStatID.MaxValue - curStatInfo.currentValue;
+                        float selectedValue = Mathf.Min(randomValue, remainingValue);
 
-                    float selectedValue = UnityEngine.Random.Range(curStatID.MinValue, maxAddedValue);
-                    curBudget -= selectedValue;
-                    curStatInfo.currentValue = selectedValue;
+                        curBudget -= selectedValue;
+                        curStatInfo.currentValue += selectedValue;
+
+                        if (curBudget <= 0)
+                            return;
+                    }
                 }
             }
         }

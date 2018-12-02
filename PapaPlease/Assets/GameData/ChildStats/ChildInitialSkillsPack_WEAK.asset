@@ -11,5 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a976a52151eed458f49ce8108312df, type: 3}
   m_Name: ChildInitialSkillsPack_WEAK
   m_EditorClassIdentifier: 
-  _skillsContainer: {fileID: 11400000, guid: 325898cad7d46bb448f71a10de5ab027, type: 2}
-  _budget: 25
+  _skillsContainer: {fileID: 11400000, guid: 621f30864d888174287a3f5288795d19, type: 2}
+  _budget: 5
+  _disparity: 2

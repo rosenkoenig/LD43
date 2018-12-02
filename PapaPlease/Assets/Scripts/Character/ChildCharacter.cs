@@ -50,6 +50,11 @@ public class ChildCharacter : Character {
     bool isFrozen = false;
     bool isSlaped = false;
 
+    private void Awake()
+    {
+        statsContainer.Init();
+    }
+
     // Use this for initialization
     void Start () {
         SetState(ChildAIState.WAITING);

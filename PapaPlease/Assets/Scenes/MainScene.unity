@@ -332,6 +332,8 @@ GameObject:
   - component: {fileID: 454426456}
   - component: {fileID: 454426455}
   - component: {fileID: 454426454}
+  - component: {fileID: 454426458}
+  - component: {fileID: 454426457}
   m_Layer: 0
   m_Name: GAME_MASTER
   m_TagString: Untagged
@@ -350,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30d634281c5f7b147aa1e8384935ed27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gm: {fileID: 0}
+  gm: {fileID: 454426455}
   childPrefab: {fileID: 114511833642560058, guid: 27a308ce4c5f83c46b58d55d3aaaa591,
     type: 2}
   possibleNamesMale:
@@ -378,6 +380,7 @@ MonoBehaviour:
   hm: {fileID: 428224077}
   uIMaster: {fileID: 2085323787}
   player: {fileID: 846950510}
+  gf: {fileID: 454426458}
 --- !u!4 &454426456
 Transform:
   m_ObjectHideFlags: 0
@@ -391,6 +394,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &454426457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 454426453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c315dc6843bd164195ff4495a4d8abe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayDuration: 50
+  gf: {fileID: 454426458}
+--- !u!114 &454426458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 454426453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4e55c9782dc414a8d895bfdff72b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 454426455}
+  dm: {fileID: 454426457}
+  _gameState: 2
+  morningTransitionDuration: 3
+  nightTransitionDuration: 3
 --- !u!4 &482525163 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4412618260165610, guid: f6e8bf94c6e075249af41ec5f8ec1aeb,
