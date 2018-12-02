@@ -55,6 +55,20 @@ public class ChildCharacter : Character {
         statsContainer.Init();
     }
 
+    [SerializeField]
+    Vector2 timeBetweenAnger = new Vector2(1f, 2f);
+
+    [SerializeField]
+    float timeBetweenAngerIncPerObeissance = 1f;
+
+    float nextAngerTime = 0f;
+    float lastAngerTime = 0f;
+
+    bool isDoingAnger = false;
+
+    [SerializeField]
+    ChildStatID obeissanceStatID = null;
+
     // Use this for initialization
     void Start () {
         SetState(ChildAIState.WAITING);
@@ -112,7 +126,7 @@ public class ChildCharacter : Character {
     }
 
 
-
+    #region Slap
     public void IsSlapped ()
     {
         Freeze(true);
@@ -120,11 +134,14 @@ public class ChildCharacter : Character {
         StartCoroutine(waitAndApplySlapHit());
         LaunchSlapAnim();
 
+        StopPotentialAnger();
 
-        if(state == ChildAIState.IN_ACTIVITY)
+        if (state == ChildAIState.IN_ACTIVITY)
         {
             SetState(ChildAIState.WAITING);
         }
+        
+
     }
 
     IEnumerator waitAndApplySlapHit ()
@@ -166,6 +183,7 @@ public class ChildCharacter : Character {
 
         return finalPosition;
     }
+    #endregion
 
     #region PathFinding
 
@@ -308,6 +326,7 @@ public class ChildCharacter : Character {
     /// </summary>
     void StartMovingToActivity ()
     {
+        lastAngerTime = Time.time;
         MoveTo(currentInterestPoint.pivotPoint);
     }
 
@@ -316,12 +335,50 @@ public class ChildCharacter : Character {
         //Debug.Log("remaining distance = " + navAgent.remainingDistance);
         // MoveAlongPath();
 
-        if (navAgent.remainingDistance <= 1f)
+        CheckAnger();
+
+        if (!isDoingAnger && !isFrozen && navAgent.remainingDistance <= 1f)
         {
             //has reached IP
             HasReachedIP();
         }
 
+    }
+
+    void SetNextAngerTime ()
+    {
+        float rand = Random.Range(0f, 1f);
+
+        //TODO : get la state obeissance
+        nextAngerTime = Mathf.Lerp(timeBetweenAnger.x, timeBetweenAnger.y, rand);
+    }
+
+    void CheckAnger()
+    {
+        if(Time.time - lastAngerTime < nextAngerTime && !isFrozen)
+        {
+            StartAnger();
+        }
+    }
+
+    void StartAnger ()
+    {
+        isDoingAnger = true;
+
+        Freeze(true);
+        animator.Play("Anger");
+    }
+
+    void UpdateAngerBehaviour ()
+    {
+
+    }
+
+    void StopPotentialAnger ()
+    {
+        lastAngerTime = Time.time;
+        if(GameMaster.Instance.uIMaster.childInteractionMenuIsDisplayed == false)
+            Freeze(false);
     }
 
     void HasReachedIP()

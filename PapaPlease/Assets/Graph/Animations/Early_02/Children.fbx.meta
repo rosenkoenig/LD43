@@ -46,6 +46,13 @@ ModelImporter:
     100080: mixamorig:Spine
     100082: mixamorig:Spine1
     100084: mixamorig:Spine2
+    100086: Children_BS_fat
+    100088: Children_BS_skinny
+    100090: F_Hair_01
+    100092: F_Hair_02
+    100094: M_Hair_01
+    100096: M_Hair_02
+    100098: M_Hair_03
     400000: //RootNode
     400002: Children
     400004: mixamorig:Head
@@ -89,12 +96,39 @@ ModelImporter:
     400080: mixamorig:Spine
     400082: mixamorig:Spine1
     400084: mixamorig:Spine2
+    400086: Children_BS_fat
+    400088: Children_BS_skinny
+    400090: F_Hair_01
+    400092: F_Hair_02
+    400094: M_Hair_01
+    400096: M_Hair_02
+    400098: M_Hair_03
     2100000: lambert3
     2100002: lambert1
+    2100004: Hairs
+    2100006: Skin
+    2100008: Sweater
+    2100010: Pant
+    2100012: Shoes
     4300000: Children
+    4300002: F_Hair_01
+    4300004: F_Hair_02
+    4300006: M_Hair_03
+    4300008: M_Hair_02
+    4300010: M_Hair_01
+    4300012: Children_BS_skinny
+    4300014: Children_BS_fat
     7400000: mixamo.com
+    7400002: Take 001
     9500000: //RootNode
     13700000: Children
+    13700002: Children_BS_fat
+    13700004: Children_BS_skinny
+    13700006: F_Hair_01
+    13700008: F_Hair_02
+    13700010: M_Hair_01
+    13700012: M_Hair_02
+    13700014: M_Hair_03
   externalObjects: {}
   materials:
     importMaterials: 1
