@@ -1636,7 +1636,7 @@ MonoBehaviour:
   inactivityDurationRange: {x: 3, y: 5}
   waitingDistance: 2
   IpTypeFun: {fileID: 11400000, guid: 88b7a2a5fee7ce241b5954fc4ede72f0, type: 2}
-  slapFallDownDistance: 1
+  slapFallDownDistance: 0.3
   delayForHSlapHit: 0.1
   slapFallDownSpeed: 15
   slapKODuration: 2.8

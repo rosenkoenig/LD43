@@ -133,7 +133,8 @@ public class ChildCharacter : Character {
     {
         Freeze(true);
         isSlaped = true;
-        StartCoroutine(waitAndApplySlapHit());
+        if (waitAndApplySlapHitCoroutine != null) StopCoroutine(waitAndApplySlapHitCoroutine);
+        waitAndApplySlapHitCoroutine = StartCoroutine(waitAndApplySlapHit());
         LaunchSlapAnim();
 
         StopPotentialAnger();
@@ -146,6 +147,7 @@ public class ChildCharacter : Character {
 
     }
 
+    Coroutine waitAndApplySlapHitCoroutine = null;
     IEnumerator waitAndApplySlapHit ()
     {
         yield return new WaitForSeconds(delayForHSlapHit);
