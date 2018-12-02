@@ -118,13 +118,21 @@ public class PlayerBehaviour : Character {
         return child;
     }
 
+    bool hasStartedSlap = false;
+
     public void BeginSlap ()
     {
+        if (GameMaster.Instance.uIMaster.childInteractionMenuIsDisplayed) return;
+
+        hasStartedSlap = true;
         arm.Play("Prepare");
     }
 
     public void LaunchSlap ()
     {
+        if (!hasStartedSlap) return;
+
+        hasStartedSlap = false;
         arm.Play("SlapIt");
         ChildCharacter child = GetHoveredChildCharacter();
         if(child)

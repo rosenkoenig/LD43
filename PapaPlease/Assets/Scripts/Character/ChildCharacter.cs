@@ -11,6 +11,7 @@ public class ChildCharacter : Character {
     [SerializeField]
     NavMeshAgent navAgent;
 
+    public ChildStatsContainer statsContainer;
 
     InterestPoint currentInterestPoint;
     InterestPoint lastInterestPoint;
@@ -55,6 +56,9 @@ public class ChildCharacter : Character {
 	// Update is called once per frame
     void Update ()
     {
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+
+        extraRotation();
         UpdateStates();
     }
 
@@ -147,8 +151,7 @@ public class ChildCharacter : Character {
     void MoveTo (Vector3 destination)
     {
         navAgent.SetDestination(destination);
-       /* _targetPoint = destination;
-        CalculateNavMesh();*/
+        SetIsWalking(true);
     }
     void MoveTo (Transform transform)
     {
@@ -204,7 +207,7 @@ public class ChildCharacter : Character {
         NavMesh.SamplePosition(waitingDestination, out hit, waitingDistance, 1);
         Vector3 finalPosition = hit.position;
 
-        navAgent.SetDestination(finalPosition);
+        MoveTo(finalPosition);
     }
 
     void StartRoaming ()
@@ -225,6 +228,8 @@ public class ChildCharacter : Character {
 
     void UpdateStates ()
     {
+        CheckIsWalking();
+
         switch(state)
         {
             case ChildAIState.WAITING:
@@ -240,6 +245,18 @@ public class ChildCharacter : Character {
                 UpdateInActivity();
                 break;
         }
+    }
+
+    Vector3 lastPosition;
+    bool isWalking = false;
+    void CheckIsWalking ()
+    {
+        
+        isWalking = Vector3.Distance(lastPosition, transform.position) > 0.005f;
+
+        lastPosition = transform.position;
+
+        SetIsWalking(isWalking);
     }
 
     void UpdateWaiting ()
@@ -296,7 +313,7 @@ public class ChildCharacter : Character {
     IEnumerator LerpCoroutine()
     {
         float factor = 0f;
-        float lerpSpeed = 3f;
+        float lerpSpeed = 1f;
         Vector3 startPosition;
         Quaternion startRot;
 
@@ -332,6 +349,27 @@ public class ChildCharacter : Character {
         currentInterestPoint = null;
 
         SetState(ChildAIState.WAITING);
+    }
+    #endregion
+
+
+    #region Animation
+    [SerializeField]
+    Animator animator;
+
+    void SetIsWalking (bool state)
+    {
+        Debug.Log("is walking : " + state);
+        animator.SetBool("IsWalking", state);
+    }
+
+    public float extraRotationSpeed = 8f;
+    void extraRotation()
+    {
+        if (!isWalking) return;
+        Vector3 lookrotation = navAgent.steeringTarget - transform.position;
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookrotation), extraRotationSpeed * Time.deltaTime);
+
     }
     #endregion
 }
