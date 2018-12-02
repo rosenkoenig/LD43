@@ -11,21 +11,24 @@ public class IPType : ScriptableObject
     //[SerializeField] int _multiplier = 1;
     //[SerializeField] bool _isMalusOrBonus;
     //[SerializeField] bool _isRefill;
-    [SerializeField] bool _isModifierOvertime_interestedPoint;
-    [SerializeField] bool _isModifierOvertime_startActivity;
-    [SerializeField] bool _isModifierOvertime_endActivity;
-
+    [Header("INTEREST POINT")]
+    [SerializeField] bool _isOvertime_interestedPoint;
     [SerializeField] List<StatModifier> _interestPointModifiers;
+    [Header("START ACTIVITTY")]
+    [SerializeField] bool _isOvertime_startActivity;
     [SerializeField] List<StatModifier> _startActivityModifiers;
+    [Header("END ACTIVITTY")]
+    [SerializeField] bool _isOvertime_endActivity;
     [SerializeField] List<StatModifier> _endActivityModifiers;
+
 
     public string GetIPName { get { return _ipName; } }
 
     public enum StatModificationType { INTEREST_POINT, START_ACTIVITY, END_ACTIVITY }
 
-    public bool IsModifierOvertime_interestedPoint { get { return _isModifierOvertime_interestedPoint; } }
-    public bool IsModifierOvertime_startActivity { get { return _isModifierOvertime_startActivity; } }
-    public bool IsModifierOvertime_endActivity { get { return _isModifierOvertime_endActivity; } }
+    public bool IsModifierOvertime_interestedPoint { get { return _isOvertime_interestedPoint; } }
+    public bool IsModifierOvertime_startActivity { get { return _isOvertime_startActivity; } }
+    public bool IsModifierOvertime_endActivity { get { return _isOvertime_endActivity; } }
 
     //public int Multiplier { get { return _multiplier; } }
     //public bool IsMalusOrBonus { get { return _isMalusOrBonus; } }
@@ -58,35 +61,4 @@ public class IPType : ScriptableObject
             }
         }
     }
-
-    [System.Serializable]
-    public class StatModifier
-    {
-        public ChildStatID _childStatID;
-
-        public float _factor = 1;
-        //public bool _isPercentage;
-        public bool _refill;
-
-        public float ModifyStat(float statValue)
-        {
-            if (_refill)
-                return _childStatID.MaxValue;
-            float modifiedValue = 0;
-            //if (_isPercentage)
-            //modifiedValue = (_childStatID.maxValue - _childStatID.minValue) * _factor / 100f;
-            //else
-            modifiedValue = _factor;
-
-            statValue += modifiedValue;
-
-            if (statValue > _childStatID.MaxValue)
-                return _childStatID.MaxValue;
-            else if (statValue < _childStatID.MinValue)
-                return _childStatID.MinValue;
-
-            return statValue;
-        }
-    }
-
 }
