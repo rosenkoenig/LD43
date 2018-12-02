@@ -56,6 +56,7 @@ public class ChildCharacter : Character {
 	// Update is called once per frame
     void Update ()
     {
+        extraRotation();
         UpdateStates();
     }
 
@@ -245,10 +246,10 @@ public class ChildCharacter : Character {
     }
 
     Vector3 lastPosition;
+    bool isWalking = false;
     void CheckIsWalking ()
     {
-        bool isWalking = false;
-
+        
         isWalking = Vector3.Distance(lastPosition, transform.position) > 0.01f;
 
         lastPosition = transform.position;
@@ -358,6 +359,15 @@ public class ChildCharacter : Character {
     {
         Debug.Log("is walking : " + state);
         animator.SetBool("IsWalking", state);
+    }
+
+    public float extraRotationSpeed = 8f;
+    void extraRotation()
+    {
+        if (!isWalking) return;
+        Vector3 lookrotation = navAgent.steeringTarget - transform.position;
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookrotation), extraRotationSpeed * Time.deltaTime);
+
     }
     #endregion
 }
