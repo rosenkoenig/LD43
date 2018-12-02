@@ -523,7 +523,7 @@ ModelImporter:
     - serializedVersion: 16
       name: SlapItMF
       takeName: Take 001
-      firstFrame: 30
+      firstFrame: 35
       lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0

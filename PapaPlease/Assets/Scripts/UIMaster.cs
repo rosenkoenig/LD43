@@ -7,12 +7,15 @@ public class UIMaster : MonoBehaviour
 {
     [SerializeField] ChildInteractionMenu _childInteractionMenu;
     [SerializeField] GameObject _centerCursor;
+    [SerializeField]
+    UIPlayerInteraction playerInteractionPanel;
 
     public Action HideMenuInteractChildEvent;
 
     private void Start()
     {
         ShowOrHideCursor(false);
+        DisplayPlayerInteraction(false, "");
     }
     
     public bool DisplayMenuInteractChild(ChildCharacter child, Action hideMenuEvent)
@@ -56,6 +59,20 @@ public class UIMaster : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+        }
+    }
+
+    public void DisplayPlayerInteraction (bool state, string actionName)
+    {
+        if (playerInteractionPanel.isActiveAndEnabled == state) return;
+        Debug.Log("popup " + state);
+        if(state)
+        {
+            playerInteractionPanel.Init(new object[1] { actionName });
+        }
+        else
+        {
+            playerInteractionPanel.ClosePopup();
         }
     }
 }
