@@ -17,7 +17,7 @@ public class ChildInteractionMenu : MonoBehaviour
     //[SerializeField] RectTransform _childStatGaugesParent;
 
     List<ChildOrderButton> _childOrderButtons;
-    List<IPTypeInfo> allIPTypeInfos;
+    List<IPTypeInfo> allIPTypeInfos { get { return GameMaster.Instance.hm.GetAllIPTypeInfos(); } }
 
     //List<ChildStatGauge> _childStatsGaugesList;
 
@@ -28,7 +28,6 @@ public class ChildInteractionMenu : MonoBehaviour
         //_childStatsGaugesList = new List<ChildStatGauge>();
 
         _childOrderButtons = new List<ChildOrderButton>();
-        allIPTypeInfos = GameMaster.Instance.hm.GetAllIPTypeInfos();
         foreach (var item in allIPTypeInfos)
         {
             ChildOrderButton childOrderButton = Instantiate(_childOrderButtonRef, childOrderButtonsParent);
