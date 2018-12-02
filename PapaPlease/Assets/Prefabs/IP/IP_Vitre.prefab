@@ -203,9 +203,9 @@ MonoBehaviour:
   onlyUsableByChild: 0
   globalStatsModificator_OnCompleted: {fileID: 11400000, guid: 4c251df5befac454fa3fee36ae8af78e,
     type: 2}
-  globalStatsModificator_OverTimeEmpty: {fileID: 11400000, guid: e2c27de81c3e41c4eaa49037044b0e5b,
+  globalStatsModificator_OverTimeCOMPLETED: {fileID: 0}
+  globalStatsModificator_OverTimeWAITING: {fileID: 11400000, guid: e2c27de81c3e41c4eaa49037044b0e5b,
     type: 2}
-  globalStatsModificator_OverTimeFull: {fileID: 0}
 --- !u!114 &114379295816765414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -218,6 +218,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHolder: 1
-  doOnce: 0
+  doOnce: 1
   animStateName: Idle
   duration: 10

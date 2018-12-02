@@ -10,14 +10,17 @@ public class StatModifier
     public float _factor = 1;
     public bool _refill;
 
-    public float ModifyStat(float statValue)
+    public float ModifyStat(float statValue, bool useDeltaTime = false)
     {
         if (_refill)
             return _childStatID.MaxValue;
         float modifiedValue = 0;
         modifiedValue = _factor;
 
-        statValue += modifiedValue;
+        if(useDeltaTime)
+            statValue += modifiedValue * Time.deltaTime;
+        else
+            statValue += modifiedValue;
 
         if (statValue > _childStatID.MaxValue)
             return _childStatID.MaxValue;

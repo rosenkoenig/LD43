@@ -14,10 +14,14 @@ public class ChildStatGauge : MonoBehaviour {
     [SerializeField] RectTransform _gaugeNegative;
     [SerializeField] RectTransform _gaugeParent;
 
-    public void InitGauge(ChildStatsContainer.ChildStatInfo childStat)
+    ChildStatID _childStatID;
+
+    public ChildStatID GetChildStatID { get { return _childStatID; } }
+
+    public void InitGauge(ChildStatID childStatID)
     {
-        _statNameText.text = childStat.childStatID.StatName;
-        RefreshGauge(childStat);
+        _childStatID = childStatID;
+        _statNameText.text = childStatID.StatName;
     }
 
     public void RefreshGauge(ChildStatsContainer.ChildStatInfo childStat)

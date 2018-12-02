@@ -43,15 +43,15 @@ public class InterestPointEditor : Editor
             _p_statsModificator_OnCompleted_ReordList = null;
         }
 
-        if (targetInterestPoint.globalStatsModificator_OverTimeEmpty != null)
+        if (targetInterestPoint.globalStatsModificator_OverTimeCOMPLETED != null)
         {
-            serializedObj_globalStatsModificator_OverTimeEmpty = new SerializedObject(targetInterestPoint.globalStatsModificator_OverTimeEmpty);
+            serializedObj_globalStatsModificator_OverTimeEmpty = new SerializedObject(targetInterestPoint.globalStatsModificator_OverTimeCOMPLETED);
             _p_statsModificator_OverTimeEmpty_ReordList = InitReordList(_p_statsModificator_OverTimeEmpty_ReordList, serializedObj_globalStatsModificator_OverTimeEmpty, "OverTime EMPTY");
         }
 
-        if (targetInterestPoint.globalStatsModificator_OverTimeFull != null)
+        if (targetInterestPoint.globalStatsModificator_OverTimeWAITING != null)
         {
-            serializedObj_globalStatsModificator_OverTimeFull = new SerializedObject(targetInterestPoint.globalStatsModificator_OverTimeFull);
+            serializedObj_globalStatsModificator_OverTimeFull = new SerializedObject(targetInterestPoint.globalStatsModificator_OverTimeWAITING);
             _p_statsModificator_OverTimeFull_ReordList = InitReordList(_p_statsModificator_OverTimeFull_ReordList, serializedObj_globalStatsModificator_OverTimeFull, "OverTime FULL");
         }
     }
@@ -109,11 +109,11 @@ public class InterestPointEditor : Editor
             if (targetInterestPoint.globalStatsModificator_OnCompleted != null)
                 Undo.RecordObject(targetInterestPoint.globalStatsModificator_OnCompleted, "Changed stats modificator");
 
-            if (targetInterestPoint.globalStatsModificator_OverTimeEmpty != null)
-                Undo.RecordObject(targetInterestPoint.globalStatsModificator_OverTimeEmpty, "Changed stats modificator");
+            if (targetInterestPoint.globalStatsModificator_OverTimeCOMPLETED != null)
+                Undo.RecordObject(targetInterestPoint.globalStatsModificator_OverTimeCOMPLETED, "Changed stats modificator");
 
-            if (targetInterestPoint.globalStatsModificator_OverTimeFull != null)
-                Undo.RecordObject(targetInterestPoint.globalStatsModificator_OverTimeFull, "Changed stats modificator");
+            if (targetInterestPoint.globalStatsModificator_OverTimeWAITING != null)
+                Undo.RecordObject(targetInterestPoint.globalStatsModificator_OverTimeWAITING, "Changed stats modificator");
 
             if (serializedObj_globalStatsModificator_OnCompleted != null)
                 serializedObj_globalStatsModificator_OnCompleted.ApplyModifiedProperties();

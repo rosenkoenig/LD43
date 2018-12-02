@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: ChildStatID_Gauge_Confort
   m_EditorClassIdentifier: 
   _statName: Comfort
-  _minValue: 0
-  _maxValue: 100
+  _minValue: -50
+  _maxValue: 50
   _isDisplayedAsGauge: 1

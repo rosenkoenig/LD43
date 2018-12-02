@@ -10,16 +10,23 @@ public class ChildInteractionMenu : MonoBehaviour
     [SerializeField] RectTransform childOrderButtonsParent;
     [SerializeField] Text _childNameText;
 
+    
+    [SerializeField] ChildStatIDsContainer _childStatIdsContainer;
     [SerializeField] ChildStatGauge _childStatGaugeRef;
     [SerializeField] ChildStatGauge _childStatSkillRef;
+    [SerializeField] RectTransform _childStatGaugesParent;
 
     List<ChildOrderButton> _childOrderButtons;
     List<IPTypeInfo> allIPTypeInfos;
+
+    List<ChildStatGauge> _childStatsGaugesList;
 
     ChildCharacter curChild;
 
     private void Awake()
     {
+        _childStatsGaugesList = new List<ChildStatGauge>();
+
         _childOrderButtons = new List<ChildOrderButton>();
         allIPTypeInfos = GameMaster.Instance.hm.GetAllIPTypeInfos();
         foreach (var item in allIPTypeInfos)
@@ -28,15 +35,40 @@ public class ChildInteractionMenu : MonoBehaviour
             childOrderButton.InitButton(item, MakeGiveOrder);
             _childOrderButtons.Add(childOrderButton);
         }
+
+        foreach (var item in _childStatIdsContainer.GetChildStatIDs)
+        {
+            ChildStatGauge newStatGauge = null;
+            if (item.IsDisplayedAsGauge)
+                newStatGauge = Instantiate(_childStatGaugeRef, _childStatGaugesParent);
+            else
+                newStatGauge = Instantiate(_childStatSkillRef, _childStatGaugesParent);
+
+            newStatGauge.InitGauge(item);
+            _childStatsGaugesList.Add(newStatGauge);
+        }
     }
 
     public void SetupMenu(ChildCharacter child)
     {
         curChild = child;
         _childNameText.text = child.childName;
+        RefreshGauges(curChild);
+    }
+
+    private void RefreshGauges(ChildCharacter child)
+    {
         for (int i = 0; i < allIPTypeInfos.Count; i++)
         {
             _childOrderButtons[i]._button.interactable = allIPTypeInfos[i].isAvailable;
+        }
+        foreach (var item in _childStatsGaugesList)
+        {
+            foreach (var curStatInfo in child.statsContainer._childStatInfos)
+            {
+                if (curStatInfo.childStatID == item.GetChildStatID)
+                    item.RefreshGauge(curStatInfo);
+            }
         }
     }
 
@@ -44,5 +76,14 @@ public class ChildInteractionMenu : MonoBehaviour
     {
         Debug.Log("Give Order " + ipTypeInfo.IPType.name + " to " + curChild.childName);
         curChild.GiveOrder(ipTypeInfo.IPType);
+    }
+
+    private void Update()
+    {
+        if (curChild != null)
+        { 
+            RefreshGauges(curChild);
+            Debug.Log("Refresh gauges");
+        }
     }
 }

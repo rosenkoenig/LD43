@@ -7,7 +7,7 @@ public class ChildStatsModificator {
 
     [SerializeField] List<StatModifier> statsModifiers;
 
-    public void TryModifyStats(ChildStatsContainer childStatsContainer)
+    public void TryModifyStats(ChildStatsContainer childStatsContainer, bool useDeltaTime = false)
     {
         foreach (var curChildStatInfo in childStatsContainer._childStatInfos)
         {
@@ -15,7 +15,7 @@ public class ChildStatsModificator {
             {
                 if (curChildStatInfo.childStatID == item._childStatID)
                 {
-                    curChildStatInfo.currentValue = item.ModifyStat(curChildStatInfo.currentValue);
+                    curChildStatInfo.currentValue = item.ModifyStat(curChildStatInfo.currentValue, useDeltaTime);
                 }
             }
         }

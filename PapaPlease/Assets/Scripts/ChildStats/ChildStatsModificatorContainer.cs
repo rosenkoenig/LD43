@@ -7,9 +7,9 @@ public class ChildStatsModificatorContainer : ScriptableObject {
 
     public ChildStatsModificator _childStatsModificator;
 
-    public void MakeTryModifyStats(ChildStatsContainer childStatsContainer)
+    public void MakeTryModifyStats(ChildStatsContainer childStatsContainer, bool useDeltaTime = false)
     {
-        _childStatsModificator.TryModifyStats(childStatsContainer);
+        _childStatsModificator.TryModifyStats(childStatsContainer, useDeltaTime);
     }
 
     //List<StatModifier> statsModifiers;
