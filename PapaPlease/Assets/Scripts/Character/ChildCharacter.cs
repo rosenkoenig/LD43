@@ -484,7 +484,11 @@ public class ChildCharacter : Character {
 
     void UpdateInActivity()
     {
+        if (isLerping) return;
         currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.DURING_ACTIVITY, statsContainer);
+                
+        transform.position = currentInterestPoint.pivotPoint.position;
+        transform.rotation = currentInterestPoint.pivotPoint.rotation;
     }
 
     public override void OnActivityEnds()
