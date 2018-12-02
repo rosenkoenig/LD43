@@ -3474,7 +3474,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-13</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4355,6 +4355,148 @@
 												</Reference>
 											</ReferenceList>
 										</BlendContainer>
+										<RandomSequenceContainer Name="AI_Zip" ID="{869CDAA5-62EF-4A97-84BC-87752DF60525}" ShortID="1021411360">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AEF27445-3DA5-40C1-B79F-E04BC40F1017}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="202"/>
+																	<Property Name="Min" Type="Real64" Value="-126"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-17</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{670C2E7D-7F67-4010-A1D1-B4D441ADB1C5}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Bathroom_Reverb" ID="{4300066D-F683-4A47-85BF-1D3F86ED0C8B}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Zipper, Short 4 SND6132" ID="{A516969E-BE3D-46F4-9A48-96935C6347CE}" ShortID="488842665">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-18</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Zipper, Short 4 SND6132" ID="{D767D504-1BE6-4B0E-9A4B-187AE7499D06}" ShortID="326960965">
+															<Language>SFX</Language>
+															<AudioFile>Zipper, Short 4 SND6132.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Zipper, Short 4 SND6132" ID="{D767D504-1BE6-4B0E-9A4B-187AE7499D06}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Zipper, Short 2 SND6134" ID="{5B33782C-5398-4082-A73C-A8FC02082C45}" ShortID="1031223188">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-23</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Zipper, Short 2 SND6134" ID="{D2A40705-68F3-441C-9E7D-EAA3556F54DD}" ShortID="618809367">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.86315789473684E-02"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.181052631578947"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Zipper, Short 2 SND6134.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Zipper, Short 2 SND6134" ID="{D2A40705-68F3-441C-9E7D-EAA3556F54DD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Zipper, Short 5 SND6131" ID="{1E5549DC-32F2-4CDC-8F2C-9FA6BCF07226}" ShortID="758554331">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-18</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Zipper, Short 5 SND6131" ID="{539B79EF-A8F1-4163-A490-AA9F1D04D174}" ShortID="192555610">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="1.31578947368421E-02"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="9.31578947368421E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.220526315789474"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.537894736842105"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Zipper, Short 5 SND6131.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Zipper, Short 5 SND6131" ID="{539B79EF-A8F1-4163-A490-AA9F1D04D174}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
@@ -4369,6 +4511,9 @@
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="AI_Shower" ID="{D0BAFB95-BB23-47CF-9EF5-DF8B6097461B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="AI_Zip" ID="{869CDAA5-62EF-4A97-84BC-87752DF60525}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="AI_Cooking" ID="{EDA286E4-4DD9-44AB-992E-BF31F0D7B2D7}"/>
@@ -4997,7 +5142,7 @@
 																<Value>22</Value>
 															</ValueList>
 														</Property>
-														<Property Name="RadiusMax" Type="Real64" Value="4"/>
+														<Property Name="RadiusMax" Type="Real64" Value="5"/>
 													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
@@ -5014,14 +5159,14 @@
 																			<SegmentShape>Exp3</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>2.0201</XPos>
-																			<YPos>-0.40578</YPos>
+																			<XPos>1.84673</XPos>
+																			<YPos>-0.21898</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>4</XPos>
-																			<YPos>-22.53491</YPos>
+																			<XPos>5</XPos>
+																			<YPos>-28.55553</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -5045,13 +5190,13 @@
 																			<SegmentShape>Exp3</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>2.14572</XPos>
+																			<XPos>2.68215</XPos>
 																			<YPos>-1.36299</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>4</XPos>
+																			<XPos>5</XPos>
 																			<YPos>-22.53491</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -5072,13 +5217,13 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>2.434128</XPos>
+																			<XPos>3.04266</XPos>
 																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Exp1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>4</XPos>
+																			<XPos>5</XPos>
 																			<YPos>43</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -5099,7 +5244,7 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>4</XPos>
+																			<XPos>5</XPos>
 																			<YPos>18</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -5108,7 +5253,25 @@
 															</CurveUsageInfo>
 														</HighPassFilterUsage>
 														<SpreadUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="Spread" ID="{330D5FA3-CDED-46A1-9522-92D1A3F414A8}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="1"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>100</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>5</XPos>
+																			<YPos>0</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
 														</SpreadUsage>
 														<FocusUsage>
 															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>

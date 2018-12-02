@@ -54,14 +54,6 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_AI_FlushToilet" ID="{8B9BD280-F27D-47D7-A879-39B3A290D7F3}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
-							<Position X="0" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="AI_Footsteps" ID="{75DB50FE-38F8-4C62-B040-B1C83FCC8D7B}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
-							<Position X="0" Y="2"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Stop_AI_Shower" ID="{815781DD-B556-4982-9DEE-F8A118764933}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -101,10 +93,10 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Nothing" ID="{5A332AFB-8F7A-40E3-B94D-7963C73BC20A}"/>
+						<CurrentSwitchRef Name="Concrete" ID="{7E3AD1FA-5F80-4FDE-B827-EFDF3752F745}"/>
 						<CurrentSwitchRef Name="AI_Shower_Lp" ID="{D715151B-E5DD-4A75-9B87-24D44E4D8A3B}"/>
 						<CurrentSwitchRef Name="AI_Idle" ID="{904EBF51-C68E-4F55-862E-62D9EDDA7E19}"/>
-						<CurrentSwitchRef Name="AI_Idle" ID="{FE876CA7-2F09-497D-AA4A-50F353EF223D}"/>
+						<CurrentSwitchRef Name="AI_Cooking" ID="{EAD67812-32F7-45D0-8C9A-24199D85EF36}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
