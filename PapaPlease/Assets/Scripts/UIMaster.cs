@@ -2,15 +2,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIMaster : MonoBehaviour
 {
     [SerializeField] ChildInteractionMenu _childInteractionMenu;
-    //[SerializeField] ChildStatsMenu
+    [SerializeField] ChildStatsMenu _childStatsMenu;
+
     [SerializeField] GameObject _centerCursor;
     [SerializeField]
     UIPlayerInteraction playerInteractionPanel;
 
+
+    ChildCharacter curChild;
+    
     public Action HideMenuInteractChildEvent;
 
     public bool childInteractionMenuIsDisplayed {  get { return _childInteractionMenu.isActiveAndEnabled; } }
@@ -21,12 +26,19 @@ public class UIMaster : MonoBehaviour
         DisplayPlayerInteraction(false, "");
     }
     
+    public void HideChildStatsMenu()
+    {
+        if(childInteractionMenuIsDisplayed == false && _childStatsMenu.gameObject.activeSelf)
+            _childStatsMenu.gameObject.SetActive(false);
+    }
+
     public bool DisplayMenuInteractChild(ChildCharacter child, Action hideMenuEvent)
     {
         HideMenuInteractChildEvent = hideMenuEvent;
 
         if (_childInteractionMenu.gameObject.activeSelf == false)
-        { 
+        {
+            DisplayChildStatsMenu(child);
             _childInteractionMenu.gameObject.SetActive(true);
             _childInteractionMenu.SetupMenu(child);
             ShowOrHideCursor(true);
@@ -78,11 +90,18 @@ public class UIMaster : MonoBehaviour
         }
     }
 
-    internal void DisplayChildStatsMenu(ChildCharacter child)
+    public void DisplayChildStatsMenu(ChildCharacter child)
     {
-        if(childInteractionMenuIsDisplayed == false)
+        if (childInteractionMenuIsDisplayed == false)
         {
+            if (_childStatsMenu.gameObject.activeSelf == false)
+                _childStatsMenu.gameObject.SetActive(true);
 
+            if (child != curChild)
+            {
+                curChild = child;
+                _childStatsMenu.SetupMenu(child);
+            }
         }
     }
 }

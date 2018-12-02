@@ -17,7 +17,7 @@ public class PlayerBehaviour : Character {
 
     bool isInteractActive = true;
 
-    ChildCharacter hoveredChild;
+    ChildCharacter hoverChild;
 
     public void SetInteractActive()
     {
@@ -29,31 +29,32 @@ public class PlayerBehaviour : Character {
         if (isInteractActive == false)
             return;
 
-        RaycastHit rcHit = new RaycastHit();
-        if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _interactLayerMask))
-        {
-            InterestPoint ip = rcHit.collider.GetComponentInParent<InterestPoint>();
+        //RaycastHit rcHit = new RaycastHit();
+        //if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _interactLayerMask))
+        //{
+            //InterestPoint ip = rcHit.collider.GetComponentInParent<InterestPoint>();
 
-            ChildCharacter child = rcHit.collider.GetComponentInParent<ChildCharacter>();
+            //ChildCharacter child = rcHit.collider.GetComponentInParent<ChildCharacter>();
 
-            if (child)
+            if (hoverChild)
             {
-                child.Freeze(true);
-                GameMaster.Instance.uIMaster.DisplayMenuInteractChild(child, SetInteractActive);
+                hoverChild.Freeze(true);
+                GameMaster.Instance.uIMaster.DisplayMenuInteractChild(hoverChild, SetInteractActive);
             }
-            else if (ip)
+            else if (hoverIp)
             {
-                if(ip.Interact(this))
+                if(hoverIp.Interact(this))
                 {
                     OnInteractionBegin();
                 }
             }
-        }
+        //}
     }
 
     void Update ()
     {
         UpdateInteractionDisplay();
+        RefreshHoveredChild();
     }
 
     void RefreshHoveredChild()
@@ -67,16 +68,18 @@ public class PlayerBehaviour : Character {
 
             if (child)
             {
-                hoveredChild = child;
+                hoverChild = child;
             }
             else
-                hoveredChild = null;
+                hoverChild = null;
         }
         else
-            hoveredChild = null;
+            hoverChild = null;
 
-        if (hoveredChild != null)
-            GameMaster.Instance.uIMaster.DisplayChildStatsMenu(hoveredChild);
+        if (hoverChild != null)
+            GameMaster.Instance.uIMaster.DisplayChildStatsMenu(hoverChild);
+        else
+            GameMaster.Instance.uIMaster.HideChildStatsMenu();
     }
 
     InterestPoint hoverIp = null;
