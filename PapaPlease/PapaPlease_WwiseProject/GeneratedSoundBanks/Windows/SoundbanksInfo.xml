@@ -11,48 +11,24 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX">
-			<ObjectPath>Init</ObjectPath>
-			<ShortName>Init</ShortName>
-			<Path>Init.bnk</Path>
+		<SoundBank Id="247557814" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Foley</ObjectPath>
+			<ShortName>Foley</ShortName>
+			<Path>Foley.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2678230382" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Level1</ObjectPath>
-			<ShortName>Level1</ShortName>
-			<Path>Level1.bnk</Path>
+		<SoundBank Id="393239870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2561178547" Name="AI_Footsteps" ObjectPath="\Events\PapaPlease\AI\AI_Footsteps" MaxAttenuation="100.000000"/>
-				<Event Id="2085872209" Name="AI_Vox" ObjectPath="\Events\PapaPlease\AI\AI_Vox" MaxAttenuation="0.000000"/>
-				<Event Id="2775932802" Name="Character_Footsteps" ObjectPath="\Events\PapaPlease\Character\Character_Footsteps" MaxAttenuation="0.000000"/>
-				<Event Id="1056168201" Name="Play_AI_Cooking" ObjectPath="\Events\PapaPlease\AI\Play_AI_Cooking" MaxAttenuation="100.000000"/>
-				<Event Id="498135132" Name="Play_AI_FlushToilet" ObjectPath="\Events\PapaPlease\AI\Play_AI_FlushToilet" MaxAttenuation="100.000000"/>
-				<Event Id="4083355364" Name="Play_AI_Shower_Lp" ObjectPath="\Events\PapaPlease\AI\Play_AI_Shower_Lp" MaxAttenuation="100.000000"/>
-				<Event Id="150416599" Name="Play_AI_Shower_Off" ObjectPath="\Events\PapaPlease\AI\Play_AI_Shower_Off" MaxAttenuation="100.000000"/>
-				<Event Id="4133688099" Name="Play_AI_Shower_On" ObjectPath="\Events\PapaPlease\AI\Play_AI_Shower_On" MaxAttenuation="100.000000"/>
-				<Event Id="2257634154" Name="Play_Amb_Bathroom_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_Bathroom_Lp" MaxAttenuation="100.000000"/>
-				<Event Id="1402976205" Name="Play_Amb_KidsBedroom_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_KidsBedroom_Lp" MaxAttenuation="100.000000"/>
-				<Event Id="4028544478" Name="Play_Amb_Kitchen_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_Kitchen_Lp" MaxAttenuation="100.000000"/>
-				<Event Id="2639863138" Name="Play_Amb_LivingRoom_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_LivingRoom_Lp"/>
-				<Event Id="525979915" Name="Play_Amb_ParentsBedroom_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_ParentsBedroom_Lp" MaxAttenuation="100.000000"/>
-				<Event Id="1945404897" Name="Play_AmbOut_Bathroom_Neighborhood_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_AmbOut_Bathroom_Neighborhood_Lp" MaxAttenuation="100.000000"/>
-				<Event Id="1682472951" Name="Play_AmbOut_Wall_Neighborhood_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_AmbOut_Wall_Neighborhood_Lp" MaxAttenuation="100.000000"/>
 				<Event Id="2292458263" Name="Play_Door_Close" ObjectPath="\Events\PapaPlease\SFX\Play_Door_Close"/>
 				<Event Id="1660008929" Name="Play_Door_Open" ObjectPath="\Events\PapaPlease\SFX\Play_Door_Open"/>
 				<Event Id="55201595" Name="Play_Washer_Close" ObjectPath="\Events\PapaPlease\SFX\Play_Washer_Close"/>
 				<Event Id="3531545949" Name="Play_Washer_Open" ObjectPath="\Events\PapaPlease\SFX\Play_Washer_Open"/>
 				<Event Id="4244658871" Name="Play_Window_Close" ObjectPath="\Events\PapaPlease\SFX\Play_Window_Close"/>
 				<Event Id="4135004417" Name="Play_Window_Open" ObjectPath="\Events\PapaPlease\SFX\Play_Window_Open"/>
-				<Event Id="3704459082" Name="Stop_AI_Shower_Lp" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Shower_Lp" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="33895419" Language="SFX">
-					<ShortName>Amb_KidsBedroom_Lp.wav</ShortName>
-					<Path>SFX\Amb_KidsBedroom_Lp_8956FC97.wem</Path>
-				</File>
-				<File Id="48379832" Language="SFX">
-					<ShortName>AI_FS_BF_Scuffs_04.wav</ShortName>
-					<Path>SFX\AI_FS_BF_Scuffs_04_56D34C19.wem</Path>
-				</File>
 				<File Id="49175465" Language="SFX">
 					<ShortName>Doors\DoorClose_01.wav</ShortName>
 					<Path>SFX\Doors\DoorClose_01_56D34C19.wem</Path>
@@ -60,10 +36,6 @@
 				<File Id="49342786" Language="SFX">
 					<ShortName>Washer\WasherOpen_01.wav</ShortName>
 					<Path>SFX\Washer\WasherOpen_01_56D34C19.wem</Path>
-				</File>
-				<File Id="50923184" Language="SFX">
-					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
-					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_A443D86F.wem</Path>
 				</File>
 				<File Id="54061708" Language="SFX">
 					<ShortName>Washer\WasherClose_01.wav</ShortName>
@@ -73,13 +45,144 @@
 					<ShortName>Doors\DoorOpen_03.wav</ShortName>
 					<Path>SFX\Doors\DoorOpen_03_56D34C19.wem</Path>
 				</File>
-				<File Id="83272020" Language="SFX">
-					<ShortName>AI_Cooking\AI_Cooking_Slice_02.wav</ShortName>
-					<Path>SFX\AI_Cooking\AI_Cooking_Slice_02_9E6E0D29.wem</Path>
-				</File>
 				<File Id="118484460" Language="SFX">
 					<ShortName>Doors\DoorClose_02.wav</ShortName>
 					<Path>SFX\Doors\DoorClose_02_56D34C19.wem</Path>
+				</File>
+				<File Id="301767813" Language="SFX">
+					<ShortName>Windows\WindowOpen_01.wav</ShortName>
+					<Path>SFX\Windows\WindowOpen_01_56D34C19.wem</Path>
+				</File>
+				<File Id="399136298" Language="SFX">
+					<ShortName>Washer\WasherOpen_02.wav</ShortName>
+					<Path>SFX\Washer\WasherOpen_02_56D34C19.wem</Path>
+				</File>
+				<File Id="576719503" Language="SFX">
+					<ShortName>Doors\DoorOpen_01.wav</ShortName>
+					<Path>SFX\Doors\DoorOpen_01_56D34C19.wem</Path>
+				</File>
+				<File Id="637810547" Language="SFX">
+					<ShortName>Doors\DoorOpen_02.wav</ShortName>
+					<Path>SFX\Doors\DoorOpen_02_56D34C19.wem</Path>
+				</File>
+				<File Id="651720505" Language="SFX">
+					<ShortName>Washer\WasherOpen_03.wav</ShortName>
+					<Path>SFX\Washer\WasherOpen_03_56D34C19.wem</Path>
+				</File>
+				<File Id="678853948" Language="SFX">
+					<ShortName>Doors\DoorClose_03.wav</ShortName>
+					<Path>SFX\Doors\DoorClose_03_56D34C19.wem</Path>
+				</File>
+				<File Id="845164772" Language="SFX">
+					<ShortName>Washer\WasherClose_02.wav</ShortName>
+					<Path>SFX\Washer\WasherClose_02_56D34C19.wem</Path>
+				</File>
+				<File Id="944673082" Language="SFX">
+					<ShortName>Washer\WasherClose_03.wav</ShortName>
+					<Path>SFX\Washer\WasherClose_03_56D34C19.wem</Path>
+				</File>
+				<File Id="960467139" Language="SFX">
+					<ShortName>Windows\WindowClose_01.wav</ShortName>
+					<Path>SFX\Windows\WindowClose_01_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="436743010" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Character</ObjectPath>
+			<ShortName>Character</ShortName>
+			<Path>Character.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1404066300" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambiances</ObjectPath>
+			<ShortName>Ambiances</ShortName>
+			<Path>Ambiances.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2257634154" Name="Play_Amb_Bathroom_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_Bathroom_Lp" MaxAttenuation="3.000000"/>
+				<Event Id="1402976205" Name="Play_Amb_KidsBedroom_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_KidsBedroom_Lp" MaxAttenuation="4.000000"/>
+				<Event Id="4028544478" Name="Play_Amb_Kitchen_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_Kitchen_Lp" MaxAttenuation="5.000000"/>
+				<Event Id="2639863138" Name="Play_Amb_LivingRoom_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_LivingRoom_Lp"/>
+				<Event Id="525979915" Name="Play_Amb_ParentsBedroom_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_ParentsBedroom_Lp" MaxAttenuation="3.000000"/>
+				<Event Id="1945404897" Name="Play_AmbOut_Bathroom_Neighborhood_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_AmbOut_Bathroom_Neighborhood_Lp" MaxAttenuation="3.000000"/>
+				<Event Id="1682472951" Name="Play_AmbOut_Wall_Neighborhood_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_AmbOut_Wall_Neighborhood_Lp" MaxAttenuation="3.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="33895419" Language="SFX">
+					<ShortName>Amb_KidsBedroom_Lp.wav</ShortName>
+					<Path>SFX\Amb_KidsBedroom_Lp_8956FC97.wem</Path>
+				</File>
+				<File Id="168015010" Language="SFX">
+					<ShortName>Amb_Outside\AmbOut_Bathroom_Neighborhood.wav</ShortName>
+					<Path>SFX\Amb_Outside\AmbOut_Bathroom_Neighborhood_8956FC97.wem</Path>
+				</File>
+				<File Id="331690594" Language="SFX">
+					<ShortName>Amb_Kitchen_Lp.wav</ShortName>
+					<Path>SFX\Amb_Kitchen_Lp_8956FC97.wem</Path>
+				</File>
+				<File Id="420086465" Language="SFX">
+					<ShortName>Amb_Bathroom_Lp_01.wav</ShortName>
+					<Path>SFX\Amb_Bathroom_Lp_01_8956FC97.wem</Path>
+				</File>
+				<File Id="666006642" Language="SFX">
+					<ShortName>Amb_Outside\AmbOut_Wall_Neighborhood.wav</ShortName>
+					<Path>SFX\Amb_Outside\AmbOut_Wall_Neighborhood_8956FC97.wem</Path>
+				</File>
+				<File Id="843721958" Language="SFX">
+					<ShortName>Amb_Bathroom_Lp_02.wav</ShortName>
+					<Path>SFX\Amb_Bathroom_Lp_02_8956FC97.wem</Path>
+				</File>
+				<File Id="863881689" Language="SFX">
+					<ShortName>Amb_LivingRoom_Lp.wav</ShortName>
+					<Path>SFX\Amb_LivingRoom_Lp_8956FC97.wem</Path>
+				</File>
+				<File Id="864148798" Language="SFX">
+					<ShortName>Amb_ParentsBedroom.wav</ShortName>
+					<Path>SFX\Amb_ParentsBedroom_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1730564753" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Musics</ObjectPath>
+			<ShortName>Musics</ShortName>
+			<Path>Musics.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1886858547" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\AI</ObjectPath>
+			<ShortName>AI</ShortName>
+			<Path>AI.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2561178547" Name="AI_Footsteps" ObjectPath="\Events\PapaPlease\AI\AI_Footsteps" MaxAttenuation="100.000000"/>
+				<Event Id="1056168201" Name="Play_AI_Cooking" ObjectPath="\Events\PapaPlease\AI\Play_AI_Cooking" MaxAttenuation="100.000000"/>
+				<Event Id="498135132" Name="Play_AI_FlushToilet" ObjectPath="\Events\PapaPlease\AI\Play_AI_FlushToilet" MaxAttenuation="100.000000"/>
+				<Event Id="4083355364" Name="Play_AI_Shower_Lp" ObjectPath="\Events\PapaPlease\AI\Play_AI_Shower_Lp" MaxAttenuation="100.000000"/>
+				<Event Id="150416599" Name="Play_AI_Shower_Off" ObjectPath="\Events\PapaPlease\AI\Play_AI_Shower_Off" MaxAttenuation="100.000000"/>
+				<Event Id="4133688099" Name="Play_AI_Shower_On" ObjectPath="\Events\PapaPlease\AI\Play_AI_Shower_On" MaxAttenuation="100.000000"/>
+				<Event Id="3704459082" Name="Stop_AI_Shower_Lp" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Shower_Lp" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="16075972" Language="SFX">
+					<ShortName>AI_Peeing\AI_Peeing_02.wav</ShortName>
+					<Path>SFX\AI_Peeing\AI_Peeing_02_56D34C19.wem</Path>
+				</File>
+				<File Id="18597857" Language="SFX">
+					<ShortName>AI_Peeing\AI_Peeing_01.wav</ShortName>
+					<Path>SFX\AI_Peeing\AI_Peeing_01_56D34C19.wem</Path>
+				</File>
+				<File Id="48379832" Language="SFX">
+					<ShortName>AI_FS_BF_Scuffs_04.wav</ShortName>
+					<Path>SFX\AI_FS_BF_Scuffs_04_56D34C19.wem</Path>
+				</File>
+				<File Id="50923184" Language="SFX">
+					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
+					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_A443D86F.wem</Path>
+				</File>
+				<File Id="83272020" Language="SFX">
+					<ShortName>AI_Cooking\AI_Cooking_Slice_02.wav</ShortName>
+					<Path>SFX\AI_Cooking\AI_Cooking_Slice_02_9E6E0D29.wem</Path>
 				</File>
 				<File Id="124884203" Language="SFX">
 					<ShortName>AI_Cooking\AI_Cooking_Slice_02.wav</ShortName>
@@ -92,10 +195,6 @@
 				<File Id="155407752" Language="SFX">
 					<ShortName>AI_Cooking\AI_Cooking_Slice_02.wav</ShortName>
 					<Path>SFX\AI_Cooking\AI_Cooking_Slice_02_18F99A00.wem</Path>
-				</File>
-				<File Id="168015010" Language="SFX">
-					<ShortName>Amb_Outside\AmbOut_Bathroom_Neighborhood.wav</ShortName>
-					<Path>SFX\Amb_Outside\AmbOut_Bathroom_Neighborhood_8956FC97.wem</Path>
 				</File>
 				<File Id="227206352" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
@@ -121,33 +220,25 @@
 					<ShortName>AI_Shower\AI_Shower_On\AI_Shower_On_01.wav</ShortName>
 					<Path>SFX\AI_Shower\AI_Shower_On\AI_Shower_On_01_B32A1813.wem</Path>
 				</File>
+				<File Id="279495801" Language="SFX">
+					<ShortName>AI_Dishes\AI_Dishes_01.wav</ShortName>
+					<Path>SFX\AI_Dishes\AI_Dishes_01_56D34C19.wem</Path>
+				</File>
 				<File Id="296378068" Language="SFX">
 					<ShortName>AI_Cooking\AI_Cooking_Slice_01.wav</ShortName>
 					<Path>SFX\AI_Cooking\AI_Cooking_Slice_01_35348C85.wem</Path>
 				</File>
-				<File Id="301767813" Language="SFX">
-					<ShortName>Windows\WindowOpen_01.wav</ShortName>
-					<Path>SFX\Windows\WindowOpen_01_56D34C19.wem</Path>
+				<File Id="305534503" Language="SFX">
+					<ShortName>AI_Peeing\AI_Peeing_03.wav</ShortName>
+					<Path>SFX\AI_Peeing\AI_Peeing_03_56D34C19.wem</Path>
 				</File>
 				<File Id="307194117" Language="SFX">
 					<ShortName>AI_Cooking\AI_Cooking_Slice_01.wav</ShortName>
 					<Path>SFX\AI_Cooking\AI_Cooking_Slice_01_0FCEBA21.wem</Path>
 				</File>
-				<File Id="331690594" Language="SFX">
-					<ShortName>Amb_Kitchen_Lp.wav</ShortName>
-					<Path>SFX\Amb_Kitchen_Lp_8956FC97.wem</Path>
-				</File>
 				<File Id="360697469" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
 					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_73BD064C.wem</Path>
-				</File>
-				<File Id="399136298" Language="SFX">
-					<ShortName>Washer\WasherOpen_02.wav</ShortName>
-					<Path>SFX\Washer\WasherOpen_02_56D34C19.wem</Path>
-				</File>
-				<File Id="420086465" Language="SFX">
-					<ShortName>Amb_Bathroom_Lp_01.wav</ShortName>
-					<Path>SFX\Amb_Bathroom_Lp_01_8956FC97.wem</Path>
 				</File>
 				<File Id="449910420" Language="SFX">
 					<ShortName>AI_Cooking\AI_Cooking_Slice_01.wav</ShortName>
@@ -185,25 +276,9 @@
 					<ShortName>AI_FS_BF_Scuffs_02.wav</ShortName>
 					<Path>SFX\AI_FS_BF_Scuffs_02_56D34C19.wem</Path>
 				</File>
-				<File Id="576719503" Language="SFX">
-					<ShortName>Doors\DoorOpen_01.wav</ShortName>
-					<Path>SFX\Doors\DoorOpen_01_56D34C19.wem</Path>
-				</File>
 				<File Id="577796919" Language="SFX">
 					<ShortName>AI_Cooking\AI_Cooking_Slice_02.wav</ShortName>
 					<Path>SFX\AI_Cooking\AI_Cooking_Slice_02_5781AF66.wem</Path>
-				</File>
-				<File Id="637810547" Language="SFX">
-					<ShortName>Doors\DoorOpen_02.wav</ShortName>
-					<Path>SFX\Doors\DoorOpen_02_56D34C19.wem</Path>
-				</File>
-				<File Id="651720505" Language="SFX">
-					<ShortName>Washer\WasherOpen_03.wav</ShortName>
-					<Path>SFX\Washer\WasherOpen_03_56D34C19.wem</Path>
-				</File>
-				<File Id="666006642" Language="SFX">
-					<ShortName>Amb_Outside\AmbOut_Wall_Neighborhood.wav</ShortName>
-					<Path>SFX\Amb_Outside\AmbOut_Wall_Neighborhood_8956FC97.wem</Path>
 				</File>
 				<File Id="670074642" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
@@ -216,10 +291,6 @@
 				<File Id="675323695" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
 					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_1B4BF728.wem</Path>
-				</File>
-				<File Id="678853948" Language="SFX">
-					<ShortName>Doors\DoorClose_03.wav</ShortName>
-					<Path>SFX\Doors\DoorClose_03_56D34C19.wem</Path>
 				</File>
 				<File Id="686406300" Language="SFX">
 					<ShortName>AI_Cooking\AI_Cooking_Slice_02.wav</ShortName>
@@ -257,14 +328,6 @@
 					<ShortName>AI_Cooking\AI_Cooking_Fry_Lp-01.wav</ShortName>
 					<Path>SFX\AI_Cooking\AI_Cooking_Fry_Lp-01_56D34C19.wem</Path>
 				</File>
-				<File Id="843721958" Language="SFX">
-					<ShortName>Amb_Bathroom_Lp_02.wav</ShortName>
-					<Path>SFX\Amb_Bathroom_Lp_02_8956FC97.wem</Path>
-				</File>
-				<File Id="845164772" Language="SFX">
-					<ShortName>Washer\WasherClose_02.wav</ShortName>
-					<Path>SFX\Washer\WasherClose_02_56D34C19.wem</Path>
-				</File>
 				<File Id="859396186" Language="SFX">
 					<ShortName>AI_FS_BF_Scuffs_05.wav</ShortName>
 					<Path>SFX\AI_FS_BF_Scuffs_05_56D34C19.wem</Path>
@@ -272,14 +335,6 @@
 				<File Id="860754173" Language="SFX">
 					<ShortName>AI_Cooking\AI_Cooking_Slice_01.wav</ShortName>
 					<Path>SFX\AI_Cooking\AI_Cooking_Slice_01_B9EC500C.wem</Path>
-				</File>
-				<File Id="863881689" Language="SFX">
-					<ShortName>Amb_LivingRoom_Lp.wav</ShortName>
-					<Path>SFX\Amb_LivingRoom_Lp_8956FC97.wem</Path>
-				</File>
-				<File Id="864148798" Language="SFX">
-					<ShortName>Amb_ParentsBedroom.wav</ShortName>
-					<Path>SFX\Amb_ParentsBedroom_8956FC97.wem</Path>
 				</File>
 				<File Id="879012817" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
@@ -289,21 +344,25 @@
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
 					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_79018089.wem</Path>
 				</File>
+				<File Id="900151864" Language="SFX">
+					<ShortName>AI_Dishes\AI_DishesWaterFlow_Lp.L.wav</ShortName>
+					<Path>SFX\AI_Dishes\AI_DishesWaterFlow_Lp.L_56D34C19.wem</Path>
+				</File>
 				<File Id="903233539" Language="SFX">
 					<ShortName>AI_Flush\AI_FlushToilet_01.wav</ShortName>
 					<Path>SFX\AI_Flush\AI_FlushToilet_01_56D34C19.wem</Path>
+				</File>
+				<File Id="912390004" Language="SFX">
+					<ShortName>AI_Dishes\AI_Dishes_02.wav</ShortName>
+					<Path>SFX\AI_Dishes\AI_Dishes_02_56D34C19.wem</Path>
 				</File>
 				<File Id="917661403" Language="SFX">
 					<ShortName>AI_Cooking\AI_Cooking_Slice_01.wav</ShortName>
 					<Path>SFX\AI_Cooking\AI_Cooking_Slice_01_0C116D12.wem</Path>
 				</File>
-				<File Id="944673082" Language="SFX">
-					<ShortName>Washer\WasherClose_03.wav</ShortName>
-					<Path>SFX\Washer\WasherClose_03_56D34C19.wem</Path>
-				</File>
-				<File Id="960467139" Language="SFX">
-					<ShortName>Windows\WindowClose_01.wav</ShortName>
-					<Path>SFX\Windows\WindowClose_01_56D34C19.wem</Path>
+				<File Id="1000106572" Language="SFX">
+					<ShortName>AI_Dishes\AI_DishesBrush_Lp.wav</ShortName>
+					<Path>SFX\AI_Dishes\AI_DishesBrush_Lp_56D34C19.wem</Path>
 				</File>
 				<File Id="1005253050" Language="SFX">
 					<ShortName>AI_Shower\AI_Shower_Off\AI_Shower_Off_01.wav</ShortName>
@@ -325,11 +384,67 @@
 					<ShortName>AI_Shower\AI_Shower_Lp\AI_Shower_Lp.wav</ShortName>
 					<Path>SFX\AI_Shower\AI_Shower_Lp\AI_Shower_Lp_56D34C19.wem</Path>
 				</File>
+				<File Id="1056410788" Language="SFX">
+					<ShortName>AI_Peeing\AI_Peeing_04.wav</ShortName>
+					<Path>SFX\AI_Peeing\AI_Peeing_04_56D34C19.wem</Path>
+				</File>
 				<File Id="1067503887" Language="SFX">
 					<ShortName>AI_Flush\AI_FlushToilet_02.wav</ShortName>
 					<Path>SFX\AI_Flush\AI_FlushToilet_02_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1911419817" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambiances_Out</ObjectPath>
+			<ShortName>Ambiances_Out</ShortName>
+			<Path>Ambiances_Out.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3232971858" Name="Play_Amb_Outside_Balcony_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_Outside_Balcony_Lp" MaxAttenuation="7.000000"/>
+				<Event Id="2689642136" Name="Play_Plane" ObjectPath="\Events\PapaPlease\Ambiances\Play_Plane" MaxAttenuation="20.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="241299627" Language="SFX">
+					<ShortName>Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_02.wav</ShortName>
+					<Path>SFX\Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="259521551" Language="SFX">
+					<ShortName>Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_01.wav</ShortName>
+					<Path>SFX\Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="422381683" Language="SFX">
+					<ShortName>Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_02.wav</ShortName>
+					<Path>SFX\Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_02_56D34C19.wem</Path>
+				</File>
+				<File Id="506314926" Language="SFX">
+					<ShortName>Amb_Outside\OneShots\Amb_Outside_Balcony_Dogs_OS_01.wav</ShortName>
+					<Path>SFX\Amb_Outside\OneShots\Amb_Outside_Balcony_Dogs_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="633242227" Language="SFX">
+					<ShortName>Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_01.wav</ShortName>
+					<Path>SFX\Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_01_56D34C19.wem</Path>
+				</File>
+				<File Id="709108565" Language="SFX">
+					<ShortName>Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_03.wav</ShortName>
+					<Path>SFX\Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="761480163" Language="SFX">
+					<ShortName>Amb_Outside_Balcony_02.wav</ShortName>
+					<Path>SFX\Amb_Outside_Balcony_02_8956FC97.wem</Path>
+				</File>
+				<File Id="839477047" Language="SFX">
+					<ShortName>Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_03.wav</ShortName>
+					<Path>SFX\Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_03_56D34C19.wem</Path>
+				</File>
+				<File Id="1068902261" Language="SFX">
+					<ShortName>Amb_Outside_Balcony_01.wav</ShortName>
+					<Path>SFX\Amb_Outside_Balcony_01_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2607556080" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Menu</ObjectPath>
+			<ShortName>Menu</ShortName>
+			<Path>Menu.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -14,8 +14,6 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AI_FOOTSTEPS = 2561178547U;
-        static const AkUniqueID AI_VOX = 2085872209U;
-        static const AkUniqueID CHARACTER_FOOTSTEPS = 2775932802U;
         static const AkUniqueID PLAY_AI_COOKING = 1056168201U;
         static const AkUniqueID PLAY_AI_FLUSHTOILET = 498135132U;
         static const AkUniqueID PLAY_AI_SHOWER_LP = 4083355364U;
@@ -25,11 +23,13 @@ namespace AK
         static const AkUniqueID PLAY_AMB_KIDSBEDROOM_LP = 1402976205U;
         static const AkUniqueID PLAY_AMB_KITCHEN_LP = 4028544478U;
         static const AkUniqueID PLAY_AMB_LIVINGROOM_LP = 2639863138U;
+        static const AkUniqueID PLAY_AMB_OUTSIDE_BALCONY_LP = 3232971858U;
         static const AkUniqueID PLAY_AMB_PARENTSBEDROOM_LP = 525979915U;
         static const AkUniqueID PLAY_AMBOUT_BATHROOM_NEIGHBORHOOD_LP = 1945404897U;
         static const AkUniqueID PLAY_AMBOUT_WALL_NEIGHBORHOOD_LP = 1682472951U;
         static const AkUniqueID PLAY_DOOR_CLOSE = 2292458263U;
         static const AkUniqueID PLAY_DOOR_OPEN = 1660008929U;
+        static const AkUniqueID PLAY_PLANE = 2689642136U;
         static const AkUniqueID PLAY_WASHER_CLOSE = 55201595U;
         static const AkUniqueID PLAY_WASHER_OPEN = 3531545949U;
         static const AkUniqueID PLAY_WINDOW_CLOSE = 4244658871U;
@@ -71,7 +71,14 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID LEVEL1 = 2678230382U;
+        static const AkUniqueID AI = 1886858547U;
+        static const AkUniqueID AMBIANCES = 1404066300U;
+        static const AkUniqueID AMBIANCES_OUT = 1911419817U;
+        static const AkUniqueID CHARACTER = 436743010U;
+        static const AkUniqueID FOLEY = 247557814U;
+        static const AkUniqueID MENU = 2607556080U;
+        static const AkUniqueID MUSICS = 1730564753U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BANKS
 
     namespace BUSSES

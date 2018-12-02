@@ -103,6 +103,34 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Amb_Outside_Balcony_Lp" ID="{54DE150F-AABC-432A-9F83-44D85918A481}">
+							<ChildrenList>
+								<Action Name="" ID="{C812FB9E-554F-4450-B99A-B47DD417198F}" ShortID="178116368">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Amb_Outside_Balcony_Lp" ID="{AA3A8E9F-FDA3-47EF-8DFB-D096485409F2}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Plane" ID="{4BFFE300-FAAC-4D88-B2FA-189BAD25B5FF}">
+							<ChildrenList>
+								<Action Name="" ID="{DC944B56-4D82-4878-B83B-0A8EF84AD532}" ShortID="65018130">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Plane" ID="{39BADA16-FD4E-428E-829A-E8DDE7962032}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{47A5C4AB-74F8-43AD-B982-F537890D5096}" ShortID="683428816">
