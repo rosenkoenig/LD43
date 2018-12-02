@@ -245,6 +245,7 @@
 								<Action Name="" ID="{84F86833-317B-4234-A9B7-A1F3AA7B6FD9}" ShortID="540209228">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -255,6 +256,8 @@
 								<Action Name="" ID="{B2592851-9D56-476D-AF7D-E6F26B733704}" ShortID="222954826">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -280,9 +283,45 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_AI_Shower_Off" ID="{C7B90038-0943-402B-9EB3-F8B133C93DCA}">
+						<Event Name="Play_AI_Shower" ID="{53CC9C6D-2B34-4438-9524-1EB894639C24}">
 							<ChildrenList>
-								<Action Name="" ID="{2FECEB9F-825E-4CE8-9D11-143CBBFD38EB}" ShortID="266373891">
+								<Action Name="" ID="{9F795BEE-04D8-4BD5-AFC7-524E491E941C}" ShortID="186744534">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Shower_On" ID="{1E99632F-F5FB-46B0-81F0-ABE45F7EED87}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D66849F7-A2D4-442E-9E7A-1CE26AF228A7}" ShortID="436408606">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Shower_Lp" ID="{978A54AC-851B-4753-A9E9-55E86AC7C6E7}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_AI_Shower" ID="{815781DD-B556-4982-9DEE-F8A118764933}">
+							<ChildrenList>
+								<Action Name="" ID="{3BE4DA88-4095-4545-ADBC-13BBD4C20D82}" ShortID="245211080">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Shower_Lp" ID="{978A54AC-851B-4753-A9E9-55E86AC7C6E7}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{371A4BF2-EAE7-437A-9C71-4E003359135B}" ShortID="789419451">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
@@ -294,57 +333,89 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_AI_Shower_Lp" ID="{E6F18D48-8B6E-4AE0-8A3B-404FFF4B746D}">
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Player" ID="{D68E7234-678F-4885-99A7-06B91B14E64D}" ShortID="1048710708">
+					<ChildrenList>
+						<Event Name="Player_Footsteps" ID="{15510B86-2A9B-4BAC-968B-7ECC3121162D}">
 							<ChildrenList>
-								<Action Name="" ID="{2F97AD5E-9EAE-4BA1-A7DE-5D3D725A7AF4}" ShortID="46596619">
+								<Action Name="" ID="{010FCE82-4AA7-4BC4-977D-D85C4C59CCEF}" ShortID="269434916">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="FadeInCurve" Type="int16" Value="6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Footsteps" ID="{456B1B42-BCEF-4FEB-B591-798CA2C983EC}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Slap" ID="{7B5B9B5C-B661-4AE1-9446-18A6FB799DB4}">
+							<ChildrenList>
+								<Action Name="" ID="{609DAA44-B478-4B29-A394-A96EE29E6A72}" ShortID="457766793">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Slap" ID="{E7F984DA-538B-40CB-AC66-35262FCB39D1}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Shower_On" ID="{37858FD9-F939-4C68-A46D-E47672FD4721}">
+							<ChildrenList>
+								<Action Name="" ID="{15157211-873C-4D3A-AD86-47053F72DCA9}" ShortID="20619979">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Shower_On" ID="{421D062D-DD94-41D0-B244-D4DF19975110}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9A223488-D177-4B1E-8F28-90D45C5AFF86}" ShortID="627670826">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
 										<Property Name="FadeTime" Type="Real64" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AI_Shower_Lp" ID="{978A54AC-851B-4753-A9E9-55E86AC7C6E7}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+											<ObjectRef Name="Player_Shower_Lp" ID="{E2C8A4A4-461E-4F5F-9132-8695CF377230}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_AI_Shower_On" ID="{F4C5E555-0A1B-4F66-8E9E-E9C66A90A97C}">
+						<Event Name="Player_Shower_Off" ID="{4D38A215-AB8B-4E2D-B6B2-E7023D92CE10}">
 							<ChildrenList>
-								<Action Name="" ID="{577B4013-F84F-48F9-92A4-F4392DA84E8E}" ShortID="32731765">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="FadeInCurve" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="AI_Shower_On" ID="{1E99632F-F5FB-46B0-81F0-ABE45F7EED87}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Stop_AI_Shower_Lp" ID="{D553BF2B-5756-4222-A7E5-EA931A387FA4}">
-							<ChildrenList>
-								<Action Name="" ID="{4FC31A44-7EEA-4EC1-83B0-8BFDE697C733}" ShortID="936991359">
+								<Action Name="" ID="{324575B6-1481-4420-BD53-BAE24735EFFD}" ShortID="771627663">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AI_Shower_Lp" ID="{978A54AC-851B-4753-A9E9-55E86AC7C6E7}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+											<ObjectRef Name="Player_Shower_Lp" ID="{E2C8A4A4-461E-4F5F-9132-8695CF377230}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{22A54E54-1938-462F-BB18-CC3C1F7A9E1D}" ShortID="373191085">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Shower_Off" ID="{5B572E32-C21A-463A-9963-C9A739665641}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Character" ID="{D68E7234-678F-4885-99A7-06B91B14E64D}" ShortID="1048710708">
-					<ChildrenList>
-						<Event Name="Character_Footsteps" ID="{15510B86-2A9B-4BAC-968B-7ECC3121162D}"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

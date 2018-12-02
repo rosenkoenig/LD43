@@ -14,6 +14,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="Player_Footsteps" ID="{456B1B42-BCEF-4FEB-B591-798CA2C983EC}" ShortID="94282002">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -630,6 +633,10 @@
 													<Language>SFX</Language>
 													<AudioFile>Player_Slap\Player_Slap_Kids\Player_SlapKid_01_v2.wav</AudioFile>
 												</AudioFileSource>
+												<AudioFileSource Name="Player_SlapKid_v3_01" ID="{D59C89E3-C7F2-4E9E-8B35-ADF90BD53E5B}" ShortID="672935572">
+													<Language>SFX</Language>
+													<AudioFile>Player_SlapKid_v3_01.wav</AudioFile>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="Player_SlapKid_01_v2" ID="{AA7EFD28-B8FF-49AC-A499-82D19629BB8F}" Platform="Linked"/>
@@ -648,6 +655,10 @@
 												<AudioFileSource Name="Player_SlapKid_02_v2" ID="{401368B3-95E1-4DDF-A06F-A5408BCEA130}" ShortID="973609531">
 													<Language>SFX</Language>
 													<AudioFile>Player_Slap\Player_Slap_Kids\Player_SlapKid_02_v2.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="Player_SlapKid_v3_02" ID="{759F77C8-7345-4153-A32D-7E28810F1FC0}" ShortID="859779049">
+													<Language>SFX</Language>
+													<AudioFile>Player_SlapKid_v3_02.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -668,6 +679,10 @@
 													<Language>SFX</Language>
 													<AudioFile>Player_Slap\Player_Slap_Kids\Player_SlapKid_03_v2.wav</AudioFile>
 												</AudioFileSource>
+												<AudioFileSource Name="Player_SlapKid_v3_03" ID="{4023C3E3-8CED-471A-B0AF-8EB655646EFA}" ShortID="547054775">
+													<Language>SFX</Language>
+													<AudioFile>Player_SlapKid_v3_03.wav</AudioFile>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="Player_SlapKid_03_v2" ID="{227D7339-6299-4AD3-B28D-1981A6C61FFA}" Platform="Linked"/>
@@ -687,6 +702,10 @@
 													<Language>SFX</Language>
 													<AudioFile>Player_Slap\Player_Slap_Kids\Player_SlapKid_04_v2.wav</AudioFile>
 												</AudioFileSource>
+												<AudioFileSource Name="Player_SlapKid_v3_04" ID="{E09A2A1D-392E-4722-BBDE-50377580EF47}" ShortID="439084020">
+													<Language>SFX</Language>
+													<AudioFile>Player_SlapKid_v3_04.wav</AudioFile>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="Player_SlapKid_04_v2" ID="{26837ECB-4AAA-4B10-9538-01884FA2EC40}" Platform="Linked"/>
@@ -705,6 +724,10 @@
 												<AudioFileSource Name="Player_SlapKid_05_v2" ID="{73CE4859-B03F-4417-B09D-DE449C0F1650}" ShortID="258080921">
 													<Language>SFX</Language>
 													<AudioFile>Player_Slap\Player_Slap_Kids\Player_SlapKid_05_v2.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="Player_SlapKid_v3_05" ID="{980AE667-B3B6-4FAB-930E-E956319DCFB5}" ShortID="360184199">
+													<Language>SFX</Language>
+													<AudioFile>Player_SlapKid_v3_05.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -984,14 +1007,15 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<BlendContainer Name="AI_Shower_Lp" ID="{B8426D25-CF6D-4F6B-8010-04DD43FC633E}" ShortID="795949704">
+								<RandomSequenceContainer Name="Player_Shower" ID="{6324F283-2EBF-4A2E-87DF-C98C57B5F781}" ShortID="1067784269">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
 										</Reference>
@@ -1000,7 +1024,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="AI_Shower_Lp" ID="{45916E17-1F1C-4763-9C01-E0FFFAE2255F}" ShortID="817540660">
+										<RandomSequenceContainer Name="Player_Shower_Off" ID="{5B572E32-C21A-463A-9963-C9A739665641}" ShortID="988340890">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -1010,167 +1034,172 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="AI_Shower_Lp" ID="{C806A34E-413C-4B79-A7DF-EF46A78B5029}" ShortID="232342339">
-													<Language>SFX</Language>
-													<AudioFile>AI_Shower\AI_Shower_Lp\AI_Shower_Lp.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="1038670129"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
+												<Sound Name="AI_Shower_Off_01" ID="{40DEA58A-10C9-42C7-85A0-05D24C519146}" ShortID="340673962">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AI_Shower_Off_01" ID="{D4318A71-2320-45BB-A42C-74311DE86DBB}" ShortID="270437183">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.58775796132814"/>
+																<Property Name="FadeOutShape" Type="int16" Value="1"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.68676507380535"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AI_Shower\AI_Shower_Off\AI_Shower_Off_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="1005253050"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AI_Shower_Off_01" ID="{D4318A71-2320-45BB-A42C-74311DE86DBB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AI_Shower_Off_02" ID="{E038BFB3-F4F9-4FA1-A166-B7D9F2CF78A9}" ShortID="352625470">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AI_Shower_Off_02" ID="{1AF1A639-8556-457C-AABD-D2127F916EF6}" ShortID="730470174">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.05690045311761"/>
+																<Property Name="FadeOutShape" Type="int16" Value="1"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AI_Shower\AI_Shower_Off\AI_Shower_Off_02.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="227774774"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AI_Shower_Off_02" ID="{1AF1A639-8556-457C-AABD-D2127F916EF6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AI_Shower_Lp" ID="{C806A34E-413C-4B79-A7DF-EF46A78B5029}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player_Shower_On" ID="{421D062D-DD94-41D0-B244-D4DF19975110}" ShortID="516017967">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AI_Shower_On_01" ID="{634E1E90-EE8F-4222-8490-AE3EF76056E1}" ShortID="774485769">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AI_Shower_On_01" ID="{B619DA42-5204-4C1F-AFC8-6B4FDF569F9C}" ShortID="650818699">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.1229789008423"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.86910802149231"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AI_Shower\AI_Shower_On\AI_Shower_On_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="276963228"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AI_Shower_On_01" ID="{B619DA42-5204-4C1F-AFC8-6B4FDF569F9C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AI_Shower_On_02" ID="{802D2A03-903B-44E6-8F8F-2061C012D9D0}" ShortID="176531694">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AI_Shower_On_02" ID="{9ADBC771-67F5-45F2-A747-A0E39649113E}" ShortID="104877949">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="3.45542204272252"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.72894099145788"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AI_Shower\AI_Shower_On\AI_Shower_On_02.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="725059544"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AI_Shower_On_02" ID="{9ADBC771-67F5-45F2-A747-A0E39649113E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<BlendContainer Name="Player_Shower_Lp" ID="{E2C8A4A4-461E-4F5F-9132-8695CF377230}" ShortID="448777551">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AI_Shower_Lp" ID="{14C3AC21-8FFF-48D0-A727-31CA68193515}" ShortID="398860585">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AI_Shower_Lp" ID="{C2E37DFE-1EB2-4F05-8D42-AD6FCABA630C}" ShortID="134787427">
+															<Language>SFX</Language>
+															<AudioFile>AI_Shower\AI_Shower_Lp\AI_Shower_Lp.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="1038670129"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AI_Shower_Lp" ID="{C2E37DFE-1EB2-4F05-8D42-AD6FCABA630C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<BlendTrackList>
+												<BlendTrack Name="Shower_Lp" ID="{E8EC826A-3E9B-426B-B3F1-01C150582236}" ShortID="619206226">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+													</PropertyList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
 									</ChildrenList>
-									<BlendTrackList>
-										<BlendTrack Name="Shower_Lp" ID="{33813EB2-77EE-47E1-B8FE-CE6D5B9CC94F}" ShortID="207230578">
-											<PropertyList>
-												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-											</PropertyList>
-										</BlendTrack>
-									</BlendTrackList>
-								</BlendContainer>
-								<RandomSequenceContainer Name="AI_Shower_Off" ID="{B3F496DA-824F-47BC-B6F1-D836E9C3DE54}" ShortID="344755690">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="AI_Shower_Off_01" ID="{B102E322-869A-4A6F-8405-48BE6F6F4926}" ShortID="652812399">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AI_Shower_Off_01" ID="{1ADD24DA-A901-4185-B16F-CDCB84666BFE}" ShortID="286927993">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="2.58775796132814"/>
-														<Property Name="FadeOutShape" Type="int16" Value="1"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.68676507380535"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AI_Shower\AI_Shower_Off\AI_Shower_Off_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="1005253050"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AI_Shower_Off_01" ID="{1ADD24DA-A901-4185-B16F-CDCB84666BFE}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AI_Shower_Off_02" ID="{6EEB8C84-787D-4441-B68B-F6F8948B831A}" ShortID="1073285653">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AI_Shower_Off_02" ID="{91C560C0-1771-4BF5-A606-3191EFADAEAC}" ShortID="354686245">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="4.05690045311761"/>
-														<Property Name="FadeOutShape" Type="int16" Value="1"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AI_Shower\AI_Shower_Off\AI_Shower_Off_02.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="227774774"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AI_Shower_Off_02" ID="{91C560C0-1771-4BF5-A606-3191EFADAEAC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="AI_Shower_On" ID="{E15231F2-FB75-45C7-8349-E3C842DD6C94}" ShortID="192143330">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="AI_Shower_On_01" ID="{C5985CCE-B84A-4792-875C-FF50D5E1FD2B}" ShortID="789147925">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AI_Shower_On_01" ID="{9A952739-D13A-4AFE-AC24-11AD97C96E1E}" ShortID="14467436">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="2.1229789008423"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.86910802149231"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AI_Shower\AI_Shower_On\AI_Shower_On_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="276963228"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AI_Shower_On_01" ID="{9A952739-D13A-4AFE-AC24-11AD97C96E1E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AI_Shower_On_02" ID="{4F0B8681-846B-404D-A2B6-465AA7F4EB1E}" ShortID="877150849">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AI_Shower_On_02" ID="{275A84A4-2AE4-4F2C-9581-D5B495B82F98}" ShortID="407781641">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="3.45542204272252"/>
-														<Property Name="TrimEnd" Type="Real64" Value="4.72894099145788"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AI_Shower\AI_Shower_On\AI_Shower_On_02.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="725059544"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AI_Shower_On_02" ID="{275A84A4-2AE4-4F2C-9581-D5B495B82F98}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="Player_Shower_On" ID="{421D062D-DD94-41D0-B244-D4DF19975110}"/>
+										<ItemRef Name="Player_Shower_Lp" ID="{E2C8A4A4-461E-4F5F-9132-8695CF377230}"/>
+										<ItemRef Name="Player_Shower_Off" ID="{5B572E32-C21A-463A-9963-C9A739665641}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
@@ -1191,7 +1220,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="AI_FlushToilet_01" ID="{AB7C357F-3958-44BD-B221-C5E5F64D6501}" ShortID="13254910">
+								<Sound Name="Player_FlushToilet_01" ID="{AB7C357F-3958-44BD-B221-C5E5F64D6501}" ShortID="13254910">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -1213,7 +1242,7 @@
 										<ActiveSource Name="AI_FlushToilet_01" ID="{CC28C9BA-C9C0-4E8F-A82D-E86B182F134E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="AI_FlushToilet_02" ID="{C737A7F7-9C41-4E0A-AF44-C6BF05BFB377}" ShortID="878586403">
+								<Sound Name="Player_FlushToilet_02" ID="{C737A7F7-9C41-4E0A-AF44-C6BF05BFB377}" ShortID="878586403">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -1235,7 +1264,7 @@
 										<ActiveSource Name="AI_FlushToilet_02" ID="{2A783EAD-008D-4D25-A26B-61465F5BE12A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="AI_FlushToilet_03" ID="{F19A3498-BBFD-42C2-B942-45895FCAC9DA}" ShortID="219179164">
+								<Sound Name="Player_FlushToilet_03" ID="{F19A3498-BBFD-42C2-B942-45895FCAC9DA}" ShortID="219179164">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -3089,6 +3118,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<SwitchContainer Name="AI_Activities_Switch" ID="{4E6BBC68-8DC6-48FC-8870-C2B45E9EF8AE}" ShortID="1052329743">
+									<PropertyList>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -3209,68 +3241,33 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<BlendContainer Name="AI_Shower_Lp" ID="{978A54AC-851B-4753-A9E9-55E86AC7C6E7}" ShortID="525528712">
+												<SwitchContainer Name="AI_Shower" ID="{F9AA82DA-0C50-42ED-867C-D538BE87AD90}" ShortID="356548683">
 													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
-														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="AI_Shower_On" ID="{B273647D-8F42-49C0-A096-D9253374FE0D}" WorkUnitID="{2E104C97-0BD4-4618-818D-82DEC6008181}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
 														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="AI_Shower" ID="{DF4B41C4-66D1-4D50-8D20-0DA5EA75CFDA}" WorkUnitID="{2E104C97-0BD4-4618-818D-82DEC6008181}"/>
+														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="AI_Shower_Lp" ID="{81D9C3BC-7B26-4565-B8B1-AD185FFBAE9A}" ShortID="409539538">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AI_Shower_Lp" ID="{7C1CDD8B-DB76-4F76-8F0F-65EBD29C07F5}" ShortID="1038670129">
-																	<Language>SFX</Language>
-																	<AudioFile>AI_Shower\AI_Shower_Lp\AI_Shower_Lp.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AI_Shower_Lp" ID="{7C1CDD8B-DB76-4F76-8F0F-65EBD29C07F5}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-													<BlendTrackList>
-														<BlendTrack Name="Shower_Lp" ID="{05887304-D21F-4995-A2B8-34ACF0E4DDF5}" ShortID="84596929">
+														<RandomSequenceContainer Name="AI_Shower_On" ID="{1E99632F-F5FB-46B0-81F0-ABE45F7EED87}" ShortID="1041542289">
 															<PropertyList>
-																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 															</PropertyList>
-														</BlendTrack>
-													</BlendTrackList>
-												</BlendContainer>
-												<RandomSequenceContainer Name="AI_Shower_Off" ID="{CD9160B3-E10C-443A-8353-66778085AE05}" ShortID="91129236">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="AI_Shower_Off_01" ID="{C0399B55-5C62-4A3E-91C5-4C1437A59E71}" ShortID="1009594249">
 															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
 																</Reference>
@@ -3279,22 +3276,62 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="AI_Shower_Off_01" ID="{E7C63872-86F0-40F3-B446-CE60D83941CD}" ShortID="1005253050">
-																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="2.58775796132814"/>
-																		<Property Name="FadeOutShape" Type="int16" Value="1"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="3.68676507380535"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>AI_Shower\AI_Shower_Off\AI_Shower_Off_01.wav</AudioFile>
-																</AudioFileSource>
+																<Sound Name="AI_Shower_On_01" ID="{597BD6DD-2A58-48C8-A5B6-D4D274BBE1DD}" ShortID="925533788">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AI_Shower_On_01" ID="{EA0F9E01-FEB3-46B8-81A0-6B9153AA077E}" ShortID="276963228">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="2.1229789008423"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.86910802149231"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Shower\AI_Shower_On\AI_Shower_On_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AI_Shower_On_01" ID="{EA0F9E01-FEB3-46B8-81A0-6B9153AA077E}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AI_Shower_On_02" ID="{E93434E3-8D6B-4EF3-B426-4A58B11436B4}" ShortID="33948616">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AI_Shower_On_02" ID="{185AD95E-C947-40B5-9DBE-B6DA80A7040F}" ShortID="725059544">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="3.45542204272252"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="4.72894099145788"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Shower\AI_Shower_On\AI_Shower_On_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AI_Shower_On_02" ID="{185AD95E-C947-40B5-9DBE-B6DA80A7040F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
 															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AI_Shower_Off_01" ID="{E7C63872-86F0-40F3-B446-CE60D83941CD}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AI_Shower_Off_02" ID="{0391AC8F-E0CB-4E98-9B3A-E7D2A01C29D8}" ShortID="973766902">
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="AI_Shower_Off" ID="{CD9160B3-E10C-443A-8353-66778085AE05}" ShortID="91129236">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
 															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
 																</Reference>
@@ -3303,85 +3340,134 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="AI_Shower_Off_02" ID="{C867D0E8-EA88-461A-937F-4F41253460EA}" ShortID="227774774">
-																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="4.05690045311761"/>
-																		<Property Name="FadeOutShape" Type="int16" Value="1"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>AI_Shower\AI_Shower_Off\AI_Shower_Off_02.wav</AudioFile>
-																</AudioFileSource>
+																<Sound Name="AI_Shower_Off_01" ID="{C0399B55-5C62-4A3E-91C5-4C1437A59E71}" ShortID="1009594249">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AI_Shower_Off_01" ID="{E7C63872-86F0-40F3-B446-CE60D83941CD}" ShortID="1005253050">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="2.58775796132814"/>
+																				<Property Name="FadeOutShape" Type="int16" Value="1"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.68676507380535"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Shower\AI_Shower_Off\AI_Shower_Off_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AI_Shower_Off_01" ID="{E7C63872-86F0-40F3-B446-CE60D83941CD}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AI_Shower_Off_02" ID="{0391AC8F-E0CB-4E98-9B3A-E7D2A01C29D8}" ShortID="973766902">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AI_Shower_Off_02" ID="{C867D0E8-EA88-461A-937F-4F41253460EA}" ShortID="227774774">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="4.05690045311761"/>
+																				<Property Name="FadeOutShape" Type="int16" Value="1"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Shower\AI_Shower_Off\AI_Shower_Off_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AI_Shower_Off_02" ID="{C867D0E8-EA88-461A-937F-4F41253460EA}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
 															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AI_Shower_Off_02" ID="{C867D0E8-EA88-461A-937F-4F41253460EA}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
+														</RandomSequenceContainer>
+														<BlendContainer Name="AI_Shower_Lp" ID="{978A54AC-851B-4753-A9E9-55E86AC7C6E7}" ShortID="525528712">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="AI_Shower_Lp" ID="{81D9C3BC-7B26-4565-B8B1-AD185FFBAE9A}" ShortID="409539538">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AI_Shower_Lp" ID="{7C1CDD8B-DB76-4F76-8F0F-65EBD29C07F5}" ShortID="1038670129">
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Shower\AI_Shower_Lp\AI_Shower_Lp.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AI_Shower_Lp" ID="{7C1CDD8B-DB76-4F76-8F0F-65EBD29C07F5}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<BlendTrackList>
+																<BlendTrack Name="Shower_Lp" ID="{05887304-D21F-4995-A2B8-34ACF0E4DDF5}" ShortID="84596929">
+																	<PropertyList>
+																		<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+																	</PropertyList>
+																</BlendTrack>
+															</BlendTrackList>
+														</BlendContainer>
 													</ChildrenList>
-												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="AI_Shower_On" ID="{1E99632F-F5FB-46B0-81F0-ABE45F7EED87}" ShortID="1041542289">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="AI_Shower_On_01" ID="{597BD6DD-2A58-48C8-A5B6-D4D274BBE1DD}" ShortID="925533788">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AI_Shower_On_01" ID="{EA0F9E01-FEB3-46B8-81A0-6B9153AA077E}" ShortID="276963228">
-																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="2.1229789008423"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="2.86910802149231"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>AI_Shower\AI_Shower_On\AI_Shower_On_01.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AI_Shower_On_01" ID="{EA0F9E01-FEB3-46B8-81A0-6B9153AA077E}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AI_Shower_On_02" ID="{E93434E3-8D6B-4EF3-B426-4A58B11436B4}" ShortID="33948616">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AI_Shower_On_02" ID="{185AD95E-C947-40B5-9DBE-B6DA80A7040F}" ShortID="725059544">
-																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="3.45542204272252"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="4.72894099145788"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>AI_Shower\AI_Shower_On\AI_Shower_On_02.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AI_Shower_On_02" ID="{185AD95E-C947-40B5-9DBE-B6DA80A7040F}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-												</RandomSequenceContainer>
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="AI_Shower_On" ID="{1E99632F-F5FB-46B0-81F0-ABE45F7EED87}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="AI_Shower_Lp" ID="{978A54AC-851B-4753-A9E9-55E86AC7C6E7}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="AI_Shower_Off" ID="{CD9160B3-E10C-443A-8353-66778085AE05}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="AI_Shower_Lp" ID="{D715151B-E5DD-4A75-9B87-24D44E4D8A3B}"/>
+																<ItemList>
+																	<ItemRef Name="AI_Shower_Lp" ID="{978A54AC-851B-4753-A9E9-55E86AC7C6E7}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="AI_Shower_On" ID="{B273647D-8F42-49C0-A096-D9253374FE0D}"/>
+																<ItemList>
+																	<ItemRef Name="AI_Shower_On" ID="{1E99632F-F5FB-46B0-81F0-ABE45F7EED87}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="AI_Shower_Off" ID="{CBE1F380-4F51-4C73-8266-8275E4ECA454}"/>
+																<ItemList>
+																	<ItemRef Name="AI_Shower_Off" ID="{CD9160B3-E10C-443A-8353-66778085AE05}"/>
+																</ItemList>
+															</Grouping>
+														</GroupingList>
+													</GroupingInfo>
+												</SwitchContainer>
 											</ChildrenList>
 										</BlendContainer>
 										<RandomSequenceContainer Name="AI_Flush" ID="{36124427-247A-456B-98A0-3C4A2C28CBB8}" ShortID="542669111">
@@ -4911,7 +4997,7 @@
 																<Value>22</Value>
 															</ValueList>
 														</Property>
-														<Property Name="RadiusMax" Type="Real64" Value="3"/>
+														<Property Name="RadiusMax" Type="Real64" Value="4"/>
 													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
@@ -4928,13 +5014,13 @@
 																			<SegmentShape>Exp3</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>1.60929</XPos>
-																			<YPos>-1.36299</YPos>
+																			<XPos>2.0201</XPos>
+																			<YPos>-0.40578</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>3</XPos>
+																			<XPos>4</XPos>
 																			<YPos>-22.53491</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -4959,13 +5045,13 @@
 																			<SegmentShape>Exp3</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>1.60929</XPos>
+																			<XPos>2.14572</XPos>
 																			<YPos>-1.36299</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>3</XPos>
+																			<XPos>4</XPos>
 																			<YPos>-22.53491</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -4986,13 +5072,13 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>1.825596</XPos>
+																			<XPos>2.434128</XPos>
 																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Exp1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>3</XPos>
+																			<XPos>4</XPos>
 																			<YPos>43</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -5013,7 +5099,7 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>3</XPos>
+																			<XPos>4</XPos>
 																			<YPos>18</YPos>
 																			<Flags>37</Flags>
 																		</Point>

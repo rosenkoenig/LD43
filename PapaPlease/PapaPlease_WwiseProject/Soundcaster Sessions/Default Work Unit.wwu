@@ -42,24 +42,67 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Nothing" ID="{5A332AFB-8F7A-40E3-B94D-7963C73BC20A}"/>
+						<CurrentSwitchRef Name="AI_Shower_Lp" ID="{D715151B-E5DD-4A75-9B87-24D44E4D8A3B}"/>
 						<CurrentSwitchRef Name="AI_Idle" ID="{904EBF51-C68E-4F55-862E-62D9EDDA7E19}"/>
-						<CurrentSwitchRef Name="AI_Idle" ID="{FE876CA7-2F09-497D-AA4A-50F353EF223D}"/>
+						<CurrentSwitchRef Name="AI_Shower" ID="{4B70EB13-20DB-4E8B-9053-0DECE0C12A10}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="AI_Actions" ID="{215D5A4A-5A50-44CE-90C9-4A5AD5AC6034}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_AI_Shower" ID="{53CC9C6D-2B34-4438-9524-1EB894639C24}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AI_FlushToilet" ID="{8B9BD280-F27D-47D7-A879-39B3A290D7F3}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AI_Footsteps" ID="{75DB50FE-38F8-4C62-B040-B1C83FCC8D7B}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_AI_Shower" ID="{815781DD-B556-4982-9DEE-F8A118764933}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AI_Cooking" ID="{23DC39CC-EB73-48EF-9FA3-09D4B78D966B}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Nothing" ID="{5A332AFB-8F7A-40E3-B94D-7963C73BC20A}"/>
-						<CurrentSwitchRef Name="AI_Idle" ID="{904EBF51-C68E-4F55-862E-62D9EDDA7E19}"/>
+						<CurrentSwitchRef Name="AI_Shower_Lp" ID="{D715151B-E5DD-4A75-9B87-24D44E4D8A3B}"/>
+						<CurrentSwitchRef Name="AI_Walking" ID="{2E7394DC-9D58-4C2A-AF87-A48265D143AE}"/>
 						<CurrentSwitchRef Name="AI_Idle" ID="{FE876CA7-2F09-497D-AA4A-50F353EF223D}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Player_Actions" ID="{B681EEDA-86D8-4C15-AD93-8C2CFF9C5899}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Player_Footsteps" ID="{15510B86-2A9B-4BAC-968B-7ECC3121162D}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Shower_On" ID="{37858FD9-F939-4C68-A46D-E47672FD4721}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Slap" ID="{7B5B9B5C-B661-4AE1-9446-18A6FB799DB4}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Shower_Off" ID="{4D38A215-AB8B-4E2D-B6B2-E7023D92CE10}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Nothing" ID="{5A332AFB-8F7A-40E3-B94D-7963C73BC20A}"/>
+						<CurrentSwitchRef Name="AI_Shower_Lp" ID="{D715151B-E5DD-4A75-9B87-24D44E4D8A3B}"/>
 						<CurrentSwitchRef Name="AI_Idle" ID="{904EBF51-C68E-4F55-862E-62D9EDDA7E19}"/>
 						<CurrentSwitchRef Name="AI_Idle" ID="{FE876CA7-2F09-497D-AA4A-50F353EF223D}"/>
 					</CurrentSwitchList>
