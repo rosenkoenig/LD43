@@ -8,6 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e71733e352127e64ca411d5a4bf67dd6, type: 3}
-  m_Name: ChildStatsMaster
+  m_Script: {fileID: 11500000, guid: dc201d45aab21ea488f8d2d2b1144e88, type: 3}
+  m_Name: ChildStatID_Gauge_Confort
   m_EditorClassIdentifier: 
+  _statName: Comfort
+  _minValue: 0
+  _maxValue: 100
+  _isDisplayedAsGauge: 1

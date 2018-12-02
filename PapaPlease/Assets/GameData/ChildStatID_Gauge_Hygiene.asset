@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc201d45aab21ea488f8d2d2b1144e88, type: 3}
+  m_Name: ChildStatID_Gauge_Hygiene
+  m_EditorClassIdentifier: 
+  _statName: Hygiene
+  _minValue: 0
+  _maxValue: 100
+  _isDisplayedAsGauge: 1
