@@ -28,6 +28,13 @@
 						<Switch Name="Nothing" ID="{5A332AFB-8F7A-40E3-B94D-7963C73BC20A}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="AI_Shower" ID="{DF4B41C4-66D1-4D50-8D20-0DA5EA75CFDA}">
+					<ChildrenList>
+						<Switch Name="AI_Shower_On" ID="{B273647D-8F42-49C0-A096-D9253374FE0D}"/>
+						<Switch Name="AI_Shower_Lp" ID="{D715151B-E5DD-4A75-9B87-24D44E4D8A3B}"/>
+						<Switch Name="AI_Shower_Off" ID="{CBE1F380-4F51-4C73-8266-8275E4ECA454}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
