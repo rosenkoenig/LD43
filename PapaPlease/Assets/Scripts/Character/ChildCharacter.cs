@@ -114,6 +114,7 @@ public class ChildCharacter : Character {
         isSlaped = true;
         StartCoroutine(waitAndApplySlapHit());
         LaunchSlapAnim();
+
     }
 
     IEnumerator waitAndApplySlapHit ()
@@ -135,6 +136,9 @@ public class ChildCharacter : Character {
 
             yield return new WaitForEndOfFrame();
         }
+
+        transform.forward = GameMaster.Instance.player.transform.position - transform.position;
+
 
         yield return new WaitForSeconds(slapKODuration);
 
