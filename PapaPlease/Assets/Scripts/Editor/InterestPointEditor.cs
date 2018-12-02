@@ -46,13 +46,13 @@ public class InterestPointEditor : Editor
         if (targetInterestPoint.globalStatsModificator_OverTimeCOMPLETED != null)
         {
             serializedObj_globalStatsModificator_OverTimeEmpty = new SerializedObject(targetInterestPoint.globalStatsModificator_OverTimeCOMPLETED);
-            _p_statsModificator_OverTimeEmpty_ReordList = InitReordList(_p_statsModificator_OverTimeEmpty_ReordList, serializedObj_globalStatsModificator_OverTimeEmpty, "OverTime EMPTY");
+            _p_statsModificator_OverTimeEmpty_ReordList = InitReordList(_p_statsModificator_OverTimeEmpty_ReordList, serializedObj_globalStatsModificator_OverTimeEmpty, "OverTime COMPLETED");
         }
 
         if (targetInterestPoint.globalStatsModificator_OverTimeWAITING != null)
         {
             serializedObj_globalStatsModificator_OverTimeFull = new SerializedObject(targetInterestPoint.globalStatsModificator_OverTimeWAITING);
-            _p_statsModificator_OverTimeFull_ReordList = InitReordList(_p_statsModificator_OverTimeFull_ReordList, serializedObj_globalStatsModificator_OverTimeFull, "OverTime FULL");
+            _p_statsModificator_OverTimeFull_ReordList = InitReordList(_p_statsModificator_OverTimeFull_ReordList, serializedObj_globalStatsModificator_OverTimeFull, "OverTime WAITING");
         }
     }
 

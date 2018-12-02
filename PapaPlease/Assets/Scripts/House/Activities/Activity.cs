@@ -5,6 +5,7 @@ using UnityEngine;
 public class ActivityHolder
 {
     public float startTime = 0f;
+    public float completionPercentage = 0f;
     public Character character;
 }
 
@@ -19,6 +20,8 @@ public class Activity : MonoBehaviour {
     public int maxHolder = 1;
     public bool doOnce = false;
     public string animStateName = "";
+
+    public float GetCompletionRatio { get; protected set; }
 
     public System.Action OnBegin, OnEnd;
 

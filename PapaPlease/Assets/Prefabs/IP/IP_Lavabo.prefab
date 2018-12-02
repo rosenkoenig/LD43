@@ -26,6 +26,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1292379579118112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4400287036003550}
+  m_Layer: 0
+  m_Name: ActivityProgressInfo_position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1489806323084196
 GameObject:
   m_ObjectHideFlags: 1
@@ -172,9 +187,23 @@ Transform:
   m_Children:
   - {fileID: 4023697959703040}
   - {fileID: 4154586976219628}
+  - {fileID: 4400287036003550}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 450, z: 0}
+--- !u!4 &4400287036003550
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1292379579118112}
+  m_LocalRotation: {x: -0, y: 0.000000119209275, z: 0, w: -1}
+  m_LocalPosition: {x: 0, y: 1.157, z: 0.506}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4368780760514268}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4401310698780160
 Transform:
   m_ObjectHideFlags: 1
@@ -474,6 +503,8 @@ MonoBehaviour:
   iPtype: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
   activity: {fileID: 114508751568058650}
   onlyUsableByChild: 1
+  _useActivityProgressInfo: 1
+  _activityProgressInfoPos: {fileID: 4400287036003550}
   globalStatsModificator_OnCompleted: {fileID: 0}
-  globalStatsModificator_OverTimeEmpty: {fileID: 0}
-  globalStatsModificator_OverTimeFull: {fileID: 0}
+  globalStatsModificator_OverTimeCOMPLETED: {fileID: 0}
+  globalStatsModificator_OverTimeWAITING: {fileID: 0}

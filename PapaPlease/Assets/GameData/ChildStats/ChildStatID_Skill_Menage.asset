@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: ChildStatID_Skill_Menage
   m_EditorClassIdentifier: 
   _statName: Menage
-  _minValue: 0
-  _maxValue: 100
-  _isDisplayedAsGauge: 0
+  _maxValue: 25
+  _startValue: 0
+  _addedJaugeText: 
+  _isBetweenNegativeAndPositive: 0

@@ -16,6 +16,12 @@ public class ChildStatsContainer {
         {
             _childStatInfos.Add(new ChildStatInfo() { childStatID = curStatID });
         }
+
+        foreach (var item in _childStatInfos)
+        {
+            item.currentValue = item.childStatID.GetStartValue;
+        }
+
         ChildInitialSkillsPack selectedInitialSkillPack = _childInitialSkillsPacks[UnityEngine.Random.Range(0, _childInitialSkillsPacks.Count)];
         selectedInitialSkillPack.GenerateChildStats(this);
     }
