@@ -32,8 +32,23 @@ public class ChildCharacter : Character {
     [SerializeField]
     IPType IpTypeFun = null;
 
-	// Use this for initialization
-	void Start () {
+    [SerializeField]
+    float slapFallDownDistance = 1f;
+    [SerializeField]
+    float delayForHSlapHit = 0.3f;
+
+    [SerializeField]
+    float slapFallDownSpeed = 6f;
+
+    [SerializeField]
+    float slapKODuration = 1f;
+
+    [SerializeField]
+    AnimationCurve slapFallDownCurve;
+
+
+    // Use this for initialization
+    void Start () {
         SetState(ChildAIState.WAITING);
 	}
 	
@@ -78,6 +93,52 @@ public class ChildCharacter : Character {
             SetState(ChildAIState.WAITING);
         }
             
+    }
+
+
+
+    public void IsSlapped ()
+    {
+
+        Freeze(true);
+        StartCoroutine(waitAndApplySlapHit());
+    }
+
+    IEnumerator waitAndApplySlapHit ()
+    {
+        yield return new WaitForSeconds(delayForHSlapHit);
+
+        float animFactor = 0f;
+
+        Vector3 targetPos = GetHitPosition();
+        Vector3 startPos = transform.position;
+
+        while(animFactor < 1f)
+        {
+            animFactor += Time.deltaTime * slapFallDownSpeed;
+
+            Vector3 pos = Vector3.Lerp(startPos, targetPos, slapFallDownCurve.Evaluate(animFactor));
+
+            transform.position = pos;
+
+            yield return new WaitForEndOfFrame();
+        }
+
+        yield return new WaitForSeconds(slapKODuration);
+
+        Freeze(false);
+        SetState(ChildAIState.WAITING);
+    }
+
+    Vector3 GetHitPosition ()
+    {
+        Vector3 fallDownDest = transform.position + (transform.position - GameMaster.Instance.player.transform.position) * slapFallDownDistance;
+
+        NavMeshHit hit;
+        NavMesh.SamplePosition(fallDownDest, out hit, waitingDistance, 1);
+        Vector3 finalPosition = hit.position;
+
+        return finalPosition;
     }
 
     #region PathFinding

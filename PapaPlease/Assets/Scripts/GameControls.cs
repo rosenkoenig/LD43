@@ -76,5 +76,13 @@ public class GameControls : MonoBehaviour {
         {
             _player.Interact();
         }
+        else if (Input.GetButtonDown("Slap"))
+        {
+            _player.BeginSlap();
+        }
+        else if(Input.GetButtonUp("Slap"))
+        {
+            _player.LaunchSlap();
+        }
     }
 }
