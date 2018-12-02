@@ -1414,15 +1414,43 @@ MonoBehaviour:
   currentActivity: {fileID: 0}
   hm: {fileID: 0}
   navAgent: {fileID: 195460895285877458}
+  statsContainer:
+    _childStatInfos:
+    - childStatID: {fileID: 11400000, guid: 585ea90be3ef1a645a3c0b3894aeb3f4, type: 2}
+      currentValue: 0
+    - childStatID: {fileID: 11400000, guid: 2afd7b1215a0b2746b77a8c9e3316605, type: 2}
+      currentValue: 0
+    - childStatID: {fileID: 11400000, guid: 22772edbc05052140af78dcf860e7ea9, type: 2}
+      currentValue: 0
+    - childStatID: {fileID: 11400000, guid: edde50d32f7d6d34789d931cdc9b9f8d, type: 2}
+      currentValue: 0
+    - childStatID: {fileID: 11400000, guid: c7b408b288f9e0441904197be9b9807b, type: 2}
+      currentValue: 0
+    - childStatID: {fileID: 11400000, guid: 13507abb539c6bf44aa224ffe9cb8f27, type: 2}
+      currentValue: 0
+    - childStatID: {fileID: 11400000, guid: b6eb2aa1a6a532c4ab5415cb61a7f6e4, type: 2}
+      currentValue: 0
+    - childStatID: {fileID: 11400000, guid: b093d0660af69114b9e892be318bfda9, type: 2}
+      currentValue: 0
+    - childStatID: {fileID: 11400000, guid: 19c532e912ca9b24b9d4a03a597635dd, type: 2}
+      currentValue: 0
+    - childStatID: {fileID: 11400000, guid: e4ad729c8fc05004e96b1f1570119fff, type: 2}
+      currentValue: 0
+    - childStatID: {fileID: 11400000, guid: 40db861030465814d8712bedc1c170a6, type: 2}
+      currentValue: 0
+    - childStatID: {fileID: 11400000, guid: 2d1aff0eb8d9dbd42a0f26c94a55d466, type: 2}
+      currentValue: 0
+    - childStatID: {fileID: 11400000, guid: 24f23feea4e468a438455aaf31419275, type: 2}
+      currentValue: 0
   childName: 
   isMale: 0
   inactivityDurationRange: {x: 3, y: 5}
   waitingDistance: 2
   IpTypeFun: {fileID: 11400000, guid: 88b7a2a5fee7ce241b5954fc4ede72f0, type: 2}
   slapFallDownDistance: 1
-  delayForHSlapHit: 0.2
+  delayForHSlapHit: 0.1
   slapFallDownSpeed: 15
-  slapKODuration: 1
+  slapKODuration: 2.8
   slapFallDownCurve:
     serializedVersion: 2
     m_Curve:

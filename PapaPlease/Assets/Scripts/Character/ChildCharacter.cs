@@ -47,6 +47,8 @@ public class ChildCharacter : Character {
     [SerializeField]
     AnimationCurve slapFallDownCurve;
 
+    bool isFrozen = false;
+    bool isSlaped = false;
 
     // Use this for initialization
     void Start () {
@@ -66,9 +68,13 @@ public class ChildCharacter : Character {
     {
         Debug.Log("freeze set to " + state);
         if (state)
+        {
+            isFrozen = true;
             navAgent.isStopped = true;
+        }
         else
         {
+            isFrozen = false;
             navAgent.isStopped = false;
         }
     }
@@ -76,7 +82,8 @@ public class ChildCharacter : Character {
     public void GiveOrder (IPType ipType)
     {
         SetCurrentInterestPoint(hm.GetRandomInterestPoint(ipType, lastInterestPoint));
-        Freeze(false);
+        if(!isSlaped)
+            Freeze(false);
     }
 
     void SetCurrentInterestPoint(IPType ipType)
@@ -103,9 +110,10 @@ public class ChildCharacter : Character {
 
     public void IsSlapped ()
     {
-
         Freeze(true);
+        isSlaped = true;
         StartCoroutine(waitAndApplySlapHit());
+        LaunchSlapAnim();
     }
 
     IEnumerator waitAndApplySlapHit ()
@@ -130,8 +138,8 @@ public class ChildCharacter : Character {
 
         yield return new WaitForSeconds(slapKODuration);
 
+        isSlaped = false;
         Freeze(false);
-        SetState(ChildAIState.WAITING);
     }
 
     Vector3 GetHitPosition ()
@@ -372,6 +380,11 @@ public class ChildCharacter : Character {
         Vector3 lookrotation = navAgent.steeringTarget - transform.position;
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookrotation), extraRotationSpeed * Time.deltaTime);
 
+    }
+
+    void LaunchSlapAnim ()
+    {
+        animator.Play("SlapHit");
     }
     #endregion
 }
