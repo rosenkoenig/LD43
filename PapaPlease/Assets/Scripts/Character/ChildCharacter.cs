@@ -148,8 +148,7 @@ public class ChildCharacter : Character {
     void MoveTo (Vector3 destination)
     {
         navAgent.SetDestination(destination);
-       /* _targetPoint = destination;
-        CalculateNavMesh();*/
+        SetIsWalking(true);
     }
     void MoveTo (Transform transform)
     {
@@ -205,7 +204,7 @@ public class ChildCharacter : Character {
         NavMesh.SamplePosition(waitingDestination, out hit, waitingDistance, 1);
         Vector3 finalPosition = hit.position;
 
-        navAgent.SetDestination(finalPosition);
+        MoveTo(finalPosition);
     }
 
     void StartRoaming ()
@@ -226,6 +225,8 @@ public class ChildCharacter : Character {
 
     void UpdateStates ()
     {
+        CheckIsWalking();
+
         switch(state)
         {
             case ChildAIState.WAITING:
@@ -241,6 +242,18 @@ public class ChildCharacter : Character {
                 UpdateInActivity();
                 break;
         }
+    }
+
+    Vector3 lastPosition;
+    void CheckIsWalking ()
+    {
+        bool isWalking = false;
+
+        isWalking = Vector3.Distance(lastPosition, transform.position) > 0.01f;
+
+        lastPosition = transform.position;
+
+        SetIsWalking(isWalking);
     }
 
     void UpdateWaiting ()
@@ -297,7 +310,7 @@ public class ChildCharacter : Character {
     IEnumerator LerpCoroutine()
     {
         float factor = 0f;
-        float lerpSpeed = 3f;
+        float lerpSpeed = 1f;
         Vector3 startPosition;
         Quaternion startRot;
 
@@ -333,6 +346,18 @@ public class ChildCharacter : Character {
         currentInterestPoint = null;
 
         SetState(ChildAIState.WAITING);
+    }
+    #endregion
+
+
+    #region Animation
+    [SerializeField]
+    Animator animator;
+
+    void SetIsWalking (bool state)
+    {
+        Debug.Log("is walking : " + state);
+        animator.SetBool("IsWalking", state);
     }
     #endregion
 }
