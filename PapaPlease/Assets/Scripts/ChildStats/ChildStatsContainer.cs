@@ -9,7 +9,7 @@ public class ChildStatsContainer {
     [SerializeField] ChildStatIDsContainer _childStatsIdContainer;
     [SerializeField] List<ChildInitialSkillsPack> _childInitialSkillsPacks;
     
-    void Awake()
+    public void Init()
     {
         _childStatInfos = new List<ChildStatInfo>();
         foreach (var curStatID in _childStatsIdContainer.GetChildStatIDs)

@@ -50,6 +50,11 @@ public class ChildCharacter : Character {
     bool isFrozen = false;
     bool isSlaped = false;
 
+    private void Awake()
+    {
+        statsContainer.Init();
+    }
+
     [SerializeField]
     Vector2 timeBetweenAnger = new Vector2(1f, 2f);
 
