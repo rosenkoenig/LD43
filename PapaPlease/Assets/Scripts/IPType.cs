@@ -23,7 +23,7 @@ public class IPType : ScriptableObject
 
     public string GetIPName { get { return _ipName; } }
 
-    public enum StatModificationType { INTEREST_POINT, START_ACTIVITY, END_ACTIVITY }
+    public enum StatModificationType { DURING_ACTIVITY, START_ACTIVITY, END_ACTIVITY }
 
     //public bool IsModifierOvertime_interestedPoint { get { return _isOvertime_interestedPoint; } }
     //public bool IsModifierOvertime_startActivity { get { return _isOvertime_startActivity; } }
@@ -38,7 +38,7 @@ public class IPType : ScriptableObject
         List<StatModifier> selectedStateModifierList = null;
         switch (statModificationType)
         {
-            case StatModificationType.INTEREST_POINT:
+            case StatModificationType.DURING_ACTIVITY:
                 selectedStateModifierList = _duringActivityModifiers;
                 break;
             case StatModificationType.START_ACTIVITY:

@@ -343,7 +343,7 @@ public class ChildCharacter : Character {
 
     void UpdateInActivity ()
     {
-        
+        currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.DURING_ACTIVITY, statsContainer);
     }
 
     public override void OnActivityEnds()
@@ -352,6 +352,8 @@ public class ChildCharacter : Character {
         currentActivity = null;
 
         Debug.Log("ends");
+        currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.END_ACTIVITY, statsContainer);
+        currentInterestPoint.TryMakeGlobalModification(InterestPointModification.ON_COMPLETED);
 
         lastInterestPoint = currentInterestPoint;
         currentInterestPoint = null;
