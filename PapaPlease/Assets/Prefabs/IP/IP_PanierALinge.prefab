@@ -198,12 +198,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ipName: Wash the laundry
   pivotPoint: {fileID: 4651062504808628}
-  type: {fileID: 11400000, guid: 2fea2dac64659854a93001188d2ab1e1, type: 2}
+  iPtype: {fileID: 11400000, guid: 2fea2dac64659854a93001188d2ab1e1, type: 2}
   activity: {fileID: 114508955630155528}
   onlyUsableByChild: 0
   globalStatsModificator_OnCompleted: {fileID: 0}
-  globalStatsModificator_OverTimeEmpty: {fileID: 0}
-  globalStatsModificator_OverTimeFull: {fileID: 0}
+  globalStatsModificator_OverTimeCOMPLETED: {fileID: 0}
+  globalStatsModificator_OverTimeWAITING: {fileID: 0}
 --- !u!114 &114508955630155528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -216,5 +216,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHolder: 1
-  doOnce: 0
+  doOnce: 1
   duration: 10

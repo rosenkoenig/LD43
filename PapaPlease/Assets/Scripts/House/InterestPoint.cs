@@ -21,19 +21,21 @@ public class InterestPoint : MonoBehaviour {
                     GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OnCompleted);
                 break;
             case InterestPointModification.OVERTIME_EMPTY:
-                if (globalStatsModificator_OverTimeEmpty != null)
-                    GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeEmpty);
+                if (globalStatsModificator_OverTimeCOMPLETED != null)
+                    GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeCOMPLETED);
                 break;
             case InterestPointModification.OVERTIME_FULL:
-                if (globalStatsModificator_OverTimeFull != null)
-                    GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeFull);
+                if (globalStatsModificator_OverTimeWAITING != null)
+                    GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeWAITING);
                 break;
         }
     }
 
     public ChildStatsModificatorContainer globalStatsModificator_OnCompleted;
-    public ChildStatsModificatorContainer globalStatsModificator_OverTimeEmpty;
-    public ChildStatsModificatorContainer globalStatsModificator_OverTimeFull;
+    [UnityEngine.Serialization.FormerlySerializedAs("globalStatsModificator_OverTimeEmpty")]
+    public ChildStatsModificatorContainer globalStatsModificator_OverTimeCOMPLETED;
+    [UnityEngine.Serialization.FormerlySerializedAs("globalStatsModificator_OverTimeFull")]
+    public ChildStatsModificatorContainer globalStatsModificator_OverTimeWAITING;
 
     public bool Interact (Character character)
     {
@@ -56,9 +58,9 @@ public class InterestPoint : MonoBehaviour {
     void Update ()
     {
         if (activity.State < ActivityState.COMPLETE)
-            GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeEmpty);
+            GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeWAITING, true);
         else
-            GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeFull);
+            GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeCOMPLETED, true);
 
         activity.Update();
     }

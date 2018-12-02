@@ -1546,14 +1546,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ipName: Wash the dishes
   pivotPoint: {fileID: 4060127090980454}
-  type: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
+  iPtype: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
   activity: {fileID: 114900431433536196}
   onlyUsableByChild: 0
   globalStatsModificator_OnCompleted: {fileID: 11400000, guid: 4c251df5befac454fa3fee36ae8af78e,
     type: 2}
-  globalStatsModificator_OverTimeEmpty: {fileID: 11400000, guid: e2c27de81c3e41c4eaa49037044b0e5b,
+  globalStatsModificator_OverTimeEmpty: {fileID: 0}
+  globalStatsModificator_OverTimeFull: {fileID: 11400000, guid: e2c27de81c3e41c4eaa49037044b0e5b,
     type: 2}
-  globalStatsModificator_OverTimeFull: {fileID: 0}
 --- !u!114 &114900431433536196
 MonoBehaviour:
   m_ObjectHideFlags: 1

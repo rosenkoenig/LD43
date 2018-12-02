@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +17,8 @@ public class VirtualMother : MonoBehaviour
     List<string> availableNamesMale = new List<string>(), availableNamesFemale = new List<string>();
 
     public int baseChildsQuantity = 2;
+
+    [SerializeField] List<ChildStatsModificatorContainer> _passiveModifiers;
 
     // Use this for initialization
     public void Init()
@@ -40,7 +43,18 @@ public class VirtualMother : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayPassiveModificators();
+    }
 
+    private void PlayPassiveModificators()
+    {
+        foreach (var item in _passiveModifiers)
+        {
+            foreach (var child in activeChilds)
+            {
+
+            }
+        }
     }
 
     void AddChild()
@@ -54,7 +68,7 @@ public class VirtualMother : MonoBehaviour
         GameObject inst = GameObject.Instantiate(childPrefab.gameObject);
         ChildCharacter childInst = inst.GetComponent<ChildCharacter>();
 
-        childInst.isMale = Random.Range(0, 2) >= 1;
+        childInst.isMale = UnityEngine.Random.Range(0, 2) >= 1;
         childInst.childName = GetRandomName(childInst.isMale);
         childInst.hm = gm.hm;
 
@@ -68,12 +82,12 @@ public class VirtualMother : MonoBehaviour
         string usedString = "";
         if (isMale)
         {
-            usedString = availableNamesMale[Random.Range(0, availableNamesMale.Count)];
+            usedString = availableNamesMale[UnityEngine.Random.Range(0, availableNamesMale.Count)];
             availableNamesMale.Remove(usedString);
         }
         else
         {
-            usedString = availableNamesFemale[Random.Range(0, availableNamesFemale.Count)];
+            usedString = availableNamesFemale[UnityEngine.Random.Range(0, availableNamesFemale.Count)];
             availableNamesFemale.Remove(usedString);
         }
 
@@ -90,13 +104,13 @@ public class VirtualMother : MonoBehaviour
         return activeChilds.Find(x => x.childName == childName);
     }
 
-    public void ApplyGlobalModifier(ChildStatsModificatorContainer statsModificator)
+    public void ApplyGlobalModifier(ChildStatsModificatorContainer statsModificator, bool useDeltaTime = false)
     {
         if (statsModificator != null)
         {
             foreach (var item in activeChilds)
             {
-                statsModificator.MakeTryModifyStats(item.statsContainer);
+                statsModificator.MakeTryModifyStats(item.statsContainer, useDeltaTime);
             }
         }
     }

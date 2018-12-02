@@ -36,10 +36,12 @@ public class IPType : ScriptableObject
     public void TryModifyStats(StatModificationType statModificationType, ChildStatsContainer childStatsContainer)
     {
         List<StatModifier> selectedStateModifierList = null;
+        bool useDeltaTime = false;
         switch (statModificationType)
         {
             case StatModificationType.DURING_ACTIVITY:
                 selectedStateModifierList = _duringActivityModifiers;
+                useDeltaTime = true;
                 break;
             case StatModificationType.START_ACTIVITY:
                 selectedStateModifierList = _startActivityModifiers;
@@ -55,7 +57,7 @@ public class IPType : ScriptableObject
             {
                 if (curChildStatInfo.childStatID == item._childStatID)
                 {
-                    curChildStatInfo.currentValue = item.ModifyStat(curChildStatInfo.currentValue);
+                    curChildStatInfo.currentValue = item.ModifyStat(curChildStatInfo.currentValue, useDeltaTime);
                 }
             }
         }
