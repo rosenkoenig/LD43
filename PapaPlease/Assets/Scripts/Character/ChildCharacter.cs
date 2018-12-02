@@ -56,6 +56,8 @@ public class ChildCharacter : Character {
 	// Update is called once per frame
     void Update ()
     {
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+
         extraRotation();
         UpdateStates();
     }
@@ -250,7 +252,7 @@ public class ChildCharacter : Character {
     void CheckIsWalking ()
     {
         
-        isWalking = Vector3.Distance(lastPosition, transform.position) > 0.01f;
+        isWalking = Vector3.Distance(lastPosition, transform.position) > 0.005f;
 
         lastPosition = transform.position;
 

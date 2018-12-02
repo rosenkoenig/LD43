@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c3bd7c8ec0abeaf429e72c8ac7903557
+guid: 46f5527f6d1f1c2408b9e952fcd06e32
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -89,9 +89,10 @@ ModelImporter:
     400080: mixamorig:Spine
     400082: mixamorig:Spine1
     400084: mixamorig:Spine2
-    2100000: lambert1
+    2100000: lambert3
+    2100002: lambert1
     4300000: Children
-    7400000: mixamo.com
+    7400000: Swagger Walk
     9500000: //RootNode
     13700000: Children
   externalObjects: {}
@@ -121,7 +122,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Swagger Walk
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 84
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

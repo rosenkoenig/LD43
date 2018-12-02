@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 29c53c0068baeb644bb248ab405ff725
+guid: 8e28445eb1a36e641bbba2fed52fd964
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Children
-    100002: //RootNode
+    100000: //RootNode
+    100002: Children
     100004: mixamorig:Head
     100006: mixamorig:HeadTop_End
     100008: mixamorig:Hips
@@ -46,8 +46,8 @@ ModelImporter:
     100080: mixamorig:Spine
     100082: mixamorig:Spine1
     100084: mixamorig:Spine2
-    400000: Children
-    400002: //RootNode
+    400000: //RootNode
+    400002: Children
     400004: mixamorig:Head
     400006: mixamorig:HeadTop_End
     400008: mixamorig:Hips
@@ -89,7 +89,8 @@ ModelImporter:
     400080: mixamorig:Spine
     400082: mixamorig:Spine1
     400084: mixamorig:Spine2
-    2100000: lambert1
+    2100000: lambert3
+    2100002: lambert1
     4300000: Children
     7400000: mixamo.com
     9500000: //RootNode

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9119aba64e1ca1b409421a8406d42503
+guid: 09d1042f11a936c45ac4742a4b98ba89
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -89,7 +89,8 @@ ModelImporter:
     400080: mixamorig:Spine
     400082: mixamorig:Spine1
     400084: mixamorig:Spine2
-    2100000: lambert1
+    2100000: lambert3
+    2100002: lambert1
     4300000: Children
     7400000: mixamo.com
     9500000: //RootNode
