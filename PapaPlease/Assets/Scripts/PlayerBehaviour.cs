@@ -49,6 +49,30 @@ public class PlayerBehaviour : Character {
         }
     }
 
+    void Update ()
+    {
+        UpdateInteractionDisplay();
+    }
+
+    InterestPoint hoverIp = null;
+    void UpdateInteractionDisplay ()
+    {
+        InterestPoint ip = GetHoveredIP();
+
+        if (ip == hoverIp) return;
+
+        if (ip)
+        {
+            hoverIp = ip;
+            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, ip.type.GetIPName);
+        }
+        else if (ip == null)
+        {
+            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(false, "");
+            hoverIp = ip;
+        }
+    }
+
     void OnInteractionBegin ()
     {
         LockMovement(true);
