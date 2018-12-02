@@ -7,6 +7,7 @@ public class GameMaster : MonoBehaviour {
     public HouseMaster hm;
     public UIMaster uIMaster;
     public PlayerBehaviour player;
+    public GameFlow gf;
 
     static GameMaster _instance;
 
@@ -18,6 +19,8 @@ public class GameMaster : MonoBehaviour {
         _instance = this;
         vm.gm = this;
         hm.gm = this;
+        gf.gm = this;
+        gf.Init();
         vm.Init();
     }
 
