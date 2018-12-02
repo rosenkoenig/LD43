@@ -2661,7 +2661,6 @@
 							<ChildrenList>
 								<BlendContainer Name="AmbOut_Wall_Neighborhood_Lp" ID="{5704E487-A74A-4F2E-801D-61D2D0155BEB}" ShortID="456129020">
 									<PropertyList>
-										<Property Name="BlendBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -2702,7 +2701,6 @@
 								</BlendContainer>
 								<BlendContainer Name="AmbOut_Bathroom_Neighborhood_Lp" ID="{832397B2-6F5F-4267-86AC-DB83B961FD31}" ShortID="860290728">
 									<PropertyList>
-										<Property Name="BlendBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -2743,7 +2741,7 @@
 								</BlendContainer>
 								<BlendContainer Name="Amb_Bathroom_Lp" ID="{A4687DDA-C2B8-47AE-B522-AF5DDCDFE583}" ShortID="494393789">
 									<PropertyList>
-										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -2753,7 +2751,81 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="Amb_Bathroom" ID="{FDA526AF-FC62-4EF3-8C60-EEB42A039CC0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+											<Custom CreatedFrom="{FDA526AF-FC62-4EF3-8C60-EEB42A039CC0}">
+												<Attenuation Name="Amb_Bathroom (Custom)" ID="{1AD7658B-63AB-48F3-A74E-7E2642FE0249}" ShortID="234308392">
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{0D560596-0DF5-4DAA-B072-6C8C21AA999E}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>60.10038</XPos>
+																			<YPos>-0</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp3</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>100</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{752D7F30-7AEB-4EA7-AD31-B97403FD887C}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>60.8532</XPos>
+																			<YPos>0</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>100</XPos>
+																			<YPos>64</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -2818,10 +2890,12 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{70026D94-492E-479F-8A02-F6273A39502B}"/>
+									</PositioningInfo>
 								</BlendContainer>
 								<BlendContainer Name="Amb_KidsBedroom_Lp" ID="{653563C0-6F4A-4B59-964F-F968A7388CC8}" ShortID="54041296">
 									<PropertyList>
-										<Property Name="BlendBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -2867,7 +2941,6 @@
 								</BlendContainer>
 								<BlendContainer Name="Amb_Kitchen_Lp" ID="{293419FB-C2C1-4240-905F-4046201BF0D0}" ShortID="307913634">
 									<PropertyList>
-										<Property Name="BlendBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -2913,7 +2986,6 @@
 								</BlendContainer>
 								<BlendContainer Name="Amb_LivingRoom_Lp" ID="{B8124057-5FB6-4C29-A281-72EBC974E313}" ShortID="121912849">
 									<PropertyList>
-										<Property Name="BlendBehavior" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-8</Value>
@@ -2955,7 +3027,6 @@
 								</BlendContainer>
 								<BlendContainer Name="Amb_ParentsBedroom_Lp" ID="{0088DB89-AF2D-409E-AEE0-E176421EB299}" ShortID="576149104">
 									<PropertyList>
-										<Property Name="BlendBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
