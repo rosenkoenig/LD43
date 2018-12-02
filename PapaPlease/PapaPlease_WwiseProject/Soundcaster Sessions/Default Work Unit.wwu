@@ -25,7 +25,7 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="AI_Walking" ID="{2E7394DC-9D58-4C2A-AF87-A48265D143AE}"/>
+						<CurrentSwitchRef Name="AI_Stop" ID="{D5BFA1F2-AEAC-4CEB-9270-220F0909A035}"/>
 						<CurrentSwitchRef Name="AI_Cooking" ID="{EAD67812-32F7-45D0-8C9A-24199D85EF36}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
