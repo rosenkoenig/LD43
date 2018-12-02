@@ -24,6 +24,7 @@ public class ChildStatsContainer {
     //public int physique;
     //public int age;
 
+    [System.Serializable]
     public class ChildStatInfo
     {
         public ChildStatID childStatID;
