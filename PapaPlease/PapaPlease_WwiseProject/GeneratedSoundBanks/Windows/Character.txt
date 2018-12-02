@@ -1,0 +1,18 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3854155799	Play_Footsteps			\PapaPlease\Character\Play_Footsteps	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	171004212	Player_Foosteps	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_18294F5F.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_L\Player_Foosteps		57350
+	326098141	Player_Foosteps_04	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_E2AA2BA0.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_L\Player_Foosteps_04		77766
+	340403617	Player_Foosteps	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_3FF0565A.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_R\Player_Foosteps		72672
+	346396162	Player_Foosteps_05	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_D60603DA.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_L\Player_Foosteps_05		39334
+	468389400	Player_Foosteps_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_5E8EC6A5.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_R\Player_Foosteps_02		61980
+	509307203	Player_Foosteps_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_595E91E1.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_R\Player_Foosteps_03		68474
+	565132539	Player_Foosteps_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_D0EE7F41.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_L\Player_Foosteps_03		70974
+	699204274	Player_Foosteps_06	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_449FE43F.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_L\Player_Foosteps_06		65536
+	742844808	Player_Foosteps_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_77174DB5.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_L\Player_Foosteps_01		47476
+	758662162	Player_Foosteps_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_85D05B1A.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_L\Player_Foosteps_02		52168
+	858942714	Player_Foosteps_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_BA51EBA3.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_R\Player_Foosteps_01		74014
+	885968506	Player_Foosteps_05	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_CDE21F11.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_R\Player_Foosteps_05		62842
+	1041084550	Player_Foosteps_04	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_C25DA7E4.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Footsteps\Footseps\Footstep_R\Player_Foosteps_04		83064
+

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>C:\Users\droui\Desktop\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\droui\Desktop\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\droui\Desktop\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\droui\Desktop\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,18 +21,12 @@
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2292458263" Name="Play_Door_Close" ObjectPath="\Events\PapaPlease\SFX\Play_Door_Close"/>
-				<Event Id="1660008929" Name="Play_Door_Open" ObjectPath="\Events\PapaPlease\SFX\Play_Door_Open"/>
 				<Event Id="55201595" Name="Play_Washer_Close" ObjectPath="\Events\PapaPlease\SFX\Play_Washer_Close"/>
 				<Event Id="3531545949" Name="Play_Washer_Open" ObjectPath="\Events\PapaPlease\SFX\Play_Washer_Open"/>
 				<Event Id="4244658871" Name="Play_Window_Close" ObjectPath="\Events\PapaPlease\SFX\Play_Window_Close"/>
 				<Event Id="4135004417" Name="Play_Window_Open" ObjectPath="\Events\PapaPlease\SFX\Play_Window_Open"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="49175465" Language="SFX">
-					<ShortName>Doors\DoorClose_01.wav</ShortName>
-					<Path>SFX\Doors\DoorClose_01_56D34C19.wem</Path>
-				</File>
 				<File Id="49342786" Language="SFX">
 					<ShortName>Washer\WasherOpen_01.wav</ShortName>
 					<Path>SFX\Washer\WasherOpen_01_56D34C19.wem</Path>
@@ -40,14 +34,6 @@
 				<File Id="54061708" Language="SFX">
 					<ShortName>Washer\WasherClose_01.wav</ShortName>
 					<Path>SFX\Washer\WasherClose_01_56D34C19.wem</Path>
-				</File>
-				<File Id="55178130" Language="SFX">
-					<ShortName>Doors\DoorOpen_03.wav</ShortName>
-					<Path>SFX\Doors\DoorOpen_03_56D34C19.wem</Path>
-				</File>
-				<File Id="118484460" Language="SFX">
-					<ShortName>Doors\DoorClose_02.wav</ShortName>
-					<Path>SFX\Doors\DoorClose_02_56D34C19.wem</Path>
 				</File>
 				<File Id="301767813" Language="SFX">
 					<ShortName>Windows\WindowOpen_01.wav</ShortName>
@@ -57,21 +43,9 @@
 					<ShortName>Washer\WasherOpen_02.wav</ShortName>
 					<Path>SFX\Washer\WasherOpen_02_56D34C19.wem</Path>
 				</File>
-				<File Id="576719503" Language="SFX">
-					<ShortName>Doors\DoorOpen_01.wav</ShortName>
-					<Path>SFX\Doors\DoorOpen_01_56D34C19.wem</Path>
-				</File>
-				<File Id="637810547" Language="SFX">
-					<ShortName>Doors\DoorOpen_02.wav</ShortName>
-					<Path>SFX\Doors\DoorOpen_02_56D34C19.wem</Path>
-				</File>
 				<File Id="651720505" Language="SFX">
 					<ShortName>Washer\WasherOpen_03.wav</ShortName>
 					<Path>SFX\Washer\WasherOpen_03_56D34C19.wem</Path>
-				</File>
-				<File Id="678853948" Language="SFX">
-					<ShortName>Doors\DoorClose_03.wav</ShortName>
-					<Path>SFX\Doors\DoorClose_03_56D34C19.wem</Path>
 				</File>
 				<File Id="845164772" Language="SFX">
 					<ShortName>Washer\WasherClose_02.wav</ShortName>
@@ -91,6 +65,63 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Character</ObjectPath>
 			<ShortName>Character</ShortName>
 			<Path>Character.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\PapaPlease\Character\Play_Footsteps"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="171004212" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_18294F5F.wem</Path>
+				</File>
+				<File Id="326098141" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_E2AA2BA0.wem</Path>
+				</File>
+				<File Id="340403617" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_3FF0565A.wem</Path>
+				</File>
+				<File Id="346396162" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_D60603DA.wem</Path>
+				</File>
+				<File Id="468389400" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_5E8EC6A5.wem</Path>
+				</File>
+				<File Id="509307203" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_595E91E1.wem</Path>
+				</File>
+				<File Id="565132539" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_D0EE7F41.wem</Path>
+				</File>
+				<File Id="699204274" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_449FE43F.wem</Path>
+				</File>
+				<File Id="742844808" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_77174DB5.wem</Path>
+				</File>
+				<File Id="758662162" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_85D05B1A.wem</Path>
+				</File>
+				<File Id="858942714" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_BA51EBA3.wem</Path>
+				</File>
+				<File Id="885968506" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_CDE21F11.wem</Path>
+				</File>
+				<File Id="1041084550" Language="SFX">
+					<ShortName>Player_Foosteps.wav</ShortName>
+					<Path>SFX\Player_Foosteps_C25DA7E4.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
@@ -157,6 +188,7 @@
 			<IncludedEvents>
 				<Event Id="2561178547" Name="AI_Footsteps" ObjectPath="\Events\PapaPlease\AI\AI_Footsteps" MaxAttenuation="100.000000"/>
 				<Event Id="1056168201" Name="Play_AI_Cooking" ObjectPath="\Events\PapaPlease\AI\Play_AI_Cooking" MaxAttenuation="100.000000"/>
+				<Event Id="2890421503" Name="Play_AI_Dishes" ObjectPath="\Events\PapaPlease\AI\Play_AI_Dishes" MaxAttenuation="100.000000"/>
 				<Event Id="498135132" Name="Play_AI_FlushToilet" ObjectPath="\Events\PapaPlease\AI\Play_AI_FlushToilet" MaxAttenuation="100.000000"/>
 				<Event Id="4083355364" Name="Play_AI_Shower_Lp" ObjectPath="\Events\PapaPlease\AI\Play_AI_Shower_Lp" MaxAttenuation="100.000000"/>
 				<Event Id="150416599" Name="Play_AI_Shower_Off" ObjectPath="\Events\PapaPlease\AI\Play_AI_Shower_Off" MaxAttenuation="100.000000"/>
