@@ -34,7 +34,7 @@ public class HouseMaster : MonoBehaviour
     {
         InterestPoint ip = null;
 
-        List<InterestPoint> ipMatchingCategory = allInterestPoints.FindAll(x => x.type == type && x.activity.IsAvailable());
+        List<InterestPoint> ipMatchingCategory = allInterestPoints.FindAll(x => x.iPtype == type && x.activity.IsAvailable());
 
         int idx = Random.Range(0, ipMatchingCategory.Count);
 
@@ -46,7 +46,7 @@ public class HouseMaster : MonoBehaviour
     {
         InterestPoint ip = null;
 
-        List<InterestPoint> ipMatchingCategory = allInterestPoints.FindAll(x => x.type == type && x != excludedIP && x.activity.IsAvailable());
+        List<InterestPoint> ipMatchingCategory = allInterestPoints.FindAll(x => x.iPtype == type && x != excludedIP && x.activity.IsAvailable());
 
         if(ipMatchingCategory.Count > 0)
         {
@@ -65,8 +65,8 @@ public class HouseMaster : MonoBehaviour
         List<IPTypeInfo> allIPTypeInfos = new List<IPTypeInfo>();
         foreach (InterestPoint ip in allInterestPoints)
         {
-            if (allIpType.Contains(ip.type) == false)
-                allIpType.Add(ip.type);
+            if (allIpType.Contains(ip.iPtype) == false)
+                allIpType.Add(ip.iPtype);
         }
 
         List<IPType> availableIpType = GetAllAvailableIPTypes();
@@ -90,8 +90,8 @@ public class HouseMaster : MonoBehaviour
 
         foreach (InterestPoint ip in allInterestPoints)
         {
-            if (ip.activity.IsAvailable() && availableIPType.Contains(ip.type) == false)
-                availableIPType.Add(ip.type);
+            if (ip.activity.IsAvailable() && availableIPType.Contains(ip.iPtype) == false)
+                availableIPType.Add(ip.iPtype);
         }        
 
         return availableIPType;

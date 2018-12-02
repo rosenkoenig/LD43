@@ -141,15 +141,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1052108852602400}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 4.322, y: 0, z: -3.905}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.000000029802319}
+  m_LocalPosition: {x: 1.572, y: 0, z: -3.905}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4570314492744576}
   - {fileID: 4005887410428536}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 179.99998, z: 0}
 --- !u!4 &4570314492744576
 Transform:
   m_ObjectHideFlags: 1
@@ -284,6 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHolder: 1
   doOnce: 0
+  animStateName: Idle
   duration: 10
 --- !u!114 &114714079452719500
 MonoBehaviour:
@@ -298,5 +299,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ipName: 
   pivotPoint: {fileID: 4570314492744576}
-  type: {fileID: 11400000, guid: 692618518660df64480ec57f23e83d13, type: 2}
+  iPtype: {fileID: 11400000, guid: 692618518660df64480ec57f23e83d13, type: 2}
   activity: {fileID: 114303019189652138}
+  onlyUsableByChild: 1
+  globalStatsModificator_OnCompleted: {fileID: 0}
+  globalStatsModificator_OverTimeEmpty: {fileID: 0}
+  globalStatsModificator_OverTimeFull: {fileID: 0}

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ChildStatsModificator", menuName = "Gameplay/ChildStatsModificator")]
-public class ChildStatsModificator : ScriptableObject {
+[System.Serializable]
+public class ChildStatsModificator {
 
     [SerializeField] List<StatModifier> statsModifiers;
 
-    public void TryModifyStats(ChildStatsContainer childStatsContainer)
+    public void TryModifyStats(ChildStatsContainer childStatsContainer, bool useDeltaTime = false)
     {
         foreach (var curChildStatInfo in childStatsContainer._childStatInfos)
         {
@@ -15,7 +15,7 @@ public class ChildStatsModificator : ScriptableObject {
             {
                 if (curChildStatInfo.childStatID == item._childStatID)
                 {
-                    curChildStatInfo.currentValue = item.ModifyStat(curChildStatInfo.currentValue);
+                    curChildStatInfo.currentValue = item.ModifyStat(curChildStatInfo.currentValue, useDeltaTime);
                 }
             }
         }

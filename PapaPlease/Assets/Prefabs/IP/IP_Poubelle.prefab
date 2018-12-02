@@ -197,7 +197,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHolder: 1
-  doOnce: 0
+  doOnce: 1
+  animStateName: Idle
   duration: 10
 --- !u!114 &114672379804962352
 MonoBehaviour:
@@ -210,7 +211,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5adb1f661ba0f4e9b6475272682cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ipName: 
+  ipName: Trash Can
   pivotPoint: {fileID: 4526523015653616}
-  type: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
+  iPtype: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114268749750583230}
+  onlyUsableByChild: 0
+  globalStatsModificator_OnCompleted: {fileID: 11400000, guid: 4c251df5befac454fa3fee36ae8af78e,
+    type: 2}
+  globalStatsModificator_OverTimeCOMPLETED: {fileID: 0}
+  globalStatsModificator_OverTimeWAITING: {fileID: 11400000, guid: e2c27de81c3e41c4eaa49037044b0e5b,
+    type: 2}

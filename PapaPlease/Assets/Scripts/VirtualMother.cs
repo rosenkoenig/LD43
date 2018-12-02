@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VirtualMother : MonoBehaviour {
+public class VirtualMother : MonoBehaviour
+{
     public GameMaster gm = null;
 
     List<ChildCharacter> activeChilds = new List<ChildCharacter>();
@@ -16,14 +18,16 @@ public class VirtualMother : MonoBehaviour {
 
     public int baseChildsQuantity = 2;
 
+    [SerializeField] List<ChildStatsModificatorContainer> _passiveModifiers;
+
     // Use this for initialization
-    public void Init ()
+    public void Init()
     {
         availableNamesMale = new List<string>(possibleNamesMale);
         availableNamesFemale = new List<string>(possibleNamesFemale);
     }
 
-    public void SpawnBaseChilds ()
+    public void SpawnBaseChilds()
     {
         for (int i = 0; i < baseChildsQuantity; i++)
         {
@@ -31,27 +35,40 @@ public class VirtualMother : MonoBehaviour {
         }
     }
 
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start()
+    {
 
-    void AddChild ()
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        PlayPassiveModificators();
+    }
+
+    private void PlayPassiveModificators()
+    {
+        foreach (var item in _passiveModifiers)
+        {
+            foreach (var child in activeChilds)
+            {
+
+            }
+        }
+    }
+
+    void AddChild()
     {
         InstantiateAndCreateChild();
 
     }
 
-    ChildCharacter InstantiateAndCreateChild ()
+    ChildCharacter InstantiateAndCreateChild()
     {
         GameObject inst = GameObject.Instantiate(childPrefab.gameObject);
         ChildCharacter childInst = inst.GetComponent<ChildCharacter>();
 
-        childInst.isMale = Random.Range(0, 2) >= 1;
+        childInst.isMale = UnityEngine.Random.Range(0, 2) >= 1;
         childInst.childName = GetRandomName(childInst.isMale);
         childInst.hm = gm.hm;
 
@@ -60,38 +77,41 @@ public class VirtualMother : MonoBehaviour {
         return childInst;
     }
 
-    string GetRandomName (bool isMale)
+    string GetRandomName(bool isMale)
     {
         string usedString = "";
-        if(isMale)
+        if (isMale)
         {
-            usedString = availableNamesMale[Random.Range(0, availableNamesMale.Count)];
+            usedString = availableNamesMale[UnityEngine.Random.Range(0, availableNamesMale.Count)];
             availableNamesMale.Remove(usedString);
         }
         else
         {
-            usedString = availableNamesFemale[Random.Range(0, availableNamesFemale.Count)];
+            usedString = availableNamesFemale[UnityEngine.Random.Range(0, availableNamesFemale.Count)];
             availableNamesFemale.Remove(usedString);
         }
 
         return usedString;
     }
 
-    public void GiveBirth ()
+    public void GiveBirth()
     {
         AddChild();
     }
 
-    public ChildCharacter GetChild (string childName)
+    public ChildCharacter GetChild(string childName)
     {
         return activeChilds.Find(x => x.childName == childName);
     }
 
-    public void ApplyGlobalModifier(ChildStatsModificator statsModificator)
+    public void ApplyGlobalModifier(ChildStatsModificatorContainer statsModificator, bool useDeltaTime = false)
     {
-        foreach (var item in activeChilds)
+        if (statsModificator != null)
         {
-            statsModificator.TryModifyStats(item.statsContainer);
+            foreach (var item in activeChilds)
+            {
+                statsModificator.MakeTryModifyStats(item.statsContainer, useDeltaTime);
+            }
         }
     }
 }

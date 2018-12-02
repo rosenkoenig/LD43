@@ -47,6 +47,8 @@ public class ChildCharacter : Character {
     [SerializeField]
     AnimationCurve slapFallDownCurve;
 
+    bool isFrozen = false;
+    bool isSlaped = false;
 
     // Use this for initialization
     void Start () {
@@ -66,9 +68,13 @@ public class ChildCharacter : Character {
     {
         Debug.Log("freeze set to " + state);
         if (state)
+        {
+            isFrozen = true;
             navAgent.isStopped = true;
+        }
         else
         {
+            isFrozen = false;
             navAgent.isStopped = false;
         }
     }
@@ -76,7 +82,8 @@ public class ChildCharacter : Character {
     public void GiveOrder (IPType ipType)
     {
         SetCurrentInterestPoint(hm.GetRandomInterestPoint(ipType, lastInterestPoint));
-        Freeze(false);
+        if(!isSlaped)
+            Freeze(false);
     }
 
     void SetCurrentInterestPoint(IPType ipType)
@@ -103,9 +110,16 @@ public class ChildCharacter : Character {
 
     public void IsSlapped ()
     {
-
         Freeze(true);
+        isSlaped = true;
         StartCoroutine(waitAndApplySlapHit());
+        LaunchSlapAnim();
+
+
+        if(state == ChildAIState.IN_ACTIVITY)
+        {
+            SetState(ChildAIState.WAITING);
+        }
     }
 
     IEnumerator waitAndApplySlapHit ()
@@ -128,10 +142,13 @@ public class ChildCharacter : Character {
             yield return new WaitForEndOfFrame();
         }
 
+        transform.forward = GameMaster.Instance.player.transform.position - transform.position;
+
+
         yield return new WaitForSeconds(slapKODuration);
 
+        isSlaped = false;
         Freeze(false);
-        SetState(ChildAIState.WAITING);
     }
 
     Vector3 GetHitPosition ()
@@ -170,7 +187,7 @@ public class ChildCharacter : Character {
         {
             ChildAIState oldState = state;
             state = newState;
-            OnStateChange(state, newState);
+            OnStateChange(oldState, newState);
         }
     }
 
@@ -180,6 +197,13 @@ public class ChildCharacter : Character {
         stateBeginTime = Time.time;
 
         Debug.Log(childName + " changes state for : " + newState);
+
+        switch(oldState)
+        {
+            case ChildAIState.IN_ACTIVITY:
+                CancelActivity();
+                break;
+        }
 
         switch(newState)
         {
@@ -197,40 +221,12 @@ public class ChildCharacter : Character {
                 break;
         }
     }
-    
 
-    void StartWaiting  ()
-    {
-        Vector3 waitingDestination = transform.position + Random.insideUnitSphere * waitingDistance;
-
-        NavMeshHit hit;
-        NavMesh.SamplePosition(waitingDestination, out hit, waitingDistance, 1);
-        Vector3 finalPosition = hit.position;
-
-        MoveTo(finalPosition);
-    }
-
-    void StartRoaming ()
-    {
-        SetCurrentInterestPoint(hm.GetRandomInterestPoint(IpTypeFun, lastInterestPoint));
-    }
-
-    void StartMovingToActivity ()
-    {
-        MoveTo(currentInterestPoint.pivotPoint);
-    }
-
-    void StartInActivity ()
-    {
-        currentInterestPoint.Interact(this);
-        
-    }
-
-    void UpdateStates ()
+    void UpdateStates()
     {
         CheckIsWalking();
 
-        switch(state)
+        switch (state)
         {
             case ChildAIState.WAITING:
                 UpdateWaiting();
@@ -247,55 +243,88 @@ public class ChildCharacter : Character {
         }
     }
 
-    Vector3 lastPosition;
-    bool isWalking = false;
-    void CheckIsWalking ()
+
+    /// <summary>
+    /// WAITING STATE WAITING
+    /// </summary>
+    void StartWaiting  ()
     {
-        
-        isWalking = Vector3.Distance(lastPosition, transform.position) > 0.005f;
-
-        lastPosition = transform.position;
-
-        SetIsWalking(isWalking);
+        if (waitForIdleCoroutine != null) StopCoroutine(waitForIdleCoroutine);
+        waitForIdleCoroutine = StartCoroutine(waitForOutOfAnimToBeEnded());       
     }
 
-    void UpdateWaiting ()
+    Coroutine waitForIdleCoroutine = null;
+    IEnumerator waitForOutOfAnimToBeEnded()
     {
-        if (Time.time - stateBeginTime >= currentInactivityDuration)
+        while (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") == false)
+        {
+            yield return new WaitForEndOfFrame();
+
+        }
+    }
+
+    void RealStartWaiting ()
+    {
+        Vector3 waitingDestination = transform.position + Random.insideUnitSphere * waitingDistance;
+
+        NavMeshHit hit;
+        NavMesh.SamplePosition(waitingDestination, out hit, waitingDistance, 1);
+        Vector3 finalPosition = hit.position;
+
+        MoveTo(finalPosition);
+    }
+
+    void UpdateWaiting()
+    {
+        if (Time.time - stateBeginTime >= currentInactivityDuration && animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") == true)
         {
             //wait a little time before starting a new activity
             SetState(ChildAIState.ROAMING);
         }
     }
 
-    void UpdateRoaming ()
+    /// <summary>
+    /// ROAMING STATE ROAMING
+    /// </summary>
+    void StartRoaming ()
     {
-        
-        
-        
+        SetCurrentInterestPoint(hm.GetRandomInterestPoint(IpTypeFun, lastInterestPoint));
     }
 
-    void UpdateMovingToActivity ()
+    void UpdateRoaming()
+    {
+
+
+
+    }
+
+    /// <summary>
+    /// MOVING TO ACTIVITY STATE MOVING TO ACTIVITY
+    /// </summary>
+    void StartMovingToActivity ()
+    {
+        MoveTo(currentInterestPoint.pivotPoint);
+    }
+
+    void UpdateMovingToActivity()
     {
         //Debug.Log("remaining distance = " + navAgent.remainingDistance);
-       // MoveAlongPath();
+        // MoveAlongPath();
 
         if (navAgent.remainingDistance <= 1f)
         {
             //has reached IP
             HasReachedIP();
         }
-        
+
     }
 
-    void HasReachedIP ()
+    void HasReachedIP()
     {
-        if(currentInterestPoint.activity.IsAvailable(this))
+        if (currentInterestPoint.activity.IsAvailable(this))
         {
-
-            Debug.Log(childName +" begins activity on " + currentInterestPoint.ipName);
-            SetState(ChildAIState.IN_ACTIVITY);
-            IsInRangeForSnap();
+            if (!isLerping)
+                IsInRangeForSnap();
         }
         else
         {
@@ -309,6 +338,7 @@ public class ChildCharacter : Character {
         lerpCoroutine = StartCoroutine(LerpCoroutine());
     }
 
+    bool isLerping = false;
     Coroutine lerpCoroutine = null;
     IEnumerator LerpCoroutine()
     {
@@ -320,6 +350,7 @@ public class ChildCharacter : Character {
         factor = 0f;
         startPosition = transform.position;
         startRot = transform.rotation;
+        isLerping = true;
         while (factor < 1f)
         {
 
@@ -331,25 +362,65 @@ public class ChildCharacter : Character {
             transform.rotation = Quaternion.Lerp(startRot, currentInterestPoint.pivotPoint.rotation, factor);
             yield return new WaitForEndOfFrame();
         }
+
+        isLerping = false;
+        Debug.Log(childName + " begins activity on " + currentInterestPoint.ipName);
+        SetState(ChildAIState.IN_ACTIVITY);
     }
 
-    void UpdateInActivity ()
+
+    /// <summary>
+    /// IN ACTIVITY STATE IN ACTIVITY
+    /// </summary>
+    void StartInActivity ()
     {
+        currentInterestPoint.Interact(this);
         
+    }
+
+    void CancelActivity ()
+    {
+        if(currentActivity)
+        {
+            currentActivity.CancelActivity(this);
+            currentActivity = null;
+        }
+    }
+
+    void UpdateInActivity()
+    {
+        currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.DURING_ACTIVITY, statsContainer);
     }
 
     public override void OnActivityEnds()
     {
         base.OnActivityEnds();
+        Debug.Log(childName + " ends activity on " + currentInterestPoint.ipName);
         currentActivity = null;
 
-        Debug.Log("ends");
+        currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.END_ACTIVITY, statsContainer);
+        currentInterestPoint.TryMakeGlobalModification(InterestPointModification.ON_COMPLETED);
 
         lastInterestPoint = currentInterestPoint;
         currentInterestPoint = null;
 
         SetState(ChildAIState.WAITING);
     }
+
+    
+    Vector3 lastPosition;
+    bool isWalking = false;
+    void CheckIsWalking ()
+    {
+        
+        isWalking = Vector3.Distance(lastPosition, transform.position) > 0.005f;
+
+        lastPosition = transform.position;
+
+        SetIsWalking(isWalking);
+    }
+    
+    
     #endregion
 
 
@@ -359,7 +430,6 @@ public class ChildCharacter : Character {
 
     void SetIsWalking (bool state)
     {
-        Debug.Log("is walking : " + state);
         animator.SetBool("IsWalking", state);
     }
 
@@ -370,6 +440,17 @@ public class ChildCharacter : Character {
         Vector3 lookrotation = navAgent.steeringTarget - transform.position;
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookrotation), extraRotationSpeed * Time.deltaTime);
 
+    }
+
+    void LaunchSlapAnim ()
+    {
+        animator.Play("SlapHit");
+    }
+
+    public void StartAnimState(string stateName)
+    {
+       
+        animator.Play(stateName);
     }
     #endregion
 }

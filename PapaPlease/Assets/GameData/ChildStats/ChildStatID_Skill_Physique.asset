@@ -14,4 +14,4 @@ MonoBehaviour:
   _statName: Stamina
   _minValue: 0
   _maxValue: 100
-  _isDisplayedAsGauge: 1
+  _isDisplayedAsGauge: 0

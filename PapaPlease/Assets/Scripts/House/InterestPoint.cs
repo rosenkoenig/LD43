@@ -2,15 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum InterestPointCategory { NONE, FUN, HYGIENE, }
+public enum InterestPointModification { ON_COMPLETED, OVERTIME_EMPTY, OVERTIME_FULL }
 public class InterestPoint : MonoBehaviour {
 
     public string ipName = "";
     public Transform pivotPoint;
-    public IPType type;
+    [UnityEngine.Serialization.FormerlySerializedAs("type")]
+    public IPType iPtype;
     public Activity activity;
     public bool onlyUsableByChild = false;
+
+    void Start ()
+    {
+
+    }
     
+    public void TryMakeGlobalModification(InterestPointModification interestPointModification)
+    {
+        switch(interestPointModification)
+        {
+            case InterestPointModification.ON_COMPLETED:
+                if (globalStatsModificator_OnCompleted != null)
+                    GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OnCompleted);
+                break;
+            case InterestPointModification.OVERTIME_EMPTY:
+                if (globalStatsModificator_OverTimeCOMPLETED != null)
+                    GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeCOMPLETED);
+                break;
+            case InterestPointModification.OVERTIME_FULL:
+                if (globalStatsModificator_OverTimeWAITING != null)
+                    GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeWAITING);
+                break;
+        }
+    }
+
+    public ChildStatsModificatorContainer globalStatsModificator_OnCompleted;
+    [UnityEngine.Serialization.FormerlySerializedAs("globalStatsModificator_OverTimeEmpty")]
+    public ChildStatsModificatorContainer globalStatsModificator_OverTimeCOMPLETED;
+    [UnityEngine.Serialization.FormerlySerializedAs("globalStatsModificator_OverTimeFull")]
+    public ChildStatsModificatorContainer globalStatsModificator_OverTimeWAITING;
 
     public bool Interact (Character character)
     {
@@ -32,6 +62,11 @@ public class InterestPoint : MonoBehaviour {
 
     void Update ()
     {
+        if (activity.State < ActivityState.COMPLETE)
+            GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeWAITING, true);
+        else
+            GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeCOMPLETED, true);
+
         activity.Update();
     }
 }
