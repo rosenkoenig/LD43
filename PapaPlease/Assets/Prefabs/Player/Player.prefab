@@ -125,8 +125,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4089498889668532}
   - component: {fileID: 20445820290788818}
-  - component: {fileID: 114822243428257264}
-  - component: {fileID: 114048398039860194}
   - component: {fileID: 114788026864694268}
   m_Layer: 0
   m_Name: Main Camera
@@ -616,19 +614,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114048398039860194
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1404746441130028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32ce908405dfd5c48970e2a6a6a8ddea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
 --- !u!114 &114119490901102206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -656,27 +641,6 @@ MonoBehaviour:
   bobbingSpeed: 0.2
   bobbingAmount: 0.05
   midpoint: 0
---- !u!114 &114822243428257264
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1404746441130028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e128bf11111056d49986cf33370ac9e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!114 &114893964280441714
 MonoBehaviour:
   m_ObjectHideFlags: 1
