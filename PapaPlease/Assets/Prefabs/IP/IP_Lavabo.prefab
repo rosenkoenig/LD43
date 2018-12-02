@@ -456,6 +456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHolder: 1
   doOnce: 0
+  animStateName: Idle
   duration: 10
 --- !u!114 &114526484535013168
 MonoBehaviour:
@@ -470,5 +471,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ipName: 
   pivotPoint: {fileID: 4023697959703040}
-  type: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
+  iPtype: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
   activity: {fileID: 114508751568058650}
+  onlyUsableByChild: 1
+  globalStatsModificator_OnCompleted: {fileID: 0}
+  globalStatsModificator_OverTimeEmpty: {fileID: 0}
+  globalStatsModificator_OverTimeFull: {fileID: 0}

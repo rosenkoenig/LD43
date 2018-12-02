@@ -11,6 +11,11 @@ public class InterestPoint : MonoBehaviour {
     public IPType iPtype;
     public Activity activity;
     public bool onlyUsableByChild = false;
+
+    void Start ()
+    {
+
+    }
     
     public void TryMakeGlobalModification(InterestPointModification interestPointModification)
     {

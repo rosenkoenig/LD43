@@ -18,6 +18,7 @@ public class Activity : MonoBehaviour {
     public List<ActivityHolder> holders = new List<ActivityHolder>();
     public int maxHolder = 1;
     public bool doOnce = false;
+    public string animStateName = "";
 
     public System.Action OnBegin, OnEnd;
 
@@ -41,6 +42,11 @@ public class Activity : MonoBehaviour {
 
         SetState(ActivityState.RUNNING);
 
+        ChildCharacter child = character.GetComponent<ChildCharacter>();
+        if (child)
+        {
+            child.StartAnimState(animStateName);
+        }
 
         if (OnBegin != null) OnBegin();
     }
@@ -67,6 +73,13 @@ public class Activity : MonoBehaviour {
         }
 
         character.OnActivityEnds();
+
+        ChildCharacter child = character.GetComponent<ChildCharacter>();
+        if (child)
+        {
+            child.StartAnimState(animStateName+"_End");
+        }
+
         if (OnEnd != null) OnEnd();
     }
 

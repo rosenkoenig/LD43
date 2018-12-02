@@ -1567,4 +1567,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHolder: 1
   doOnce: 1
+  animStateName: Idle
   duration: 6

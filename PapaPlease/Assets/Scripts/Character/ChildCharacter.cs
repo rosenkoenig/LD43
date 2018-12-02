@@ -213,6 +213,22 @@ public class ChildCharacter : Character {
 
     void StartWaiting  ()
     {
+        if (waitForIdleCoroutine != null) StopCoroutine(waitForIdleCoroutine);
+        waitForIdleCoroutine = StartCoroutine(waitForOutOfAnimToBeEnded());       
+    }
+
+    Coroutine waitForIdleCoroutine = null;
+    IEnumerator waitForOutOfAnimToBeEnded()
+    {
+        while (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") == false)
+        {
+            yield return new WaitForEndOfFrame();
+
+        }
+    }
+
+    void RealStartWaiting ()
+    {
         Vector3 waitingDestination = transform.position + Random.insideUnitSphere * waitingDistance;
 
         NavMeshHit hit;
@@ -273,7 +289,7 @@ public class ChildCharacter : Character {
 
     void UpdateWaiting ()
     {
-        if (Time.time - stateBeginTime >= currentInactivityDuration)
+        if (Time.time - stateBeginTime >= currentInactivityDuration && animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") == true)
         {
             //wait a little time before starting a new activity
             SetState(ChildAIState.ROAMING);
@@ -304,10 +320,8 @@ public class ChildCharacter : Character {
     {
         if(currentInterestPoint.activity.IsAvailable(this))
         {
-
-            Debug.Log(childName +" begins activity on " + currentInterestPoint.ipName);
-            SetState(ChildAIState.IN_ACTIVITY);
-            IsInRangeForSnap();
+            if(!isLerping)
+                IsInRangeForSnap();
         }
         else
         {
@@ -321,6 +335,7 @@ public class ChildCharacter : Character {
         lerpCoroutine = StartCoroutine(LerpCoroutine());
     }
 
+    bool isLerping = false;
     Coroutine lerpCoroutine = null;
     IEnumerator LerpCoroutine()
     {
@@ -332,6 +347,7 @@ public class ChildCharacter : Character {
         factor = 0f;
         startPosition = transform.position;
         startRot = transform.rotation;
+        isLerping = true;
         while (factor < 1f)
         {
 
@@ -343,6 +359,10 @@ public class ChildCharacter : Character {
             transform.rotation = Quaternion.Lerp(startRot, currentInterestPoint.pivotPoint.rotation, factor);
             yield return new WaitForEndOfFrame();
         }
+
+        isLerping = false;
+        Debug.Log(childName + " begins activity on " + currentInterestPoint.ipName);
+        SetState(ChildAIState.IN_ACTIVITY);
     }
 
     void UpdateInActivity ()
@@ -353,9 +373,9 @@ public class ChildCharacter : Character {
     public override void OnActivityEnds()
     {
         base.OnActivityEnds();
+        Debug.Log(childName + " ends activity on " + currentInterestPoint.ipName);
         currentActivity = null;
-
-        Debug.Log("ends");
+        
         currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.END_ACTIVITY, statsContainer);
         currentInterestPoint.TryMakeGlobalModification(InterestPointModification.ON_COMPLETED);
 
@@ -364,6 +384,8 @@ public class ChildCharacter : Character {
 
         SetState(ChildAIState.WAITING);
     }
+
+    
     #endregion
 
 
@@ -373,7 +395,6 @@ public class ChildCharacter : Character {
 
     void SetIsWalking (bool state)
     {
-        Debug.Log("is walking : " + state);
         animator.SetBool("IsWalking", state);
     }
 
@@ -389,6 +410,12 @@ public class ChildCharacter : Character {
     void LaunchSlapAnim ()
     {
         animator.Play("SlapHit");
+    }
+
+    public void StartAnimState(string stateName)
+    {
+       
+        animator.Play(stateName);
     }
     #endregion
 }

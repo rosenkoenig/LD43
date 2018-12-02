@@ -3,9 +3,105 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{EF2D136F-C7B2-4910-A6F5-3D87DA95CD84}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Level1" ID="{DC80298D-3AD8-412E-BEE2-8915E6078444}">
+				<SoundBank Name="Ambiances" ID="{9B882880-8B35-4837-A27B-8BC8A2C86684}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>100000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ObjectInclusionList>
-						<ObjectRef Name="PapaPlease" ID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Amb_Inside" ID="{52B62706-6520-49F3-ABD6-A735855A85D8}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Foley" ID="{C5E9B3CE-3963-4753-ACD6-58807E6C4094}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>100000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="SFX" ID="{F8BDC979-4DED-4131-95D1-E0BB76F7C22A}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>100000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="SFX" ID="{7EFF7E50-8E61-4757-BF1F-ECC3755664EF}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="AI" ID="{D8C7E0D7-9D66-47C7-9CC9-EA43BA635552}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>100000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="AI_Children" ID="{AA2B4A50-A4BC-4FA2-8E79-BEAFB1812C46}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Character" ID="{673E3192-A3D1-41A7-B2A1-D65F103CEC33}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>100000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="Player" ID="{66FD8086-7196-42FD-A566-7E302AF2B374}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Menu" ID="{A6C1F77B-B2F5-4691-B9C0-F3F60E5CDAA6}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>100000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="Menu" ID="{E65D7934-1EE2-4F37-82DA-98B505810985}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Musics" ID="{686B6D1E-B0B9-4A27-9AB4-31E049FE32F9}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>100000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="Musics" ID="{4A985332-15A2-4FCB-AF25-D8805C610287}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Ambiances_Out" ID="{09AF1E69-12FA-47CC-86E8-DF9E3E702E9B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Amb_Outside" ID="{47418110-9FED-47EE-A272-4805C260466C}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
