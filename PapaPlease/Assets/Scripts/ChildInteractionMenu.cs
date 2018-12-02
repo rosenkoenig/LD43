@@ -10,6 +10,9 @@ public class ChildInteractionMenu : MonoBehaviour
     [SerializeField] RectTransform childOrderButtonsParent;
     [SerializeField] Text _childNameText;
 
+    [SerializeField] ChildStatGauge _childStatGaugeRef;
+    [SerializeField] ChildStatGauge _childStatSkillRef;
+
     List<ChildOrderButton> _childOrderButtons;
     List<IPTypeInfo> allIPTypeInfos;
 
