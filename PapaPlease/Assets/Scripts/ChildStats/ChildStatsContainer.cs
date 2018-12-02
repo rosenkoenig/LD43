@@ -5,24 +5,42 @@ using UnityEngine;
 [System.Serializable]
 public class ChildStatsContainer {
 
-    public List<ChildStatInfo> _childStatInfos;
+    public List<ChildStatInfo> _childStatInfos { get; private set; }
+    [SerializeField] ChildStatIDsContainer _childStatsIdContainer;
+    [SerializeField] List<ChildInitialSkillsPack> _childInitialSkillsPacks;
+    
+    void Awake()
+    {
+        _childStatInfos = new List<ChildStatInfo>();
+        foreach (var curStatID in _childStatsIdContainer.GetChildStatIDs)
+        {
+            _childStatInfos.Add(new ChildStatInfo() { childStatID = curStatID });
+        }
+        ChildInitialSkillsPack selectedInitialSkillPack = _childInitialSkillsPacks[UnityEngine.Random.Range(0, _childInitialSkillsPacks.Count)];
+        selectedInitialSkillPack.GenerateChildStats(this);
+    }
 
-    //public int gauge_sante;
-    //public int gauge_moral;
+    public float GetAChildStatValue(ChildStatID refID)
+    {
+        foreach (var item in _childStatInfos)
+        {
+            if (item.childStatID == refID)
+                return item.currentValue;
+        }
+        Debug.LogError("child stat not found!", refID);
+        return 0;
+    }
 
-    //public int gauge_appetit;
-    //public int gauge_hygiene;
-    //public int gauge_divertissement;
-    //public int gauge_confort;
-    //public int gauge_vessie;
-
-
-    //public int menage;
-    //public int obeissance;
-    //public int beaute;
-    //public int education;
-    //public int physique;
-    //public int age;
+    public float GetAChildStatValueRatio(ChildStatID refID)
+    {
+        foreach (var item in _childStatInfos)
+        {
+            if (item.childStatID == refID)
+                return (item.childStatID.MaxValue - item.childStatID.MinValue) * item.currentValue / 100;
+        }
+        Debug.LogError("child stat not found!");
+        return 0;
+    }
 
     [System.Serializable]
     public class ChildStatInfo
