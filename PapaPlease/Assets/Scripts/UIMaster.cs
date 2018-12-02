@@ -12,6 +12,8 @@ public class UIMaster : MonoBehaviour
 
     public Action HideMenuInteractChildEvent;
 
+    public bool childInteractionMenuIsDisplayed {  get { return _childInteractionMenu.isActiveAndEnabled; } }
+
     private void Start()
     {
         ShowOrHideCursor(false);

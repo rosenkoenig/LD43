@@ -9,6 +9,16 @@
 							<ObjectRef Name="System" ID="{87C37E52-4AC9-4495-B7DF-5803B9214D99}" WorkUnitID="{B7BC907F-145A-41F5-B242-5D95A894AD72}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+						<AuxBus Name="Bathroom_Reverb" ID="{4300066D-F683-4A47-85BF-1D3F86ED0C8B}"/>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

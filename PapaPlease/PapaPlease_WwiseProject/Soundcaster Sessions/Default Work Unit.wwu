@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{93AE761F-02E3-48E4-8522-6B31DF2B5A39}" SchemaVersion="89">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{93AE761F-02E3-48E4-8522-6B31DF2B5A39}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{93AE761F-02E3-48E4-8522-6B31DF2B5A39}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="PapaPlease_Soundcaster" ID="{E4B784DA-50BC-4FB1-B7FD-D16CE0792C3F}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_AI_Shower_On" ID="{F4C5E555-0A1B-4F66-8E9E-E9C66A90A97C}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AI_Shower_Lp" ID="{E6F18D48-8B6E-4AE0-8A3B-404FFF4B746D}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_AI_Shower_Lp" ID="{D553BF2B-5756-4222-A7E5-EA931A387FA4}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AI_Shower_Off" ID="{C7B90038-0943-402B-9EB3-F8B133C93DCA}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="AI_Walking" ID="{2E7394DC-9D58-4C2A-AF87-A48265D143AE}"/>
+						<CurrentSwitchRef Name="AI_Cooking" ID="{EAD67812-32F7-45D0-8C9A-24199D85EF36}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

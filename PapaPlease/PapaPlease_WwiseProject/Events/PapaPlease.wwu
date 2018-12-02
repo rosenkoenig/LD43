@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="PapaPlease" ID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Ambiances" ID="{D7A8A825-4844-4C0C-9012-1C9892E024BA}" ShortID="419266869">
+					<ChildrenList>
+						<Event Name="Play_Amb_LivingRoom_Lp" ID="{B1DBD639-79D1-4671-9EAE-8BAD92281C55}">
+							<ChildrenList>
+								<Action Name="" ID="{CD7BD1B5-3B18-4C1D-87C6-B79F6C1E8098}" ShortID="716335817">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Amb_LivingRoom_Lp" ID="{B8124057-5FB6-4C29-A281-72EBC974E313}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Amb_ParentsBedroom_Lp" ID="{E17445BD-1C28-458D-A503-5FE5BE7B4C63}">
+							<ChildrenList>
+								<Action Name="" ID="{AE856CFA-957F-4732-A626-769095CB431D}" ShortID="426879270">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Amb_ParentsBedroom_Lp" ID="{0088DB89-AF2D-409E-AEE0-E176421EB299}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AmbOut_Wall_Neighborhood_Lp" ID="{049A4B08-0EAE-45B0-BF63-2EF67B8845DF}">
+							<ChildrenList>
+								<Action Name="" ID="{25896966-1C9C-45C1-9BEE-900C73660D7C}" ShortID="1038334529">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AmbOut_Wall_Neighborhood_Lp" ID="{5704E487-A74A-4F2E-801D-61D2D0155BEB}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Amb_Bathroom_Lp" ID="{342CA0C5-C4FC-4A4B-8934-1B2B8AD799E7}">
+							<ChildrenList>
+								<Action Name="" ID="{F8356DEE-2970-4FB9-9436-6030A8F4FA2E}" ShortID="477901958">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Amb_Bathroom_Lp" ID="{A4687DDA-C2B8-47AE-B522-AF5DDCDFE583}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AmbOut_Bathroom_Neighborhood_Lp" ID="{1598CC52-11BE-4711-A9B8-D206CEDB5161}">
+							<ChildrenList>
+								<Action Name="" ID="{0B658BC4-F812-48B6-97FF-4AB27F2FB3AF}" ShortID="844173775">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AmbOut_Bathroom_Neighborhood_Lp" ID="{832397B2-6F5F-4267-86AC-DB83B961FD31}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Amb_KidsBedroom_Lp" ID="{59104E57-2D78-4DEE-B294-BA404925B4EC}">
+							<ChildrenList>
+								<Action Name="" ID="{515F1F16-DF2A-4418-9251-1DB0EEC07C62}" ShortID="381988863">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Amb_KidsBedroom_Lp" ID="{653563C0-6F4A-4B59-964F-F968A7388CC8}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Amb_Kitchen_Lp" ID="{FA0A242C-B8DE-4256-853F-A5AA9B7CB6E9}">
+							<ChildrenList>
+								<Action Name="" ID="{D3DCAE1D-BA27-4700-A516-7C59CB3DAF49}" ShortID="996925781">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Amb_Kitchen_Lp" ID="{293419FB-C2C1-4240-905F-4046201BF0D0}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{47A5C4AB-74F8-43AD-B982-F537890D5096}" ShortID="683428816">
+					<ChildrenList>
+						<Event Name="Play_Window_Open" ID="{EDFA62D1-55A5-4903-A77F-DA2428DE1BE4}">
+							<ChildrenList>
+								<Action Name="" ID="{D41B8BAD-950D-458A-BD3F-B285C26581CA}" ShortID="586354614">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Window_Open" ID="{F9C17AE2-E5E9-4672-A46B-8FF41B9EEEA1}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Washer_Open" ID="{96458BB5-531E-4D7C-9647-06C74CB6047D}">
+							<ChildrenList>
+								<Action Name="" ID="{62CD81F2-CC14-4B29-BA57-9AD691F0DCF2}" ShortID="941782218">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Washer_Open" ID="{1511CF78-E814-43C0-91A1-B154196DB9DF}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Door_Close" ID="{1736EE9E-7217-4A2B-A771-F3F512BF1787}">
+							<ChildrenList>
+								<Action Name="" ID="{B5175C2F-4784-4793-873D-E7CAF0D7C2C3}" ShortID="124405142">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Door_Close" ID="{A50039C7-7116-4944-ADDE-12D625906F79}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Window_Close" ID="{6296B0E3-E726-4C05-94D0-9B90A224C409}">
+							<ChildrenList>
+								<Action Name="" ID="{AB2AC54D-37B8-4EDB-AB12-A0D64D38A4E3}" ShortID="1039376891">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Window_Close" ID="{3C18D6C7-067A-4417-8B33-06329AB99E84}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Door_Open" ID="{462E0065-3534-44B0-AE68-93D139238210}">
+							<ChildrenList>
+								<Action Name="" ID="{71ED21E9-A5E4-4875-97E3-0C12209FF05F}" ShortID="185086933">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Door_Open" ID="{D3AEE688-3D2B-475A-8657-A520FC160723}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Washer_Close" ID="{BD55D4CA-982E-4CE2-9D9D-534B3A490DBF}">
+							<ChildrenList>
+								<Action Name="" ID="{B172CB7F-3B4E-4934-95F9-9D45822E469B}" ShortID="115215350">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Washer_Close" ID="{5D8FA28C-EF1F-4ED6-82DF-76DDDE36099D}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Musics" ID="{66D09C36-0569-4144-8D07-51137DA93C37}" ShortID="395366460"/>
+				<Folder Name="UI" ID="{E03308B3-CCCC-47B9-9C9C-9E7C4CDD149B}" ShortID="943067793"/>
+				<Folder Name="AI" ID="{47E05068-59E1-499F-8439-855E6DCB674D}" ShortID="270590388">
+					<ChildrenList>
+						<Event Name="AI_Footsteps" ID="{75DB50FE-38F8-4C62-B040-B1C83FCC8D7B}">
+							<ChildrenList>
+								<Action Name="" ID="{0EF47280-22A0-449F-B5B9-ADFFA9EAD1AA}" ShortID="597624166">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Foosteps" ID="{A029231C-0C53-4986-B017-0CC9C68ECFF1}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AI_Vox" ID="{0F6117D9-24FF-44DD-AEC4-375CB7E5501D}"/>
+						<Event Name="Play_AI_Cooking" ID="{23DC39CC-EB73-48EF-9FA3-09D4B78D966B}">
+							<ChildrenList>
+								<Action Name="" ID="{84F86833-317B-4234-A9B7-A1F3AA7B6FD9}" ShortID="540209228">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Cooking_Slicing" ID="{F3F8F98D-8D2C-4D1E-A548-29A1E28159EB}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B2592851-9D56-476D-AF7D-E6F26B733704}" ShortID="222954826">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_BoilingPot" ID="{55C9AD6A-E5F6-4370-B61A-C661F5FA57D6}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AI_FlushToilet" ID="{8B9BD280-F27D-47D7-A879-39B3A290D7F3}">
+							<ChildrenList>
+								<Action Name="" ID="{E5D388F8-E7AD-45EB-B2AF-ACA0E01A46DE}" ShortID="226612214">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Flush" ID="{36124427-247A-456B-98A0-3C4A2C28CBB8}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AI_Shower_Off" ID="{C7B90038-0943-402B-9EB3-F8B133C93DCA}">
+							<ChildrenList>
+								<Action Name="" ID="{2FECEB9F-825E-4CE8-9D11-143CBBFD38EB}" ShortID="266373891">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Shower_Off" ID="{CD9160B3-E10C-443A-8353-66778085AE05}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AI_Shower_Lp" ID="{E6F18D48-8B6E-4AE0-8A3B-404FFF4B746D}">
+							<ChildrenList>
+								<Action Name="" ID="{2F97AD5E-9EAE-4BA1-A7DE-5D3D725A7AF4}" ShortID="46596619">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Shower_Lp" ID="{978A54AC-851B-4753-A9E9-55E86AC7C6E7}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AI_Shower_On" ID="{F4C5E555-0A1B-4F66-8E9E-E9C66A90A97C}">
+							<ChildrenList>
+								<Action Name="" ID="{577B4013-F84F-48F9-92A4-F4392DA84E8E}" ShortID="32731765">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Shower_On" ID="{1E99632F-F5FB-46B0-81F0-ABE45F7EED87}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_AI_Shower_Lp" ID="{D553BF2B-5756-4222-A7E5-EA931A387FA4}">
+							<ChildrenList>
+								<Action Name="" ID="{4FC31A44-7EEA-4EC1-83B0-8BFDE697C733}" ShortID="936991359">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Shower_Lp" ID="{978A54AC-851B-4753-A9E9-55E86AC7C6E7}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Character" ID="{D68E7234-678F-4885-99A7-06B91B14E64D}" ShortID="1048710708">
+					<ChildrenList>
+						<Event Name="Character_Footsteps" ID="{15510B86-2A9B-4BAC-968B-7ECC3121162D}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2E104C97-0BD4-4618-818D-82DEC6008181}" SchemaVersion="89">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{2E104C97-0BD4-4618-818D-82DEC6008181}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2E104C97-0BD4-4618-818D-82DEC6008181}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="AI_Movements" ID="{E921F462-8C78-4D63-8A03-AECC85F6803E}">
+					<ChildrenList>
+						<Switch Name="AI_Walking" ID="{2E7394DC-9D58-4C2A-AF87-A48265D143AE}"/>
+						<Switch Name="AI_Idle" ID="{904EBF51-C68E-4F55-862E-62D9EDDA7E19}"/>
+						<Switch Name="AI_Stop" ID="{D5BFA1F2-AEAC-4CEB-9270-220F0909A035}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="AI_Activity" ID="{362758E0-A8D7-4EFC-9B83-DB740DD4FF34}">
+					<ChildrenList>
+						<Switch Name="AI_Peeing" ID="{343CCACD-DA5E-4876-8EE1-4A4ADF9F188E}"/>
+						<Switch Name="AI_Dishes" ID="{A05AB8B3-6572-437A-AE37-BBE273AAEDFE}"/>
+						<Switch Name="AI_Cooking" ID="{EAD67812-32F7-45D0-8C9A-24199D85EF36}"/>
+						<Switch Name="AI_Flush" ID="{DDB64932-D1E6-46C7-B222-9796939397CA}"/>
+						<Switch Name="AI_Shower" ID="{4B70EB13-20DB-4E8B-9053-0DECE0C12A10}"/>
+						<Switch Name="AI_Idle" ID="{FE876CA7-2F09-497D-AA4A-50F353EF223D}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
