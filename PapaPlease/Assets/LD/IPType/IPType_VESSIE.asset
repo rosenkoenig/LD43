@@ -12,3 +12,9 @@ MonoBehaviour:
   m_Name: IPType_VESSIE
   m_EditorClassIdentifier: 
   _ipName: Go pee
+  _duringActivityModifiers:
+  - _childStatID: {fileID: 11400000, guid: b6eb2aa1a6a532c4ab5415cb61a7f6e4, type: 2}
+    _factor: 1
+    _refill: 0
+  _startActivityModifiers: []
+  _endActivityModifiers: []

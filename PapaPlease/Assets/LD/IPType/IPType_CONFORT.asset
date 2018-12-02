@@ -12,14 +12,6 @@ MonoBehaviour:
   m_Name: IPType_CONFORT
   m_EditorClassIdentifier: 
   _ipName: Confort
-  _statModifiers:
-  - _childStatID: {fileID: 0}
-    _isMalus: 0
-    _factor: 1
-    _isPercentage: 0
-    _refill: 0
-  - _childStatID: {fileID: 0}
-    _isMalus: 0
-    _factor: 1
-    _isPercentage: 0
-    _refill: 0
+  _duringActivityModifiers: []
+  _startActivityModifiers: []
+  _endActivityModifiers: []

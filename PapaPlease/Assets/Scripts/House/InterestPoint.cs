@@ -10,7 +10,10 @@ public class InterestPoint : MonoBehaviour {
     public IPType type;
     public Activity activity;
     public bool onlyUsableByChild = false;
-    
+
+    public ChildStatsModificatorContainer globalStatsModificator_OnCompleted;
+    public ChildStatsModificatorContainer globalStatsModificator_OverTimeEmpty;
+    public ChildStatsModificatorContainer globalStatsModificator_OverTimeFull;
 
     public bool Interact (Character character)
     {

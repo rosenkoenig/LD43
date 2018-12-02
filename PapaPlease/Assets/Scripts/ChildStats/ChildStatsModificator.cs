@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ChildStatsModificator", menuName = "Gameplay/ChildStatsModificator")]
-public class ChildStatsModificator : ScriptableObject {
+[System.Serializable]
+public class ChildStatsModificator {
 
     [SerializeField] List<StatModifier> statsModifiers;
 

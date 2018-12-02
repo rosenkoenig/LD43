@@ -9,9 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98ee11309f10f114299ea8580322b6a9, type: 3}
-  m_Name: ChildStatsMod_TestHunger
+  m_Name: IP_CONFORT_OnCompleted_GlobalStatMod
   m_EditorClassIdentifier: 
-  statsModifiers:
-  - _childStatID: {fileID: 11400000, guid: 585ea90be3ef1a645a3c0b3894aeb3f4, type: 2}
-    _factor: 1
-    _refill: 1
+  _childStatsModificator:
+    statsModifiers:
+    - _childStatID: {fileID: 11400000, guid: 2afd7b1215a0b2746b77a8c9e3316605, type: 2}
+      _factor: 20
+      _refill: 0

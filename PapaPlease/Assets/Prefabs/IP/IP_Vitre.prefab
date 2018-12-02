@@ -196,10 +196,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5adb1f661ba0f4e9b6475272682cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ipName: 
+  ipName: Clean the windows
   pivotPoint: {fileID: 4077785600966724}
   type: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114379295816765414}
+  onlyUsableByChild: 0
+  globalStatsModificator_OnCompleted: {fileID: 0}
+  globalStatsModificator_OverTimeEmpty: {fileID: 0}
+  globalStatsModificator_OverTimeFull: {fileID: 0}
 --- !u!114 &114379295816765414
 MonoBehaviour:
   m_ObjectHideFlags: 1

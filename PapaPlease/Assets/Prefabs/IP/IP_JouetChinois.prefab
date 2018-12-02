@@ -343,6 +343,10 @@ MonoBehaviour:
   pivotPoint: {fileID: 4243086796250148}
   type: {fileID: 11400000, guid: 88b7a2a5fee7ce241b5954fc4ede72f0, type: 2}
   activity: {fileID: 114270215005536230}
+  onlyUsableByChild: 0
+  globalStatsModificator_OnCompleted: {fileID: 0}
+  globalStatsModificator_OverTimeEmpty: {fileID: 0}
+  globalStatsModificator_OverTimeFull: {fileID: 0}
 --- !u!114 &114270215005536230
 MonoBehaviour:
   m_ObjectHideFlags: 1
