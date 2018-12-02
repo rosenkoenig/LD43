@@ -100,6 +100,8 @@ public class ChildCharacter : Character {
 
     public void GiveOrder (IPType ipType)
     {
+        if (isDoingAnger) return;
+
         SetCurrentInterestPoint(hm.GetRandomInterestPoint(ipType, lastInterestPoint));
         if(!isSlaped)
             Freeze(false);
@@ -169,6 +171,7 @@ public class ChildCharacter : Character {
 
         yield return new WaitForSeconds(slapKODuration);
 
+        SetNextAngerTime();
         isSlaped = false;
         Freeze(false);
     }
@@ -272,17 +275,32 @@ public class ChildCharacter : Character {
     /// </summary>
     void StartWaiting  ()
     {
+        StartWaitIdleCoroutine();
+    }
+
+    void StartWaitIdleCoroutine ()
+    {
         if (waitForIdleCoroutine != null) StopCoroutine(waitForIdleCoroutine);
-        waitForIdleCoroutine = StartCoroutine(waitForOutOfAnimToBeEnded());       
+        waitForIdleCoroutine = StartCoroutine(waitForOutOfAnimToBeEnded());
     }
 
     Coroutine waitForIdleCoroutine = null;
     IEnumerator waitForOutOfAnimToBeEnded()
     {
+        yield return new WaitForEndOfFrame();
         while (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") == false)
         {
             yield return new WaitForEndOfFrame();
+        }
 
+        switch (state)
+        {
+            case ChildAIState.WAITING:
+                RealStartWaiting();
+                break;
+            case ChildAIState.MOVING_TO_ACTIVITY:
+                RealStartMovingToActivity();
+                break;
         }
     }
 
@@ -326,7 +344,14 @@ public class ChildCharacter : Character {
     /// </summary>
     void StartMovingToActivity ()
     {
+        SetNextAngerTime();
+        StartWaitIdleCoroutine();
+    }
+
+    void RealStartMovingToActivity ()
+    {
         lastAngerTime = Time.time;
+        SetNextAngerTime();
         MoveTo(currentInterestPoint.pivotPoint);
     }
 
@@ -335,9 +360,10 @@ public class ChildCharacter : Character {
         //Debug.Log("remaining distance = " + navAgent.remainingDistance);
         // MoveAlongPath();
 
-        CheckAnger();
+        if(currentInterestPoint && currentInterestPoint.iPtype != IpTypeFun)
+            CheckAnger();
 
-        if (!isDoingAnger && !isFrozen && navAgent.remainingDistance <= 1f)
+        if (!isDoingAnger && !isFrozen && Vector3.Distance(transform.position, currentInterestPoint.transform.position) <= 1f)
         {
             //has reached IP
             HasReachedIP();
@@ -351,11 +377,13 @@ public class ChildCharacter : Character {
 
         //TODO : get la state obeissance
         nextAngerTime = Mathf.Lerp(timeBetweenAnger.x, timeBetweenAnger.y, rand);
+        Debug.Log("next anger time = " + nextAngerTime);
+        lastAngerTime = Time.time;
     }
 
     void CheckAnger()
     {
-        if(Time.time - lastAngerTime < nextAngerTime && !isFrozen)
+        if(Time.time - lastAngerTime > nextAngerTime && !isFrozen && !isLerping && !isSlaped)
         {
             StartAnger();
         }
@@ -363,10 +391,12 @@ public class ChildCharacter : Character {
 
     void StartAnger ()
     {
+        Debug.Log("ANGER ANGER ANGER ANGER");
         isDoingAnger = true;
 
         Freeze(true);
         animator.Play("Anger");
+        animator.SetBool("IsDoingAnger", isDoingAnger);
     }
 
     void UpdateAngerBehaviour ()
@@ -376,9 +406,10 @@ public class ChildCharacter : Character {
 
     void StopPotentialAnger ()
     {
-        lastAngerTime = Time.time;
-        if(GameMaster.Instance.uIMaster.childInteractionMenuIsDisplayed == false)
-            Freeze(false);
+        isDoingAnger = false;
+
+        animator.SetBool("IsDoingAnger", isDoingAnger);
+        SetNextAngerTime();
     }
 
     void HasReachedIP()
@@ -386,7 +417,7 @@ public class ChildCharacter : Character {
         if (currentInterestPoint.activity.IsAvailable(this))
         {
             if (!isLerping)
-                IsInRangeForSnap();
+                StartLerpingToSnap();
         }
         else
         {
@@ -394,7 +425,7 @@ public class ChildCharacter : Character {
         }
     }
 
-    void IsInRangeForSnap()
+    void StartLerpingToSnap()
     {
         if (lerpCoroutine != null) StopCoroutine(lerpCoroutine);
         lerpCoroutine = StartCoroutine(LerpCoroutine());
