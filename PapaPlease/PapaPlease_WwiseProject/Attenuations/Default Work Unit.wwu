@@ -584,14 +584,19 @@
 				</Attenuation>
 				<Attenuation Name="Amb_Balcony" ID="{646A77DE-D487-4BB9-BB91-8709F7BB7339}" ShortID="393172028">
 					<PropertyList>
+						<Property Name="ConeAttenuation" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
 						<Property Name="ConeHighPassFilterValue" Type="int32">
 							<ValueList>
-								<Value>18</Value>
+								<Value>10</Value>
 							</ValueList>
 						</Property>
 						<Property Name="ConeLowPassFilterValue" Type="int32">
 							<ValueList>
-								<Value>17</Value>
+								<Value>12</Value>
 							</ValueList>
 						</Property>
 						<Property Name="ConeUse" Type="bool">
@@ -599,7 +604,7 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
-						<Property Name="RadiusMax" Type="Real64" Value="7"/>
+						<Property Name="RadiusMax" Type="Real64" Value="12"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -616,7 +621,7 @@
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>7</XPos>
+											<XPos>12</XPos>
 											<YPos>-20.40578</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -644,7 +649,7 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>7</XPos>
+											<XPos>12</XPos>
 											<YPos>15</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -666,7 +671,7 @@
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>7</XPos>
+											<XPos>12</XPos>
 											<YPos>29</YPos>
 											<Flags>37</Flags>
 										</Point>
