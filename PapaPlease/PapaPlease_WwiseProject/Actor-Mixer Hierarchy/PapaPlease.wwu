@@ -2241,6 +2241,7 @@
 								<BlendContainer Name="Amb_Outside_Balcony_Lp" ID="{AA3A8E9F-FDA3-47EF-8DFB-D096485409F2}" ShortID="402464861">
 									<PropertyList>
 										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-8</Value>
@@ -2248,6 +2249,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Amb_Balcony" ID="{646A77DE-D487-4BB9-BB91-8709F7BB7339}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
 										</Reference>
@@ -2297,84 +2301,6 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Plane" ID="{39BADA16-FD4E-428E-829A-E8DDE7962032}" ShortID="218099550">
-													<PropertyList>
-														<Property Name="InitialDelay" Type="Real64">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{C287F579-59CE-470D-BA56-A524F42E546D}"/>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="Amb_Outside_Plane_OS_01" ID="{BF116359-22A2-427B-9F24-50EFBAAA7E9C}" ShortID="513395904">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Amb_Outside_Plane_OS_01" ID="{7B1D58DA-7EBA-4744-A8C3-884E152E84DD}" ShortID="259521551">
-																	<Language>SFX</Language>
-																	<AudioFile>Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_01.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Amb_Outside_Plane_OS_01" ID="{7B1D58DA-7EBA-4744-A8C3-884E152E84DD}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Amb_Outside_Plane_OS_02" ID="{7B2A113B-1E13-4487-8ACF-3C09E3011BA9}" ShortID="291518987">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Amb_Outside_Plane_OS_02" ID="{52DECB26-D52B-4BF2-9244-A9A3B5E014BD}" ShortID="241299627">
-																	<Language>SFX</Language>
-																	<AudioFile>Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_02.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Amb_Outside_Plane_OS_02" ID="{52DECB26-D52B-4BF2-9244-A9A3B5E014BD}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Amb_Outside_Plane_OS_03" ID="{D468E7B8-937D-441F-883E-3E0A3BCE4447}" ShortID="480421797">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Amb_Outside_Plane_OS_03" ID="{8CF2406C-A27B-4403-B785-04EF45594DCD}" ShortID="709108565">
-																	<Language>SFX</Language>
-																	<AudioFile>Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_03.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Amb_Outside_Plane_OS_03" ID="{8CF2406C-A27B-4403-B785-04EF45594DCD}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-												</RandomSequenceContainer>
 												<Sound Name="Amb_Outside_Balcony_BirdFly_OS_01" ID="{111A047B-64B3-42E5-81AA-92ADD32A74A8}" ShortID="23944249">
 													<PropertyList>
 														<Property Name="Inclusion" Type="bool">
@@ -2647,6 +2573,111 @@
 										</BlendContainer>
 									</ChildrenList>
 								</BlendContainer>
+								<RandomSequenceContainer Name="Plane" ID="{39BADA16-FD4E-428E-829A-E8DDE7962032}" ShortID="218099550">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C287F579-59CE-470D-BA56-A524F42E546D}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="120"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FA3CC4F0-59D7-4334-9326-9EEEBDC32D2C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="120"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Amb_Plane" ID="{8FB3398F-EA1A-4D5E-9007-1C16C72F9223}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Amb_Outside_Plane_OS_01" ID="{BF116359-22A2-427B-9F24-50EFBAAA7E9C}" ShortID="513395904">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Outside_Plane_OS_01" ID="{7B1D58DA-7EBA-4744-A8C3-884E152E84DD}" ShortID="259521551">
+													<Language>SFX</Language>
+													<AudioFile>Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Outside_Plane_OS_01" ID="{7B1D58DA-7EBA-4744-A8C3-884E152E84DD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Outside_Plane_OS_02" ID="{7B2A113B-1E13-4487-8ACF-3C09E3011BA9}" ShortID="291518987">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Outside_Plane_OS_02" ID="{52DECB26-D52B-4BF2-9244-A9A3B5E014BD}" ShortID="241299627">
+													<Language>SFX</Language>
+													<AudioFile>Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Outside_Plane_OS_02" ID="{52DECB26-D52B-4BF2-9244-A9A3B5E014BD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Outside_Plane_OS_03" ID="{D468E7B8-937D-441F-883E-3E0A3BCE4447}" ShortID="480421797">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Outside_Plane_OS_03" ID="{8CF2406C-A27B-4403-B785-04EF45594DCD}" ShortID="709108565">
+													<Language>SFX</Language>
+													<AudioFile>Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Outside_Plane_OS_03" ID="{8CF2406C-A27B-4403-B785-04EF45594DCD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
 						<BlendContainer Name="Amb_Inside" ID="{52B62706-6520-49F3-ABD6-A735855A85D8}" ShortID="207811622">
@@ -2741,7 +2772,6 @@
 								</BlendContainer>
 								<BlendContainer Name="Amb_Bathroom_Lp" ID="{A4687DDA-C2B8-47AE-B522-AF5DDCDFE583}" ShortID="494393789">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -2753,6 +2783,24 @@
 										<Reference Name="Attenuation">
 											<Custom CreatedFrom="{FDA526AF-FC62-4EF3-8C60-EEB42A039CC0}">
 												<Attenuation Name="Amb_Bathroom (Custom)" ID="{1AD7658B-63AB-48F3-A74E-7E2642FE0249}" ShortID="234308392">
+													<PropertyList>
+														<Property Name="ConeHighPassFilterValue" Type="int32">
+															<ValueList>
+																<Value>22</Value>
+															</ValueList>
+														</Property>
+														<Property Name="ConeLowPassFilterValue" Type="int32">
+															<ValueList>
+																<Value>22</Value>
+															</ValueList>
+														</Property>
+														<Property Name="ConeUse" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="RadiusMax" Type="Real64" Value="3"/>
+													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
 															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -2765,16 +2813,17 @@
 																			<XPos>0</XPos>
 																			<YPos>0</YPos>
 																			<Flags>5</Flags>
-																		</Point>
-																		<Point>
-																			<XPos>60.10038</XPos>
-																			<YPos>-0</YPos>
-																			<Flags>0</Flags>
 																			<SegmentShape>Exp3</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>100</XPos>
-																			<YPos>-200</YPos>
+																			<XPos>1.60929</XPos>
+																			<YPos>-1.36299</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>3</XPos>
+																			<YPos>-22.53491</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -2800,14 +2849,14 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>60.8532</XPos>
+																			<XPos>1.825596</XPos>
 																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Exp1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>100</XPos>
-																			<YPos>64</YPos>
+																			<XPos>3</XPos>
+																			<YPos>43</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -2815,7 +2864,25 @@
 															</CurveUsageInfo>
 														</LowPassFilterUsage>
 														<HighPassFilterUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None">
+																<Curve Name="HighPassFilter" ID="{90F46789-EF64-4206-A7F8-04D485F20EBE}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>3</XPos>
+																			<YPos>18</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
 														</HighPassFilterUsage>
 														<SpreadUsage>
 															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
@@ -2944,7 +3011,7 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2986,6 +3053,7 @@
 								</BlendContainer>
 								<BlendContainer Name="Amb_LivingRoom_Lp" ID="{B8124057-5FB6-4C29-A281-72EBC974E313}" ShortID="121912849">
 									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-8</Value>
