@@ -96,4 +96,17 @@ public class HouseMaster : MonoBehaviour
 
         return availableIPType;
     }
+
+    public bool NoActivityIsRunning ()
+    {
+        bool anActivityIsRunning = false;
+
+        foreach(InterestPoint ip in allInterestPoints)
+        {
+            if (ip.activity.State == ActivityState.RUNNING)
+                anActivityIsRunning = true;
+        }
+
+        return anActivityIsRunning;
+    }
 }

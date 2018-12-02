@@ -3,30 +3,65 @@
 	<SoundcasterSessions>
 		<WorkUnit Name="Default Work Unit" ID="{93AE761F-02E3-48E4-8522-6B31DF2B5A39}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundcasterSession Name="PapaPlease_Soundcaster" ID="{E4B784DA-50BC-4FB1-B7FD-D16CE0792C3F}">
+				<SoundcasterSession Name="Ambiances" ID="{7F3EBDD4-3E85-49C6-9E03-2B91AE7697F3}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_AI_Shower_On" ID="{F4C5E555-0A1B-4F66-8E9E-E9C66A90A97C}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<ObjectRef Name="Amb_Inside" ID="{52B62706-6520-49F3-ABD6-A735855A85D8}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_AI_Shower_Lp" ID="{E6F18D48-8B6E-4AE0-8A3B-404FFF4B746D}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<ObjectRef Name="Amb_LivingRoom_Lp" ID="{B8124057-5FB6-4C29-A281-72EBC974E313}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Amb_Bathroom_Lp" ID="{A4687DDA-C2B8-47AE-B522-AF5DDCDFE583}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stop_AI_Shower_Lp" ID="{D553BF2B-5756-4222-A7E5-EA931A387FA4}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<ObjectRef Name="Amb_ParentsBedroom_Lp" ID="{0088DB89-AF2D-409E-AEE0-E176421EB299}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Amb_KidsBedroom_Lp" ID="{653563C0-6F4A-4B59-964F-F968A7388CC8}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_AI_Shower_Off" ID="{C7B90038-0943-402B-9EB3-F8B133C93DCA}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<ObjectRef Name="AmbOut_Bathroom_Neighborhood_Lp" ID="{832397B2-6F5F-4267-86AC-DB83B961FD31}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Amb_Kitchen_Lp" ID="{293419FB-C2C1-4240-905F-4046201BF0D0}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AmbOut_Wall_Neighborhood_Lp" ID="{5704E487-A74A-4F2E-801D-61D2D0155BEB}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="AI_Stop" ID="{D5BFA1F2-AEAC-4CEB-9270-220F0909A035}"/>
-						<CurrentSwitchRef Name="AI_Cooking" ID="{EAD67812-32F7-45D0-8C9A-24199D85EF36}"/>
+						<CurrentSwitchRef Name="Nothing" ID="{5A332AFB-8F7A-40E3-B94D-7963C73BC20A}"/>
+						<CurrentSwitchRef Name="AI_Idle" ID="{904EBF51-C68E-4F55-862E-62D9EDDA7E19}"/>
+						<CurrentSwitchRef Name="AI_Idle" ID="{FE876CA7-2F09-497D-AA4A-50F353EF223D}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="AI_Actions" ID="{215D5A4A-5A50-44CE-90C9-4A5AD5AC6034}">
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Nothing" ID="{5A332AFB-8F7A-40E3-B94D-7963C73BC20A}"/>
+						<CurrentSwitchRef Name="AI_Idle" ID="{904EBF51-C68E-4F55-862E-62D9EDDA7E19}"/>
+						<CurrentSwitchRef Name="AI_Idle" ID="{FE876CA7-2F09-497D-AA4A-50F353EF223D}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Player_Actions" ID="{B681EEDA-86D8-4C15-AD93-8C2CFF9C5899}">
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Nothing" ID="{5A332AFB-8F7A-40E3-B94D-7963C73BC20A}"/>
+						<CurrentSwitchRef Name="AI_Idle" ID="{904EBF51-C68E-4F55-862E-62D9EDDA7E19}"/>
+						<CurrentSwitchRef Name="AI_Idle" ID="{FE876CA7-2F09-497D-AA4A-50F353EF223D}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
