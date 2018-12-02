@@ -6,6 +6,7 @@ using UnityEngine;
 public class UIMaster : MonoBehaviour
 {
     [SerializeField] ChildInteractionMenu _childInteractionMenu;
+    //[SerializeField] ChildStatsMenu
     [SerializeField] GameObject _centerCursor;
     [SerializeField]
     UIPlayerInteraction playerInteractionPanel;
@@ -22,7 +23,6 @@ public class UIMaster : MonoBehaviour
     
     public bool DisplayMenuInteractChild(ChildCharacter child, Action hideMenuEvent)
     {
-
         HideMenuInteractChildEvent = hideMenuEvent;
 
         if (_childInteractionMenu.gameObject.activeSelf == false)
@@ -75,6 +75,14 @@ public class UIMaster : MonoBehaviour
         else
         {
             playerInteractionPanel.ClosePopup();
+        }
+    }
+
+    internal void DisplayChildStatsMenu(ChildCharacter child)
+    {
+        if(childInteractionMenuIsDisplayed == false)
+        {
+
         }
     }
 }

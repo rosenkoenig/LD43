@@ -17,11 +17,13 @@ public class PlayerBehaviour : Character {
 
     bool isInteractActive = true;
 
+    ChildCharacter hoveredChild;
+
     public void SetInteractActive()
     {
         isInteractActive = true;
     }
-
+    
     public void Interact()
     {
         if (isInteractActive == false)
@@ -52,6 +54,29 @@ public class PlayerBehaviour : Character {
     void Update ()
     {
         UpdateInteractionDisplay();
+    }
+
+    void RefreshHoveredChild()
+    {
+        RaycastHit rcHit = new RaycastHit();
+        if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _interactLayerMask))
+        {
+            InterestPoint ip = rcHit.collider.GetComponentInParent<InterestPoint>();
+
+            ChildCharacter child = rcHit.collider.GetComponentInParent<ChildCharacter>();
+
+            if (child)
+            {
+                hoveredChild = child;
+            }
+            else
+                hoveredChild = null;
+        }
+        else
+            hoveredChild = null;
+
+        if (hoveredChild != null)
+            GameMaster.Instance.uIMaster.DisplayChildStatsMenu(hoveredChild);
     }
 
     InterestPoint hoverIp = null;
