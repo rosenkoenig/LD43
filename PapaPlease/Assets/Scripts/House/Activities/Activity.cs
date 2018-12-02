@@ -115,21 +115,4 @@ public class Activity : MonoBehaviour {
     {
         
     }
-
-    public void CancelActivity (Character character)
-    {
-
-        Debug.Log("Cancel Activity");
-        ActivityHolder holder = GetHolderForCharacter(character);
-        if (holder != null)
-        {
-            holders.Remove(holder);
-        }
-
-        ChildCharacter child = character.GetComponent<ChildCharacter>();
-        if (child)
-        {
-            child.StartAnimState(animStateName + "_End");
-        }
-    }
 }

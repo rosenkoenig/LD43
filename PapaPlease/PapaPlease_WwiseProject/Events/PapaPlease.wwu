@@ -340,38 +340,11 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_AI_Dishes" ID="{1FB4285F-CCB4-4523-AD14-26059D3534A7}">
-							<ChildrenList>
-								<Action Name="" ID="{9FE50719-F6E8-4388-8AA5-6266049BEFFF}" ShortID="106577229">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="AI_Dishes" ID="{312CCCFA-C310-43E7-B186-C3FE1F1DB75E}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Character" ID="{D68E7234-678F-4885-99A7-06B91B14E64D}" ShortID="1048710708">
 					<ChildrenList>
-						<Event Name="Play_Footsteps" ID="{B26949E5-CB70-4245-BB47-B0B0D34F5559}">
-							<ChildrenList>
-								<Action Name="" ID="{B4D847E9-15FF-4C79-9226-58CF53104A8D}" ShortID="682259844">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Footseps" ID="{0703128A-E07D-4EF0-AD84-C011673BB40D}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						<Event Name="Character_Footsteps" ID="{15510B86-2A9B-4BAC-968B-7ECC3121162D}"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
