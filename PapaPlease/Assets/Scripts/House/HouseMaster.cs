@@ -103,10 +103,10 @@ public class HouseMaster : MonoBehaviour
 
         foreach(InterestPoint ip in allInterestPoints)
         {
-            if (ip.activity.State == ActivityState.RUNNING)
+            if (ip.iPtype != gm.ipTypeFun && ip.activity.State == ActivityState.RUNNING)
                 anActivityIsRunning = true;
         }
 
-        return anActivityIsRunning;
+        return !anActivityIsRunning;
     }
 }

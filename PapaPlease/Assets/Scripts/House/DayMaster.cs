@@ -32,6 +32,8 @@ public class DayMaster : MonoBehaviour {
     void UpdateDayTime ()
     {
         dayTime += Time.deltaTime;
+
+        CheckIfDayEnds();
     }
 
     void CheckIfDayEnds()
