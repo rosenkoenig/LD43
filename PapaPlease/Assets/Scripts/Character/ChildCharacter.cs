@@ -18,6 +18,7 @@ public class ChildCharacter : Character {
     public bool isMale = false;
 
     ChildAIState state = ChildAIState.ROAMING;
+    public ChildAIState ChildState { get { return state; } }
 
     [SerializeField]
     Vector2 inactivityDurationRange;
@@ -67,6 +68,9 @@ public class ChildCharacter : Character {
     [SerializeField]
     ChildStatID obeissanceStatID = null;
 
+    [SerializeField]
+    GameObject[] possibleMaleHaircuts, possibleFemaleHaircurts, possibleConsitution;
+
     // Use this for initialization
     void Start () {
 
@@ -75,6 +79,33 @@ public class ChildCharacter : Character {
     public void Init ()
     {
         SetState(ChildAIState.WAITING);
+
+        InitSkins();
+
+        int hcIdx = Random.Range(0, isMale ? possibleMaleHaircuts.Length : possibleFemaleHaircurts.Length);
+        GameObject hc = isMale ? possibleMaleHaircuts[hcIdx] : possibleFemaleHaircurts[hcIdx];
+        hc.SetActive(true);
+
+        int cIdx = Random.Range(0, possibleConsitution.Length);
+        possibleConsitution[cIdx].SetActive(true);
+    }
+
+    void InitSkins ()
+    {
+        foreach(GameObject hc in possibleFemaleHaircurts)
+        {
+            hc.SetActive(false);
+        }
+
+        foreach (GameObject hc in possibleMaleHaircuts)
+        {
+            hc.SetActive(false);
+        }
+
+        foreach (GameObject hc in possibleConsitution)
+        {
+            hc.SetActive(false);
+        }
     }
 	
 	// Update is called once per frame
@@ -92,18 +123,21 @@ public class ChildCharacter : Character {
         if (state)
         {
             isFrozen = true;
-            navAgent.isStopped = true;
+            if(navAgent.isActiveAndEnabled)
+                navAgent.isStopped = true;
         }
         else
         {
             isFrozen = false;
-            navAgent.isStopped = false;
+
+            if (navAgent.isActiveAndEnabled)
+                navAgent.isStopped = false;
         }
     }
 
     public void GiveOrder (IPType ipType)
     {
-        if (isDoingAnger) return;
+        if (isDoingAnger || state == ChildAIState.AT_TABLE) return;
 
         SetCurrentInterestPoint(hm.GetRandomInterestPoint(ipType, lastInterestPoint));
         if(!isSlaped)
@@ -150,7 +184,8 @@ public class ChildCharacter : Character {
         isSlaped = true;
         if (waitAndApplySlapHitCoroutine != null) StopCoroutine(waitAndApplySlapHitCoroutine);
         waitAndApplySlapHitCoroutine = StartCoroutine(waitAndApplySlapHit());
-        LaunchSlapAnim();
+        if(state != ChildAIState.AT_TABLE)
+            LaunchSlapAnim();
 
         StopPotentialAnger();
 
@@ -169,22 +204,24 @@ public class ChildCharacter : Character {
 
         float animFactor = 0f;
 
-        Vector3 targetPos = GetHitPosition();
-        Vector3 startPos = transform.position;
-
-        while(animFactor < 1f)
+        if(state != ChildAIState.AT_TABLE)
         {
-            animFactor += Time.deltaTime * slapFallDownSpeed;
+            Vector3 targetPos = GetHitPosition();
+            Vector3 startPos = transform.position;
 
-            Vector3 pos = Vector3.Lerp(startPos, targetPos, slapFallDownCurve.Evaluate(animFactor));
+            while (animFactor < 1f)
+            {
+                animFactor += Time.deltaTime * slapFallDownSpeed;
 
-            transform.position = pos;
+                Vector3 pos = Vector3.Lerp(startPos, targetPos, slapFallDownCurve.Evaluate(animFactor));
 
-            yield return new WaitForEndOfFrame();
+                transform.position = pos;
+
+                yield return new WaitForEndOfFrame();
+            }
+
+            transform.forward = GameMaster.Instance.player.transform.position - transform.position;
         }
-
-        transform.forward = GameMaster.Instance.player.transform.position - transform.position;
-
 
         yield return new WaitForSeconds(slapKODuration);
 
@@ -252,6 +289,9 @@ public class ChildCharacter : Character {
                 break;
             case ChildAIState.IN_ACTIVITY:
                 CancelActivity();
+                break;
+            case ChildAIState.AT_TABLE:
+                EndAtTable();
                 break;
         }
 
@@ -425,8 +465,17 @@ public class ChildCharacter : Character {
         isDoingAnger = true;
 
         Freeze(true);
-        animator.Play("Anger");
-        animator.SetBool("IsDoingAnger", isDoingAnger);
+        if(GameMaster.Instance.gf.GetGameState == GameState.TABLE)
+        {
+            animator.Play("AtTableAnger");
+            animator.SetBool("IsDoingAnger", isDoingAnger);
+        }
+        else
+        {
+            animator.Play("Anger");
+            animator.SetBool("IsDoingAnger", isDoingAnger);
+        }
+
     }
 
     void UpdateAngerBehaviour ()
@@ -539,15 +588,46 @@ public class ChildCharacter : Character {
     /// </summary>
     void StartAtTable ()
     {
-        
+        navAgent.enabled = false;
+        SetNextAngerTime();
+        LaunchAtTableAnim();
     }
 
     void UpdateAtTable ()
     {
+        CheckAnger();
+
         transform.position = curChairTransform.position;
         transform.rotation = curChairTransform.rotation;
+
+        bool isEating = myPlate.IsFilled && !isDoingAnger;
+
+        animator.SetBool("Eats", isEating);
+        if (isEating)
+        {
+            EatPlate();
+        }
+
     }
 
+    void EndAtTable ()
+    {
+        navAgent.enabled = true;
+        animator.Play("Idle");
+    }
+
+    void EatPlate ()
+    {
+        myPlate.IsBeingEaten(this);
+        
+    }
+
+    PlateObject myPlate = null;
+
+    public void SetPlate (PlateObject po)
+    {
+        myPlate = po;
+    }
 
     #endregion
 
@@ -590,6 +670,11 @@ public class ChildCharacter : Character {
     {
        
         animator.Play(stateName);
+    }
+
+    void LaunchAtTableAnim()
+    {
+        animator.Play("AtTableIdle");
     }
     #endregion
 }

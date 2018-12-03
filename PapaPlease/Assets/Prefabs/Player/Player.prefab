@@ -717,6 +717,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   arm: {fileID: 95569324950912516}
+  _childLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  _doorLayerMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  _plateLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!136 &136494431944464116
 CapsuleCollider:
   m_ObjectHideFlags: 1

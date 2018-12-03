@@ -14,6 +14,7 @@ public class HouseMaster : MonoBehaviour
 
     public List<InterestPoint> allInterestPoints;
     public List<Transform> allChairPivots;
+    public List<Transform> allPlatePivots;
 
     [SerializeField]
     RoomExtension roomExtensionPrefab;
@@ -139,6 +140,11 @@ public class HouseMaster : MonoBehaviour
     [SerializeField]
     float roomExtensionWidth = 1f;
 
+    [SerializeField]
+    PlateObject platePrefab = null;
+
+    List<PlateObject> plates = new List<PlateObject>();
+
     List<RoomExtension> roomExtensions = new List<RoomExtension>();
     public void UpdateTableRoomSize ()
     {
@@ -150,6 +156,8 @@ public class HouseMaster : MonoBehaviour
         }
         roomExtensions = new List<RoomExtension>();
         allChairPivots = new List<Transform>();
+        allPlatePivots = new List<Transform>();
+        ClearPlates();
 
         int roomNeeded = Mathf.CeilToInt((float)childCount / 2f);
         Debug.Log(childCount + " - " + roomNeeded);
@@ -161,6 +169,9 @@ public class HouseMaster : MonoBehaviour
 
             allChairPivots.Add(curExt.chairsPivot[0]);
             allChairPivots.Add(curExt.chairsPivot[1]);
+
+            allPlatePivots.Add(curExt.platesPivot[0]);
+            allPlatePivots.Add(curExt.platesPivot[1]);
         }
 
         if(roomExtensionEndInst == null)
@@ -186,13 +197,37 @@ public class HouseMaster : MonoBehaviour
     public void SetChildrenOnTable ()
     {
         List<ChildCharacter> children = gm.vm.allChildren;
+        plates = new List<PlateObject>();
 
-        Debug.Log("child coun = " + children.Count + " & all chair pivot count = "+allChairPivots.Count);
+        Debug.Log("child count = " + children.Count + " & all chair pivot count = "+allChairPivots.Count);
         for (int i = 0; i < children.Count; i++)
         {
             if (i >= allChairPivots.Count) break;
             children[i].SetOnTable(allChairPivots[i]);
+
+            PlateObject plate = AddPlate(allPlatePivots[i]);
+            children[i].SetPlate(plate);
         }
+    }
+
+    public void ClearPlates ()
+    {
+        foreach(PlateObject po in plates)
+        {
+            Destroy(po.gameObject);
+        }
+        plates = new List<PlateObject>();
+    }
+
+    PlateObject AddPlate (Transform pivot)
+    {
+        GameObject inst = GameObject.Instantiate(platePrefab.gameObject, pivot.position, pivot.rotation);
+
+        PlateObject plateInst = inst.GetComponent<PlateObject>();
+        plates.Add(plateInst);
+        plateInst.Init();
+
+        return plateInst;
     }
 
     

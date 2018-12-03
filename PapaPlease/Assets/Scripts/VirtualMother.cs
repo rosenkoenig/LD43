@@ -132,6 +132,7 @@ public class VirtualMother : MonoBehaviour
         foreach (ChildCharacter child in allChildren)
         {
             child.LeaveTable();
+            child.SetPlate(null);
         }
     }
 }
