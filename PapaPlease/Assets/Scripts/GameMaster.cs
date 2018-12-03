@@ -8,6 +8,7 @@ public class GameMaster : MonoBehaviour {
     public UIMaster uIMaster;
     public PlayerBehaviour player;
     public GameFlow gf;
+    public Wallet wallet;
 
     static GameMaster _instance;
 
@@ -25,7 +26,7 @@ public class GameMaster : MonoBehaviour {
         uIMaster.Init();
         gf.Init();
         vm.Init();
-
+        wallet.Init();
     }
 
     private void OnDestroy()

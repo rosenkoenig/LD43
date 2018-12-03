@@ -19,7 +19,14 @@ public class PlayerBehaviour : Character {
 
     [SerializeField]
     ChildCharacter hoverChild;
+
+    Wallet wallet;
     
+    void Start ()
+    {
+        wallet = GameMaster.Instance.wallet;
+    }
+
     public void SetInteractActive()
     {
         SetInteractActive(true);
@@ -63,7 +70,7 @@ public class PlayerBehaviour : Character {
         }
         else if (hoveredPlate)
         {
-            hoveredPlate.Fill();
+            TryInteractWithPlate(hoveredPlate);
         }
     }
 
@@ -226,6 +233,18 @@ public class PlayerBehaviour : Character {
 
         SetInteractActive();
     }
+
+
+    void TryInteractWithPlate (PlateObject plate)
+    {
+        bool buyMoneySucceeds = wallet.TryBuyFood();
+
+        if(buyMoneySucceeds)
+        {
+            plate.Fill();
+        }
+    }
+
 
     #region Table
     public void BeginTablePhase ()
