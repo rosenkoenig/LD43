@@ -30,12 +30,14 @@ public class GameFlow : MonoBehaviour {
 
     public void OnDayStarts ()
     {
+        Debug.Log("Day starts");
         SetGameState(GameState.DAY);
         gm.hm.SetDoorLockedClosed(false);
         gm.player.BeginDayPhase();
         gm.player.SetInteractActive(true);
         gm.player.LockMovement(false);
         gm.vm.GetChildrenOutOfTable();
+        gm.hm.ClearPlates();
     }
 
     public void OnDayEnds ()

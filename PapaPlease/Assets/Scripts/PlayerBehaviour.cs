@@ -17,6 +17,7 @@ public class PlayerBehaviour : Character {
 
     bool isInteractActive = true;
 
+    [SerializeField]
     ChildCharacter hoverChild;
     
     public void SetInteractActive()
@@ -34,12 +35,17 @@ public class PlayerBehaviour : Character {
             return;
         
         DoorLocked hoveredDoor = GetHoveredDoor();
+        PlateObject hoveredPlate = GetHoveredPlate();
 
         if (hoverChild)
         {
-            hoverChild.Freeze(true);
-            SetInteractActive(false);
-            GameMaster.Instance.uIMaster.DisplayMenuInteractChild(hoverChild, SetInteractActive);
+
+            if (hoverChild.ChildState != ChildAIState.AT_TABLE)
+            {
+                hoverChild.Freeze(true);
+                SetInteractActive(false);
+                GameMaster.Instance.uIMaster.DisplayMenuInteractChild(hoverChild, SetInteractActive);
+            }
         }
         else if (hoverIp)
         {
@@ -55,6 +61,10 @@ public class PlayerBehaviour : Character {
                 GameMaster.Instance.PlayerWantsToEndTablePhase();
             }
         }
+        else if (hoveredPlate)
+        {
+            hoveredPlate.Fill();
+        }
     }
 
     void Update ()
@@ -66,10 +76,8 @@ public class PlayerBehaviour : Character {
     void RefreshHoveredChild()
     {
         RaycastHit rcHit = new RaycastHit();
-        if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _interactLayerMask))
+        if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _childLayerMask))
         {
-            InterestPoint ip = rcHit.collider.GetComponentInParent<InterestPoint>();
-
             ChildCharacter child = rcHit.collider.GetComponentInParent<ChildCharacter>();
 
             if (child)
@@ -141,12 +149,13 @@ public class PlayerBehaviour : Character {
             return ip;
     }
 
+    [SerializeField] LayerMask _childLayerMask;
     public ChildCharacter GetHoveredChildCharacter ()
     {
         ChildCharacter child = null;
 
         RaycastHit rcHit = new RaycastHit();
-        if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _interactLayerMask))
+        if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _childLayerMask))
         {
             child = rcHit.collider.GetComponentInParent<ChildCharacter>();
 
@@ -154,14 +163,29 @@ public class PlayerBehaviour : Character {
         return child;
     }
 
+    [SerializeField] LayerMask _doorLayerMask;
     public DoorLocked GetHoveredDoor()
     {
         DoorLocked child = null;
 
         RaycastHit rcHit = new RaycastHit();
-        if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _interactLayerMask))
+        if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _doorLayerMask))
         {
             child = rcHit.collider.GetComponentInParent<DoorLocked>();
+
+        }
+        return child;
+    }
+
+    [SerializeField] LayerMask _plateLayerMask;
+    public PlateObject GetHoveredPlate ()
+    {
+        PlateObject child = null;
+
+        RaycastHit rcHit = new RaycastHit();
+        if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _plateLayerMask))
+        {
+            child = rcHit.collider.GetComponentInParent<PlateObject>();
 
         }
         return child;

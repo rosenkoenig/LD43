@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33579915963112100}
   - component: {fileID: 23689474657874140}
   - component: {fileID: 64411758068777062}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4037290034872400}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ClosedVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 33105910247432886}
   - component: {fileID: 23207218441005326}
   - component: {fileID: 64647742836476250}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Door2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4108196441459162}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: OpenedVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4850495468100776}
   - component: {fileID: 114257993607948698}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TableDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
