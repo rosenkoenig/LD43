@@ -8,6 +8,8 @@ public class GameMaster : MonoBehaviour {
     public UIMaster uIMaster;
     public PlayerBehaviour player;
     public GameFlow gf;
+    public Wallet wallet;
+    public LogMaster log;
 
     static GameMaster _instance;
 
@@ -22,10 +24,11 @@ public class GameMaster : MonoBehaviour {
         vm.gm = this;
         hm.gm = this;
         gf.gm = this;
+        if(log) log.Init();
         uIMaster.Init();
         gf.Init();
         vm.Init();
-
+        wallet.Init();
     }
 
     private void OnDestroy()
@@ -56,6 +59,10 @@ public class GameMaster : MonoBehaviour {
         gf.EndTablePhase();
     }
 
-    
+    public void AddLog(string text)
+    {
+        if (log)
+            log.AddLog(text);
+    }
 
 }

@@ -19,6 +19,8 @@ public class UIMaster : MonoBehaviour
 
     [SerializeField] UITransition dayNightTransition;
 
+    [SerializeField]UIWallet uiWallet;
+
     ChildCharacter curChild;
     
     public Action HideMenuInteractChildEvent;
@@ -151,5 +153,10 @@ public class UIMaster : MonoBehaviour
                 _childStatsMenu.SetupMenu(child);
             }
         }
+    }
+
+    public void UpdateWalletUI (float money)
+    {
+        uiWallet.UpdateWalletText(money);
     }
 }

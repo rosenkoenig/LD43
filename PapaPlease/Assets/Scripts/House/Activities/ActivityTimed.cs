@@ -17,8 +17,8 @@ public class ActivityTimed : Activity {
 
         foreach (ActivityHolder holder in holders)
         {
-            holder.completionPercentage = Mathf.Clamp01((Time.time - holder.startTime) * (1 + holder.GetActivityModifiersRatios(_activityModifiers)) / duration);
-            if ((Time.time - holder.startTime) * (1 + holder.GetActivityModifiersRatios(_activityModifiers)) >= duration)
+            holder.completionPercentage = Mathf.Clamp01((Time.time - holder.startTime) * (1 + holder.GetActivityModifiersRatios(_inheritedIPType.GetActivityModifiers)) / duration);
+            if ((Time.time - holder.startTime) * (1 + holder.GetActivityModifiersRatios(_inheritedIPType.GetActivityModifiers)) >= duration)
             {
                 holdersToEnd.Add(holder);
                 holder.completionPercentage = 1f;
