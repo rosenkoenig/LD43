@@ -307,7 +307,6 @@ MonoBehaviour:
   doOnce: 1
   animStateName: Idle
   _activityResetDelay: 100
-  _activityModifiers: []
   curActivityResetDelay: 0
   _akEventPlay:
     valueGuid: 
