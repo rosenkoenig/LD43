@@ -126,6 +126,8 @@ GameObject:
   - component: {fileID: 4089498889668532}
   - component: {fileID: 20445820290788818}
   - component: {fileID: 114788026864694268}
+  - component: {fileID: 114017077109197850}
+  - component: {fileID: 114946541751754464}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -594,7 +596,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!95 &95569324950912516
 Animator:
@@ -614,6 +616,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114017077109197850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1404746441130028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32ce908405dfd5c48970e2a6a6a8ddea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
 --- !u!114 &114119490901102206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -657,6 +672,27 @@ MonoBehaviour:
   _camRotateSpeed: {x: 100, y: 100}
   _camRotateMaxVerti: 85
   _camRotateMinVertiUp: -85
+--- !u!114 &114946541751754464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1404746441130028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e128bf11111056d49986cf33370ac9e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!114 &114971537473592944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -669,6 +705,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentActivity: {fileID: 0}
+  statsContainer:
+    _childStatsIdContainer: {fileID: 11400000, guid: 325898cad7d46bb448f71a10de5ab027,
+      type: 2}
+    _childInitialSkillsPacks:
+    - {fileID: 11400000, guid: cd91ef1475a105444866fe3ca2116bf5, type: 2}
   _playerMover: {fileID: 114119490901102206}
   _playerHeadBehaviour: {fileID: 114893964280441714}
   _interactRange: 2

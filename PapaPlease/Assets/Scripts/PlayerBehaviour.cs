@@ -18,37 +18,43 @@ public class PlayerBehaviour : Character {
     bool isInteractActive = true;
 
     ChildCharacter hoverChild;
-
+    
     public void SetInteractActive()
     {
-        isInteractActive = true;
+        SetInteractActive(true);
+    }
+    public void SetInteractActive(bool state)
+    {
+        isInteractActive = state;
     }
     
     public void Interact()
     {
         if (isInteractActive == false)
             return;
+        
+        DoorLocked hoveredDoor = GetHoveredDoor();
 
-        //RaycastHit rcHit = new RaycastHit();
-        //if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _interactLayerMask))
-        //{
-            //InterestPoint ip = rcHit.collider.GetComponentInParent<InterestPoint>();
-
-            //ChildCharacter child = rcHit.collider.GetComponentInParent<ChildCharacter>();
-
-            if (hoverChild)
+        if (hoverChild)
+        {
+            hoverChild.Freeze(true);
+            SetInteractActive(false);
+            GameMaster.Instance.uIMaster.DisplayMenuInteractChild(hoverChild, SetInteractActive);
+        }
+        else if (hoverIp)
+        {
+            if (hoverIp.Interact(this))
             {
-                hoverChild.Freeze(true);
-                GameMaster.Instance.uIMaster.DisplayMenuInteractChild(hoverChild, SetInteractActive);
+                OnInteractionBegin();
             }
-            else if (hoverIp)
+        }
+        else if (hoveredDoor)
+        {
+            if(GameMaster.Instance.gf.GetGameState == GameState.TABLE)
             {
-                if(hoverIp.Interact(this))
-                {
-                    OnInteractionBegin();
-                }
+                GameMaster.Instance.PlayerWantsToEndTablePhase();
             }
-        //}
+        }
     }
 
     void Update ()
@@ -113,7 +119,7 @@ public class PlayerBehaviour : Character {
         LockMovement(false);
     }
 
-    void LockMovement (bool state)
+    public void LockMovement (bool state)
     {
         _playerHeadBehaviour.SetFreezeHeadControl(state);
         _playerMover.FreezeMovement(state);
@@ -148,6 +154,19 @@ public class PlayerBehaviour : Character {
         return child;
     }
 
+    public DoorLocked GetHoveredDoor()
+    {
+        DoorLocked child = null;
+
+        RaycastHit rcHit = new RaycastHit();
+        if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _interactLayerMask))
+        {
+            child = rcHit.collider.GetComponentInParent<DoorLocked>();
+
+        }
+        return child;
+    }
+
     bool hasStartedSlap = false;
 
     public void BeginSlap ()
@@ -175,4 +194,23 @@ public class PlayerBehaviour : Character {
     {
         arm.Play("Idle");
     }
+
+    public void BeginDayPhase ()
+    {
+        transform.position = GameMaster.Instance.hm.playerDaySpawnPoint.position;
+        transform.rotation = GameMaster.Instance.hm.playerDaySpawnPoint.rotation;
+
+        SetInteractActive();
+    }
+
+    #region Table
+    public void BeginTablePhase ()
+    {
+        transform.position = GameMaster.Instance.hm.playerTableSpawnPoint.position;
+        transform.rotation = GameMaster.Instance.hm.playerTableSpawnPoint.rotation;
+
+        SetInteractActive();
+    }
+
+    #endregion
 }

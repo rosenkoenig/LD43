@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public enum ChildAIState { WAITING, ROAMING, MOVING_TO_ACTIVITY, IN_ACTIVITY }
+public enum ChildAIState { WAITING, ROAMING, MOVING_TO_ACTIVITY, IN_ACTIVITY, AT_TABLE }
 public class ChildCharacter : Character {
     public HouseMaster hm = null;
 
@@ -69,8 +69,13 @@ public class ChildCharacter : Character {
 
     // Use this for initialization
     void Start () {
-        SetState(ChildAIState.WAITING);
+
 	}
+
+    public void Init ()
+    {
+        SetState(ChildAIState.WAITING);
+    }
 	
 	// Update is called once per frame
     void Update ()
@@ -123,6 +128,18 @@ public class ChildCharacter : Character {
             SetState(ChildAIState.WAITING);
         }
             
+    }
+
+    Transform curChairTransform = null;
+    public void SetOnTable(Transform chairTransform)
+    {
+        curChairTransform = chairTransform;
+        SetState(ChildAIState.AT_TABLE);
+    }
+
+    public void LeaveTable ()
+    {
+        SetState(ChildAIState.WAITING);
     }
 
 
@@ -222,10 +239,17 @@ public class ChildCharacter : Character {
         currentInactivityDuration = Mathf.Lerp(inactivityDurationRange.x, inactivityDurationRange.y, Random.Range(0f, 1f));
         stateBeginTime = Time.time;
 
-        Debug.Log(childName + " changes state for : " + newState);
+        Debug.Log(childName + " changes state for : " + newState, this);
 
         switch(oldState)
         {
+            case ChildAIState.WAITING:
+                if (waitForIdleCoroutine != null) StopCoroutine(waitForIdleCoroutine);
+                break;
+            case ChildAIState.MOVING_TO_ACTIVITY:
+                if (lerpCoroutine != null) StopCoroutine(lerpCoroutine);
+                if (waitForIdleCoroutine != null) StopCoroutine(waitForIdleCoroutine);
+                break;
             case ChildAIState.IN_ACTIVITY:
                 CancelActivity();
                 break;
@@ -244,6 +268,9 @@ public class ChildCharacter : Character {
                 break;
             case ChildAIState.IN_ACTIVITY:
                 StartInActivity();
+                break;
+            case ChildAIState.AT_TABLE:
+                StartAtTable();
                 break;
         }
     }
@@ -265,6 +292,9 @@ public class ChildCharacter : Character {
                 break;
             case ChildAIState.IN_ACTIVITY:
                 UpdateInActivity();
+                break;
+            case ChildAIState.AT_TABLE:
+                UpdateAtTable();
                 break;
         }
     }
@@ -504,22 +534,34 @@ public class ChildCharacter : Character {
         SetState(ChildAIState.WAITING);
     }
 
-    
-    Vector3 lastPosition;
-    bool isWalking = false;
-    void CheckIsWalking ()
+    /// <summary>
+    /// AT TABLE STATE AT TABLE
+    /// </summary>
+    void StartAtTable ()
     {
         
+    }
+
+    void UpdateAtTable ()
+    {
+        transform.position = curChairTransform.position;
+        transform.rotation = curChairTransform.rotation;
+    }
+
+
+    #endregion
+
+    Vector3 lastPosition;
+    bool isWalking = false;
+    void CheckIsWalking()
+    {
+
         isWalking = Vector3.Distance(lastPosition, transform.position) > 0.005f;
 
         lastPosition = transform.position;
 
         SetIsWalking(isWalking);
     }
-    
-    
-    #endregion
-
 
     #region Animation
     [SerializeField]

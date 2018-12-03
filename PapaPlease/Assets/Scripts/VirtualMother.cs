@@ -8,6 +8,8 @@ public class VirtualMother : MonoBehaviour
     public GameMaster gm = null;
 
     List<ChildCharacter> activeChilds = new List<ChildCharacter>();
+    [SerializeField] List<ChildCharacter> allChilds = new List<ChildCharacter>();
+
 
     [SerializeField]
     ChildCharacter childPrefab = null;
@@ -24,6 +26,8 @@ public class VirtualMother : MonoBehaviour
     public float GetChildsIpDegradationAddedFactor { get { return _IpDegradationAddedPerChild * activeChilds.Count; } }
 
     public int GetChildrenNumber { get { return activeChilds.Count; } }
+
+    public List<ChildCharacter> allChildren { get { return allChilds; } }
 
     // Use this for initialization
     public void Init()
@@ -78,6 +82,9 @@ public class VirtualMother : MonoBehaviour
         childInst.hm = gm.hm;
 
         activeChilds.Add(childInst);
+        allChilds.Add(childInst);
+
+        childInst.Init();
 
         return childInst;
     }
@@ -106,7 +113,7 @@ public class VirtualMother : MonoBehaviour
 
     public ChildCharacter GetChild(string childName)
     {
-        return activeChilds.Find(x => x.childName == childName);
+        return allChilds.Find(x => x.childName == childName);
     }
 
     public void ApplyGlobalModifier(ChildStatsModificatorContainer statsModificator, bool useDeltaTime = false)
@@ -117,6 +124,14 @@ public class VirtualMother : MonoBehaviour
             {
                 statsModificator.MakeTryModifyStats(item.statsContainer, useDeltaTime);
             }
+        }
+    }
+
+    public void GetChildrenOutOfTable()
+    {
+        foreach (ChildCharacter child in allChildren)
+        {
+            child.LeaveTable();
         }
     }
 }

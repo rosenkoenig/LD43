@@ -31,23 +31,40 @@ public class GameFlow : MonoBehaviour {
     public void OnDayStarts ()
     {
         SetGameState(GameState.DAY);
+        gm.hm.SetDoorLockedClosed(false);
+        gm.player.BeginDayPhase();
+        gm.player.SetInteractActive(true);
+        gm.player.LockMovement(false);
+        gm.vm.GetChildrenOutOfTable();
     }
 
     public void OnDayEnds ()
     {
         SetGameState(GameState.NIGHT_TRANSITION);
+        gm.player.SetInteractActive(false);
+        gm.player.LockMovement(true);
     }
 
     public void BeginTablePhase ()
     {
         SetGameState(GameState.TABLE);
         gm.uIMaster.OnTableStarts();
+        gm.vm.GiveBirth();
+        gm.player.BeginTablePhase();
+        gm.hm.UpdateTableRoomSize();
+        gm.hm.SetChildrenOnTable();
+        gm.hm.SetDoorLockedClosed(true);
+        gm.player.LockMovement(false);
+        gm.player.SetInteractActive(true);
     }
 
     public void EndTablePhase ()
     {
         SetGameState(GameState.MORNING_TRANSITIOn);
         gm.uIMaster.OnTableEnds();
+        gm.hm.SetDoorLockedClosed(false);
+        gm.player.SetInteractActive(false);
+        gm.player.LockMovement(true);
     }
 
     void SetGameState (GameState newState)
