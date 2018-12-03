@@ -13,10 +13,34 @@ public class HouseMaster : MonoBehaviour
     public GameMaster gm = null;
 
     public List<InterestPoint> allInterestPoints;
+    public List<Transform> allChairPivots;
+
+    [SerializeField]
+    RoomExtension roomExtensionPrefab;
+
+
+    [SerializeField]
+    GameObject roomExtensionEndPrefab;
+    GameObject roomExtensionEndInst;
+
+    [SerializeField]
+    Transform roomExtensionPivot;
+
+
+    public Transform playerTableSpawnPoint = null;
+    public Transform playerDaySpawnPoint = null;
+
+    [SerializeField]
+    DoorLocked doorLocked = null;
 
     private void Start()
     {
         allInterestPoints = new List<InterestPoint>(GetComponentsInChildren<InterestPoint>());
+    }
+
+    public void Init ()
+    {
+        UpdateTableRoomSize();
     }
 
     public InterestPoint GetRandomInterestPoint()
@@ -109,4 +133,68 @@ public class HouseMaster : MonoBehaviour
 
         return !anActivityIsRunning;
     }
+
+
+    #region Table
+    [SerializeField]
+    float roomExtensionWidth = 1f;
+
+    List<RoomExtension> roomExtensions = new List<RoomExtension>();
+    public void UpdateTableRoomSize ()
+    {
+        int childCount = gm.vm.GetChildrenNumber;
+
+        foreach(RoomExtension re in roomExtensions)
+        {
+            Destroy(re.gameObject);
+        }
+        roomExtensions = new List<RoomExtension>();
+        allChairPivots = new List<Transform>();
+
+        int roomNeeded = Mathf.CeilToInt((float)childCount / 2f);
+        Debug.Log(childCount + " - " + roomNeeded);
+        for (int i = 0; i < roomNeeded; i++)
+        {
+            GameObject inst = GameObject.Instantiate(roomExtensionPrefab.gameObject, roomExtensionPivot.position + roomExtensionPivot.forward * (i * roomExtensionWidth), roomExtensionPivot.rotation);
+            RoomExtension curExt = inst.GetComponent<RoomExtension>();
+            roomExtensions.Add(curExt);
+
+            allChairPivots.Add(curExt.chairsPivot[0]);
+            allChairPivots.Add(curExt.chairsPivot[1]);
+        }
+
+        if(roomExtensionEndInst == null)
+        {
+            roomExtensionEndInst = GameObject.Instantiate(roomExtensionEndPrefab.gameObject, roomExtensionPivot.position + roomExtensionPivot.forward * (roomExtensions.Count * roomExtensionWidth), roomExtensionPivot.rotation);
+        }
+        else
+        {
+            roomExtensionEndInst.transform.position = roomExtensionPivot.position + roomExtensionPivot.forward * (roomExtensions.Count * roomExtensionWidth);
+        }
+
+    }
+
+    public void SetDoorLockedClosed (bool closed)
+    {
+        if (closed)
+            doorLocked.Close();
+        else
+            doorLocked.Open();
+    }
+
+
+    public void SetChildrenOnTable ()
+    {
+        List<ChildCharacter> children = gm.vm.allChildren;
+
+        Debug.Log("child coun = " + children.Count + " & all chair pivot count = "+allChairPivots.Count);
+        for (int i = 0; i < children.Count; i++)
+        {
+            if (i >= allChairPivots.Count) break;
+            children[i].SetOnTable(allChairPivots[i]);
+        }
+    }
+
+    
+    #endregion
 }

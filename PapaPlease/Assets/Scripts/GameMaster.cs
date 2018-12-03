@@ -25,6 +25,7 @@ public class GameMaster : MonoBehaviour {
         uIMaster.Init();
         gf.Init();
         vm.Init();
+
     }
 
     private void OnDestroy()
@@ -45,7 +46,16 @@ public class GameMaster : MonoBehaviour {
     void StartGame ()
     {
         vm.SpawnBaseChilds();
+
+        hm.Init();
     }
 
+    public void PlayerWantsToEndTablePhase ()
+    {
+        hm.SetDoorLockedClosed(false);
+        gf.EndTablePhase();
+    }
+
+    
 
 }
