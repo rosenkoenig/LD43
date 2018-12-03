@@ -19,7 +19,7 @@ public class PlayerBehaviour : Character {
 
     [SerializeField]
     ChildCharacter hoverChild;
-
+    
     Wallet wallet;
     
     void Start ()
