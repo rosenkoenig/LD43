@@ -435,6 +435,7 @@ MonoBehaviour:
   uIMaster: {fileID: 2085323787}
   player: {fileID: 846950510}
   gf: {fileID: 454426458}
+  ipTypeFun: {fileID: 0}
 --- !u!4 &454426456
 Transform:
   m_ObjectHideFlags: 0
@@ -1811,6 +1812,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114971537473592944, guid: cd5ddb89d63c8c748a774027bfbd9966,
+        type: 2}
+      propertyPath: statsContainer._childInitialSkillsPacks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4577571538033664, guid: cd5ddb89d63c8c748a774027bfbd9966, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1848,6 +1854,18 @@ Prefab:
       propertyPath: _rigidB
       value: 
       objectReference: {fileID: 656164452}
+    - target: {fileID: 114971537473592944, guid: cd5ddb89d63c8c748a774027bfbd9966,
+        type: 2}
+      propertyPath: statsContainer._childStatsIdContainer
+      value: 
+      objectReference: {fileID: 11400000, guid: 325898cad7d46bb448f71a10de5ab027,
+        type: 2}
+    - target: {fileID: 114971537473592944, guid: cd5ddb89d63c8c748a774027bfbd9966,
+        type: 2}
+      propertyPath: statsContainer._childInitialSkillsPacks.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: cd91ef1475a105444866fe3ca2116bf5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd5ddb89d63c8c748a774027bfbd9966, type: 2}
   m_IsPrefabAsset: 0
@@ -2079,6 +2097,8 @@ MonoBehaviour:
   playerInteractionPanel: {fileID: 599484739}
   _activityProgressInfoRef: {fileID: 114771779845737092, guid: fe10c6c4600a5d94798454f58c312051,
     type: 2}
+  clockParent: {fileID: 0}
+  dayNightTransition: {fileID: 0}
 --- !u!1001 &2094334718
 Prefab:
   m_ObjectHideFlags: 0
