@@ -49,7 +49,7 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6f132defb2c71049a6f53d87da95cd84
-    m_lastTime: -8586577571572829146
+    m_lastTime: -8586577569807189769
     List:
     - name: AI
       guid: d7e0c7d8669dc7479cc9ea43ba635552
@@ -123,7 +123,7 @@ MonoBehaviour:
   - PhysicalPath: Events\PapaPlease.wwu
     ParentPhysicalPath: 
     guid: 9f4045f0e576754ea80f87eacae3ae4b
-    m_lastTime: -8586577571931904774
+    m_lastTime: -8586577533840501974
     List:
     - name: Play_AI_CleanBin
       guid: df9363a7145f454884de6f9df574c512
@@ -136,7 +136,7 @@ MonoBehaviour:
       - ElementName: Play_AI_CleanBin
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_CleanBin
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_CleanFloor
@@ -150,7 +150,7 @@ MonoBehaviour:
       - ElementName: Play_AI_CleanFloor
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_CleanFloor
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_CleanWindow
@@ -164,7 +164,7 @@ MonoBehaviour:
       - ElementName: Play_AI_CleanWindow
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_CleanWindow
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_Console
@@ -178,7 +178,7 @@ MonoBehaviour:
       - ElementName: Play_AI_Console
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_Console
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_Cooking
@@ -192,7 +192,7 @@ MonoBehaviour:
       - ElementName: Play_AI_Cooking
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_Cooking
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_Dishes
@@ -206,7 +206,7 @@ MonoBehaviour:
       - ElementName: Play_AI_Dishes
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_Dishes
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_FS_BF_Walk_L
@@ -220,7 +220,7 @@ MonoBehaviour:
       - ElementName: Play_AI_FS_BF_Walk_L
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_FS_BF_Walk_L
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_FS_BF_Walk_R
@@ -234,7 +234,7 @@ MonoBehaviour:
       - ElementName: Play_AI_FS_BF_Walk_R
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_FS_BF_Walk_R
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_Lavabo
@@ -248,7 +248,7 @@ MonoBehaviour:
       - ElementName: Play_AI_Lavabo
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_Lavabo
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_Panier
@@ -262,7 +262,7 @@ MonoBehaviour:
       - ElementName: Play_AI_Panier
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_Panier
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_Peeing
@@ -276,7 +276,7 @@ MonoBehaviour:
       - ElementName: Play_AI_Peeing
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_Peeing
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_PeeingFloor
@@ -290,7 +290,7 @@ MonoBehaviour:
       - ElementName: Play_AI_PeeingFloor
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_PeeingFloor
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_Playing
@@ -304,7 +304,7 @@ MonoBehaviour:
       - ElementName: Play_AI_Playing
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_Playing
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_Shower
@@ -318,7 +318,7 @@ MonoBehaviour:
       - ElementName: Play_AI_Shower
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_Shower
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_Television
@@ -332,7 +332,7 @@ MonoBehaviour:
       - ElementName: Play_AI_Television
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_Television
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_Wash
@@ -346,7 +346,7 @@ MonoBehaviour:
       - ElementName: Play_AI_Wash
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_Wash
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Play_Amb_Bathroom_Lp
@@ -360,7 +360,7 @@ MonoBehaviour:
       - ElementName: Play_Amb_Bathroom_Lp
         ObjectType: 3
       Path: PapaPlease\Ambiances\Play_Amb_Bathroom_Lp
-      maxAttenuation: 0
+      maxAttenuation: 5
       maxDuration: 0
       minDuration: 0
     - name: Play_Amb_KidsBedroom_Lp
@@ -374,7 +374,7 @@ MonoBehaviour:
       - ElementName: Play_Amb_KidsBedroom_Lp
         ObjectType: 3
       Path: PapaPlease\Ambiances\Play_Amb_KidsBedroom_Lp
-      maxAttenuation: 0
+      maxAttenuation: 4
       maxDuration: 0
       minDuration: 0
     - name: Play_Amb_Kitchen_Lp
@@ -388,7 +388,7 @@ MonoBehaviour:
       - ElementName: Play_Amb_Kitchen_Lp
         ObjectType: 3
       Path: PapaPlease\Ambiances\Play_Amb_Kitchen_Lp
-      maxAttenuation: 0
+      maxAttenuation: 5
       maxDuration: 0
       minDuration: 0
     - name: Play_Amb_LivingRoom_Lp
@@ -416,7 +416,7 @@ MonoBehaviour:
       - ElementName: Play_Amb_Outside_Balcony_Lp
         ObjectType: 3
       Path: PapaPlease\Ambiances\Play_Amb_Outside_Balcony_Lp
-      maxAttenuation: 0
+      maxAttenuation: 7
       maxDuration: 0
       minDuration: 0
     - name: Play_Amb_ParentsBedroom_Lp
@@ -430,7 +430,7 @@ MonoBehaviour:
       - ElementName: Play_Amb_ParentsBedroom_Lp
         ObjectType: 3
       Path: PapaPlease\Ambiances\Play_Amb_ParentsBedroom_Lp
-      maxAttenuation: 0
+      maxAttenuation: 3
       maxDuration: 0
       minDuration: 0
     - name: Play_AmbOut_Bathroom_Neighborhood_Lp
@@ -444,7 +444,7 @@ MonoBehaviour:
       - ElementName: Play_AmbOut_Bathroom_Neighborhood_Lp
         ObjectType: 3
       Path: PapaPlease\Ambiances\Play_AmbOut_Bathroom_Neighborhood_Lp
-      maxAttenuation: 0
+      maxAttenuation: 3
       maxDuration: 0
       minDuration: 0
     - name: Play_AmbOut_Wall_Neighborhood_Lp
@@ -458,7 +458,7 @@ MonoBehaviour:
       - ElementName: Play_AmbOut_Wall_Neighborhood_Lp
         ObjectType: 3
       Path: PapaPlease\Ambiances\Play_AmbOut_Wall_Neighborhood_Lp
-      maxAttenuation: 0
+      maxAttenuation: 3
       maxDuration: 0
       minDuration: 0
     - name: Play_Door_Close
@@ -598,7 +598,7 @@ MonoBehaviour:
       - ElementName: Play_Plane
         ObjectType: 3
       Path: PapaPlease\Ambiances\Play_Plane
-      maxAttenuation: 0
+      maxAttenuation: 20
       maxDuration: 0
       minDuration: 0
     - name: Play_Player_Footsteps
@@ -710,7 +710,7 @@ MonoBehaviour:
       - ElementName: Stop_AI_CleanBin
         ObjectType: 3
       Path: PapaPlease\AI\Stop_AI_CleanBin
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Stop_AI_CleanFloor
@@ -794,7 +794,7 @@ MonoBehaviour:
       - ElementName: Stop_AI_Lavabo
         ObjectType: 3
       Path: PapaPlease\AI\Stop_AI_Lavabo
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Stop_AI_Panier
@@ -822,7 +822,7 @@ MonoBehaviour:
       - ElementName: Stop_AI_Peeing
         ObjectType: 3
       Path: PapaPlease\AI\Stop_AI_Peeing
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Stop_AI_PeeingFloor
@@ -864,7 +864,7 @@ MonoBehaviour:
       - ElementName: Stop_AI_Shower
         ObjectType: 3
       Path: PapaPlease\AI\Stop_AI_Shower
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Stop_AI_Television
@@ -878,7 +878,7 @@ MonoBehaviour:
       - ElementName: Stop_AI_Television
         ObjectType: 3
       Path: PapaPlease\AI\Stop_AI_Television
-      maxAttenuation: 0
+      maxAttenuation: 8
       maxDuration: 0
       minDuration: 0
     - name: Stop_AI_Wash
@@ -1229,7 +1229,6 @@ MonoBehaviour:
   - /PapaPlease_WwiseProject
   - /PapaPlease_WwiseProject/Events
   - /PapaPlease_WwiseProject/Events/PapaPlease
-  - /PapaPlease_WwiseProject/SoundBanks
-  - /PapaPlease_WwiseProject/SoundBanks/Default Work Unit
+  - /PapaPlease_WwiseProject/Events/PapaPlease/Ambiances
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

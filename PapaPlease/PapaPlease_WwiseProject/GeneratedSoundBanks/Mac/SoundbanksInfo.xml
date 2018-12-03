@@ -33,7 +33,7 @@
 				</File>
 				<File Id="171004212" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_7466DE53.wem</Path>
+					<Path>SFX\Player_Foosteps_DECF35AE.wem</Path>
 				</File>
 				<File Id="199418373" Language="SFX">
 					<ShortName>Player_Slap\Player_Slap_Concrete\Player_SlapConcrete_02.wav</ShortName>
@@ -57,7 +57,7 @@
 				</File>
 				<File Id="326098141" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_66507638.wem</Path>
+					<Path>SFX\Player_Foosteps_4DADCB87.wem</Path>
 				</File>
 				<File Id="328017277" Language="SFX">
 					<ShortName>Player_Slap_Nothing\Player_SlapNothing_05.wav</ShortName>
@@ -65,11 +65,11 @@
 				</File>
 				<File Id="340403617" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_C50FB77B.wem</Path>
+					<Path>SFX\Player_Foosteps_668597CE.wem</Path>
 				</File>
 				<File Id="346396162" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_188CC2AC.wem</Path>
+					<Path>SFX\Player_Foosteps_A5C74427.wem</Path>
 				</File>
 				<File Id="377243309" Language="SFX">
 					<ShortName>Player_Slap\Player_Slap_Kids\Player_SlapKid_03_v2.wav</ShortName>
@@ -89,11 +89,11 @@
 				</File>
 				<File Id="468389400" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_B1A5E84B.wem</Path>
+					<Path>SFX\Player_Foosteps_60501A71.wem</Path>
 				</File>
 				<File Id="509307203" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_C9692224.wem</Path>
+					<Path>SFX\Player_Foosteps_8C3BC383.wem</Path>
 				</File>
 				<File Id="548995467" Language="SFX">
 					<ShortName>Player_Slap\Player_Slap_Concrete\Player_SlapConcrete_01.wav</ShortName>
@@ -105,7 +105,7 @@
 				</File>
 				<File Id="565132539" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_00DB3562.wem</Path>
+					<Path>SFX\Player_Foosteps_6AB1E22B.wem</Path>
 				</File>
 				<File Id="682061179" Language="SFX">
 					<ShortName>Player_Slap\Player_Slap_Kids\Player_SlapKid_04_v2.wav</ShortName>
@@ -117,15 +117,15 @@
 				</File>
 				<File Id="699204274" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_59AE5057.wem</Path>
+					<Path>SFX\Player_Foosteps_B411F33F.wem</Path>
 				</File>
 				<File Id="742844808" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_58FD6897.wem</Path>
+					<Path>SFX\Player_Foosteps_73562767.wem</Path>
 				</File>
 				<File Id="758662162" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_61B0ACEF.wem</Path>
+					<Path>SFX\Player_Foosteps_5FE01AA5.wem</Path>
 				</File>
 				<File Id="759396978" Language="SFX">
 					<ShortName>Player_Slap_Nothing\Player_SlapNothing_02.wav</ShortName>
@@ -145,11 +145,11 @@
 				</File>
 				<File Id="858942714" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_FF2CEB3C.wem</Path>
+					<Path>SFX\Player_Foosteps_31E8A030.wem</Path>
 				</File>
 				<File Id="885968506" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_79AE4433.wem</Path>
+					<Path>SFX\Player_Foosteps_07C16C44.wem</Path>
 				</File>
 				<File Id="973609531" Language="SFX">
 					<ShortName>Player_Slap\Player_Slap_Kids\Player_SlapKid_02_v2.wav</ShortName>
@@ -157,7 +157,7 @@
 				</File>
 				<File Id="1041084550" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_5EA375EA.wem</Path>
+					<Path>SFX\Player_Foosteps_8F328E28.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
