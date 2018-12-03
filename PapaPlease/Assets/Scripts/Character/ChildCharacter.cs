@@ -68,6 +68,9 @@ public class ChildCharacter : Character {
     [SerializeField]
     ChildStatID obeissanceStatID = null;
 
+    [SerializeField]
+    GameObject[] possibleMaleHaircuts, possibleFemaleHaircurts, possibleConsitution;
+
     // Use this for initialization
     void Start () {
 
@@ -76,6 +79,33 @@ public class ChildCharacter : Character {
     public void Init ()
     {
         SetState(ChildAIState.WAITING);
+
+        InitSkins();
+
+        int hcIdx = Random.Range(0, isMale ? possibleMaleHaircuts.Length : possibleFemaleHaircurts.Length);
+        GameObject hc = isMale ? possibleMaleHaircuts[hcIdx] : possibleFemaleHaircurts[hcIdx];
+        hc.SetActive(true);
+
+        int cIdx = Random.Range(0, possibleConsitution.Length);
+        possibleConsitution[cIdx].SetActive(true);
+    }
+
+    void InitSkins ()
+    {
+        foreach(GameObject hc in possibleFemaleHaircurts)
+        {
+            hc.SetActive(false);
+        }
+
+        foreach (GameObject hc in possibleMaleHaircuts)
+        {
+            hc.SetActive(false);
+        }
+
+        foreach (GameObject hc in possibleConsitution)
+        {
+            hc.SetActive(false);
+        }
     }
 	
 	// Update is called once per frame
