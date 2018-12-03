@@ -9,10 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98ee11309f10f114299ea8580322b6a9, type: 3}
-  m_Name: IP_HYGIENE_LAUNDRY_OnCompleted_GlobalStatMod
+  m_Name: PassiveChildStatsMod_DIVERTISSEMENT
   m_EditorClassIdentifier: 
   _childStatsModificator:
     statsModifiers:
-    - _childStatID: {fileID: 11400000, guid: edde50d32f7d6d34789d931cdc9b9f8d, type: 2}
-      _factor: 25
+    - _childStatID: {fileID: 11400000, guid: 22772edbc05052140af78dcf860e7ea9, type: 2}
+      _factor: -0.15
       _refill: 0
+      _relativeChildStatID: {fileID: 0}

@@ -11,14 +11,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e70b0733de2b646905d51a5f7b94dd, type: 3}
   m_Name: IPType_HYGIENE_LINGE
   m_EditorClassIdentifier: 
-  _ipName: Wash the laundry
+  _childActivityName: Wash the laundry
   _duringActivityModifiers: []
   _startActivityModifiers: []
-  _endActivityModifiers: []
+  _endActivityModifiers:
+  - _childStatID: {fileID: 11400000, guid: 40db861030465814d8712bedc1c170a6, type: 2}
+    _factor: 2
+    _refill: 0
+    _relativeChildStatID: {fileID: 0}
   _activityModifiers:
   - _childStat: {fileID: 11400000, guid: 40db861030465814d8712bedc1c170a6, type: 2}
-    _factor: 2
+    _factor: 3
     _isFromMaxToMin: 0
   - _childStat: {fileID: 11400000, guid: c7b408b288f9e0441904197be9b9807b, type: 2}
-    _factor: -2
+    _factor: -1
     _isFromMaxToMin: 1

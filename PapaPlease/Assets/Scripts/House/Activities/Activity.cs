@@ -13,13 +13,13 @@ public class ActivityHolder
         float toReturn = 0;
         foreach (var curActMod in actMods)
         {
-            if(curActMod._isFromMaxToMin)
-            { 
+            if (curActMod._isFromMaxToMin)
+            {
                 toReturn += curActMod._factor * (1 - character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
                 Debug.Log("ActivityModifier MAXFROMMIN: " + toReturn + "__ratio: " + character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
             }
             else
-            { 
+            {
                 toReturn += curActMod._factor * (character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
                 Debug.Log("ActivityModifier NORMAL: " + toReturn);
             }
@@ -48,8 +48,11 @@ public class Activity : MonoBehaviour
     public string animStateName = "";
 
     [SerializeField] float _activityResetDelay = 60f;
-    
+
     [SerializeField] float curActivityResetDelay;
+
+    [SerializeField] List<Renderer> _dirtyVisualsRenderers;
+    [SerializeField] List<GameObject> _dirtyVisualsToActivate;
 
     protected IPType _inheritedIPType;
 
@@ -65,6 +68,7 @@ public class Activity : MonoBehaviour
     private void Start()
     {
         GameMaster.Instance.gf.dm.onDayStarts += MakeResetActivity;
+        MakeResetActivity();
     }
 
     private void OnDestroy()
@@ -152,10 +156,25 @@ public class Activity : MonoBehaviour
 
     protected virtual void SetState(ActivityState newState)
     {
+        switch (newState)
+        {
+            case ActivityState.COMPLETE:
+                foreach (var curRend in _dirtyVisualsRenderers)
+                    curRend.material.SetFloat("_DirtBlending", 0f);
+                foreach (var curObj in _dirtyVisualsToActivate)
+                    curObj.SetActive(false);
+                break;
+            case ActivityState.WAITING:
+                foreach (var curRend in _dirtyVisualsRenderers)
+                {
+                    curRend.material.SetFloat("_DirtBlending", 1f);
+                }
+                foreach (var curObj in _dirtyVisualsToActivate)
+                    curObj.SetActive(true);
+                break;
+        }
         if (curActState != newState)
             curActState = newState;
-
-        Debug.Log("Activity state = " + newState, this);
     }
 
     public void Update()

@@ -27,7 +27,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1387025331054082
 GameObject:
@@ -37,12 +37,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4164742892058890}
+  - component: {fileID: 65317418376371264}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1394591172519926
 GameObject:
@@ -57,7 +58,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1487059626789804
 GameObject:
@@ -72,7 +73,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1863962888927522
 GameObject:
@@ -87,9 +88,9 @@ GameObject:
   m_Layer: 0
   m_Name: IP_Toilettes_Wash
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1995693969051368
 GameObject:
@@ -107,7 +108,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4164742892058890
 Transform:
@@ -157,7 +158,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1487059626789804}
   m_LocalRotation: {x: -0, y: 0.7071067, z: -0, w: 0.7071069}
-  m_LocalPosition: {x: -0.609, y: 0.762, z: 0.529}
+  m_LocalPosition: {x: -0.366, y: 1.001, z: 0.529}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4744788912326624}
@@ -207,7 +208,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 572e67f14ec06244e95ed5af4f4281fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -242,7 +243,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 572e67f14ec06244e95ed5af4f4281fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -288,6 +289,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65317418376371264
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1387025331054082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.47, y: 0.8, z: 0.55}
+  m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!65 &65339418580662654
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -311,7 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5adb1f661ba0f4e9b6475272682cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ipName: 
+  playerActivityName: Wash the toilets
   pivotPoint: {fileID: 4238677840846108}
   iPtype: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114410294347942046}
@@ -338,10 +351,11 @@ MonoBehaviour:
   doOnce: 1
   animStateName: Idle
   _activityResetDelay: 100
-  _activityModifiers:
-  - _childStat: {fileID: 11400000, guid: 40db861030465814d8712bedc1c170a6, type: 2}
-    _factor: 0.05
   curActivityResetDelay: 0
+  _dirtyVisualsRenderers:
+  - {fileID: 23639204285839242}
+  - {fileID: 23558513219522556}
+  _dirtyVisualsToActivate: []
   _akEventPlay:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: c2bafc9a50598074eb5884d969f49254,

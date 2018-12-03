@@ -190,7 +190,7 @@ public class ChildCharacter : Character {
         if (currentInterestPoint)
         {
             Debug.Log(childName + "has received a new IP");
-            GameMaster.Instance.AddLog(childName + " goes to " + currentInterestPoint.ipName);
+            GameMaster.Instance.AddLog(childName + " goes to " + currentInterestPoint.playerActivityName);
             SetState(ChildAIState.MOVING_TO_ACTIVITY, true);
         }
         else
@@ -589,7 +589,7 @@ public class ChildCharacter : Character {
         }
 
         isLerping = false;
-        Debug.Log(childName + " begins activity on " + currentInterestPoint.ipName);
+        Debug.Log(childName + " begins activity on " + currentInterestPoint.playerActivityName);
         SetState(ChildAIState.IN_ACTIVITY);
     }
 
@@ -627,7 +627,7 @@ public class ChildCharacter : Character {
     public override void OnActivityEnds()
     {
         base.OnActivityEnds();
-        GameMaster.Instance.AddLog(childName + " ends activity on " + currentInterestPoint.ipName);
+        GameMaster.Instance.AddLog(childName + " ends activity on " + currentInterestPoint.playerActivityName);
         currentActivity = null;
 
         currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.END_ACTIVITY, statsContainer);
