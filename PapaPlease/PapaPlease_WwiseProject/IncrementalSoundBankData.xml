@@ -24,7 +24,7 @@
 			<Language ID="393239870">
 				<File Name="AI" Hash="1965437419" Timestamp="1543879004"/>
 				<File Name="Ambiances" Hash="769950815" Timestamp="1543876605"/>
-				<File Name="Ambiances_Out" Hash="2363160746" Timestamp="1543877873"/>
+				<File Name="Ambiances_Out" Hash="1297284070" Timestamp="1543879958"/>
 				<File Name="Character" Hash="2066918412" Timestamp="1543796803"/>
 				<File Name="Foley" Hash="3565075675" Timestamp="1543767883"/>
 				<File Name="Init" Hash="2113096041" Timestamp="1543877873"/>
@@ -37,7 +37,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="30022664" Timestamp="1543879004"/>
+				<File Name="" Hash="30022664" Timestamp="1543879958"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
