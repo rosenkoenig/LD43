@@ -13,6 +13,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	3353979151	Stop_AI_Peeing			\PapaPlease\AI\Stop_AI_Peeing	
 	3511894251	Play_AI_Playing			\PapaPlease\AI\Play_AI_Playing	
 	3636964221	Play_AI_CleanBin			\PapaPlease\AI\Play_AI_CleanBin	
+	3853750564	Play_AI_FS_BF_Walk_R			\PapaPlease\AI\Play_AI_FS_BF_Walk_R	
+	3853750586	Play_AI_FS_BF_Walk_L			\PapaPlease\AI\Play_AI_FS_BF_Walk_L	
 	4134788725	Stop_AI_Television			\PapaPlease\AI\Stop_AI_Television	
 	4242556375	Stop_AI_PeeingFloor			\PapaPlease\AI\Stop_AI_PeeingFloor	
 

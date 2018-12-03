@@ -45,7 +45,7 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="Character" ID="{673E3192-A3D1-41A7-B2A1-D65F103CEC33}">
+				<SoundBank Name="Player" ID="{673E3192-A3D1-41A7-B2A1-D65F103CEC33}">
 					<PropertyList>
 						<Property Name="Maximum" Type="int32">
 							<ValueList>

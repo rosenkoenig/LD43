@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36886c4caad1ec5499ce0e59c2cad2c3, type: 3}
   m_Name: 673E3192-A3D1-41A7-B2A1-D65F103CEC33
   m_EditorClassIdentifier: 
-  objectName: Character
-  id: 436743010
+  objectName: Player
+  id: 1069431850
   guid: 673E3192-A3D1-41A7-B2A1-D65F103CEC33

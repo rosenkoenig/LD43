@@ -16,6 +16,8 @@ namespace AK
         static const AkUniqueID PLAY_AI_CLEANBIN = 3636964221U;
         static const AkUniqueID PLAY_AI_COOKING = 1056168201U;
         static const AkUniqueID PLAY_AI_DISHES = 2890421503U;
+        static const AkUniqueID PLAY_AI_FS_BF_WALK_L = 3853750586U;
+        static const AkUniqueID PLAY_AI_FS_BF_WALK_R = 3853750564U;
         static const AkUniqueID PLAY_AI_PEEING = 1614196089U;
         static const AkUniqueID PLAY_AI_PEEINGFLOOR = 636593309U;
         static const AkUniqueID PLAY_AI_PLAYING = 3511894251U;
@@ -115,9 +117,9 @@ namespace AK
         static const AkUniqueID AI = 1886858547U;
         static const AkUniqueID AMBIANCES = 1404066300U;
         static const AkUniqueID AMBIANCES_OUT = 1911419817U;
-        static const AkUniqueID CHARACTER = 436743010U;
         static const AkUniqueID MENU = 2607556080U;
         static const AkUniqueID MUSICS = 1730564753U;
+        static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace BANKS
 
