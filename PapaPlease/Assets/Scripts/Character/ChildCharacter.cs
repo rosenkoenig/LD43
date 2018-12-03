@@ -88,6 +88,9 @@ public class ChildCharacter : Character {
 
         int cIdx = Random.Range(0, possibleConsitution.Length);
         possibleConsitution[cIdx].SetActive(true);
+
+        Vector3 ls = possibleConsitution[cIdx].transform.localScale;
+        possibleConsitution[cIdx].transform.localScale = new Vector3(ls.x, Random.Range(.8f,1f), ls.z);
     }
 
     void InitSkins ()
@@ -447,6 +450,7 @@ public class ChildCharacter : Character {
 
         //TODO : get la state obeissance
         nextAngerTime = Mathf.Lerp(timeBetweenAnger.x, timeBetweenAnger.y, rand);
+        nextAngerTime  += statsContainer.GetAChildStatValue(obeissanceStatID) * timeBetweenAngerIncPerObeissance;
         Debug.Log("next anger time = " + nextAngerTime);
         lastAngerTime = Time.time;
     }
@@ -465,15 +469,15 @@ public class ChildCharacter : Character {
         isDoingAnger = true;
 
         Freeze(true);
-        if(GameMaster.Instance.gf.GetGameState == GameState.TABLE)
+        if(state == ChildAIState.AT_TABLE)
         {
-            animator.Play("AtTableAnger");
             animator.SetBool("IsDoingAnger", isDoingAnger);
+            animator.Play("AtTableAnger");
         }
         else
         {
-            animator.Play("Anger");
             animator.SetBool("IsDoingAnger", isDoingAnger);
+            animator.Play("Anger");
         }
 
     }

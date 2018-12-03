@@ -599,7 +599,7 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
-						<Property Name="RadiusMax" Type="Real64" Value="12"/>
+						<Property Name="RadiusMax" Type="Real64" Value="7"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -616,7 +616,7 @@
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12</XPos>
+											<XPos>7</XPos>
 											<YPos>-20.40578</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -644,7 +644,7 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12</XPos>
+											<XPos>7</XPos>
 											<YPos>15</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -666,7 +666,7 @@
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12</XPos>
+											<XPos>7</XPos>
 											<YPos>29</YPos>
 											<Flags>37</Flags>
 										</Point>
