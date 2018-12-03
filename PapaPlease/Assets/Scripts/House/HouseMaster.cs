@@ -12,7 +12,7 @@ public class HouseMaster : MonoBehaviour
 {
     public GameMaster gm = null;
 
-    public List<InterestPoint> allInterestPoints;
+    public List<InterestPoint> allInterestPoints { get; private set; }
     public List<Transform> allChairPivots;
     public List<Transform> allPlatePivots;
 
@@ -42,6 +42,18 @@ public class HouseMaster : MonoBehaviour
     public void Init ()
     {
         UpdateTableRoomSize();
+    }
+
+    public void SubscribeInterestPoint(InterestPoint ip)
+    {
+        if (allInterestPoints.Contains(ip) == false)
+            allInterestPoints.Add(ip);
+    }
+
+    public void UnsuscribeInterestPoint(InterestPoint ip)
+    {
+        if (allInterestPoints.Contains(ip))
+            allInterestPoints.Remove(ip);
     }
 
     public InterestPoint GetRandomInterestPoint()

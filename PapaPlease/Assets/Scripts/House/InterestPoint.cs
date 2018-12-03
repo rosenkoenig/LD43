@@ -38,6 +38,7 @@ public class InterestPoint : MonoBehaviour
                 _activityProgressInfoPos) as ActivityProgressInfo;
             _activityProgressInfo.gameObject.SetActive(false);
         }
+        activity.SetInheritedIPType(iPtype);
     }
 
     public void MakeResetActivity()
