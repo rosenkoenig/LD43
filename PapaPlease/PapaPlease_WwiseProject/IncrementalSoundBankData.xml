@@ -15,21 +15,21 @@
 	<Platform GUID="{C6A33693-62E0-441D-8DA7-8E50E7B8248F}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="AI" Hash="3684795391" Timestamp="1543788355"/>
-				<File Name="Ambiances" Hash="3473301105" Timestamp="1543788357"/>
-				<File Name="Ambiances_Out" Hash="1692866826" Timestamp="1543788358"/>
-				<File Name="Character" Hash="3293920940" Timestamp="1543788361"/>
+				<File Name="AI" Hash="3453583983" Timestamp="1543797106"/>
+				<File Name="Ambiances" Hash="4243425864" Timestamp="1543796802"/>
+				<File Name="Ambiances_Out" Hash="2670708568" Timestamp="1543796802"/>
+				<File Name="Character" Hash="2066918412" Timestamp="1543796803"/>
 				<File Name="Foley" Hash="3565075675" Timestamp="1543767883"/>
-				<File Name="Init" Hash="3343840905" Timestamp="1543788361"/>
+				<File Name="Init" Hash="3852426516" Timestamp="1543797106"/>
 				<File Name="Level1" Hash="77498685" Timestamp="1543754936"/>
 				<File Name="Menu" Hash="431149734" Timestamp="1543767883"/>
 				<File Name="Musics" Hash="3653913818" Timestamp="1543767883"/>
-				<File Name="SFX" Hash="1838157204" Timestamp="1543788361"/>
+				<File Name="SFX" Hash="4282113553" Timestamp="1543796803"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="334427621" Timestamp="1543788361"/>
+				<File Name="" Hash="1963717291" Timestamp="1543797106"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

@@ -18,6 +18,11 @@
 						<Switch Name="AI_Flush" ID="{DDB64932-D1E6-46C7-B222-9796939397CA}"/>
 						<Switch Name="AI_Shower" ID="{4B70EB13-20DB-4E8B-9053-0DECE0C12A10}"/>
 						<Switch Name="AI_Idle" ID="{FE876CA7-2F09-497D-AA4A-50F353EF223D}"/>
+						<Switch Name="AI_Playing" ID="{A582084C-E623-4C4C-BA41-2780B98C0853}"/>
+						<Switch Name="AI_PeeingFloor" ID="{96443037-0C4C-429E-8439-CA763A19CBF1}"/>
+						<Switch Name="AI_CleanBin" ID="{5AB64231-4628-4C0B-ABF1-459B333626A2}"/>
+						<Switch Name="AI_Television" ID="{26AC938F-9F18-4C63-AE75-FB2DF7B3AE84}"/>
+						<Switch Name="AI_CleanWindow" ID="{F9F696E7-610F-44F4-8D6E-E9CDA90374CD}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Player_Slap" ID="{79D247B4-1C41-407E-BF23-E0776A971D1F}">

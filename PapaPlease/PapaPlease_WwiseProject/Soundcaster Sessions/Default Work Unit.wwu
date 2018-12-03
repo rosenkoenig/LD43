@@ -82,12 +82,36 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_AI_CleanBin" ID="{A76393DF-5F14-4845-84DE-6F9DF574C512}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AI_Television" ID="{2E03038B-9FC0-4839-BE0C-99A5D35EDAF9}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Player_Slap" ID="{7B5B9B5C-B661-4AE1-9446-18A6FB799DB4}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Player_Shower_Off" ID="{4D38A215-AB8B-4E2D-B6B2-E7023D92CE10}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_AI_CleanBin" ID="{4844AD63-AEE4-4FA0-B616-C5F9E0E33CB5}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_AI_Television" ID="{B48527EF-0FE7-47A4-87CD-148617DB99C4}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AI_CleanWindow" ID="{3434C6D5-7250-43A7-8015-35F2761E6591}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_AI_CleanWindow" ID="{4949D3C4-EE41-4E30-ABA7-69522EC2AD8E}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="3" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
@@ -96,7 +120,7 @@
 						<CurrentSwitchRef Name="Concrete" ID="{7E3AD1FA-5F80-4FDE-B827-EFDF3752F745}"/>
 						<CurrentSwitchRef Name="AI_Shower_Lp" ID="{D715151B-E5DD-4A75-9B87-24D44E4D8A3B}"/>
 						<CurrentSwitchRef Name="AI_Idle" ID="{904EBF51-C68E-4F55-862E-62D9EDDA7E19}"/>
-						<CurrentSwitchRef Name="AI_Cooking" ID="{EAD67812-32F7-45D0-8C9A-24199D85EF36}"/>
+						<CurrentSwitchRef Name="AI_CleanBin" ID="{5AB64231-4628-4C0B-ABF1-459B333626A2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

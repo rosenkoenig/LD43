@@ -5,12 +5,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	4244658871	Play_Window_Close			\PapaPlease\SFX\Play_Window_Close	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	49342786	WasherOpen_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Washer\WasherOpen_01_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Washer\Washer_Open\WasherOpen_01		88238
-	54061708	WasherClose_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Washer\WasherClose_01_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Washer\Washer_Close\WasherClose_01		88128
-	301767813	WindowOpen_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Windows\WindowOpen_01_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Windows\Window_Open\WindowOpen_01		88128
-	399136298	WasherOpen_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Washer\WasherOpen_02_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Washer\Washer_Open\WasherOpen_02		81984
-	651720505	WasherOpen_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Washer\WasherOpen_03_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Washer\Washer_Open\WasherOpen_03		114752
-	845164772	WasherClose_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Washer\WasherClose_02_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Washer\Washer_Close\WasherClose_02		72768
-	944673082	WasherClose_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Washer\WasherClose_03_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Washer\Washer_Close\WasherClose_03		124722
-	960467139	WindowClose_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Windows\WindowClose_01_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Windows\Window_Close\WindowClose_01		70720
+	49342786	WasherOpen_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Washer\WasherOpen_01_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Washer\Washer_Open\WasherOpen_01		9074
+	54061708	WasherClose_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Washer\WasherClose_01_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Washer\Washer_Close\WasherClose_01		9144
+	301767813	WindowOpen_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Windows\WindowOpen_01_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Windows\Window_Open\WindowOpen_01		8970
+	399136298	WasherOpen_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Washer\WasherOpen_02_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Washer\Washer_Open\WasherOpen_02		8165
+	651720505	WasherOpen_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Washer\WasherOpen_03_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Washer\Washer_Open\WasherOpen_03		11730
+	845164772	WasherClose_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Washer\WasherClose_02_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Washer\Washer_Close\WasherClose_02		7599
+	944673082	WasherClose_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Washer\WasherClose_03_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Washer\Washer_Close\WasherClose_03		12210
+	960467139	WindowClose_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Windows\WindowClose_01_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Windows\Window_Close\WindowClose_01		5046
 
