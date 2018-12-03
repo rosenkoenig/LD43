@@ -14,15 +14,21 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AI_CLEANBIN = 3636964221U;
+        static const AkUniqueID PLAY_AI_CLEANFLOOR = 3782358412U;
+        static const AkUniqueID PLAY_AI_CLEANWINDOW = 1459777202U;
+        static const AkUniqueID PLAY_AI_CONSOLE = 1202448914U;
         static const AkUniqueID PLAY_AI_COOKING = 1056168201U;
         static const AkUniqueID PLAY_AI_DISHES = 2890421503U;
         static const AkUniqueID PLAY_AI_FS_BF_WALK_L = 3853750586U;
         static const AkUniqueID PLAY_AI_FS_BF_WALK_R = 3853750564U;
+        static const AkUniqueID PLAY_AI_LAVABO = 1558212960U;
+        static const AkUniqueID PLAY_AI_PANIER = 312518768U;
         static const AkUniqueID PLAY_AI_PEEING = 1614196089U;
         static const AkUniqueID PLAY_AI_PEEINGFLOOR = 636593309U;
         static const AkUniqueID PLAY_AI_PLAYING = 3511894251U;
         static const AkUniqueID PLAY_AI_SHOWER = 2950347541U;
         static const AkUniqueID PLAY_AI_TELEVISION = 861642119U;
+        static const AkUniqueID PLAY_AI_WASH = 3563372582U;
         static const AkUniqueID PLAY_AMB_BATHROOM_LP = 2257634154U;
         static const AkUniqueID PLAY_AMB_KIDSBEDROOM_LP = 1402976205U;
         static const AkUniqueID PLAY_AMB_KITCHEN_LP = 4028544478U;
@@ -42,13 +48,19 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS = 98439365U;
         static const AkUniqueID PLAY_PLAYER_SLAP = 76044170U;
         static const AkUniqueID STOP_AI_CLEANBIN = 1064386371U;
+        static const AkUniqueID STOP_AI_CLEANFLOOR = 1939778946U;
+        static const AkUniqueID STOP_AI_CLEANWINDOW = 1693507588U;
+        static const AkUniqueID STOP_AI_CONSOLE = 1744950656U;
         static const AkUniqueID STOP_AI_COOKING = 2408563091U;
         static const AkUniqueID STOP_AI_DISHES = 2349360669U;
+        static const AkUniqueID STOP_AI_LAVABO = 3877824914U;
+        static const AkUniqueID STOP_AI_PANIER = 1950993718U;
         static const AkUniqueID STOP_AI_PEEING = 3353979151U;
         static const AkUniqueID STOP_AI_PEEINGFLOOR = 4242556375U;
         static const AkUniqueID STOP_AI_PLAYING = 2698630197U;
         static const AkUniqueID STOP_AI_SHOWER = 60512483U;
         static const AkUniqueID STOP_AI_TELEVISION = 4134788725U;
+        static const AkUniqueID STOP_AI_WASH = 1180166316U;
         static const AkUniqueID STOP_MENU_BACK = 3141480553U;
         static const AkUniqueID STOP_MENU_CLIC = 830185121U;
         static const AkUniqueID STOP_MENU_MOVE = 1649266127U;

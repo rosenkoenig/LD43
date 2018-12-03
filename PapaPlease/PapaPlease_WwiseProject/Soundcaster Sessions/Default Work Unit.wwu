@@ -141,7 +141,7 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Kid" ID="{4853AA7A-ECC7-4AD7-8563-A5B7D90637F3}"/>
+						<CurrentSwitchRef Name="Concrete" ID="{7E3AD1FA-5F80-4FDE-B827-EFDF3752F745}"/>
 						<CurrentSwitchRef Name="AI_Shower_Lp" ID="{D715151B-E5DD-4A75-9B87-24D44E4D8A3B}"/>
 						<CurrentSwitchRef Name="AI_Idle" ID="{904EBF51-C68E-4F55-862E-62D9EDDA7E19}"/>
 						<CurrentSwitchRef Name="AI_CleanBin" ID="{5AB64231-4628-4C0B-ABF1-459B333626A2}"/>
