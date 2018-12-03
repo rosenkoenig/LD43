@@ -52,8 +52,15 @@ public class GameControls : MonoBehaviour {
             dir.x = Input.GetAxis("Horizontal");
             dir.z = Input.GetAxis("Vertical");
             if (dir != Vector3.zero)
+            {
                 _player.GetPlayerMover.Move(dir.normalized);
+                _player.GetPlayerMover.SwitchWalkSound(true);
+            }
+            else
+                _player.GetPlayerMover.SwitchWalkSound(false);
         }
+        else
+            _player.GetPlayerMover.SwitchWalkSound(false);
     }
 
     void Update()

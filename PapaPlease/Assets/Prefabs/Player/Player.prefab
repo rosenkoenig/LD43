@@ -642,6 +642,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidB: {fileID: 54945795513341698}
   _moveSpeed: 3
+  _walkStart:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9faa687bbb80acc49a1a0ff875c717f3,
+      type: 2}
+  _walkStop:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: ff258787fafce404e9902430e7edc6c6,
+      type: 2}
 --- !u!114 &114788026864694268
 MonoBehaviour:
   m_ObjectHideFlags: 1

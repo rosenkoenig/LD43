@@ -14,9 +14,6 @@
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="Player_Footsteps" ID="{456B1B42-BCEF-4FEB-B591-798CA2C983EC}" ShortID="94282002">
-							<PropertyList>
-								<Property Name="BlendBehavior" Type="int16" Value="1"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -26,7 +23,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Footseps" ID="{0703128A-E07D-4EF0-AD84-C011673BB40D}" ShortID="81264480">
+								<RandomSequenceContainer Name="Footsteps" ID="{0703128A-E07D-4EF0-AD84-C011673BB40D}" ShortID="81264480">
 									<PropertyList>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>

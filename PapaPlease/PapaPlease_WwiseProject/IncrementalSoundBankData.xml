@@ -31,13 +31,13 @@
 				<File Name="Level1" Hash="77498685" Timestamp="1543754936"/>
 				<File Name="Menu" Hash="1266905743" Timestamp="1543849881"/>
 				<File Name="Musics" Hash="3653913818" Timestamp="1543767883"/>
-				<File Name="Player" Hash="3166563963" Timestamp="1543848532"/>
+				<File Name="Player" Hash="602407895" Timestamp="1543855970"/>
 				<File Name="SFX" Hash="3861369680" Timestamp="1543848532"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1366935625" Timestamp="1543849881"/>
+				<File Name="" Hash="1366935625" Timestamp="1543855970"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

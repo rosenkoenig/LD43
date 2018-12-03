@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000056, guid: 0fbe3ff03143985428e84620f7ad5bbb,
+  m_LightingDataAsset: {fileID: 112000008, guid: 0fbe3ff03143985428e84620f7ad5bbb,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -457,7 +457,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 290262526}
-  - component: {fileID: 290262525}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -465,33 +464,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &290262525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 290262524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba7780cd8469f404bba686ef31d3a374, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: f7bfcf903b56b0042a3087a2ee3e030b,
-    type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  preparePoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  diffractionFlags: 0
-  engineLogging: 0
 --- !u!4 &290262526
 Transform:
   m_ObjectHideFlags: 0
