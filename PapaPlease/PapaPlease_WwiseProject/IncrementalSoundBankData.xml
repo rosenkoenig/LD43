@@ -32,12 +32,12 @@
 				<File Name="Menu" Hash="431149734" Timestamp="1543767883"/>
 				<File Name="Musics" Hash="3653913818" Timestamp="1543767883"/>
 				<File Name="Player" Hash="323285415" Timestamp="1543800124"/>
-				<File Name="SFX" Hash="1701337500" Timestamp="1543800360"/>
+				<File Name="SFX" Hash="4282113553" Timestamp="1543836987"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="158323498" Timestamp="1543800360"/>
+				<File Name="" Hash="158323498" Timestamp="1543836987"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

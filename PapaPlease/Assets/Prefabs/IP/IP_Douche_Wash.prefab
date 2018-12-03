@@ -60,7 +60,7 @@ GameObject:
   m_Layer: 0
   m_Name: IP_Douche_Wash
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -108,7 +108,7 @@ GameObject:
   m_Layer: 0
   m_Name: Pivot_Wash
   m_TagString: Untagged
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -507,7 +507,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHolder: 1
-  doOnce: 0
+  doOnce: 1
   animStateName: Idle
   _activityResetDelay: 100
+  _activityModifiers:
+  - _childStat: {fileID: 11400000, guid: 40db861030465814d8712bedc1c170a6, type: 2}
+    _factor: 0.05
   duration: 10

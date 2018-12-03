@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ActivityTimed : Activity {
 
+    [Header("___________")]
     public float duration;
     
 
