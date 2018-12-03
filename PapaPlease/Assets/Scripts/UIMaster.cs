@@ -15,6 +15,10 @@ public class UIMaster : MonoBehaviour
 
     [SerializeField] ActivityProgressInfo _activityProgressInfoRef;
 
+    [SerializeField] UIClock clockParent;
+
+    [SerializeField] UITransition dayNightTransition;
+
     ChildCharacter curChild;
     
     public Action HideMenuInteractChildEvent;
@@ -22,10 +26,52 @@ public class UIMaster : MonoBehaviour
     public ActivityProgressInfo GetActivityProgressInfoRef { get { return _activityProgressInfoRef; } }
     public bool childInteractionMenuIsDisplayed {  get { return _childInteractionMenu.isActiveAndEnabled; } }
 
+    public void Init ()
+    {
+        GameMaster.Instance.gf.dm.onDayStarts += OnDayStart;
+        GameMaster.Instance.gf.dm.onDayEnds += OnDayEnds;
+    }
+
     private void Start()
     {
         ShowOrHideCursor(false);
         DisplayPlayerInteraction(false, "");
+
+    }
+
+    void Update ()
+    {
+        clockParent.UpdateDayCompletion(GameMaster.Instance.gf.dm.GetDayTimeRatio());
+    }
+
+    public void OnDayStart ()
+    {
+        DisplayClock(true);
+        dayNightTransition.End();
+    }
+
+    public void OnDayEnds ()
+    {
+        Debug.Log("Day Ends");
+        DisplayClock(false);
+        dayNightTransition.Begin();
+    }
+
+    public void OnTableStarts ()
+    {
+
+        dayNightTransition.End();
+    }
+
+    public void OnTableEnds ()
+    {
+
+        dayNightTransition.Begin();
+    }
+
+    public void DisplayClock (bool state)
+    {
+        clockParent.SetActive(state);
     }
     
     public void HideChildStatsMenu()
