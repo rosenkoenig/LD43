@@ -51,12 +51,14 @@ public class DirtIPGenerator : MonoBehaviour
     private void ManageUnspawn()
     {
         List<SpawnedIPPack> toRemove = new List<SpawnedIPPack>();
-        foreach (var item in _curSpawnIPPacks)
+        foreach (var spwnIpPack in _curSpawnIPPacks)
         {
-            if (item._spawnedInterestPoint.GetActivityState == ActivityState.COMPLETE)
+            if (spwnIpPack._spawnedInterestPoint.GetActivityState == ActivityState.COMPLETE)
             {
-                item._spawnedInterestPoint.gameObject.SetActive(false);
-                toRemove.Add(item);
+
+                GameMaster.Instance.hm.SubscribeInterestPoint(spwnIpPack._spawnedInterestPoint);
+                spwnIpPack._spawnedInterestPoint.gameObject.SetActive(false);
+                toRemove.Add(spwnIpPack);
             }
         }
         foreach (var item in toRemove)
@@ -95,6 +97,7 @@ public class DirtIPGenerator : MonoBehaviour
             newSpawnIPPack._spawnedInterestPoint.MakeResetActivity();
 
             _curSpawnIPPacks.Add(newSpawnIPPack);
+            GameMaster.Instance.hm.SubscribeInterestPoint(newSpawnIPPack._spawnedInterestPoint);
         }
     }
 

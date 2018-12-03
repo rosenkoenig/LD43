@@ -9,6 +9,7 @@ public class GameMaster : MonoBehaviour {
     public PlayerBehaviour player;
     public GameFlow gf;
     public Wallet wallet;
+    public LogMaster log;
 
     static GameMaster _instance;
 
@@ -23,6 +24,7 @@ public class GameMaster : MonoBehaviour {
         vm.gm = this;
         hm.gm = this;
         gf.gm = this;
+        log.Init();
         uIMaster.Init();
         gf.Init();
         vm.Init();
