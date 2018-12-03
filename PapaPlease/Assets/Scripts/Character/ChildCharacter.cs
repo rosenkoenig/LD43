@@ -744,6 +744,7 @@ public class ChildCharacter : Character {
         Freeze(true);
         navAgent.enabled = false;
         LaunchDeathAnim();
+        PlaySoundEvent(OnDeathEvent);
     }
 
     void UpdateDeath ()
@@ -833,6 +834,9 @@ public class ChildCharacter : Character {
     AK.Wwise.Event OnStartWalking = null;
     [SerializeField]
     AK.Wwise.Event OnStopWalking = null;
+
+    [SerializeField]
+    AK.Wwise.Event OnDeathEvent = null;
 
     void PlaySoundEvent(AK.Wwise.Event soundEvent)
     {
