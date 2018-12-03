@@ -24,7 +24,7 @@ public class GameMaster : MonoBehaviour {
         vm.gm = this;
         hm.gm = this;
         gf.gm = this;
-        log.Init();
+        if(log) log.Init();
         uIMaster.Init();
         gf.Init();
         vm.Init();
@@ -59,6 +59,10 @@ public class GameMaster : MonoBehaviour {
         gf.EndTablePhase();
     }
 
-    
+    public void AddLog(string text)
+    {
+        if (log)
+            log.AddLog(text);
+    }
 
 }

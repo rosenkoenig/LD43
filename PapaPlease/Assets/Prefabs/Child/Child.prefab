@@ -1678,6 +1678,30 @@ MonoBehaviour:
   - {fileID: 1193872038817072}
   - {fileID: 1738972138188348}
   - {fileID: 1910157251887512}
+  pantMaterials:
+  - {fileID: 2100000, guid: e9c79329e454e2c4e9a42376acce8448, type: 2}
+  - {fileID: 2100000, guid: aaca66c7a41d1474686c51429a9ec8f3, type: 2}
+  - {fileID: 2100000, guid: d34c596f3453a7e4e9265f1354a53fe0, type: 2}
+  - {fileID: 2100000, guid: c4563f42226134a498e4b063b0cbc94a, type: 2}
+  sweaterMaterials:
+  - {fileID: 2100000, guid: 80c38eb1e6f9a834097bd6d7563f0d12, type: 2}
+  - {fileID: 2100000, guid: 06dde6d93d924d343b829116ef59fc3f, type: 2}
+  - {fileID: 2100000, guid: ac38534e4d3ba2944b1c1270be60c77d, type: 2}
+  - {fileID: 2100000, guid: 45b36627291c3f04eab85a6a472f8055, type: 2}
+  - {fileID: 2100000, guid: 54c266016eb16c645a6abcb872c6048b, type: 2}
+  - {fileID: 2100000, guid: e8ff4a026f26c2743a0a5f373e0f8d86, type: 2}
+  - {fileID: 2100000, guid: ef3a0cb915001804eafc903269ff991f, type: 2}
+  - {fileID: 2100000, guid: 615667e07532c5146b94a227dfbb043c, type: 2}
+  shoesMaterial:
+  - {fileID: 2100000, guid: 5940c00c657c91d47afc10f5eabc103d, type: 2}
+  - {fileID: 2100000, guid: e7abe9c40d67bd34daa1cefe16d12b8c, type: 2}
+  hairMaterial:
+  - {fileID: 2100000, guid: 794582e0fb77448438d7befda9494c98, type: 2}
+  - {fileID: 2100000, guid: 9e3b61a28c614e94fa2ae4ba8c972e81, type: 2}
+  - {fileID: 2100000, guid: 2daa47a7123ee9f42b7cbd9722732e09, type: 2}
+  - {fileID: 2100000, guid: a1d0a8b3461c9d34f87f1a910b1f39e9, type: 2}
+  - {fileID: 2100000, guid: 5940c00c657c91d47afc10f5eabc103d, type: 2}
+  - {fileID: 2100000, guid: e7abe9c40d67bd34daa1cefe16d12b8c, type: 2}
   animator: {fileID: 95645145970046072}
   extraRotationSpeed: 8
 --- !u!136 &136824139974650648
