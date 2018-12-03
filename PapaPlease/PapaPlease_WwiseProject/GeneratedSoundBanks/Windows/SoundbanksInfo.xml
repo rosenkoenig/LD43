@@ -15,28 +15,16 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
-			<IncludedEvents>
-				<Event Id="4244658871" Name="Play_Window_Close" ObjectPath="\Events\PapaPlease\SFX\Play_Window_Close"/>
-				<Event Id="4135004417" Name="Play_Window_Open" ObjectPath="\Events\PapaPlease\SFX\Play_Window_Open"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="301767813" Language="SFX">
-					<ShortName>Windows\WindowOpen_01.wav</ShortName>
-					<Path>SFX\Windows\WindowOpen_01_F52F4675.wem</Path>
-				</File>
-				<File Id="960467139" Language="SFX">
-					<ShortName>Windows\WindowClose_01.wav</ShortName>
-					<Path>SFX\Windows\WindowClose_01_F52F4675.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="1069431850" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\PapaPlease\Player\Player_Footsteps"/>
-				<Event Id="2722341167" Name="Player_Slap" ObjectPath="\Events\PapaPlease\Player\Player_Slap"/>
+				<Event Id="98439365" Name="Play_Player_Footsteps" ObjectPath="\Events\PapaPlease\Player\Play_Player_Footsteps"/>
+				<Event Id="76044170" Name="Play_Player_Slap" ObjectPath="\Events\PapaPlease\Player\Play_Player_Slap"/>
+				<Event Id="2284278951" Name="Stop_Player_Footsteps" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Footsteps" MaxAttenuation="0.000000"/>
+				<Event Id="3374816280" Name="Stop_Player_Slap" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Slap" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="107132586" Language="SFX">
@@ -237,28 +225,44 @@
 			<Path>AI.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3636964221" Name="Play_AI_CleanBin" ObjectPath="\Events\PapaPlease\AI\Play_AI_CleanBin" MaxAttenuation="8.000000"/>
+				<Event Id="3782358412" Name="Play_AI_CleanFloor" ObjectPath="\Events\PapaPlease\AI\Play_AI_CleanFloor" MaxAttenuation="8.000000"/>
+				<Event Id="1459777202" Name="Play_AI_CleanWindow" ObjectPath="\Events\PapaPlease\AI\Play_AI_CleanWindow" MaxAttenuation="8.000000"/>
+				<Event Id="1202448914" Name="Play_AI_Console" ObjectPath="\Events\PapaPlease\AI\Play_AI_Console" MaxAttenuation="8.000000"/>
 				<Event Id="1056168201" Name="Play_AI_Cooking" ObjectPath="\Events\PapaPlease\AI\Play_AI_Cooking" MaxAttenuation="8.000000"/>
 				<Event Id="2890421503" Name="Play_AI_Dishes" ObjectPath="\Events\PapaPlease\AI\Play_AI_Dishes" MaxAttenuation="8.000000"/>
 				<Event Id="3853750586" Name="Play_AI_FS_BF_Walk_L" ObjectPath="\Events\PapaPlease\AI\Play_AI_FS_BF_Walk_L" MaxAttenuation="8.000000"/>
 				<Event Id="3853750564" Name="Play_AI_FS_BF_Walk_R" ObjectPath="\Events\PapaPlease\AI\Play_AI_FS_BF_Walk_R" MaxAttenuation="8.000000"/>
+				<Event Id="1558212960" Name="Play_AI_Lavabo" ObjectPath="\Events\PapaPlease\AI\Play_AI_Lavabo" MaxAttenuation="8.000000"/>
+				<Event Id="312518768" Name="Play_AI_Panier" ObjectPath="\Events\PapaPlease\AI\Play_AI_Panier" MaxAttenuation="8.000000"/>
 				<Event Id="1614196089" Name="Play_AI_Peeing" ObjectPath="\Events\PapaPlease\AI\Play_AI_Peeing" MaxAttenuation="8.000000"/>
 				<Event Id="636593309" Name="Play_AI_PeeingFloor" ObjectPath="\Events\PapaPlease\AI\Play_AI_PeeingFloor" MaxAttenuation="8.000000"/>
 				<Event Id="3511894251" Name="Play_AI_Playing" ObjectPath="\Events\PapaPlease\AI\Play_AI_Playing" MaxAttenuation="8.000000"/>
 				<Event Id="2950347541" Name="Play_AI_Shower" ObjectPath="\Events\PapaPlease\AI\Play_AI_Shower" MaxAttenuation="8.000000"/>
 				<Event Id="861642119" Name="Play_AI_Television" ObjectPath="\Events\PapaPlease\AI\Play_AI_Television" MaxAttenuation="8.000000"/>
+				<Event Id="3563372582" Name="Play_AI_Wash" ObjectPath="\Events\PapaPlease\AI\Play_AI_Wash" MaxAttenuation="8.000000"/>
 				<Event Id="1064386371" Name="Stop_AI_CleanBin" ObjectPath="\Events\PapaPlease\AI\Stop_AI_CleanBin" MaxAttenuation="8.000000"/>
+				<Event Id="1939778946" Name="Stop_AI_CleanFloor" ObjectPath="\Events\PapaPlease\AI\Stop_AI_CleanFloor" MaxAttenuation="0.000000"/>
+				<Event Id="1693507588" Name="Stop_AI_CleanWindow" ObjectPath="\Events\PapaPlease\AI\Stop_AI_CleanWindow" MaxAttenuation="0.000000"/>
+				<Event Id="1744950656" Name="Stop_AI_Console" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Console" MaxAttenuation="0.000000"/>
 				<Event Id="2408563091" Name="Stop_AI_Cooking" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Cooking" MaxAttenuation="0.000000"/>
 				<Event Id="2349360669" Name="Stop_AI_Dishes" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Dishes" MaxAttenuation="0.000000"/>
+				<Event Id="3877824914" Name="Stop_AI_Lavabo" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Lavabo" MaxAttenuation="8.000000"/>
+				<Event Id="1950993718" Name="Stop_AI_Panier" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Panier" MaxAttenuation="0.000000"/>
 				<Event Id="3353979151" Name="Stop_AI_Peeing" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Peeing" MaxAttenuation="8.000000"/>
 				<Event Id="4242556375" Name="Stop_AI_PeeingFloor" ObjectPath="\Events\PapaPlease\AI\Stop_AI_PeeingFloor" MaxAttenuation="0.000000"/>
 				<Event Id="2698630197" Name="Stop_AI_Playing" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Playing" MaxAttenuation="0.000000"/>
 				<Event Id="60512483" Name="Stop_AI_Shower" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Shower" MaxAttenuation="8.000000"/>
 				<Event Id="4134788725" Name="Stop_AI_Television" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Television" MaxAttenuation="8.000000"/>
+				<Event Id="1180166316" Name="Stop_AI_Wash" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Wash" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="16075972" Language="SFX">
 					<ShortName>AI_Peeing\AI_Peeing_02.wav</ShortName>
 					<Path>SFX\AI_Peeing\AI_Peeing_02_F52F4675.wem</Path>
+				</File>
+				<File Id="17172885" Language="SFX">
+					<ShortName>Armour Leather Foley Long 05.wav</ShortName>
+					<Path>SFX\Armour Leather Foley Long 05_0265BEE3.wem</Path>
 				</File>
 				<File Id="18597857" Language="SFX">
 					<ShortName>AI_Peeing\AI_Peeing_01.wav</ShortName>
@@ -276,6 +280,18 @@
 					<ShortName>AI_Cooking\AI_Cooking_Slice_02.wav</ShortName>
 					<Path>SFX\AI_Cooking\AI_Cooking_Slice_02_1FF931E5.wem</Path>
 				</File>
+				<File Id="85682655" Language="SFX">
+					<ShortName>AI_Cooking\AI_Cooking_Fry_Lp-01.wav</ShortName>
+					<Path>SFX\AI_Cooking\AI_Cooking_Fry_Lp-01_0265BEE3.wem</Path>
+				</File>
+				<File Id="85759521" Language="SFX">
+					<ShortName>AI_CleanWindow\Player_CleanWindow_03.wav</ShortName>
+					<Path>SFX\AI_CleanWindow\Player_CleanWindow_03_99D1822D.wem</Path>
+				</File>
+				<File Id="89466473" Language="SFX">
+					<ShortName>AI_CleanFloor\Broom_05.wav</ShortName>
+					<Path>SFX\AI_CleanFloor\Broom_05_F52F4675.wem</Path>
+				</File>
 				<File Id="93048716" Language="SFX">
 					<ShortName>AI_CleanBin\AI_Bin_Open_01.wav</ShortName>
 					<Path>SFX\AI_CleanBin\AI_Bin_Open_01_F52F4675.wem</Path>
@@ -292,9 +308,21 @@
 					<ShortName>AI_PeeingFloor\AI_Peeing_Floor_02.wav</ShortName>
 					<Path>SFX\AI_PeeingFloor\AI_Peeing_Floor_02_BA8C008F.wem</Path>
 				</File>
+				<File Id="192555610" Language="SFX">
+					<ShortName>Zipper, Short 5 SND6131.wav</ShortName>
+					<Path>SFX\Zipper, Short 5 SND6131_C03EBAC7.wem</Path>
+				</File>
+				<File Id="200886225" Language="SFX">
+					<ShortName>AI_CleanWindow\Player_CleanWindow_02.wav</ShortName>
+					<Path>SFX\AI_CleanWindow\Player_CleanWindow_02_ECECCE33.wem</Path>
+				</File>
 				<File Id="201374765" Language="SFX">
 					<ShortName>AI_CleanBin\AI_Bin_Movement_Metal_01.wav</ShortName>
 					<Path>SFX\AI_CleanBin\AI_Bin_Movement_Metal_01_8362C4EF.wem</Path>
+				</File>
+				<File Id="207515619" Language="SFX">
+					<ShortName>Water, Running, Sink, Drain Open 2 SND5462.wav</ShortName>
+					<Path>SFX\Water, Running, Sink, Drain Open 2 SND5462_70621C50.wem</Path>
 				</File>
 				<File Id="218301121" Language="SFX">
 					<ShortName>AI_Flush\AI_FlushToilet_01.wav</ShortName>
@@ -303,6 +331,18 @@
 				<File Id="227206352" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
 					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_46885584.wem</Path>
+				</File>
+				<File Id="231907802" Language="SFX">
+					<ShortName>Water, Running, Sink, Drain Open 2 SND5462 2.wav</ShortName>
+					<Path>SFX\Water, Running, Sink, Drain Open 2 SND5462 2_BCE31D37.wem</Path>
+				</File>
+				<File Id="237052406" Language="SFX">
+					<ShortName>Water, Running, Sink, Drain Open 2 SND5462 1.wav</ShortName>
+					<Path>SFX\Water, Running, Sink, Drain Open 2 SND5462 1_4C2B86F1.wem</Path>
+				</File>
+				<File Id="239821193" Language="SFX">
+					<ShortName>AI_CleanWindow\Player_CleanWindow_04.wav</ShortName>
+					<Path>SFX\AI_CleanWindow\Player_CleanWindow_04_A2B6CCCE.wem</Path>
 				</File>
 				<File Id="243044197" Language="SFX">
 					<ShortName>AI_Playing\Toy_Monopoly.wav</ShortName>
@@ -336,9 +376,17 @@
 					<ShortName>AI_Peeing\AI_Peeing_03.wav</ShortName>
 					<Path>SFX\AI_Peeing\AI_Peeing_03_F52F4675.wem</Path>
 				</File>
+				<File Id="326960965" Language="SFX">
+					<ShortName>Zipper, Short 4 SND6132.wav</ShortName>
+					<Path>SFX\Zipper, Short 4 SND6132_F52F4675.wem</Path>
+				</File>
 				<File Id="335387735" Language="SFX">
 					<ShortName>AI_Cooking\AI_Cooking_Slice_01.wav</ShortName>
 					<Path>SFX\AI_Cooking\AI_Cooking_Slice_01_B64C11FE.wem</Path>
+				</File>
+				<File Id="341054246" Language="SFX">
+					<ShortName>Clothing, Jacket, Movement 2 SND1626.wav</ShortName>
+					<Path>SFX\Clothing, Jacket, Movement 2 SND1626_0265BEE3.wem</Path>
 				</File>
 				<File Id="342456217" Language="SFX">
 					<ShortName>AI_Cooking\AI_Cooking_Slice_01.wav</ShortName>
@@ -364,6 +412,10 @@
 					<ShortName>AI_Playing\Toy_Train.wav</ShortName>
 					<Path>SFX\AI_Playing\Toy_Train_A4070F82.wem</Path>
 				</File>
+				<File Id="386053126" Language="SFX">
+					<ShortName>AI_CleanFloor\Broom_04.wav</ShortName>
+					<Path>SFX\AI_CleanFloor\Broom_04_0265BEE3.wem</Path>
+				</File>
 				<File Id="396776571" Language="SFX">
 					<ShortName>AI_CleanBin\AI_Bin_Movement_Plastic_01.wav</ShortName>
 					<Path>SFX\AI_CleanBin\AI_Bin_Movement_Plastic_01_2138C6A5.wem</Path>
@@ -375,6 +427,10 @@
 				<File Id="441119371" Language="SFX">
 					<ShortName>AI_CleanBin\AI_Bin_Movement_Metal_02.wav</ShortName>
 					<Path>SFX\AI_CleanBin\AI_Bin_Movement_Metal_02_CDD58341.wem</Path>
+				</File>
+				<File Id="441241796" Language="SFX">
+					<ShortName>Water, Running, Sink, With Vacuum, Drain Open SND5461.wav</ShortName>
+					<Path>SFX\Water, Running, Sink, With Vacuum, Drain Open SND5461_C6A0B0E8.wem</Path>
 				</File>
 				<File Id="444206033" Language="SFX">
 					<ShortName>AI_Flush\AI_FlushToilet_02.wav</ShortName>
@@ -460,9 +516,17 @@
 					<ShortName>AI_FS_BF_Scuffs_02.wav</ShortName>
 					<Path>SFX\AI_FS_BF_Scuffs_02_13485F1F.wem</Path>
 				</File>
+				<File Id="565774962" Language="SFX">
+					<ShortName>AI_Playing_Controler.wav</ShortName>
+					<Path>SFX\AI_Playing_Controler_0265BEE3.wem</Path>
+				</File>
 				<File Id="570303767" Language="SFX">
 					<ShortName>AI_CleanBin\AI_Bin_Movement_Plastic_01.wav</ShortName>
 					<Path>SFX\AI_CleanBin\AI_Bin_Movement_Plastic_01_B05471E0.wem</Path>
+				</File>
+				<File Id="581015860" Language="SFX">
+					<ShortName>AI_CleanFloor\Broom_02.wav</ShortName>
+					<Path>SFX\AI_CleanFloor\Broom_02_F52F4675.wem</Path>
 				</File>
 				<File Id="581525195" Language="SFX">
 					<ShortName>AI_PeeingFloor\AI_Peeing_Floor_01.wav</ShortName>
@@ -476,13 +540,25 @@
 					<ShortName>AI_Flush\AI_FlushToilet_03.wav</ShortName>
 					<Path>SFX\AI_Flush\AI_FlushToilet_03_F52F4675.wem</Path>
 				</File>
+				<File Id="610105942" Language="SFX">
+					<ShortName>AI_Playing_Console.wav</ShortName>
+					<Path>SFX\AI_Playing_Console_0265BEE3.wem</Path>
+				</File>
 				<File Id="617081335" Language="SFX">
 					<ShortName>AI_Television\AI_Television_Open.wav</ShortName>
 					<Path>SFX\AI_Television\AI_Television_Open_F52F4675.wem</Path>
 				</File>
+				<File Id="618809367" Language="SFX">
+					<ShortName>Zipper, Short 2 SND6134.wav</ShortName>
+					<Path>SFX\Zipper, Short 2 SND6134_092FBBA5.wem</Path>
+				</File>
 				<File Id="622543896" Language="SFX">
 					<ShortName>AI_Playing\Toy_Monopoly.wav</ShortName>
 					<Path>SFX\AI_Playing\Toy_Monopoly_204481AA.wem</Path>
+				</File>
+				<File Id="635793947" Language="SFX">
+					<ShortName>Water, Running, Sink, Drain Open, Long SND5463 1.wav</ShortName>
+					<Path>SFX\Water, Running, Sink, Drain Open, Long SND5463 1_64ADEDBB.wem</Path>
 				</File>
 				<File Id="650818699" Language="SFX">
 					<ShortName>AI_Shower\AI_Shower_On\AI_Shower_On_01.wav</ShortName>
@@ -556,6 +632,10 @@
 					<ShortName>AI_Television\AI_Television_Close.wav</ShortName>
 					<Path>SFX\AI_Television\AI_Television_Close_0AEE4CD0.wem</Path>
 				</File>
+				<File Id="797841776" Language="SFX">
+					<ShortName>AI_CleanFloor\Broom_03.wav</ShortName>
+					<Path>SFX\AI_CleanFloor\Broom_03_F52F4675.wem</Path>
+				</File>
 				<File Id="804930303" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
 					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_0A63AF74.wem</Path>
@@ -563,6 +643,10 @@
 				<File Id="808455251" Language="SFX">
 					<ShortName>AI_CleanBin\AI_Bin_Movement_Metal_01.wav</ShortName>
 					<Path>SFX\AI_CleanBin\AI_Bin_Movement_Metal_01_8145D6C7.wem</Path>
+				</File>
+				<File Id="819295615" Language="SFX">
+					<ShortName>Water, Running, Sink, Drain Open, Long SND5463.wav</ShortName>
+					<Path>SFX\Water, Running, Sink, Drain Open, Long SND5463_1CFFF01F.wem</Path>
 				</File>
 				<File Id="832861973" Language="SFX">
 					<ShortName>AI_CleanBin\AI_Bin_Movement_Plastic_02.wav</ShortName>
@@ -583,6 +667,10 @@
 				<File Id="870193529" Language="SFX">
 					<ShortName>AI_Playing\Toy_Train.wav</ShortName>
 					<Path>SFX\AI_Playing\Toy_Train_66DD69A0.wem</Path>
+				</File>
+				<File Id="874671891" Language="SFX">
+					<ShortName>AI_Cooking\AI_Cooking_Boil_Lp-01.wav</ShortName>
+					<Path>SFX\AI_Cooking\AI_Cooking_Boil_Lp-01_0265BEE3.wem</Path>
 				</File>
 				<File Id="877277569" Language="SFX">
 					<ShortName>AI_Playing\Toy_Cards.wav</ShortName>
@@ -616,6 +704,10 @@
 					<ShortName>AI_CleanBin\AI_Bin_Movement_Metal_01.wav</ShortName>
 					<Path>SFX\AI_CleanBin\AI_Bin_Movement_Metal_01_E1554107.wem</Path>
 				</File>
+				<File Id="976172791" Language="SFX">
+					<ShortName>AI_CleanWindow\Player_CleanWindow_01.wav</ShortName>
+					<Path>SFX\AI_CleanWindow\Player_CleanWindow_01_C78C9E48.wem</Path>
+				</File>
 				<File Id="976869618" Language="SFX">
 					<ShortName>AI_Playing\Toy_Train.wav</ShortName>
 					<Path>SFX\AI_Playing\Toy_Train_809AC429.wem</Path>
@@ -628,6 +720,10 @@
 					<ShortName>AI_Dishes\AI_DishesBrush_Lp.wav</ShortName>
 					<Path>SFX\AI_Dishes\AI_DishesBrush_Lp_0265BEE3.wem</Path>
 				</File>
+				<File Id="1024695454" Language="SFX">
+					<ShortName>AI_CleanFloor\Broom_01.wav</ShortName>
+					<Path>SFX\AI_CleanFloor\Broom_01_F52F4675.wem</Path>
+				</File>
 				<File Id="1024918717" Language="SFX">
 					<ShortName>AI_Cooking\AI_Cooking_Boil_Lp-01.wav</ShortName>
 					<Path>SFX\AI_Cooking\AI_Cooking_Boil_Lp-01_F52F4675.wem</Path>
@@ -635,6 +731,10 @@
 				<File Id="1038670129" Language="SFX">
 					<ShortName>AI_Shower\AI_Shower_Lp\AI_Shower_Lp.wav</ShortName>
 					<Path>SFX\AI_Shower\AI_Shower_Lp\AI_Shower_Lp_0265BEE3.wem</Path>
+				</File>
+				<File Id="1054101632" Language="SFX">
+					<ShortName>AI_Playing_Console_02.wav</ShortName>
+					<Path>SFX\AI_Playing_Console_02_0265BEE3.wem</Path>
 				</File>
 				<File Id="1056410788" Language="SFX">
 					<ShortName>AI_Peeing\AI_Peeing_04.wav</ShortName>
@@ -693,6 +793,56 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Menu</ObjectPath>
 			<ShortName>Menu</ShortName>
 			<Path>Menu.bnk</Path>
+			<IncludedEvents>
+				<Event Id="455571771" Name="Play_Menu_Back" ObjectPath="\Events\PapaPlease\UI\Play_Menu_Back"/>
+				<Event Id="1982372943" Name="Play_Menu_Clic" ObjectPath="\Events\PapaPlease\UI\Play_Menu_Clic"/>
+				<Event Id="1871533573" Name="Play_Menu_Move" ObjectPath="\Events\PapaPlease\UI\Play_Menu_Move"/>
+				<Event Id="1761891682" Name="Play_Menu_PlayGame" ObjectPath="\Events\PapaPlease\UI\Play_Menu_PlayGame"/>
+				<Event Id="3592474417" Name="Play_Menu_QuitGame" ObjectPath="\Events\PapaPlease\UI\Play_Menu_QuitGame"/>
+				<Event Id="2797631338" Name="Play_Money_Add" ObjectPath="\Events\PapaPlease\UI\Play_Money_Add"/>
+				<Event Id="1733128813" Name="Play_Money_Remove" ObjectPath="\Events\PapaPlease\UI\Play_Money_Remove"/>
+				<Event Id="3141480553" Name="Stop_Menu_Back" ObjectPath="\Events\PapaPlease\UI\Stop_Menu_Back" MaxAttenuation="0.000000"/>
+				<Event Id="830185121" Name="Stop_Menu_Clic" ObjectPath="\Events\PapaPlease\UI\Stop_Menu_Clic" MaxAttenuation="0.000000"/>
+				<Event Id="1649266127" Name="Stop_Menu_Move" ObjectPath="\Events\PapaPlease\UI\Stop_Menu_Move" MaxAttenuation="0.000000"/>
+				<Event Id="1551739232" Name="Stop_Menu_PlayGame" ObjectPath="\Events\PapaPlease\UI\Stop_Menu_PlayGame" MaxAttenuation="0.000000"/>
+				<Event Id="4070450727" Name="Stop_Menu_QuitGame" ObjectPath="\Events\PapaPlease\UI\Stop_Menu_QuitGame" MaxAttenuation="0.000000"/>
+				<Event Id="2002142080" Name="Stop_Money_Add" ObjectPath="\Events\PapaPlease\UI\Stop_Money_Add" MaxAttenuation="0.000000"/>
+				<Event Id="3510984659" Name="Stop_Money_Remove" ObjectPath="\Events\PapaPlease\UI\Stop_Money_Remove" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="148470694" Language="SFX">
+					<ShortName>UI\Menu_QuitGame_01.wav</ShortName>
+					<Path>SFX\UI\Menu_QuitGame_01_56D34C19.wem</Path>
+				</File>
+				<File Id="354741220" Language="SFX">
+					<ShortName>CashRegister 6028_25_4.wav</ShortName>
+					<Path>SFX\CashRegister 6028_25_4_56D34C19.wem</Path>
+				</File>
+				<File Id="417529680" Language="SFX">
+					<ShortName>UI\Menu_Move_02.wav</ShortName>
+					<Path>SFX\UI\Menu_Move_02_56D34C19.wem</Path>
+				</File>
+				<File Id="460106283" Language="SFX">
+					<ShortName>CashRegister 6045_53_1.wav</ShortName>
+					<Path>SFX\CashRegister 6045_53_1_56D34C19.wem</Path>
+				</File>
+				<File Id="685672182" Language="SFX">
+					<ShortName>UI\Menu_Back_01.wav</ShortName>
+					<Path>SFX\UI\Menu_Back_01_56D34C19.wem</Path>
+				</File>
+				<File Id="867389612" Language="SFX">
+					<ShortName>UI\Menu_Move_01.wav</ShortName>
+					<Path>SFX\UI\Menu_Move_01_56D34C19.wem</Path>
+				</File>
+				<File Id="943121378" Language="SFX">
+					<ShortName>UI\Menu_PlayGame_01.wav</ShortName>
+					<Path>SFX\UI\Menu_PlayGame_01_56D34C19.wem</Path>
+				</File>
+				<File Id="984199050" Language="SFX">
+					<ShortName>UI\Menu_Clic_01.wav</ShortName>
+					<Path>SFX\UI\Menu_Clic_01_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

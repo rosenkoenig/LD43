@@ -222,7 +222,206 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Musics" ID="{66D09C36-0569-4144-8D07-51137DA93C37}" ShortID="395366460"/>
-				<Folder Name="UI" ID="{E03308B3-CCCC-47B9-9C9C-9E7C4CDD149B}" ShortID="943067793"/>
+				<Folder Name="UI" ID="{E03308B3-CCCC-47B9-9C9C-9E7C4CDD149B}" ShortID="943067793">
+					<ChildrenList>
+						<Event Name="Play_Menu_PlayGame" ID="{C18F8AF7-B3F9-4583-AAE8-A907EEEAFDD7}">
+							<ChildrenList>
+								<Action Name="" ID="{D40FAA44-CC02-4830-BB41-66E15C8846A3}" ShortID="248683007">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu_PlayGame" ID="{36F68B00-2A01-4D92-8A49-003D7DA9B2D1}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Money_Add" ID="{C4897CAB-F263-4F9F-A831-0A7DA841F1C0}">
+							<ChildrenList>
+								<Action Name="" ID="{A7344BFB-9E9A-422A-99DA-B1898D865E63}" ShortID="626225404">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Money_Add" ID="{FB1C381A-28E0-4C7D-B245-2EAC79BF7849}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Menu_Back" ID="{3A4790F4-6DCB-4B56-B114-EACF0BEE3138}">
+							<ChildrenList>
+								<Action Name="" ID="{9F3810D9-C21D-4FFC-9247-54F781727632}" ShortID="93886726">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu_Back" ID="{CFAA47BB-FFED-4A23-869C-E9ABF5F4DE8C}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Menu_Move" ID="{9450CFF5-22A7-4336-9765-4DFC9C41E11F}">
+							<ChildrenList>
+								<Action Name="" ID="{4C37731F-507F-457C-AC9F-EC5DCC5CE0F1}" ShortID="522964326">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu_Move" ID="{6E4ADB52-6FAE-41CE-A90A-B6FF1DE1D8CA}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Menu_Clic" ID="{9E460F9A-5B4C-4EB6-8A5F-92A5792385A8}">
+							<ChildrenList>
+								<Action Name="" ID="{921D835F-C0CD-4B98-BDB5-AAF07A38F620}" ShortID="913882107">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu_Clic" ID="{087B6036-D909-4515-9C99-703C8F5483B7}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Money_Add" ID="{ACAC6493-1CB6-46CE-9D24-BE4670522DA2}">
+							<ChildrenList>
+								<Action Name="" ID="{DB6F943D-A0EB-48B7-91E1-9F0BC1FB37D4}" ShortID="13203573">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Money_Add" ID="{FB1C381A-28E0-4C7D-B245-2EAC79BF7849}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Money_Remove" ID="{94941999-72BA-4F83-AC0F-1256740941F7}">
+							<ChildrenList>
+								<Action Name="" ID="{0476D80C-D01E-4797-AD39-C068807ED0AF}" ShortID="1043349683">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Money_Remove" ID="{636E188B-5BF4-4FF9-9B12-6468DC684636}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Money_Remove" ID="{3EBCCE46-67CA-40F7-8D1D-84D7B93F4832}">
+							<ChildrenList>
+								<Action Name="" ID="{39F6E52F-DCE9-4BAF-8042-757ADFD4D18E}" ShortID="359297437">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Money_Remove" ID="{636E188B-5BF4-4FF9-9B12-6468DC684636}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Menu_QuitGame" ID="{317B01B5-FB1E-4E1A-A8DE-446145D43BBA}">
+							<ChildrenList>
+								<Action Name="" ID="{B30401DB-FBE9-460F-B043-28D4FF6EF731}" ShortID="85887215">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu_QuitGame" ID="{2DB08543-7235-4C76-AA90-F3E45878FCE1}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Menu_Back" ID="{2ECC7405-A0DA-4AE7-979B-E19B2A11334F}">
+							<ChildrenList>
+								<Action Name="" ID="{4508884B-925E-4913-956B-72A447B6B3B6}" ShortID="137970689">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu_Back" ID="{CFAA47BB-FFED-4A23-869C-E9ABF5F4DE8C}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Menu_Clic" ID="{EB1BA19D-BBF0-4ACE-BC3C-B6EF61BD8E54}">
+							<ChildrenList>
+								<Action Name="" ID="{082A3440-A158-4D74-8F1B-EB2BE5BBF464}" ShortID="671081380">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu_Clic" ID="{087B6036-D909-4515-9C99-703C8F5483B7}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Menu_PlayGame" ID="{4F35E32F-79FA-4618-BBBB-A4ACC922B311}">
+							<ChildrenList>
+								<Action Name="" ID="{473014F0-B47C-4A7E-9D2B-DCA0EA33837E}" ShortID="224817397">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu_PlayGame" ID="{36F68B00-2A01-4D92-8A49-003D7DA9B2D1}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Menu_QuitGame" ID="{D801F6EA-FAF0-48D2-ACDA-15540A8D50CE}">
+							<ChildrenList>
+								<Action Name="" ID="{E960CA67-E953-49B7-A5D9-935400E8CFE1}" ShortID="680958138">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu_QuitGame" ID="{2DB08543-7235-4C76-AA90-F3E45878FCE1}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Menu_Move" ID="{774DA528-BCAE-453C-964A-667620E58E6F}">
+							<ChildrenList>
+								<Action Name="" ID="{B73C5700-1956-4577-BBE4-E4BD629920EC}" ShortID="143231489">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu_Move" ID="{6E4ADB52-6FAE-41CE-A90A-B6FF1DE1D8CA}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="AI" ID="{47E05068-59E1-499F-8439-855E6DCB674D}" ShortID="270590388">
 					<ChildrenList>
 						<Event Name="Play_AI_Cooking" ID="{23DC39CC-EB73-48EF-9FA3-09D4B78D966B}">
@@ -735,37 +934,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_AI_Panier" ID="{B7DB7137-E0FE-4D4B-B006-C5B427994C60}">
-							<ChildrenList>
-								<Action Name="" ID="{492A3BF0-A6C8-4243-B2D6-E2797CCFD6D8}" ShortID="555040092">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="AI_Panier" ID="{329269A4-8C8F-4118-9EBB-70C3BD8D00C5}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Stop_AI_Panier" ID="{C2C43477-CC64-4EAC-99A3-409D1144F1C8}">
-							<ChildrenList>
-								<Action Name="" ID="{57EB0D70-06E0-4310-A60A-DE85C322DFC8}" ShortID="936537326">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeOutCurve" Type="int16" Value="3"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="AI_Panier" ID="{329269A4-8C8F-4118-9EBB-70C3BD8D00C5}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_AI_Wash" ID="{25B1AE3D-BD47-47F7-BCF5-EFA814F0FD63}">
 							<ChildrenList>
 								<Action Name="" ID="{7FFEE8B6-CF9F-4A16-BB6F-4064BC3DD4A7}" ShortID="561196727">
@@ -826,11 +994,41 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_AI_Panier" ID="{D88931A5-7459-4894-8DAE-B436F541AC31}">
+							<ChildrenList>
+								<Action Name="" ID="{E1ED414B-4687-482D-BE1B-42E9C7330C8B}" ShortID="782417365">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Panier" ID="{329269A4-8C8F-4118-9EBB-70C3BD8D00C5}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_AI_Panier" ID="{8975DC59-B8FF-4EB7-B748-CD4E0AF03226}">
+							<ChildrenList>
+								<Action Name="" ID="{33A2A070-D53B-4DE8-BBF2-A9B984EF6960}" ShortID="331499481">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Panier" ID="{329269A4-8C8F-4118-9EBB-70C3BD8D00C5}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{D68E7234-678F-4885-99A7-06B91B14E64D}" ShortID="1048710708">
 					<ChildrenList>
-						<Event Name="Player_Footsteps" ID="{15510B86-2A9B-4BAC-968B-7ECC3121162D}">
+						<Event Name="Play_Player_Footsteps" ID="{15510B86-2A9B-4BAC-968B-7ECC3121162D}">
 							<ChildrenList>
 								<Action Name="" ID="{010FCE82-4AA7-4BC4-977D-D85C4C59CCEF}" ShortID="269434916">
 									<PropertyList>
@@ -844,7 +1042,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Player_Slap" ID="{7B5B9B5C-B661-4AE1-9446-18A6FB799DB4}">
+						<Event Name="Play_Player_Slap" ID="{7B5B9B5C-B661-4AE1-9446-18A6FB799DB4}">
 							<ChildrenList>
 								<Action Name="" ID="{609DAA44-B478-4B29-A394-A96EE29E6A72}" ShortID="457766793">
 									<PropertyList>
@@ -858,7 +1056,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Player_Shower_On" ID="{37858FD9-F939-4C68-A46D-E47672FD4721}">
+						<Event Name="Start_Player_Shower" ID="{37858FD9-F939-4C68-A46D-E47672FD4721}">
 							<ChildrenList>
 								<Action Name="" ID="{15157211-873C-4D3A-AD86-47053F72DCA9}" ShortID="20619979">
 									<PropertyList>
@@ -883,7 +1081,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Player_Shower_Off" ID="{4D38A215-AB8B-4E2D-B6B2-E7023D92CE10}">
+						<Event Name="Stop_Player_Shower" ID="{4D38A215-AB8B-4E2D-B6B2-E7023D92CE10}">
 							<ChildrenList>
 								<Action Name="" ID="{324575B6-1481-4420-BD53-BAE24735EFFD}" ShortID="771627663">
 									<PropertyList>
@@ -904,6 +1102,34 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Player_Shower_Off" ID="{5B572E32-C21A-463A-9963-C9A739665641}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Player_Footsteps" ID="{F1275A82-B485-4376-A57B-85FC58828FCB}">
+							<ChildrenList>
+								<Action Name="" ID="{333C2572-7D5F-4198-A9D8-45D0D2B9799C}" ShortID="603435777">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Footsteps" ID="{456B1B42-BCEF-4FEB-B591-798CA2C983EC}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Player_Slap" ID="{C22F49F6-B991-4DFB-829C-2FF537103E69}">
+							<ChildrenList>
+								<Action Name="" ID="{CF775E4F-3DC1-4DC3-8456-23F736020C6A}" ShortID="870526183">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Slap" ID="{E7F984DA-538B-40CB-AC66-35262FCB39D1}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

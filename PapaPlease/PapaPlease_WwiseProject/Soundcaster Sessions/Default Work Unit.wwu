@@ -74,11 +74,11 @@
 				<SoundcasterSession Name="Player_Actions" ID="{B681EEDA-86D8-4C15-AD93-8C2CFF9C5899}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Player_Footsteps" ID="{15510B86-2A9B-4BAC-968B-7ECC3121162D}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<ObjectRef Name="Play_Player_Footsteps" ID="{15510B86-2A9B-4BAC-968B-7ECC3121162D}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Player_Shower_On" ID="{37858FD9-F939-4C68-A46D-E47672FD4721}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<ObjectRef Name="Start_Player_Shower" ID="{37858FD9-F939-4C68-A46D-E47672FD4721}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
@@ -90,11 +90,11 @@
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Player_Slap" ID="{7B5B9B5C-B661-4AE1-9446-18A6FB799DB4}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<ObjectRef Name="Play_Player_Slap" ID="{7B5B9B5C-B661-4AE1-9446-18A6FB799DB4}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Player_Shower_Off" ID="{4D38A215-AB8B-4E2D-B6B2-E7023D92CE10}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<ObjectRef Name="Stop_Player_Shower" ID="{4D38A215-AB8B-4E2D-B6B2-E7023D92CE10}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
