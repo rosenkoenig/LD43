@@ -6,7 +6,8 @@ using UnityEngine;
 public class IPType : ScriptableObject
 {
 
-    [SerializeField] string _ipName;
+    [UnityEngine.Serialization.FormerlySerializedAs("_ipName")]
+    [SerializeField] string _childActivityName;
 
     //[SerializeField] int _multiplier = 1;
     //[SerializeField] bool _isMalusOrBonus;
@@ -25,7 +26,7 @@ public class IPType : ScriptableObject
 
     public List<ActivityModifier> GetActivityModifiers { get { return _activityModifiers; } }
 
-    public string GetIPName { get { return _ipName; } }
+    public string GetIPName { get { return _childActivityName; } }
 
     public enum StatModificationType { DURING_ACTIVITY, START_ACTIVITY, END_ACTIVITY }
 

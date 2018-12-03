@@ -20,7 +20,7 @@ public class PlayerHeadBehaviour : MonoBehaviour {
 
     bool isFrozen = false;
     Vector3 camInitPos;
-
+    public float curCamVERTIDebug;
     void Awake()
     {
         camInitPos = _cam.transform.localPosition;
@@ -28,6 +28,9 @@ public class PlayerHeadBehaviour : MonoBehaviour {
 
     public void RotateHead(Vector2 rotateAxis)
     {
+
+        curCamVERTIDebug = _cam.transform.localEulerAngles.x;
+
         if (isFrozen)
             return;
 

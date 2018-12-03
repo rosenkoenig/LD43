@@ -13,10 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _statName: Morale
   _maxValue: 50
+  _isBetweenNegativeAndPositive: 0
   _startValue: 25
   _playerValue: 50
   _addedJaugeText: 
   _isTitleGauge: 1
   _titleGaugeColor: {r: 0.2028302, g: 0.20595631, b: 1, a: 1}
-  _isBetweenNegativeAndPositive: 0
   _displayReverseValue: 0

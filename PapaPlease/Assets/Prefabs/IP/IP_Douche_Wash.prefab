@@ -120,6 +120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4436434013211006}
+  - component: {fileID: 65297706319987644}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -271,7 +272,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 572e67f14ec06244e95ed5af4f4281fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -306,7 +307,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 572e67f14ec06244e95ed5af4f4281fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -341,7 +342,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 572e67f14ec06244e95ed5af4f4281fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -376,7 +377,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 572e67f14ec06244e95ed5af4f4281fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -436,6 +437,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65297706319987644
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803225093563154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 1.5, z: 0.8}
+  m_Center: {x: 0, y: 0.75, z: 0}
 --- !u!65 &65474518038141634
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -483,11 +496,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5adb1f661ba0f4e9b6475272682cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ipName: 
+  playerActivityName: Wash the shower
   pivotPoint: {fileID: 4042332444007154}
   iPtype: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
   activity: {fileID: 114603838078755730}
-  onlyUsableByChild: 1
+  onlyUsableByChild: 0
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4934458020098138}
   globalStatsModificator_OnCompleted: {fileID: 0}
@@ -510,10 +523,13 @@ MonoBehaviour:
   doOnce: 1
   animStateName: Idle
   _activityResetDelay: 100
-  _activityModifiers:
-  - _childStat: {fileID: 11400000, guid: 40db861030465814d8712bedc1c170a6, type: 2}
-    _factor: 0.05
   curActivityResetDelay: 0
+  _dirtyVisualsRenderers:
+  - {fileID: 23650610772687060}
+  - {fileID: 23623793916286550}
+  - {fileID: 23578928004837838}
+  - {fileID: 23462865275197410}
+  _dirtyVisualsToActivate: []
   _akEventPlay:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: 9d69873162779a74fbeb2bb81b7c190b,

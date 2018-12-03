@@ -119,7 +119,7 @@ public class PlayerBehaviour : Character {
         if (ip)
         {
             hoverIp = ip;
-            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, ip.ipName);
+            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, ip.playerActivityName);
         }
         else if (ip == null)
         {

@@ -14,12 +14,12 @@ MonoBehaviour:
   _childStatsModificator:
     statsModifiers:
     - _childStatID: {fileID: 11400000, guid: c7b408b288f9e0441904197be9b9807b, type: 2}
-      _factor: 0.02
+      _factor: 0.01
       _refill: 0
       _relativeChildStatID: {fileID: 11400000, guid: 2afd7b1215a0b2746b77a8c9e3316605,
         type: 2}
     - _childStatID: {fileID: 11400000, guid: c7b408b288f9e0441904197be9b9807b, type: 2}
-      _factor: 0.02
+      _factor: 0.01
       _refill: 0
       _relativeChildStatID: {fileID: 11400000, guid: 22772edbc05052140af78dcf860e7ea9,
         type: 2}
