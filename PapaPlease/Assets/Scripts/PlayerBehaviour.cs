@@ -48,7 +48,7 @@ public class PlayerBehaviour : Character {
         if (hoverChild)
         {
 
-            if (hoverChild.ChildState != ChildAIState.AT_TABLE)
+            if (hoverChild.ChildState < ChildAIState.AT_TABLE)
             {
                 hoverChild.Freeze(true);
                 SetInteractActive(false);
