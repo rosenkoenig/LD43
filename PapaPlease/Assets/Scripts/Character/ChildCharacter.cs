@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public enum ChildAIState { WAITING, ROAMING, MOVING_TO_ACTIVITY, IN_ACTIVITY, AT_TABLE }
+public enum ChildAIState { WAITING, ROAMING, MOVING_TO_ACTIVITY, IN_ACTIVITY, AT_TABLE, DEAD }
 public class ChildCharacter : Character {
     public HouseMaster hm = null;
 
@@ -69,6 +69,9 @@ public class ChildCharacter : Character {
     ChildStatID obeissanceStatID = null;
 
     [SerializeField]
+    GameObject isInActivityFeedback = null;
+
+    [SerializeField]
     GameObject[] possibleMaleHaircuts, possibleFemaleHaircurts, possibleConsitution;
 
     [SerializeField]
@@ -79,7 +82,7 @@ public class ChildCharacter : Character {
 
     // Use this for initialization
     void Start () {
-
+        
 	}
 
     public void Init ()
@@ -119,6 +122,8 @@ public class ChildCharacter : Character {
         randMatIdx = Random.Range(0, hairMaterial.Length);
         if(randMatIdx == 2) randMatIdx = Random.Range(0, hairMaterial.Length);
         hc.GetComponent<Renderer>().material = hairMaterial[randMatIdx];
+
+        isInActivityFeedback.SetActive(false);
     }
 
     void InitSkins ()
@@ -212,6 +217,8 @@ public class ChildCharacter : Character {
     #region Slap
     public void IsSlapped ()
     {
+        if (state == ChildAIState.DEAD) return;
+
         Freeze(true);
         isSlaped = true;
         if (waitAndApplySlapHitCoroutine != null) StopCoroutine(waitAndApplySlapHitCoroutine);
@@ -344,11 +351,19 @@ public class ChildCharacter : Character {
             case ChildAIState.AT_TABLE:
                 StartAtTable();
                 break;
+            case ChildAIState.DEAD:
+                StartDeath();
+                break;
         }
     }
 
     void UpdateStates()
     {
+        if(statsContainer.GetAChildStatValueRatio(GameMaster.Instance.healthStat) <= 0)
+        {
+            SetState(ChildAIState.DEAD);
+        }
+
         CheckIsWalking();
 
         switch (state)
@@ -367,6 +382,9 @@ public class ChildCharacter : Character {
                 break;
             case ChildAIState.AT_TABLE:
                 UpdateAtTable();
+                break;
+            case ChildAIState.DEAD:
+                UpdateDeath();
                 break;
         }
     }
@@ -584,7 +602,7 @@ public class ChildCharacter : Character {
 
         GameMaster.Instance.AddLog(childName + " starts interacting with " + currentInterestPoint.iPtype.GetIPName);
         currentInterestPoint.Interact(this);
-        
+        isInActivityFeedback.SetActive(true);
     }
 
     void CancelActivity ()
@@ -593,6 +611,7 @@ public class ChildCharacter : Character {
         {
             currentActivity.CancelActivity(this);
             currentActivity = null;
+            isInActivityFeedback.SetActive(false);
         }
     }
 
@@ -608,7 +627,7 @@ public class ChildCharacter : Character {
     public override void OnActivityEnds()
     {
         base.OnActivityEnds();
-        Debug.Log(childName + " ends activity on " + currentInterestPoint.ipName);
+        GameMaster.Instance.AddLog(childName + " ends activity on " + currentInterestPoint.ipName);
         currentActivity = null;
 
         currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.END_ACTIVITY, statsContainer);
@@ -618,6 +637,8 @@ public class ChildCharacter : Character {
         currentInterestPoint = null;
 
         SetState(ChildAIState.WAITING);
+
+        isInActivityFeedback.SetActive(false);
     }
 
     /// <summary>
@@ -666,6 +687,21 @@ public class ChildCharacter : Character {
         myPlate = po;
     }
 
+    /// <summary>
+    /// AT TABLE STATE AT TABLE
+    /// </summary>
+    void StartDeath ()
+    {
+        Freeze(true);
+        navAgent.enabled = false;
+        LaunchDeathAnim();
+    }
+
+    void UpdateDeath ()
+    {
+
+    }
+
     #endregion
 
     Vector3 lastPosition;
@@ -712,6 +748,12 @@ public class ChildCharacter : Character {
     void LaunchAtTableAnim()
     {
         animator.Play("AtTableIdle");
+    }
+
+    void LaunchDeathAnim ()
+    {
+        //todo anim death
+        animator.Play("Death");
     }
     #endregion
 }
