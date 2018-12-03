@@ -15,6 +15,7 @@ ModelImporter:
     100018: Table
     100020: Wall_L
     100022: Wall_R
+    100024: Dummy_End_Room
     400000: Ceiling
     400002: Chair_L
     400004: Chair_R
@@ -27,6 +28,7 @@ ModelImporter:
     400018: Table
     400020: Wall_L
     400022: Wall_R
+    400024: Dummy_End_Room
     2100000: Mat_Wood_var01
     2100002: Mat_SquaresVar01
     2100004: lambert1
@@ -42,6 +44,7 @@ ModelImporter:
     2300016: Table
     2300018: Wall_L
     2300020: Wall_R
+    2300022: Dummy_End_Room
     3300000: Ceiling
     3300002: Chair_L
     3300004: Chair_R
@@ -53,6 +56,7 @@ ModelImporter:
     3300016: Table
     3300018: Wall_L
     3300020: Wall_R
+    3300022: Dummy_End_Room
     4300000: Chair_L
     4300002: Chair_R
     4300004: Ceiling
@@ -64,6 +68,7 @@ ModelImporter:
     4300016: Dummy_Chair_R
     4300018: Dummy_Plate_L
     4300020: Dummy_Chair_L
+    4300022: Dummy_End_Room
   externalObjects: {}
   materials:
     importMaterials: 1
