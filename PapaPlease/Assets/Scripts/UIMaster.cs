@@ -21,12 +21,17 @@ public class UIMaster : MonoBehaviour
 
     [SerializeField]UIWallet uiWallet;
 
+    [SerializeField] UIMissionPanel missionPanel;
+
+    [SerializeField] ChildInteractionMission _childInteractionMission;
+
     ChildCharacter curChild;
     
     public Action HideMenuInteractChildEvent;
 
     public ActivityProgressInfo GetActivityProgressInfoRef { get { return _activityProgressInfoRef; } }
     public bool childInteractionMenuIsDisplayed {  get { return _childInteractionMenu.isActiveAndEnabled; } }
+    public bool childInteractionMissionIsDisplayed {  get { return _childInteractionMission.IsDisplayed; } }
 
     public void Init ()
     {
@@ -112,7 +117,7 @@ public class UIMaster : MonoBehaviour
         HideMenuInteractChildEvent = null;
     }
 
-    private static void ShowOrHideCursor(bool b)
+    public void ShowOrHideCursor(bool b)
     {
         if (b)
         {
@@ -158,5 +163,49 @@ public class UIMaster : MonoBehaviour
     public void UpdateWalletUI (float money)
     {
         uiWallet.UpdateWalletText(money);
+    }
+
+    public void DisplayMissionPanel ()
+    {
+        if(missionPanel.gameObject.activeInHierarchy == false)
+        {
+            missionPanel.gameObject.SetActive(true);
+            missionPanel.Init(null);
+            GameMaster.Instance.uIMaster.ShowOrHideCursor(true);
+        }
+    }
+
+    public void OnMissionPanelCloses ()
+    {
+        GameMaster.Instance.gf.EndNightTransition();
+        GameMaster.Instance.uIMaster.ShowOrHideCursor(false);
+    }
+
+    public bool DisplayChildInteractionMission(ChildCharacter child, Action hideMenuEvent)
+    {
+        HideMenuInteractChildEvent = hideMenuEvent;
+
+        if (_childInteractionMission.IsDisplayed == false)
+        {
+            _childInteractionMission.Init(child);
+            ShowOrHideCursor(true);
+            _centerCursor.SetActive(false);
+            GameMaster.Instance.player.GetPlayerMover.FreezeMovement(true);
+            GameMaster.Instance.player.GetPlayerHeadBehaviour.SetFreezeHeadControl(true);
+            return true;
+        }
+        return false;
+    }
+
+    public void HideChildInteractionMission ()
+    {
+        _childInteractionMission.CloseMenu();
+        ShowOrHideCursor(false);
+        _centerCursor.SetActive(true);
+        GameMaster.Instance.player.GetPlayerMover.FreezeMovement(false);
+        GameMaster.Instance.player.GetPlayerHeadBehaviour.SetFreezeHeadControl(false);
+        HideMenuInteractChildEvent();
+
+        HideMenuInteractChildEvent = null;
     }
 }
