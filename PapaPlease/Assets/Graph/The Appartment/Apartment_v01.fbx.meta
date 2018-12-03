@@ -31,6 +31,21 @@ ModelImporter:
     100050: Wall9
     100052: Ground
     100054: Not_Walkable
+    100056: Ceiling
+    100058: Dummy_Table_Extension
+    100060: ExtensionRoom
+    100062: polySurface15
+    100064: polySurface16
+    100066: polySurface17
+    100068: polySurface18
+    100070: polySurface19
+    100072: polySurface20
+    100074: polySurface21
+    100076: Table_to_extend
+    100078: Wall20
+    100080: Window1
+    100082: Window2
+    100084: Window3
     400000: //RootNode
     400002: Balcoony_Floor
     400004: Balcoony_Wall
@@ -59,9 +74,31 @@ ModelImporter:
     400050: Wall9
     400052: Ground
     400054: Not_Walkable
+    400056: Ceiling
+    400058: Dummy_Table_Extension
+    400060: ExtensionRoom
+    400062: polySurface15
+    400064: polySurface16
+    400066: polySurface17
+    400068: polySurface18
+    400070: polySurface19
+    400072: polySurface20
+    400074: polySurface21
+    400076: Table_to_extend
+    400078: Wall20
+    400080: Window1
+    400082: Window2
+    400084: Window3
     2100000: lambert1
     2100002: lambert2
     2100004: lambert3
+    2100006: Gound_Grid
+    2100008: Squares_Var02
+    2100010: Mat_out_01
+    2100012: Mat_SquaresVar01
+    2100014: Mat_Wood_var01
+    2100016: Mat_Wall_03
+    2100018: Mat_Wall_02
     2300000: Balcoony_Floor
     2300002: Balcoony_Wall
     2300004: Door
@@ -87,6 +124,12 @@ ModelImporter:
     2300044: Wall7
     2300046: Wall8
     2300048: Wall9
+    2300050: Ceiling
+    2300052: Dummy_Table_Extension
+    2300054: Table_to_extend
+    2300056: Window1
+    2300058: Window2
+    2300060: Window3
     3300000: Balcoony_Floor
     3300002: Balcoony_Wall
     3300004: Door
@@ -112,6 +155,12 @@ ModelImporter:
     3300044: Wall7
     3300046: Wall8
     3300048: Wall9
+    3300050: Ceiling
+    3300052: Dummy_Table_Extension
+    3300054: Table_to_extend
+    3300056: Window1
+    3300058: Window2
+    3300060: Window3
     4300000: Wall
     4300002: Wall1
     4300004: Wall2
@@ -137,6 +186,12 @@ ModelImporter:
     4300044: Table
     4300046: Balcoony_Wall
     4300048: Guardrail
+    4300050: Ceiling
+    4300052: Window1
+    4300054: Window3
+    4300056: Window2
+    4300058: Table_to_extend
+    4300060: Dummy_Table_Extension
   externalObjects: {}
   materials:
     importMaterials: 1
