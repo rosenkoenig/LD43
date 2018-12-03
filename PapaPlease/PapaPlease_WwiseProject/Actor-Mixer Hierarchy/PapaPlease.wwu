@@ -144,6 +144,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Player_Foosteps_03" ID="{BEB65FFD-1C9E-4BE2-B788-67DE80AF97EB}" ShortID="165699978">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -169,6 +176,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Player_Foosteps_04" ID="{FA407D8C-0A4C-4AF8-B8E5-71B88CD7A756}" ShortID="294587587">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -194,6 +208,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Player_Foosteps_05" ID="{F0D9E972-DDFD-4221-9EB1-D6C4624A3C83}" ShortID="532277898">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -333,6 +354,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Player_Foosteps_04" ID="{45B313BE-F5B7-4964-86D7-064F01C47978}" ShortID="242511912">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -358,6 +386,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Player_Foosteps_05" ID="{4DF8704E-CA98-4E6E-9D9A-3415E0CE955C}" ShortID="676340295">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -383,6 +418,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Player_Foosteps_06" ID="{BAE7D05D-28A5-433D-96F5-0849CCA6D4C9}" ShortID="742703028">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -754,6 +796,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Player_SlapKid_05_v2" ID="{38EF6B69-719C-44E3-BEEB-7518CCC92EA7}" ShortID="921955611">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -2295,6 +2344,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 2 SND18730" ID="{C311F5D0-3470-40ED-BF58-FC23B7D685DC}" ShortID="689409225">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -2685,6 +2741,11 @@
 																		<Value>19</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-7</Value>
@@ -2719,6 +2780,11 @@
 																<Property Name="Highpass" Type="int16">
 																	<ValueList>
 																		<Value>19</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="Volume" Type="Real64">
@@ -2982,6 +3048,11 @@
 																		<Value>19</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-7</Value>
@@ -3094,6 +3165,11 @@
 																<Property Name="Highpass" Type="int16">
 																	<ValueList>
 																		<Value>19</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="Volume" Type="Real64">
@@ -4528,6 +4604,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Human, Vocal, Child, Boy, 8 Years Old, English, Says Go Away You Stupid Idiot SND22844" ID="{4E67FACB-B5C6-4268-85E1-59ED2307D4F7}" ShortID="437574683">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -4566,6 +4649,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Human, Vocal, Child, Boy, 8 Years Old, English, Says Bum Face SND22845" ID="{B913FACC-FBD8-4758-A880-1FC2B977172A}" ShortID="534359106">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -4585,6 +4675,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Human, Vocal, Child, Boy, 8 Years Old, English, Grunt, Mocking, Angry, Uhhh SND22837" ID="{6F51392D-FC7D-40EF-9F71-DC5E24AD91AB}" ShortID="184874981">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -4941,6 +5038,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="AI_FlushToilet_03" ID="{4BCF6C97-332A-4C1C-AA97-1EF8E1377491}" ShortID="425130130">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -5150,6 +5254,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="AI_Peeing_Toilet_03" ID="{AE4780F6-6A9A-4765-BFEC-EDA01184A91F}" ShortID="936302834">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -5169,6 +5280,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="AI_Peeing_Toilet_04" ID="{B17ED66A-76EC-4FDC-B2A2-EAF2DC516CEF}" ShortID="748632763">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -5282,6 +5400,11 @@
 														<Sound Name="Toy_Car_01" ID="{261D571D-4265-437A-91EE-2CD15CED56E2}" ShortID="529417645">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -5307,6 +5430,11 @@
 														<Sound Name="Toy_Car_02" ID="{3594D7E7-6932-4B4C-8801-8325D5D1260D}" ShortID="884750664">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -5572,6 +5700,11 @@
 																<Sound Name="Toy_Train_03" ID="{5E36A29A-6EFB-485D-83E8-3F29E0B938E1}" ShortID="228851910">
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 																		<Property Name="UserAuxSendVolume0" Type="Real64">
 																			<ValueList>
@@ -5714,6 +5847,7 @@
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
@@ -5733,6 +5867,11 @@
 																<Sound Name="Toy_Train_Movement" ID="{AC193A6F-9979-475A-B035-715B3C41AC93}" ShortID="35726980">
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
@@ -5764,6 +5903,7 @@
 																<Sound Name="Toy_Train_Movement_01" ID="{F1148840-B5A0-49FC-8AB5-BF1360829CA4}" ShortID="523088507">
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
@@ -6422,6 +6562,11 @@
 												</Sound>
 												<Sound Name="Zipper, Short 5 SND6131" ID="{1E5549DC-32F2-4CDC-8F2C-9FA6BCF07226}" ShortID="758554331">
 													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-18</Value>
@@ -6553,6 +6698,11 @@
 																<Sound Name="AI_Bin_Close_02" ID="{71490477-83D2-4A87-909E-2B1E68DD19A8}" ShortID="398558307">
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
@@ -7162,6 +7312,11 @@
 																				<Sound Name="AI_Bin_Movement_Plastic_01" ID="{C8AD36EC-3CCF-474C-A702-0BEA64EE9D26}" ShortID="324678955">
 																					<PropertyList>
 																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																						<Property Name="Inclusion" Type="bool">
+																							<ValueList>
+																								<Value>False</Value>
+																							</ValueList>
+																						</Property>
 																					</PropertyList>
 																					<ReferenceList>
 																						<Reference Name="Attenuation">
@@ -7269,6 +7424,12 @@
 										<BlendContainer Name="AI_CleanFloor" ID="{AFCC1CD6-A2A2-4E92-9CB7-A601BF7F2FE3}" ShortID="37255087">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-21</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -7279,6 +7440,9 @@
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -7382,6 +7546,11 @@
 																<Sound Name="Broom_02" ID="{C88835EA-8712-4CCB-AFE4-2D712E88DB9B}" ShortID="497893937">
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
@@ -8411,6 +8580,11 @@
 												<RandomSequenceContainer Name="AI_Lavabo_Dirty" ID="{1C91F694-BD14-42C5-8F5B-2782BF99BC56}" ShortID="485941129">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -10076,6 +10250,11 @@
 														</Sound>
 														<Sound Name="Amb_Outside_Balcony_Siren_OS_02" ID="{3CCE5210-A972-4C95-8197-DE059403CE91}" ShortID="318843698">
 															<PropertyList>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-14</Value>
@@ -10294,6 +10473,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Amb_Outside_Plane_OS_03" ID="{D468E7B8-937D-441F-883E-3E0A3BCE4447}" ShortID="480421797">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -10578,6 +10764,11 @@
 									<ChildrenList>
 										<Sound Name="Amb_Bathroom_Lp_02" ID="{630857E2-D5E1-43AF-9082-134F34AF41FB}" ShortID="222646581">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -11130,6 +11321,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Coin_Wood_Table_Singles_Drop_Spin_Takes_5" ID="{89C37A24-0251-467B-BE6A-37EDC0F8D05F}" ShortID="233983445">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -11303,6 +11501,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Menu_Move_02" ID="{9FA5AA08-3AA1-4E3D-80DF-46083F1A01CE}" ShortID="18322397">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>

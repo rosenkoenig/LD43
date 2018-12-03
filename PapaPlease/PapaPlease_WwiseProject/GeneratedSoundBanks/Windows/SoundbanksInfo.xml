@@ -29,37 +29,21 @@
 				<Event Id="2895733124" Name="Stop_Player_Slap_Kids" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Slap_Kids" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="100631955" Language="SFX">
-					<ShortName>Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 2 SND18730.wav</ShortName>
-					<Path>SFX\Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 2 SND18730_F52F4675.wem</Path>
-				</File>
 				<File Id="107132586" Language="SFX">
 					<ShortName>Player_Slap\Player_Slap_Kids\Player_SlapKid_01_v2.wav</ShortName>
 					<Path>SFX\Player_Slap\Player_Slap_Kids\Player_SlapKid_01_v2_F52F4675.wem</Path>
 				</File>
 				<File Id="171004212" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_1656D099.wem</Path>
+					<Path>SFX\Player_Foosteps_658E136E.wem</Path>
 				</File>
 				<File Id="226423887" Language="SFX">
 					<ShortName>Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 1 SND18731.wav</ShortName>
 					<Path>SFX\Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 1 SND18731_F52F4675.wem</Path>
 				</File>
-				<File Id="258080921" Language="SFX">
-					<ShortName>Player_Slap\Player_Slap_Kids\Player_SlapKid_05_v2.wav</ShortName>
-					<Path>SFX\Player_Slap\Player_Slap_Kids\Player_SlapKid_05_v2_F52F4675.wem</Path>
-				</File>
-				<File Id="326098141" Language="SFX">
-					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_B2CA0391.wem</Path>
-				</File>
 				<File Id="340403617" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_3C5853EE.wem</Path>
-				</File>
-				<File Id="346396162" Language="SFX">
-					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_024C3369.wem</Path>
+					<Path>SFX\Player_Foosteps_F50172F3.wem</Path>
 				</File>
 				<File Id="377243309" Language="SFX">
 					<ShortName>Player_Slap\Player_Slap_Kids\Player_SlapKid_03_v2.wav</ShortName>
@@ -71,15 +55,11 @@
 				</File>
 				<File Id="468389400" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_20481F89.wem</Path>
-				</File>
-				<File Id="509307203" Language="SFX">
-					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_606AC825.wem</Path>
+					<Path>SFX\Player_Foosteps_92543C55.wem</Path>
 				</File>
 				<File Id="565132539" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_19C1F4E5.wem</Path>
+					<Path>SFX\Player_Foosteps_A541049A.wem</Path>
 				</File>
 				<File Id="597931799" Language="SFX">
 					<ShortName>Plastic Bag, Small, Filled With Water, Pick Up From Wood Surface 2 SND18732.wav</ShortName>
@@ -89,33 +69,21 @@
 					<ShortName>Player_Slap\Player_Slap_Kids\Player_SlapKid_04_v2.wav</ShortName>
 					<Path>SFX\Player_Slap\Player_Slap_Kids\Player_SlapKid_04_v2_F52F4675.wem</Path>
 				</File>
-				<File Id="699204274" Language="SFX">
-					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_703331A9.wem</Path>
-				</File>
 				<File Id="742844808" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_D18A38CD.wem</Path>
+					<Path>SFX\Player_Foosteps_D3F4E0DB.wem</Path>
 				</File>
 				<File Id="758662162" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_826A9E38.wem</Path>
+					<Path>SFX\Player_Foosteps_9EDC63F8.wem</Path>
 				</File>
 				<File Id="858942714" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_C9709AF0.wem</Path>
-				</File>
-				<File Id="885968506" Language="SFX">
-					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_FCDEB1AA.wem</Path>
+					<Path>SFX\Player_Foosteps_F186E486.wem</Path>
 				</File>
 				<File Id="973609531" Language="SFX">
 					<ShortName>Player_Slap\Player_Slap_Kids\Player_SlapKid_02_v2.wav</ShortName>
 					<Path>SFX\Player_Slap\Player_Slap_Kids\Player_SlapKid_02_v2_F52F4675.wem</Path>
-				</File>
-				<File Id="1041084550" Language="SFX">
-					<ShortName>Player_Foosteps.wav</ShortName>
-					<Path>SFX\Player_Foosteps_72CD4689.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -157,10 +125,6 @@
 				<File Id="666006642" Language="SFX">
 					<ShortName>Amb_Outside\AmbOut_Wall_Neighborhood.wav</ShortName>
 					<Path>SFX\Amb_Outside\AmbOut_Wall_Neighborhood_0265BEE3.wem</Path>
-				</File>
-				<File Id="843721958" Language="SFX">
-					<ShortName>Amb_Bathroom_Lp_02.wav</ShortName>
-					<Path>SFX\Amb_Bathroom_Lp_02_0265BEE3.wem</Path>
 				</File>
 				<File Id="863881689" Language="SFX">
 					<ShortName>Amb_LivingRoom_Lp.wav</ShortName>
@@ -242,10 +206,6 @@
 					<ShortName>AI_Playing\Toy_Monopoly.wav</ShortName>
 					<Path>SFX\AI_Playing\Toy_Monopoly_89CE241A.wem</Path>
 				</File>
-				<File Id="85682655" Language="SFX">
-					<ShortName>AI_Cooking\AI_Cooking_Fry_Lp-01.wav</ShortName>
-					<Path>SFX\AI_Cooking\AI_Cooking_Fry_Lp-01_0265BEE3.wem</Path>
-				</File>
 				<File Id="85759521" Language="SFX">
 					<ShortName>AI_CleanWindow\Player_CleanWindow_03.wav</ShortName>
 					<Path>SFX\AI_CleanWindow\Player_CleanWindow_03_99D1822D.wem</Path>
@@ -274,14 +234,6 @@
 					<ShortName>Food, Stir Fry, Scrape On Plate With Fork 2 SND22143.wav</ShortName>
 					<Path>SFX\Food, Stir Fry, Scrape On Plate With Fork 2 SND22143_F52F4675.wem</Path>
 				</File>
-				<File Id="177847433" Language="SFX">
-					<ShortName>Human, Vocal, Child, Boy, 8 Years Old, English, Says Go Away You Stupid Idiot SND22844.wav</ShortName>
-					<Path>SFX\Human, Vocal, Child, Boy, 8 Years Old, English, Says Go Away You Stupid Idiot SND22844_F52F4675.wem</Path>
-				</File>
-				<File Id="192555610" Language="SFX">
-					<ShortName>Zipper, Short 5 SND6131.wav</ShortName>
-					<Path>SFX\Zipper, Short 5 SND6131_C03EBAC7.wem</Path>
-				</File>
 				<File Id="200886225" Language="SFX">
 					<ShortName>AI_CleanWindow\Player_CleanWindow_02.wav</ShortName>
 					<Path>SFX\AI_CleanWindow\Player_CleanWindow_02_ECECCE33.wem</Path>
@@ -308,7 +260,7 @@
 				</File>
 				<File Id="232701199" Language="SFX">
 					<ShortName>Angry Scream by mariallinas Id-222647.wav</ShortName>
-					<Path>SFX\Angry Scream by mariallinas Id-222647_B06F2365.wem</Path>
+					<Path>SFX\Angry Scream by mariallinas Id-222647_1A851595.wem</Path>
 				</File>
 				<File Id="237052406" Language="SFX">
 					<ShortName>Water, Running, Sink, Drain Open 2 SND5462 1.wav</ShortName>
@@ -345,10 +297,6 @@
 				<File Id="277713333" Language="SFX">
 					<ShortName>AI_Playing\Toy_Monopoly.wav</ShortName>
 					<Path>SFX\AI_Playing\Toy_Monopoly_E9535DF8.wem</Path>
-				</File>
-				<File Id="305534503" Language="SFX">
-					<ShortName>AI_Peeing\AI_Peeing_03.wav</ShortName>
-					<Path>SFX\AI_Peeing\AI_Peeing_03_F52F4675.wem</Path>
 				</File>
 				<File Id="309509606" Language="SFX">
 					<ShortName>AI_Hit\AI_HitCry_02.wav</ShortName>
@@ -398,10 +346,6 @@
 					<ShortName>AI_CleanBin\AI_Bin_Movement_Plastic_01.wav</ShortName>
 					<Path>SFX\AI_CleanBin\AI_Bin_Movement_Plastic_01_2138C6A5.wem</Path>
 				</File>
-				<File Id="439218616" Language="SFX">
-					<ShortName>AI_Playing\Toy_Car_02.wav</ShortName>
-					<Path>SFX\AI_Playing\Toy_Car_02_F52F4675.wem</Path>
-				</File>
 				<File Id="441119371" Language="SFX">
 					<ShortName>AI_CleanBin\AI_Bin_Movement_Metal_02.wav</ShortName>
 					<Path>SFX\AI_CleanBin\AI_Bin_Movement_Metal_02_CDD58341.wem</Path>
@@ -450,17 +394,9 @@
 					<ShortName>AI_Eating\AI_Eating_Crunch\AI_Eating_Crunch_02.wav</ShortName>
 					<Path>SFX\AI_Eating\AI_Eating_Crunch\AI_Eating_Crunch_02_F52F4675.wem</Path>
 				</File>
-				<File Id="511062081" Language="SFX">
-					<ShortName>Toy 6058_86.wav</ShortName>
-					<Path>SFX\Toy 6058_86_6637D863.wem</Path>
-				</File>
 				<File Id="514860281" Language="SFX">
 					<ShortName>AI_Hit\AI_HitCry_01.wav</ShortName>
 					<Path>SFX\AI_Hit\AI_HitCry_01_F52F4675.wem</Path>
-				</File>
-				<File Id="522047070" Language="SFX">
-					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
-					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_47814A1A.wem</Path>
 				</File>
 				<File Id="526456659" Language="SFX">
 					<ShortName>AI_Eating\AI_Eating_Crunch\AI_Eating_Crunch_03.wav</ShortName>
@@ -494,21 +430,9 @@
 					<ShortName>AI_Playing_Controler.wav</ShortName>
 					<Path>SFX\AI_Playing_Controler_0265BEE3.wem</Path>
 				</File>
-				<File Id="570303767" Language="SFX">
-					<ShortName>AI_CleanBin\AI_Bin_Movement_Plastic_01.wav</ShortName>
-					<Path>SFX\AI_CleanBin\AI_Bin_Movement_Plastic_01_B05471E0.wem</Path>
-				</File>
-				<File Id="581015860" Language="SFX">
-					<ShortName>AI_CleanFloor\Broom_02.wav</ShortName>
-					<Path>SFX\AI_CleanFloor\Broom_02_F52F4675.wem</Path>
-				</File>
 				<File Id="581525195" Language="SFX">
 					<ShortName>AI_PeeingFloor\AI_Peeing_Floor_01.wav</ShortName>
 					<Path>SFX\AI_PeeingFloor\AI_Peeing_Floor_01_277C9A8F.wem</Path>
-				</File>
-				<File Id="589315946" Language="SFX">
-					<ShortName>AI_Flush\AI_FlushToilet_03.wav</ShortName>
-					<Path>SFX\AI_Flush\AI_FlushToilet_03_F52F4675.wem</Path>
 				</File>
 				<File Id="610105942" Language="SFX">
 					<ShortName>AI_Playing_Console.wav</ShortName>
@@ -538,10 +462,6 @@
 					<ShortName>AI_Shower\AI_Shower_On\AI_Shower_On_01.wav</ShortName>
 					<Path>SFX\AI_Shower\AI_Shower_On\AI_Shower_On_01_64B08D9F.wem</Path>
 				</File>
-				<File Id="651248153" Language="SFX">
-					<ShortName>AI_Playing\Toy_Car_01.wav</ShortName>
-					<Path>SFX\AI_Playing\Toy_Car_01_F52F4675.wem</Path>
-				</File>
 				<File Id="657175686" Language="SFX">
 					<ShortName>AI_Playing\Toy_Multiple.wav</ShortName>
 					<Path>SFX\AI_Playing\Toy_Multiple_C4C29C4D.wem</Path>
@@ -550,21 +470,9 @@
 					<ShortName>Human, Vocal, Child, Boy, 8 Years Old, English, Says So Unfair SND22840.wav</ShortName>
 					<Path>SFX\Human, Vocal, Child, Boy, 8 Years Old, English, Says So Unfair SND22840_F52F4675.wem</Path>
 				</File>
-				<File Id="670074642" Language="SFX">
-					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
-					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_9AE94CAD.wem</Path>
-				</File>
-				<File Id="674872999" Language="SFX">
-					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
-					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_C0E1653F.wem</Path>
-				</File>
 				<File Id="675323695" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
 					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_9C94AAEC.wem</Path>
-				</File>
-				<File Id="689837069" Language="SFX">
-					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
-					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_82D8B3E5.wem</Path>
 				</File>
 				<File Id="712923603" Language="SFX">
 					<ShortName>AI_Eating\AI_Eating_Soup\AI_Eating_Soup_04.wav</ShortName>
@@ -626,13 +534,9 @@
 					<ShortName>AI_CleanBin\AI_Bin_Movement_Plastic_02.wav</ShortName>
 					<Path>SFX\AI_CleanBin\AI_Bin_Movement_Plastic_02_98960F9B.wem</Path>
 				</File>
-				<File Id="840813945" Language="SFX">
-					<ShortName>AI_CleanBin\AI_Bin_Close_02.wav</ShortName>
-					<Path>SFX\AI_CleanBin\AI_Bin_Close_02_EF933B30.wem</Path>
-				</File>
 				<File Id="847724423" Language="SFX">
 					<ShortName>Toy 6058_86.wav</ShortName>
-					<Path>SFX\Toy 6058_86_F52F4675.wem</Path>
+					<Path>SFX\Toy 6058_86_0265BEE3.wem</Path>
 				</File>
 				<File Id="854344039" Language="SFX">
 					<ShortName>AI_Playing\Toy_Multiple.wav</ShortName>
@@ -641,10 +545,6 @@
 				<File Id="870193529" Language="SFX">
 					<ShortName>AI_Playing\Toy_Train.wav</ShortName>
 					<Path>SFX\AI_Playing\Toy_Train_66DD69A0.wem</Path>
-				</File>
-				<File Id="874671891" Language="SFX">
-					<ShortName>AI_Cooking\AI_Cooking_Boil_Lp-01.wav</ShortName>
-					<Path>SFX\AI_Cooking\AI_Cooking_Boil_Lp-01_0265BEE3.wem</Path>
 				</File>
 				<File Id="877277569" Language="SFX">
 					<ShortName>AI_Playing\Toy_Cards.wav</ShortName>
@@ -682,14 +582,6 @@
 					<ShortName>grrr-st-sdo.wav</ShortName>
 					<Path>SFX\grrr-st-sdo_F52F4675.wem</Path>
 				</File>
-				<File Id="976869618" Language="SFX">
-					<ShortName>AI_Playing\Toy_Train.wav</ShortName>
-					<Path>SFX\AI_Playing\Toy_Train_809AC429.wem</Path>
-				</File>
-				<File Id="981673192" Language="SFX">
-					<ShortName>Human, Vocal, Child, Boy, 8 Years Old, English, Says Bum Face SND22845.wav</ShortName>
-					<Path>SFX\Human, Vocal, Child, Boy, 8 Years Old, English, Says Bum Face SND22845_F52F4675.wem</Path>
-				</File>
 				<File Id="1000106572" Language="SFX">
 					<ShortName>AI_Dishes\AI_DishesBrush_Lp.wav</ShortName>
 					<Path>SFX\AI_Dishes\AI_DishesBrush_Lp_0265BEE3.wem</Path>
@@ -705,10 +597,6 @@
 				<File Id="1054101632" Language="SFX">
 					<ShortName>AI_Playing_Console_02.wav</ShortName>
 					<Path>SFX\AI_Playing_Console_02_0265BEE3.wem</Path>
-				</File>
-				<File Id="1056410788" Language="SFX">
-					<ShortName>AI_Peeing\AI_Peeing_04.wav</ShortName>
-					<Path>SFX\AI_Peeing\AI_Peeing_04_F52F4675.wem</Path>
 				</File>
 				<File Id="1070405706" Language="SFX">
 					<ShortName>Human, Vocal, Child, Boy, 8 Years Old, English, Says Go Away SND22843.wav</ShortName>
@@ -733,10 +621,6 @@
 					<ShortName>Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_01.wav</ShortName>
 					<Path>SFX\Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_01_F52F4675.wem</Path>
 				</File>
-				<File Id="422381683" Language="SFX">
-					<ShortName>Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_02.wav</ShortName>
-					<Path>SFX\Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_02_E52FD394.wem</Path>
-				</File>
 				<File Id="506314926" Language="SFX">
 					<ShortName>Amb_Outside\OneShots\Amb_Outside_Balcony_Dogs_OS_01.wav</ShortName>
 					<Path>SFX\Amb_Outside\OneShots\Amb_Outside_Balcony_Dogs_OS_01_F52F4675.wem</Path>
@@ -744,10 +628,6 @@
 				<File Id="633242227" Language="SFX">
 					<ShortName>Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_01.wav</ShortName>
 					<Path>SFX\Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_01_DAB63BC3.wem</Path>
-				</File>
-				<File Id="709108565" Language="SFX">
-					<ShortName>Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_03.wav</ShortName>
-					<Path>SFX\Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_03_F52F4675.wem</Path>
 				</File>
 				<File Id="761480163" Language="SFX">
 					<ShortName>Amb_Outside_Balcony_02.wav</ShortName>
@@ -788,33 +668,25 @@
 					<ShortName>UI\Menu_QuitGame_01.wav</ShortName>
 					<Path>SFX\UI\Menu_QuitGame_01_56D34C19.wem</Path>
 				</File>
-				<File Id="355330244" Language="SFX">
-					<ShortName>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</ShortName>
-					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_C547ACBD.wem</Path>
-				</File>
 				<File Id="387363422" Language="SFX">
 					<ShortName>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</ShortName>
-					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_988D7B28.wem</Path>
-				</File>
-				<File Id="417529680" Language="SFX">
-					<ShortName>UI\Menu_Move_02.wav</ShortName>
-					<Path>SFX\UI\Menu_Move_02_56D34C19.wem</Path>
+					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_9382EA1E.wem</Path>
 				</File>
 				<File Id="460106283" Language="SFX">
 					<ShortName>CashRegister 6045_53_1.wav</ShortName>
-					<Path>SFX\CashRegister 6045_53_1_F7739245.wem</Path>
+					<Path>SFX\CashRegister 6045_53_1_0AEF6767.wem</Path>
 				</File>
 				<File Id="477217437" Language="SFX">
 					<ShortName>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</ShortName>
-					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_24080903.wem</Path>
+					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_D7C701C9.wem</Path>
 				</File>
 				<File Id="591342214" Language="SFX">
 					<ShortName>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</ShortName>
-					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_DB359F8F.wem</Path>
+					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_50A1E6DC.wem</Path>
 				</File>
 				<File Id="613588411" Language="SFX">
 					<ShortName>CashRegister 6028_25_3.wav</ShortName>
-					<Path>SFX\CashRegister 6028_25_3_C8D7BB82.wem</Path>
+					<Path>SFX\CashRegister 6028_25_3_CDEA549D.wem</Path>
 				</File>
 				<File Id="685672182" Language="SFX">
 					<ShortName>UI\Menu_Back_01.wav</ShortName>
@@ -822,7 +694,7 @@
 				</File>
 				<File Id="849979199" Language="SFX">
 					<ShortName>CashRegister 6028_25_2.wav</ShortName>
-					<Path>SFX\CashRegister 6028_25_2_A7D42740.wem</Path>
+					<Path>SFX\CashRegister 6028_25_2_93424404.wem</Path>
 				</File>
 				<File Id="867389612" Language="SFX">
 					<ShortName>UI\Menu_Move_01.wav</ShortName>
