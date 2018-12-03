@@ -111,7 +111,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1431821048897938}
   m_LocalRotation: {x: -0, y: 0.7071071, z: -0, w: -0.70710653}
-  m_LocalPosition: {x: -2.37, y: 0, z: 0.717}
+  m_LocalPosition: {x: -2.25, y: 0, z: 0.717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4077785600966724}
@@ -153,7 +153,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1865036081833092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4817707023039448}
@@ -233,9 +233,8 @@ MonoBehaviour:
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4245892108466312}
   globalStatsModificator_OnCompleted: {fileID: 0}
-  globalStatsModificator_OverTimeCOMPLETED: {fileID: 11400000, guid: 4c251df5befac454fa3fee36ae8af78e,
-    type: 2}
-  globalStatsModificator_OverTimeWAITING: {fileID: 11400000, guid: e2c27de81c3e41c4eaa49037044b0e5b,
+  globalStatsModificator_OverTimeCOMPLETED: {fileID: 0}
+  globalStatsModificator_OverTimeWAITING: {fileID: 11400000, guid: 65a475233a2382d4ba7650682e98257d,
     type: 2}
 --- !u!114 &114379295816765414
 MonoBehaviour:
@@ -251,4 +250,5 @@ MonoBehaviour:
   maxHolder: 1
   doOnce: 1
   animStateName: Idle
+  _activityResetDelay: 60
   duration: 10

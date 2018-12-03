@@ -28,6 +28,8 @@ public class InterestPoint : MonoBehaviour
 
     ActivityProgressInfo _activityProgressInfo;
 
+    public ActivityState GetActivityState { get { return activity.State; } }
+
     void Start()
     {
         if (_useActivityProgressInfo)
@@ -36,6 +38,11 @@ public class InterestPoint : MonoBehaviour
                 _activityProgressInfoPos) as ActivityProgressInfo;
             _activityProgressInfo.gameObject.SetActive(false);
         }
+    }
+
+    public void MakeResetActivity()
+    {
+        activity.MakeResetActivity();
     }
 
     public void TryMakeGlobalModification(InterestPointModification interestPointModification)
@@ -56,14 +63,27 @@ public class InterestPoint : MonoBehaviour
                 break;
         }
     }
-    
+
     public bool Interact(Character character)
     {
-        if (onlyUsableByChild && character.GetComponent<PlayerBehaviour>())
+        PlayerBehaviour playerInteractor = character.GetComponent<PlayerBehaviour>();
+        if (onlyUsableByChild && playerInteractor == null)
         {
             return false;
         }
 
+        if (playerInteractor != null)
+        {
+            _activityProgressInfo.transform.LookAt(
+                new Vector3(
+                    playerInteractor.transform.position.x,
+                    _activityProgressInfo.transform.position.y,
+                    playerInteractor.transform.position.z) +
+                new Vector3(
+                    (_activityProgressInfo.transform.position.x - playerInteractor.transform.position.x) * 2,
+                    0,
+                    (_activityProgressInfo.transform.position.z - playerInteractor.transform.position.z) * 2));
+        }
 
         bool interacts = activity.IsAvailable(character);
         if (interacts)

@@ -18,7 +18,12 @@ public class VirtualMother : MonoBehaviour
 
     public int baseChildsQuantity = 2;
 
-    [SerializeField] List<ChildStatsModificatorContainer> _passiveModifiers;
+    [SerializeField] List<ChildStatsModificatorContainer> _passiveChildStatsModificators;
+
+    [SerializeField] float _IpDegradationAddedPerChild;
+    public float GetChildsIpDegradationAddedFactor { get { return _IpDegradationAddedPerChild * activeChilds.Count; } }
+
+    public int GetChildrenNumber { get { return activeChilds.Count; } }
 
     // Use this for initialization
     public void Init()
@@ -48,11 +53,11 @@ public class VirtualMother : MonoBehaviour
 
     private void PlayPassiveModificators()
     {
-        foreach (var item in _passiveModifiers)
+        foreach (var item in _passiveChildStatsModificators)
         {
             foreach (var child in activeChilds)
             {
-
+                item.MakeTryModifyStats(child.statsContainer, true);
             }
         }
     }

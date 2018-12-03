@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114714079452719500}
   - component: {fileID: 114303019189652138}
   m_Layer: 0
-  m_Name: IP_Toilettes
+  m_Name: IP_Toilettes_Pee
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1726098325580154
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,6 +314,7 @@ MonoBehaviour:
   maxHolder: 1
   doOnce: 0
   animStateName: Idle
+  _activityResetDelay: 100
   duration: 10
 --- !u!114 &114714079452719500
 MonoBehaviour:

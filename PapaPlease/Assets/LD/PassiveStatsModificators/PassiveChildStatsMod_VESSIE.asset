@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98ee11309f10f114299ea8580322b6a9, type: 3}
-  m_Name: IP_CONFORT_OverTimeWAITING_GlobalStatMod
+  m_Name: PassiveChildStatsMod_VESSIE
   m_EditorClassIdentifier: 
   _childStatsModificator:
     statsModifiers:
-    - _childStatID: {fileID: 11400000, guid: 2afd7b1215a0b2746b77a8c9e3316605, type: 2}
-      _factor: -0.075
+    - _childStatID: {fileID: 11400000, guid: b6eb2aa1a6a532c4ab5415cb61a7f6e4, type: 2}
+      _factor: -0.2
       _refill: 0
