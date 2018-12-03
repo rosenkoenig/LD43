@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<Attenuation Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" ShortID="278038869">
 					<PropertyList>
+						<Property Name="ConeAttenuation" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
 						<Property Name="ConeHighPassFilterValue" Type="int32">
 							<ValueList>
 								<Value>23</Value>
@@ -20,6 +25,7 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
+						<Property Name="RadiusMax" Type="Real64" Value="8"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -36,7 +42,7 @@
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>8</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -64,7 +70,7 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>8</XPos>
 											<YPos>37</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -85,7 +91,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>8</XPos>
 											<YPos>13</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -109,7 +115,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>8</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>

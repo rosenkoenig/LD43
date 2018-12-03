@@ -75,7 +75,7 @@ GameObject:
   m_Layer: 0
   m_Name: IP_JouetChinois
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -364,4 +364,14 @@ MonoBehaviour:
   doOnce: 0
   animStateName: PlayOnFloor
   _activityResetDelay: 100
+  _activityModifiers: []
+  curActivityResetDelay: 0
+  _akEventPlay:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: e5bbcfa96e71e824bbd24f48eeee08aa,
+      type: 2}
+  _akEventStop:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 452c867a86571bd4d87af4f37b5cc8d4,
+      type: 2}
   duration: 10

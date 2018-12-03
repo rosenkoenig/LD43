@@ -341,4 +341,13 @@ MonoBehaviour:
   _activityModifiers:
   - _childStat: {fileID: 11400000, guid: 40db861030465814d8712bedc1c170a6, type: 2}
     _factor: 0.05
+  curActivityResetDelay: 0
+  _akEventPlay:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: c2bafc9a50598074eb5884d969f49254,
+      type: 2}
+  _akEventStop:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: f76b886af6e86a74aac33f9269e2c0d3,
+      type: 2}
   duration: 10

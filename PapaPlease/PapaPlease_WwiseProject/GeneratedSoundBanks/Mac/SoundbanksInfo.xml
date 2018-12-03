@@ -400,24 +400,24 @@
 			<ShortName>AI</ShortName>
 			<Path>AI.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3636964221" Name="Play_AI_CleanBin" ObjectPath="\Events\PapaPlease\AI\Play_AI_CleanBin" MaxAttenuation="100.000000"/>
-				<Event Id="1056168201" Name="Play_AI_Cooking" ObjectPath="\Events\PapaPlease\AI\Play_AI_Cooking" MaxAttenuation="100.000000"/>
-				<Event Id="2890421503" Name="Play_AI_Dishes" ObjectPath="\Events\PapaPlease\AI\Play_AI_Dishes" MaxAttenuation="100.000000"/>
-				<Event Id="3853750586" Name="Play_AI_FS_BF_Walk_L" ObjectPath="\Events\PapaPlease\AI\Play_AI_FS_BF_Walk_L" MaxAttenuation="100.000000"/>
-				<Event Id="3853750564" Name="Play_AI_FS_BF_Walk_R" ObjectPath="\Events\PapaPlease\AI\Play_AI_FS_BF_Walk_R" MaxAttenuation="100.000000"/>
-				<Event Id="1614196089" Name="Play_AI_Peeing" ObjectPath="\Events\PapaPlease\AI\Play_AI_Peeing" MaxAttenuation="100.000000"/>
-				<Event Id="636593309" Name="Play_AI_PeeingFloor" ObjectPath="\Events\PapaPlease\AI\Play_AI_PeeingFloor" MaxAttenuation="100.000000"/>
-				<Event Id="3511894251" Name="Play_AI_Playing" ObjectPath="\Events\PapaPlease\AI\Play_AI_Playing" MaxAttenuation="100.000000"/>
-				<Event Id="2950347541" Name="Play_AI_Shower" ObjectPath="\Events\PapaPlease\AI\Play_AI_Shower" MaxAttenuation="100.000000"/>
-				<Event Id="861642119" Name="Play_AI_Television" ObjectPath="\Events\PapaPlease\AI\Play_AI_Television" MaxAttenuation="100.000000"/>
-				<Event Id="1064386371" Name="Stop_AI_CleanBin" ObjectPath="\Events\PapaPlease\AI\Stop_AI_CleanBin" MaxAttenuation="100.000000"/>
+				<Event Id="3636964221" Name="Play_AI_CleanBin" ObjectPath="\Events\PapaPlease\AI\Play_AI_CleanBin" MaxAttenuation="8.000000"/>
+				<Event Id="1056168201" Name="Play_AI_Cooking" ObjectPath="\Events\PapaPlease\AI\Play_AI_Cooking" MaxAttenuation="8.000000"/>
+				<Event Id="2890421503" Name="Play_AI_Dishes" ObjectPath="\Events\PapaPlease\AI\Play_AI_Dishes" MaxAttenuation="8.000000"/>
+				<Event Id="3853750586" Name="Play_AI_FS_BF_Walk_L" ObjectPath="\Events\PapaPlease\AI\Play_AI_FS_BF_Walk_L" MaxAttenuation="8.000000"/>
+				<Event Id="3853750564" Name="Play_AI_FS_BF_Walk_R" ObjectPath="\Events\PapaPlease\AI\Play_AI_FS_BF_Walk_R" MaxAttenuation="8.000000"/>
+				<Event Id="1614196089" Name="Play_AI_Peeing" ObjectPath="\Events\PapaPlease\AI\Play_AI_Peeing" MaxAttenuation="8.000000"/>
+				<Event Id="636593309" Name="Play_AI_PeeingFloor" ObjectPath="\Events\PapaPlease\AI\Play_AI_PeeingFloor" MaxAttenuation="8.000000"/>
+				<Event Id="3511894251" Name="Play_AI_Playing" ObjectPath="\Events\PapaPlease\AI\Play_AI_Playing" MaxAttenuation="8.000000"/>
+				<Event Id="2950347541" Name="Play_AI_Shower" ObjectPath="\Events\PapaPlease\AI\Play_AI_Shower" MaxAttenuation="8.000000"/>
+				<Event Id="861642119" Name="Play_AI_Television" ObjectPath="\Events\PapaPlease\AI\Play_AI_Television" MaxAttenuation="8.000000"/>
+				<Event Id="1064386371" Name="Stop_AI_CleanBin" ObjectPath="\Events\PapaPlease\AI\Stop_AI_CleanBin" MaxAttenuation="8.000000"/>
 				<Event Id="2408563091" Name="Stop_AI_Cooking" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Cooking" MaxAttenuation="0.000000"/>
 				<Event Id="2349360669" Name="Stop_AI_Dishes" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Dishes" MaxAttenuation="0.000000"/>
-				<Event Id="3353979151" Name="Stop_AI_Peeing" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Peeing" MaxAttenuation="100.000000"/>
+				<Event Id="3353979151" Name="Stop_AI_Peeing" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Peeing" MaxAttenuation="8.000000"/>
 				<Event Id="4242556375" Name="Stop_AI_PeeingFloor" ObjectPath="\Events\PapaPlease\AI\Stop_AI_PeeingFloor" MaxAttenuation="0.000000"/>
 				<Event Id="2698630197" Name="Stop_AI_Playing" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Playing" MaxAttenuation="0.000000"/>
-				<Event Id="60512483" Name="Stop_AI_Shower" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Shower" MaxAttenuation="100.000000"/>
-				<Event Id="4134788725" Name="Stop_AI_Television" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Television" MaxAttenuation="100.000000"/>
+				<Event Id="60512483" Name="Stop_AI_Shower" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Shower" MaxAttenuation="8.000000"/>
+				<Event Id="4134788725" Name="Stop_AI_Television" ObjectPath="\Events\PapaPlease\AI\Stop_AI_Television" MaxAttenuation="8.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="16075972" Language="SFX">
@@ -851,7 +851,7 @@
 			<ShortName>Ambiances_Out</ShortName>
 			<Path>Ambiances_Out.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3232971858" Name="Play_Amb_Outside_Balcony_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_Outside_Balcony_Lp" MaxAttenuation="12.000000"/>
+				<Event Id="3232971858" Name="Play_Amb_Outside_Balcony_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_Outside_Balcony_Lp" MaxAttenuation="7.000000"/>
 				<Event Id="2689642136" Name="Play_Plane" ObjectPath="\Events\PapaPlease\Ambiances\Play_Plane" MaxAttenuation="20.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>

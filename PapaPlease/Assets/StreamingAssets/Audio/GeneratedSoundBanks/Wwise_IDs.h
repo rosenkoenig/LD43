@@ -32,13 +32,9 @@ namespace AK
         static const AkUniqueID PLAY_AMBOUT_BATHROOM_NEIGHBORHOOD_LP = 1945404897U;
         static const AkUniqueID PLAY_AMBOUT_WALL_NEIGHBORHOOD_LP = 1682472951U;
         static const AkUniqueID PLAY_PLANE = 2689642136U;
-        static const AkUniqueID PLAY_WASHER_CLOSE = 55201595U;
-        static const AkUniqueID PLAY_WASHER_OPEN = 3531545949U;
         static const AkUniqueID PLAY_WINDOW_CLOSE = 4244658871U;
         static const AkUniqueID PLAY_WINDOW_OPEN = 4135004417U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
-        static const AkUniqueID PLAYER_SHOWER_OFF = 3855133085U;
-        static const AkUniqueID PLAYER_SHOWER_ON = 4187592433U;
         static const AkUniqueID PLAYER_SLAP = 2722341167U;
         static const AkUniqueID STOP_AI_CLEANBIN = 1064386371U;
         static const AkUniqueID STOP_AI_COOKING = 2408563091U;

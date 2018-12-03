@@ -629,6 +629,203 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_AI_Lavabo" ID="{11224F8D-8660-4AE5-B9F4-ECE3ED213757}">
+							<ChildrenList>
+								<Action Name="" ID="{F406BD16-73DD-40F9-ADC2-D8751BE8ACA9}" ShortID="556962917">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="5"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Lavabo_Dirty" ID="{1C91F694-BD14-42C5-8F5B-2782BF99BC56}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7AC6BC21-2180-41FB-9DD4-4056E029B01F}" ShortID="433192537">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Open_Lavabo" ID="{6F6A40B4-D8B2-4C2D-B5D8-9301BB8FCF01}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3BF37F8A-2999-4561-A4EC-3EA81733A965}" ShortID="1030896463">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="5"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Water_Flow" ID="{AA30E8BE-8B82-4885-B46E-5FB5B55270DA}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_AI_Lavabo" ID="{59D4F111-6A3A-47CD-9F76-1EE5B376E7A5}">
+							<ChildrenList>
+								<Action Name="" ID="{7A857EC0-AEA6-4442-A103-18CBCD547800}" ShortID="593735121">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Close_Lavabo" ID="{3D6A5780-71A5-4BA8-84D4-BDD220D763ED}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8A433ACA-F2AD-4DBA-A4F9-94306723A5E6}" ShortID="420610014">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Lavabo_Dirty" ID="{1C91F694-BD14-42C5-8F5B-2782BF99BC56}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AA2AE4EB-4A4A-412B-A405-08BC216BE8CF}" ShortID="1043102798">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Water_Flow" ID="{AA30E8BE-8B82-4885-B46E-5FB5B55270DA}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AI_CleanFloor" ID="{1D7B336E-9ECE-4F24-BF24-3A1A827A6CDB}">
+							<ChildrenList>
+								<Action Name="" ID="{D867BF00-7D25-44F2-9A0D-55437CE9A0BF}" ShortID="24650613">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_CleanFloor" ID="{AFCC1CD6-A2A2-4E92-9CB7-A601BF7F2FE3}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_AI_CleanFloor" ID="{405AF19A-CFF2-425E-A2AA-61B71939F27D}">
+							<ChildrenList>
+								<Action Name="" ID="{0279A6F7-72C6-46A5-9931-4A9960ABF809}" ShortID="803725527">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="8"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_CleanFloor" ID="{AFCC1CD6-A2A2-4E92-9CB7-A601BF7F2FE3}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AI_Panier" ID="{B7DB7137-E0FE-4D4B-B006-C5B427994C60}">
+							<ChildrenList>
+								<Action Name="" ID="{492A3BF0-A6C8-4243-B2D6-E2797CCFD6D8}" ShortID="555040092">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Panier" ID="{329269A4-8C8F-4118-9EBB-70C3BD8D00C5}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_AI_Panier" ID="{C2C43477-CC64-4EAC-99A3-409D1144F1C8}">
+							<ChildrenList>
+								<Action Name="" ID="{57EB0D70-06E0-4310-A60A-DE85C322DFC8}" ShortID="936537326">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Panier" ID="{329269A4-8C8F-4118-9EBB-70C3BD8D00C5}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AI_Wash" ID="{25B1AE3D-BD47-47F7-BCF5-EFA814F0FD63}">
+							<ChildrenList>
+								<Action Name="" ID="{7FFEE8B6-CF9F-4A16-BB6F-4064BC3DD4A7}" ShortID="561196727">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Wash" ID="{81FB2A87-2C5E-4BF6-8DBC-5561FA14C961}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_AI_Wash" ID="{FC84DFA8-9E66-413B-886D-3E5F7AF8EE75}">
+							<ChildrenList>
+								<Action Name="" ID="{65788DA9-980C-4779-910C-2F274CCBF743}" ShortID="177942540">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Wash" ID="{81FB2A87-2C5E-4BF6-8DBC-5561FA14C961}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AI_Console" ID="{7134174C-2366-47B7-BB25-037CA029B40F}">
+							<ChildrenList>
+								<Action Name="" ID="{5D5D7828-8A21-4074-9C71-A530C0A1BCC2}" ShortID="135249714">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_PlayingConsole" ID="{1E3B7559-D280-460E-8D9F-AF56E9DFBE90}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_AI_Console" ID="{DAC3A695-29D5-4A24-AAED-6266652E342A}">
+							<ChildrenList>
+								<Action Name="" ID="{986E2F33-EBF6-435E-B369-57CAAA1BE890}" ShortID="1072002560">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_PlayingConsole" ID="{1E3B7559-D280-460E-8D9F-AF56E9DFBE90}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{D68E7234-678F-4885-99A7-06B91B14E64D}" ShortID="1048710708">
