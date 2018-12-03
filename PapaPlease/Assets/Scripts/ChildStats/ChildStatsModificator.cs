@@ -7,6 +7,7 @@ public class ChildStatsModificator {
 
     [SerializeField] List<StatModifier> statsModifiers;
 
+
     public void TryModifyStats(ChildStatsContainer childStatsContainer, bool useDeltaTime = false)
     {
         foreach (var curChildStatInfo in childStatsContainer._childStatInfos)
@@ -19,5 +20,9 @@ public class ChildStatsModificator {
                 }
             }
         }
+    }
+    public void TryModifyStats(ChildCharacter child, bool useDeltaTime = false)
+    {
+        TryModifyStats(child.statsContainer, useDeltaTime);
     }
 }

@@ -223,7 +223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1220520190875070
 GameObject:
   m_ObjectHideFlags: 1
@@ -284,7 +284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1277646028490482
 GameObject:
   m_ObjectHideFlags: 1
@@ -543,7 +543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1649491742784304
 GameObject:
   m_ObjectHideFlags: 1
@@ -622,7 +622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1765064853580318
 GameObject:
   m_ObjectHideFlags: 1
@@ -743,7 +743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1928402848952014
 GameObject:
   m_ObjectHideFlags: 1
@@ -774,7 +774,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1944120974043532
 GameObject:
   m_ObjectHideFlags: 1
@@ -1667,6 +1667,17 @@ MonoBehaviour:
   timeBetweenAnger: {x: 1, y: 5}
   timeBetweenAngerIncPerObeissance: 1
   obeissanceStatID: {fileID: 0}
+  possibleMaleHaircuts:
+  - {fileID: 1261631847127162}
+  - {fileID: 1632995691624656}
+  - {fileID: 1958945107561710}
+  possibleFemaleHaircurts:
+  - {fileID: 1202636600356732}
+  - {fileID: 1931498868538438}
+  possibleConsitution:
+  - {fileID: 1193872038817072}
+  - {fileID: 1738972138188348}
+  - {fileID: 1910157251887512}
   animator: {fileID: 95645145970046072}
   extraRotationSpeed: 8
 --- !u!136 &136824139974650648

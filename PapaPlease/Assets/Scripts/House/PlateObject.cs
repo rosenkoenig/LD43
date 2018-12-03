@@ -12,7 +12,7 @@ public class PlateObject : MonoBehaviour {
     public bool IsFilled { get { return _isFilled; } }
 
     [SerializeField]
-    StatModifier eatModifier;
+    ChildStatsModificator eatStatModificator;
 
     [SerializeField]
     float eatingDuration = 1f;
@@ -66,6 +66,7 @@ public class PlateObject : MonoBehaviour {
         {
             eatTimer += Time.deltaTime;
             UpdateFoodSize();
+            eatStatModificator.TryModifyStats(child, true);
         }
     }
 
