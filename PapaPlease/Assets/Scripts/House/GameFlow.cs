@@ -10,7 +10,7 @@ public class GameFlow : MonoBehaviour {
     public DayMaster dm = null;
 
     [SerializeField]
-    GameState _gameState = GameState.DAY;
+    GameState _gameState = GameState.TABLE;
 
     public GameState GetGameState {  get { return _gameState; } }
 
@@ -26,6 +26,7 @@ public class GameFlow : MonoBehaviour {
     {
         dm.gf = this;
         dm.Init();
+        BeginTablePhase();
     }
 
     public void OnDayStarts ()
@@ -52,6 +53,7 @@ public class GameFlow : MonoBehaviour {
     public void BeginTablePhase ()
     {
         SetGameState(GameState.TABLE);
+        gm.mm.ApplyAll();
         gm.vm.ClearDeadChildren();
         gm.uIMaster.OnTableStarts();
         gm.vm.GiveBirth();
@@ -102,11 +104,16 @@ public class GameFlow : MonoBehaviour {
         }
     }
 
+    public void EndNightTransition ()
+    {
+        BeginTablePhase();
+    }
+
     void UpdateNightTransition ()
     {
         if (Time.time - stateStartTime >= nightTransitionDuration)
         {
-            BeginTablePhase();
+            GameMaster.Instance.uIMaster.DisplayMissionPanel();
         }
     }
 }

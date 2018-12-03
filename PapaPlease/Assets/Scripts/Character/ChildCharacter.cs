@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public enum ChildAIState { WAITING, ROAMING, MOVING_TO_ACTIVITY, IN_ACTIVITY, AT_TABLE, DEAD }
+public enum ChildAIState { WAITING, ROAMING, MOVING_TO_ACTIVITY, IN_ACTIVITY, AT_TABLE, IN_MISSION, DEAD }
 public class ChildCharacter : Character {
     public HouseMaster hm = null;
 
@@ -87,7 +87,6 @@ public class ChildCharacter : Character {
 
     public void Init ()
     {
-        SetState(ChildAIState.WAITING);
 
         InitSkins();
 
@@ -213,6 +212,10 @@ public class ChildCharacter : Character {
         SetState(ChildAIState.WAITING);
     }
 
+    public void AttributeToMission ()
+    {
+        SetState(ChildAIState.IN_MISSION);
+    }
 
     #region Slap
     public void IsSlapped ()
@@ -329,6 +332,9 @@ public class ChildCharacter : Character {
             case ChildAIState.IN_ACTIVITY:
                 CancelActivity();
                 break;
+            case ChildAIState.IN_MISSION:
+                EndInMission();
+                break;
             case ChildAIState.AT_TABLE:
                 EndAtTable();
                 break;
@@ -350,6 +356,9 @@ public class ChildCharacter : Character {
                 break;
             case ChildAIState.AT_TABLE:
                 StartAtTable();
+                break;
+            case ChildAIState.IN_MISSION:
+                StartInMission();
                 break;
             case ChildAIState.DEAD:
                 StartDeath();
@@ -382,6 +391,9 @@ public class ChildCharacter : Character {
                 break;
             case ChildAIState.AT_TABLE:
                 UpdateAtTable();
+                break;
+            case ChildAIState.IN_MISSION:
+                UpdateInMission();
                 break;
             case ChildAIState.DEAD:
                 UpdateDeath();
@@ -686,6 +698,27 @@ public class ChildCharacter : Character {
     {
         myPlate = po;
     }
+
+    /// <summary>
+    /// IN MISSION STATE IN MISSION
+    /// </summary>
+    void StartInMission()
+    {
+        Freeze(true);
+        navAgent.enabled = false;
+        transform.position = Vector3.forward * 1000f;
+    }
+
+    void UpdateInMission()
+    {
+
+    }
+
+    void EndInMission ()
+    {
+
+    }
+
 
     /// <summary>
     /// AT TABLE STATE AT TABLE

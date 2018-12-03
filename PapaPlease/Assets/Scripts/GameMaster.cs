@@ -10,6 +10,7 @@ public class GameMaster : MonoBehaviour {
     public GameFlow gf;
     public Wallet wallet;
     public LogMaster log;
+    public MissionMaster mm;
 
     static GameMaster _instance;
 
@@ -17,6 +18,11 @@ public class GameMaster : MonoBehaviour {
 
     public IPType ipTypeFun = null;
     public ChildStatID healthStat = null;
+
+    [Header("Bills")]
+    public float rentCost;
+    public float elecCost, waterCost, gazCost;
+    public float GetAllBillsCost { get { return rentCost + elecCost + waterCost + gazCost; } } 
 
     // Use this for initialization
     void Awake ()
@@ -27,7 +33,6 @@ public class GameMaster : MonoBehaviour {
         gf.gm = this;
         if(log) log.Init();
         uIMaster.Init();
-        gf.Init();
         vm.Init();
         wallet.Init();
     }
@@ -52,6 +57,7 @@ public class GameMaster : MonoBehaviour {
         vm.SpawnBaseChilds();
 
         hm.Init();
+        gf.Init();
     }
 
     public void PlayerWantsToEndTablePhase ()
