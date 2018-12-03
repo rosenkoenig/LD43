@@ -14,6 +14,9 @@ MonoBehaviour:
   _statName: Comfort
   _maxValue: 50
   _startValue: 0
+  _playerValue: 0
   _addedJaugeText: 
   _isTitleGauge: 0
+  _titleGaugeColor: {r: 0, g: 0, b: 0, a: 0}
   _isBetweenNegativeAndPositive: 1
+  _displayReverseValue: 0

@@ -3,27 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class ChildStatsContainer {
+public class ChildStatsContainer
+{
 
     public List<ChildStatInfo> _childStatInfos { get; private set; }
     [SerializeField] ChildStatIDsContainer _childStatsIdContainer;
     [SerializeField] List<ChildInitialSkillsPack> _childInitialSkillsPacks;
-    
-    public void Init()
+
+    public void Init(bool isPlayer = false)
     {
         _childStatInfos = new List<ChildStatInfo>();
         foreach (var curStatID in _childStatsIdContainer.GetChildStatIDs)
         {
             _childStatInfos.Add(new ChildStatInfo() { childStatID = curStatID });
         }
-
-        foreach (var item in _childStatInfos)
+        if (isPlayer)
         {
-            item.currentValue = item.childStatID.GetStartValue;
+            foreach (var item in _childStatInfos)
+            {
+                item.currentValue = item.childStatID.GetPlayerValue;
+            }
         }
+        else
+        {
+            foreach (var item in _childStatInfos)
+            {
+                item.currentValue = item.childStatID.GetStartValue;
+            }
 
-        ChildInitialSkillsPack selectedInitialSkillPack = _childInitialSkillsPacks[UnityEngine.Random.Range(0, _childInitialSkillsPacks.Count)];
-        selectedInitialSkillPack.GenerateChildStats(this);
+            ChildInitialSkillsPack selectedInitialSkillPack = _childInitialSkillsPacks[UnityEngine.Random.Range(0, _childInitialSkillsPacks.Count)];
+            selectedInitialSkillPack.GenerateChildStats(this);
+        }
     }
 
     public float GetAChildStatValue(ChildStatID refID)
@@ -42,7 +52,7 @@ public class ChildStatsContainer {
         foreach (var item in _childStatInfos)
         {
             if (item.childStatID == refID)
-                return (item.childStatID.MaxValue - item.childStatID.MinValue) * item.currentValue / 100;
+                return item.currentValue / (item.childStatID.MaxValue - item.childStatID.MinValue);
         }
         Debug.LogError("child stat not found!");
         return 0;

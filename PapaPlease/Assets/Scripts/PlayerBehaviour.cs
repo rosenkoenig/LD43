@@ -25,7 +25,7 @@ public class PlayerBehaviour : Character {
     void Start ()
     {
         wallet = GameMaster.Instance.wallet;
-        statsContainer.Init();
+        statsContainer.Init(true);
     }
 
     public void SetInteractActive()
@@ -48,7 +48,7 @@ public class PlayerBehaviour : Character {
         if (hoverChild)
         {
 
-            if (hoverChild.ChildState != ChildAIState.AT_TABLE)
+            if (hoverChild.ChildState < ChildAIState.AT_TABLE)
             {
                 hoverChild.Freeze(true);
                 SetInteractActive(false);

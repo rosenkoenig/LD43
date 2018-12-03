@@ -16,8 +16,9 @@ public class GameMaster : MonoBehaviour {
     public static GameMaster Instance { get { return _instance; } }
 
     public IPType ipTypeFun = null;
+    public ChildStatID healthStat = null;
 
-	// Use this for initialization
+    // Use this for initialization
     void Awake ()
     {
         _instance = this;

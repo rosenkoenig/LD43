@@ -14,5 +14,9 @@ MonoBehaviour:
   _statName: Age
   _maxValue: 15
   _startValue: 5
+  _playerValue: 15
   _addedJaugeText: years old
+  _isTitleGauge: 0
+  _titleGaugeColor: {r: 0, g: 0, b: 0, a: 0}
   _isBetweenNegativeAndPositive: 0
+  _displayReverseValue: 0

@@ -68,7 +68,7 @@ public class InterestPoint : MonoBehaviour
     public bool Interact(Character character)
     {
         PlayerBehaviour playerInteractor = character.GetComponent<PlayerBehaviour>();
-        if (onlyUsableByChild && playerInteractor == null)
+        if (onlyUsableByChild && playerInteractor != null)
         {
             return false;
         }

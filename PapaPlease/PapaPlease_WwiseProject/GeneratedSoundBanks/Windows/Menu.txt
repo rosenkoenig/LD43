@@ -1,0 +1,26 @@
+Event	ID	Name			Wwise Object Path	Notes
+	455571771	Play_Menu_Back			\PapaPlease\UI\Play_Menu_Back	
+	830185121	Stop_Menu_Clic			\PapaPlease\UI\Stop_Menu_Clic	
+	1551739232	Stop_Menu_PlayGame			\PapaPlease\UI\Stop_Menu_PlayGame	
+	1649266127	Stop_Menu_Move			\PapaPlease\UI\Stop_Menu_Move	
+	1733128813	Play_Money_Remove			\PapaPlease\UI\Play_Money_Remove	
+	1761891682	Play_Menu_PlayGame			\PapaPlease\UI\Play_Menu_PlayGame	
+	1871533573	Play_Menu_Move			\PapaPlease\UI\Play_Menu_Move	
+	1982372943	Play_Menu_Clic			\PapaPlease\UI\Play_Menu_Clic	
+	2002142080	Stop_Money_Add			\PapaPlease\UI\Stop_Money_Add	
+	2797631338	Play_Money_Add			\PapaPlease\UI\Play_Money_Add	
+	3141480553	Stop_Menu_Back			\PapaPlease\UI\Stop_Menu_Back	
+	3510984659	Stop_Money_Remove			\PapaPlease\UI\Stop_Money_Remove	
+	3592474417	Play_Menu_QuitGame			\PapaPlease\UI\Play_Menu_QuitGame	
+	4070450727	Stop_Menu_QuitGame			\PapaPlease\UI\Stop_Menu_QuitGame	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	148470694	Menu_QuitGame_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\UI\Menu_QuitGame_01_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\UI\Menu_QuitGame\Menu_QuitGame_01		88128
+	354741220	CashRegister 6028_25_4	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\CashRegister 6028_25_4_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Remove\CashRegister 6028_25_4		261184
+	417529680	Menu_Move_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\UI\Menu_Move_02_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\UI\Menu_Move\Menu_Move_02		46144
+	460106283	CashRegister 6045_53_1	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\CashRegister 6045_53_1_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Add\CashRegister 6045_53_1		192632
+	685672182	Menu_Back_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\UI\Menu_Back_01_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\UI\Menu_Back\Menu_Back_01		41024
+	867389612	Menu_Move_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\UI\Menu_Move_01_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\UI\Menu_Move\Menu_Move_01		42560
+	943121378	Menu_PlayGame_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\UI\Menu_PlayGame_01_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\UI\Menu_PlayGame\Menu_PlayGame_01		73792
+	984199050	Menu_Clic_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\UI\Menu_Clic_01_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\UI\Menu_Clic\Menu_Clic_01		46592
+
