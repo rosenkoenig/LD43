@@ -74,6 +74,9 @@ public class ChildCharacter : Character {
     [SerializeField]
     Material[] pantMaterials, sweaterMaterials, shoesMaterial, hairMaterial;
 
+    [SerializeField]
+    Material baseSkinMaterial;
+
     // Use this for initialization
     void Start () {
 
@@ -99,6 +102,8 @@ public class ChildCharacter : Character {
         Material[] newMaterials = renderer.materials;
 
         //enum materialID { Skin, Sweater, Pant, Shoes }
+        newMaterials[0] = baseSkinMaterial;
+
         int randMatIdx = Random.Range(0, sweaterMaterials.Length);
         newMaterials[1] = sweaterMaterials[randMatIdx];
 
@@ -112,6 +117,7 @@ public class ChildCharacter : Character {
         
 
         randMatIdx = Random.Range(0, hairMaterial.Length);
+        if(randMatIdx == 2) randMatIdx = Random.Range(0, hairMaterial.Length);
         hc.GetComponent<Renderer>().material = hairMaterial[randMatIdx];
     }
 
