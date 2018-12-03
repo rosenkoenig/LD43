@@ -52,7 +52,8 @@ public class ChildStatsContainer
         foreach (var item in _childStatInfos)
         {
             if (item.childStatID == refID)
-                return item.currentValue / (item.childStatID.MaxValue - item.childStatID.MinValue);
+                //return item.currentValue / (item.childStatID.MaxValue - item.childStatID.MinValue);
+                return Mathf.InverseLerp(item.childStatID.MinValue, item.childStatID.MaxValue, item.currentValue);
         }
         Debug.LogError("child stat not found!");
         return 0;

@@ -52,6 +52,7 @@ public class GameFlow : MonoBehaviour {
     public void BeginTablePhase ()
     {
         SetGameState(GameState.TABLE);
+        gm.vm.ClearDeadChildren();
         gm.uIMaster.OnTableStarts();
         gm.vm.GiveBirth();
         gm.player.BeginTablePhase();

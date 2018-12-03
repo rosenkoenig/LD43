@@ -135,4 +135,25 @@ public class VirtualMother : MonoBehaviour
             child.SetPlate(null);
         }
     }
+
+    public void ClearDeadChildren ()
+    {
+        List<ChildCharacter> deads = new List<ChildCharacter>();
+
+        foreach(ChildCharacter child in allChildren)
+        {
+            if(child.ChildState == ChildAIState.DEAD)
+            {
+                deads.Add(child);
+            }
+        }
+
+        foreach (ChildCharacter child in deads)
+        {
+            allChilds.Remove(child);
+            if (activeChilds.Contains(child)) activeChilds.Remove(child);
+            Destroy(child.gameObject);
+        }
+        
+    }
 }
