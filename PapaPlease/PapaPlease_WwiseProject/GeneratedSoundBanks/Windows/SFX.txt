@@ -1,8 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	4135004417	Play_Window_Open			\PapaPlease\SFX\Play_Window_Open	
-	4244658871	Play_Window_Close			\PapaPlease\SFX\Play_Window_Close	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	301767813	WindowOpen_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Windows\WindowOpen_01_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Windows\Window_Open\WindowOpen_01		8970
-	960467139	WindowClose_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Windows\WindowClose_01_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Windows\Window_Close\WindowClose_01		5046
-

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec3a864aa0ac75c428a3a4fbb4e4e7fc, type: 3}
-  m_Name: C2C43477-CC64-4EAC-99A3-409D1144F1C8
+  m_Name: D88931A5-7459-4894-8DAE-B436F541AC31
   m_EditorClassIdentifier: 
-  objectName: Stop_AI_Panier
-  id: 1950993718
-  guid: C2C43477-CC64-4EAC-99A3-409D1144F1C8
+  objectName: Play_AI_Panier
+  id: 312518768
+  guid: D88931A5-7459-4894-8DAE-B436F541AC31

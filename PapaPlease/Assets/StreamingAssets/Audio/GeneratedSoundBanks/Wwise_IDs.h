@@ -31,11 +31,16 @@ namespace AK
         static const AkUniqueID PLAY_AMB_PARENTSBEDROOM_LP = 525979915U;
         static const AkUniqueID PLAY_AMBOUT_BATHROOM_NEIGHBORHOOD_LP = 1945404897U;
         static const AkUniqueID PLAY_AMBOUT_WALL_NEIGHBORHOOD_LP = 1682472951U;
+        static const AkUniqueID PLAY_MENU_BACK = 455571771U;
+        static const AkUniqueID PLAY_MENU_CLIC = 1982372943U;
+        static const AkUniqueID PLAY_MENU_MOVE = 1871533573U;
+        static const AkUniqueID PLAY_MENU_PLAYGAME = 1761891682U;
+        static const AkUniqueID PLAY_MENU_QUITGAME = 3592474417U;
+        static const AkUniqueID PLAY_MONEY_ADD = 2797631338U;
+        static const AkUniqueID PLAY_MONEY_REMOVE = 1733128813U;
         static const AkUniqueID PLAY_PLANE = 2689642136U;
-        static const AkUniqueID PLAY_WINDOW_CLOSE = 4244658871U;
-        static const AkUniqueID PLAY_WINDOW_OPEN = 4135004417U;
-        static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
-        static const AkUniqueID PLAYER_SLAP = 2722341167U;
+        static const AkUniqueID PLAY_PLAYER_FOOTSTEPS = 98439365U;
+        static const AkUniqueID PLAY_PLAYER_SLAP = 76044170U;
         static const AkUniqueID STOP_AI_CLEANBIN = 1064386371U;
         static const AkUniqueID STOP_AI_COOKING = 2408563091U;
         static const AkUniqueID STOP_AI_DISHES = 2349360669U;
@@ -44,6 +49,15 @@ namespace AK
         static const AkUniqueID STOP_AI_PLAYING = 2698630197U;
         static const AkUniqueID STOP_AI_SHOWER = 60512483U;
         static const AkUniqueID STOP_AI_TELEVISION = 4134788725U;
+        static const AkUniqueID STOP_MENU_BACK = 3141480553U;
+        static const AkUniqueID STOP_MENU_CLIC = 830185121U;
+        static const AkUniqueID STOP_MENU_MOVE = 1649266127U;
+        static const AkUniqueID STOP_MENU_PLAYGAME = 1551739232U;
+        static const AkUniqueID STOP_MENU_QUITGAME = 4070450727U;
+        static const AkUniqueID STOP_MONEY_ADD = 2002142080U;
+        static const AkUniqueID STOP_MONEY_REMOVE = 3510984659U;
+        static const AkUniqueID STOP_PLAYER_FOOTSTEPS = 2284278951U;
+        static const AkUniqueID STOP_PLAYER_SLAP = 3374816280U;
     } // namespace EVENTS
 
     namespace SWITCHES
