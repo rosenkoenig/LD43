@@ -40,7 +40,26 @@
 						</Property>
 					</PropertyList>
 					<ObjectInclusionList>
+						<ObjectRef Name="AI_Panier" ID="{329269A4-8C8F-4118-9EBB-70C3BD8D00C5}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_Idle" ID="{166E5273-C44F-43B6-8F59-37F039790883}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_Dishes" ID="{312CCCFA-C310-43E7-B186-C3FE1F1DB75E}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_Activities" ID="{17634D5D-7F29-449B-A739-A5614D66684C}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_Cooking" ID="{EDA286E4-4DD9-44AB-992E-BF31F0D7B2D7}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_Flush" ID="{36124427-247A-456B-98A0-3C4A2C28CBB8}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_PeeingToilet" ID="{2A2D911D-1AA0-45FF-A4C2-20B3514DB053}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_CleanWindow" ID="{2B5D13AA-63BE-4600-93F3-B2E93559ADC5}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_PlayingConsole" ID="{1E3B7559-D280-460E-8D9F-AF56E9DFBE90}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_Lavabo" ID="{6E5972E7-0622-464F-99C6-AF094F11575E}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_Playing" ID="{4970869C-1EB2-4785-BCD6-1F61D1AC5123}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_Shower" ID="{D0BAFB95-BB23-47CF-9EF5-DF8B6097461B}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_Foley" ID="{30BAC032-CBC3-48A6-B685-A07B431F6BC5}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_Zip" ID="{869CDAA5-62EF-4A97-84BC-87752DF60525}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_Wash" ID="{81FB2A87-2C5E-4BF6-8DBC-5561FA14C961}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_PeeingFloor" ID="{8476CAE3-3C47-4E0D-B190-F2626B2956B7}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_CleanFloor" ID="{AFCC1CD6-A2A2-4E92-9CB7-A601BF7F2FE3}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_CleanBin" ID="{6D0A4460-17AA-4F91-A2CB-F5AC4B852C16}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="AI_Children" ID="{AA2B4A50-A4BC-4FA2-8E79-BEAFB1812C46}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AI_Television" ID="{AEAA662F-1EF9-4FA7-A2E0-3FB7E4A8CD45}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

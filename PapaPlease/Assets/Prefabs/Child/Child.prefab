@@ -1703,14 +1703,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 5940c00c657c91d47afc10f5eabc103d, type: 2}
   - {fileID: 2100000, guid: e7abe9c40d67bd34daa1cefe16d12b8c, type: 2}
   baseSkinMaterial: {fileID: 2100000, guid: 25ac24d6e8c23374998d4b3e3bc0a152, type: 2}
-  faceTextures:
-  - {fileID: 2800000, guid: e73b6c94227e80b46928f6c5b8b4c756, type: 3}
-  - {fileID: 2800000, guid: e6cc6f9886640b548aefef4b72c54961, type: 3}
-  - {fileID: 2800000, guid: 5c830e6588ba9274dab6fda358220c2a, type: 3}
-  - {fileID: 2800000, guid: 75cc4e06c88be3e43949664aaf2139f7, type: 3}
-  - {fileID: 2800000, guid: 8ac928dc85dd51442a1bbc2d6ae1e5cd, type: 3}
-  - {fileID: 2800000, guid: 519eb813337849d409c85f0437ebf19e, type: 3}
-  - {fileID: 2800000, guid: 42b2b9187033b2b439903232ca90328c, type: 3}
   animator: {fileID: 95182140613341446}
   extraRotationSpeed: 8
 --- !u!136 &136824139974650648
@@ -1722,7 +1714,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.3
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}

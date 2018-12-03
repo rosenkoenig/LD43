@@ -54,7 +54,7 @@ GameObject:
   m_Layer: 0
   m_Name: IP_ConsoleDeMerde
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -221,4 +221,14 @@ MonoBehaviour:
   doOnce: 0
   animStateName: Idle
   _activityResetDelay: 100
+  _activityModifiers: []
+  curActivityResetDelay: 0
+  _akEventPlay:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 99a554e02db6a5647a7b417cb924d1d8,
+      type: 2}
+  _akEventStop:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: bfe884bad4c4a8f439132c99527fcb44,
+      type: 2}
   duration: 10
