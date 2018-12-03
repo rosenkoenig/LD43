@@ -1,0 +1,15 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2689642136	Play_Plane			\PapaPlease\Ambiances\Play_Plane	
+	3232971858	Play_Amb_Outside_Balcony_Lp			\PapaPlease\Ambiances\Play_Amb_Outside_Balcony_Lp	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	241299627	Amb_Outside_Plane_OS_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_02_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Ambiances\Amb_Outside\Plane\Amb_Outside_Plane_OS_02		58650
+	259521551	Amb_Outside_Plane_OS_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_01_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Ambiances\Amb_Outside\Plane\Amb_Outside_Plane_OS_01		46909
+	422381683	Amb_Outside_Balcony_Siren_OS_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_02_E52FD394.wem		\Actor-Mixer Hierarchy\PapaPlease\Ambiances\Amb_Outside\Amb_Outside_Balcony_Lp\OneShots\Siren\Amb_Outside_Balcony_Siren_OS_02		25550
+	506314926	Amb_Outside_Balcony_Dogs_OS_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Amb_Outside\OneShots\Amb_Outside_Balcony_Dogs_OS_01_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Ambiances\Amb_Outside\Amb_Outside_Balcony_Lp\OneShots\Amb_Outside_Balcony_Dogs_OS_01		72898
+	633242227	Amb_Outside_Balcony_Siren_OS_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_01_DAB63BC3.wem		\Actor-Mixer Hierarchy\PapaPlease\Ambiances\Amb_Outside\Amb_Outside_Balcony_Lp\OneShots\Siren\Amb_Outside_Balcony_Siren_OS_01		26916
+	709108565	Amb_Outside_Plane_OS_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Amb_Outside\OneShots\Plane\Amb_Outside_Plane_OS_03_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Ambiances\Amb_Outside\Plane\Amb_Outside_Plane_OS_03		48861
+	761480163	Amb_Outside_Balcony_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Amb_Outside_Balcony_02_0265BEE3.wem		\Actor-Mixer Hierarchy\PapaPlease\Ambiances\Amb_Outside\Amb_Outside_Balcony_Lp\Amb_Balcony_Lp\Amb_Outside_Balcony_02		168676
+	839477047	Amb_Outside_Balcony_Siren_OS_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_03_2B0E2AA0.wem		\Actor-Mixer Hierarchy\PapaPlease\Ambiances\Amb_Outside\Amb_Outside_Balcony_Lp\OneShots\Siren\Amb_Outside_Balcony_Siren_OS_03		329477
+	1068902261	Amb_Outside_Balcony_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Amb_Outside_Balcony_01_0265BEE3.wem		\Actor-Mixer Hierarchy\PapaPlease\Ambiances\Amb_Outside\Amb_Outside_Balcony_Lp\Amb_Balcony_Lp\Amb_Outside_Balcony_01		456221
+
