@@ -313,8 +313,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFullFeedback: {fileID: 1285804186813404}
-  eatModifier:
-    _childStatID: {fileID: 11400000, guid: 585ea90be3ef1a645a3c0b3894aeb3f4, type: 2}
-    _factor: 1
-    _refill: 0
+  eatStatModificator:
+    statsModifiers:
+    - _childStatID: {fileID: 11400000, guid: 585ea90be3ef1a645a3c0b3894aeb3f4, type: 2}
+      _factor: 5
+      _refill: 0
   eatingDuration: 3
