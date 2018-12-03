@@ -24,7 +24,7 @@ public enum ActivityState { WAITING, RUNNING, COMPLETE }
 [System.Serializable]
 public class Activity : MonoBehaviour
 {
-    
+
     ActivityState curActState = ActivityState.WAITING;
     public ActivityState State { get { return curActState; } }
     public bool isRunning { get { return curActState == ActivityState.RUNNING; } }
@@ -36,12 +36,15 @@ public class Activity : MonoBehaviour
     [SerializeField] float _activityResetDelay = 60f;
 
     [SerializeField] protected List<ActivityModifier> _activityModifiers;
-    
-    float curActivityResetDelay;
+
+    [SerializeField] float curActivityResetDelay;
 
     public float GetCompletionRatio { get; protected set; }
 
     public System.Action OnBegin, OnEnd;
+
+    [SerializeField] AK.Wwise.Event _akEventPlay;
+    [SerializeField] AK.Wwise.Event _akEventStop;
 
     private void Start()
     {
@@ -50,7 +53,7 @@ public class Activity : MonoBehaviour
 
     private void OnDestroy()
     {
-        if(GameMaster.Instance != null)
+        if (GameMaster.Instance != null)
             GameMaster.Instance.gf.dm.onDayStarts -= MakeResetActivity;
     }
 
@@ -76,6 +79,8 @@ public class Activity : MonoBehaviour
 
         holders.Add(holder);
 
+        if (_akEventPlay != null)
+            _akEventPlay.Post(gameObject);
 
         SetState(ActivityState.RUNNING);
 
@@ -94,6 +99,9 @@ public class Activity : MonoBehaviour
         if (holder != null)
         {
             holders.Remove(holder);
+
+            if (_akEventStop != null)
+                _akEventStop.Post(gameObject);
         }
 
 
