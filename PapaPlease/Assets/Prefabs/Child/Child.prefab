@@ -1666,7 +1666,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   timeBetweenAnger: {x: 1, y: 5}
   timeBetweenAngerIncPerObeissance: 1
-  obeissanceStatID: {fileID: 0}
+  obeissanceStatID: {fileID: 11400000, guid: 2d1aff0eb8d9dbd42a0f26c94a55d466, type: 2}
   possibleMaleHaircuts:
   - {fileID: 1261631847127162}
   - {fileID: 1632995691624656}

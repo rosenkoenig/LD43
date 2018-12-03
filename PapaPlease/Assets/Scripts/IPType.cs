@@ -20,6 +20,10 @@ public class IPType : ScriptableObject
     [Header("___________________")]
     [SerializeField] List<StatModifier> _endActivityModifiers;
 
+    [Header("___________________")]
+    [SerializeField] List<ActivityModifier> _activityModifiers;
+
+    public List<ActivityModifier> GetActivityModifiers { get { return _activityModifiers; } }
 
     public string GetIPName { get { return _ipName; } }
 
