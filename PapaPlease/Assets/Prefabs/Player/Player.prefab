@@ -590,7 +590,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1960697883471256}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 100000
   m_UseGravity: 0
@@ -717,6 +717,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   arm: {fileID: 95569324950912516}
+  hoverChild: {fileID: 0}
   _childLayerMask:
     serializedVersion: 2
     m_Bits: 512

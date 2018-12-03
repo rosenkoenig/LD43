@@ -15,6 +15,8 @@ public class ActivityHolder
         {
             toReturn += curActMod._factor * (character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
         }
+        if (toReturn < -0.8f)
+            toReturn = -0.8f;
         return toReturn;
     }
 

@@ -18,3 +18,5 @@ MonoBehaviour:
   _activityModifiers:
   - _childStat: {fileID: 11400000, guid: 40db861030465814d8712bedc1c170a6, type: 2}
     _factor: 0.05
+  - _childStat: {fileID: 11400000, guid: c7b408b288f9e0441904197be9b9807b, type: 2}
+    _factor: -0.05

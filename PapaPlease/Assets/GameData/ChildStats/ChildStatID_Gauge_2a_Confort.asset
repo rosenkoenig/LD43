@@ -9,9 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc201d45aab21ea488f8d2d2b1144e88, type: 3}
-  m_Name: ChildStatID_Gauge_Vessie
+  m_Name: ChildStatID_Gauge_2a_Confort
   m_EditorClassIdentifier: 
-  _statName: Bladder
-  _minValue: -50
+  _statName: Comfort
   _maxValue: 50
-  _isDisplayedAsGauge: 1
+  _startValue: 0
+  _addedJaugeText: 
+  _isTitleGauge: 0
+  _isBetweenNegativeAndPositive: 1

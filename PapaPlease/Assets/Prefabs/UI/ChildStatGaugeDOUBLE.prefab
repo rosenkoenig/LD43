@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 222131870028653774}
   - component: {fileID: 114529301233165542}
   m_Layer: 5
-  m_Name: ChildStatGauge
+  m_Name: ChildStatGaugeDOUBLE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,6 +282,7 @@ MonoBehaviour:
   _gaugePositive: {fileID: 224450012083063404}
   _gaugeNegative: {fileID: 224520563830516458}
   _gaugeParent: {fileID: 224650529996006920}
+  _titleGaugeToColor: {fileID: 0}
 --- !u!114 &114555893466981600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -439,7 +440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 25.5, y: -0}
+  m_AnchoredPosition: {x: 30, y: -0}
   m_SizeDelta: {x: 60, y: 10}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!224 &224660338062547494
@@ -515,7 +516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 85, y: 0}
+  m_AnchoredPosition: {x: 105, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!224 &224897151671997984
@@ -533,6 +534,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000034332275}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 25.3, y: 20}
   m_Pivot: {x: 0, y: 0.5}

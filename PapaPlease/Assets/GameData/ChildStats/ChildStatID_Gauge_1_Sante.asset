@@ -9,9 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc201d45aab21ea488f8d2d2b1144e88, type: 3}
-  m_Name: ChildStatID_Gauge_Sante
+  m_Name: ChildStatID_Gauge_1_Sante
   m_EditorClassIdentifier: 
   _statName: Health
-  _minValue: -50
   _maxValue: 50
-  _isDisplayedAsGauge: 1
+  _startValue: 50
+  _addedJaugeText: 
+  _isTitleGauge: 1
+  _titleGaugeColor: {r: 0, g: 0.7254902, b: 0.08235294, a: 1}
+  _isBetweenNegativeAndPositive: 0
+  _displayReverseValue: 0
