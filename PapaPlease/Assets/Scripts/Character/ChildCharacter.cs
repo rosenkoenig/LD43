@@ -244,6 +244,8 @@ public class ChildCharacter : Character {
     {
         yield return new WaitForSeconds(delayForHSlapHit);
 
+        PlaySoundEvent(OnSlapEvent);
+
         float animFactor = 0f;
 
         if(state != ChildAIState.AT_TABLE)
@@ -529,6 +531,8 @@ public class ChildCharacter : Character {
 
         GameMaster.Instance.AddLog(childName + " is angry and needs a good slap !");
 
+        PlaySoundEvent(OnStartAnger);
+
         Freeze(true);
         if(state == ChildAIState.AT_TABLE)
         {
@@ -550,6 +554,9 @@ public class ChildCharacter : Character {
 
     void StopPotentialAnger ()
     {
+        if (isDoingAnger)
+            PlaySoundEvent(OnStopAnger);
+
         isDoingAnger = false;
 
         animator.SetBool("IsDoingAnger", isDoingAnger);
@@ -662,7 +669,8 @@ public class ChildCharacter : Character {
         SetNextAngerTime();
         LaunchAtTableAnim();
     }
-    
+
+    bool wasEating = false;
     void UpdateAtTable ()
     {
         CheckAnger();
@@ -671,6 +679,14 @@ public class ChildCharacter : Character {
         transform.rotation = curChairTransform.rotation;
 
         bool isEating = myPlate.IsFilled && !isDoingAnger;
+
+        if (isEating && !wasEating)
+            PlaySoundEvent(OnStartEating);
+
+        if (!isEating && wasEating)
+            PlaySoundEvent(OnStopEating);
+
+        wasEating = isEating;
 
         animator.SetBool("Eats", isEating);
         if (isEating)
@@ -739,10 +755,19 @@ public class ChildCharacter : Character {
 
     Vector3 lastPosition;
     bool isWalking = false;
+    bool wasWalking = false;
     void CheckIsWalking()
     {
 
         isWalking = Vector3.Distance(lastPosition, transform.position) > 0.005f;
+
+        if (isWalking && !wasWalking)
+            PlaySoundEvent(OnStartWalking);
+
+        if (!isWalking && wasWalking)
+            PlaySoundEvent(OnStopWalking);
+
+        wasWalking = isWalking;
 
         lastPosition = transform.position;
 
@@ -789,4 +814,28 @@ public class ChildCharacter : Character {
         animator.Play("Death");
     }
     #endregion
+
+    [Header("Sounds")]
+    [SerializeField]
+    AK.Wwise.Event OnSlapEvent = null;
+
+    [SerializeField]
+    AK.Wwise.Event OnStartAnger = null;
+    [SerializeField]
+    AK.Wwise.Event OnStopAnger = null;
+
+    [SerializeField]
+    AK.Wwise.Event OnStartEating = null;
+    [SerializeField]
+    AK.Wwise.Event OnStopEating = null;
+
+    [SerializeField]
+    AK.Wwise.Event OnStartWalking = null;
+    [SerializeField]
+    AK.Wwise.Event OnStopWalking = null;
+
+    void PlaySoundEvent(AK.Wwise.Event soundEvent)
+    {
+        soundEvent.Post(gameObject);
+    }
 }
