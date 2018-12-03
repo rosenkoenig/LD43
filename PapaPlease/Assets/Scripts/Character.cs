@@ -6,7 +6,8 @@ public class Character : MonoBehaviour {
 
     public Activity currentActivity = null;
 
-	
+    public ChildStatsContainer statsContainer;
+
     public virtual void OnActivityEnds()
     {
 

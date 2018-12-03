@@ -201,9 +201,11 @@ MonoBehaviour:
   iPtype: {fileID: 11400000, guid: 88b7a2a5fee7ce241b5954fc4ede72f0, type: 2}
   activity: {fileID: 114900431433536196}
   onlyUsableByChild: 1
+  _useActivityProgressInfo: 0
+  _activityProgressInfoPos: {fileID: 0}
   globalStatsModificator_OnCompleted: {fileID: 0}
-  globalStatsModificator_OverTimeEmpty: {fileID: 0}
-  globalStatsModificator_OverTimeFull: {fileID: 0}
+  globalStatsModificator_OverTimeCOMPLETED: {fileID: 0}
+  globalStatsModificator_OverTimeWAITING: {fileID: 0}
 --- !u!114 &114900431433536196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -218,4 +220,5 @@ MonoBehaviour:
   maxHolder: 1
   doOnce: 0
   animStateName: Idle
+  _activityResetDelay: 100
   duration: 10

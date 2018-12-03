@@ -7,34 +7,68 @@ public class ActivityHolder
     public float startTime = 0f;
     public float completionPercentage = 0f;
     public Character character;
+
+    public float GetActivityModifiersRatios(List<Activity.ActivityModifier> actMods)
+    {
+        float toReturn = 0;
+        foreach (var curActMod in actMods)
+        {
+            toReturn += curActMod._factor * (character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
+        }
+        return toReturn;
+    }
+
 }
 
 public enum ActivityState { WAITING, RUNNING, COMPLETE }
 [System.Serializable]
-public class Activity : MonoBehaviour {
-
-    ActivityState state = ActivityState.WAITING;
-    public ActivityState State {  get { return state; } }
-    public bool isRunning { get { return state == ActivityState.RUNNING; } }
+public class Activity : MonoBehaviour
+{
+    
+    ActivityState curActState = ActivityState.WAITING;
+    public ActivityState State { get { return curActState; } }
+    public bool isRunning { get { return curActState == ActivityState.RUNNING; } }
     public List<ActivityHolder> holders = new List<ActivityHolder>();
     public int maxHolder = 1;
     public bool doOnce = false;
     public string animStateName = "";
 
+    [SerializeField] float _activityResetDelay = 60f;
+
+    [SerializeField] protected List<ActivityModifier> _activityModifiers;
+    
+    float curActivityResetDelay;
+
     public float GetCompletionRatio { get; protected set; }
 
     public System.Action OnBegin, OnEnd;
 
-    public virtual bool IsAvailable (Character character)
+    private void Start()
     {
-        return holders.Count < maxHolder && state != ActivityState.COMPLETE;
+        GameMaster.Instance.gf.dm.onDayStarts += MakeResetActivity;
+    }
+
+    private void OnDestroy()
+    {
+        if(GameMaster.Instance != null)
+            GameMaster.Instance.gf.dm.onDayStarts -= MakeResetActivity;
+    }
+
+    public void MakeResetActivity()
+    {
+        SetState(ActivityState.WAITING);
+    }
+
+    public virtual bool IsAvailable(Character character)
+    {
+        return holders.Count < maxHolder && curActState != ActivityState.COMPLETE;
     }
     public virtual bool IsAvailable()
     {
-        return holders.Count < maxHolder && state != ActivityState.COMPLETE;
+        return holders.Count < maxHolder && curActState != ActivityState.COMPLETE;
     }
 
-    public virtual void Begin (Character character)
+    public virtual void Begin(Character character)
     {
         ActivityHolder holder = new ActivityHolder();
         holder.character = character;
@@ -54,18 +88,19 @@ public class Activity : MonoBehaviour {
         if (OnBegin != null) OnBegin();
     }
 
-    protected virtual void End (Character character)
+    protected virtual void End(Character character)
     {
         ActivityHolder holder = GetHolderForCharacter(character);
-        if(holder != null)
+        if (holder != null)
         {
             holders.Remove(holder);
         }
 
 
-        if(doOnce)
+        if (doOnce)
         {
             SetState(ActivityState.COMPLETE);
+            curActivityResetDelay = _activityResetDelay;
         }
         else
         {
@@ -80,46 +115,57 @@ public class Activity : MonoBehaviour {
         ChildCharacter child = character.GetComponent<ChildCharacter>();
         if (child)
         {
-            child.StartAnimState(animStateName+"_End");
+            child.StartAnimState(animStateName + "_End");
         }
 
         if (OnEnd != null) OnEnd();
     }
 
-    ActivityHolder GetHolderForCharacter (Character character)
+    ActivityHolder GetHolderForCharacter(Character character)
     {
         return holders.Find(x => x.character == character);
     }
 
-    protected virtual void SetState (ActivityState newState)
+    protected virtual void SetState(ActivityState newState)
     {
-        if (state != newState)
-            state = newState;
+        if (curActState != newState)
+            curActState = newState;
 
         Debug.Log("Activity state = " + newState, this);
     }
 
-    public void Update ()
+    public void Update()
     {
         UpdateState();
     }
 
-    protected virtual void UpdateState ()
+    protected virtual void UpdateState()
     {
-        switch(state)
+        switch (curActState)
         {
             case ActivityState.RUNNING:
                 UpdateRunningState();
                 break;
+            case ActivityState.COMPLETE:
+                if (GameMaster.Instance.gf.GetGameState == GameState.DAY)
+                {
+                    if (curActivityResetDelay > 0)
+                    {
+                        curActivityResetDelay -= (1 + GameMaster.Instance.vm.GetChildsIpDegradationAddedFactor) * Time.deltaTime;
+                    }
+                    else
+                        SetState(ActivityState.WAITING);
+                }
+                break;
         }
     }
 
-    protected virtual void UpdateRunningState ()
+    protected virtual void UpdateRunningState()
     {
-        
+
     }
 
-    public void CancelActivity (Character character)
+    public void CancelActivity(Character character)
     {
 
         Debug.Log("Cancel Activity");
@@ -134,5 +180,12 @@ public class Activity : MonoBehaviour {
         {
             child.StartAnimState(animStateName + "_End");
         }
+    }
+
+    [System.Serializable]
+    public class ActivityModifier
+    {
+        public ChildStatID _childStat;
+        public float _factor;
     }
 }

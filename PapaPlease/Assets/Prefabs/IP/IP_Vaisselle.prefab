@@ -1599,4 +1599,5 @@ MonoBehaviour:
   maxHolder: 1
   doOnce: 1
   animStateName: Idle
+  _activityResetDelay: 100
   duration: 6
