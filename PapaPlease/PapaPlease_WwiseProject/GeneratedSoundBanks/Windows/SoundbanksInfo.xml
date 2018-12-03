@@ -430,6 +430,10 @@
 					<ShortName>AI_Playing_Controler.wav</ShortName>
 					<Path>SFX\AI_Playing_Controler_0265BEE3.wem</Path>
 				</File>
+				<File Id="566566292" Language="SFX">
+					<ShortName>CC-CK VO Male 10 Deathscream OD.wav</ShortName>
+					<Path>SFX\CC-CK VO Male 10 Deathscream OD_F52F4675.wem</Path>
+				</File>
 				<File Id="581525195" Language="SFX">
 					<ShortName>AI_PeeingFloor\AI_Peeing_Floor_01.wav</ShortName>
 					<Path>SFX\AI_PeeingFloor\AI_Peeing_Floor_01_277C9A8F.wem</Path>
@@ -573,6 +577,10 @@
 				<File Id="953510464" Language="SFX">
 					<ShortName>Human, Eating, Chewing On Crispbread SND4233.wav</ShortName>
 					<Path>SFX\Human, Eating, Chewing On Crispbread SND4233_F52F4675.wem</Path>
+				</File>
+				<File Id="965526244" Language="SFX">
+					<ShortName>CC-CK VO Male 10 Deathscream OD 2.wav</ShortName>
+					<Path>SFX\CC-CK VO Male 10 Deathscream OD 2_F52F4675.wem</Path>
 				</File>
 				<File Id="976172791" Language="SFX">
 					<ShortName>AI_CleanWindow\Player_CleanWindow_01.wav</ShortName>

@@ -47,6 +47,7 @@ Switch	ID	Name	Switch Group			Notes
 	4179756143	AI_Walking	AI_Movements			
 
 Effect plug-ins	ID	Name	Type				Notes
+	3513212380	Kid_Die	Wwise Parametric EQ			
 	4180247629	New_Wwise_Parametric_EQ	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -112,6 +113,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	561154630	Toy_Car_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\AI_Playing\Toy_Car_03_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Activities\AI_Activities\AI_Playing\Toy_Car\Toy_Car_03		169229
 	561192105	AI_Bin_Movement_Metal_06	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\AI_CleanBin\AI_Bin_Movement_Metal_02_F96B9AE7.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Activities\AI_Activities\AI_CleanBin\AI_CleanBin_Seq\Bin_Rattles\Bin_Rattle_Metal\Metal_02\AI_Bin_Movement_Metal_06		108607
 	565774962	AI_Playing_Controler	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\AI_Playing_Controler_0265BEE3.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Activities\AI_Activities\AI_PlayingConsole\AI_Playing_Controler		430304
+	566566292	CC-CK VO Male 10 Deathscream OD	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\CC-CK VO Male 10 Deathscream OD_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Voices\AI_Die\CC-CK VO Male 10 Deathscream OD		14975
 	581525195	AI_Peeing_Floor_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\AI_PeeingFloor\AI_Peeing_Floor_01_277C9A8F.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Activities\AI_Activities\AI_PeeingFloor\AI_Peeing_Floor_01		57743
 	610105942	AI_Playing_Console	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\AI_Playing_Console_0265BEE3.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Activities\AI_Activities\AI_PlayingConsole\AI_Game\AI_Playing_Console		105149
 	613299941	AI_HitCry_05	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\AI_Hit\AI_HitCry_05_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Voices\AI_Hit\AI_HitCry_05		16962
@@ -148,6 +150,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	935772291	AI_Bin_Movement_Plastic_04	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\AI_CleanBin\AI_Bin_Movement_Plastic_01_3D451C27.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Activities\AI_Activities\AI_CleanBin\AI_CleanBin_Seq\Bin_Rattles\Bin_Rattle_Plastic\Plastic_02\AI_Bin_Movement_Plastic_04		90933
 	943020220	AI_Bin_Movement_Metal_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\AI_CleanBin\AI_Bin_Movement_Metal_01_E1554107.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Activities\AI_Activities\AI_CleanBin\AI_CleanBin_Seq\Bin_Rattles\Bin_Rattle_Metal\Metal_01\AI_Bin_Movement_Metal_01		61331
 	953510464	Human, Eating, Chewing On Crispbread SND4233	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Human, Eating, Chewing On Crispbread SND4233_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Activities\AI_Activities\AI_Eat\AI_Eating_Food\Human, Eating, Chewing On Crispbread SND4233		111369
+	965526244	CC-CK VO Male 10 Deathscream OD 2	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\CC-CK VO Male 10 Deathscream OD 2_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Voices\AI_Die\CC-CK VO Male 10 Deathscream OD 2		14142
 	976172791	Player_CleanWindow_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\AI_CleanWindow\Player_CleanWindow_01_C78C9E48.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Activities\AI_Activities\AI_CleanWindow\Player_CleanWindow_01		29116
 	976377343	grrr-st-sdo	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\grrr-st-sdo_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Voices\AI_Angry\grrr-st-sdo		24589
 	1000106572	AI_DishesBrush_Lp	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\AI_Dishes\AI_DishesBrush_Lp_0265BEE3.wem		\Actor-Mixer Hierarchy\PapaPlease\AI_Children\AI_Activities\AI_Activities\AI_Dishes\AI_DishesBrush_Lp		243576
