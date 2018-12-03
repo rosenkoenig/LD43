@@ -11,10 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e70b0733de2b646905d51a5f7b94dd, type: 3}
   m_Name: IPType_FUN
   m_EditorClassIdentifier: 
-  _ipName: Have fun
+  _childActivityName: Go play, child
   _duringActivityModifiers:
   - _childStatID: {fileID: 11400000, guid: 22772edbc05052140af78dcf860e7ea9, type: 2}
-    _factor: 0.25
+    _factor: 1
     _refill: 0
     _relativeChildStatID: {fileID: 0}
   _startActivityModifiers: []

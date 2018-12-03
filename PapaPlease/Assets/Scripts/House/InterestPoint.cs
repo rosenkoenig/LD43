@@ -6,7 +6,8 @@ public enum InterestPointModification { ON_COMPLETED, OVERTIME_EMPTY, OVERTIME_F
 public class InterestPoint : MonoBehaviour
 {
 
-    public string ipName = "";
+    [UnityEngine.Serialization.FormerlySerializedAs("ipName")]
+    public string playerActivityName = "";
     public Transform pivotPoint;
     [UnityEngine.Serialization.FormerlySerializedAs("type")]
     public IPType iPtype;

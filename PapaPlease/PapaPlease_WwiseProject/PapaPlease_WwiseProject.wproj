@@ -10873,11 +10873,11 @@
 										<XPos>0</XPos>
 										<YPos>0</YPos>
 										<Flags>5</Flags>
-										<SegmentShape>Log1</SegmentShape>
+										<SegmentShape>Log3</SegmentShape>
 									</Point>
 									<Point>
 										<XPos>100</XPos>
-										<YPos>-24.58205</YPos>
+										<YPos>-200</YPos>
 										<Flags>37</Flags>
 									</Point>
 								</PointList>
@@ -10895,6 +10895,7 @@
 										<XPos>0</XPos>
 										<YPos>0</YPos>
 										<Flags>5</Flags>
+										<SegmentShape>Exp1</SegmentShape>
 									</Point>
 									<Point>
 										<XPos>100</XPos>
@@ -10906,7 +10907,7 @@
 						</PlatformCurve>
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="HPF">
-						<PlatformCurve Platform="Linked" EnableCurve="false">
+						<PlatformCurve Platform="Linked" EnableCurve="true">
 							<Curve Name="" ID="{3B686DAA-B2B3-423D-8C81-AC897732F72D}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1"/>
@@ -10916,6 +10917,7 @@
 										<XPos>0</XPos>
 										<YPos>0</YPos>
 										<Flags>5</Flags>
+										<SegmentShape>Log2</SegmentShape>
 									</Point>
 									<Point>
 										<XPos>100</XPos>
@@ -10935,13 +10937,13 @@
 								<PointList>
 									<Point>
 										<XPos>0</XPos>
-										<YPos>0</YPos>
+										<YPos>-0</YPos>
 										<Flags>5</Flags>
-										<SegmentShape>Log1</SegmentShape>
+										<SegmentShape>Log2</SegmentShape>
 									</Point>
 									<Point>
 										<XPos>100</XPos>
-										<YPos>-24.13652</YPos>
+										<YPos>-200</YPos>
 										<Flags>37</Flags>
 									</Point>
 								</PointList>
@@ -10959,6 +10961,7 @@
 										<XPos>0</XPos>
 										<YPos>0</YPos>
 										<Flags>5</Flags>
+										<SegmentShape>Exp2</SegmentShape>
 									</Point>
 									<Point>
 										<XPos>100</XPos>
@@ -10970,7 +10973,7 @@
 						</PlatformCurve>
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="HPF">
-						<PlatformCurve Platform="Linked" EnableCurve="false">
+						<PlatformCurve Platform="Linked" EnableCurve="true">
 							<Curve Name="" ID="{9F75A44E-9003-4FDB-8D9E-A1600DA57D58}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1"/>
@@ -10980,6 +10983,7 @@
 										<XPos>0</XPos>
 										<YPos>0</YPos>
 										<Flags>5</Flags>
+										<SegmentShape>Log1</SegmentShape>
 									</Point>
 									<Point>
 										<XPos>100</XPos>

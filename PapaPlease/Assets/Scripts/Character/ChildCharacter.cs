@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public enum ChildAIState { WAITING, ROAMING, MOVING_TO_ACTIVITY, IN_ACTIVITY, AT_TABLE, DEAD }
+public enum ChildAIState { WAITING, ROAMING, MOVING_TO_ACTIVITY, IN_ACTIVITY, AT_TABLE, IN_MISSION, DEAD }
 public class ChildCharacter : Character {
     public HouseMaster hm = null;
 
@@ -87,7 +87,6 @@ public class ChildCharacter : Character {
 
     public void Init ()
     {
-        SetState(ChildAIState.WAITING);
 
         InitSkins();
 
@@ -190,7 +189,7 @@ public class ChildCharacter : Character {
         if (currentInterestPoint)
         {
             Debug.Log(childName + "has received a new IP");
-            GameMaster.Instance.AddLog(childName + " goes to " + currentInterestPoint.ipName);
+            GameMaster.Instance.AddLog(childName + " goes to " + currentInterestPoint.playerActivityName);
             SetState(ChildAIState.MOVING_TO_ACTIVITY, true);
         }
         else
@@ -213,6 +212,10 @@ public class ChildCharacter : Character {
         SetState(ChildAIState.WAITING);
     }
 
+    public void AttributeToMission ()
+    {
+        SetState(ChildAIState.IN_MISSION);
+    }
 
     #region Slap
     public void IsSlapped ()
@@ -329,6 +332,9 @@ public class ChildCharacter : Character {
             case ChildAIState.IN_ACTIVITY:
                 CancelActivity();
                 break;
+            case ChildAIState.IN_MISSION:
+                EndInMission();
+                break;
             case ChildAIState.AT_TABLE:
                 EndAtTable();
                 break;
@@ -350,6 +356,9 @@ public class ChildCharacter : Character {
                 break;
             case ChildAIState.AT_TABLE:
                 StartAtTable();
+                break;
+            case ChildAIState.IN_MISSION:
+                StartInMission();
                 break;
             case ChildAIState.DEAD:
                 StartDeath();
@@ -382,6 +391,9 @@ public class ChildCharacter : Character {
                 break;
             case ChildAIState.AT_TABLE:
                 UpdateAtTable();
+                break;
+            case ChildAIState.IN_MISSION:
+                UpdateInMission();
                 break;
             case ChildAIState.DEAD:
                 UpdateDeath();
@@ -589,7 +601,7 @@ public class ChildCharacter : Character {
         }
 
         isLerping = false;
-        Debug.Log(childName + " begins activity on " + currentInterestPoint.ipName);
+        Debug.Log(childName + " begins activity on " + currentInterestPoint.playerActivityName);
         SetState(ChildAIState.IN_ACTIVITY);
     }
 
@@ -627,7 +639,7 @@ public class ChildCharacter : Character {
     public override void OnActivityEnds()
     {
         base.OnActivityEnds();
-        GameMaster.Instance.AddLog(childName + " ends activity on " + currentInterestPoint.ipName);
+        GameMaster.Instance.AddLog(childName + " ends activity on " + currentInterestPoint.playerActivityName);
         currentActivity = null;
 
         currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.END_ACTIVITY, statsContainer);
@@ -686,6 +698,27 @@ public class ChildCharacter : Character {
     {
         myPlate = po;
     }
+
+    /// <summary>
+    /// IN MISSION STATE IN MISSION
+    /// </summary>
+    void StartInMission()
+    {
+        Freeze(true);
+        navAgent.enabled = false;
+        transform.position = Vector3.forward * 1000f;
+    }
+
+    void UpdateInMission()
+    {
+
+    }
+
+    void EndInMission ()
+    {
+
+    }
+
 
     /// <summary>
     /// AT TABLE STATE AT TABLE

@@ -6,7 +6,7 @@ using UnityEngine;
 public class ChildStatsModificator {
 
     [SerializeField] List<StatModifier> statsModifiers;
-
+    public List<StatModifier> GetStatModifier { get { return statsModifiers; } }
 
     public void TryModifyStats(ChildStatsContainer childStatsContainer, bool useDeltaTime = false)
     {

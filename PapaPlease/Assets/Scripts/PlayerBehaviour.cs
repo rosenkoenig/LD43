@@ -54,6 +54,11 @@ public class PlayerBehaviour : Character {
                 SetInteractActive(false);
                 GameMaster.Instance.uIMaster.DisplayMenuInteractChild(hoverChild, SetInteractActive);
             }
+            else if (hoverChild.ChildState == ChildAIState.AT_TABLE)
+            {
+                SetInteractActive(false);
+                GameMaster.Instance.uIMaster.DisplayChildInteractionMission(hoverChild, SetInteractActive);
+            }
         }
         else if (hoverIp)
         {
@@ -114,7 +119,7 @@ public class PlayerBehaviour : Character {
         if (ip)
         {
             hoverIp = ip;
-            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, ip.ipName);
+            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, ip.playerActivityName);
         }
         else if (ip == null)
         {
@@ -203,7 +208,7 @@ public class PlayerBehaviour : Character {
 
     public void BeginSlap ()
     {
-        if (GameMaster.Instance.uIMaster.childInteractionMenuIsDisplayed) return;
+        if (GameMaster.Instance.uIMaster.childInteractionMenuIsDisplayed || GameMaster.Instance.uIMaster.childInteractionMissionIsDisplayed) return;
 
         hasStartedSlap = true;
         arm.Play("Prepare");

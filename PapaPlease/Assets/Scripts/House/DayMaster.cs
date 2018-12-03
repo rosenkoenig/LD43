@@ -14,7 +14,7 @@ public class DayMaster : MonoBehaviour {
 
     public void Init ()
     {
-        StartDay();
+        dayTime = dayDuration;
     }
 
 	void Update()

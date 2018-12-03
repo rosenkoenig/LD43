@@ -16,6 +16,11 @@
 						<BlendContainer Name="Player_Footsteps" ID="{456B1B42-BCEF-4FEB-B591-798CA2C983EC}" ShortID="94282002">
 							<PropertyList>
 								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -4769,6 +4774,94 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="AI_Die" ID="{306BA503-FD5F-4969-AF33-A7B44A914D89}" ShortID="712798513">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A34D6EDC-5892-41DE-87E0-0A79ED656518}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="60"/>
+															<Property Name="Min" Type="Real64" Value="-60"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CC-CK VO Male 10 Deathscream OD" ID="{8A862CD5-9CA1-484F-8D56-0DE281616E85}" ShortID="297825786">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>380</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Kid_Die" ID="{31A537A8-7C82-4727-9AC9-34B301A109FB}" WorkUnitID="{EF23DAC8-E4A2-48B6-A013-9357809CF88E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CC-CK VO Male 10 Deathscream OD" ID="{D5A8C531-3E65-48F9-9A41-06C120546EC6}" ShortID="566566292">
+													<Language>SFX</Language>
+													<AudioFile>CC-CK VO Male 10 Deathscream OD.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CC-CK VO Male 10 Deathscream OD" ID="{D5A8C531-3E65-48F9-9A41-06C120546EC6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CC-CK VO Male 10 Deathscream OD 2" ID="{B9157DEC-DD47-4F84-B447-0453DC71C8DD}" ShortID="250672584">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>23</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>480</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CC-CK VO Male 10 Deathscream OD 2" ID="{B1F5D44B-D767-476F-92BB-814A5267F821}" ShortID="965526244">
+													<Language>SFX</Language>
+													<AudioFile>CC-CK VO Male 10 Deathscream OD 2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CC-CK VO Male 10 Deathscream OD 2" ID="{B1F5D44B-D767-476F-92BB-814A5267F821}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
 						<BlendContainer Name="AI_Activities" ID="{637FA1B2-B558-495D-88FE-C85C2B154F61}" ShortID="887640961">
@@ -4840,7 +4933,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-13</Value>
+														<Value>-5</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
@@ -4848,7 +4941,7 @@
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
 																	<Property Name="Max" Type="Real64" Value="2"/>
-																	<Property Name="Min" Type="Real64" Value="-3"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
@@ -4871,6 +4964,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Player_CleanWindow_01" ID="{4F3A18F7-5DAB-485C-9B8F-400E12F9719C}" ShortID="1000879328">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -4896,6 +4996,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Player_CleanWindow_02" ID="{7A341690-99B9-4743-8311-0EB75EF8CC18}" ShortID="277446660">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -4921,6 +5028,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Player_CleanWindow_03" ID="{C184BA29-D2EB-4157-A6A2-C0FD1FA80D26}" ShortID="588698191">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -4946,6 +5060,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Player_CleanWindow_04" ID="{FABD3F2B-2B5F-4954-B2E6-581669B816DD}" ShortID="883552559">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -5387,6 +5508,11 @@
 														</Property>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-9</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -6601,7 +6727,8 @@
 										</RandomSequenceContainer>
 										<BlendContainer Name="AI_CleanBin" ID="{6D0A4460-17AA-4F91-A2CB-F5AC4B852C16}" ShortID="149549643">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -7423,11 +7550,16 @@
 										</BlendContainer>
 										<BlendContainer Name="AI_CleanFloor" ID="{AFCC1CD6-A2A2-4E92-9CB7-A601BF7F2FE3}" ShortID="37255087">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
 														<Value>-21</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -7451,8 +7583,12 @@
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
-														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -8987,7 +9123,7 @@
 										</BlendContainer>
 										<BlendContainer Name="AI_Panier" ID="{329269A4-8C8F-4118-9EBB-70C3BD8D00C5}" ShortID="166520540">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="60"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -9131,7 +9267,7 @@
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-5</Value>
+																		<Value>-3</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -9169,7 +9305,17 @@
 														<Sound Name="AI_Playing_Console_02" ID="{7E5CB484-F2E5-4D7F-A697-D286C50CC6D6}" ShortID="303255979">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>23</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-12</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -9459,6 +9605,11 @@
 										<BlendContainer Name="AI_Television" ID="{AEAA662F-1EF9-4FA7-A2E0-3FB7E4A8CD45}" ShortID="173505766">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -9490,7 +9641,7 @@
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>3</Value>
+																		<Value>-6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -9523,7 +9674,7 @@
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>1</Value>
+																		<Value>-4</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -9554,7 +9705,7 @@
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-10</Value>
+																		<Value>-18</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -10023,7 +10174,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -10042,7 +10193,7 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -10318,9 +10469,6 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<BlendContainer Name="Amb_Balcony_Lp" ID="{DB30F900-06F2-49C2-8CB6-0B488598BF56}" ShortID="806249256">
-											<PropertyList>
-												<Property Name="BlendBehavior" Type="int16" Value="1"/>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -10421,6 +10569,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -10514,7 +10667,18 @@
 							<ChildrenList>
 								<BlendContainer Name="AmbOut_Wall_Neighborhood_Lp" ID="{5704E487-A74A-4F2E-801D-61D2D0155BEB}" ShortID="456129020">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -10555,10 +10719,15 @@
 								<BlendContainer Name="AmbOut_Bathroom_Neighborhood_Lp" ID="{832397B2-6F5F-4267-86AC-DB83B961FD31}" ShortID="860290728">
 									<PropertyList>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="Amb_Indoor_ThroughWall" ID="{49D35957-B5A6-4016-8FB0-DD68718D6058}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+											<ObjectRef Name="Amb_Bath_Neighbor" ID="{854A7E62-F83E-40D0-86F4-E8CBD16C7679}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -10597,7 +10766,7 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -10876,7 +11045,7 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -10921,7 +11090,7 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-7</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -10960,10 +11129,18 @@
 								</BlendContainer>
 								<BlendContainer Name="Amb_ParentsBedroom_Lp" ID="{0088DB89-AF2D-409E-AEE0-E176421EB299}" ShortID="576149104">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
