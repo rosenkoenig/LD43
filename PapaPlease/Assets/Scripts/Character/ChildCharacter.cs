@@ -157,6 +157,7 @@ public class ChildCharacter : Character {
         if (currentInterestPoint)
         {
             Debug.Log(childName + "has received a new IP");
+            GameMaster.Instance.log.AddLog(childName + " goes to " + currentInterestPoint.ipName);
             SetState(ChildAIState.MOVING_TO_ACTIVITY, true);
         }
         else
@@ -468,6 +469,8 @@ public class ChildCharacter : Character {
         Debug.Log("ANGER ANGER ANGER ANGER");
         isDoingAnger = true;
 
+        GameMaster.Instance.log.AddLog(childName + " is angry and needs a good slap !");
+
         Freeze(true);
         if(state == ChildAIState.AT_TABLE)
         {
@@ -550,6 +553,8 @@ public class ChildCharacter : Character {
     /// </summary>
     void StartInActivity ()
     {
+
+        GameMaster.Instance.log.AddLog(childName + " starts interacting with " + currentInterestPoint.iPtype.GetIPName);
         currentInterestPoint.Interact(this);
         
     }
