@@ -17,7 +17,7 @@ public class AkWwisePicker : UnityEditor.EditorWindow
 		PopulateTreeview();
 	}
 
-	private void OnEnable()
+	/*private void OnEnable()
 	{
 		if (string.IsNullOrEmpty(WwiseSettings.LoadSettings().WwiseProjectPath))
 			return;
@@ -25,7 +25,7 @@ public class AkWwisePicker : UnityEditor.EditorWindow
 		treeView.SaveExpansionStatus();
 		if (AkWwiseWWUBuilder.Populate())
 			PopulateTreeview();
-	}
+	}*/
 
 	public void OnGUI()
 	{

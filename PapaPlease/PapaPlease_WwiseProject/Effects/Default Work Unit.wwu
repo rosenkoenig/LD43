@@ -14,6 +14,15 @@
 						<Property Name="QFactorBand2" Type="Real32" Value="16.2"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="Kid_Die" ID="{31A537A8-7C82-4727-9AC9-34B301A109FB}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="97"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="1502"/>
+						<Property Name="GainBand2" Type="Real32" Value="-3.5"/>
+						<Property Name="GainBand3" Type="Real32" Value="2"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="13.6"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
