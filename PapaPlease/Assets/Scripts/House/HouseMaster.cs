@@ -12,6 +12,8 @@ public class HouseMaster : MonoBehaviour
 {
     public GameMaster gm = null;
 
+    [SerializeField] Transform _startInterestPointsParent;
+
     public List<InterestPoint> allInterestPoints { get; private set; }
     public List<Transform> allChairPivots;
     public List<Transform> allPlatePivots;
@@ -36,7 +38,7 @@ public class HouseMaster : MonoBehaviour
 
     private void Start()
     {
-        allInterestPoints = new List<InterestPoint>(GetComponentsInChildren<InterestPoint>());
+        allInterestPoints = new List<InterestPoint>(_startInterestPointsParent.GetComponentsInChildren<InterestPoint>());
     }
 
     public void Init ()

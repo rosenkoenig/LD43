@@ -14,6 +14,8 @@ public class ChildStatGauge : MonoBehaviour {
     [SerializeField] RectTransform _gaugeNegative;
     [SerializeField] RectTransform _gaugeParent;
 
+    [SerializeField] Image _titleGaugeToColor;
+
     ChildStatID _childStatID;
 
     public ChildStatID GetChildStatID { get { return _childStatID; } }
@@ -24,29 +26,43 @@ public class ChildStatGauge : MonoBehaviour {
         _statNameText.text = childStatID.StatName;
     }
 
+    public void SetGaugeColor(Color col)
+    {
+        _titleGaugeToColor.color = col;
+    }
+
     public void RefreshGauge(ChildStatsContainer.ChildStatInfo childStatInfo)
     {
-        _valueText.text = Mathf.Round(childStatInfo.currentValue).ToString();
+        float valueToDisplay = childStatInfo.currentValue;
+        if (childStatInfo.childStatID.IsDisplayReverseValue)
+        {
+            if(childStatInfo.childStatID.IsDoubleGauge && childStatInfo.childStatID.IsTitleGauge == false)
+                valueToDisplay = (childStatInfo.childStatID.MaxValue - childStatInfo.childStatID.MinValue) - valueToDisplay;
+            else
+                valueToDisplay = childStatInfo.childStatID.MaxValue - valueToDisplay;
+        }
+
+        _valueText.text = Mathf.Round(valueToDisplay).ToString();
         if (childStatInfo.childStatID.GetAddedJaugeText != "")
             _valueText.text += " " + childStatInfo.childStatID.GetAddedJaugeText;
         if (_isFromCenter)
         {
-            if(childStatInfo.currentValue < 0)
+            if(valueToDisplay < 0)
             {
                 _gaugePositive.sizeDelta = new Vector2 (0, _gaugePositive.sizeDelta.y);
-                _gaugeNegative.sizeDelta = new Vector2((_gaugeParent.sizeDelta.x / 2) * Mathf.Abs(childStatInfo.currentValue) / childStatInfo.childStatID.MaxValue,
+                _gaugeNegative.sizeDelta = new Vector2((_gaugeParent.sizeDelta.x / 2) * Mathf.Abs(valueToDisplay) / childStatInfo.childStatID.MaxValue,
                     _gaugeNegative.sizeDelta.y);
             }
             else
             {
                 _gaugeNegative.sizeDelta = new Vector2(0, _gaugeNegative.sizeDelta.y);
-                _gaugePositive.sizeDelta = new Vector2((_gaugeParent.sizeDelta.x / 2) * childStatInfo.currentValue / childStatInfo.childStatID.MaxValue,
+                _gaugePositive.sizeDelta = new Vector2((_gaugeParent.sizeDelta.x / 2) * valueToDisplay / childStatInfo.childStatID.MaxValue,
                     _gaugePositive.sizeDelta.y);
             }
         }
         else
         {
-            _gaugePositive.sizeDelta = new Vector2(_gaugeParent.sizeDelta.x * childStatInfo.currentValue / childStatInfo.childStatID.MaxValue,
+            _gaugePositive.sizeDelta = new Vector2(_gaugeParent.sizeDelta.x * valueToDisplay / childStatInfo.childStatID.MaxValue,
                     _gaugePositive.sizeDelta.y);
         }
     }

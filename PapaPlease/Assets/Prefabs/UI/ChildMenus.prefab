@@ -675,6 +675,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _childStatIdsContainer: {fileID: 11400000, guid: 325898cad7d46bb448f71a10de5ab027,
     type: 2}
+  _childStatTitleGaugeRef: {fileID: 114285795794562324, guid: 2517945737f353a4094a72331a33753e,
+    type: 2}
   _childStatGaugeRef: {fileID: 114529301233165542, guid: 2f71134ca23acc04d9996af38f0bc8cf,
     type: 2}
   _childStatSkillRef: {fileID: 114776934761782858, guid: 1191669958278384aad33b7cc478c1a7,
@@ -1045,7 +1047,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 180, y: 230}
+  m_SizeDelta: {x: 200, y: 230}
   m_Pivot: {x: 1, y: 1}
 --- !u!224 &224778469707692714
 RectTransform:
