@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>35</Value>

@@ -622,6 +622,7 @@ MonoBehaviour:
   wallet: {fileID: 454426459}
   log: {fileID: 1912595065}
   ipTypeFun: {fileID: 11400000, guid: 88b7a2a5fee7ce241b5954fc4ede72f0, type: 2}
+  healthStat: {fileID: 11400000, guid: 13507abb539c6bf44aa224ffe9cb8f27, type: 2}
 --- !u!4 &454426456
 Transform:
   m_ObjectHideFlags: 0

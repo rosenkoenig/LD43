@@ -4,11 +4,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	636593309	Play_AI_PeeingFloor			\PapaPlease\AI\Play_AI_PeeingFloor	
 	861642119	Play_AI_Television			\PapaPlease\AI\Play_AI_Television	
 	1064386371	Stop_AI_CleanBin			\PapaPlease\AI\Stop_AI_CleanBin	
-	1120423820	Stop_AI_Angry			\Default Work Unit\Stop_AI_Angry	
+	1120423820	Stop_AI_Angry			\PapaPlease\AI\Stop_AI_Angry	
 	1180166316	Stop_AI_Wash			\PapaPlease\AI\Stop_AI_Wash	
 	1202448914	Play_AI_Console			\PapaPlease\AI\Play_AI_Console	
 	1459777202	Play_AI_CleanWindow			\PapaPlease\AI\Play_AI_CleanWindow	
-	1552894068	Stop_AI_Hit			\Default Work Unit\Stop_AI_Hit	
+	1552894068	Stop_AI_Hit			\PapaPlease\AI\Stop_AI_Hit	
 	1558212960	Play_AI_Lavabo			\PapaPlease\AI\Play_AI_Lavabo	
 	1614196089	Play_AI_Peeing			\PapaPlease\AI\Play_AI_Peeing	
 	1693507588	Stop_AI_CleanWindow			\PapaPlease\AI\Stop_AI_CleanWindow	
@@ -20,10 +20,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	2698630197	Stop_AI_Playing			\PapaPlease\AI\Stop_AI_Playing	
 	2890421503	Play_AI_Dishes			\PapaPlease\AI\Play_AI_Dishes	
 	2950347541	Play_AI_Shower			\PapaPlease\AI\Play_AI_Shower	
-	3117191778	Play_AI_Hit			\Default Work Unit\Play_AI_Hit	
+	3117191778	Play_AI_Hit			\PapaPlease\AI\Play_AI_Hit	
 	3317684595	Play_AI_Eat			\PapaPlease\AI\Play_AI_Eat	
 	3353979151	Stop_AI_Peeing			\PapaPlease\AI\Stop_AI_Peeing	
-	3376672086	Play_AI_Angry			\Default Work Unit\Play_AI_Angry	
+	3376672086	Play_AI_Angry			\PapaPlease\AI\Play_AI_Angry	
 	3511894251	Play_AI_Playing			\PapaPlease\AI\Play_AI_Playing	
 	3563372582	Play_AI_Wash			\PapaPlease\AI\Play_AI_Wash	
 	3636964221	Play_AI_CleanBin			\PapaPlease\AI\Play_AI_CleanBin	
