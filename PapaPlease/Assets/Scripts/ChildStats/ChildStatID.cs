@@ -9,7 +9,12 @@ public class ChildStatID : ScriptableObject {
 
     [SerializeField] float _maxValue;
 
+    [UnityEngine.Serialization.FormerlySerializedAs("_isDisplayedAsGauge")]
+    [SerializeField] bool _isBetweenNegativeAndPositive;
+
     [SerializeField] float _startValue;
+
+    [SerializeField] float _playerValue;
 
     [Header("Display gauge")]
     [SerializeField] string _addedJaugeText;
@@ -17,8 +22,7 @@ public class ChildStatID : ScriptableObject {
     [SerializeField] bool _isTitleGauge;
     [SerializeField] Color _titleGaugeColor;
 
-    [UnityEngine.Serialization.FormerlySerializedAs("_isDisplayedAsGauge")]
-    [SerializeField] bool _isBetweenNegativeAndPositive;
+    
 
     [SerializeField] bool _displayReverseValue;
     
@@ -29,6 +33,8 @@ public class ChildStatID : ScriptableObject {
     public float MaxValue { get { return _maxValue; } }
 
     public float GetStartValue { get { return _startValue; } }
+
+    public float GetPlayerValue { get { return _playerValue; } }
 
     public string GetAddedJaugeText { get { return _addedJaugeText; } }
 

@@ -13,10 +13,22 @@ public class ActivityHolder
         float toReturn = 0;
         foreach (var curActMod in actMods)
         {
-            toReturn += curActMod._factor * (character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
+            if(curActMod._isFromMaxToMin)
+            { 
+                toReturn += curActMod._factor * (1 - character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
+                Debug.Log("ActivityModifier MAXFROMMIN: " + toReturn + "__ratio: " + character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
+            }
+            else
+            { 
+                toReturn += curActMod._factor * (character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
+                Debug.Log("ActivityModifier NORMAL: " + toReturn);
+            }
         }
         if (toReturn < -0.8f)
             toReturn = -0.8f;
+
+        Debug.Log("ActivityModifiers result: " + toReturn);
+
         return toReturn;
     }
 
@@ -83,7 +95,7 @@ public class Activity : MonoBehaviour
 
         holders.Add(holder);
 
-        if (_akEventPlay != null)
+        if (_akEventPlay != null && _akEventPlay.IsValid())
             _akEventPlay.Post(gameObject);
 
         SetState(ActivityState.RUNNING);
@@ -104,7 +116,7 @@ public class Activity : MonoBehaviour
         {
             holders.Remove(holder);
 
-            if (_akEventStop != null)
+            if (_akEventStop != null && _akEventStop.IsValid())
                 _akEventStop.Post(gameObject);
         }
 
@@ -200,4 +212,5 @@ public class ActivityModifier
 {
     public ChildStatID _childStat;
     public float _factor;
+    public bool _isFromMaxToMin;
 }
