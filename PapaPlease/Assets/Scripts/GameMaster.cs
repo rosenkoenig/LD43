@@ -13,6 +13,8 @@ public class GameMaster : MonoBehaviour {
 
     public static GameMaster Instance { get { return _instance; } }
 
+    public IPType ipTypeFun = null;
+
 	// Use this for initialization
     void Awake ()
     {
@@ -20,6 +22,7 @@ public class GameMaster : MonoBehaviour {
         vm.gm = this;
         hm.gm = this;
         gf.gm = this;
+        uIMaster.Init();
         gf.Init();
         vm.Init();
     }

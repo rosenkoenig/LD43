@@ -17,18 +17,6 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="Foley" ID="{C5E9B3CE-3963-4753-ACD6-58807E6C4094}">
-					<PropertyList>
-						<Property Name="Maximum" Type="int32">
-							<ValueList>
-								<Value>100000000</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ObjectInclusionList/>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
 				<SoundBank Name="SFX" ID="{F8BDC979-4DED-4131-95D1-E0BB76F7C22A}">
 					<PropertyList>
 						<Property Name="Maximum" Type="int32">

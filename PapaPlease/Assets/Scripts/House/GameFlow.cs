@@ -41,11 +41,13 @@ public class GameFlow : MonoBehaviour {
     public void BeginTablePhase ()
     {
         SetGameState(GameState.TABLE);
+        gm.uIMaster.OnTableStarts();
     }
 
     public void EndTablePhase ()
     {
         SetGameState(GameState.MORNING_TRANSITIOn);
+        gm.uIMaster.OnTableEnds();
     }
 
     void SetGameState (GameState newState)

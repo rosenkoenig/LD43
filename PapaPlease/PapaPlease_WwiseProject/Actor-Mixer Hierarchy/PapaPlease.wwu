@@ -6,7 +6,7 @@
 				<ActorMixer Name="Player" ID="{66FD8086-7196-42FD-A566-7E302AF2B374}" ShortID="560716910">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
@@ -393,6 +393,13 @@
 							</ChildrenList>
 						</BlendContainer>
 						<RandomSequenceContainer Name="Player_CleanWindow" ID="{D0A3E5E2-A25F-4049-8B53-FACECE8B631B}" ShortID="981075769">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -1052,9 +1059,6 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>AI_Shower\AI_Shower_Off\AI_Shower_Off_01.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="1005253050"/>
-															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1078,9 +1082,6 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>AI_Shower\AI_Shower_Off\AI_Shower_Off_02.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="227774774"/>
-															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1116,9 +1117,6 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>AI_Shower\AI_Shower_On\AI_Shower_On_01.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="276963228"/>
-															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1142,9 +1140,6 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>AI_Shower\AI_Shower_On\AI_Shower_On_02.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="725059544"/>
-															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1176,9 +1171,6 @@
 														<AudioFileSource Name="AI_Shower_Lp" ID="{C2E37DFE-1EB2-4F05-8D42-AD6FCABA630C}" ShortID="134787427">
 															<Language>SFX</Language>
 															<AudioFile>AI_Shower\AI_Shower_Lp\AI_Shower_Lp.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="1038670129"/>
-															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1233,9 +1225,6 @@
 										<AudioFileSource Name="AI_FlushToilet_01" ID="{CC28C9BA-C9C0-4E8F-A82D-E86B182F134E}" ShortID="218301121">
 											<Language>SFX</Language>
 											<AudioFile>AI_Flush\AI_FlushToilet_01.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="903233539"/>
-											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1255,9 +1244,6 @@
 										<AudioFileSource Name="AI_FlushToilet_02" ID="{2A783EAD-008D-4D25-A26B-61465F5BE12A}" ShortID="444206033">
 											<Language>SFX</Language>
 											<AudioFile>AI_Flush\AI_FlushToilet_02.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="1067503887"/>
-											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1277,9 +1263,6 @@
 										<AudioFileSource Name="AI_FlushToilet_03" ID="{398B5E27-F241-4EC5-8B2B-47591A976015}" ShortID="589315946">
 											<Language>SFX</Language>
 											<AudioFile>AI_Flush\AI_FlushToilet_03.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="1009172163"/>
-											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1332,9 +1315,6 @@
 												<AudioFileSource Name="AI_Cooking_Boil_Lp-01" ID="{FBADEE2B-4A7D-40A3-9F8D-02EF4E1D4FAB}" ShortID="1024918717">
 													<Language>SFX</Language>
 													<AudioFile>AI_Cooking\AI_Cooking_Boil_Lp-01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="489392716"/>
-													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1365,9 +1345,6 @@
 												<AudioFileSource Name="AI_Cooking_Fry_Lp-01" ID="{81ABA8CB-4E44-4D44-B449-85EC304DA0AA}" ShortID="880998539">
 													<Language>SFX</Language>
 													<AudioFile>AI_Cooking\AI_Cooking_Fry_Lp-01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="841810316"/>
-													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1476,7 +1453,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="860754173"/>
+																<File ID="935417706"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1510,7 +1487,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="229319829"/>
+																<File ID="345903383"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1544,7 +1521,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="139731220"/>
+																<File ID="335387735"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1578,7 +1555,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="307194117"/>
+																<File ID="526595985"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1612,7 +1589,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="296378068"/>
+																<File ID="351760469"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1646,7 +1623,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="811873227"/>
+																<File ID="719172788"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1680,7 +1657,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="452577157"/>
+																<File ID="676373364"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1714,7 +1691,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="803631008"/>
+																<File ID="694118993"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1748,7 +1725,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="228320575"/>
+																<File ID="342456217"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1782,7 +1759,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="917661403"/>
+																<File ID="990017600"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1815,7 +1792,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="449910420"/>
+																<File ID="545781685"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1882,7 +1859,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_02.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="155407752"/>
+																<File ID="507562771"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1915,7 +1892,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_02.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="83272020"/>
+																<File ID="83966451"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1949,7 +1926,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_02.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="686406300"/>
+																<File ID="925843002"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1983,7 +1960,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_02.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="577796919"/>
+																<File ID="581707974"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2017,7 +1994,7 @@
 															<Language>SFX</Language>
 															<AudioFile>AI_Cooking\AI_Cooking_Slice_02.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="124884203"/>
+																<File ID="255065438"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2054,9 +2031,6 @@
 										<AudioFileSource Name="AI_DishesBrush_Lp" ID="{859D6D94-323B-4538-8442-260A03579EB8}" ShortID="722807354">
 											<Language>SFX</Language>
 											<AudioFile>AI_Dishes\AI_DishesBrush_Lp.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="1000106572"/>
-											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2076,9 +2050,6 @@
 										<AudioFileSource Name="AI_DishesWaterFlow_Lp_L" ID="{530EC265-5D30-4312-B98F-15D5F79C3B12}" ShortID="818042032">
 											<Language>SFX</Language>
 											<AudioFile>AI_Dishes\AI_DishesWaterFlow_Lp.L.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="900151864"/>
-											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2098,9 +2069,6 @@
 										<AudioFileSource Name="AI_Dishes_01" ID="{4327CAD3-1981-483D-A948-C3FD5BABC9B5}" ShortID="554857778">
 											<Language>SFX</Language>
 											<AudioFile>AI_Dishes\AI_Dishes_01.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="279495801"/>
-											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2120,9 +2088,6 @@
 										<AudioFileSource Name="AI_Dishes_02" ID="{B38592FE-54A9-4A27-BC51-35D8EB304EEE}" ShortID="768879026">
 											<Language>SFX</Language>
 											<AudioFile>AI_Dishes\AI_Dishes_02.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="912390004"/>
-											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2142,7 +2107,7 @@
 							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
 						</Reference>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
@@ -3293,6 +3258,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Shower\AI_Shower_On\AI_Shower_On_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="650818699"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -3316,6 +3284,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Shower\AI_Shower_On\AI_Shower_On_02.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="104877949"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -3358,6 +3329,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Shower\AI_Shower_Off\AI_Shower_Off_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="270437183"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -3381,6 +3355,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Shower\AI_Shower_Off\AI_Shower_Off_02.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="730470174"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -3406,6 +3383,9 @@
 															</ReferenceList>
 															<ChildrenList>
 																<Sound Name="AI_Shower_Lp" ID="{81D9C3BC-7B26-4565-B8B1-AD185FFBAE9A}" ShortID="409539538">
+																	<PropertyList>
+																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -3474,7 +3454,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-13</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3500,6 +3480,9 @@
 														<AudioFileSource Name="AI_FlushToilet_01" ID="{C15155F7-2742-4E11-B415-7A7006AD0A1D}" ShortID="903233539">
 															<Language>SFX</Language>
 															<AudioFile>AI_Flush\AI_FlushToilet_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="218301121"/>
+															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -3519,6 +3502,9 @@
 														<AudioFileSource Name="AI_FlushToilet_02" ID="{C9C2195C-39AC-415D-8DCD-81830F656E54}" ShortID="1067503887">
 															<Language>SFX</Language>
 															<AudioFile>AI_Flush\AI_FlushToilet_02.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="444206033"/>
+															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -3538,6 +3524,9 @@
 														<AudioFileSource Name="AI_FlushToilet_03" ID="{879809B0-5C72-4508-85A3-FC53BE0A7C79}" ShortID="1009172163">
 															<Language>SFX</Language>
 															<AudioFile>AI_Flush\AI_FlushToilet_03.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="589315946"/>
+															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -3590,6 +3579,9 @@
 																<AudioFileSource Name="AI_Cooking_Boil_Lp-01" ID="{705704CA-31FA-4C54-B40D-36BE7768D2F2}" ShortID="489392716">
 																	<Language>SFX</Language>
 																	<AudioFile>AI_Cooking\AI_Cooking_Boil_Lp-01.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="1024918717"/>
+																	</ConvertedFileIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3620,6 +3612,9 @@
 																<AudioFileSource Name="AI_Cooking_Fry_Lp-01" ID="{33EB2AE8-280B-4EAB-B75D-970929B92E82}" ShortID="841810316">
 																	<Language>SFX</Language>
 																	<AudioFile>AI_Cooking\AI_Cooking_Fry_Lp-01.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="880998539"/>
+																	</ConvertedFileIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3734,6 +3729,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="935417706"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -3765,6 +3763,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="345903383"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -3796,6 +3797,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="335387735"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -3827,6 +3831,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="526595985"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -3858,6 +3865,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="351760469"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -3889,6 +3899,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="719172788"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -3920,6 +3933,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="676373364"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -3951,6 +3967,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="694118993"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -3982,6 +4001,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="342456217"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -4013,6 +4035,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="990017600"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -4043,6 +4068,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="545781685"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -4108,7 +4136,7 @@
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_02.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="155407752"/>
+																				<File ID="507562771"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
@@ -4141,7 +4169,7 @@
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_02.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="83272020"/>
+																				<File ID="83966451"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
@@ -4175,7 +4203,7 @@
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_02.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="686406300"/>
+																				<File ID="925843002"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
@@ -4208,6 +4236,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_02.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="581707974"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -4239,6 +4270,9 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>AI_Cooking\AI_Cooking_Slice_02.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="255065438"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -4262,6 +4296,14 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="AI_DishesBrush_Lp" ID="{50EDFCDC-671D-44F3-A7F6-B3E174874AD5}" ShortID="180984979">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-16</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -4281,9 +4323,21 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="AI_DishesWaterFlow_Lp_L" ID="{0927D242-E166-489E-81C6-D04E096DDE7B}" ShortID="665115319">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-14</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<ObjectRef Name="New_Wwise_Parametric_EQ" ID="{8BC75F32-BCEF-4322-9306-724F7CDCD589}" WorkUnitID="{EF23DAC8-E4A2-48B6-A013-9357809CF88E}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
@@ -4299,7 +4353,18 @@
 														<ActiveSource Name="AI_DishesWaterFlow_Lp_L" ID="{080A3EB1-B796-4422-96C4-923EB57E52BA}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="AI_Dishes_01" ID="{2B842F14-3C47-4310-95DF-3CA574A6F4FA}" ShortID="590649716">
+												<RandomSequenceContainer Name="AI_Dishes_Lp" ID="{B7450935-DCDD-41CE-8B1E-6C9C841E0854}" ShortID="724915443">
+													<PropertyList>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -4309,34 +4374,64 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="AI_Dishes_01" ID="{F0800EE1-A9D0-4BA5-BF1C-B1635D3AFB5B}" ShortID="279495801">
-															<Language>SFX</Language>
-															<AudioFile>AI_Dishes\AI_Dishes_01.wav</AudioFile>
-														</AudioFileSource>
+														<Sound Name="AI_Dishes_01" ID="{2B842F14-3C47-4310-95DF-3CA574A6F4FA}" ShortID="590649716">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AI_Dishes_01" ID="{F0800EE1-A9D0-4BA5-BF1C-B1635D3AFB5B}" ShortID="279495801">
+																	<Language>SFX</Language>
+																	<AudioFile>AI_Dishes\AI_Dishes_01.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="554857778"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AI_Dishes_01" ID="{F0800EE1-A9D0-4BA5-BF1C-B1635D3AFB5B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AI_Dishes_02" ID="{EAC30AC5-A784-4CE5-B88C-F6109030287D}" ShortID="869469154">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AI_Dishes_02" ID="{5AA5DF40-8F8E-4769-9B7B-76BFA7BF422D}" ShortID="912390004">
+																	<Language>SFX</Language>
+																	<AudioFile>AI_Dishes\AI_Dishes_02.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="768879026"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AI_Dishes_02" ID="{5AA5DF40-8F8E-4769-9B7B-76BFA7BF422D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AI_Dishes_01" ID="{F0800EE1-A9D0-4BA5-BF1C-B1635D3AFB5B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AI_Dishes_02" ID="{EAC30AC5-A784-4CE5-B88C-F6109030287D}" ShortID="869469154">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AI_Dishes_02" ID="{5AA5DF40-8F8E-4769-9B7B-76BFA7BF422D}" ShortID="912390004">
-															<Language>SFX</Language>
-															<AudioFile>AI_Dishes\AI_Dishes_02.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AI_Dishes_02" ID="{5AA5DF40-8F8E-4769-9B7B-76BFA7BF422D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												</RandomSequenceContainer>
 											</ChildrenList>
 										</BlendContainer>
 										<BlendContainer Name="AI_Idle" ID="{166E5273-C44F-43B6-8F59-37F039790883}" ShortID="643674761">
@@ -4355,6 +4450,2461 @@
 												</Reference>
 											</ReferenceList>
 										</BlendContainer>
+										<RandomSequenceContainer Name="AI_Zip" ID="{869CDAA5-62EF-4A97-84BC-87752DF60525}" ShortID="1021411360">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AEF27445-3DA5-40C1-B79F-E04BC40F1017}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="202"/>
+																	<Property Name="Min" Type="Real64" Value="-126"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-17</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{670C2E7D-7F67-4010-A1D1-B4D441ADB1C5}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Bathroom_Reverb" ID="{4300066D-F683-4A47-85BF-1D3F86ED0C8B}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Zipper, Short 4 SND6132" ID="{A516969E-BE3D-46F4-9A48-96935C6347CE}" ShortID="488842665">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-18</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Zipper, Short 4 SND6132" ID="{D767D504-1BE6-4B0E-9A4B-187AE7499D06}" ShortID="326960965">
+															<Language>SFX</Language>
+															<AudioFile>Zipper, Short 4 SND6132.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Zipper, Short 4 SND6132" ID="{D767D504-1BE6-4B0E-9A4B-187AE7499D06}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Zipper, Short 2 SND6134" ID="{5B33782C-5398-4082-A73C-A8FC02082C45}" ShortID="1031223188">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-23</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Zipper, Short 2 SND6134" ID="{D2A40705-68F3-441C-9E7D-EAA3556F54DD}" ShortID="618809367">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.86315789473684E-02"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.181052631578947"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Zipper, Short 2 SND6134.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Zipper, Short 2 SND6134" ID="{D2A40705-68F3-441C-9E7D-EAA3556F54DD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Zipper, Short 5 SND6131" ID="{1E5549DC-32F2-4CDC-8F2C-9FA6BCF07226}" ShortID="758554331">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-18</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Zipper, Short 5 SND6131" ID="{539B79EF-A8F1-4163-A490-AA9F1D04D174}" ShortID="192555610">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="1.31578947368421E-02"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="9.31578947368421E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.220526315789474"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.537894736842105"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Zipper, Short 5 SND6131.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Zipper, Short 5 SND6131" ID="{539B79EF-A8F1-4163-A490-AA9F1D04D174}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="AI_Playing" ID="{4970869C-1EB2-4785-BCD6-1F61D1AC5123}" ShortID="38300528">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Toy_Cards" ID="{AAF46DB3-8B22-4791-9EF2-84656252B0BA}" ShortID="205831638">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Toy_Cards" ID="{374E5B52-BFE0-464C-A08A-B5ACB670CAE5}" ShortID="877277569">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.271231862888305"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.223367416496252"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AI_Playing\Toy_Cards.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Toy_Cards" ID="{374E5B52-BFE0-464C-A08A-B5ACB670CAE5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="Toy_Car" ID="{6E0E22E4-A3F8-481E-84F0-377E87A179F1}" ShortID="921490723">
+													<PropertyList>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{2A06774D-A43F-4A4A-A732-475CEBCA1455}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Toy_Car_01" ID="{261D571D-4265-437A-91EE-2CD15CED56E2}" ShortID="529417645">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Toy_Car_01" ID="{ED26B2D1-86BD-4694-87BE-4BBE62522D46}" ShortID="651248153">
+																	<Language>SFX</Language>
+																	<AudioFile>AI_Playing\Toy_Car_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Toy_Car_01" ID="{ED26B2D1-86BD-4694-87BE-4BBE62522D46}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Toy_Car_02" ID="{3594D7E7-6932-4B4C-8801-8325D5D1260D}" ShortID="884750664">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Toy_Car_02" ID="{F697F574-106A-40A4-A3E0-D4D7CEAA3333}" ShortID="439218616">
+																	<Language>SFX</Language>
+																	<AudioFile>AI_Playing\Toy_Car_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Toy_Car_02" ID="{F697F574-106A-40A4-A3E0-D4D7CEAA3333}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Toy_Car_03" ID="{15DF13A7-E2D9-40F1-9966-4B53E6383637}" ShortID="563077">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Toy_Car_03" ID="{7446FCF1-3FD6-4845-86C2-F88EC24D97CC}" ShortID="561154630">
+																	<Language>SFX</Language>
+																	<AudioFile>AI_Playing\Toy_Car_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Toy_Car_03" ID="{7446FCF1-3FD6-4845-86C2-F88EC24D97CC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Toy_Car_04" ID="{E5F37CD6-5352-429E-B65C-B2C228DB5F2B}" ShortID="320414501">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																<Property Name="UserAuxSendVolume0" Type="Real64">
+																	<ValueList>
+																		<Value>-14</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-13</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Toy_Cards_04" ID="{92F56405-AAC1-4793-BDC6-39BA367709BE}" ShortID="344895232">
+																	<Language>SFX</Language>
+																	<AudioFile>AI_Playing\Toy_Cards_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Toy_Cards_04" ID="{92F56405-AAC1-4793-BDC6-39BA367709BE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<BlendContainer Name="Toy_TrainBrouhaha" ID="{CC693ECC-E55D-4C26-9D39-ACB85F4CD0EB}" ShortID="90771186">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="Toy_Train" ID="{8B58E460-D0B0-4C5B-ABCE-43FCFC007D6E}" ShortID="425682284">
+															<PropertyList>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ValueList>
+																		<Value>0.2</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{88F51D38-C3F9-4D54-A433-900D7D123C76}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="4"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Toy_Train" ID="{700DE826-2D03-4FDC-8041-8385C7432D37}" ShortID="1004368083">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																		<Property Name="UserAuxSendVolume0" Type="Real64">
+																			<ValueList>
+																				<Value>-22</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-24</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Train" ID="{613CA1D0-EA23-4C6C-AEC4-CB78A4E351CD}" ShortID="870193529">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.108943143719656"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.0038332528454"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Train.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Train" ID="{613CA1D0-EA23-4C6C-AEC4-CB78A4E351CD}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Train_01" ID="{2D85C387-D936-46DA-84E8-D6DC01436B85}" ShortID="338743656">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																		<Property Name="UserAuxSendVolume0" Type="Real64">
+																			<ValueList>
+																				<Value>-22</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-24</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Train" ID="{51DB0C12-D17C-4EEC-B5B1-625157CF9643}" ShortID="349225924">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.108943143719656"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.26062780589887"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.54460057116624"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Train.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Train" ID="{51DB0C12-D17C-4EEC-B5B1-625157CF9643}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Train_02" ID="{0C8735E9-59CD-4942-B066-3F28AD2EAD7C}" ShortID="1069698040">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																		<Property Name="UserAuxSendVolume0" Type="Real64">
+																			<ValueList>
+																				<Value>-22</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-24</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Train" ID="{BFECBDC8-481B-4022-BEC9-606499DA113B}" ShortID="546034873">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.108943143719656"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.8947749616937"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="4.36550740190905"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Train.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Train" ID="{BFECBDC8-481B-4022-BEC9-606499DA113B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Train_03" ID="{5E36A29A-6EFB-485D-83E8-3F29E0B938E1}" ShortID="228851910">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																		<Property Name="UserAuxSendVolume0" Type="Real64">
+																			<ValueList>
+																				<Value>-22</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-24</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Train" ID="{0662EB9E-C407-4BC5-B2BB-380B16692858}" ShortID="96637934">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="7.78165312283257E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.108943143719656"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="6.07747108893221"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="7.89059626655219"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Train.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="976869618"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Train" ID="{0662EB9E-C407-4BC5-B2BB-380B16692858}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Train_04" ID="{ADE79F97-0ED7-4F64-B90B-E2CFF78E9BCA}" ShortID="564292373">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																		<Property Name="UserAuxSendVolume0" Type="Real64">
+																			<ValueList>
+																				<Value>-22</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-24</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Train" ID="{82A6BCBE-328D-4C37-9863-204D56DAC6ED}" ShortID="976869618">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.108943143719656"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="4.43554228001455"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="5.91405637335273"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Train.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="96637934"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Train" ID="{82A6BCBE-328D-4C37-9863-204D56DAC6ED}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Train_05" ID="{D64191D2-FA75-4A27-922B-C753BFBBC8BD}" ShortID="203740729">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																		<Property Name="UserAuxSendVolume0" Type="Real64">
+																			<ValueList>
+																				<Value>-22</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-24</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Train" ID="{688782FF-2E1D-4CF4-B51D-2875AFC80136}" ShortID="362843075">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.108943143719656"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="8.05401098213167"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Train.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Train" ID="{688782FF-2E1D-4CF4-B51D-2875AFC80136}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="Toy_Train_Motor" ID="{5C456833-49EC-4D22-A2A4-028A64CDCF78}" ShortID="522196743">
+															<PropertyList>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-10</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Toy_Train_Movement" ID="{AC193A6F-9979-475A-B035-715B3C41AC93}" ShortID="35726980">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy 6058_86" ID="{03C75F4D-AFA4-4417-B552-C9B8E8865C08}" ShortID="847724423">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.665309560327199"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Toy 6058_86.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="511062081"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy 6058_86" ID="{03C75F4D-AFA4-4417-B552-C9B8E8865C08}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Train_Movement_01" ID="{F1148840-B5A0-49FC-8AB5-BF1360829CA4}" ShortID="523088507">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy 6058_86" ID="{0D77582A-B011-4DB8-BE72-515517949BF0}" ShortID="511062081">
+																			<Language>SFX</Language>
+																			<AudioFile>Toy 6058_86.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="847724423"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy 6058_86" ID="{0D77582A-B011-4DB8-BE72-515517949BF0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="Toy_Multiple" ID="{FE0CFA4F-E2D1-4405-96F5-9F0CDF513862}" ShortID="929657807">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Lowpass" Type="int16">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{2F61FDC8-6627-49B9-8D3E-55F560AAF1D9}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{7CBB9C58-2F38-4820-963A-9FC0C5BDD9AE}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="101"/>
+																					<Property Name="Min" Type="Real64" Value="-202"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="Volume" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{DB1BF5B0-25F3-477C-880C-76E80DC81D59}">
+																				<PropertyList>
+																					<Property Name="Min" Type="Real64" Value="-4"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Toy_Multiple" ID="{8F2C0121-27C2-48D2-8086-CAA07968BCD1}" ShortID="737083194">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-12</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Multiple" ID="{3D0B5C1C-E49B-4850-A71B-BE31B79AC032}" ShortID="657175686">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.594469505009132"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="6.90869965280883"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Multiple.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Multiple" ID="{3D0B5C1C-E49B-4850-A71B-BE31B79AC032}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Multiple_01" ID="{F0C3AF0F-C780-4DCC-B909-6A3D4FA6947C}" ShortID="500681876">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-12</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Multiple" ID="{A4A21E8E-70E6-46C0-9F09-BA2A9CF3B873}" ShortID="854344039">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.321334867572503"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.594469505009132"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="9.39904487649573"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Multiple.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Multiple" ID="{A4A21E8E-70E6-46C0-9F09-BA2A9CF3B873}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+													</ChildrenList>
+												</BlendContainer>
+												<RandomSequenceContainer Name="Toy_Monopoly" ID="{FBEAE896-2118-40F5-8439-893C989ED8FF}" ShortID="211027881">
+													<PropertyList>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{B76412DB-3C8A-446E-9B8B-0E68B132338D}">
+																		<PropertyList>
+																			<Property Name="Max" Type="Real64" Value="2"/>
+																			<Property Name="Min" Type="Real64" Value="-0.5"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="Toy_Des" ID="{273C3A2F-D443-4906-8BB0-D7F1BC98BCEC}" ShortID="38943884">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{EC20D359-8080-447A-92B8-2B50397B24A7}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="278"/>
+																					<Property Name="Min" Type="Real64" Value="-177"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																<Property Name="UserAuxSendVolume0" Type="Real64">
+																	<ValueList>
+																		<Value>-22</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Toy_Des_01" ID="{5492B147-1795-442F-A5AC-54434DC998B3}" ShortID="725691875">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-8</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Des_01" ID="{CD856685-DB49-449E-AA02-3B1E170389B3}" ShortID="452392111">
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Des_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Des_01" ID="{CD856685-DB49-449E-AA02-3B1E170389B3}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Des_02" ID="{E3E2DE64-AB18-40B6-9625-0AC8631C494C}" ShortID="395640553">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Des_02" ID="{E015E9C0-E86E-41A2-806D-C14C16212CB6}" ShortID="683165885">
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Des_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Des_02" ID="{E015E9C0-E86E-41A2-806D-C14C16212CB6}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Des_03" ID="{0EAEE2C0-02F9-473F-BC91-810477D52699}" ShortID="83920345">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Des_03" ID="{28BB01FB-7170-4BBF-B49A-F52C46F7C429}" ShortID="541922707">
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Des_03.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Des_03" ID="{28BB01FB-7170-4BBF-B49A-F52C46F7C429}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="Toy_Monopoly_Chest" ID="{9E6F00C4-B667-4E64-BBBE-83DCBB4CDF08}" ShortID="35233651">
+															<PropertyList>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ValueList>
+																		<Value>0.5</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{146B37EE-6A1C-4C03-BB06-94B025B886DA}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="126"/>
+																					<Property Name="Min" Type="Real64" Value="-152"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Toy_Monopoly" ID="{131E00B3-A863-4FFE-B172-50E1C8440175}" ShortID="638532033">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Monopoly" ID="{338B0CBB-58C4-4083-BBE8-0CC88B8ECF39}" ShortID="277713333">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="8.16437822572792E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="5.30684584672315E-02"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.824602200798521"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Monopoly.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="622543896"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Monopoly" ID="{338B0CBB-58C4-4083-BBE8-0CC88B8ECF39}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Monopoly_01" ID="{61F1A12D-FF31-4B95-A943-6FC313AF52B0}" ShortID="615268756">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Monopoly" ID="{16B60378-8CD4-450A-BD2E-5B811F14B16B}" ShortID="622543896">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="8.16437822572792E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.816437822572792"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.59613594312981"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Monopoly.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="277713333"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Monopoly" ID="{16B60378-8CD4-450A-BD2E-5B811F14B16B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Monopoly_02" ID="{935A7453-61BC-4225-91F9-B26E5AB8E8EC}" ShortID="294925914">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Monopoly" ID="{EDEF5078-4450-4F58-99A8-33928ED6EE1F}" ShortID="454318899">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="4.08218911286395E-03"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.04082189112864"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.60021813224267"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.34725873989678"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Monopoly.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Monopoly" ID="{EDEF5078-4450-4F58-99A8-33928ED6EE1F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Monopoly_03" ID="{A0E4193E-44D0-4C81-BE2F-08B164160D25}" ShortID="1037741897">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Monopoly" ID="{ADACD7E2-38E1-419D-A410-83DB345BCF00}" ShortID="723354202">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="4.08218911286395E-03"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.04082189112864"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.3554231181225"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.1147102931152"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Monopoly.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Monopoly" ID="{ADACD7E2-38E1-419D-A410-83DB345BCF00}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Monopoly_04" ID="{CEE0D811-B7D0-4D50-8385-79016A70B50A}" ShortID="559079103">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Monopoly" ID="{ACDFA3EA-EBC4-4266-A29D-0620207A5412}" ShortID="64617448">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="4.08218911286395E-03"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.04082189112864"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.1147102931152"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.88624403544649"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Monopoly.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Monopoly" ID="{ACDFA3EA-EBC4-4266-A29D-0620207A5412}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Toy_Monopoly_05" ID="{D5A4EEF8-2893-4C12-8D6D-8D512B2643D1}" ShortID="773194482">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Toy_Monopoly" ID="{9393184F-B45A-4E52-A439-74CA43694129}" ShortID="243044197">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="4.08218911286395E-03"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.04082189112864"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.87807965722076"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_Playing\Toy_Monopoly.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Toy_Monopoly" ID="{9393184F-B45A-4E52-A439-74CA43694129}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+													</ChildrenList>
+													<Playlist>
+														<ItemRef Name="Toy_Des" ID="{273C3A2F-D443-4906-8BB0-D7F1BC98BCEC}"/>
+														<ItemRef Name="Toy_Monopoly_Chest" ID="{9E6F00C4-B667-4E64-BBBE-83DCBB4CDF08}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="AI_PeeingFloor" ID="{8476CAE3-3C47-4E0D-B190-F2626B2956B7}" ShortID="794461459">
+											<PropertyList>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-18</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AI_Peeing_Floor_01" ID="{C19BB07E-FD36-4EB9-85C7-C42783265850}" ShortID="150629894">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AI_Peeing_Floor_01" ID="{333FD131-CC77-4871-9932-4EAE3CA289D9}" ShortID="581525195">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.542962969587484"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.5638114912924"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AI_PeeingFloor\AI_Peeing_Floor_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AI_Peeing_Floor_01" ID="{333FD131-CC77-4871-9932-4EAE3CA289D9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AI_Peeing_Floor_02" ID="{94652100-6DF3-4CF3-A5D0-6906071C282B}" ShortID="202703526">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AI_Peeing_Floor_02" ID="{76594EC9-5028-4065-A255-575E33D0426E}" ShortID="111441689">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.557826468010517"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AI_PeeingFloor\AI_Peeing_Floor_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AI_Peeing_Floor_02" ID="{76594EC9-5028-4065-A255-575E33D0426E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AI_Peeing_Floor_03" ID="{AB86ACD4-AE9F-49F9-A6EC-70A1F1AEE565}" ShortID="146797730">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AI_Peeing_Floor_03" ID="{7FE0B69F-DF13-460C-9714-2743F5CB921E}" ShortID="476488130">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.63435582822086"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AI_PeeingFloor\AI_Peeing_Floor_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AI_Peeing_Floor_03" ID="{7FE0B69F-DF13-460C-9714-2743F5CB921E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<BlendContainer Name="AI_Television" ID="{AEAA662F-1EF9-4FA7-A2E0-3FB7E4A8CD45}" ShortID="173505766">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="AI_TV_SQ" ID="{5CA9077A-5C71-453E-A6DA-EBB1030679F5}" ShortID="51080105">
+													<PropertyList>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="AI_Television_Close" ID="{8CBDCFE8-A3C2-41FD-9628-910D8A6F50AA}" ShortID="857312245">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>3</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AI_Television_Close" ID="{6E05617A-A6CF-4E13-94D0-D497D1838BCC}" ShortID="779620281">
+																	<PropertyList>
+																		<Property Name="TrimBegin" Type="Real64" Value="7.29220697919834E-03"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>AI_Television\AI_Television_Close.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AI_Television_Close" ID="{6E05617A-A6CF-4E13-94D0-D497D1838BCC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AI_Television_Open" ID="{30AAA9C4-8A81-4B21-8186-68EB16FC794C}" ShortID="268926019">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AI_Television_Open" ID="{BD3713FA-2630-490D-AB7B-20ACF6AA9AA6}" ShortID="617081335">
+																	<Language>SFX</Language>
+																	<AudioFile>AI_Television\AI_Television_Open.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AI_Television_Open" ID="{BD3713FA-2630-490D-AB7B-20ACF6AA9AA6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AI_Television_Static_Lp" ID="{6848F23A-DC8A-495B-8AF8-E2AF57B53B85}" ShortID="235066678">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-10</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AI_Television_Static_Lp" ID="{D68CF7A3-9481-4DEB-A07B-163FE7803368}" ShortID="269917351">
+																	<Language>SFX</Language>
+																	<AudioFile>AI_Television\AI_Television_Static_Lp.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AI_Television_Static_Lp" ID="{D68CF7A3-9481-4DEB-A07B-163FE7803368}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<Playlist>
+														<ItemRef Name="AI_Television_Open" ID="{30AAA9C4-8A81-4B21-8186-68EB16FC794C}"/>
+														<ItemRef Name="AI_Television_Static_Lp" ID="{6848F23A-DC8A-495B-8AF8-E2AF57B53B85}"/>
+														<ItemRef Name="AI_Television_Close" ID="{8CBDCFE8-A3C2-41FD-9628-910D8A6F50AA}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="AI_CleanBin" ID="{6D0A4460-17AA-4F91-A2CB-F5AC4B852C16}" ShortID="149549643">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="AI_CleanBin_Seq" ID="{8DF34DAF-270C-4DFA-A3EA-F2D4494BAB43}" ShortID="524203299">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="Bin_Close" ID="{52BDA546-C1F0-4558-9A65-2095CDD373E0}" ShortID="102233602">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{6B319756-0CF0-40D5-8DD3-4EA3C10EEBA4}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="126"/>
+																					<Property Name="Min" Type="Real64" Value="-177"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="AI_Bin_Close_01" ID="{ACA8FDA9-4954-4CBA-BEF8-E311B28B1A55}" ShortID="375082490">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AI_Bin_Close_01" ID="{76CCC64F-A1B7-44A2-9629-643EBB1CE6E8}" ShortID="263219467">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="7.60845749342682E-02"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.412378396143733"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_CleanBin\AI_Bin_Close_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AI_Bin_Close_01" ID="{76CCC64F-A1B7-44A2-9629-643EBB1CE6E8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AI_Bin_Close_02" ID="{71490477-83D2-4A87-909E-2B1E68DD19A8}" ShortID="398558307">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AI_Bin_Close_02" ID="{C075C113-E65D-4A21-9FCB-7289BBC59C92}" ShortID="840813945">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="4.09958369851008E-02"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AI_CleanBin\AI_Bin_Close_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AI_Bin_Close_02" ID="{C075C113-E65D-4A21-9FCB-7289BBC59C92}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+														<BlendContainer Name="Bin_Open" ID="{EA8D4433-0489-4E6C-8655-D7C22CE40193}" ShortID="533150424">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="AI_Bin_Open_01" ID="{7048C277-7967-4EA9-AAD5-DE1440859811}" ShortID="1036548455">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AI_Bin_Open_01" ID="{1EE9349B-9652-43D1-925F-694E083222A8}" ShortID="93048716">
+																			<Language>SFX</Language>
+																			<AudioFile>AI_CleanBin\AI_Bin_Open_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AI_Bin_Open_01" ID="{1EE9349B-9652-43D1-925F-694E083222A8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</BlendContainer>
+														<BlendContainer Name="Bin_Rattles" ID="{979926D3-AF3C-4612-99B7-C8E7F6582ED6}" ShortID="1030669837">
+															<PropertyList>
+																<Property Name="BlendBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="Bin_Rattle_Metal" ID="{76046C56-3006-4B84-8BFA-1E57CB18862A}" ShortID="142897550">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																		<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="Metal_01" ID="{804D7928-04C1-4F6A-8E06-CE63B5D63CEB}" ShortID="663493813">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="AI_Bin_Movement_Metal_01" ID="{B7848459-8394-4DC3-A3D8-2E11492A69FA}" ShortID="810870292">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Metal_01" ID="{EB11E809-E240-43E3-A6A2-9C3BA804CCB5}" ShortID="943020220">
+																							<PropertyList>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.435828220858895"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="0.762699386503067"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="7.08220858895707"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Metal_01.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Metal_01" ID="{EB11E809-E240-43E3-A6A2-9C3BA804CCB5}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Metal_02" ID="{38ADD502-9CEB-4415-86F9-FAC67579E564}" ShortID="857579130">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Metal_01" ID="{81801D5C-44B7-4554-91C3-60672E952DD6}" ShortID="745631837">
+																							<PropertyList>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.435828220858895"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="10.1874846625767"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="18.958527607362"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Metal_01.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Metal_01" ID="{81801D5C-44B7-4554-91C3-60672E952DD6}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Metal_03" ID="{CD2CE4E2-8DED-4553-9AF7-A54CB0DBFB1B}" ShortID="143310686">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Metal_01" ID="{E87AADFB-584F-431E-B5E2-6BB7646501DE}" ShortID="923275830">
+																							<PropertyList>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.435828220858895"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="20.4294478527607"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="29.3094478527608"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Metal_01.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Metal_01" ID="{E87AADFB-584F-431E-B5E2-6BB7646501DE}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Metal_04" ID="{DF3158DA-A79F-4789-BEEA-91F88747246B}" ShortID="421030894">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Metal_01" ID="{822403D7-8B57-42A8-BA1B-5AEA855FF854}" ShortID="808455251">
+																							<PropertyList>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.435828220858895"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="29.9087116564417"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="39.0066257668712"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Metal_01.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Metal_01" ID="{822403D7-8B57-42A8-BA1B-5AEA855FF854}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Metal_05" ID="{9A34DEDC-7BA9-45C1-98B3-C5C4CAC7276D}" ShortID="996698462">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Metal_01" ID="{5FBE39A1-C375-48D1-944C-3D795C3F7CB6}" ShortID="201374765">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.7082208588957"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.435828220858895"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="39.9327607361963"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="47.5052760736196"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Metal_01.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Metal_01" ID="{5FBE39A1-C375-48D1-944C-3D795C3F7CB6}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Metal_06" ID="{71747B6B-0622-4753-9047-3F230E11CBC5}" ShortID="799479608">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Metal_01" ID="{A7700126-9950-4CF1-928A-D2752D872C34}" ShortID="773480959">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.7082208588957"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.435828220858895"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="50.2292024539877"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="60.798036809816"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Metal_01.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Metal_01" ID="{A7700126-9950-4CF1-928A-D2752D872C34}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="Metal_02" ID="{1DC6EDD7-5223-40EB-A12A-D3F38A0221B5}" ShortID="981396228">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="AI_Bin_Movement_Metal_02" ID="{AFA394E1-1E15-417C-9381-AD0EC0111C02}" ShortID="180949735">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Metal_02" ID="{175C0E26-BF20-498C-B425-0BC68A0ED8D8}" ShortID="766730089">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.494165644171779"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.28238036809816"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="11.507"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="16.5898466257669"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Metal_02.wav</AudioFile>
+																							<ConvertedFileIDList>
+																								<File ID="441119371"/>
+																							</ConvertedFileIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Metal_02" ID="{175C0E26-BF20-498C-B425-0BC68A0ED8D8}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Metal_01" ID="{60117770-957A-4B5E-A8D2-6BF4AD42B57F}" ShortID="491078679">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Metal_02" ID="{E34AF70D-3898-4365-BCF6-77A8758FDC99}" ShortID="441119371">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.494165644171779"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.28238036809816"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="5.50641717791413"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Metal_02.wav</AudioFile>
+																							<ConvertedFileIDList>
+																								<File ID="766730089"/>
+																							</ConvertedFileIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Metal_02" ID="{E34AF70D-3898-4365-BCF6-77A8758FDC99}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Metal_03" ID="{E3C6C674-06AA-4456-A1C4-6528F522FA6D}" ShortID="251842334">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Metal_02" ID="{61008676-30D6-40D0-A1AD-12FDE0556267}" ShortID="455861595">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.494165644171779"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.28238036809816"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="27.2497055214724"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="33.0385030674847"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Metal_02.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Metal_02" ID="{61008676-30D6-40D0-A1AD-12FDE0556267}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Metal_04" ID="{7F823216-44DE-400C-9B08-9357D2741D0E}" ShortID="167907828">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Metal_02" ID="{A0DFF220-7455-47B2-B17D-434D502FC492}" ShortID="37583027">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.494165644171779"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.28238036809816"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="36.4976625766871"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="47.7928773006135"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Metal_02.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Metal_02" ID="{A0DFF220-7455-47B2-B17D-434D502FC492}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Metal_05" ID="{85274797-D329-414E-8244-70C0F495BD9F}" ShortID="382873477">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Metal_02" ID="{AF9CEE1F-4C4C-429E-8180-E35A16D729AA}" ShortID="461333259">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.494165644171779"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.28238036809816"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="52.4521533742331"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="62.9708220858896"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Metal_02.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Metal_02" ID="{AF9CEE1F-4C4C-429E-8180-E35A16D729AA}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Metal_06" ID="{080D64E2-395A-443B-91E5-10940D684C19}" ShortID="973872342">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Metal_02" ID="{C2F793F2-EBA0-4A85-96D3-DD0DC9FEF4DD}" ShortID="561192105">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.494165644171779"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.28238036809816"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="66.1476012269938"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="77.5840061349693"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Metal_02.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Metal_02" ID="{C2F793F2-EBA0-4A85-96D3-DD0DC9FEF4DD}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Bin_Rattle_Plastic" ID="{022C3FCC-C54E-4256-B76B-C1B93BC48625}" ShortID="909812194">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																		<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="Plastic_01" ID="{13182A64-2E71-46B8-A303-738F923ABE4E}" ShortID="231038338">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="AI_Bin_Movement_Plastic_02" ID="{8949135B-B16D-4E24-B624-8652CF751EC1}" ShortID="814038040">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Plastic_02" ID="{79E656BF-943A-4C8B-A449-A6E25773A48A}" ShortID="832861973">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.213333333333333"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.335238095238096"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="0.35047619047619"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="7.11619047619048"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Plastic_02.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Plastic_02" ID="{79E656BF-943A-4C8B-A449-A6E25773A48A}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Plastic_05" ID="{BBF48346-22FE-4588-9F9B-D541CF16AA75}" ShortID="706739305">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Plastic_02" ID="{AB7B059E-3FF2-4B33-8943-9B5BFD7083A8}" ShortID="446053170">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.213333333333333"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.335238095238096"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="8.16761904761905"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="16.5180952380952"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Plastic_02.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Plastic_02" ID="{AB7B059E-3FF2-4B33-8943-9B5BFD7083A8}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="Plastic_02" ID="{313C8DFF-1161-44C9-8B17-B6A76ED6705A}" ShortID="612274113">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="AI_Bin_Movement_Plastic_01" ID="{C8AD36EC-3CCF-474C-A702-0BEA64EE9D26}" ShortID="324678955">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Plastic_01" ID="{CE9ABFAC-1C4E-4A40-B39C-0077647DBB13}" ShortID="570303767">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.61554425942156"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.655256792287467"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="4.94421034180543"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Plastic_01.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Plastic_01" ID="{CE9ABFAC-1C4E-4A40-B39C-0077647DBB13}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Plastic_03" ID="{01B374B3-AB30-416A-AF13-535D5C500FE7}" ShortID="161993821">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Plastic_01" ID="{6C6F0980-275C-4503-9ACB-20C1AD13C997}" ShortID="396776571">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.61554425942156"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.655256792287467"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="6.49299912357581"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="11.1592217353199"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Plastic_01.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Plastic_01" ID="{6C6F0980-275C-4503-9ACB-20C1AD13C997}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AI_Bin_Movement_Plastic_04" ID="{94D4E084-9C0D-45BC-AB2E-3EDE3010EC40}" ShortID="975349607">
+																					<PropertyList>
+																						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="AI_Attenuation" ID="{2BCA394F-21B8-4BBE-AEAB-440617ECD9B0}" WorkUnitID="{6CB075D1-1EE6-462D-B0E3-E076F07217A3}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AI_Bin_Movement_Plastic_01" ID="{A4427C76-F422-4D8A-ABDC-0FABDC4F6AFD}" ShortID="935772291">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.61554425942156"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.655256792287467"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="12.2910289219982"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="21.6433304119193"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>AI_CleanBin\AI_Bin_Movement_Plastic_01.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AI_Bin_Movement_Plastic_01" ID="{A4427C76-F422-4D8A-ABDC-0FABDC4F6AFD}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+														</BlendContainer>
+													</ChildrenList>
+													<Playlist>
+														<ItemRef Name="Bin_Open" ID="{EA8D4433-0489-4E6C-8655-D7C22CE40193}"/>
+														<ItemRef Name="Bin_Rattles" ID="{979926D3-AF3C-4612-99B7-C8E7F6582ED6}"/>
+														<ItemRef Name="Bin_Close" ID="{52BDA546-C1F0-4558-9A65-2095CDD373E0}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<RandomSequenceContainer Name="AI_CleanWindow" ID="{2B5D13AA-63BE-4600-93F3-B2E93559ADC5}" ShortID="230662443">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{649E0BF0-0581-4701-999F-BE6017EDDBE5}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="32"/>
+																	<Property Name="Min" Type="Real64" Value="-25"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A1ACCBF6-C3B9-498D-AEB7-9BF06D4D138F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="101"/>
+																	<Property Name="Min" Type="Real64" Value="-227"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-31</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-19</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E7B275F5-FA7B-46DE-AE69-13EBABA845E6}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Player_CleanWindow_01" ID="{4F3A18F7-5DAB-485C-9B8F-400E12F9719C}" ShortID="1000879328">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Player_CleanWindow_01" ID="{364A8756-53DD-4E8B-B2ED-2A5E47F5FBBD}" ShortID="976172791">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="3.21945383470362E-02"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.06964889373804E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.12879063398659E-02"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.5019755515411"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AI_CleanWindow\Player_CleanWindow_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Player_CleanWindow_01" ID="{364A8756-53DD-4E8B-B2ED-2A5E47F5FBBD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Player_CleanWindow_02" ID="{7A341690-99B9-4743-8311-0EB75EF8CC18}" ShortID="277446660">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Player_CleanWindow_02" ID="{23AFBE21-FFF7-4339-A740-E67DAC2907BD}" ShortID="200886225">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="3.26626005353938E-02"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.99407171574444E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.108875335117979"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.97501853209879"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AI_CleanWindow\Player_CleanWindow_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Player_CleanWindow_02" ID="{23AFBE21-FFF7-4339-A740-E67DAC2907BD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Player_CleanWindow_03" ID="{C184BA29-D2EB-4157-A6A2-C0FD1FA80D26}" ShortID="588698191">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Player_CleanWindow_03" ID="{7F9975EE-9E3D-43CB-9E41-6547FC23BC45}" ShortID="85759521">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="3.15026203294639E-02"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.98791488549846E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.08808957412939E-02"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.97437240277355"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AI_CleanWindow\Player_CleanWindow_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Player_CleanWindow_03" ID="{7F9975EE-9E3D-43CB-9E41-6547FC23BC45}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Player_CleanWindow_04" ID="{FABD3F2B-2B5F-4954-B2E6-581669B816DD}" ShortID="883552559">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Player_CleanWindow_04" ID="{E9E25BF0-3C0D-4EFF-9552-DAAEB412B990}" ShortID="239821193">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="7.09622978610083E-02"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="9.99923288041478E-02"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.90300309431397E-02"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.62875386789247"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AI_CleanWindow\Player_CleanWindow_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Player_CleanWindow_04" ID="{E9E25BF0-3C0D-4EFF-9552-DAAEB412B990}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
@@ -4365,10 +6915,28 @@
 												<ItemRef Name="AI_Flush" ID="{36124427-247A-456B-98A0-3C4A2C28CBB8}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
+												<ItemRef Name="AI_Television" ID="{AEAA662F-1EF9-4FA7-A2E0-3FB7E4A8CD45}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="AI_CleanBin" ID="{6D0A4460-17AA-4F91-A2CB-F5AC4B852C16}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
 												<ItemRef Name="AI_Idle" ID="{166E5273-C44F-43B6-8F59-37F039790883}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="AI_Shower" ID="{D0BAFB95-BB23-47CF-9EF5-DF8B6097461B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="AI_Playing" ID="{4970869C-1EB2-4785-BCD6-1F61D1AC5123}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="AI_Zip" ID="{869CDAA5-62EF-4A97-84BC-87752DF60525}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="AI_CleanWindow" ID="{2B5D13AA-63BE-4600-93F3-B2E93559ADC5}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="AI_PeeingFloor" ID="{8476CAE3-3C47-4E0D-B190-F2626B2956B7}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="AI_Cooking" ID="{EDA286E4-4DD9-44AB-992E-BF31F0D7B2D7}"/>
@@ -4391,9 +6959,33 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
+												<SwitchRef Name="AI_CleanBin" ID="{5AB64231-4628-4C0B-ABF1-459B333626A2}"/>
+												<ItemList>
+													<ItemRef Name="AI_CleanBin" ID="{6D0A4460-17AA-4F91-A2CB-F5AC4B852C16}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="AI_Flush" ID="{DDB64932-D1E6-46C7-B222-9796939397CA}"/>
 												<ItemList>
 													<ItemRef Name="AI_Flush" ID="{36124427-247A-456B-98A0-3C4A2C28CBB8}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="AI_PeeingFloor" ID="{96443037-0C4C-429E-8439-CA763A19CBF1}"/>
+												<ItemList>
+													<ItemRef Name="AI_PeeingFloor" ID="{8476CAE3-3C47-4E0D-B190-F2626B2956B7}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="AI_Playing" ID="{A582084C-E623-4C4C-BA41-2780B98C0853}"/>
+												<ItemList>
+													<ItemRef Name="AI_Playing" ID="{4970869C-1EB2-4785-BCD6-1F61D1AC5123}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="AI_Television" ID="{26AC938F-9F18-4C63-AE75-FB2DF7B3AE84}"/>
+												<ItemList>
+													<ItemRef Name="AI_Television" ID="{AEAA662F-1EF9-4FA7-A2E0-3FB7E4A8CD45}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
@@ -4424,7 +7016,7 @@
 				<ActorMixer Name="Ambiances" ID="{B0AB5490-707E-4E6B-ABF0-ADEA601394AB}" ShortID="635732962">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
@@ -4641,6 +7233,10 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Amb_Outside_Balcony_Siren_OS_01" ID="{0DDEAA19-C29E-4D76-8162-D7AACF884A4F}" ShortID="633242227">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="2.7708155514616"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="9.22653013527935"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_01.wav</AudioFile>
 																</AudioFileSource>
@@ -4667,6 +7263,10 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Amb_Outside_Balcony_Siren_OS_02" ID="{C01FD2C1-448D-49AA-A25A-C997C4F84B53}" ShortID="422381683">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.640087761660317"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="3.05787380684088"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_02.wav</AudioFile>
 																</AudioFileSource>
@@ -4693,6 +7293,10 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Amb_Outside_Balcony_Siren_OS_03" ID="{C63A5360-9823-4313-A5B9-599353487D2D}" ShortID="839477047">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="18.9308766825456"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="39.4330909553421"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Amb_Outside\OneShots\Amb_Outside_Balcony_Siren_OS_03.wav</AudioFile>
 																</AudioFileSource>
@@ -4997,7 +7601,7 @@
 																<Value>22</Value>
 															</ValueList>
 														</Property>
-														<Property Name="RadiusMax" Type="Real64" Value="4"/>
+														<Property Name="RadiusMax" Type="Real64" Value="5"/>
 													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
@@ -5014,14 +7618,14 @@
 																			<SegmentShape>Exp3</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>2.0201</XPos>
-																			<YPos>-0.40578</YPos>
+																			<XPos>1.84673</XPos>
+																			<YPos>-0.21898</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>4</XPos>
-																			<YPos>-22.53491</YPos>
+																			<XPos>5</XPos>
+																			<YPos>-28.55553</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -5045,13 +7649,13 @@
 																			<SegmentShape>Exp3</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>2.14572</XPos>
+																			<XPos>2.68215</XPos>
 																			<YPos>-1.36299</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>4</XPos>
+																			<XPos>5</XPos>
 																			<YPos>-22.53491</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -5072,13 +7676,13 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>2.434128</XPos>
+																			<XPos>3.04266</XPos>
 																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Exp1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>4</XPos>
+																			<XPos>5</XPos>
 																			<YPos>43</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -5099,7 +7703,7 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>4</XPos>
+																			<XPos>5</XPos>
 																			<YPos>18</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -5108,7 +7712,25 @@
 															</CurveUsageInfo>
 														</HighPassFilterUsage>
 														<SpreadUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="Spread" ID="{330D5FA3-CDED-46A1-9522-92D1A3F414A8}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="1"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>100</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>5</XPos>
+																			<YPos>0</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
 														</SpreadUsage>
 														<FocusUsage>
 															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
@@ -5410,7 +8032,7 @@
 				<ActorMixer Name="SFX" ID="{7EFF7E50-8E61-4757-BF1F-ECC3755664EF}" ShortID="503390494">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>

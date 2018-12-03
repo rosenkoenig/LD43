@@ -23,6 +23,8 @@ public abstract class BasixAnimate<T> : MonoBehaviour {
 
     public AnimationCurve curve = AnimationCurve.EaseInOut(0f,0f,1f,1f);
 
+    public System.Action OnAnimationEnds = null;
+
     void Awake ()
     {
         if (setStartStateOnAwake) ApplyAnimate(0f);
@@ -58,6 +60,7 @@ public abstract class BasixAnimate<T> : MonoBehaviour {
                     break;
                 case BasixAnimateStyle.Once:
                     status = Status.Finished;
+                    if (OnAnimationEnds != null) OnAnimationEnds();
                     break;
             }
         }
@@ -81,7 +84,10 @@ public abstract class BasixAnimate<T> : MonoBehaviour {
     public void StopAnimating ()
     {
         if (status != Status.Waiting)
+        {
             status = Status.Finished;
+            if (OnAnimationEnds != null) OnAnimationEnds();
+        }
     }
 
     public void ResetAnimating ()
