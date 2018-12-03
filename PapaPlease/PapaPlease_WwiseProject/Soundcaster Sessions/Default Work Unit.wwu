@@ -110,8 +110,32 @@
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_AI_Lavabo" ID="{11224F8D-8660-4AE5-B9F4-ECE3ED213757}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AI_CleanFloor" ID="{1D7B336E-9ECE-4F24-BF24-3A1A827A6CDB}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_AI_Lavabo" ID="{11224F8D-8660-4AE5-B9F4-ECE3ED213757}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Stop_AI_CleanWindow" ID="{4949D3C4-EE41-4E30-ABA7-69522EC2AD8E}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_AI_Lavabo" ID="{59D4F111-6A3A-47CD-9F76-1EE5B376E7A5}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_AI_CleanFloor" ID="{405AF19A-CFF2-425E-A2AA-61B71939F27D}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_AI_Lavabo" ID="{59D4F111-6A3A-47CD-9F76-1EE5B376E7A5}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
+							<Position X="3" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>

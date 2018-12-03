@@ -108,7 +108,7 @@ GameObject:
   m_Layer: 0
   m_Name: IP_Douche_Hygiene
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -487,6 +487,16 @@ MonoBehaviour:
   doOnce: 0
   animStateName: Idle
   _activityResetDelay: 100
+  _activityModifiers: []
+  curActivityResetDelay: 0
+  _akEventPlay:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: e6851fbcce0a09a47a8b11628d8354c0,
+      type: 2}
+  _akEventStop:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 822c1d78f069bd141ae28c0b0c9b1a6a,
+      type: 2}
   duration: 10
 --- !u!114 &114953111428734124
 MonoBehaviour:
