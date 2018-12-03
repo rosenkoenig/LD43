@@ -54,7 +54,7 @@
 	<ValidationCacheItem File="C:\Users\droui\Desktop\GameJam\LD43\PapaPlease_WwiseIntegrationTemp\PapaPlease_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1543675884" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\droui\Desktop\GameJam\LD43\PapaPlease_WwiseIntegrationTemp\PapaPlease_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1543675884" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Actor-Mixer Hierarchy\PapaPlease.wwu" DateLow="1543853828" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Actor-Mixer Hierarchy\PapaPlease.wwu" DateLow="1543867959" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1543840185" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1543675948" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1543679954" DateHigh="0"/>
@@ -63,15 +63,15 @@
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1543675948" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1543797017" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Effects\Factory Effects.wwu" DateLow="1543788251" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Events\Default Work Unit.wwu" DateLow="1543848813" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Events\PapaPlease.wwu" DateLow="1543853501" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Events\Default Work Unit.wwu" DateLow="1543867612" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Events\PapaPlease.wwu" DateLow="1543866338" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1543675948" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1543675948" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1543849877" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1543701076" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\PapaPlease_WwiseProject.Damien.wsettings" DateLow="1543855404" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\PapaPlease_WwiseProject.wproj" DateLow="1543848776" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\PapaPlease_WwiseProject.Damien.wsettings" DateLow="1543869791" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\PapaPlease_WwiseProject.wproj" DateLow="1543861841" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Queries\Factory Queries.wwu" DateLow="1543675949" DateHigh="0"/>
@@ -81,4 +81,32 @@
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1543796243" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Actor-Mixer Hierarchy\PapaPlease.wwu" DateLow="1543860615" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1543840185" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1543675948" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1543679954" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1543675948" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1543797017" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1543675948" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1543797017" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Effects\Factory Effects.wwu" DateLow="1543788251" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Events\Default Work Unit.wwu" DateLow="1543848813" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Events\PapaPlease.wwu" DateLow="1543853501" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1543675948" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1543675948" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1543849877" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1543701076" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\PapaPlease_WwiseProject.Damien.wsettings" DateLow="1543860697" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\PapaPlease_WwiseProject.wproj" DateLow="1543848776" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Queries\Factory Queries.wwu" DateLow="1543675949" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1543849904" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1543849728" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\States\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1543796243" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Boulot\GameJam\PapaPlease_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1543675949" DateHigh="0"/>
 </ValidationCache>

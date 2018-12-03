@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7E627A97-AC74-4AD8-9F6D-ACD27FA04F19}" SchemaVersion="89">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{7E627A97-AC74-4AD8-9F6D-ACD27FA04F19}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7E627A97-AC74-4AD8-9F6D-ACD27FA04F19}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_AI_Angry" ID="{1371B491-EB2F-4434-8A9D-C111C120785B}">
+					<ChildrenList>
+						<Action Name="" ID="{9F629C21-B59D-49F0-9C88-0013EC29A5AF}" ShortID="707016499">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AI_Angry" ID="{9C60E8CF-2FB7-4026-A368-0F578B2B541D}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_AI_Angry" ID="{35EB77B8-DE3A-455A-A527-7E320ADE3ED6}">
+					<ChildrenList>
+						<Action Name="" ID="{420D5CAF-C078-4408-8D87-441BF77424B3}" ShortID="777563855">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AI_Angry" ID="{9C60E8CF-2FB7-4026-A368-0F578B2B541D}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AI_Hit" ID="{B800FBF5-679E-43BE-8441-54C82F2CE6F1}">
+					<ChildrenList>
+						<Action Name="" ID="{51A10BBD-884A-438F-B0CC-8EEB391B2A9F}" ShortID="415318043">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AI_Hit" ID="{210CC1BD-6CC6-44F4-A0CE-8E0E73315027}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_AI_Hit" ID="{DB903C3F-50F1-4F19-8289-01C5D02CDECA}">
+					<ChildrenList>
+						<Action Name="" ID="{368332E3-8B30-444B-B1A0-E33342A3D34E}" ShortID="401871754">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AI_Hit" ID="{210CC1BD-6CC6-44F4-A0CE-8E0E73315027}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

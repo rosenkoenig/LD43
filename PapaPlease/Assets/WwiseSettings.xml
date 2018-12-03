@@ -9,5 +9,5 @@
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows>D:\Softwares</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../PapaPlease_WwiseProject/PapaPlease_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../PapaPlease/PapaPlease_WwiseProject/PapaPlease_WwiseProject.wproj</WwiseProjectPath>
 </WwiseSettings>

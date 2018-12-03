@@ -6,38 +6,38 @@
 				<File Name="AI" Hash="2226422333" Timestamp="1543849753"/>
 				<File Name="Ambiances" Hash="4243425864" Timestamp="1543800166"/>
 				<File Name="Ambiances_Out" Hash="1669225838" Timestamp="1543841941"/>
-				<File Name="Init" Hash="2969150876" Timestamp="1543848821"/>
+				<File Name="Init" Hash="2908306720" Timestamp="1543860661"/>
 				<File Name="Menu" Hash="2127361760" Timestamp="1543848650"/>
 				<File Name="Musics" Hash="3653913818" Timestamp="1543800167"/>
-				<File Name="Player" Hash="3166563963" Timestamp="1543848651"/>
+				<File Name="Player" Hash="3143275346" Timestamp="1543864383"/>
 				<File Name="SFX" Hash="3861369680" Timestamp="1543848651"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="964688827" Timestamp="1543849753"/>
+				<File Name="" Hash="1285003340" Timestamp="1543864383"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{C6A33693-62E0-441D-8DA7-8E50E7B8248F}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="AI" Hash="2226422333" Timestamp="1543849731"/>
-				<File Name="Ambiances" Hash="4243425864" Timestamp="1543796802"/>
-				<File Name="Ambiances_Out" Hash="1669225838" Timestamp="1543839903"/>
+				<File Name="AI" Hash="325919802" Timestamp="1543870939"/>
+				<File Name="Ambiances" Hash="3382834440" Timestamp="1543870940"/>
+				<File Name="Ambiances_Out" Hash="3693648021" Timestamp="1543870940"/>
 				<File Name="Character" Hash="2066918412" Timestamp="1543796803"/>
 				<File Name="Foley" Hash="3565075675" Timestamp="1543767883"/>
 				<File Name="Init" Hash="725931022" Timestamp="1543849881"/>
 				<File Name="Level1" Hash="77498685" Timestamp="1543754936"/>
-				<File Name="Menu" Hash="1266905743" Timestamp="1543849881"/>
+				<File Name="Menu" Hash="2730465841" Timestamp="1543870940"/>
 				<File Name="Musics" Hash="3653913818" Timestamp="1543767883"/>
-				<File Name="Player" Hash="602407895" Timestamp="1543855970"/>
+				<File Name="Player" Hash="2712836466" Timestamp="1543870940"/>
 				<File Name="SFX" Hash="3861369680" Timestamp="1543848532"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1366935625" Timestamp="1543855970"/>
+				<File Name="" Hash="1996593064" Timestamp="1543870940"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
