@@ -8,7 +8,7 @@ public class ActivityHolder
     public float completionPercentage = 0f;
     public Character character;
 
-    public float GetActivityModifiersRatios(List<Activity.ActivityModifier> actMods)
+    public float GetActivityModifiersRatios(List<ActivityModifier> actMods)
     {
         float toReturn = 0;
         foreach (var curActMod in actMods)
@@ -34,10 +34,12 @@ public class Activity : MonoBehaviour
     public string animStateName = "";
 
     [SerializeField] float _activityResetDelay = 60f;
-
-    [SerializeField] protected List<ActivityModifier> _activityModifiers;
-
+    
     [SerializeField] float curActivityResetDelay;
+
+    protected IPType _inheritedIPType;
+
+    public void SetInheritedIPType(IPType ipType) { _inheritedIPType = ipType; }
 
     public float GetCompletionRatio { get; protected set; }
 
@@ -189,11 +191,11 @@ public class Activity : MonoBehaviour
             child.StartAnimState(animStateName + "_End");
         }
     }
+}
 
-    [System.Serializable]
-    public class ActivityModifier
-    {
-        public ChildStatID _childStat;
-        public float _factor;
-    }
+[System.Serializable]
+public class ActivityModifier
+{
+    public ChildStatID _childStat;
+    public float _factor;
 }
