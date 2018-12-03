@@ -71,6 +71,12 @@ public class ChildCharacter : Character {
     [SerializeField]
     GameObject[] possibleMaleHaircuts, possibleFemaleHaircurts, possibleConsitution;
 
+    [SerializeField]
+    Material[] pantMaterials, sweaterMaterials, shoesMaterial, hairMaterial;
+
+    [SerializeField]
+    Material baseSkinMaterial;
+
     // Use this for initialization
     void Start () {
 
@@ -91,6 +97,28 @@ public class ChildCharacter : Character {
 
         Vector3 ls = possibleConsitution[cIdx].transform.localScale;
         possibleConsitution[cIdx].transform.localScale = new Vector3(ls.x, Random.Range(.8f,1f), ls.z);
+
+        SkinnedMeshRenderer renderer = possibleConsitution[cIdx].GetComponent<SkinnedMeshRenderer>();
+        Material[] newMaterials = renderer.materials;
+
+        //enum materialID { Skin, Sweater, Pant, Shoes }
+        newMaterials[0] = baseSkinMaterial;
+
+        int randMatIdx = Random.Range(0, sweaterMaterials.Length);
+        newMaterials[1] = sweaterMaterials[randMatIdx];
+
+        randMatIdx = Random.Range(0, pantMaterials.Length);
+        newMaterials[2] = pantMaterials[randMatIdx];
+
+        randMatIdx = Random.Range(0, shoesMaterial.Length);
+        newMaterials[3] = shoesMaterial[randMatIdx];
+
+        renderer.materials = newMaterials;
+        
+
+        randMatIdx = Random.Range(0, hairMaterial.Length);
+        if(randMatIdx == 2) randMatIdx = Random.Range(0, hairMaterial.Length);
+        hc.GetComponent<Renderer>().material = hairMaterial[randMatIdx];
     }
 
     void InitSkins ()
@@ -157,7 +185,7 @@ public class ChildCharacter : Character {
         if (currentInterestPoint)
         {
             Debug.Log(childName + "has received a new IP");
-            GameMaster.Instance.log.AddLog(childName + " goes to " + currentInterestPoint.ipName);
+            GameMaster.Instance.AddLog(childName + " goes to " + currentInterestPoint.ipName);
             SetState(ChildAIState.MOVING_TO_ACTIVITY, true);
         }
         else
@@ -469,7 +497,7 @@ public class ChildCharacter : Character {
         Debug.Log("ANGER ANGER ANGER ANGER");
         isDoingAnger = true;
 
-        GameMaster.Instance.log.AddLog(childName + " is angry and needs a good slap !");
+        GameMaster.Instance.AddLog(childName + " is angry and needs a good slap !");
 
         Freeze(true);
         if(state == ChildAIState.AT_TABLE)
@@ -554,7 +582,7 @@ public class ChildCharacter : Character {
     void StartInActivity ()
     {
 
-        GameMaster.Instance.log.AddLog(childName + " starts interacting with " + currentInterestPoint.iPtype.GetIPName);
+        GameMaster.Instance.AddLog(childName + " starts interacting with " + currentInterestPoint.iPtype.GetIPName);
         currentInterestPoint.Interact(this);
         
     }
@@ -601,7 +629,7 @@ public class ChildCharacter : Character {
         SetNextAngerTime();
         LaunchAtTableAnim();
     }
-
+    
     void UpdateAtTable ()
     {
         CheckAnger();

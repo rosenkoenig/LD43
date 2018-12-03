@@ -16,7 +16,7 @@ public class ChildStatsModificator {
             {
                 if (curChildStatInfo.childStatID == item._childStatID)
                 {
-                    curChildStatInfo.currentValue = item.ModifyStat(curChildStatInfo.currentValue, useDeltaTime);
+                    curChildStatInfo.currentValue = item.ModifyStat(curChildStatInfo.currentValue, childStatsContainer._childStatInfos, useDeltaTime);
                 }
             }
         }

@@ -25,6 +25,7 @@ public class PlayerBehaviour : Character {
     void Start ()
     {
         wallet = GameMaster.Instance.wallet;
+        statsContainer.Init();
     }
 
     public void SetInteractActive()

@@ -14,7 +14,9 @@ MonoBehaviour:
   _ipName: Have fun
   _duringActivityModifiers:
   - _childStatID: {fileID: 11400000, guid: 22772edbc05052140af78dcf860e7ea9, type: 2}
-    _factor: 1
+    _factor: 0.25
     _refill: 0
+    _relativeChildStatID: {fileID: 0}
   _startActivityModifiers: []
   _endActivityModifiers: []
+  _activityModifiers: []

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ChildStatsMenu : MonoBehaviour {
 
     [SerializeField] ChildStatIDsContainer _childStatIdsContainer;
+    [SerializeField] ChildStatGauge _childStatTitleGaugeRef;
     [SerializeField] ChildStatGauge _childStatGaugeRef;
     [SerializeField] ChildStatGauge _childStatSkillRef;
     [SerializeField] RectTransform _childStatGaugesParent;
@@ -23,7 +24,12 @@ public class ChildStatsMenu : MonoBehaviour {
         foreach (var item in _childStatIdsContainer.GetChildStatIDs)
         {
             ChildStatGauge newStatGauge = null;
-            if (item.IsDisplayedAsGauge)
+            if(item.IsTitleGauge)
+            { 
+                newStatGauge = Instantiate(_childStatTitleGaugeRef, _childStatGaugesParent);
+                newStatGauge.SetGaugeColor(item.GetTitleGaugeColor);
+            }
+            else if (item.IsDoubleGauge)
                 newStatGauge = Instantiate(_childStatGaugeRef, _childStatGaugesParent);
             else
                 newStatGauge = Instantiate(_childStatSkillRef, _childStatGaugesParent);
