@@ -16,6 +16,8 @@ MonoBehaviour:
   requisites:
   - statIDNeeded: {fileID: 11400000, guid: edde50d32f7d6d34789d931cdc9b9f8d, type: 2}
     amountNeeded: 0
+  - statIDNeeded: {fileID: 11400000, guid: 585ea90be3ef1a645a3c0b3894aeb3f4, type: 2}
+    amountNeeded: 0
   onCompleteSkillStatModifier:
     statsModifiers:
     - _childStatID: {fileID: 11400000, guid: e4ad729c8fc05004e96b1f1570119fff, type: 2}

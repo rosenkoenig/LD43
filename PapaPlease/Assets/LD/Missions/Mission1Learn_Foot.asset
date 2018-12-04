@@ -13,11 +13,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missionName: Go to football
   moneyEarned: -2
-  requisites: []
+  requisites:
+  - statIDNeeded: {fileID: 11400000, guid: 13507abb539c6bf44aa224ffe9cb8f27, type: 2}
+    amountNeeded: 20
+  - statIDNeeded: {fileID: 11400000, guid: 585ea90be3ef1a645a3c0b3894aeb3f4, type: 2}
+    amountNeeded: 0
   onCompleteSkillStatModifier:
     statsModifiers:
     - _childStatID: {fileID: 11400000, guid: 24f23feea4e468a438455aaf31419275, type: 2}
-      _factor: 2
+      _factor: 5
+      _refill: 0
+      _relativeChildStatID: {fileID: 0}
+    - _childStatID: {fileID: 11400000, guid: 13507abb539c6bf44aa224ffe9cb8f27, type: 2}
+      _factor: -10
       _refill: 0
       _relativeChildStatID: {fileID: 0}
   onCompleteHiddenStatModifier: {fileID: 11400000, guid: d13a25459487ad34ab1936b708447f35,

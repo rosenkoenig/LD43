@@ -19,6 +19,8 @@ public class MissionMaster : MonoBehaviour {
 
     public void StartMission (Mission mission, ChildCharacter child)
     {
+        if (runningMissions.Find(x => x.mission == mission) != null) return;
+
         RunningMission runningMission = new RunningMission();
         runningMission.mission = mission;
         runningMission.child = child;
@@ -30,6 +32,7 @@ public class MissionMaster : MonoBehaviour {
 
     public void ClearAllRunningMissions ()
     {
+        runningMissions = null;
         runningMissions = new List<RunningMission>();
     }
 

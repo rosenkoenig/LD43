@@ -482,8 +482,23 @@ public class ChildCharacter : Character {
                 UpdateDeath();
                 break;
         }
+
+        CheckHealth();
     }
 
+    bool hasWarnedForHealth = false;
+    void CheckHealth ()
+    {
+        if(statsContainer.GetAChildStatValueRatio(GameMaster.Instance.healthStat) <= 0.25f)
+        {
+            GameMaster.Instance.AddLog(childName + "has low health ! He could die...");
+            hasWarnedForHealth = true;
+        }
+        else
+        {
+            hasWarnedForHealth = false;
+        }
+    }
 
     /// <summary>
     /// WAITING STATE WAITING

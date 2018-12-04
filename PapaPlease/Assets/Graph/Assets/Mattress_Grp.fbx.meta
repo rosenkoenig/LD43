@@ -1,23 +1,21 @@
 fileFormatVersion: 2
-guid: 0d7c8198bd4709e4fb56f45ed544f42f
+guid: 897b11f3cfa853746962371976314ec8
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Easel
-    100002: Painting
-    100004: //RootNode
-    400000: Easel
-    400002: Painting
-    400004: //RootNode
+    100000: Mattress
+    100002: //RootNode
+    100004: Pillow
+    400000: Mattress
+    400002: //RootNode
+    400004: Pillow
     2100000: lambert1
-    2100002: Mat_Wall_02
-    2100004: Mat_Wood_var01
-    2300000: Easel
-    2300002: Painting
-    3300000: Easel
-    3300002: Painting
-    4300000: Painting
-    4300002: Easel
+    2300000: Mattress
+    2300002: Pillow
+    3300000: Mattress
+    3300002: Pillow
+    4300000: Pillow
+    4300002: Mattress
   externalObjects: {}
   materials:
     importMaterials: 1
