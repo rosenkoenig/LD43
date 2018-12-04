@@ -18,10 +18,10 @@ namespace AK
         static const AkUniqueID PLAY_AI_CLEANFLOOR = 3782358412U;
         static const AkUniqueID PLAY_AI_CLEANWINDOW = 1459777202U;
         static const AkUniqueID PLAY_AI_CONSOLE = 1202448914U;
+        static const AkUniqueID PLAY_AI_DIE = 2713837207U;
         static const AkUniqueID PLAY_AI_DISHES = 2890421503U;
         static const AkUniqueID PLAY_AI_EAT = 3317684595U;
-        static const AkUniqueID PLAY_AI_FS_BF_WALK_L = 3853750586U;
-        static const AkUniqueID PLAY_AI_FS_BF_WALK_R = 3853750564U;
+        static const AkUniqueID PLAY_AI_FS_BF_WALK = 1188548511U;
         static const AkUniqueID PLAY_AI_HIT = 3117191778U;
         static const AkUniqueID PLAY_AI_LAVABO = 1558212960U;
         static const AkUniqueID PLAY_AI_PANIER = 312518768U;
@@ -61,6 +61,7 @@ namespace AK
         static const AkUniqueID STOP_AI_CONSOLE = 1744950656U;
         static const AkUniqueID STOP_AI_DISHES = 2349360669U;
         static const AkUniqueID STOP_AI_EAT = 2292933557U;
+        static const AkUniqueID STOP_AI_FS_BF_WALK = 1488764589U;
         static const AkUniqueID STOP_AI_HIT = 1552894068U;
         static const AkUniqueID STOP_AI_LAVABO = 3877824914U;
         static const AkUniqueID STOP_AI_PANIER = 1950993718U;
