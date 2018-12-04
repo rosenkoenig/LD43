@@ -316,6 +316,9 @@ MonoBehaviour:
   animStateName: Idle
   _activityResetDelay: 100
   curActivityResetDelay: 0
+  _itemsToActivateOnRunning: []
+  _dirtyVisualsRenderers: []
+  _dirtyVisualsToActivate: []
   _akEventPlay:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: 6aa781eb936a7044a9889160e0382589,
@@ -337,6 +340,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerActivityName: 
+  logActivityName: Going to pee
+  logName: the toilet
   pivotPoint: {fileID: 4570314492744576}
   iPtype: {fileID: 11400000, guid: 692618518660df64480ec57f23e83d13, type: 2}
   activity: {fileID: 114303019189652138}

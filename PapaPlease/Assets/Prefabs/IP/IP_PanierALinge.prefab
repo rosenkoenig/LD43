@@ -299,6 +299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerActivityName: Wash the laundry
+  logActivityName: Washing the laundry
+  logName: the laundry
   pivotPoint: {fileID: 4651062504808628}
   iPtype: {fileID: 11400000, guid: 2fea2dac64659854a93001188d2ab1e1, type: 2}
   activity: {fileID: 114508955630155528}
@@ -326,6 +328,7 @@ MonoBehaviour:
   animStateName: Idle
   _activityResetDelay: 100
   curActivityResetDelay: 0
+  _itemsToActivateOnRunning: []
   _dirtyVisualsRenderers: []
   _dirtyVisualsToActivate:
   - {fileID: 1540926834469614}
