@@ -1123,7 +1123,7 @@ MonoBehaviour:
   - Yasmina
   - Yasmina
   - Yasmina
-  baseChildsQuantity: 3
+  baseChildsQuantity: 0
   _passiveChildStatsModificators:
   - {fileID: 11400000, guid: e2fd6512cf540144092b6e867be718a4, type: 2}
   - {fileID: 11400000, guid: 53cb254ed76285a4aa8f842dc7395f85, type: 2}
@@ -1181,7 +1181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c315dc6843bd164195ff4495a4d8abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayDuration: 5
+  dayDuration: 120
   gf: {fileID: 454426458}
 --- !u!114 &454426458
 MonoBehaviour:
@@ -2099,6 +2099,11 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.x
       value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 224432654904146872, guid: 0d1d19db0d7a4b041902d181962edf45,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d1d19db0d7a4b041902d181962edf45, type: 2}
