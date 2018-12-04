@@ -12,6 +12,7 @@ public class ChildStatsMenu : MonoBehaviour {
     [SerializeField] RectTransform _childStatGaugesParent;
 
     [SerializeField] Text _childNameText;
+    [SerializeField] Text _childCurrentState;
 
     List<ChildStatGauge> _childStatsGaugesList;
 
@@ -49,7 +50,12 @@ public class ChildStatsMenu : MonoBehaviour {
     private void Update()
     {
         if(curChild != null)
+        {
+
             RefreshGauges(curChild);
+            _childCurrentState.text = curChild.GetStateName();
+        }
+
     }
 
     private void RefreshGauges(ChildCharacter child)
