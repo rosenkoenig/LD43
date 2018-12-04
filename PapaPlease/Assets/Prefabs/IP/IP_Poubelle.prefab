@@ -235,7 +235,8 @@ MonoBehaviour:
   _dirtyVisualsToActivate: []
   _akEventPlay:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 6237b8f26e96559429f93ffa52389430,
+      type: 2}
   _akEventStop:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: b1b920ffbe59bf44eb2cdb3b9def629c,

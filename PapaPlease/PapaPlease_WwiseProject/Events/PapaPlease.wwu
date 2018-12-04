@@ -220,6 +220,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Door" ID="{9B50EBE0-33CE-464E-B17B-FCF73596C7A3}">
+							<ChildrenList>
+								<Action Name="" ID="{2E62F577-AB66-48E4-94C9-8D40FFFB01F1}" ShortID="896431007">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Door" ID="{495A4410-E714-4874-BA2E-9333E896B4C3}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Musics" ID="{66D09C36-0569-4144-8D07-51137DA93C37}" ShortID="395366460"/>
@@ -1243,6 +1257,20 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Player_Slap_Kids" ID="{2B54AE6A-9834-41C3-BA4D-D723F3CDEDD4}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_Give_Food" ID="{08901881-099B-456F-865C-341BF5418708}">
+							<ChildrenList>
+								<Action Name="" ID="{92B68D31-8BF7-47C9-9955-ECDFBB8007B4}" ShortID="929679602">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Give_Food" ID="{DED5ECC2-1C1A-4178-B1A1-449323272C4E}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

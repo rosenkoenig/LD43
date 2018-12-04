@@ -15,6 +15,29 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2547633870" Name="Play_Door" ObjectPath="\Events\PapaPlease\SFX\Play_Door"/>
+				<Event Id="2292458263" Name="Play_Door_Close" ObjectPath="\Events\PapaPlease\SFX\Play_Door_Close"/>
+				<Event Id="1660008929" Name="Play_Door_Open" ObjectPath="\Events\PapaPlease\SFX\Play_Door_Open"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="49175465" Language="SFX">
+					<ShortName>Doors\DoorClose_01.wav</ShortName>
+					<Path>SFX\Doors\DoorClose_01_F52F4675.wem</Path>
+				</File>
+				<File Id="118484460" Language="SFX">
+					<ShortName>Doors\DoorClose_02.wav</ShortName>
+					<Path>SFX\Doors\DoorClose_02_F52F4675.wem</Path>
+				</File>
+				<File Id="576719503" Language="SFX">
+					<ShortName>Doors\DoorOpen_01.wav</ShortName>
+					<Path>SFX\Doors\DoorOpen_01_F52F4675.wem</Path>
+				</File>
+				<File Id="637810547" Language="SFX">
+					<ShortName>Doors\DoorOpen_02.wav</ShortName>
+					<Path>SFX\Doors\DoorOpen_02_F52F4675.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="1069431850" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
@@ -22,6 +45,7 @@
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
 				<Event Id="98439365" Name="Play_Player_Footsteps" ObjectPath="\Events\PapaPlease\Player\Play_Player_Footsteps"/>
+				<Event Id="3975414246" Name="Play_Player_Give_Food" ObjectPath="\Events\PapaPlease\Player\Play_Player_Give_Food"/>
 				<Event Id="76044170" Name="Play_Player_Slap" ObjectPath="\Events\PapaPlease\Player\Play_Player_Slap"/>
 				<Event Id="2204713990" Name="Play_Player_Slap_Kids" ObjectPath="\Events\PapaPlease\Player\Play_Player_Slap_Kids"/>
 				<Event Id="2284278951" Name="Stop_Player_Footsteps" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Footsteps" MaxAttenuation="0.000000"/>
