@@ -860,6 +860,7 @@ MonoBehaviour:
   - {fileID: 114397055517710876}
   moneyEarning: {fileID: 114195775035429350}
   negativeColor: {r: 1, g: 0, b: 0, a: 1}
+  button: {fileID: 114917144895698922}
 --- !u!114 &114771836955869434
 MonoBehaviour:
   m_ObjectHideFlags: 1
