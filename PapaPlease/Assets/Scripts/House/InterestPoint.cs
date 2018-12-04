@@ -15,7 +15,14 @@ public class InterestPoint : MonoBehaviour
     public IPType iPtype;
     public Activity activity;
     public bool onlyUsableByChild = false;
+    public bool onlyUsableByPlayer = false;
     public bool destroyOnComplete = false;
+
+    [SerializeField]
+    Texture[] completionTextures = null;
+
+    [SerializeField]
+    Renderer textureTarget = null;
 
     [Header("Activity progress info")]
 
@@ -144,6 +151,17 @@ public class InterestPoint : MonoBehaviour
                 if (_activityProgressInfo.gameObject.activeSelf)
                     _activityProgressInfo.gameObject.SetActive(false);
             }
+        }
+
+        //only for painting
+        if (textureTarget != null)
+        {
+            int texId = Mathf.FloorToInt(activity.GetCompletionRatio * (float)(completionTextures.Length-1));
+            Debug.Log(texId);
+
+            Material mat = textureTarget.materials[1];
+            mat.mainTexture = completionTextures[texId];
+            textureTarget.materials[1] = mat;
         }
     }
 }

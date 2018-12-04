@@ -491,6 +491,7 @@ MonoBehaviour:
   maxHolder: 1
   doOnce: 1
   animStateName: CleaningStanding
+  money: 0
   _activityResetDelay: 100
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []
@@ -521,12 +522,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerActivityName: Trash can
   logActivityName: Trashing can
-  logName: trash can
+  logName: the trash can
   pivotPoint: {fileID: 4526523015653616}
   iPtype: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114268749750583230}
   onlyUsableByChild: 0
+  onlyUsableByPlayer: 0
   destroyOnComplete: 0
+  completionTextures: []
+  textureTarget: {fileID: 0}
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4815124952151572}
   globalStatsModificator_OnCompleted: {fileID: 0}
