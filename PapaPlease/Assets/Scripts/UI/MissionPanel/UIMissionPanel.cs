@@ -50,7 +50,7 @@ public class UIMissionPanel : Popup {
         waterAmount.text =  GameMaster.Instance.wallet.waterCost.ToString() + "$";
 
         float totalEarning = GameMaster.Instance.mm.GetTotalMissionEarnings();
-        totalEarning -= GameMaster.Instance.GetAllBillsCost;
+        totalEarning += GameMaster.Instance.GetAllBillsCost;
 
         totalEarningAmount.text = (totalEarning > 0 ? "+" : "") + totalEarning.ToString() + "$";
     }

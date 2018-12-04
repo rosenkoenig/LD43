@@ -102,8 +102,11 @@ public class InterestPoint : MonoBehaviour
         }
         else
         {
-            _activityProgressInfo.transform.position = _activityProgressInfoPos.position;
-            _activityProgressInfo.transform.eulerAngles = _activityProgressInfoPos.eulerAngles;
+            if(_activityProgressInfo != null && _activityProgressInfoPos != null)
+            {
+                _activityProgressInfo.transform.position = _activityProgressInfoPos.position;
+                _activityProgressInfo.transform.eulerAngles = _activityProgressInfoPos.eulerAngles;
+            }
         }
 
         bool interacts = activity.IsAvailable(character);

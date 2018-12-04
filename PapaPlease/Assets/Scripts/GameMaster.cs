@@ -69,4 +69,8 @@ public class GameMaster : MonoBehaviour {
             log.AddLog(text);
     }
 
+    public void SpendMoneyForBills ()
+    {
+
+    }
 }
