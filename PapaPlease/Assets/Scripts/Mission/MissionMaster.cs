@@ -70,6 +70,7 @@ public class MissionMaster : MonoBehaviour {
     {
         ApplyAllMissionsSkillsEarnings();
         ApplyTotalMoneyEarnings();
+        ClearAllRunningMissions();
     }
 
     public List<Mission> GetAllAvailableMissions ()
