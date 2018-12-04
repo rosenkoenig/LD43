@@ -11019,7 +11019,7 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-14</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -11109,7 +11109,7 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -11159,7 +11159,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -11177,14 +11177,37 @@
 									<ChildrenList>
 										<Sound Name="Amb_ParentsBedroom" ID="{938CA49E-B214-43D7-BD81-B0D158439CF2}" ShortID="539970525">
 											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>36</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
 												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Parents_TV" ID="{1EA40A69-B055-4F87-B569-DEB8E99D37B3}" WorkUnitID="{EF23DAC8-E4A2-48B6-A013-9357809CF88E}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -11197,6 +11220,156 @@
 												<ActiveSource Name="Amb_ParentsBedroom" ID="{0BC4A81C-4D1B-46F1-968A-ED71B128B5FD}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<RandomSequenceContainer Name="Laugh_Dad" ID="{3ED2A446-401F-428C-8233-6767627FEECD}" ShortID="138893576">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>33</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>68</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B5AE6FF2-3A92-4DA1-A4FA-815287C1405B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-14</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-11</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Human, Laugh, Male, Senior, Chuckles 1 SND1978" ID="{D29320C8-5B0C-420D-AE4A-987FE8C98BCB}" ShortID="929597682">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Human, Laugh, Male, Senior, Chuckles 1 SND1978" ID="{314E6057-05D6-4E5C-9073-0BEEC6AC9A2E}" ShortID="133864595">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.324206836108677"/>
+																<Property Name="TrimEnd" Type="Real64" Value="10.0098860648554"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Human, Laugh, Male, Senior, Chuckles 1 SND1978" ID="{314E6057-05D6-4E5C-9073-0BEEC6AC9A2E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Human, Laugh, Male, Senior, Chuckles 1 SND1978_01" ID="{133A9ACF-8D52-48E2-8DD9-0F0FE62924D0}" ShortID="808614201">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Human, Laugh, Male, Senior, Chuckles 1 SND1978" ID="{1D137A75-1F1E-4A6E-BCC2-17D10CD0D3C6}" ShortID="196435504">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.324206836108677"/>
+																<Property Name="TrimBegin" Type="Real64" Value="9.92883435582822"/>
+																<Property Name="TrimEnd" Type="Real64" Value="20.7492375109553"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Human, Laugh, Male, Senior, Chuckles 1 SND1978" ID="{1D137A75-1F1E-4A6E-BCC2-17D10CD0D3C6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Human, Laugh, Male, Senior, Chuckles 1 SND1978_02" ID="{BC416CB3-AAFC-481C-AAAF-1FCD4E1E9286}" ShortID="652876655">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Human, Laugh, Male, Senior, Chuckles 1 SND1978" ID="{452B8AEC-8571-4859-8DD1-09685856730B}" ShortID="848191855">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.324206836108677"/>
+																<Property Name="TrimBegin" Type="Real64" Value="20.8302892199825"/>
+																<Property Name="TrimEnd" Type="Real64" Value="30.434916739702"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Human, Laugh, Male, Senior, Chuckles 1 SND1978" ID="{452B8AEC-8571-4859-8DD1-09685856730B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Human, Laugh, Male, Senior, Chuckles 1 SND1978_03" ID="{C07C3917-47BA-490D-95FB-C05D9C6A9E18}" ShortID="746298561">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Human, Laugh, Male, Senior, Chuckles 1 SND1978" ID="{2112B64A-4C7D-40D4-A198-EEA8D7C8858E}" ShortID="262364100">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.243155127081508"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.324206836108677"/>
+																<Property Name="TrimBegin" Type="Real64" Value="30.5564943032428"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Human, Laugh, Male, Senior, Chuckles 1 SND1978" ID="{2112B64A-4C7D-40D4-A198-EEA8D7C8858E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</BlendContainer>
 							</ChildrenList>
