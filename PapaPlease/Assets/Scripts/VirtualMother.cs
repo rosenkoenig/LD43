@@ -28,7 +28,7 @@ public class VirtualMother : MonoBehaviour
 
     public float GetChildsIpDegradationAddedFactor { get { return _IpDegradationAddedPerChild * activeChilds.Count; } }
 
-    public int GetChildrenNumber { get { return activeChilds.Count; } }
+    public int GetChildrenNumber { get { return allChildren.Count; } }
 
     public List<ChildCharacter> allChildren { get { return allChilds; } }
 
