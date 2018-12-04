@@ -483,7 +483,7 @@ public class ChildCharacter : Character {
                 break;
         }
 
-        CheckHealth();
+        //CheckHealth();
     }
 
     bool hasWarnedForHealth = false;

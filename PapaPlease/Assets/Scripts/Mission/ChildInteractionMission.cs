@@ -19,7 +19,7 @@ public class ChildInteractionMission : MonoBehaviour {
 
     public void Init (ChildCharacter child)
     {
-        GameMaster.Instance.AddLog("Display Mission selection menu");
+        //GameMaster.Instance.AddLog("Display Mission selection menu");
         _child = child;
 
         ClearAllButtons();
