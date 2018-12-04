@@ -27,6 +27,8 @@ public class UIMaster : MonoBehaviour
 
     [SerializeField] UiCondom condomUI;
 
+    [SerializeField] UIGameOver gameoverUI;
+
     ChildCharacter curChild;
     
     public Action HideMenuInteractChildEvent;
@@ -136,7 +138,6 @@ public class UIMaster : MonoBehaviour
     public void DisplayPlayerInteraction (bool state, string actionName)
     {
         if (playerInteractionPanel.isActiveAndEnabled == state && playerInteractionPanel.currentActionName == actionName) return;
-        Debug.Log("popup " + state);
         if(state)
         {
             _centerCursor.SetActive(false);
@@ -192,6 +193,7 @@ public class UIMaster : MonoBehaviour
 
     public void OnMissionPanelCloses ()
     {
+        GameMaster.Instance.mm.ApplyAll();
         DisplayCondomUI();
     }
 
@@ -221,5 +223,10 @@ public class UIMaster : MonoBehaviour
         HideMenuInteractChildEvent();
 
         HideMenuInteractChildEvent = null;
+    }
+
+    public void OnGameOver ()
+    {
+        gameoverUI.Display();
     }
 }
