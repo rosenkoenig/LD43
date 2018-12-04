@@ -20,7 +20,7 @@ public class ChildOrderButton : MonoBehaviour {
     internal void InitButton(IPTypeInfo ipTypeInfo, Action<IPTypeInfo> makeGiveOrder)
     {
         _ipTypeInfo = ipTypeInfo;
-        _text.text = ipTypeInfo.IPType.GetIPName;
+        _text.text = ipTypeInfo.IPType.GetOrderName;
         PlayOrderEvent = makeGiveOrder;
     }
 }

@@ -44,15 +44,15 @@ public class UIMissionPanel : Popup {
         missionItemParent.CalculateLayoutInputVertical();
         missionSkillItemParent.CalculateLayoutInputVertical();
 
-        rentAmount.text = GameMaster.Instance.rentCost.ToString() + " $";
-        elecAmount.text = GameMaster.Instance.elecCost.ToString() + " $";
-        gazAmount.text = GameMaster.Instance.gazCost.ToString() + " $";
-        waterAmount.text = GameMaster.Instance.waterCost.ToString() + " $";
+        rentAmount.text =   GameMaster.Instance.wallet.rentCost.ToString() + " $";
+        elecAmount.text =   GameMaster.Instance.wallet.elecCost.ToString() + " $";
+        gazAmount.text =    GameMaster.Instance.wallet.gazCost.ToString() + " $";
+        waterAmount.text =  GameMaster.Instance.wallet.waterCost.ToString() + " $";
 
         float totalEarning = GameMaster.Instance.mm.GetTotalMissionEarnings();
         totalEarning -= GameMaster.Instance.GetAllBillsCost;
 
-        totalEarningAmount.text = (totalEarning > 0 ? "+" : "-") + totalEarning.ToString() + " $";
+        totalEarningAmount.text = (totalEarning > 0 ? "+" : "") + totalEarning.ToString() + " $";
     }
 
     UIMissionItem CreateMissionItem ()

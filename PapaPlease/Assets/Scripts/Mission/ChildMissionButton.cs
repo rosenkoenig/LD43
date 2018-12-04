@@ -12,10 +12,19 @@ public class ChildMissionButton : MonoBehaviour {
     Text[] missionRequisites = null;
 
     [SerializeField]
+    Text[] missionRequisitesAmounts = null;
+
+    [SerializeField]
     Text[] missionSkillRewards = null;
 
     [SerializeField]
+    Text[] missionSkillRewardsAmounts = null;
+
+    [SerializeField]
     Text moneyEarning = null;
+
+    [SerializeField]
+    Color negativeColor = Color.red;
 
     Mission _mission;
     ChildInteractionMission _master;
@@ -31,7 +40,8 @@ public class ChildMissionButton : MonoBehaviour {
         {
             if (i < _mission.requisites.Count)
             {
-                missionRequisites[i].text = _mission.requisites[i].statIDNeeded.StatName + " " + _mission.requisites[i].amountNeeded;
+                missionRequisites[i].text = _mission.requisites[i].statIDNeeded.StatName;
+                missionRequisitesAmounts[i].text = _mission.requisites[i].amountNeeded.ToString("F1");
                 missionRequisites[i].gameObject.SetActive(true);
             }
             else
@@ -42,14 +52,26 @@ public class ChildMissionButton : MonoBehaviour {
         {
             if (i < _mission.onCompleteSkillStatModifier.GetStatModifier.Count)
             {
-                missionSkillRewards[i].text = _mission.onCompleteSkillStatModifier.GetStatModifier[i]._childStatID.StatName + " +" + _mission.onCompleteSkillStatModifier.GetStatModifier[i]._factor;
+                missionSkillRewards[i].text = _mission.onCompleteSkillStatModifier.GetStatModifier[i]._childStatID.StatName;
+
+                float rewardAmount = _mission.onCompleteSkillStatModifier.GetStatModifier[i]._factor;
+                bool rewardIsPositive = rewardAmount >= 0;
+                missionSkillRewardsAmounts[i].text = (rewardIsPositive ? "+" : "") + rewardAmount.ToString("F0");
+                if (rewardIsPositive == false) missionSkillRewardsAmounts[i].color = negativeColor;
+
                 missionSkillRewards[i].gameObject.SetActive(true);
             }
             else
                 missionSkillRewards[i].gameObject.SetActive(false);
         }
 
-        moneyEarning.text = "Money: "+ _mission.moneyEarned.ToString() + " $";
+        if (_mission.moneyEarned != 0f)
+            moneyEarning.text =  _mission.moneyEarned.ToString() + " $";
+        else
+            moneyEarning.gameObject.SetActive(false);
+
+        if (_mission.moneyEarned < 0)
+            moneyEarning.color = negativeColor;
     }
 
     public void OnClick()

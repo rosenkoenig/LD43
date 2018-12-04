@@ -19,10 +19,7 @@ public class GameMaster : MonoBehaviour {
     public IPType ipTypeFun = null;
     public ChildStatID healthStat = null;
 
-    [Header("Bills")]
-    public float rentCost;
-    public float elecCost, waterCost, gazCost;
-    public float GetAllBillsCost { get { return rentCost + elecCost + waterCost + gazCost; } } 
+    public float GetAllBillsCost { get { return wallet.GetAllBillsCost; } } 
 
     // Use this for initialization
     void Awake ()

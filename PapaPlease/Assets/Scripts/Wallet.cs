@@ -7,8 +7,13 @@ public class Wallet : MonoBehaviour {
     [SerializeField]
     float startMoney = 100f;
 
-    [SerializeField]
-    float foodCost = 2f;
+    public float foodCost = 2f;
+
+    [Header("Bills")]
+    public float rentCost;
+    public float elecCost, waterCost, gazCost;
+    
+    public float GetAllBillsCost { get { return rentCost + elecCost + waterCost + gazCost; } }
 
     float _money = 0f;
 

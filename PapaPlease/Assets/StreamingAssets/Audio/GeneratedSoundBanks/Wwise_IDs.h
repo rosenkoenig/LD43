@@ -18,10 +18,10 @@ namespace AK
         static const AkUniqueID PLAY_AI_CLEANFLOOR = 3782358412U;
         static const AkUniqueID PLAY_AI_CLEANWINDOW = 1459777202U;
         static const AkUniqueID PLAY_AI_CONSOLE = 1202448914U;
+        static const AkUniqueID PLAY_AI_DIE = 2713837207U;
         static const AkUniqueID PLAY_AI_DISHES = 2890421503U;
         static const AkUniqueID PLAY_AI_EAT = 3317684595U;
-        static const AkUniqueID PLAY_AI_FS_BF_WALK_L = 3853750586U;
-        static const AkUniqueID PLAY_AI_FS_BF_WALK_R = 3853750564U;
+        static const AkUniqueID PLAY_AI_FS_BF_WALK = 1188548511U;
         static const AkUniqueID PLAY_AI_HIT = 3117191778U;
         static const AkUniqueID PLAY_AI_LAVABO = 1558212960U;
         static const AkUniqueID PLAY_AI_PANIER = 312518768U;
@@ -39,6 +39,9 @@ namespace AK
         static const AkUniqueID PLAY_AMB_PARENTSBEDROOM_LP = 525979915U;
         static const AkUniqueID PLAY_AMBOUT_BATHROOM_NEIGHBORHOOD_LP = 1945404897U;
         static const AkUniqueID PLAY_AMBOUT_WALL_NEIGHBORHOOD_LP = 1682472951U;
+        static const AkUniqueID PLAY_DOOR = 2547633870U;
+        static const AkUniqueID PLAY_DOOR_CLOSE = 2292458263U;
+        static const AkUniqueID PLAY_DOOR_OPEN = 1660008929U;
         static const AkUniqueID PLAY_MENU_BACK = 455571771U;
         static const AkUniqueID PLAY_MENU_CLIC = 1982372943U;
         static const AkUniqueID PLAY_MENU_MOVE = 1871533573U;
@@ -48,6 +51,7 @@ namespace AK
         static const AkUniqueID PLAY_MONEY_REMOVE = 1733128813U;
         static const AkUniqueID PLAY_PLANE = 2689642136U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS = 98439365U;
+        static const AkUniqueID PLAY_PLAYER_GIVE_FOOD = 3975414246U;
         static const AkUniqueID PLAY_PLAYER_SLAP = 76044170U;
         static const AkUniqueID PLAY_PLAYER_SLAP_KIDS = 2204713990U;
         static const AkUniqueID STOP_AI_ANGRY = 1120423820U;
@@ -57,6 +61,7 @@ namespace AK
         static const AkUniqueID STOP_AI_CONSOLE = 1744950656U;
         static const AkUniqueID STOP_AI_DISHES = 2349360669U;
         static const AkUniqueID STOP_AI_EAT = 2292933557U;
+        static const AkUniqueID STOP_AI_FS_BF_WALK = 1488764589U;
         static const AkUniqueID STOP_AI_HIT = 1552894068U;
         static const AkUniqueID STOP_AI_LAVABO = 3877824914U;
         static const AkUniqueID STOP_AI_PANIER = 1950993718U;

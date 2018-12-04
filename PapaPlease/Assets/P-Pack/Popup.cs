@@ -52,10 +52,13 @@ public class Popup : MonoBehaviour {
     {
         if (fadeAndDeactivateCoroutine != null) StopCoroutine(fadeAndDeactivateCoroutine);
         fadeAndDeactivateCoroutine = StartCoroutine(fadeAndDeactivate());
+
+        Debug.Log("Close Popup end");
     }
 
     public virtual void Init(object[] args)
     {
+        if (fadeAndDeactivateCoroutine != null) StopCoroutine(fadeAndDeactivateCoroutine);
         SetOpaque();
         gameObject.SetActive(true);
 
@@ -72,8 +75,9 @@ public class Popup : MonoBehaviour {
     protected Coroutine fadeAndDeactivateCoroutine = null;
     protected IEnumerator fadeAndDeactivate ()
     {
-        yield return new WaitForSecondsRealtime(duration);
-
+        if( duration > 0f)
+            yield return new WaitForSecondsRealtime(duration);
+        
         FadeOut();
 
         if (OnPopupEnds != null)
@@ -85,7 +89,7 @@ public class Popup : MonoBehaviour {
         if (pauseTime) Time.timeScale = 1f;
 
         yield return new WaitForSecondsRealtime(fadeDuration);
-
+        
         gameObject.SetActive(false);
     }
 
