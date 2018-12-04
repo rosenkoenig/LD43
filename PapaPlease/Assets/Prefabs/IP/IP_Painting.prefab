@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5adb1f661ba0f4e9b6475272682cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerActivityName: Make Art (+2$)
+  playerActivityName: Make Art (+1$)
   logActivityName: 
   logName: 
   pivotPoint: {fileID: 4651062504808628}
@@ -363,7 +363,7 @@ MonoBehaviour:
   maxHolder: 1
   doOnce: 1
   animStateName: CleaningStanding
-  money: 2
+  money: 1
   _activityResetDelay: 100
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []
