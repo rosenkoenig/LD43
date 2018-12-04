@@ -208,7 +208,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1516648973699370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4905006154094148}
@@ -247,7 +247,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1693376360707114}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000035762784}
-  m_LocalPosition: {x: 4.322, y: 0, z: -4.405}
+  m_LocalPosition: {x: 4.322, y: 0, z: -4.323}
   m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
   m_Children:
   - {fileID: 4667961426387826}
@@ -487,8 +487,9 @@ MonoBehaviour:
   doOnce: 0
   animStateName: Idle
   _activityResetDelay: 100
-  _activityModifiers: []
   curActivityResetDelay: 0
+  _dirtyVisualsRenderers: []
+  _dirtyVisualsToActivate: []
   _akEventPlay:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: e6851fbcce0a09a47a8b11628d8354c0,
@@ -509,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5adb1f661ba0f4e9b6475272682cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ipName: 
+  playerActivityName: 
   pivotPoint: {fileID: 4667961426387826}
   iPtype: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
   activity: {fileID: 114386945451085706}

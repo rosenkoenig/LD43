@@ -115,18 +115,42 @@ public class PlayerBehaviour : Character {
     {
         InterestPoint ip = GetHoveredIP();
 
-        if (ip == hoverIp) return;
+        if (ip != hoverIp)
+        {
+            if (ip)
+            {
+                hoverIp = ip;
+                GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, ip.playerActivityName);
+            }
+            else if (ip == null)
+            {
+                hoverIp = ip;
+            }
+        }
 
-        if (ip)
+
+
+        
+        if(hoverChild != null)
         {
-            hoverIp = ip;
-            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, ip.playerActivityName);
+
+            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, (GameMaster.Instance.gf.GetGameState == GameState.DAY ? "Give Order" : "Give Mission"));
         }
-        else if (ip == null)
+
+        DoorLocked door = GetHoveredDoor();
+        if(door != null)
         {
+            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, "Leave Table (children can be fed only when at table)");
+        }
+
+        PlateObject plate = GetHoveredPlate();
+        if(plate != null)
+        {
+            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, "Give Food for " + GameMaster.Instance.wallet.foodCost+" $");
+        }
+
+        if (hoverChild == null && ip == null && door == null && plate == null)
             GameMaster.Instance.uIMaster.DisplayPlayerInteraction(false, "");
-            hoverIp = ip;
-        }
     }
 
     void OnInteractionBegin ()
@@ -209,7 +233,7 @@ public class PlayerBehaviour : Character {
 
     public void BeginSlap ()
     {
-        if (GameMaster.Instance.uIMaster.childInteractionMenuIsDisplayed || GameMaster.Instance.uIMaster.childInteractionMissionIsDisplayed) return;
+        if (GameMaster.Instance.uIMaster.childInteractionMenuIsDisplayed || GameMaster.Instance.uIMaster.childInteractionMissionIsDisplayed || GameMaster.Instance.gf.GetGameState == GameState.MORNING_TRANSITIOn || GameMaster.Instance.gf.GetGameState == GameState.NIGHT_TRANSITION) return;
 
         hasStartedSlap = true;
         arm.Play("Prepare");

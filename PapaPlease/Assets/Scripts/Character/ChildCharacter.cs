@@ -619,7 +619,7 @@ public class ChildCharacter : Character {
     void StartInActivity ()
     {
 
-        GameMaster.Instance.AddLog(childName + " starts interacting with " + currentInterestPoint.iPtype.GetIPName);
+        GameMaster.Instance.AddLog(childName + " starts " + currentInterestPoint.logActivityName);
         currentInterestPoint.Interact(this);
         isInActivityFeedback.SetActive(true);
     }
