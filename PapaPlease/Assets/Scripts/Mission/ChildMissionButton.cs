@@ -30,7 +30,10 @@ public class ChildMissionButton : MonoBehaviour
     Mission _mission;
     ChildInteractionMission _master;
 
-    public void Init(Mission mission, ChildInteractionMission master)
+    [SerializeField]
+    Button button;
+
+    public void Init(Mission mission, ChildInteractionMission master, bool isAvailable)
     {
         _mission = mission;
         _master = master;
@@ -82,6 +85,9 @@ public class ChildMissionButton : MonoBehaviour
 
         if (_mission.moneyEarned < 0)
             moneyEarning.color = negativeColor;
+
+        if (isAvailable == false)
+            button.interactable = false;
     }
 
     public void OnClick()

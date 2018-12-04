@@ -25,6 +25,8 @@ public class ChildInteractionMission : MonoBehaviour {
         ClearAllButtons();
         List<Mission> availableMission = GameMaster.Instance.mm.GetAllAvailableMissions();
 
+        
+
         foreach(Mission mission in availableMission)
         {
             CreateButton(mission);
@@ -48,7 +50,10 @@ public class ChildInteractionMission : MonoBehaviour {
         GameObject inst = GameObject.Instantiate(buttonPrefab.gameObject, buttonListParent);
 
         ChildMissionButton btn = inst.GetComponent<ChildMissionButton>();
-        btn.Init(mission, this);
+
+        bool available = mission.RequisitesAreFullFilledFor(_child);
+
+        btn.Init(mission, this, available);
         childMissionBtns.Add(btn);
 
     }
