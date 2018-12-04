@@ -118,12 +118,12 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 977a627e74acd84a9f6dacd27fa04f19
-    m_lastTime: -8586577219410829724
+    m_lastTime: -8586577113895541233
     List: []
   - PhysicalPath: Events\PapaPlease.wwu
     ParentPhysicalPath: 
     guid: 9f4045f0e576754ea80f87eacae3ae4b
-    m_lastTime: -8586577219410530311
+    m_lastTime: -8586577073445365003
     List:
     - name: Play_AI_Angry
       guid: 91b471132feb34448a9dc111c120785b
@@ -710,6 +710,20 @@ MonoBehaviour:
       - ElementName: Play_Player_Slap_Kids
         ObjectType: 3
       Path: PapaPlease\Player\Play_Player_Slap_Kids
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Player_Voice
+      guid: 9cc98e38864192498375dfa771d0d737
+      id: 3216481374
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Player_Voice
+        ObjectType: 3
+      Path: PapaPlease\Player\Play_Player_Voice
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

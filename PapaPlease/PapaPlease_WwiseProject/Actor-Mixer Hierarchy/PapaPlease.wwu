@@ -3596,6 +3596,7 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="AI_Hit" ID="{210CC1BD-6CC6-44F4-A0CE-8E0E73315027}" ShortID="971435190">
 									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
