@@ -150,6 +150,18 @@ public class VirtualMother : MonoBehaviour
         }
     }
 
+    public void UnsubscribeFromActiveChilds(ChildCharacter child)
+    {
+        if (activeChilds.Contains(child))
+            activeChilds.Remove(child);
+    }
+
+    public void SubscribeToActiveChilds(ChildCharacter child)
+    {
+        if (activeChilds.Contains(child) == false)
+            activeChilds.Add(child);
+    }
+
     public void ClearDeadChildren()
     {
         List<ChildCharacter> deads = new List<ChildCharacter>();

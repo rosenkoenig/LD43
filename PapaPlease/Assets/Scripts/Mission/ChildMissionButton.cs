@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ChildMissionButton : MonoBehaviour {
+public class ChildMissionButton : MonoBehaviour
+{
 
     [SerializeField]
     Text missionName = null;
@@ -29,7 +30,7 @@ public class ChildMissionButton : MonoBehaviour {
     Mission _mission;
     ChildInteractionMission _master;
 
-    public void Init (Mission mission, ChildInteractionMission master)
+    public void Init(Mission mission, ChildInteractionMission master)
     {
         _mission = mission;
         _master = master;
@@ -43,9 +44,14 @@ public class ChildMissionButton : MonoBehaviour {
                 missionRequisites[i].text = _mission.requisites[i].statIDNeeded.StatName;
                 missionRequisitesAmounts[i].text = _mission.requisites[i].amountNeeded.ToString("F1");
                 missionRequisites[i].gameObject.SetActive(true);
+                missionRequisitesAmounts[i].gameObject.SetActive(true);
+
             }
             else
+            {
                 missionRequisites[i].gameObject.SetActive(false);
+                missionRequisitesAmounts[i].gameObject.SetActive(false);
+            }
         }
 
         for (int i = 0; i < missionSkillRewards.Length; i++)
@@ -60,13 +66,17 @@ public class ChildMissionButton : MonoBehaviour {
                 if (rewardIsPositive == false) missionSkillRewardsAmounts[i].color = negativeColor;
 
                 missionSkillRewards[i].gameObject.SetActive(true);
+                missionSkillRewardsAmounts[i].gameObject.SetActive(true);
             }
             else
+            {
                 missionSkillRewards[i].gameObject.SetActive(false);
+                missionSkillRewardsAmounts[i].gameObject.SetActive(false);
+            }
         }
 
         if (_mission.moneyEarned != 0f)
-            moneyEarning.text =  _mission.moneyEarned.ToString() + " $";
+            moneyEarning.text = "$" + _mission.moneyEarned.ToString();
         else
             moneyEarning.gameObject.SetActive(false);
 

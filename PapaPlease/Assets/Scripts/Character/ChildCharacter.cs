@@ -226,6 +226,7 @@ public class ChildCharacter : Character {
 
     public void AttributeToMission ()
     {
+        GameMaster.Instance.vm.UnsubscribeFromActiveChilds(this);
         SetState(ChildAIState.IN_MISSION);
     }
 
@@ -812,7 +813,7 @@ public class ChildCharacter : Character {
 
     void EndInMission ()
     {
-
+        GameMaster.Instance.vm.SubscribeToActiveChilds(this);
     }
 
 
