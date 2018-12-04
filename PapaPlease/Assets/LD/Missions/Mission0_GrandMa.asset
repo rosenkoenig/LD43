@@ -9,16 +9,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1804722bfbdee74f99034f892318b73, type: 3}
-  m_Name: Mission4_Kebab
+  m_Name: Mission0_GrandMa
   m_EditorClassIdentifier: 
-  missionName: Buy a kebab
-  moneyEarned: -10
-  requisites: []
+  missionName: Go to Grandma
+  moneyEarned: 2
+  requisites:
+  - statIDNeeded: {fileID: 11400000, guid: 2d1aff0eb8d9dbd42a0f26c94a55d466, type: 2}
+    amountNeeded: 15
   onCompleteSkillStatModifier:
     statsModifiers:
     - _childStatID: {fileID: 11400000, guid: 585ea90be3ef1a645a3c0b3894aeb3f4, type: 2}
       _factor: 100
       _refill: 1
       _relativeChildStatID: {fileID: 0}
-  onCompleteHiddenStatModifier: {fileID: 11400000, guid: c419c83b09a956341982a4f8392cc342,
+  onCompleteHiddenStatModifier: {fileID: 11400000, guid: d13a25459487ad34ab1936b708447f35,
     type: 2}
