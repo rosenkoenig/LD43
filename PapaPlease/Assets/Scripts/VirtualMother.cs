@@ -29,6 +29,8 @@ public class VirtualMother : MonoBehaviour
 
     public List<ChildCharacter> allChildren { get { return allChilds; } }
 
+    public bool hasCondom = false;
+
     // Use this for initialization
     public void Init()
     {
@@ -108,7 +110,8 @@ public class VirtualMother : MonoBehaviour
 
     public void GiveBirth()
     {
-        AddChild();
+        if(!hasCondom)
+            AddChild();
     }
 
     public ChildCharacter GetChild(string childName)

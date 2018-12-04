@@ -133,14 +133,16 @@ public class UIMaster : MonoBehaviour
 
     public void DisplayPlayerInteraction (bool state, string actionName)
     {
-        if (playerInteractionPanel.isActiveAndEnabled == state) return;
+        if (playerInteractionPanel.isActiveAndEnabled == state && playerInteractionPanel.currentActionName == actionName) return;
         Debug.Log("popup " + state);
         if(state)
         {
+            _centerCursor.SetActive(false);
             playerInteractionPanel.Init(new object[1] { actionName });
         }
         else
         {
+            _centerCursor.SetActive(true);
             playerInteractionPanel.ClosePopup();
         }
     }
