@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Floor
+  m_Name: Fill_Txt_08
   m_Shader: {fileID: 4800000, guid: aa593d636c2d28d40b98ce25d029db2e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -23,7 +23,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CleanTexture:
-        m_Texture: {fileID: 2800000, guid: 54362894e77381740ad0b85ab03f350c, type: 3}
+        m_Texture: {fileID: 2800000, guid: d8bd75fd30fd41240bc01f01a22ebf64, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -51,7 +51,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 54362894e77381740ad0b85ab03f350c, type: 3}
+        m_Texture: {fileID: 2800000, guid: d8bd75fd30fd41240bc01f01a22ebf64, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -77,18 +77,18 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _DetailColorBlending: 0.7
+    - _DetailColorBlending: 1
     - _DetailNormalMapScale: 1
     - _DirtBlending: 0
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Metallic: 0
+    - _Metallic: 0.077
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Smoothness: 0
+    - _Smoothness: 0.539
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -96,7 +96,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _AjustColor: {r: 1, g: 1, b: 1, a: 0}
-    - _Color: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
-    - _DetailColorAjust: {r: 0.4339623, g: 0.35905245, b: 0.25996798, a: 0}
+    - _AjustColor: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 0}
+    - _Color: {r: 0.49568352, g: 0.6934422, b: 0.745283, a: 1}
+    - _DetailColorAjust: {r: 0.24313726, g: 0.4115825, b: 0.4627451, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
