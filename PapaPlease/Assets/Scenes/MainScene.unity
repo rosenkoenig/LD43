@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6272491, g: 0.6012045, b: 0.55918, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -988,7 +988,7 @@ MonoBehaviour:
   - Yasmina
   - Yasmina
   - Yasmina
-  baseChildsQuantity: 0
+  baseChildsQuantity: 1
   _passiveChildStatsModificators:
   - {fileID: 11400000, guid: e2fd6512cf540144092b6e867be718a4, type: 2}
   - {fileID: 11400000, guid: 53cb254ed76285a4aa8f842dc7395f85, type: 2}
@@ -1075,13 +1075,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8e3fe01638df6e4cb7d8cae9ea0996b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 10
-  foodCost: 2
-  rentCost: 5
-  elecCost: 2
-  waterCost: 1
-  gazCost: 2
-  condomCost: 10
+  startMoney: 15
+  foodCost: 1
+  rentCost: -2
+  elecCost: -1
+  waterCost: -1
+  gazCost: -1
+  condomCost: -5
   OnSpendMoneyEvent:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: 26ce982c72e244849b6e3ed296bf8f2b,
@@ -1106,6 +1106,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a138fb09ef58829458892412b35ce3a0, type: 2}
   - {fileID: 11400000, guid: 0894fa8d3e70b0646885983dade0b1f1, type: 2}
   - {fileID: 11400000, guid: da1415532147725459856b8872a8fb8f, type: 2}
+  - {fileID: 11400000, guid: c09e9e61c9680e24e94b9e0973ec6056, type: 2}
   - {fileID: 11400000, guid: e65b7b0475731de4c9a7393999072050, type: 2}
   - {fileID: 11400000, guid: c5561a1e235957840bb5cc3f92649dad, type: 2}
   - {fileID: 11400000, guid: 3a2fa202acc88e14eb8ec66844098fc9, type: 2}
@@ -4809,6 +4810,7 @@ MonoBehaviour:
   missionPanel: {fileID: 2032321582}
   _childInteractionMission: {fileID: 1867470376}
   condomUI: {fileID: 688034857}
+  gameoverUI: {fileID: 0}
 --- !u!1001 &2114080758
 Prefab:
   m_ObjectHideFlags: 0
