@@ -485,9 +485,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHolder: 1
   doOnce: 0
-  animStateName: Idle
+  animStateName: CleaningStanding
   _activityResetDelay: 100
   curActivityResetDelay: 0
+  _itemsToActivateOnRunning: []
   _dirtyVisualsRenderers: []
   _dirtyVisualsToActivate: []
   _akEventPlay:
@@ -511,10 +512,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerActivityName: 
+  logActivityName: 
+  logName: 
   pivotPoint: {fileID: 4667961426387826}
   iPtype: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
   activity: {fileID: 114386945451085706}
   onlyUsableByChild: 1
+  destroyOnComplete: 0
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4181663241133324}
   globalStatsModificator_OnCompleted: {fileID: 0}

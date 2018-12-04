@@ -232,6 +232,7 @@ MonoBehaviour:
   iPtype: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114379295816765414}
   onlyUsableByChild: 0
+  destroyOnComplete: 0
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4245892108466312}
   globalStatsModificator_OnCompleted: {fileID: 0}
@@ -251,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHolder: 1
   doOnce: 1
-  animStateName: Idle
+  animStateName: PlayOnFloor
   _activityResetDelay: 60
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []

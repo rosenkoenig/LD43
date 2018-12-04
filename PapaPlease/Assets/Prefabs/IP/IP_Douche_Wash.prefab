@@ -580,6 +580,7 @@ MonoBehaviour:
   iPtype: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
   activity: {fileID: 114603838078755730}
   onlyUsableByChild: 0
+  destroyOnComplete: 0
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4934458020098138}
   globalStatsModificator_OnCompleted: {fileID: 0}
@@ -600,7 +601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHolder: 1
   doOnce: 1
-  animStateName: Idle
+  animStateName: HipHop
   _activityResetDelay: 100
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []

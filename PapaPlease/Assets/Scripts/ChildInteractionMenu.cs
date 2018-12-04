@@ -27,13 +27,7 @@ public class ChildInteractionMenu : MonoBehaviour
     {
         //_childStatsGaugesList = new List<ChildStatGauge>();
 
-        _childOrderButtons = new List<ChildOrderButton>();
-        foreach (var item in allIPTypeInfos)
-        {
-            ChildOrderButton childOrderButton = Instantiate(_childOrderButtonRef, childOrderButtonsParent);
-            childOrderButton.InitButton(item, MakeGiveOrder);
-            _childOrderButtons.Add(childOrderButton);
-        }
+        
 
         //foreach (var item in _childStatIdsContainer.GetChildStatIDs)
         //{
@@ -52,14 +46,32 @@ public class ChildInteractionMenu : MonoBehaviour
     {
         curChild = child;
         //_childNameText.text = child.childName;
+
+        ClearOrderButtons();
+
+        _childOrderButtons = new List<ChildOrderButton>();
+        foreach (var item in allIPTypeInfos)
+        {
+            ChildOrderButton childOrderButton = Instantiate(_childOrderButtonRef, childOrderButtonsParent);
+            childOrderButton.InitButton(item, MakeGiveOrder);
+            _childOrderButtons.Add(childOrderButton);
+        }
+
+
         RefreshButtons(curChild);
     }
 
     private void RefreshButtons(ChildCharacter child)
     {
+        
+
         for (int i = 0; i < allIPTypeInfos.Count; i++)
         {
-            _childOrderButtons[i]._button.interactable = allIPTypeInfos[i].isAvailable;
+            if (i < _childOrderButtons.Count)
+            {
+                _childOrderButtons[i].InitButton(allIPTypeInfos[i], MakeGiveOrder);
+                _childOrderButtons[i]._button.interactable = allIPTypeInfos[i].isAvailable;
+            }
         }
         //foreach (var item in _childStatsGaugesList)
         //{
@@ -69,6 +81,16 @@ public class ChildInteractionMenu : MonoBehaviour
         //            item.RefreshGauge(curStatInfo);
         //    }
         //}
+    }
+
+    void ClearOrderButtons ()
+    {
+        if (_childOrderButtons == null) return;
+
+        foreach(ChildOrderButton btn in _childOrderButtons)
+        {
+            Destroy(btn.gameObject);
+        }
     }
 
     public void MakeHideMenuInteractChild()
