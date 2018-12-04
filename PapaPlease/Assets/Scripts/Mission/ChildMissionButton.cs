@@ -76,7 +76,7 @@ public class ChildMissionButton : MonoBehaviour
         }
 
         if (_mission.moneyEarned != 0f)
-            moneyEarning.text = "$" + _mission.moneyEarned.ToString();
+            moneyEarning.text = _mission.moneyEarned.ToString() + "$";
         else
             moneyEarning.gameObject.SetActive(false);
 
