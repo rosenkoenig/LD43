@@ -678,7 +678,7 @@ MonoBehaviour:
   _rigidB: {fileID: 54945795513341698}
   _cam: {fileID: 20445820290788818}
   _camRotateSpeed: {x: 100, y: 100}
-  _camRotateMaxVerti: 50
+  _camRotateMaxVerti: 70
   _camRotateMinVertiUp: 275
   curCamVERTIDebug: 0
 --- !u!114 &114946541751754464
@@ -736,6 +736,15 @@ MonoBehaviour:
   _plateLayerMask:
     serializedVersion: 2
     m_Bits: 1024
+  OnSlapEvent:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 0}
+  OnFillPlateEvent:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 0}
+  OnClickOnDoorEvent:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!136 &136494431944464116
 CapsuleCollider:
   m_ObjectHideFlags: 1
