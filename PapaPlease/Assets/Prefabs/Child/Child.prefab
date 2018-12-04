@@ -1807,8 +1807,41 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 5940c00c657c91d47afc10f5eabc103d, type: 2}
   - {fileID: 2100000, guid: e7abe9c40d67bd34daa1cefe16d12b8c, type: 2}
   baseSkinMaterial: {fileID: 2100000, guid: 25ac24d6e8c23374998d4b3e3bc0a152, type: 2}
+  pipiIPPrefab: {fileID: 114018663207977052, guid: f3a70639335976e458fa248ca1be7d1d,
+    type: 2}
+  vessieID: {fileID: 11400000, guid: b6eb2aa1a6a532c4ab5415cb61a7f6e4, type: 2}
+  onPipiModificator:
+    statsModifiers:
+    - _childStatID: {fileID: 11400000, guid: b6eb2aa1a6a532c4ab5415cb61a7f6e4, type: 2}
+      _factor: 0
+      _refill: 1
+      _relativeChildStatID: {fileID: 0}
   animator: {fileID: 95182140613341446}
   extraRotationSpeed: 8
+  OnSlapEvent:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 0}
+  OnStartAnger:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 0}
+  OnStopAnger:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 0}
+  OnStartEating:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 0}
+  OnStopEating:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 0}
+  OnStartWalking:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 0}
+  OnStopWalking:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 0}
+  OnDeathEvent:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!135 &135356666567277768
 SphereCollider:
   m_ObjectHideFlags: 1
