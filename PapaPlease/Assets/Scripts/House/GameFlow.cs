@@ -103,14 +103,17 @@ public class GameFlow : MonoBehaviour {
 
     public void EndNightTransition ()
     {
+        hasDisplayedMissionPanel = false;
         BeginTablePhase();
     }
 
+    bool hasDisplayedMissionPanel = false;
     void UpdateNightTransition ()
     {
-        if (Time.time - stateStartTime >= nightTransitionDuration)
+        if (!hasDisplayedMissionPanel && Time.time - stateStartTime >= nightTransitionDuration)
         {
             GameMaster.Instance.uIMaster.DisplayMissionPanel();
+            hasDisplayedMissionPanel = true;
         }
     }
 }

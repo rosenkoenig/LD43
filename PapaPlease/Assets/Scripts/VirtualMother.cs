@@ -116,8 +116,12 @@ public class VirtualMother : MonoBehaviour
 
     public void GiveBirth()
     {
-        if(!hasCondom)
+        if (!hasCondom)
+        {
             AddChild();
+        }
+        else
+            hasCondom = false;
     }
 
     public ChildCharacter GetChild(string childName)

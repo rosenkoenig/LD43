@@ -343,7 +343,7 @@ public class ChildCharacter : Character {
     bool autoPipiFailed = false;
     void CheckPipi ()
     {
-        if (state >= ChildAIState.IN_ACTIVITY) return;
+        if (state >= ChildAIState.IN_ACTIVITY || GameMaster.Instance.gf.GetGameState != GameState.DAY) return;
         if (statsContainer.GetAChildStatValue(vessieID) <= vessieID.MinValue)
         {
             DoPipi();
