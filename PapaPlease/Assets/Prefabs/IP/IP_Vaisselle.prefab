@@ -264,7 +264,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1627810136435712}
   m_LocalRotation: {x: -0, y: -0.7071069, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -4.925, y: 0, z: 5.484}
+  m_LocalPosition: {x: -4.925, y: 0, z: 4.037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4060127090980454}
@@ -874,12 +874,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerActivityName: Wash the dishes
   logActivityName: Washing the dishes
-  logName: kitchen sink
+  logName: the kitchen sink
   pivotPoint: {fileID: 4060127090980454}
   iPtype: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114900431433536196}
   onlyUsableByChild: 0
+  onlyUsableByPlayer: 0
   destroyOnComplete: 0
+  completionTextures: []
+  textureTarget: {fileID: 0}
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4962952409794948}
   globalStatsModificator_OnCompleted: {fileID: 0}
@@ -901,6 +904,7 @@ MonoBehaviour:
   maxHolder: 1
   doOnce: 1
   animStateName: CleaningStanding
+  money: 0
   _activityResetDelay: 100
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []

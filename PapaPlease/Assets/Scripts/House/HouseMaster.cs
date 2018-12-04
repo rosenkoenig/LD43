@@ -129,7 +129,7 @@ public class HouseMaster : MonoBehaviour
 
         foreach (InterestPoint ip in allInterestPoints)
         {
-            if (ip.activity.IsAvailable() && availableIPType.Contains(ip.iPtype) == false)
+            if (ip.activity.IsAvailable() && availableIPType.Contains(ip.iPtype) == false && ip.onlyUsableByPlayer == false)
                 availableIPType.Add(ip.iPtype);
         }        
 

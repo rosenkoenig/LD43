@@ -213,7 +213,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1999001568061182}
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: -0.7071069}
-  m_LocalPosition: {x: 3.999, y: 0, z: -2.935}
+  m_LocalPosition: {x: 3.999, y: 0, z: -2.664}
   m_LocalScale: {x: 1.0000005, y: 1, z: 1.0000005}
   m_Children:
   - {fileID: 4023697959703040}
@@ -561,6 +561,7 @@ MonoBehaviour:
   maxHolder: 1
   doOnce: 0
   animStateName: PickUp
+  money: 0
   _activityResetDelay: 100
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []
@@ -588,12 +589,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerActivityName: 
   logActivityName: Washing hands
-  logName: sink
+  logName: the sink
   pivotPoint: {fileID: 4023697959703040}
   iPtype: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
   activity: {fileID: 114508751568058650}
   onlyUsableByChild: 1
+  onlyUsableByPlayer: 0
   destroyOnComplete: 0
+  completionTextures: []
+  textureTarget: {fileID: 0}
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4400287036003550}
   globalStatsModificator_OnCompleted: {fileID: 0}

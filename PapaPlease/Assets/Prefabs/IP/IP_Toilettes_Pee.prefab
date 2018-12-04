@@ -314,6 +314,7 @@ MonoBehaviour:
   maxHolder: 1
   doOnce: 0
   animStateName: Idle
+  money: 0
   _activityResetDelay: 100
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []
@@ -341,11 +342,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerActivityName: 
   logActivityName: Going to pee
-  logName: the toilet
+  logName: the toilets
   pivotPoint: {fileID: 4570314492744576}
   iPtype: {fileID: 11400000, guid: 692618518660df64480ec57f23e83d13, type: 2}
   activity: {fileID: 114303019189652138}
   onlyUsableByChild: 1
+  onlyUsableByPlayer: 0
+  destroyOnComplete: 0
+  completionTextures: []
+  textureTarget: {fileID: 0}
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4273694948503448}
   globalStatsModificator_OnCompleted: {fileID: 0}

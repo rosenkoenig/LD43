@@ -118,12 +118,12 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 977a627e74acd84a9f6dacd27fa04f19
-    m_lastTime: -8586577113895541233
+    m_lastTime: -8586577046929314176
     List: []
   - PhysicalPath: Events\PapaPlease.wwu
     ParentPhysicalPath: 
     guid: 9f4045f0e576754ea80f87eacae3ae4b
-    m_lastTime: -8586577073445365003
+    m_lastTime: -8586577046929072720
     List:
     - name: Play_AI_Angry
       guid: 91b471132feb34448a9dc111c120785b
@@ -685,6 +685,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_Player_Paint
+      guid: 007329fb5b1e2f48b66f99a15e8900f7
+      id: 449815044
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Player_Paint
+        ObjectType: 3
+      Path: PapaPlease\Player\Play_Player_Paint
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Player_Slap
       guid: 5c9b5b7b61b6e14a944618a6fb799db4
       id: 76044170
@@ -1158,6 +1172,20 @@ MonoBehaviour:
       - ElementName: Stop_Player_Footsteps
         ObjectType: 3
       Path: PapaPlease\Player\Stop_Player_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Player_Paint
+      guid: ca4e1d6b06f59f4e987e0a23d0337cfb
+      id: 3604926542
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Stop_Player_Paint
+        ObjectType: 3
+      Path: PapaPlease\Player\Stop_Player_Paint
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

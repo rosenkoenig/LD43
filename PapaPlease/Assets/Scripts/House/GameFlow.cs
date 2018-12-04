@@ -59,6 +59,7 @@ public class GameFlow : MonoBehaviour {
         gm.hm.SetDoorLockedClosed(true);
         gm.player.LockMovement(false);
         gm.player.SetInteractActive(true);
+        gm.mm.ClearAllRunningMissions();
     }
 
     public void EndTablePhase ()

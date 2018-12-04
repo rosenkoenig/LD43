@@ -16,3 +16,4 @@ MonoBehaviour:
     - _childStatID: {fileID: 11400000, guid: edde50d32f7d6d34789d931cdc9b9f8d, type: 2}
       _factor: -0.1
       _refill: 0
+      _relativeChildStatID: {fileID: 0}

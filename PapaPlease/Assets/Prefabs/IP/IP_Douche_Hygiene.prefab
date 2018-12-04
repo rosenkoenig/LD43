@@ -247,7 +247,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1693376360707114}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000035762784}
-  m_LocalPosition: {x: 4.322, y: 0, z: -4.323}
+  m_LocalPosition: {x: 4.2209997, y: 0, z: -4.281}
   m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
   m_Children:
   - {fileID: 4667961426387826}
@@ -486,6 +486,7 @@ MonoBehaviour:
   maxHolder: 1
   doOnce: 0
   animStateName: CleaningStanding
+  money: 0
   _activityResetDelay: 100
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []
@@ -512,13 +513,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerActivityName: 
-  logActivityName: 
-  logName: 
+  logActivityName: Washing
+  logName: the shower
   pivotPoint: {fileID: 4667961426387826}
   iPtype: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
   activity: {fileID: 114386945451085706}
   onlyUsableByChild: 1
+  onlyUsableByPlayer: 0
   destroyOnComplete: 0
+  completionTextures: []
+  textureTarget: {fileID: 0}
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4181663241133324}
   globalStatsModificator_OnCompleted: {fileID: 0}
