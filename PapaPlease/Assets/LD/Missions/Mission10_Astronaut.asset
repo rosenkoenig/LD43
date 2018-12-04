@@ -9,18 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1804722bfbdee74f99034f892318b73, type: 3}
-  m_Name: TestMission
+  m_Name: Mission10_Astronaut
   m_EditorClassIdentifier: 
-  moneyEarned: 69
-  missionName: Suck My Dick
+  missionName: 'Job: Astronaut'
+  moneyEarned: 15
   requisites:
-  - statIDNeeded: {fileID: 11400000, guid: 19c532e912ca9b24b9d4a03a597635dd, type: 2}
-    amountNeeded: 1
+  - statIDNeeded: {fileID: 11400000, guid: b093d0660af69114b9e892be318bfda9, type: 2}
+    amountNeeded: 10
   onCompleteSkillStatModifier:
-    statsModifiers:
-    - _childStatID: {fileID: 11400000, guid: b093d0660af69114b9e892be318bfda9, type: 2}
-      _factor: 20
-      _refill: 0
-      _relativeChildStatID: {fileID: 0}
+    statsModifiers: []
   onCompleteHiddenStatModifier: {fileID: 11400000, guid: d13a25459487ad34ab1936b708447f35,
     type: 2}
