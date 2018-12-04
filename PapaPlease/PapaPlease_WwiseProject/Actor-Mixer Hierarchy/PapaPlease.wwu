@@ -5783,6 +5783,11 @@
 										<RandomSequenceContainer Name="AI_Playing" ID="{4970869C-1EB2-4785-BCD6-1F61D1AC5123}" ShortID="38300528">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
 												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
