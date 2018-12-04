@@ -1081,13 +1081,15 @@ MonoBehaviour:
   elecCost: 4
   waterCost: 3
   gazCost: 3
-  condomCost: 0
+  condomCost: 10
   OnSpendMoneyEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 26ce982c72e244849b6e3ed296bf8f2b,
+      type: 2}
   OnEarnMoneyEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 09462dd27f041e748a60bb31089378f8,
+      type: 2}
 --- !u!114 &454426460
 MonoBehaviour:
   m_ObjectHideFlags: 0
