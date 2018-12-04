@@ -2756,6 +2756,24 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114971537473592944, guid: cd5ddb89d63c8c748a774027bfbd9966,
+        type: 2}
+      propertyPath: OnSlapEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 6e69554ed89a8d14e9c50f69a53cc0b0,
+        type: 2}
+    - target: {fileID: 114971537473592944, guid: cd5ddb89d63c8c748a774027bfbd9966,
+        type: 2}
+      propertyPath: OnFillPlateEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e9ed9ae427ef1d449a3edf1b26404cfd,
+        type: 2}
+    - target: {fileID: 114971537473592944, guid: cd5ddb89d63c8c748a774027bfbd9966,
+        type: 2}
+      propertyPath: OnClickOnDoorEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: f2297bb53d6e1b8478ae5e1fd91abd1b,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd5ddb89d63c8c748a774027bfbd9966, type: 2}
   m_IsPrefabAsset: 0

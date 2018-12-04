@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2284278951	Stop_Player_Footsteps			\PapaPlease\Player\Stop_Player_Footsteps	
 	2895733124	Stop_Player_Slap_Kids			\PapaPlease\Player\Stop_Player_Slap_Kids	
 	3374816280	Stop_Player_Slap			\PapaPlease\Player\Stop_Player_Slap	
+	3975414246	Play_Player_Give_Food			\PapaPlease\Player\Play_Player_Give_Food	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2722341167	Player_Slap			\Default Work Unit\Player_Slap	

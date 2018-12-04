@@ -39,6 +39,9 @@ namespace AK
         static const AkUniqueID PLAY_AMB_PARENTSBEDROOM_LP = 525979915U;
         static const AkUniqueID PLAY_AMBOUT_BATHROOM_NEIGHBORHOOD_LP = 1945404897U;
         static const AkUniqueID PLAY_AMBOUT_WALL_NEIGHBORHOOD_LP = 1682472951U;
+        static const AkUniqueID PLAY_DOOR = 2547633870U;
+        static const AkUniqueID PLAY_DOOR_CLOSE = 2292458263U;
+        static const AkUniqueID PLAY_DOOR_OPEN = 1660008929U;
         static const AkUniqueID PLAY_MENU_BACK = 455571771U;
         static const AkUniqueID PLAY_MENU_CLIC = 1982372943U;
         static const AkUniqueID PLAY_MENU_MOVE = 1871533573U;
@@ -48,6 +51,7 @@ namespace AK
         static const AkUniqueID PLAY_MONEY_REMOVE = 1733128813U;
         static const AkUniqueID PLAY_PLANE = 2689642136U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS = 98439365U;
+        static const AkUniqueID PLAY_PLAYER_GIVE_FOOD = 3975414246U;
         static const AkUniqueID PLAY_PLAYER_SLAP = 76044170U;
         static const AkUniqueID PLAY_PLAYER_SLAP_KIDS = 2204713990U;
         static const AkUniqueID STOP_AI_ANGRY = 1120423820U;

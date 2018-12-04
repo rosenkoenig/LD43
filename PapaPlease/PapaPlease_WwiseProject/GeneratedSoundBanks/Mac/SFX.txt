@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1660008929	Play_Door_Open			\PapaPlease\SFX\Play_Door_Open	
+	2292458263	Play_Door_Close			\PapaPlease\SFX\Play_Door_Close	
+	2547633870	Play_Door			\PapaPlease\SFX\Play_Door	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	49175465	DoorClose_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Doors\DoorClose_01_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Doors\Door\Door_Close\DoorClose_01		8023
+	118484460	DoorClose_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Doors\DoorClose_02_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Doors\Door\Door_Close\DoorClose_02		7806
+	576719503	DoorOpen_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Doors\DoorOpen_01_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Doors\Door\Door_Open\DoorOpen_01		7689
+	637810547	DoorOpen_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Doors\DoorOpen_02_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\SFX\Doors\Door\Door_Open\DoorOpen_02		8000
+
