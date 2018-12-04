@@ -62,6 +62,10 @@
 					<ShortName>Player_Foosteps.wav</ShortName>
 					<Path>SFX\Player_Foosteps_658E136E.wem</Path>
 				</File>
+				<File Id="208192602" Language="SFX">
+					<ShortName>Player_Voice\Mmm Female Various by AudioRichter Id-169342 1.wav</ShortName>
+					<Path>SFX\Player_Voice\Mmm Female Various by AudioRichter Id-169342 1_4A9AF0C7.wem</Path>
+				</File>
 				<File Id="226423887" Language="SFX">
 					<ShortName>Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 1 SND18731.wav</ShortName>
 					<Path>SFX\Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 1 SND18731_F52F4675.wem</Path>
@@ -93,6 +97,10 @@
 				<File Id="597931799" Language="SFX">
 					<ShortName>Plastic Bag, Small, Filled With Water, Pick Up From Wood Surface 2 SND18732.wav</ShortName>
 					<Path>SFX\Plastic Bag, Small, Filled With Water, Pick Up From Wood Surface 2 SND18732_F52F4675.wem</Path>
+				</File>
+				<File Id="658954882" Language="SFX">
+					<ShortName>Player_Voice\Mmm Female Various by AudioRichter Id-169342.wav</ShortName>
+					<Path>SFX\Player_Voice\Mmm Female Various by AudioRichter Id-169342_F4ADA104.wem</Path>
 				</File>
 				<File Id="682061179" Language="SFX">
 					<ShortName>Player_Slap\Player_Slap_Kids\Player_SlapKid_04_v2.wav</ShortName>
@@ -166,6 +174,10 @@
 				<File Id="666006642" Language="SFX">
 					<ShortName>Amb_Outside\AmbOut_Wall_Neighborhood.wav</ShortName>
 					<Path>SFX\Amb_Outside\AmbOut_Wall_Neighborhood_0265BEE3.wem</Path>
+				</File>
+				<File Id="843721958" Language="SFX">
+					<ShortName>Amb_Bathroom_Lp_02.wav</ShortName>
+					<Path>SFX\Amb_Bathroom_Lp_02_0265BEE3.wem</Path>
 				</File>
 				<File Id="848191855" Language="SFX">
 					<ShortName>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</ShortName>
@@ -733,6 +745,10 @@
 				<File Id="148470694" Language="SFX">
 					<ShortName>UI\Menu_QuitGame_01.wav</ShortName>
 					<Path>SFX\UI\Menu_QuitGame_01_56D34C19.wem</Path>
+				</File>
+				<File Id="355330244" Language="SFX">
+					<ShortName>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</ShortName>
+					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_DA5B8082.wem</Path>
 				</File>
 				<File Id="387363422" Language="SFX">
 					<ShortName>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</ShortName>
