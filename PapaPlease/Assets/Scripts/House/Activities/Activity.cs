@@ -51,6 +51,8 @@ public class Activity : MonoBehaviour
 
     [SerializeField] float curActivityResetDelay;
 
+    [SerializeField] List<GameObject> _itemsToActivateOnRunning;
+
     [SerializeField] List<Renderer> _dirtyVisualsRenderers;
     [SerializeField] List<GameObject> _dirtyVisualsToActivate;
 
@@ -110,6 +112,9 @@ public class Activity : MonoBehaviour
             child.StartAnimState(animStateName);
         }
 
+        foreach (var item in _itemsToActivateOnRunning)
+            item.SetActive(true);
+
         if (OnBegin != null) OnBegin();
     }
 
@@ -145,6 +150,9 @@ public class Activity : MonoBehaviour
         {
             child.StartAnimState(animStateName + "_End");
         }
+
+        foreach (var item in _itemsToActivateOnRunning)
+            item.SetActive(false);
 
         if (OnEnd != null) OnEnd();
     }

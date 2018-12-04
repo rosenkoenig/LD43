@@ -563,6 +563,7 @@ MonoBehaviour:
   animStateName: Idle
   _activityResetDelay: 100
   curActivityResetDelay: 0
+  _itemsToActivateOnRunning: []
   _dirtyVisualsRenderers: []
   _dirtyVisualsToActivate: []
   _akEventPlay:
@@ -586,6 +587,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerActivityName: 
+  logActivityName: Washing hands
+  logName: sink
   pivotPoint: {fileID: 4023697959703040}
   iPtype: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
   activity: {fileID: 114508751568058650}

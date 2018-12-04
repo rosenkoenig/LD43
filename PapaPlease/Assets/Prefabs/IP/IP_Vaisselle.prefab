@@ -1574,6 +1574,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerActivityName: Wash the dishes
+  logActivityName: Washing the dishes
+  logName: kitchen sink
   pivotPoint: {fileID: 4060127090980454}
   iPtype: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114900431433536196}
@@ -1601,6 +1603,7 @@ MonoBehaviour:
   animStateName: Idle
   _activityResetDelay: 100
   curActivityResetDelay: 0
+  _itemsToActivateOnRunning: []
   _dirtyVisualsRenderers:
   - {fileID: 23395317815565036}
   - {fileID: 23599122956246294}
