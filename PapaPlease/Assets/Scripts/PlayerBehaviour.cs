@@ -71,6 +71,7 @@ public class PlayerBehaviour : Character {
         {
             if(GameMaster.Instance.gf.GetGameState == GameState.TABLE)
             {
+                PlaySoundEvent(OnClickOnDoorEvent);
                 GameMaster.Instance.PlayerWantsToEndTablePhase();
             }
         }
@@ -212,6 +213,8 @@ public class PlayerBehaviour : Character {
 
         hasStartedSlap = true;
         arm.Play("Prepare");
+
+
     }
 
     public void LaunchSlap ()
@@ -225,6 +228,8 @@ public class PlayerBehaviour : Character {
         {
             child.IsSlapped();
         }
+
+        PlaySoundEvent(OnSlapEvent);
     }
 
     public void CancelSlap ()
@@ -247,8 +252,25 @@ public class PlayerBehaviour : Character {
 
         if(buyMoneySucceeds)
         {
+            PlaySoundEvent(OnFillPlateEvent);
             plate.Fill();
         }
+    }
+
+
+    [Header("Sounds")]
+    [SerializeField]
+    AK.Wwise.Event OnSlapEvent = null;
+
+    [SerializeField]
+    AK.Wwise.Event OnFillPlateEvent = null;
+
+    [SerializeField]
+    AK.Wwise.Event OnClickOnDoorEvent = null;
+
+    void PlaySoundEvent (AK.Wwise.Event soundEvent)
+    {
+        soundEvent.Post(gameObject);
     }
 
 

@@ -12,6 +12,12 @@ public class Wallet : MonoBehaviour {
 
     float _money = 0f;
 
+    [Header("Sound")]
+    [SerializeField]
+    AK.Wwise.Event OnSpendMoneyEvent = null;
+    [SerializeField]
+    AK.Wwise.Event OnEarnMoneyEvent = null;
+
 
     public void Init()
     {
@@ -27,6 +33,7 @@ public class Wallet : MonoBehaviour {
         {
             _money -= Mathf.Abs(delta);
             GameMaster.Instance.uIMaster.UpdateWalletUI(_money);
+            OnSpendMoneyEvent.Post(gameObject);
         }
     }
 
@@ -34,6 +41,7 @@ public class Wallet : MonoBehaviour {
     {
         _money += delta;
         GameMaster.Instance.uIMaster.UpdateWalletUI(_money);
+        OnEarnMoneyEvent.Post(gameObject);
     }
 
     public bool HasEnoughMoneyFor (float delta)
