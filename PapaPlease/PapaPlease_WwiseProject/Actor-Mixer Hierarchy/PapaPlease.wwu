@@ -2224,6 +2224,16 @@
 							</ChildrenList>
 						</BlendContainer>
 						<BlendContainer Name="Player_Give_Food" ID="{DED5ECC2-1C1A-4178-B1A1-449323272C4E}" ShortID="309711005">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -2267,7 +2277,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-13</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -2377,6 +2387,14 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{95E36D19-FA78-4FFC-B108-EBCB9E1F9131}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-0.59171597633136"/>
+										<Property Name="PanY" Type="Real64" Value="100"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
 						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
@@ -2424,11 +2442,6 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="AI_FS_BF_Scuffs" ID="{D7003201-5FEB-434E-8416-F1EE51E3E4AA}" ShortID="170365612">
 											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -2583,7 +2596,8 @@
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.12"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
@@ -2647,8 +2661,8 @@
 																	<PropertyList>
 																		<Property Name="FadeInDuration" Type="Real64" Value="3.08760749476471E-02"/>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="0.190705168794291"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="9.26282248429415E-02"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="0.542488096230904"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.12979277993794"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.455232184268733"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</AudioFile>
@@ -2686,8 +2700,8 @@
 																<AudioFileSource Name="AI_FS_BF_Lp_01" ID="{85CC2404-3BF5-41A2-BD47-60A531F38A2C}" ShortID="689837069">
 																	<PropertyList>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="0.121889864499208"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="1.18929646039154"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="1.47087667820454"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.20747477538366"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.53268294917774"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</AudioFile>
@@ -2725,8 +2739,8 @@
 																<AudioFileSource Name="AI_FS_BF_Lp_01" ID="{CA35BB31-24D9-4735-A749-74774FEB6B78}" ShortID="256888981">
 																	<PropertyList>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="0.121889864499208"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="2.24300838469762"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="2.51907401668459"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.24624008514066"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="2.5723970739948"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</AudioFile>
@@ -3035,8 +3049,8 @@
 																	<PropertyList>
 																		<Property Name="FadeInDuration" Type="Real64" Value="1.27136779196194E-02"/>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="0.212500045227924"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="0.646808364160637"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="1.130949759939"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.660139128488191"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.984311352335907"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</AudioFile>
@@ -3116,7 +3130,7 @@
 																	<PropertyList>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="9.14846665115472E-02"/>
 																		<Property Name="TrimBegin" Type="Real64" Value="1.73214191860101"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="1.95738086729998"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="2.06039131892199"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</AudioFile>
@@ -3153,9 +3167,10 @@
 															<ChildrenList>
 																<AudioFileSource Name="AI_FS_BF_Lp_01" ID="{D8247339-A64F-4FDD-B4AB-074BA3C300C9}" ShortID="804930303">
 																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.61585022152178E-03"/>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="0.111396035105237"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="2.772847268307"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="3.07010516633238"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.78092651941461"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="3.10726972142738"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</AudioFile>
@@ -8700,6 +8715,11 @@
 										<BlendContainer Name="AI_Lavabo" ID="{6E5972E7-0622-464F-99C6-AF094F11575E}" ShortID="865207095">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -11329,6 +11349,13 @@
 								</BlendContainer>
 								<BlendContainer Name="Money_Remove" ID="{636E188B-5BF4-4FF9-9B12-6468DC684636}" ShortID="869015485">
 									<PropertyList>
+										<Property Name="BypassEffect0" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -11342,13 +11369,30 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
 										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Inside_My_Head" ID="{94B53301-9AA1-468F-8419-92AEDAAE39DF}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Appartment_Reverb" ID="{9DEE40F7-6249-4A87-9DDA-DE88B71EFC65}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -11429,7 +11473,7 @@
 														<AudioFileSource Name="Coin_Wood_Table_Singles_Drop_Spin_Takes_5" ID="{17DB32DA-7178-49B4-A566-6327E949EF48}" ShortID="591342214">
 															<PropertyList>
 																<Property Name="FadeOutDuration" Type="Real64" Value="8.17007011393514E-02"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.667222392638037"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.612755258545136"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</AudioFile>
@@ -11456,7 +11500,7 @@
 															<PropertyList>
 																<Property Name="FadeOutDuration" Type="Real64" Value="8.17007011393514E-02"/>
 																<Property Name="TrimBegin" Type="Real64" Value="1.13700142418931"/>
-																<Property Name="TrimEnd" Type="Real64" Value="2.03570913672217"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.95400843558282"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</AudioFile>
@@ -11483,7 +11527,7 @@
 															<PropertyList>
 																<Property Name="FadeOutDuration" Type="Real64" Value="8.17007011393514E-02"/>
 																<Property Name="TrimBegin" Type="Real64" Value="2.55239042263122"/>
-																<Property Name="TrimEnd" Type="Real64" Value="3.17632489234048"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.18994167586371"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</AudioFile>
@@ -11533,6 +11577,14 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{5225F911-A59E-446E-ADFE-14608424B347}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-86.3905325443787"/>
+												<Property Name="PanY" Type="Real64" Value="51.1700468018721"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
 								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
@@ -11936,13 +11988,6 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="SFX" ID="{7EFF7E50-8E61-4757-BF1F-ECC3755664EF}" ShortID="503390494">
-					<PropertyList>
-						<Property Name="Inclusion" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -11953,13 +11998,6 @@
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="Doors" ID="{8FAFAA03-1441-407B-92E8-1F326F12E8CD}" ShortID="843441892">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -11969,10 +12007,17 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<SwitchContainer Name="Doors_Switch" ID="{D33F2B2C-B977-4281-8A91-AA7A39C1D6C7}" ShortID="327273659">
+								<RandomSequenceContainer Name="Door" ID="{495A4410-E714-4874-BA2E-9333E896B4C3}" ShortID="244891459">
+									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2.2"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
@@ -11982,7 +12027,7 @@
 										<RandomSequenceContainer Name="Door_Close" ID="{A50039C7-7116-4944-ADDE-12D625906F79}" ShortID="655237681">
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
@@ -12058,7 +12103,7 @@
 										<RandomSequenceContainer Name="Door_Open" ID="{D3AEE688-3D2B-475A-8657-A520FC160723}" ShortID="288835596">
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
@@ -12132,20 +12177,21 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="Door_Open" ID="{D3AEE688-3D2B-475A-8657-A520FC160723}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Door_Close" ID="{A50039C7-7116-4944-ADDE-12D625906F79}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-									</GroupingInfo>
-								</SwitchContainer>
+									<Playlist>
+										<ItemRef Name="Door_Open" ID="{D3AEE688-3D2B-475A-8657-A520FC160723}"/>
+										<ItemRef Name="Door_Close" ID="{A50039C7-7116-4944-ADDE-12D625906F79}"/>
+									</Playlist>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
 						<BlendContainer Name="Washer" ID="{51BDD0CA-061E-4337-97FD-36889A9D1FD7}" ShortID="234977164">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -12296,6 +12342,13 @@
 							</ChildrenList>
 						</BlendContainer>
 						<BlendContainer Name="Windows" ID="{3B804663-1E42-4AEB-896F-5CC789437B15}" ShortID="51125757">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>

@@ -101,10 +101,13 @@ public class InterestPoint : MonoBehaviour
 
     void Update()
     {
-        if (activity.State < ActivityState.COMPLETE)
-            GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeWAITING, true);
-        else
-            GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeCOMPLETED, true);
+        if (GameMaster.Instance.gf.GetGameState == GameState.DAY)
+        {
+            if (activity.State < ActivityState.COMPLETE)
+                GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeWAITING, true);
+            else
+                GameMaster.Instance.vm.ApplyGlobalModifier(globalStatsModificator_OverTimeCOMPLETED, true);
+        }
 
         activity.Update();
         if (_activityProgressInfo != null)

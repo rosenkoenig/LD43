@@ -118,12 +118,12 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 977a627e74acd84a9f6dacd27fa04f19
-    m_lastTime: -8586577346158863304
+    m_lastTime: -8586577221809830426
     List: []
   - PhysicalPath: Events\PapaPlease.wwu
     ParentPhysicalPath: 
     guid: 9f4045f0e576754ea80f87eacae3ae4b
-    m_lastTime: -8586577311038005954
+    m_lastTime: -8586577221524476005
     List:
     - name: Play_AI_Angry
       guid: 91b471132feb34448a9dc111c120785b
@@ -237,31 +237,17 @@ MonoBehaviour:
       maxAttenuation: 5
       maxDuration: 0
       minDuration: 0
-    - name: Play_AI_FS_BF_Walk_L
-      guid: 1ccf05c7f52d374aa5360f5f1df5c298
-      id: 3853750586
+    - name: Play_AI_FS_BF_Walk
+      guid: 1ff877143067d64ebc4e77edb948d39c
+      id: 1188548511
       PathAndIcons:
       - ElementName: PapaPlease
         ObjectType: 12
       - ElementName: AI
         ObjectType: 4
-      - ElementName: Play_AI_FS_BF_Walk_L
+      - ElementName: Play_AI_FS_BF_Walk
         ObjectType: 3
-      Path: PapaPlease\AI\Play_AI_FS_BF_Walk_L
-      maxAttenuation: 5
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_AI_FS_BF_Walk_R
-      guid: 52a2d9d65d15f449a614c1cb3e98e407
-      id: 3853750564
-      PathAndIcons:
-      - ElementName: PapaPlease
-        ObjectType: 12
-      - ElementName: AI
-        ObjectType: 4
-      - ElementName: Play_AI_FS_BF_Walk_R
-        ObjectType: 3
-      Path: PapaPlease\AI\Play_AI_FS_BF_Walk_R
+      Path: PapaPlease\AI\Play_AI_FS_BF_Walk
       maxAttenuation: 5
       maxDuration: 0
       minDuration: 0
@@ -503,6 +489,20 @@ MonoBehaviour:
       maxAttenuation: 5
       maxDuration: 0
       minDuration: 0
+    - name: Play_Door
+      guid: e0eb509bce334e46b17bfcf73596c7a3
+      id: 2547633870
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Play_Door
+        ObjectType: 3
+      Path: PapaPlease\SFX\Play_Door
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Door_Close
       guid: 9eee361717722b4aa771f3f512bf1787
       id: 2292458263
@@ -654,6 +654,20 @@ MonoBehaviour:
       - ElementName: Play_Player_Footsteps
         ObjectType: 3
       Path: PapaPlease\Player\Play_Player_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Player_Give_Food
+      guid: 811890089b096f45865c341bf5418708
+      id: 3975414246
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Player_Give_Food
+        ObjectType: 3
+      Path: PapaPlease\Player\Play_Player_Give_Food
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -865,6 +879,20 @@ MonoBehaviour:
         ObjectType: 3
       Path: PapaPlease\AI\Stop_AI_Eat
       maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_FS_BF_Walk
+      guid: 1f290545e219464f97cc1afbc8ef849f
+      id: 1488764589
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_FS_BF_Walk
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_FS_BF_Walk
+      maxAttenuation: 5
       maxDuration: 0
       minDuration: 0
     - name: Stop_AI_Hit
@@ -1342,6 +1370,5 @@ MonoBehaviour:
   - /PapaPlease_WwiseProject/Events
   - /PapaPlease_WwiseProject/Events/PapaPlease
   - /PapaPlease_WwiseProject/Events/PapaPlease/AI
-  - /PapaPlease_WwiseProject/Events/PapaPlease/Ambiances
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
