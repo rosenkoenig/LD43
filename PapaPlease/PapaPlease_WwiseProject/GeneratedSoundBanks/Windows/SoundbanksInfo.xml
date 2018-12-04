@@ -48,6 +48,7 @@
 				<Event Id="3975414246" Name="Play_Player_Give_Food" ObjectPath="\Events\PapaPlease\Player\Play_Player_Give_Food"/>
 				<Event Id="76044170" Name="Play_Player_Slap" ObjectPath="\Events\PapaPlease\Player\Play_Player_Slap"/>
 				<Event Id="2204713990" Name="Play_Player_Slap_Kids" ObjectPath="\Events\PapaPlease\Player\Play_Player_Slap_Kids"/>
+				<Event Id="3216481374" Name="Play_Player_Voice" ObjectPath="\Events\PapaPlease\Player\Play_Player_Voice"/>
 				<Event Id="2284278951" Name="Stop_Player_Footsteps" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Footsteps" MaxAttenuation="0.000000"/>
 				<Event Id="3374816280" Name="Stop_Player_Slap" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Slap" MaxAttenuation="0.000000"/>
 				<Event Id="2895733124" Name="Stop_Player_Slap_Kids" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Slap_Kids" MaxAttenuation="0.000000"/>
@@ -64,6 +65,10 @@
 				<File Id="226423887" Language="SFX">
 					<ShortName>Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 1 SND18731.wav</ShortName>
 					<Path>SFX\Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 1 SND18731_F52F4675.wem</Path>
+				</File>
+				<File Id="292579193" Language="SFX">
+					<ShortName>Player_Voice\Mmm Female Various by AudioRichter Id-169342 2.wav</ShortName>
+					<Path>SFX\Player_Voice\Mmm Female Various by AudioRichter Id-169342 2_10DFFA44.wem</Path>
 				</File>
 				<File Id="340403617" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
@@ -125,9 +130,9 @@
 				<Event Id="1402976205" Name="Play_Amb_KidsBedroom_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_KidsBedroom_Lp" MaxAttenuation="4.000000"/>
 				<Event Id="4028544478" Name="Play_Amb_Kitchen_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_Kitchen_Lp" MaxAttenuation="6.000000"/>
 				<Event Id="2639863138" Name="Play_Amb_LivingRoom_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_LivingRoom_Lp"/>
-				<Event Id="525979915" Name="Play_Amb_ParentsBedroom_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_ParentsBedroom_Lp" MaxAttenuation="5.000000"/>
+				<Event Id="525979915" Name="Play_Amb_ParentsBedroom_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_Amb_ParentsBedroom_Lp" MaxAttenuation="4.000000"/>
 				<Event Id="1945404897" Name="Play_AmbOut_Bathroom_Neighborhood_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_AmbOut_Bathroom_Neighborhood_Lp" MaxAttenuation="8.000000"/>
-				<Event Id="1682472951" Name="Play_AmbOut_Wall_Neighborhood_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_AmbOut_Wall_Neighborhood_Lp" MaxAttenuation="5.000000"/>
+				<Event Id="1682472951" Name="Play_AmbOut_Wall_Neighborhood_Lp" ObjectPath="\Events\PapaPlease\Ambiances\Play_AmbOut_Wall_Neighborhood_Lp" MaxAttenuation="4.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="33895419" Language="SFX">

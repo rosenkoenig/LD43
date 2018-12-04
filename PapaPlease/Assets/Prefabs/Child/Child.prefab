@@ -579,7 +579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1729254173576174
 GameObject:
   m_ObjectHideFlags: 1
@@ -1816,11 +1816,13 @@ MonoBehaviour:
       _factor: 0
       _refill: 1
       _relativeChildStatID: {fileID: 0}
+  vessieIPType: {fileID: 0}
   animator: {fileID: 95182140613341446}
   extraRotationSpeed: 8
   OnSlapEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: d26bb214f6c2dfc4a8dcff5369a9c14b,
+      type: 2}
   OnStartAnger:
     valueGuid: 
     WwiseObjectReference: {fileID: 0}

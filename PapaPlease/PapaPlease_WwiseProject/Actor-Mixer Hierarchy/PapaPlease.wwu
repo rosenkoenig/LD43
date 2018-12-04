@@ -2396,6 +2396,151 @@
 								</Panner>
 							</PositioningInfo>
 						</BlendContainer>
+						<RandomSequenceContainer Name="Player_Voice" ID="{3601C9F2-0C7A-444C-9BFE-CC340148DA36}" ShortID="158246255">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MhhMaleFemale" ID="{B4024D27-5B13-4D90-8768-615252B6AB1E}" ShortID="1061486687">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MhhMaleFemale" ID="{45D81EEE-1895-4DB9-825F-F3AFB9DE440B}" ShortID="655657301">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="2.99842672914915"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.09536568352144"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Player_Voice\MhhMaleFemale.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MhhMaleFemale" ID="{45D81EEE-1895-4DB9-825F-F3AFB9DE440B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mmm Female Various by AudioRichter Id-169342 1" ID="{FC02198F-73F8-4378-8387-8508C60FBD45}" ShortID="990212977">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mmm Female Various by AudioRichter Id-169342 1" ID="{DA8A96DE-D893-4521-88A0-343AA395801B}" ShortID="208192602">
+											<Language>SFX</Language>
+											<AudioFile>Player_Voice\Mmm Female Various by AudioRichter Id-169342 1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mmm Female Various by AudioRichter Id-169342 1" ID="{DA8A96DE-D893-4521-88A0-343AA395801B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mmm Female Various by AudioRichter Id-169342 2" ID="{A7296C5F-7EDC-4A0C-B3A7-6BBE28F26AEC}" ShortID="42211229">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mmm Female Various by AudioRichter Id-169342 2" ID="{E890C231-A8A8-4F7A-8033-DD611E5815AB}" ShortID="292579193">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01351779975794"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="5.67747589833479E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.041905179249614"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.742127206710905"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Player_Voice\Mmm Female Various by AudioRichter Id-169342 2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mmm Female Various by AudioRichter Id-169342 2" ID="{E890C231-A8A8-4F7A-8033-DD611E5815AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mmm Female Various by AudioRichter Id-169342" ID="{023C4D73-5865-4D00-BFCE-B7C0250A2CC2}" ShortID="857327572">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mmm Female Various by AudioRichter Id-169342" ID="{BCA3592A-6DC4-467C-8898-9E620477B744}" ShortID="658954882">
+											<Language>SFX</Language>
+											<AudioFile>Player_Voice\Mmm Female Various by AudioRichter Id-169342.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mmm Female Various by AudioRichter Id-169342" ID="{BCA3592A-6DC4-467C-8898-9E620477B744}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Moan by timkahn Id-67682" ID="{07F84195-D3D0-4994-942A-1A1FBAF59F27}" ShortID="196078707">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Moan by timkahn Id-67682" ID="{34E64721-4AC1-4691-9278-F184D8E856BF}" ShortID="938640394">
+											<Language>SFX</Language>
+											<AudioFile>Player_Voice\Moan by timkahn Id-67682.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Moan by timkahn Id-67682" ID="{34E64721-4AC1-4691-9278-F184D8E856BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="AI_Children" ID="{AA2B4A50-A4BC-4FA2-8E79-BEAFB1812C46}" ShortID="741144328">
@@ -3451,7 +3596,18 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="AI_Hit" ID="{210CC1BD-6CC6-44F4-A0CE-8E0E73315027}" ShortID="971435190">
 									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-12</Value>

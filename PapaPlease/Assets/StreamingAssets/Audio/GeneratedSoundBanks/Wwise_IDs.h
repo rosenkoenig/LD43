@@ -54,6 +54,7 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_GIVE_FOOD = 3975414246U;
         static const AkUniqueID PLAY_PLAYER_SLAP = 76044170U;
         static const AkUniqueID PLAY_PLAYER_SLAP_KIDS = 2204713990U;
+        static const AkUniqueID PLAY_PLAYER_VOICE = 3216481374U;
         static const AkUniqueID STOP_AI_ANGRY = 1120423820U;
         static const AkUniqueID STOP_AI_CLEANBIN = 1064386371U;
         static const AkUniqueID STOP_AI_CLEANFLOOR = 1939778946U;
