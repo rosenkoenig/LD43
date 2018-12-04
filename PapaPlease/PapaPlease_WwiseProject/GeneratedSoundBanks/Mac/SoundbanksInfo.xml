@@ -134,9 +134,21 @@
 					<ShortName>Amb_KidsBedroom_Lp.wav</ShortName>
 					<Path>SFX\Amb_KidsBedroom_Lp_0265BEE3.wem</Path>
 				</File>
+				<File Id="133864595" Language="SFX">
+					<ShortName>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</ShortName>
+					<Path>SFX\Human, Laugh, Male, Senior, Chuckles 1 SND1978_5DD0074F.wem</Path>
+				</File>
 				<File Id="168015010" Language="SFX">
 					<ShortName>Amb_Outside\AmbOut_Bathroom_Neighborhood.wav</ShortName>
 					<Path>SFX\Amb_Outside\AmbOut_Bathroom_Neighborhood_0265BEE3.wem</Path>
+				</File>
+				<File Id="196435504" Language="SFX">
+					<ShortName>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</ShortName>
+					<Path>SFX\Human, Laugh, Male, Senior, Chuckles 1 SND1978_566B6A60.wem</Path>
+				</File>
+				<File Id="262364100" Language="SFX">
+					<ShortName>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</ShortName>
+					<Path>SFX\Human, Laugh, Male, Senior, Chuckles 1 SND1978_69D03E68.wem</Path>
 				</File>
 				<File Id="331690594" Language="SFX">
 					<ShortName>Amb_Kitchen_Lp.wav</ShortName>
@@ -149,6 +161,10 @@
 				<File Id="666006642" Language="SFX">
 					<ShortName>Amb_Outside\AmbOut_Wall_Neighborhood.wav</ShortName>
 					<Path>SFX\Amb_Outside\AmbOut_Wall_Neighborhood_0265BEE3.wem</Path>
+				</File>
+				<File Id="848191855" Language="SFX">
+					<ShortName>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</ShortName>
+					<Path>SFX\Human, Laugh, Male, Senior, Chuckles 1 SND1978_24C3CF07.wem</Path>
 				</File>
 				<File Id="863881689" Language="SFX">
 					<ShortName>Amb_LivingRoom_Lp.wav</ShortName>
@@ -175,6 +191,7 @@
 				<Event Id="3782358412" Name="Play_AI_CleanFloor" ObjectPath="\Events\PapaPlease\AI\Play_AI_CleanFloor" MaxAttenuation="5.000000"/>
 				<Event Id="1459777202" Name="Play_AI_CleanWindow" ObjectPath="\Events\PapaPlease\AI\Play_AI_CleanWindow" MaxAttenuation="5.000000"/>
 				<Event Id="1202448914" Name="Play_AI_Console" ObjectPath="\Events\PapaPlease\AI\Play_AI_Console" MaxAttenuation="5.000000"/>
+				<Event Id="2713837207" Name="Play_AI_Die" ObjectPath="\Events\PapaPlease\AI\Play_AI_Die" MaxAttenuation="5.000000"/>
 				<Event Id="2890421503" Name="Play_AI_Dishes" ObjectPath="\Events\PapaPlease\AI\Play_AI_Dishes" MaxAttenuation="5.000000"/>
 				<Event Id="3317684595" Name="Play_AI_Eat" ObjectPath="\Events\PapaPlease\AI\Play_AI_Eat" MaxAttenuation="5.000000"/>
 				<Event Id="1188548511" Name="Play_AI_FS_BF_Walk" ObjectPath="\Events\PapaPlease\AI\Play_AI_FS_BF_Walk" MaxAttenuation="5.000000"/>

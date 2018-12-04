@@ -118,12 +118,12 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 977a627e74acd84a9f6dacd27fa04f19
-    m_lastTime: -8586577221809830426
+    m_lastTime: -8586577219410829724
     List: []
   - PhysicalPath: Events\PapaPlease.wwu
     ParentPhysicalPath: 
     guid: 9f4045f0e576754ea80f87eacae3ae4b
-    m_lastTime: -8586577221524476005
+    m_lastTime: -8586577219410530311
     List:
     - name: Play_AI_Angry
       guid: 91b471132feb34448a9dc111c120785b
@@ -207,6 +207,20 @@ MonoBehaviour:
         ObjectType: 3
       Path: PapaPlease\AI\Play_AI_Cooking
       maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Die
+      guid: 8bce1a2a7a5f7541991221cbc37d111a
+      id: 2713837207
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Die
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Die
+      maxAttenuation: 5
       maxDuration: 0
       minDuration: 0
     - name: Play_AI_Dishes
@@ -458,7 +472,7 @@ MonoBehaviour:
       - ElementName: Play_Amb_ParentsBedroom_Lp
         ObjectType: 3
       Path: PapaPlease\Ambiances\Play_Amb_ParentsBedroom_Lp
-      maxAttenuation: 5
+      maxAttenuation: 4
       maxDuration: 0
       minDuration: 0
     - name: Play_AmbOut_Bathroom_Neighborhood_Lp
@@ -486,7 +500,7 @@ MonoBehaviour:
       - ElementName: Play_AmbOut_Wall_Neighborhood_Lp
         ObjectType: 3
       Path: PapaPlease\Ambiances\Play_AmbOut_Wall_Neighborhood_Lp
-      maxAttenuation: 5
+      maxAttenuation: 4
       maxDuration: 0
       minDuration: 0
     - name: Play_Door

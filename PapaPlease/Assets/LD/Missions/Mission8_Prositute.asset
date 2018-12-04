@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1804722bfbdee74f99034f892318b73, type: 3}
+  m_Name: Mission8_Prositute
+  m_EditorClassIdentifier: 
+  missionName: 'Job: Prostitute'
+  moneyEarned: 6
+  requisites:
+  - statIDNeeded: {fileID: 11400000, guid: 19c532e912ca9b24b9d4a03a597635dd, type: 2}
+    amountNeeded: 10
+  onCompleteSkillStatModifier:
+    statsModifiers:
+    - _childStatID: {fileID: 11400000, guid: 13507abb539c6bf44aa224ffe9cb8f27, type: 2}
+      _factor: -20
+      _refill: 0
+      _relativeChildStatID: {fileID: 0}
+    - _childStatID: {fileID: 11400000, guid: c7b408b288f9e0441904197be9b9807b, type: 2}
+      _factor: -40
+      _refill: 0
+      _relativeChildStatID: {fileID: 0}
+  onCompleteHiddenStatModifier: {fileID: 11400000, guid: d13a25459487ad34ab1936b708447f35,
+    type: 2}
