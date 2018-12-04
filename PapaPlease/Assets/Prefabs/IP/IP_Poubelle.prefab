@@ -502,7 +502,8 @@ MonoBehaviour:
   - {fileID: 1719849157744946}
   _akEventPlay:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: d2e595645e1489c4984fec6ebefd4010,
+      type: 2}
   _akEventStop:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: b1b920ffbe59bf44eb2cdb3b9def629c,

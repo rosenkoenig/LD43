@@ -169,13 +169,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1669239855503608}
-  m_LocalRotation: {x: -0, y: 0.5439681, z: -0, w: 0.83910596}
-  m_LocalPosition: {x: -0.641, y: 0, z: 0.069}
+  m_LocalRotation: {x: -0, y: 0.91656494, z: -0, w: 0.39988595}
+  m_LocalPosition: {x: -0.581, y: 0, z: 1.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4797044956888406}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 65.908005, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 132.858, z: 0}
 --- !u!4 &4128748812388414
 Transform:
   m_ObjectHideFlags: 1
@@ -252,8 +252,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1572503711463678}
-  m_LocalRotation: {x: -0, y: 0.7071067, z: -0, w: 0.70710695}
-  m_LocalPosition: {x: 3.596, y: 0, z: -4.281}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.327, y: 0, z: -4.898}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4042332444007154}
@@ -281,13 +281,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1616302999407446}
-  m_LocalRotation: {x: -0, y: 0.48729014, z: -0, w: 0.8732402}
-  m_LocalPosition: {x: -0.508, y: 1.205, z: 0.162}
+  m_LocalRotation: {x: -0, y: 0.96204025, z: -0, w: 0.2729078}
+  m_LocalPosition: {x: -0.96, y: 1.205, z: 1.415}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4797044956888406}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 58.325005, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 148.32501, z: 0}
 --- !u!23 &23204945182371658
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -577,7 +577,7 @@ MonoBehaviour:
   logActivityName: Washing the shower
   logName: the shower
   pivotPoint: {fileID: 4042332444007154}
-  iPtype: {fileID: 11400000, guid: 8d4e6f5bc67c82649b363c56ccaeeaba, type: 2}
+  iPtype: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114603838078755730}
   onlyUsableByChild: 0
   onlyUsableByPlayer: 0

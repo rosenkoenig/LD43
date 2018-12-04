@@ -58,6 +58,7 @@ public class DirtIPGenerator : MonoBehaviour
 
                 GameMaster.Instance.hm.SubscribeInterestPoint(spwnIpPack._spawnedInterestPoint);
                 spwnIpPack._spawnedInterestPoint.gameObject.SetActive(false);
+                _interestPointsPOOL.BringBackItem(spwnIpPack._spawnedInterestPoint);
                 toRemove.Add(spwnIpPack);
             }
         }
@@ -106,6 +107,7 @@ public class DirtIPGenerator : MonoBehaviour
         curDelay = UnityEngine.Random.Range(_spawnDirtMinDelay, _spawnDirtMaxDelay);
     }
 
+    [System.Serializable]
     class SpawnedIPPack
     {
         public InterestPoint _spawnedInterestPoint;
