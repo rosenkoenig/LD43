@@ -1,17 +1,14 @@
 fileFormatVersion: 2
-guid: da0873f774ab9fb48a36bc317ecce352
+guid: eab64dc8918f43740a260cae602647e9
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Skin
-    2100002: lambert1
-    2100004: Mat_Wall_02
-    2100006: Mat_Wall_03
+    2100000: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Kitchen_Furniture
+    4300000: Pee_Splash
   externalObjects: {}
   materials:
     importMaterials: 1

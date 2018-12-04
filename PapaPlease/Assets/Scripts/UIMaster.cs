@@ -25,6 +25,8 @@ public class UIMaster : MonoBehaviour
 
     [SerializeField] ChildInteractionMission _childInteractionMission;
 
+    [SerializeField] UiCondom condomUI;
+
     ChildCharacter curChild;
     
     public Action HideMenuInteractChildEvent;
@@ -162,6 +164,17 @@ public class UIMaster : MonoBehaviour
         }
     }
 
+    public void DisplayCondomUI ()
+    {
+        condomUI.Init(new object[1] { GameMaster.Instance.wallet.condomCost });
+    }
+
+    public void OnHideCondomUI ()
+    {
+        GameMaster.Instance.gf.EndNightTransition();
+        GameMaster.Instance.uIMaster.ShowOrHideCursor(false);
+    }
+
     public void UpdateWalletUI (float money)
     {
         uiWallet.UpdateWalletText(money);
@@ -179,8 +192,7 @@ public class UIMaster : MonoBehaviour
 
     public void OnMissionPanelCloses ()
     {
-        GameMaster.Instance.gf.EndNightTransition();
-        GameMaster.Instance.uIMaster.ShowOrHideCursor(false);
+        DisplayCondomUI();
     }
 
     public bool DisplayChildInteractionMission(ChildCharacter child, Action hideMenuEvent)
