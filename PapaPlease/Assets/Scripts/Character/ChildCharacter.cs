@@ -89,6 +89,9 @@ public class ChildCharacter : Character {
     [SerializeField]
     ChildStatsModificator onPipiModificator = null;
 
+    [SerializeField]
+    IPType vessieIPType = null;
+
     // Use this for initialization
     void Start () {
         
@@ -337,13 +340,27 @@ public class ChildCharacter : Character {
     #endregion
 
     #region Pipi
+    bool autoPipiFailed = false;
     void CheckPipi ()
     {
         if (state >= ChildAIState.IN_ACTIVITY) return;
-        if(statsContainer.GetAChildStatValue(vessieID) <= vessieID.MinValue)
+        if (statsContainer.GetAChildStatValue(vessieID) <= vessieID.MinValue)
         {
             DoPipi();
         }
+        else if (statsContainer.GetAChildStatValueRatio(vessieID) <= 0.25f)
+        {
+            if (autoPipiFailed == false && Random.Range(0f, 1f) < statsContainer.GetAChildStatValueRatio(obeissanceStatID))
+            {
+                InterestPoint ip = GameMaster.Instance.hm.GetRandomInterestPoint(vessieIPType);
+                if (ip)
+                    SetCurrentInterestPoint(ip);
+            }
+            else
+                autoPipiFailed = true;
+        }
+        else
+            autoPipiFailed = false;
     }
 
     void DoPipi ()
