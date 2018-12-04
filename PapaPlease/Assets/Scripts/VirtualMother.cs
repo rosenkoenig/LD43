@@ -23,6 +23,9 @@ public class VirtualMother : MonoBehaviour
     [SerializeField] List<ChildStatsModificatorContainer> _passiveChildStatsModificators;
 
     [SerializeField] float _IpDegradationAddedPerChild;
+
+    [SerializeField] Transform _childsMorningSpawnPositionsParent;
+
     public float GetChildsIpDegradationAddedFactor { get { return _IpDegradationAddedPerChild * activeChilds.Count; } }
 
     public int GetChildrenNumber { get { return activeChilds.Count; } }
@@ -57,11 +60,14 @@ public class VirtualMother : MonoBehaviour
 
     private void PlayPassiveModificators()
     {
-        foreach (var item in _passiveChildStatsModificators)
+        if (gm.gf.GetGameState == GameState.DAY)
         {
-            foreach (var child in activeChilds)
+            foreach (var item in _passiveChildStatsModificators)
             {
-                item.MakeTryModifyStats(child.statsContainer, true);
+                foreach (var child in activeChilds)
+                {
+                    item.MakeTryModifyStats(child.statsContainer, true);
+                }
             }
         }
     }
@@ -126,23 +132,28 @@ public class VirtualMother : MonoBehaviour
             }
         }
     }
-
+    
     public void GetChildrenOutOfTable()
     {
+        for (int i = 0; i < activeChilds.Count; i++)
+        {
+            activeChilds[i].transform.position = _childsMorningSpawnPositionsParent.GetChild(i).position;
+            activeChilds[i].LeaveTable();
+
+        }
         foreach (ChildCharacter child in allChildren)
         {
-            child.LeaveTable();
             child.SetPlate(null);
         }
     }
 
-    public void ClearDeadChildren ()
+    public void ClearDeadChildren()
     {
         List<ChildCharacter> deads = new List<ChildCharacter>();
 
-        foreach(ChildCharacter child in allChildren)
+        foreach (ChildCharacter child in allChildren)
         {
-            if(child.ChildState == ChildAIState.DEAD)
+            if (child.ChildState == ChildAIState.DEAD)
             {
                 deads.Add(child);
             }
@@ -154,6 +165,6 @@ public class VirtualMother : MonoBehaviour
             if (activeChilds.Contains(child)) activeChilds.Remove(child);
             Destroy(child.gameObject);
         }
-        
+
     }
 }

@@ -160,14 +160,18 @@ public class Activity : MonoBehaviour
         {
             case ActivityState.COMPLETE:
                 foreach (var curRend in _dirtyVisualsRenderers)
-                    curRend.material.SetFloat("_DirtBlending", 0f);
+                {
+                    foreach (var curMat in curRend.materials)
+                        curMat.SetFloat("_DirtBlending", 0f);
+                }
                 foreach (var curObj in _dirtyVisualsToActivate)
                     curObj.SetActive(false);
                 break;
             case ActivityState.WAITING:
                 foreach (var curRend in _dirtyVisualsRenderers)
                 {
-                    curRend.material.SetFloat("_DirtBlending", 1f);
+                    foreach (var curMat in curRend.materials)
+                        curMat.SetFloat("_DirtBlending", 1f);
                 }
                 foreach (var curObj in _dirtyVisualsToActivate)
                     curObj.SetActive(true);
