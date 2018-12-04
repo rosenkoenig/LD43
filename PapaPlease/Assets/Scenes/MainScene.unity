@@ -1216,6 +1216,7 @@ MonoBehaviour:
   elecCost: 4
   waterCost: 3
   gazCost: 3
+  condomCost: 0
   OnSpendMoneyEvent:
     valueGuid: 
     WwiseObjectReference: {fileID: 0}
@@ -4663,6 +4664,7 @@ MonoBehaviour:
   uiWallet: {fileID: 1510999266}
   missionPanel: {fileID: 2032321582}
   _childInteractionMission: {fileID: 1867470376}
+  condomUI: {fileID: 0}
 --- !u!1001 &2094334718
 Prefab:
   m_ObjectHideFlags: 0
