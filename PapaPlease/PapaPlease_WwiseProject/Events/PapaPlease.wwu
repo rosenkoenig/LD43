@@ -817,18 +817,6 @@
 						</Event>
 						<Event Name="Play_AI_Lavabo" ID="{11224F8D-8660-4AE5-B9F4-ECE3ED213757}">
 							<ChildrenList>
-								<Action Name="" ID="{F406BD16-73DD-40F9-ADC2-D8751BE8ACA9}" ShortID="556962917">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="FadeInCurve" Type="int16" Value="5"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="AI_Lavabo_Dirty" ID="{1C91F694-BD14-42C5-8F5B-2782BF99BC56}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{7AC6BC21-2180-41FB-9DD4-4056E029B01F}" ShortID="433192537">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
