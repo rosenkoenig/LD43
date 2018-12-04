@@ -213,6 +213,8 @@ public class PlayerBehaviour : Character {
 
         hasStartedSlap = true;
         arm.Play("Prepare");
+
+
     }
 
     public void LaunchSlap ()
@@ -226,6 +228,8 @@ public class PlayerBehaviour : Character {
         {
             child.IsSlapped();
         }
+
+        PlaySoundEvent(OnSlapEvent);
     }
 
     public void CancelSlap ()
