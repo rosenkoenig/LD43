@@ -624,6 +624,7 @@ public class ChildCharacter : Character {
         {
             animator.SetBool("IsDoingAnger", isDoingAnger);
             animator.Play("Anger");
+            Debug.Log("has played anger anim");
         }
 
     }
@@ -779,6 +780,8 @@ public class ChildCharacter : Character {
 
     void EndAtTable ()
     {
+        Freeze(false);
+        isDoingAnger = false;
         navAgent.enabled = true;
         animator.Play("Idle");
     }
@@ -825,7 +828,23 @@ public class ChildCharacter : Character {
         Freeze(true);
         navAgent.enabled = false;
         LaunchDeathAnim();
+        GameMaster.Instance.AddLog(childName + " has died...");
         PlaySoundEvent(OnDeathEvent);
+
+        if(GameMaster.Instance.vm.allChildren.Count <= 0)
+        {
+            StartCoroutine(waitAndGameOver());
+            GameMaster.Instance.AddLog("All your children are dead...");
+        }
+    }
+
+    IEnumerator waitAndGameOver ()
+    {
+        GameMaster.Instance.player.LockMovement(true);
+
+        yield return new WaitForSeconds(1f);
+
+        GameMaster.Instance.uIMaster.OnGameOver();
     }
 
     void UpdateDeath ()

@@ -47,14 +47,18 @@ public class MissionMaster : MonoBehaviour {
     void ApplyTotalMoneyEarnings ()
     {
         float totalMoney = GetTotalMissionEarnings();
+        totalMoney += GameMaster.Instance.GetAllBillsCost;
+        Debug.Log("total money earnings = " + totalMoney);
         if(totalMoney > 0)
         {
             GameMaster.Instance.wallet.EarnMoney(totalMoney);
         }
         else
         {
-            GameMaster.Instance.wallet.EarnMoney(totalMoney);
+            GameMaster.Instance.wallet.SpendMoney(totalMoney);
         }
+
+
     }
 
     void ApplyAllMissionsSkillsEarnings ()

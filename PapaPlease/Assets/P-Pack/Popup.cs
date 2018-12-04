@@ -53,8 +53,6 @@ public class Popup : MonoBehaviour {
         if (isActiveAndEnabled == false) return;
         if (fadeAndDeactivateCoroutine != null) StopCoroutine(fadeAndDeactivateCoroutine);
         fadeAndDeactivateCoroutine = StartCoroutine(fadeAndDeactivate());
-
-        Debug.Log("Close Popup end");
     }
 
     public virtual void Init(object[] args)

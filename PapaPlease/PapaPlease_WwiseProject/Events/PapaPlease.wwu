@@ -1314,6 +1314,34 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_Player_Paint" ID="{6B1D4ECA-F506-4E9F-987E-0A23D0337CFB}">
+							<ChildrenList>
+								<Action Name="" ID="{4338C64F-8F7A-4670-B6E4-15E7E7AF7ECA}" ShortID="1041424176">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Paint" ID="{5B8ED2FF-14F1-42F2-B4EE-9FFE61E099FD}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_Paint" ID="{FB297300-1E5B-482F-B66F-99A15E8900F7}">
+							<ChildrenList>
+								<Action Name="" ID="{0EEDC1CF-46C9-4616-AD57-8C503A8CC2AD}" ShortID="214372107">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Paint" ID="{5B8ED2FF-14F1-42F2-B4EE-9FFE61E099FD}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
