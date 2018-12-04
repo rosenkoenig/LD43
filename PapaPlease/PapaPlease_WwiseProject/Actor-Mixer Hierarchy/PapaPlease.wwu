@@ -5785,7 +5785,6 @@
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
@@ -6323,7 +6322,6 @@
 														<RandomSequenceContainer Name="Toy_Train_Motor" ID="{5C456833-49EC-4D22-A2A4-028A64CDCF78}" ShortID="522196743">
 															<PropertyList>
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -6433,7 +6431,6 @@
 																	</ModifierList>
 																</Property>
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
