@@ -224,7 +224,7 @@ public class PlayerBehaviour : Character {
         if (Physics.Raycast(_playerHeadBehaviour.GetCamera.transform.position, _playerHeadBehaviour.GetCamera.transform.forward, out rcHit, _interactRange, _plateLayerMask))
         {
             child = rcHit.collider.GetComponentInParent<PlateObject>();
-
+            if (child.IsFilled) return null;
         }
         return child;
     }

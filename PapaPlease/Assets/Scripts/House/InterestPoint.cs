@@ -87,15 +87,23 @@ public class InterestPoint : MonoBehaviour
 
         if (playerInteractor != null)
         {
-            _activityProgressInfo.transform.LookAt(
-                new Vector3(
-                    playerInteractor.transform.position.x,
-                    _activityProgressInfo.transform.position.y,
-                    playerInteractor.transform.position.z) +
-                new Vector3(
-                    (_activityProgressInfo.transform.position.x - playerInteractor.transform.position.x) * 2,
-                    0,
-                    (_activityProgressInfo.transform.position.z - playerInteractor.transform.position.z) * 2));
+            _activityProgressInfo.transform.position = playerInteractor.GetPlayerHeadBehaviour.GetCamera.transform.position +
+                playerInteractor.GetPlayerHeadBehaviour.GetCamera.transform.forward * 0.3f;
+            _activityProgressInfo.transform.LookAt(playerInteractor.GetPlayerHeadBehaviour.GetCamera.transform.position +
+                playerInteractor.GetPlayerHeadBehaviour.GetCamera.transform.forward * 0.5f);
+                //new Vector3(
+                //    playerInteractor.transform.position.x,
+                //    _activityProgressInfo.transform.position.y,
+                //    playerInteractor.transform.position.z) +
+                //new Vector3(
+                //    (_activityProgressInfo.transform.position.x - playerInteractor.transform.position.x) * 2,
+                //    0,
+                //    (_activityProgressInfo.transform.position.z - playerInteractor.transform.position.z) * 2));
+        }
+        else
+        {
+            _activityProgressInfo.transform.position = _activityProgressInfoPos.position;
+            _activityProgressInfo.transform.eulerAngles = _activityProgressInfoPos.eulerAngles;
         }
 
         bool interacts = activity.IsAvailable(character);

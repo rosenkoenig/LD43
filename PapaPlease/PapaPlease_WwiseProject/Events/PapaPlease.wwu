@@ -1300,6 +1300,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Player_Voice" ID="{388EC99C-4186-4992-8375-DFA771D0D737}">
+							<ChildrenList>
+								<Action Name="" ID="{86D6D16D-30DB-42E8-86C3-18B85EFA908D}" ShortID="11482442">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Voice" ID="{3601C9F2-0C7A-444C-9BFE-CC340148DA36}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

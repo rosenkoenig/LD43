@@ -305,6 +305,7 @@ MonoBehaviour:
   iPtype: {fileID: 11400000, guid: 2fea2dac64659854a93001188d2ab1e1, type: 2}
   activity: {fileID: 114508955630155528}
   onlyUsableByChild: 0
+  destroyOnComplete: 0
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4738336863188010}
   globalStatsModificator_OnCompleted: {fileID: 11400000, guid: 90445224ee1b393458f319c064d8d726,
@@ -325,7 +326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHolder: 1
   doOnce: 1
-  animStateName: Idle
+  animStateName: CleaningStanding
   _activityResetDelay: 100
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []

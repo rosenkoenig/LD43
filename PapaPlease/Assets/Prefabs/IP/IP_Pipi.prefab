@@ -26,6 +26,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1321098165830258
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4307043882465948}
+  - component: {fileID: 33899279408933224}
+  - component: {fileID: 23655896917229062}
+  m_Layer: 0
+  m_Name: Pee_Splash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1431821048897938
 GameObject:
   m_ObjectHideFlags: 0
@@ -36,6 +53,7 @@ GameObject:
   - component: {fileID: 4198967732691450}
   - component: {fileID: 114018663207977052}
   - component: {fileID: 114379295816765414}
+  - component: {fileID: 65970397375826910}
   m_Layer: 0
   m_Name: IP_Pipi
   m_TagString: Untagged
@@ -68,24 +86,6 @@ GameObject:
   - component: {fileID: 4931010100038202}
   m_Layer: 0
   m_Name: Visual
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1941782790959234
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4817707023039448}
-  - component: {fileID: 33441671954343336}
-  - component: {fileID: 23169226015912612}
-  - component: {fileID: 65577329343236786}
-  m_Layer: 0
-  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,15 +133,15 @@ Transform:
   m_Father: {fileID: 4198967732691450}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4817707023039448
+--- !u!4 &4307043882465948
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1941782790959234}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.005, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.005, z: 0.5}
+  m_GameObject: {fileID: 1321098165830258}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4931010100038202}
   m_RootOrder: 0
@@ -156,16 +156,16 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4817707023039448}
+  - {fileID: 4307043882465948}
   m_Father: {fileID: 4198967732691450}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23169226015912612
+--- !u!23 &23655896917229062
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1941782790959234}
+  m_GameObject: {fileID: 1321098165830258}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -175,7 +175,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: bf79be8e3fc58514d8c4cfc7d0e9ee45, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -195,25 +195,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33441671954343336
+--- !u!33 &33899279408933224
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1941782790959234}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65577329343236786
+  m_GameObject: {fileID: 1321098165830258}
+  m_Mesh: {fileID: 4300000, guid: eab64dc8918f43740a260cae602647e9, type: 3}
+--- !u!65 &65970397375826910
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1941782790959234}
+  m_GameObject: {fileID: 1431821048897938}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000004, y: 2, z: 1.0000005}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0.49}
 --- !u!114 &114018663207977052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -232,6 +232,7 @@ MonoBehaviour:
   iPtype: {fileID: 11400000, guid: 1d2c5357355467d49aa4d1890696c2f9, type: 2}
   activity: {fileID: 114379295816765414}
   onlyUsableByChild: 0
+  destroyOnComplete: 0
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4245892108466312}
   globalStatsModificator_OnCompleted: {fileID: 0}
@@ -251,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHolder: 1
   doOnce: 1
-  animStateName: Idle
+  animStateName: PlayOnFloor
   _activityResetDelay: 60
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []

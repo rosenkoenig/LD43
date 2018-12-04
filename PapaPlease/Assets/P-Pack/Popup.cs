@@ -50,6 +50,7 @@ public class Popup : MonoBehaviour {
 
     public void ClosePopup ()
     {
+        if (isActiveAndEnabled == false) return;
         if (fadeAndDeactivateCoroutine != null) StopCoroutine(fadeAndDeactivateCoroutine);
         fadeAndDeactivateCoroutine = StartCoroutine(fadeAndDeactivate());
 

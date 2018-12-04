@@ -1736,7 +1736,7 @@ MonoBehaviour:
   navAgent: {fileID: 195460895285877458}
   childName: 
   isMale: 0
-  inactivityDurationRange: {x: 3, y: 5}
+  inactivityDurationRange: {x: 1, y: 3}
   waitingDistance: 2
   IpTypeFun: {fileID: 11400000, guid: 88b7a2a5fee7ce241b5954fc4ede72f0, type: 2}
   slapFallDownDistance: 0.3
@@ -1816,32 +1816,41 @@ MonoBehaviour:
       _factor: 0
       _refill: 1
       _relativeChildStatID: {fileID: 0}
+  vessieIPType: {fileID: 0}
   animator: {fileID: 95182140613341446}
   extraRotationSpeed: 8
   OnSlapEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: d26bb214f6c2dfc4a8dcff5369a9c14b,
+      type: 2}
   OnStartAnger:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 73731989191d70941b5196456d694d0e,
+      type: 2}
   OnStopAnger:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: d0b9e03f5bc34eb4d8aefa3781e2dc29,
+      type: 2}
   OnStartEating:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 2a912cac867b4cd4d9598e9bc1d89d0a,
+      type: 2}
   OnStopEating:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 9e426ad7554dbb94c9d0a653a553b700,
+      type: 2}
   OnStartWalking:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: f036ed718d3af3a40882da4e5f0891a4,
+      type: 2}
   OnStopWalking:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 12a04001170e9424a87bc816b433ab8f,
+      type: 2}
   OnDeathEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: d0d04226b204e134496a78f5441bbc75,
+      type: 2}
 --- !u!135 &135356666567277768
 SphereCollider:
   m_ObjectHideFlags: 1
