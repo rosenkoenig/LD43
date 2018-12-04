@@ -201,7 +201,7 @@ public class ChildCharacter : Character {
         if (currentInterestPoint)
         {
             Debug.Log(childName + "has received a new IP");
-            GameMaster.Instance.AddLog(childName + " goes to " + currentInterestPoint.playerActivityName);
+            GameMaster.Instance.AddLog(childName + " goes to " + currentInterestPoint.logName);
             SetState(ChildAIState.MOVING_TO_ACTIVITY, true);
         }
         else
@@ -368,7 +368,7 @@ public class ChildCharacter : Character {
     {
         SpawnPipi();
         onPipiModificator.TryModifyStats(this, false);
-        GameMaster.Instance.AddLog(childName + "has peed on the floor");
+        GameMaster.Instance.AddLog(childName + " has peed on the floor");
     }
 
     void SpawnPipi ()
@@ -489,9 +489,9 @@ public class ChildCharacter : Character {
     bool hasWarnedForHealth = false;
     void CheckHealth ()
     {
-        if(statsContainer.GetAChildStatValueRatio(GameMaster.Instance.healthStat) <= 0.25f)
+        if(!hasWarnedForHealth && statsContainer.GetAChildStatValueRatio(GameMaster.Instance.healthStat) <= 0.25f)
         {
-            GameMaster.Instance.AddLog(childName + "has low health ! He could die...");
+            GameMaster.Instance.AddLog(childName + " has low health ! He could die...");
             hasWarnedForHealth = true;
         }
         else
@@ -743,7 +743,7 @@ public class ChildCharacter : Character {
     public override void OnActivityEnds()
     {
         base.OnActivityEnds();
-        GameMaster.Instance.AddLog(childName + " ends activity on " + currentInterestPoint.playerActivityName);
+        GameMaster.Instance.AddLog(childName + " ends " + currentInterestPoint.logActivityName);
         currentActivity = null;
 
         currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.END_ACTIVITY, statsContainer);
