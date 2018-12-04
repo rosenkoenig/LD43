@@ -9,19 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1804722bfbdee74f99034f892318b73, type: 3}
-  m_Name: Mission10_Astronaut
+  m_Name: Mission1Learn_Foot
   m_EditorClassIdentifier: 
-  missionName: 'Job: Astronaut'
-  moneyEarned: 15
-  requisites:
-  - statIDNeeded: {fileID: 11400000, guid: e4ad729c8fc05004e96b1f1570119fff, type: 2}
-    amountNeeded: 25
-  - statIDNeeded: {fileID: 11400000, guid: 13507abb539c6bf44aa224ffe9cb8f27, type: 2}
-    amountNeeded: 20
+  missionName: Go to football
+  moneyEarned: -2
+  requisites: []
   onCompleteSkillStatModifier:
     statsModifiers:
-    - _childStatID: {fileID: 11400000, guid: 13507abb539c6bf44aa224ffe9cb8f27, type: 2}
-      _factor: -10
+    - _childStatID: {fileID: 11400000, guid: 24f23feea4e468a438455aaf31419275, type: 2}
+      _factor: 2
       _refill: 0
       _relativeChildStatID: {fileID: 0}
   onCompleteHiddenStatModifier: {fileID: 11400000, guid: d13a25459487ad34ab1936b708447f35,

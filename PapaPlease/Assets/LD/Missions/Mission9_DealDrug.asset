@@ -19,7 +19,7 @@ MonoBehaviour:
   onCompleteSkillStatModifier:
     statsModifiers:
     - _childStatID: {fileID: 11400000, guid: 13507abb539c6bf44aa224ffe9cb8f27, type: 2}
-      _factor: -50
+      _factor: -20
       _refill: 0
       _relativeChildStatID: {fileID: 0}
     - _childStatID: {fileID: 11400000, guid: 2d1aff0eb8d9dbd42a0f26c94a55d466, type: 2}

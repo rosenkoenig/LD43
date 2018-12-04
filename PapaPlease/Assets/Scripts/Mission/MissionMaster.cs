@@ -67,6 +67,7 @@ public class MissionMaster : MonoBehaviour {
         {
             rm.mission.onCompleteSkillStatModifier.TryModifyStats(rm.child, false);
             rm.mission.onCompleteHiddenStatModifier._childStatsModificator.TryModifyStats(rm.child, false);
+            Debug.Log("Try modify child stats from mission END");
         }
     }
 

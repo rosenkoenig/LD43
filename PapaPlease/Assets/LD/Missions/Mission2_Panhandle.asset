@@ -9,11 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1804722bfbdee74f99034f892318b73, type: 3}
-  m_Name: Mission5_Panhandle
+  m_Name: Mission2_Panhandle
   m_EditorClassIdentifier: 
   missionName: 'Job: Panhandle'
   moneyEarned: 2
-  requisites: []
+  requisites:
+  - statIDNeeded: {fileID: 11400000, guid: 13507abb539c6bf44aa224ffe9cb8f27, type: 2}
+    amountNeeded: 15
   onCompleteSkillStatModifier:
     statsModifiers:
     - _childStatID: {fileID: 11400000, guid: 13507abb539c6bf44aa224ffe9cb8f27, type: 2}
