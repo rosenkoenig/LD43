@@ -79,7 +79,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailColorBlending: 0.6
     - _DetailNormalMapScale: 1
-    - _DirtBlending: 0
+    - _DirtBlending: 0.3
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0
