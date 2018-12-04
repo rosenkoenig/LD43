@@ -52,7 +52,7 @@ public class UIMissionPanel : Popup {
         float totalEarning = GameMaster.Instance.mm.GetTotalMissionEarnings();
         totalEarning -= GameMaster.Instance.GetAllBillsCost;
 
-        totalEarningAmount.text = (totalEarning > 0 ? "+" : "-") + totalEarning.ToString() + " $";
+        totalEarningAmount.text = (totalEarning > 0 ? "+" : "") + totalEarning.ToString() + " $";
     }
 
     UIMissionItem CreateMissionItem ()
