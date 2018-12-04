@@ -26,7 +26,7 @@ public class IPType : ScriptableObject
 
     public List<ActivityModifier> GetActivityModifiers { get { return _activityModifiers; } }
 
-    public string GetIPName { get { return _childActivityName; } }
+    public string GetOrderName { get { return _childActivityName; } }
 
     public enum StatModificationType { DURING_ACTIVITY, START_ACTIVITY, END_ACTIVITY }
 

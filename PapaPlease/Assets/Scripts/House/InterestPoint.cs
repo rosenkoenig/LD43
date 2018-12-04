@@ -8,6 +8,8 @@ public class InterestPoint : MonoBehaviour
 
     [UnityEngine.Serialization.FormerlySerializedAs("ipName")]
     public string playerActivityName = "";
+    public string logActivityName = "";
+    public string logName = "";
     public Transform pivotPoint;
     [UnityEngine.Serialization.FormerlySerializedAs("type")]
     public IPType iPtype;
