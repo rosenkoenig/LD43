@@ -178,7 +178,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1e722c2d69926794788617d96dce3cf9, type: 3}
+  - {fileID: 2100000, guid: 80b46e2163a411947b158dfa38706f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -213,7 +213,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: 1e722c2d69926794788617d96dce3cf9, type: 3}
+  - {fileID: 2100000, guid: 80b46e2163a411947b158dfa38706f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -248,7 +248,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: 1e722c2d69926794788617d96dce3cf9, type: 3}
+  - {fileID: 2100000, guid: 80b46e2163a411947b158dfa38706f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -318,4 +318,5 @@ MonoBehaviour:
     - _childStatID: {fileID: 11400000, guid: 585ea90be3ef1a645a3c0b3894aeb3f4, type: 2}
       _factor: 5
       _refill: 0
+      _relativeChildStatID: {fileID: 0}
   eatingDuration: 3
