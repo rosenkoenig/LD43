@@ -489,7 +489,7 @@ public class ChildCharacter : Character {
     bool hasWarnedForHealth = false;
     void CheckHealth ()
     {
-        if(statsContainer.GetAChildStatValueRatio(GameMaster.Instance.healthStat) <= 0.25f)
+        if(!hasWarnedForHealth && statsContainer.GetAChildStatValueRatio(GameMaster.Instance.healthStat) <= 0.25f)
         {
             GameMaster.Instance.AddLog(childName + "has low health ! He could die...");
             hasWarnedForHealth = true;
