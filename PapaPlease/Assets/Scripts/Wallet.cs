@@ -11,7 +11,7 @@ public class Wallet : MonoBehaviour {
 
     [Header("Bills")]
     public float rentCost;
-    public float elecCost, waterCost, gazCost;
+    public float elecCost, waterCost, gazCost, condomCost;
     
     public float GetAllBillsCost { get { return rentCost + elecCost + waterCost + gazCost; } }
 
@@ -62,7 +62,18 @@ public class Wallet : MonoBehaviour {
         {
             SpendMoney(foodCost);
         }
+        else
+        {
+            GameMaster.Instance.AddLog("Not enough Money to buy Food !");
+        }
 
         return can;
+    }
+
+    public bool CanBuyCondom { get { return HasEnoughMoneyFor(condomCost); } }
+
+    public void BuyCondom ()
+    {
+        SpendMoney(condomCost);
     }
 }
