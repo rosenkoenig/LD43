@@ -10189,7 +10189,6 @@
 							<ChildrenList>
 								<BlendContainer Name="Amb_Outside_Balcony_Lp" ID="{AA3A8E9F-FDA3-47EF-8DFB-D096485409F2}" ShortID="402464861">
 									<PropertyList>
-										<Property Name="BlendBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
