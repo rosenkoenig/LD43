@@ -19,6 +19,7 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	148470694	Menu_QuitGame_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\UI\Menu_QuitGame_01_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\UI\Menu_QuitGame\Menu_QuitGame_01		88128
+	355330244	Coin_Wood_Table_Singles_Drop_Spin_Takes_5	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_DA5B8082.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Remove\Coin_Drop\Coin_Wood_Table_Singles_Drop_Spin_Takes_5		59614
 	387363422	Coin_Wood_Table_Singles_Drop_Spin_Takes_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_FF3B799D.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Remove\Coin_Drop\Coin_Wood_Table_Singles_Drop_Spin_Takes_01		58888
 	460106283	CashRegister 6045_53_1	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\CashRegister 6045_53_1_0AEF6767.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Add\Cash_Gain\CashRegister 6045_53_1		192632
 	477217437	Coin_Wood_Table_Singles_Drop_Spin_Takes_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_899B0DD5.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Remove\Coin_Drop\Coin_Wood_Table_Singles_Drop_Spin_Takes_03		61268
