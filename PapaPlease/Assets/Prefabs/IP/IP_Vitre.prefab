@@ -225,7 +225,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5adb1f661ba0f4e9b6475272682cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ipName: Clean the windows
+  playerActivityName: Clean the windows
+  logActivityName: cleaning the windows
+  logName: window
   pivotPoint: {fileID: 4077785600966724}
   iPtype: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114379295816765414}
@@ -252,6 +254,9 @@ MonoBehaviour:
   animStateName: Idle
   _activityResetDelay: 60
   curActivityResetDelay: 0
+  _itemsToActivateOnRunning: []
+  _dirtyVisualsRenderers: []
+  _dirtyVisualsToActivate: []
   _akEventPlay:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: 9d69873162779a74fbeb2bb81b7c190b,

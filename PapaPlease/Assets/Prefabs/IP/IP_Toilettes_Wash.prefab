@@ -399,7 +399,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5adb1f661ba0f4e9b6475272682cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerActivityName: Wash the toilets
+  playerActivityName: Wash the toilet
+  logActivityName: Washing the toilet
+  logName: wash the toilet
   pivotPoint: {fileID: 4238677840846108}
   iPtype: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114410294347942046}
@@ -427,6 +429,7 @@ MonoBehaviour:
   animStateName: Idle
   _activityResetDelay: 100
   curActivityResetDelay: 0
+  _itemsToActivateOnRunning: []
   _dirtyVisualsRenderers:
   - {fileID: 23900739005969246}
   _dirtyVisualsToActivate: []

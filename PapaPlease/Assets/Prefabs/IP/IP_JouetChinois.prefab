@@ -28,6 +28,23 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &1244606727128406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4496364620440742}
+  - component: {fileID: 33280865562080180}
+  - component: {fileID: 23061554529405582}
+  m_Layer: 0
+  m_Name: Chinese_Toy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1280544149509848
 GameObject:
@@ -61,7 +78,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1612884968664432
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4105590113674142
 Transform:
   m_ObjectHideFlags: 1
@@ -111,6 +128,7 @@ Transform:
   - {fileID: 4847929217428992}
   - {fileID: 4668893297984868}
   - {fileID: 4933358472100080}
+  - {fileID: 4496364620440742}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
@@ -127,6 +145,19 @@ Transform:
   m_Father: {fileID: 4105590113674142}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4496364620440742
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244606727128406}
+  m_LocalRotation: {x: -0, y: -0.9823749, z: -0, w: 0.18692102}
+  m_LocalPosition: {x: -0.007, y: 0, z: 0.365}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Children: []
+  m_Father: {fileID: 4105590113674142}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -158.45401, z: 0}
 --- !u!4 &4668893297984868
 Transform:
   m_ObjectHideFlags: 1
@@ -166,6 +197,43 @@ Transform:
   m_Father: {fileID: 4105590113674142}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 5.2660003, z: -45.000004}
+--- !u!23 &23061554529405582
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244606727128406}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: b2b197546b31eda428df07fcad836ffc, type: 2}
+  - {fileID: 2100000, guid: 66181108b13d0a641be83baeee542b16, type: 2}
+  - {fileID: 2100000, guid: 798bcf8778d44a24393e20332d4e9d02, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!23 &23323986616485744
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -285,6 +353,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1295709061675772}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &33280865562080180
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244606727128406}
+  m_Mesh: {fileID: 4300000, guid: 074fd9bd020a5924085082fa077e0ebe, type: 3}
 --- !u!33 &33303871808270592
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -339,7 +414,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5adb1f661ba0f4e9b6475272682cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ipName: 
+  playerActivityName: 
+  logActivityName: Playing with toy
+  logName: play
   pivotPoint: {fileID: 4243086796250148}
   iPtype: {fileID: 11400000, guid: 88b7a2a5fee7ce241b5954fc4ede72f0, type: 2}
   activity: {fileID: 114270215005536230}
@@ -364,8 +441,10 @@ MonoBehaviour:
   doOnce: 0
   animStateName: PlayOnFloor
   _activityResetDelay: 100
-  _activityModifiers: []
   curActivityResetDelay: 0
+  _itemsToActivateOnRunning: []
+  _dirtyVisualsRenderers: []
+  _dirtyVisualsToActivate: []
   _akEventPlay:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: e5bbcfa96e71e824bbd24f48eeee08aa,
