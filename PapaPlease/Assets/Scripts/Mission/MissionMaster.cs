@@ -32,6 +32,7 @@ public class MissionMaster : MonoBehaviour {
 
     public void ClearAllRunningMissions ()
     {
+        runningMissions = null;
         runningMissions = new List<RunningMission>();
     }
 
