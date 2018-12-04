@@ -8,6 +8,7 @@ public class ActivityHolder
     public float completionPercentage = 0f;
     public Character character;
 
+
     public float GetActivityModifiersRatios(List<ActivityModifier> actMods)
     {
         float toReturn = 0;
@@ -46,6 +47,8 @@ public class Activity : MonoBehaviour
     public int maxHolder = 1;
     public bool doOnce = false;
     public string animStateName = "";
+
+    public float money = 0f;
 
     [SerializeField] float _activityResetDelay = 60f;
 
@@ -134,6 +137,7 @@ public class Activity : MonoBehaviour
         {
             SetState(ActivityState.COMPLETE);
             curActivityResetDelay = _activityResetDelay;
+            if (money > 0) GameMaster.Instance.wallet.EarnMoney(money);
         }
         else
         {
@@ -222,6 +226,9 @@ public class Activity : MonoBehaviour
 
     public void CancelActivity(Character character)
     {
+
+        if (_akEventStop != null && _akEventStop.IsValid())
+            _akEventStop.Post(gameObject);
 
         Debug.Log("Cancel Activity");
         ActivityHolder holder = GetHolderForCharacter(character);

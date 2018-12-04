@@ -433,13 +433,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerActivityName: 
-  logActivityName: 
-  logName: 
+  logActivityName: Watching Cartoons
+  logName: watch cartoons
   pivotPoint: {fileID: 4936384086385742}
   iPtype: {fileID: 11400000, guid: 88b7a2a5fee7ce241b5954fc4ede72f0, type: 2}
   activity: {fileID: 114404481048179836}
   onlyUsableByChild: 1
+  onlyUsableByPlayer: 0
   destroyOnComplete: 0
+  completionTextures: []
+  textureTarget: {fileID: 0}
   _useActivityProgressInfo: 0
   _activityProgressInfoPos: {fileID: 0}
   globalStatsModificator_OnCompleted: {fileID: 0}
@@ -459,6 +462,7 @@ MonoBehaviour:
   maxHolder: 1
   doOnce: 1
   animStateName: Zombie
+  money: 0
   _activityResetDelay: 100
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []

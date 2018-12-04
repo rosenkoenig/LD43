@@ -6,7 +6,7 @@ public class ActivityTimed : Activity {
 
     [Header("___________")]
     public float duration;
-    
+
 
 
     protected override void UpdateRunningState()
