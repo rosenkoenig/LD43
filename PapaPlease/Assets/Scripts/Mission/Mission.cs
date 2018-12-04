@@ -13,8 +13,8 @@ public class MissionRequisites
 [CreateAssetMenu(fileName = "MissionFile", menuName = "Gameplay/Mission")]
 public class Mission : ScriptableObject {
 
-    public float moneyEarned = 1f;
     public string missionName = "Prostitute";
+    public float moneyEarned = 1f;
     public List<MissionRequisites> requisites = new List<MissionRequisites>();
     public ChildStatsModificator onCompleteSkillStatModifier = null;
     public ChildStatsModificatorContainer onCompleteHiddenStatModifier = null;

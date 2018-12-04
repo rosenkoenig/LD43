@@ -8,10 +8,12 @@ public class UIPlayerInteraction : Popup {
     [SerializeField]
     Text text;
 
+    public string currentActionName = "";
+
     public override void Init(object[] args)
     {
         base.Init(args);
 
-        text.text = (string)args[0];
+        text.text = currentActionName = (string)args[0];
     }
 }

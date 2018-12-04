@@ -80,6 +80,15 @@ public class ChildCharacter : Character {
     [SerializeField]
     Material baseSkinMaterial;
 
+    [SerializeField]
+    InterestPoint pipiIPPrefab = null;
+
+    [SerializeField]
+    ChildStatID vessieID = null;
+
+    [SerializeField]
+    ChildStatsModificator onPipiModificator = null;
+
     // Use this for initialization
     void Start () {
         
@@ -217,6 +226,33 @@ public class ChildCharacter : Character {
         SetState(ChildAIState.IN_MISSION);
     }
 
+    public string GetStateName ()
+    {
+        if (isDoingAnger) return "Is Angry !";
+        if (isSlaped) return "Is Recovering";
+
+        switch(state)
+        {
+            case ChildAIState.IN_ACTIVITY:
+                return currentInterestPoint.logActivityName;
+                break;
+            case ChildAIState.DEAD:
+                return "Is Dead";
+                break;
+            case ChildAIState.AT_TABLE:
+                return wasEating ? "Is Eating" : isDoingAnger ? "Is Angry !" : "Is Waiting for Food";
+            case ChildAIState.MOVING_TO_ACTIVITY:
+                return "Is moving to " + currentInterestPoint.logName;
+                break;
+            case ChildAIState.ROAMING:
+                return "Does pretty Nothing";
+            case ChildAIState.WAITING:
+                return "Probably thinks about your parenthood";
+        }
+
+        return "";
+    }
+
     #region Slap
     public void IsSlapped ()
     {
@@ -298,7 +334,33 @@ public class ChildCharacter : Character {
     {
         MoveTo(transform.position);
     }
-    #endregion 
+    #endregion
+
+    #region Pipi
+    void CheckPipi ()
+    {
+        if (state >= ChildAIState.IN_ACTIVITY) return;
+        if(statsContainer.GetAChildStatValue(vessieID) <= vessieID.MinValue)
+        {
+            DoPipi();
+        }
+    }
+
+    void DoPipi ()
+    {
+        SpawnPipi();
+        onPipiModificator.TryModifyStats(this, false);
+        GameMaster.Instance.AddLog(childName + "has peed on the floor");
+    }
+
+    void SpawnPipi ()
+    {
+        if (pipiIPPrefab == null) return;
+        GameObject inst = GameObject.Instantiate(pipiIPPrefab.gameObject, transform.position, transform.rotation);
+
+        GameMaster.Instance.hm.SubscribeInterestPoint(inst.GetComponent<InterestPoint>());
+    }
+    #endregion
 
     #region State Management
     void SetState (ChildAIState newState)
@@ -376,6 +438,7 @@ public class ChildCharacter : Character {
         }
 
         CheckIsWalking();
+        CheckPipi();
 
         switch (state)
         {
@@ -619,7 +682,7 @@ public class ChildCharacter : Character {
     void StartInActivity ()
     {
 
-        GameMaster.Instance.AddLog(childName + " starts interacting with " + currentInterestPoint.iPtype.GetIPName);
+        GameMaster.Instance.AddLog(childName + " starts " + currentInterestPoint.logActivityName);
         currentInterestPoint.Interact(this);
         isInActivityFeedback.SetActive(true);
     }

@@ -31,8 +31,6 @@ public class GameFlow : MonoBehaviour {
 
     public void OnDayStarts ()
     {
-        Debug.Log("Day starts");
-        GameMaster.Instance.AddLog("Day Starts");
         SetGameState(GameState.DAY);
         gm.hm.SetDoorLockedClosed(false);
         gm.player.BeginDayPhase();
@@ -44,7 +42,6 @@ public class GameFlow : MonoBehaviour {
 
     public void OnDayEnds ()
     {
-        GameMaster.Instance.AddLog("Day Ends");
         SetGameState(GameState.NIGHT_TRANSITION);
         gm.player.SetInteractActive(false);
         gm.player.LockMovement(true);
