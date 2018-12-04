@@ -74,7 +74,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1252557979401402
 GameObject:
@@ -502,8 +502,7 @@ MonoBehaviour:
   - {fileID: 1719849157744946}
   _akEventPlay:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6237b8f26e96559429f93ffa52389430,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   _akEventStop:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: b1b920ffbe59bf44eb2cdb3b9def629c,
