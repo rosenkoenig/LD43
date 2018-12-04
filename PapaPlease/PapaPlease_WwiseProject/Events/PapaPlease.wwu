@@ -720,7 +720,7 @@
 								<Action Name="" ID="{C3CD507D-6172-4097-A4B6-91EA7FCB3EE5}" ShortID="623497425">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Delay" Type="Real64" Value="1.2"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
 										<Property Name="FadeInCurve" Type="int16" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
@@ -810,34 +810,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="AI_CleanWindow" ID="{2B5D13AA-63BE-4600-93F3-B2E93559ADC5}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_AI_FS_BF_Walk_L" ID="{C705CF1C-2DF5-4A37-A536-0F5F1DF5C298}">
-							<ChildrenList>
-								<Action Name="" ID="{846BA749-FCCD-4B75-9F18-BAF07598A29A}" ShortID="485161020">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="AI_FS_BF_Walk_L" ID="{E2F9023C-5267-40A2-882F-FDA38628DB94}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_AI_FS_BF_Walk_R" ID="{D6D9A252-155D-49F4-A614-C1CB3E98E407}">
-							<ChildrenList>
-								<Action Name="" ID="{7F6BA761-E14E-45E6-BC02-B36BA9F53F99}" ShortID="822223885">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="AI_FS_BF_Walk_R" ID="{43A0494B-3570-4ECB-B38F-294724CB887A}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1118,6 +1090,58 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="AI_Angry" ID="{9C60E8CF-2FB7-4026-A368-0F578B2B541D}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AI_FS_BF_Walk" ID="{1477F81F-6730-4ED6-BC4E-77EDB948D39C}">
+							<ChildrenList>
+								<Action Name="" ID="{FCDD6108-E181-4C6B-959B-BA4BADC05408}" ShortID="427478812">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_FS_BF_Walk" ID="{E7130AF9-55AC-4721-B4A5-AF57FF04D19A}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_AI_FS_BF_Walk" ID="{4505291F-19E2-4F46-97CC-1AFBC8EF849F}">
+							<ChildrenList>
+								<Action Name="" ID="{AA523A8C-813B-4963-B49C-0528FFDD1EBD}" ShortID="844933963">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_FS_BF_Scuffs" ID="{D7003201-5FEB-434E-8416-F1EE51E3E4AA}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2CE445E0-B320-4A6E-B8BF-EAB36250A222}" ShortID="781579270">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_FS_BF_Walk" ID="{E7130AF9-55AC-4721-B4A5-AF57FF04D19A}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AI_Die" ID="{2A1ACE8B-5F7A-4175-9912-21CBC37D111A}">
+							<ChildrenList>
+								<Action Name="" ID="{5E021D6B-3F4B-4E5A-B82D-2B76358C6FC0}" ShortID="297163455">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AI_Die" ID="{306BA503-FD5F-4969-AF33-A7B44A914D89}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

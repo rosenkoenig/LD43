@@ -1140,6 +1140,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startMoney: 100
   foodCost: 2
+  OnSpendMoneyEvent:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 26ce982c72e244849b6e3ed296bf8f2b,
+      type: 2}
+  OnEarnMoneyEvent:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: b5df192fb18312541a988b31d45fda80,
+      type: 2}
 --- !u!114 &454426460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4263,6 +4271,54 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114511833642560058, guid: 27a308ce4c5f83c46b58d55d3aaaa591,
+        type: 2}
+      propertyPath: OnStartAnger.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 73731989191d70941b5196456d694d0e,
+        type: 2}
+    - target: {fileID: 114511833642560058, guid: 27a308ce4c5f83c46b58d55d3aaaa591,
+        type: 2}
+      propertyPath: OnStopAnger.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: d0b9e03f5bc34eb4d8aefa3781e2dc29,
+        type: 2}
+    - target: {fileID: 114511833642560058, guid: 27a308ce4c5f83c46b58d55d3aaaa591,
+        type: 2}
+      propertyPath: OnSlapEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: d26bb214f6c2dfc4a8dcff5369a9c14b,
+        type: 2}
+    - target: {fileID: 114511833642560058, guid: 27a308ce4c5f83c46b58d55d3aaaa591,
+        type: 2}
+      propertyPath: OnStartEating.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 2a912cac867b4cd4d9598e9bc1d89d0a,
+        type: 2}
+    - target: {fileID: 114511833642560058, guid: 27a308ce4c5f83c46b58d55d3aaaa591,
+        type: 2}
+      propertyPath: OnStopEating.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 9e426ad7554dbb94c9d0a653a553b700,
+        type: 2}
+    - target: {fileID: 114511833642560058, guid: 27a308ce4c5f83c46b58d55d3aaaa591,
+        type: 2}
+      propertyPath: OnStartWalking.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: f036ed718d3af3a40882da4e5f0891a4,
+        type: 2}
+    - target: {fileID: 114511833642560058, guid: 27a308ce4c5f83c46b58d55d3aaaa591,
+        type: 2}
+      propertyPath: OnStopWalking.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 12a04001170e9424a87bc816b433ab8f,
+        type: 2}
+    - target: {fileID: 114511833642560058, guid: 27a308ce4c5f83c46b58d55d3aaaa591,
+        type: 2}
+      propertyPath: OnDeathEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: d0d04226b204e134496a78f5441bbc75,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27a308ce4c5f83c46b58d55d3aaaa591, type: 2}
   m_IsPrefabAsset: 0

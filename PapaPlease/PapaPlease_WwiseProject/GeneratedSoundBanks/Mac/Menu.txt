@@ -14,12 +14,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	3592474417	Play_Menu_QuitGame			\PapaPlease\UI\Play_Menu_QuitGame	
 	4070450727	Stop_Menu_QuitGame			\PapaPlease\UI\Stop_Menu_QuitGame	
 
+Effect plug-ins	ID	Name	Type				Notes
+	701863527	Inside_My_Head	Wwise RoomVerb			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	148470694	Menu_QuitGame_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\UI\Menu_QuitGame_01_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\UI\Menu_QuitGame\Menu_QuitGame_01		88128
-	387363422	Coin_Wood_Table_Singles_Drop_Spin_Takes_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_9382EA1E.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Remove\Coin_Drop\Coin_Wood_Table_Singles_Drop_Spin_Takes_01		64116
+	387363422	Coin_Wood_Table_Singles_Drop_Spin_Takes_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_FF3B799D.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Remove\Coin_Drop\Coin_Wood_Table_Singles_Drop_Spin_Takes_01		58888
 	460106283	CashRegister 6045_53_1	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\CashRegister 6045_53_1_0AEF6767.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Add\Cash_Gain\CashRegister 6045_53_1		192632
-	477217437	Coin_Wood_Table_Singles_Drop_Spin_Takes_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_D7C701C9.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Remove\Coin_Drop\Coin_Wood_Table_Singles_Drop_Spin_Takes_03		59962
-	591342214	Coin_Wood_Table_Singles_Drop_Spin_Takes_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_50A1E6DC.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Remove\Coin_Drop\Coin_Wood_Table_Singles_Drop_Spin_Takes_02		86340
+	477217437	Coin_Wood_Table_Singles_Drop_Spin_Takes_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_899B0DD5.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Remove\Coin_Drop\Coin_Wood_Table_Singles_Drop_Spin_Takes_03		61268
+	591342214	Coin_Wood_Table_Singles_Drop_Spin_Takes_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_549D46D2.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Remove\Coin_Drop\Coin_Wood_Table_Singles_Drop_Spin_Takes_02		78496
 	613588411	CashRegister 6028_25_3	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\CashRegister 6028_25_3_CDEA549D.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Add\Cash_Gain\CashRegister 6028_25_3		108816
 	685672182	Menu_Back_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\UI\Menu_Back_01_56D34C19.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\UI\Menu_Back\Menu_Back_01		41024
 	849979199	CashRegister 6028_25_2	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\CashRegister 6028_25_2_93424404.wem		\Actor-Mixer Hierarchy\PapaPlease\Menu\HUD\Money_Add\Cash_Gain\CashRegister 6028_25_2		92404
