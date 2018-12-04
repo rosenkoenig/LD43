@@ -15,6 +15,7 @@ public class InterestPoint : MonoBehaviour
     public IPType iPtype;
     public Activity activity;
     public bool onlyUsableByChild = false;
+    public bool destroyOnComplete = false;
 
     [Header("Activity progress info")]
 
@@ -35,6 +36,9 @@ public class InterestPoint : MonoBehaviour
 
     void Start()
     {
+        if(destroyOnComplete)
+            activity.OnEnd += DestroyThis;
+
         if (_useActivityProgressInfo)
         {
             _activityProgressInfo = Instantiate(GameMaster.Instance.uIMaster.GetActivityProgressInfoRef, _activityProgressInfoPos.position, _activityProgressInfoPos.rotation,
@@ -42,6 +46,11 @@ public class InterestPoint : MonoBehaviour
             _activityProgressInfo.gameObject.SetActive(false);
         }
         activity.SetInheritedIPType(iPtype);
+    }
+
+    void DestroyThis ()
+    {
+        Destroy(gameObject);
     }
 
     public void MakeResetActivity()
