@@ -34,12 +34,11 @@ public class Wallet : MonoBehaviour {
 
     public void SpendMoney (float delta)
     {
-        if(HasEnoughMoneyFor(Mathf.Abs(delta)))
-        {
+        
             _money -= Mathf.Abs(delta);
             GameMaster.Instance.uIMaster.UpdateWalletUI(_money);
             OnSpendMoneyEvent.Post(gameObject);
-        }
+        
     }
 
     public void EarnMoney (float delta)
