@@ -2437,13 +2437,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Mmm Female Various by AudioRichter Id-169342 1" ID="{FC02198F-73F8-4378-8387-8508C60FBD45}" ShortID="990212977">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -2454,6 +2447,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Mmm Female Various by AudioRichter Id-169342 1" ID="{DA8A96DE-D893-4521-88A0-343AA395801B}" ShortID="208192602">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.28658872254716E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="6.63088033928149E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.531460110775248"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Player_Voice\Mmm Female Various by AudioRichter Id-169342 1.wav</AudioFile>
 										</AudioFileSource>
@@ -2488,13 +2486,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Mmm Female Various by AudioRichter Id-169342" ID="{023C4D73-5865-4D00-BFCE-B7C0250A2CC2}" ShortID="857327572">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
@@ -2505,6 +2496,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Mmm Female Various by AudioRichter Id-169342" ID="{BCA3592A-6DC4-467C-8898-9E620477B744}" ShortID="658954882">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="5.55187894614463E-03"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="8.88300631383141E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.129913967339784"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.738399899837236"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Player_Voice\Mmm Female Various by AudioRichter Id-169342.wav</AudioFile>
 										</AudioFileSource>
@@ -2541,6 +2538,184 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<BlendContainer Name="Player_Paint" ID="{5B8ED2FF-14F1-42F2-B4EE-9FFE61E099FD}" ShortID="335026762">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Player_Painting" ID="{899C06C0-662A-4071-A59F-43DFA2740CE8}" ShortID="310441736">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>34</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.4">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{618FC073-DA96-4751-81BC-9857711A6858}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Cloth, Brush, Variations SND4085" ID="{CE805D58-65E0-4BC7-B814-60903FD70AAB}" ShortID="831555228">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cloth, Brush, Variations SND4085" ID="{BA8A84C3-9088-4207-8BCA-BCCAE2D24642}" ShortID="616743325">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="6.86897458369851E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.320552147239264"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.42722027461291"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Cloth, Brush, Variations SND4085.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cloth, Brush, Variations SND4085" ID="{BA8A84C3-9088-4207-8BCA-BCCAE2D24642}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cloth, Brush, Variations SND4085_01" ID="{B886A969-E6D9-46A0-BF71-4B76928B6EA9}" ShortID="205736538">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cloth, Brush, Variations SND4085" ID="{91696C1B-B92C-4E77-913F-833920261766}" ShortID="705607437">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="6.86897458369851E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.320552147239264"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.57223196026877"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.55660239555945"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Cloth, Brush, Variations SND4085.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cloth, Brush, Variations SND4085" ID="{91696C1B-B92C-4E77-913F-833920261766}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cloth, Brush, Variations SND4085_02" ID="{395047C9-BD5A-4EC1-9E82-AB596831FC50}" ShortID="262672952">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cloth, Brush, Variations SND4085" ID="{B446DA6B-FCAC-4ACA-9E2E-DCBFB0E6FA65}" ShortID="629175168">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="6.86897458369851E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.320552147239264"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.99163745252702"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.32727139935729"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Cloth, Brush, Variations SND4085.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cloth, Brush, Variations SND4085" ID="{B446DA6B-FCAC-4ACA-9E2E-DCBFB0E6FA65}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cloth, Brush, Variations SND4085_03" ID="{01A92448-C112-4EC8-93E2-3DC2BF74A464}" ShortID="843188429">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cloth, Brush, Variations SND4085" ID="{DCF6D95F-EF48-46BC-AB3C-08574DD86D9F}" ShortID="239875790">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="6.86897458369851E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.320552147239264"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.25076687116564"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.73904469763366"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Cloth, Brush, Variations SND4085.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cloth, Brush, Variations SND4085" ID="{DCF6D95F-EF48-46BC-AB3C-08574DD86D9F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="HumanShave 6032_31_3" ID="{AE29A9CB-2EB0-47F8-8896-E0AE5A89CA6C}" ShortID="993562333">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{037D3E11-666B-41DC-98F9-59140BEA53D3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HumanShave 6032_31_3" ID="{4C9B60BE-43F0-401A-9C60-1F6719BF3538}" ShortID="121176616">
+											<Language>SFX</Language>
+											<AudioFile>HumanShave 6032_31_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HumanShave 6032_31_3" ID="{4C9B60BE-43F0-401A-9C60-1F6719BF3538}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="AI_Children" ID="{AA2B4A50-A4BC-4FA2-8E79-BEAFB1812C46}" ShortID="741144328">
@@ -2741,7 +2916,7 @@
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
@@ -3596,6 +3771,7 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="AI_Hit" ID="{210CC1BD-6CC6-44F4-A0CE-8E0E73315027}" ShortID="971435190">
 									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
@@ -4728,7 +4904,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4959,6 +5135,11 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -10337,6 +10518,13 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Ambiances" ID="{B0AB5490-707E-4E6B-ABF0-ADEA601394AB}" ShortID="635732962">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -11108,15 +11296,10 @@
 									<ChildrenList>
 										<Sound Name="Amb_Bathroom_Lp_02" ID="{630857E2-D5E1-43AF-9082-134F34AF41FB}" ShortID="222646581">
 											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-20</Value>
+														<Value>-37</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -11870,13 +12053,6 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Coin_Wood_Table_Singles_Drop_Spin_Takes_5" ID="{89C37A24-0251-467B-BE6A-37EDC0F8D05F}" ShortID="233983445">
-													<PropertyList>
-														<Property Name="Inclusion" Type="bool">
-															<ValueList>
-																<Value>False</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5EDA9578-E9CA-4B11-B2FF-0B713DB34CFA}"/>

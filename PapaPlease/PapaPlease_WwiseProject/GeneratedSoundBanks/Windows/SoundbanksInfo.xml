@@ -46,10 +46,12 @@
 			<IncludedEvents>
 				<Event Id="98439365" Name="Play_Player_Footsteps" ObjectPath="\Events\PapaPlease\Player\Play_Player_Footsteps"/>
 				<Event Id="3975414246" Name="Play_Player_Give_Food" ObjectPath="\Events\PapaPlease\Player\Play_Player_Give_Food"/>
+				<Event Id="449815044" Name="Play_Player_Paint" ObjectPath="\Events\PapaPlease\Player\Play_Player_Paint"/>
 				<Event Id="76044170" Name="Play_Player_Slap" ObjectPath="\Events\PapaPlease\Player\Play_Player_Slap"/>
 				<Event Id="2204713990" Name="Play_Player_Slap_Kids" ObjectPath="\Events\PapaPlease\Player\Play_Player_Slap_Kids"/>
 				<Event Id="3216481374" Name="Play_Player_Voice" ObjectPath="\Events\PapaPlease\Player\Play_Player_Voice"/>
 				<Event Id="2284278951" Name="Stop_Player_Footsteps" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Footsteps" MaxAttenuation="0.000000"/>
+				<Event Id="3604926542" Name="Stop_Player_Paint" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Paint" MaxAttenuation="0.000000"/>
 				<Event Id="3374816280" Name="Stop_Player_Slap" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Slap" MaxAttenuation="0.000000"/>
 				<Event Id="2895733124" Name="Stop_Player_Slap_Kids" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Slap_Kids" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
@@ -58,13 +60,25 @@
 					<ShortName>Player_Slap\Player_Slap_Kids\Player_SlapKid_01_v2.wav</ShortName>
 					<Path>SFX\Player_Slap\Player_Slap_Kids\Player_SlapKid_01_v2_F52F4675.wem</Path>
 				</File>
+				<File Id="121176616" Language="SFX">
+					<ShortName>HumanShave 6032_31_3.wav</ShortName>
+					<Path>SFX\HumanShave 6032_31_3_0265BEE3.wem</Path>
+				</File>
 				<File Id="171004212" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
 					<Path>SFX\Player_Foosteps_658E136E.wem</Path>
 				</File>
+				<File Id="208192602" Language="SFX">
+					<ShortName>Player_Voice\Mmm Female Various by AudioRichter Id-169342 1.wav</ShortName>
+					<Path>SFX\Player_Voice\Mmm Female Various by AudioRichter Id-169342 1_4A9AF0C7.wem</Path>
+				</File>
 				<File Id="226423887" Language="SFX">
 					<ShortName>Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 1 SND18731.wav</ShortName>
 					<Path>SFX\Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 1 SND18731_F52F4675.wem</Path>
+				</File>
+				<File Id="239875790" Language="SFX">
+					<ShortName>Cloth, Brush, Variations SND4085.wav</ShortName>
+					<Path>SFX\Cloth, Brush, Variations SND4085_A15A9825.wem</Path>
 				</File>
 				<File Id="292579193" Language="SFX">
 					<ShortName>Player_Voice\Mmm Female Various by AudioRichter Id-169342 2.wav</ShortName>
@@ -94,9 +108,25 @@
 					<ShortName>Plastic Bag, Small, Filled With Water, Pick Up From Wood Surface 2 SND18732.wav</ShortName>
 					<Path>SFX\Plastic Bag, Small, Filled With Water, Pick Up From Wood Surface 2 SND18732_F52F4675.wem</Path>
 				</File>
+				<File Id="616743325" Language="SFX">
+					<ShortName>Cloth, Brush, Variations SND4085.wav</ShortName>
+					<Path>SFX\Cloth, Brush, Variations SND4085_34575FB8.wem</Path>
+				</File>
+				<File Id="629175168" Language="SFX">
+					<ShortName>Cloth, Brush, Variations SND4085.wav</ShortName>
+					<Path>SFX\Cloth, Brush, Variations SND4085_D7B3599D.wem</Path>
+				</File>
+				<File Id="658954882" Language="SFX">
+					<ShortName>Player_Voice\Mmm Female Various by AudioRichter Id-169342.wav</ShortName>
+					<Path>SFX\Player_Voice\Mmm Female Various by AudioRichter Id-169342_F4ADA104.wem</Path>
+				</File>
 				<File Id="682061179" Language="SFX">
 					<ShortName>Player_Slap\Player_Slap_Kids\Player_SlapKid_04_v2.wav</ShortName>
 					<Path>SFX\Player_Slap\Player_Slap_Kids\Player_SlapKid_04_v2_F52F4675.wem</Path>
+				</File>
+				<File Id="705607437" Language="SFX">
+					<ShortName>Cloth, Brush, Variations SND4085.wav</ShortName>
+					<Path>SFX\Cloth, Brush, Variations SND4085_F0835572.wem</Path>
 				</File>
 				<File Id="742844808" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
@@ -166,6 +196,10 @@
 				<File Id="666006642" Language="SFX">
 					<ShortName>Amb_Outside\AmbOut_Wall_Neighborhood.wav</ShortName>
 					<Path>SFX\Amb_Outside\AmbOut_Wall_Neighborhood_0265BEE3.wem</Path>
+				</File>
+				<File Id="843721958" Language="SFX">
+					<ShortName>Amb_Bathroom_Lp_02.wav</ShortName>
+					<Path>SFX\Amb_Bathroom_Lp_02_0265BEE3.wem</Path>
 				</File>
 				<File Id="848191855" Language="SFX">
 					<ShortName>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</ShortName>
@@ -733,6 +767,10 @@
 				<File Id="148470694" Language="SFX">
 					<ShortName>UI\Menu_QuitGame_01.wav</ShortName>
 					<Path>SFX\UI\Menu_QuitGame_01_56D34C19.wem</Path>
+				</File>
+				<File Id="355330244" Language="SFX">
+					<ShortName>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</ShortName>
+					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_DA5B8082.wem</Path>
 				</File>
 				<File Id="387363422" Language="SFX">
 					<ShortName>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</ShortName>
