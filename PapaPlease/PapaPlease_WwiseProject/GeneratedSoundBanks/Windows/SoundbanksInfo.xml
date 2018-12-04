@@ -134,9 +134,21 @@
 					<ShortName>Amb_KidsBedroom_Lp.wav</ShortName>
 					<Path>SFX\Amb_KidsBedroom_Lp_0265BEE3.wem</Path>
 				</File>
+				<File Id="133864595" Language="SFX">
+					<ShortName>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</ShortName>
+					<Path>SFX\Human, Laugh, Male, Senior, Chuckles 1 SND1978_5DD0074F.wem</Path>
+				</File>
 				<File Id="168015010" Language="SFX">
 					<ShortName>Amb_Outside\AmbOut_Bathroom_Neighborhood.wav</ShortName>
 					<Path>SFX\Amb_Outside\AmbOut_Bathroom_Neighborhood_0265BEE3.wem</Path>
+				</File>
+				<File Id="196435504" Language="SFX">
+					<ShortName>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</ShortName>
+					<Path>SFX\Human, Laugh, Male, Senior, Chuckles 1 SND1978_566B6A60.wem</Path>
+				</File>
+				<File Id="262364100" Language="SFX">
+					<ShortName>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</ShortName>
+					<Path>SFX\Human, Laugh, Male, Senior, Chuckles 1 SND1978_69D03E68.wem</Path>
 				</File>
 				<File Id="331690594" Language="SFX">
 					<ShortName>Amb_Kitchen_Lp.wav</ShortName>
@@ -149,6 +161,10 @@
 				<File Id="666006642" Language="SFX">
 					<ShortName>Amb_Outside\AmbOut_Wall_Neighborhood.wav</ShortName>
 					<Path>SFX\Amb_Outside\AmbOut_Wall_Neighborhood_0265BEE3.wem</Path>
+				</File>
+				<File Id="848191855" Language="SFX">
+					<ShortName>Human, Laugh, Male, Senior, Chuckles 1 SND1978.wav</ShortName>
+					<Path>SFX\Human, Laugh, Male, Senior, Chuckles 1 SND1978_24C3CF07.wem</Path>
 				</File>
 				<File Id="863881689" Language="SFX">
 					<ShortName>Amb_LivingRoom_Lp.wav</ShortName>
@@ -277,7 +293,7 @@
 				</File>
 				<File Id="227206352" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
-					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_3772B1C1.wem</Path>
+					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_16006897.wem</Path>
 				</File>
 				<File Id="231907802" Language="SFX">
 					<ShortName>Water, Running, Sink, Drain Open 2 SND5462 2.wav</ShortName>
@@ -305,7 +321,7 @@
 				</File>
 				<File Id="256888981" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
-					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_31889676.wem</Path>
+					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_E4769377.wem</Path>
 				</File>
 				<File Id="263219467" Language="SFX">
 					<ShortName>AI_CleanBin\AI_Bin_Close_01.wav</ShortName>
@@ -417,7 +433,7 @@
 				</File>
 				<File Id="483909985" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
-					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_F94A7ACC.wem</Path>
+					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_B9D554E6.wem</Path>
 				</File>
 				<File Id="487912631" Language="SFX">
 					<ShortName>AI_Eating\AI_Eating_Crunch\AI_Eating_Crunch_02.wav</ShortName>
@@ -433,7 +449,7 @@
 				</File>
 				<File Id="537898305" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
-					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_042E2A25.wem</Path>
+					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_F84BCA88.wem</Path>
 				</File>
 				<File Id="541922707" Language="SFX">
 					<ShortName>AI_Playing\Toy_Des_03.wav</ShortName>
@@ -509,7 +525,7 @@
 				</File>
 				<File Id="675323695" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
-					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_5508BF2D.wem</Path>
+					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_0A8D4967.wem</Path>
 				</File>
 				<File Id="712923603" Language="SFX">
 					<ShortName>AI_Eating\AI_Eating_Soup\AI_Eating_Soup_04.wav</ShortName>
@@ -561,7 +577,7 @@
 				</File>
 				<File Id="804930303" Language="SFX">
 					<ShortName>AI_FS_BF_Walk\AI_FS_BF_Lp_01.wav</ShortName>
-					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_96A46367.wem</Path>
+					<Path>SFX\AI_FS_BF_Walk\AI_FS_BF_Lp_01_56253CBC.wem</Path>
 				</File>
 				<File Id="808455251" Language="SFX">
 					<ShortName>AI_CleanBin\AI_Bin_Movement_Metal_01.wav</ShortName>
@@ -723,11 +739,11 @@
 				</File>
 				<File Id="477217437" Language="SFX">
 					<ShortName>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</ShortName>
-					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_2D34D7DA.wem</Path>
+					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_899B0DD5.wem</Path>
 				</File>
 				<File Id="591342214" Language="SFX">
 					<ShortName>Coin_Wood_Table_Singles_Drop_Spin_Takes_5.wav</ShortName>
-					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_E5F5CD0D.wem</Path>
+					<Path>SFX\Coin_Wood_Table_Singles_Drop_Spin_Takes_5_549D46D2.wem</Path>
 				</File>
 				<File Id="613588411" Language="SFX">
 					<ShortName>CashRegister 6028_25_3.wav</ShortName>
