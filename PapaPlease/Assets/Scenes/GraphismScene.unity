@@ -377,7 +377,7 @@ GameObject:
   - component: {fileID: 82918367}
   - component: {fileID: 82918366}
   - component: {fileID: 82918364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Balcoony_Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +533,7 @@ GameObject:
   - component: {fileID: 140241881}
   - component: {fileID: 140241880}
   - component: {fileID: 140241878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -624,7 +624,7 @@ GameObject:
   - component: {fileID: 147759520}
   - component: {fileID: 147759522}
   - component: {fileID: 147759521}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -876,7 +876,7 @@ GameObject:
   - component: {fileID: 172220139}
   - component: {fileID: 172220141}
   - component: {fileID: 172220140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Window3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1036,7 +1036,7 @@ GameObject:
   - component: {fileID: 192303203}
   - component: {fileID: 192303202}
   - component: {fileID: 192303200}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1212,7 +1212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 220893483}
   - component: {fileID: 220893482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1266,7 +1266,7 @@ GameObject:
   - component: {fileID: 242517377}
   - component: {fileID: 242517376}
   - component: {fileID: 242517374}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1358,7 +1358,7 @@ GameObject:
   - component: {fileID: 337765402}
   - component: {fileID: 337765404}
   - component: {fileID: 337765403}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dummy_Table_Extension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1432,7 +1432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2078545820}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Apartment_v01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1450,7 +1450,7 @@ GameObject:
   - component: {fileID: 371144081}
   - component: {fileID: 371144083}
   - component: {fileID: 371144082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Window2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1626,7 +1626,7 @@ GameObject:
   - component: {fileID: 468537376}
   - component: {fileID: 468537375}
   - component: {fileID: 468537373}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2043,7 +2043,7 @@ GameObject:
   - component: {fileID: 547501151}
   - component: {fileID: 547501150}
   - component: {fileID: 547501148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2135,7 +2135,7 @@ GameObject:
   - component: {fileID: 562182930}
   - component: {fileID: 562182929}
   - component: {fileID: 562182927}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2360,7 +2360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 698883831}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2472,7 +2472,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710294654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ExtensionRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2507,7 +2507,7 @@ GameObject:
   - component: {fileID: 728353362}
   - component: {fileID: 728353361}
   - component: {fileID: 728353359}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2763,7 +2763,7 @@ GameObject:
   - component: {fileID: 772934516}
   - component: {fileID: 772934518}
   - component: {fileID: 772934517}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Balcoony_Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4358,7 +4358,7 @@ GameObject:
   - component: {fileID: 978175438}
   - component: {fileID: 978175440}
   - component: {fileID: 978175439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Balcoony_Floor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4493,7 +4493,7 @@ GameObject:
   - component: {fileID: 991708797}
   - component: {fileID: 991708796}
   - component: {fileID: 991708794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4582,7 +4582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1041334661}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4781,7 +4781,7 @@ GameObject:
   - component: {fileID: 1115882225}
   - component: {fileID: 1115882224}
   - component: {fileID: 1115882222}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4936,7 +4936,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1173208914}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4968,7 +4968,7 @@ GameObject:
   - component: {fileID: 1193341960}
   - component: {fileID: 1193341962}
   - component: {fileID: 1193341961}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Window1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5045,7 +5045,7 @@ GameObject:
   - component: {fileID: 1201992416}
   - component: {fileID: 1201992418}
   - component: {fileID: 1201992417}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5123,7 +5123,7 @@ GameObject:
   - component: {fileID: 1220930293}
   - component: {fileID: 1220930292}
   - component: {fileID: 1220930290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5389,7 +5389,7 @@ GameObject:
   - component: {fileID: 1269272484}
   - component: {fileID: 1269272483}
   - component: {fileID: 1269272481}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5482,7 +5482,7 @@ GameObject:
   - component: {fileID: 1282710883}
   - component: {fileID: 1282710882}
   - component: {fileID: 1282710880}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5570,7 +5570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1364037001}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5603,7 +5603,7 @@ GameObject:
   - component: {fileID: 1370315565}
   - component: {fileID: 1370315564}
   - component: {fileID: 1370315562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5760,7 +5760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1916811627}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6116,7 +6116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1458496818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6262,7 +6262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1507701491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6461,7 +6461,7 @@ GameObject:
   - component: {fileID: 1533971247}
   - component: {fileID: 1533971246}
   - component: {fileID: 1533971244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Guardrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6677,7 +6677,7 @@ GameObject:
   - component: {fileID: 1641198792}
   - component: {fileID: 1641198791}
   - component: {fileID: 1641198789}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7025,7 +7025,7 @@ GameObject:
   - component: {fileID: 1759514095}
   - component: {fileID: 1759514094}
   - component: {fileID: 1759514092}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7113,7 +7113,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1811026858}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7142,7 +7142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1815807491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ENVIRONNEMENT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7309,7 +7309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1943704693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Not_Walkable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7366,7 +7366,7 @@ GameObject:
   - component: {fileID: 1953747523}
   - component: {fileID: 1953747525}
   - component: {fileID: 1953747524}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table_to_extend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7736,7 +7736,7 @@ GameObject:
   - component: {fileID: 2083930887}
   - component: {fileID: 2083930886}
   - component: {fileID: 2083930884}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7830,7 +7830,7 @@ GameObject:
   - component: {fileID: 2094728226}
   - component: {fileID: 2094728225}
   - component: {fileID: 2094728223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7987,7 +7987,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2127682190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface19
   m_TagString: Untagged
   m_Icon: {fileID: 0}

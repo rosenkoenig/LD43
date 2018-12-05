@@ -7,12 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Dirt_Test
-  m_Shader: {fileID: 4800000, guid: aa593d636c2d28d40b98ce25d029db2e, type: 3}
+  m_Shader: {fileID: 4800000, guid: b2f525f0a7ddb3a40bdfd9eb22092f2e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3100
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -23,7 +23,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CleanTexture:
-        m_Texture: {fileID: 2800000, guid: 084184985eb349f42a291917e009c90a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4277b15ae048bd64fbdc001d75f94763, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -39,11 +39,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailTexture:
-        m_Texture: {fileID: 2800000, guid: 4f3c685fadc6ce548b343d34875d8f1b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4277b15ae048bd64fbdc001d75f94763, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DirtTexture:
-        m_Texture: {fileID: 2800000, guid: 78412ebcad703d642b73fdaa24bfe0d2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4277b15ae048bd64fbdc001d75f94763, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -70,6 +70,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Specular:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -84,18 +88,32 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Metallic: 0
+    - _Metallic: 1
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _Opacity: 0.7
+    - _OverideValue: 0.44
     - _Parallax: 0.02
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
+    - _SpecOveride: 0.474
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _TransAmbient: 1
+    - _TransDirect: 1
+    - _TransNormalDistortion: 1
+    - _TransScattering: 50
+    - _TransShadow: 1
+    - _Translucency: 2.4
     - _UVSec: 0
     - _ZWrite: 1
     - __dirty: 0
+    - _maxin: 0.261
+    - _maxout: 0.734
+    - _minin: 0
+    - _minout: 1
     m_Colors:
+    - _AjustColor: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DetailColorAjust: {r: 1, g: 1, b: 1, a: 0}
+    - _DetailColorAjust: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
