@@ -69,17 +69,28 @@ public class HouseMaster : MonoBehaviour
         return ip;
     }
 
-    public InterestPoint GetRandomInterestPoint(IPType type)
+    public InterestPoint GetRandomInterestPoint(IPType iptype)
     {
+        if (iptype == null)
+            Debug.LogError("no ipType specified");
+
         InterestPoint ip = null;
 
-        List<InterestPoint> ipMatchingCategory = allInterestPoints.FindAll(x => x.iPtype == type && x.activity.IsAvailable());
+        List<InterestPoint> ipMatchingCategory = allInterestPoints.FindAll(x => x.iPtype == iptype && x.activity.IsAvailable());
 
-        int idx = Random.Range(0, ipMatchingCategory.Count);
+        if (ipMatchingCategory.Count > 0)
+        {
+            int idx = Random.Range(0, ipMatchingCategory.Count);
 
-        ip = ipMatchingCategory[idx];
+            ip = ipMatchingCategory[idx];
 
-        return ip;
+            return ip;
+        }
+        else
+        {
+            Debug.Log("No IP Type found");
+            return null;
+        }
     }
     public InterestPoint GetRandomInterestPoint(IPType type, InterestPoint excludedIP)
     {

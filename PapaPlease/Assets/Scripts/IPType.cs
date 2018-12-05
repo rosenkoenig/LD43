@@ -56,13 +56,13 @@ public class IPType : ScriptableObject
                 break;
         }
 
-        foreach (var curChildStatInfo in childStatsContainer._childStatInfos)
+        foreach (var curChildStatInfo in childStatsContainer.GetChildStatInfos)
         {
             foreach (var item in selectedStateModifierList)
             {
                 if (curChildStatInfo.childStatID == item._childStatID)
                 {
-                    curChildStatInfo.currentValue = item.ModifyStat(curChildStatInfo.currentValue, childStatsContainer._childStatInfos, useDeltaTime);
+                    curChildStatInfo.currentValue = item.ModifyStat(curChildStatInfo.currentValue, childStatsContainer.GetChildStatInfos, useDeltaTime);
                 }
             }
         }

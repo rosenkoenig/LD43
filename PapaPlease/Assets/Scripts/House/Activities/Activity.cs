@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class ActivityHolder
 {
     public float startTime = 0f;
@@ -221,7 +222,10 @@ public class Activity : MonoBehaviour
 
     protected virtual void UpdateRunningState()
     {
+        foreach (var item in holders)
+        {
 
+        }
     }
 
     public void CancelActivity(Character character)
@@ -231,6 +235,7 @@ public class Activity : MonoBehaviour
             _akEventStop.Post(gameObject);
 
         Debug.Log("Cancel Activity");
+        SetState(ActivityState.WAITING);
         ActivityHolder holder = GetHolderForCharacter(character);
         if (holder != null)
         {

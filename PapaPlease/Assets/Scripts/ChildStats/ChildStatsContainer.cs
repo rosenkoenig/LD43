@@ -5,28 +5,28 @@ using UnityEngine;
 [System.Serializable]
 public class ChildStatsContainer
 {
-
-    public List<ChildStatInfo> _childStatInfos { get; private set; }
+    [SerializeField] List<ChildStatInfo> _childStatsInfos;
+    public List<ChildStatInfo> GetChildStatInfos { get { return _childStatsInfos; } }
     [SerializeField] ChildStatIDsContainer _childStatsIdContainer;
     [SerializeField] List<ChildInitialSkillsPack> _childInitialSkillsPacks;
 
     public void Init(bool isPlayer = false)
     {
-        _childStatInfos = new List<ChildStatInfo>();
+        _childStatsInfos = new List<ChildStatInfo>();
         foreach (var curStatID in _childStatsIdContainer.GetChildStatIDs)
         {
-            _childStatInfos.Add(new ChildStatInfo() { childStatID = curStatID });
+            _childStatsInfos.Add(new ChildStatInfo() { childStatID = curStatID });
         }
         if (isPlayer)
         {
-            foreach (var item in _childStatInfos)
+            foreach (var item in _childStatsInfos)
             {
                 item.currentValue = item.childStatID.GetPlayerValue;
             }
         }
         else
         {
-            foreach (var item in _childStatInfos)
+            foreach (var item in _childStatsInfos)
             {
                 item.currentValue = item.childStatID.GetStartValue;
             }
@@ -38,7 +38,7 @@ public class ChildStatsContainer
 
     public float GetAChildStatValue(ChildStatID refID)
     {
-        foreach (var item in _childStatInfos)
+        foreach (var item in _childStatsInfos)
         {
             if (item.childStatID == refID)
                 return item.currentValue;
@@ -49,7 +49,7 @@ public class ChildStatsContainer
 
     public float GetAChildStatValueRatio(ChildStatID refID)
     {
-        foreach (var item in _childStatInfos)
+        foreach (var item in _childStatsInfos)
         {
             if (item.childStatID == refID)
                 //return item.currentValue / (item.childStatID.MaxValue - item.childStatID.MinValue);

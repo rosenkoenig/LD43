@@ -1726,6 +1726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentActivity: {fileID: 0}
   statsContainer:
+    _childStatsInfos: []
     _childStatsIdContainer: {fileID: 11400000, guid: 325898cad7d46bb448f71a10de5ab027,
       type: 2}
     _childInitialSkillsPacks:
@@ -1816,7 +1817,7 @@ MonoBehaviour:
       _factor: 0
       _refill: 1
       _relativeChildStatID: {fileID: 0}
-  vessieIPType: {fileID: 0}
+  vessieIPType: {fileID: 11400000, guid: 692618518660df64480ec57f23e83d13, type: 2}
   animator: {fileID: 95182140613341446}
   extraRotationSpeed: 8
   OnSlapEvent:

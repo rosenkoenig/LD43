@@ -10,13 +10,13 @@ public class ChildStatsModificator {
 
     public void TryModifyStats(ChildStatsContainer childStatsContainer, bool useDeltaTime = false)
     {
-        foreach (var curChildStatInfo in childStatsContainer._childStatInfos)
+        foreach (var curChildStatInfo in childStatsContainer.GetChildStatInfos)
         {
             foreach (var item in statsModifiers)
             {
                 if (curChildStatInfo.childStatID == item._childStatID)
                 {
-                    curChildStatInfo.currentValue = item.ModifyStat(curChildStatInfo.currentValue, childStatsContainer._childStatInfos, useDeltaTime);
+                    curChildStatInfo.currentValue = item.ModifyStat(curChildStatInfo.currentValue, childStatsContainer.GetChildStatInfos, useDeltaTime);
                 }
             }
         }

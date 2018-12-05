@@ -232,7 +232,10 @@ MonoBehaviour:
   iPtype: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114379295816765414}
   onlyUsableByChild: 0
+  onlyUsableByPlayer: 0
   destroyOnComplete: 0
+  completionTextures: []
+  textureTarget: {fileID: 0}
   _useActivityProgressInfo: 1
   _activityProgressInfoPos: {fileID: 4245892108466312}
   globalStatsModificator_OnCompleted: {fileID: 0}
@@ -250,10 +253,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a59238232791c048858afcd76d98503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holders: []
   maxHolder: 1
   doOnce: 1
   animStateName: CleaningStanding
-  _activityResetDelay: 60
+  money: 0
+  _activityResetDelay: 500
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []
   _dirtyVisualsRenderers: []

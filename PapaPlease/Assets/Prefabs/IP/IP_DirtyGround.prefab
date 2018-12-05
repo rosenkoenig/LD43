@@ -344,11 +344,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a59238232791c048858afcd76d98503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holders: []
   maxHolder: 1
   doOnce: 1
   animStateName: PlayOnFloor
   money: 0
-  _activityResetDelay: 60
+  _activityResetDelay: 500
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []
   _dirtyVisualsRenderers: []
