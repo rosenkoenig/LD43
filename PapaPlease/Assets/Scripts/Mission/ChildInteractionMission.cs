@@ -58,6 +58,17 @@ public class ChildInteractionMission : MonoBehaviour {
 
     }
 
+    private void Update()
+    {
+        if (childMissionBtns == null)
+            return;
+
+        foreach (var item in childMissionBtns)
+        {
+            item.RefreshAvailability(item.GetMission.RequisitesAreFullFilledFor(_child));
+        }
+    }
+
     public void CloseMenu ()
     {
         gameObject.SetActive(false);

@@ -30,6 +30,8 @@ public class ChildMissionButton : MonoBehaviour
     Mission _mission;
     ChildInteractionMission _master;
 
+    public Mission GetMission { get { return _mission; } }
+
     [SerializeField]
     Button button;
 
@@ -86,6 +88,12 @@ public class ChildMissionButton : MonoBehaviour
         if (_mission.moneyEarned < 0)
             moneyEarning.color = negativeColor;
 
+        if (isAvailable == false)
+            button.interactable = false;
+    }
+
+    public void RefreshAvailability(bool isAvailable)
+    {
         if (isAvailable == false)
             button.interactable = false;
     }

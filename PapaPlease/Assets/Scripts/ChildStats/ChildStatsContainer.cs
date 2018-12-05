@@ -41,7 +41,7 @@ public class ChildStatsContainer
         foreach (var item in _childStatsInfos)
         {
             if (item.childStatID == refID)
-                return item.currentValue;
+                return Mathf.Round(item.currentValue);
         }
         Debug.LogError("child stat not found!", refID);
         return 0;

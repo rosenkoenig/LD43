@@ -11,10 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e70b0733de2b646905d51a5f7b94dd, type: 3}
   m_Name: IPType_HYGIENE
   m_EditorClassIdentifier: 
-  _ipName: Wash yourself
+  _childActivityName: Wash yourself
   _duringActivityModifiers:
   - _childStatID: {fileID: 11400000, guid: edde50d32f7d6d34789d931cdc9b9f8d, type: 2}
-    _factor: 1
+    _factor: 5
     _refill: 0
+    _relativeChildStatID: {fileID: 0}
   _startActivityModifiers: []
   _endActivityModifiers: []
+  _activityModifiers: []

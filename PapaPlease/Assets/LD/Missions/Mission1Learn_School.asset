@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Mission1Learn_School
   m_EditorClassIdentifier: 
   missionName: Go to school
-  moneyEarned: 0
+  moneyEarned: -2
   requisites:
   - statIDNeeded: {fileID: 11400000, guid: edde50d32f7d6d34789d931cdc9b9f8d, type: 2}
     amountNeeded: 0
