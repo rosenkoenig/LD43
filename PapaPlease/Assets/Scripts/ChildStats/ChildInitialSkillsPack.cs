@@ -17,7 +17,7 @@ public class ChildInitialSkillsPack : ScriptableObject
         {
             foreach (var curStatID in _skillsContainer.GetChildStatIDs)
             {
-                foreach (var curStatInfo in childStatsCont._childStatInfos)
+                foreach (var curStatInfo in childStatsCont.GetChildStatInfos)
                 {
                     if (curStatInfo.childStatID == curStatID)
                     {

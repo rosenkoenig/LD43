@@ -28,13 +28,17 @@ public class UIMissionPanel : Popup {
 
         foreach(UIMissionItem item in allMissionItems)
         {
-            Destroy(item.gameObject);
+            if(item != null)
+                Destroy(item.gameObject);
         }
+        allMissionItems.Clear();
 
-        foreach(UIMissionSkillItem item in allMissionSkillItems)
+        foreach (UIMissionSkillItem item in allMissionSkillItems)
         {
-            Destroy(item.gameObject);
+            if(item != null)
+                Destroy(item.gameObject);
         }
+        allMissionSkillItems.Clear();
 
         List<RunningMission> runningMissions = GameMaster.Instance.mm.RunningMissions;
 

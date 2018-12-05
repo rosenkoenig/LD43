@@ -27,8 +27,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
 --- !u!1 &1049281241434444
 GameObject:
   m_ObjectHideFlags: 1
@@ -62,8 +62,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
 --- !u!1 &1572503711463678
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +112,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 0
 --- !u!1 &1669239855503608
 GameObject:
@@ -138,12 +138,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4436434013211006}
   - component: {fileID: 65297706319987644}
+  - component: {fileID: 65794041374053560}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1910658895995086
 GameObject:
@@ -183,7 +184,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1038090374040116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.372, y: 0.9, z: 0}
+  m_LocalPosition: {x: -0.473, y: 0.9, z: 0}
   m_LocalScale: {x: 0.02, y: 1.8, z: 0.7499998}
   m_Children: []
   m_Father: {fileID: 4436434013211006}
@@ -240,7 +241,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1101687951389658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.356, y: 0.9, z: 0}
+  m_LocalPosition: {x: 0.474, y: 0.9, z: -0}
   m_LocalScale: {x: 0.019999994, y: 1.8, z: 0.7499998}
   m_Children: []
   m_Father: {fileID: 4436434013211006}
@@ -269,7 +270,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1639845581953218}
   m_LocalRotation: {x: -0, y: 0.7071067, z: -0, w: 0.70710695}
-  m_LocalPosition: {x: 0, y: 0.9, z: 0.356}
+  m_LocalPosition: {x: 0, y: 0.9, z: 0.425}
   m_LocalScale: {x: 0.019999994, y: 1.8, z: 0.7499998}
   m_Children: []
   m_Father: {fileID: 4436434013211006}
@@ -524,8 +525,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 1.5, z: 0.8}
-  m_Center: {x: 0, y: 0.75, z: 0}
+  m_Size: {x: 0.07, y: 2.39, z: 0.8}
+  m_Center: {x: -0.48, y: 0.68, z: 0}
 --- !u!65 &65474518038141634
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -550,6 +551,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65794041374053560
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803225093563154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08, y: 2.33, z: 1}
+  m_Center: {x: 0.48, y: 0.73, z: 0}
 --- !u!65 &65933774460129702
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -575,7 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerActivityName: Wash the shower
   logActivityName: Washing the shower
-  logName: the shower
+  logName: wash the shower
   pivotPoint: {fileID: 4042332444007154}
   iPtype: {fileID: 11400000, guid: faa3a57268e240148a78e8c6540d5c34, type: 2}
   activity: {fileID: 114603838078755730}
@@ -602,11 +615,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a59238232791c048858afcd76d98503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holders: []
   maxHolder: 1
   doOnce: 1
-  animStateName: HipHop
+  animStateName: CleaningStanding
   money: 0
-  _activityResetDelay: 100
+  _activityResetDelay: 500
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []
   _dirtyVisualsRenderers:

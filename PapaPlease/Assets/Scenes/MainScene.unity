@@ -99,7 +99,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.3
+    agentRadius: 0.15
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -107,7 +107,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.1
+    cellSize: 0.05
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -2811,6 +2811,46 @@ Prefab:
     - target: {fileID: 4428408904171408, guid: 57ef91c86a655d24d85a21899f0d96f4, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0.196
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805527310451132, guid: 57ef91c86a655d24d85a21899f0d96f4, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805260554307504, guid: 57ef91c86a655d24d85a21899f0d96f4, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752051320948942, guid: 57ef91c86a655d24d85a21899f0d96f4, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869989302638756, guid: 57ef91c86a655d24d85a21899f0d96f4, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540926834469614, guid: 57ef91c86a655d24d85a21899f0d96f4, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403578178380124, guid: 57ef91c86a655d24d85a21899f0d96f4, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882066713591726, guid: 57ef91c86a655d24d85a21899f0d96f4, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880117599207702, guid: 57ef91c86a655d24d85a21899f0d96f4, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039800799728674, guid: 57ef91c86a655d24d85a21899f0d96f4, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1539086959031272, guid: 57ef91c86a655d24d85a21899f0d96f4, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57ef91c86a655d24d85a21899f0d96f4, type: 2}

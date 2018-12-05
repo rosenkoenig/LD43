@@ -11,13 +11,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e70b0733de2b646905d51a5f7b94dd, type: 3}
   m_Name: IPType_VESSIE
   m_EditorClassIdentifier: 
-  _ipName: Go pee
+  _childActivityName: Go pee
   _duringActivityModifiers:
   - _childStatID: {fileID: 11400000, guid: b6eb2aa1a6a532c4ab5415cb61a7f6e4, type: 2}
-    _factor: 1
+    _factor: 5
     _refill: 0
+    _relativeChildStatID: {fileID: 0}
   - _childStatID: {fileID: 11400000, guid: edde50d32f7d6d34789d931cdc9b9f8d, type: 2}
     _factor: -0.5
     _refill: 0
+    _relativeChildStatID: {fileID: 0}
   _startActivityModifiers: []
-  _endActivityModifiers: []
+  _endActivityModifiers:
+  - _childStatID: {fileID: 11400000, guid: b6eb2aa1a6a532c4ab5415cb61a7f6e4, type: 2}
+    _factor: 100
+    _refill: 1
+    _relativeChildStatID: {fileID: 0}
+  _activityModifiers: []

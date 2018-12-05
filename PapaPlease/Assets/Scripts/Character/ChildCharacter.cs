@@ -450,6 +450,8 @@ public class ChildCharacter : Character {
 
     void UpdateStates()
     {
+        if (GameMaster.Instance == null)
+            Debug.LogError("Game master is null!!");
         if(statsContainer.GetAChildStatValueRatio(GameMaster.Instance.healthStat) <= 0)
         {
             SetState(ChildAIState.DEAD);
@@ -593,7 +595,7 @@ public class ChildCharacter : Character {
         if(currentInterestPoint && currentInterestPoint.iPtype != IpTypeFun)
             CheckAnger();
 
-        if (!isDoingAnger && !isFrozen && Vector3.Distance(transform.position, currentInterestPoint.transform.position) <= 1f)
+        if (!isDoingAnger && !isFrozen && Vector3.Distance(transform.position, currentInterestPoint.pivotPoint.position) <= 1f)
         {
             //has reached IP
             HasReachedIP();
@@ -675,7 +677,11 @@ public class ChildCharacter : Character {
 
     void StartLerpingToSnap()
     {
-        if (lerpCoroutine != null) StopCoroutine(lerpCoroutine);
+        if (lerpCoroutine != null)
+        {
+            StopCoroutine(lerpCoroutine);
+            isLerping = false;
+        }
         lerpCoroutine = StartCoroutine(LerpCoroutine());
     }
 

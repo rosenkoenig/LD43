@@ -62,7 +62,7 @@ public class ChildStatsMenu : MonoBehaviour {
     {
         foreach (var item in _childStatsGaugesList)
         {
-            foreach (var curStatInfo in child.statsContainer._childStatInfos)
+            foreach (var curStatInfo in child.statsContainer.GetChildStatInfos)
             {
                 if (curStatInfo.childStatID == item.GetChildStatID)
                     item.RefreshGauge(curStatInfo);
