@@ -786,7 +786,6 @@ GameObject:
   - component: {fileID: 4577554298460344}
   - component: {fileID: 33135742168036722}
   - component: {fileID: 23431326437353602}
-  - component: {fileID: 135356666567277768}
   m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
@@ -1735,6 +1734,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 0817be681e9c73644a4ecf945c4f6a90, type: 2}
   hm: {fileID: 0}
   navAgent: {fileID: 195460895285877458}
+  _childCollider: {fileID: 136824139974650648}
+  _rigidB: {fileID: 54683120358099816}
   childName: 
   isMale: 0
   inactivityDurationRange: {x: 1, y: 3}
@@ -1852,18 +1853,6 @@ MonoBehaviour:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: d0d04226b204e134496a78f5441bbc75,
       type: 2}
---- !u!135 &135356666567277768
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1885837223313704}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136824139974650648
 CapsuleCollider:
   m_ObjectHideFlags: 1

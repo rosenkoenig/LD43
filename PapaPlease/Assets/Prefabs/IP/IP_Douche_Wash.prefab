@@ -624,10 +624,7 @@ MonoBehaviour:
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []
   _dirtyVisualsRenderers:
-  - {fileID: 23650610772687060}
-  - {fileID: 23623793916286550}
-  - {fileID: 23578928004837838}
-  - {fileID: 23462865275197410}
+  - {fileID: 23204945182371658}
   _dirtyVisualsToActivate: []
   _akEventPlay:
     valueGuid: 

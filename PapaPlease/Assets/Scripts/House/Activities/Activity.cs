@@ -6,6 +6,8 @@ using UnityEngine;
 public class ActivityHolder
 {
     public float startTime = 0f;
+    public float curCompletion;
+    public float bonusCompletion;
     public float completionPercentage = 0f;
     public Character character;
 
@@ -18,18 +20,18 @@ public class ActivityHolder
             if (curActMod._isFromMaxToMin)
             {
                 toReturn += curActMod._factor * (1 - character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
-                Debug.Log("ActivityModifier MAXFROMMIN: " + toReturn + "__ratio: " + character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
+                //Debug.Log("ActivityModifier MAXFROMMIN: " + toReturn + "__ratio: " + character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
             }
             else
             {
                 toReturn += curActMod._factor * (character.statsContainer.GetAChildStatValueRatio(curActMod._childStat));
-                Debug.Log("ActivityModifier NORMAL: " + toReturn);
+                //Debug.Log("ActivityModifier NORMAL: " + toReturn);
             }
         }
         if (toReturn < -0.8f)
             toReturn = -0.8f;
 
-        Debug.Log("ActivityModifiers result: " + toReturn);
+        //Debug.Log("ActivityModifiers result: " + toReturn);
 
         return toReturn;
     }
@@ -71,6 +73,10 @@ public class Activity : MonoBehaviour
     [SerializeField] AK.Wwise.Event _akEventPlay;
     [SerializeField] AK.Wwise.Event _akEventStop;
 
+    public float duration;
+
+    float holdersBestCompletion = 0;
+
     private void Start()
     {
         GameMaster.Instance.gf.dm.onDayStarts += MakeResetActivity;
@@ -85,6 +91,7 @@ public class Activity : MonoBehaviour
 
     public void MakeResetActivity()
     {
+        holdersBestCompletion = 0;
         SetState(ActivityState.WAITING);
     }
 
@@ -102,6 +109,9 @@ public class Activity : MonoBehaviour
         ActivityHolder holder = new ActivityHolder();
         holder.character = character;
         holder.startTime = Time.time;
+        holder.bonusCompletion = holdersBestCompletion;
+        Debug.Log("time.time: " + Mathf.Round(Time.time) + " |||| holdersBestCompletion: " + Mathf.Round(holdersBestCompletion) + " |||| time - holdersBestCompletion = " + Mathf.Round(Time.time - holdersBestCompletion));
+        //Debug.Log("Start activity ___ holdersBestComp = " + holdersBestCompletion + "__ curTime = " + Time.time + "new startTime = " + holder.startTime);
 
         holders.Add(holder);
 
@@ -222,10 +232,7 @@ public class Activity : MonoBehaviour
 
     protected virtual void UpdateRunningState()
     {
-        foreach (var item in holders)
-        {
 
-        }
     }
 
     public void CancelActivity(Character character)
@@ -233,12 +240,15 @@ public class Activity : MonoBehaviour
 
         if (_akEventStop != null && _akEventStop.IsValid())
             _akEventStop.Post(gameObject);
-
+        
         Debug.Log("Cancel Activity");
         SetState(ActivityState.WAITING);
         ActivityHolder holder = GetHolderForCharacter(character);
         if (holder != null)
         {
+            if (holder.curCompletion > holdersBestCompletion)
+                holdersBestCompletion = holder.curCompletion;
+            //Debug.Log("best completion = " + holdersBestCompletion);
             holders.Remove(holder);
         }
 

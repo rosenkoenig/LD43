@@ -323,4 +323,6 @@ MonoBehaviour:
       _factor: 12
       _refill: 0
       _relativeChildStatID: {fileID: 0}
+  _colliders:
+  - {fileID: 65415668792230098}
   eatingDuration: 3

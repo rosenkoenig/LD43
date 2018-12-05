@@ -14,6 +14,8 @@ public class PlateObject : MonoBehaviour {
     [SerializeField]
     ChildStatsModificator eatStatModificator;
 
+    [SerializeField] List<Collider> _colliders;
+
     [SerializeField]
     float eatingDuration = 1f;
     float eatTimer = 0f;
@@ -31,6 +33,12 @@ public class PlateObject : MonoBehaviour {
     public void Init ()
     {
         isFullFeedback.SetActive(false);
+    }
+
+    public void DeactivateColliders()
+    {
+        foreach (var item in _colliders)
+            item.enabled = false;
     }
 
     public void Fill ()

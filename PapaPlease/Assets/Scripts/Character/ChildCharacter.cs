@@ -14,6 +14,9 @@ public class ChildCharacter : Character {
     InterestPoint currentInterestPoint;
     InterestPoint lastInterestPoint;
 
+    [SerializeField] Collider _childCollider;
+    [SerializeField] Rigidbody _rigidB;
+
     public string childName = "";
     public bool isMale = false;
 
@@ -200,13 +203,13 @@ public class ChildCharacter : Character {
         currentInterestPoint = interestPoint;
         if (currentInterestPoint)
         {
-            Debug.Log(childName + "has received a new IP");
+            //Debug.Log(childName + "has received a new IP");
             GameMaster.Instance.AddLog(childName + " goes to " + currentInterestPoint.logName);
             SetState(ChildAIState.MOVING_TO_ACTIVITY, true);
         }
         else
         {
-            Debug.LogWarning(childName + "has received a null IP");
+            //Debug.LogWarning(childName + "has received a null IP");
             SetState(ChildAIState.WAITING);
         }
             
@@ -400,7 +403,7 @@ public class ChildCharacter : Character {
         currentInactivityDuration = Mathf.Lerp(inactivityDurationRange.x, inactivityDurationRange.y, Random.Range(0f, 1f));
         stateBeginTime = Time.time;
 
-        Debug.Log(childName + " changes state for : " + newState, this);
+        //Debug.Log(childName + " changes state for : " + newState, this);
 
         switch(oldState)
         {
@@ -610,7 +613,7 @@ public class ChildCharacter : Character {
         //TODO : get la state obeissance
         nextAngerTime = Mathf.Lerp(timeBetweenAnger.x, timeBetweenAnger.y, rand);
         nextAngerTime  += statsContainer.GetAChildStatValue(obeissanceStatID) * timeBetweenAngerIncPerObeissance;
-        Debug.Log("next anger time = " + nextAngerTime);
+        //Debug.Log("next anger time = " + nextAngerTime);
         lastAngerTime = Time.time;
     }
 
@@ -711,7 +714,7 @@ public class ChildCharacter : Character {
         }
 
         isLerping = false;
-        Debug.Log(childName + " begins activity on " + currentInterestPoint.playerActivityName);
+        //Debug.Log(childName + " begins activity on " + currentInterestPoint.playerActivityName);
         SetState(ChildAIState.IN_ACTIVITY);
     }
 
@@ -825,6 +828,7 @@ public class ChildCharacter : Character {
     /// </summary>
     void StartInMission()
     {
+        myPlate.DeactivateColliders();
         Freeze(true);
         navAgent.enabled = false;
         transform.position = Vector3.forward * 1000f;
@@ -849,6 +853,8 @@ public class ChildCharacter : Character {
         Freeze(true);
         navAgent.enabled = false;
         LaunchDeathAnim();
+        _childCollider.enabled = false;
+        _rigidB.isKinematic = true;
         GameMaster.Instance.AddLog(childName + " has died...");
         PlaySoundEvent(OnDeathEvent);
 

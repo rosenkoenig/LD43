@@ -116,7 +116,8 @@ public class UIMaster : MonoBehaviour
         _centerCursor.SetActive(true);
         GameMaster.Instance.player.GetPlayerMover.FreezeMovement(false);
         GameMaster.Instance.player.GetPlayerHeadBehaviour.SetFreezeHeadControl(false);
-        HideMenuInteractChildEvent();
+        if(HideMenuInteractChildEvent != null)
+            HideMenuInteractChildEvent();
 
         HideMenuInteractChildEvent = null;
     }

@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4809958788266962}
+  - component: {fileID: 65901912012748120}
   m_Layer: 0
   m_Name: Room_Extension_Grp
   m_TagString: Untagged
@@ -875,6 +876,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1990215427308154}
   m_Mesh: {fileID: 4300004, guid: 39cb81fca5d678f47a5dc3e8a09bf4c0, type: 3}
+--- !u!65 &65901912012748120
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1086037985228702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.25, y: 0.8, z: 0.5}
+  m_Center: {x: 0, y: 0.3, z: 0.25}
 --- !u!114 &114293928219844846
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -53,7 +53,7 @@ public class ChildInteractionMission : MonoBehaviour {
 
         bool available = mission.RequisitesAreFullFilledFor(_child);
 
-        btn.Init(mission, this, available);
+        btn.Init(_child, mission, this, available);
         childMissionBtns.Add(btn);
 
     }
@@ -65,7 +65,7 @@ public class ChildInteractionMission : MonoBehaviour {
 
         foreach (var item in childMissionBtns)
         {
-            item.RefreshAvailability(item.GetMission.RequisitesAreFullFilledFor(_child));
+            item.RefreshAvailability(_child, item.GetMission.RequisitesAreFullFilledFor(_child));
         }
     }
 

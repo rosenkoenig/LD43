@@ -45,6 +45,8 @@ public class GameFlow : MonoBehaviour {
         SetGameState(GameState.NIGHT_TRANSITION);
         gm.player.SetInteractActive(false);
         gm.player.LockMovement(true);
+        gm.uIMaster.HideMenuInteractChild();
+        gm.uIMaster.HideChildStatsMenu();
     }
 
     public void BeginTablePhase ()

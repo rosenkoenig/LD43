@@ -39,6 +39,13 @@ public class PlayerBehaviour : Character {
     
     public void Interact()
     {
+        if(currentActivity != null)
+        {
+            LockMovement(false);
+            currentActivity.CancelActivity(this);
+            currentActivity = null;
+            return;
+        }
         if (isInteractActive == false)
             return;
         

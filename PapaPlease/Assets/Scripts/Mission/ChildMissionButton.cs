@@ -27,6 +27,8 @@ public class ChildMissionButton : MonoBehaviour
     [SerializeField]
     Color negativeColor = Color.red;
 
+    [SerializeField] Text[] missionRequisitiesNotEnoughBigTexts;
+
     Mission _mission;
     ChildInteractionMission _master;
 
@@ -35,29 +37,13 @@ public class ChildMissionButton : MonoBehaviour
     [SerializeField]
     Button button;
 
-    public void Init(Mission mission, ChildInteractionMission master, bool isAvailable)
+    public void Init(ChildCharacter child, Mission mission, ChildInteractionMission master, bool isAvailable)
     {
         _mission = mission;
         _master = master;
 
         missionName.text = _mission.missionName;
-
-        for (int i = 0; i < missionRequisites.Length; i++)
-        {
-            if (i < _mission.requisites.Count)
-            {
-                missionRequisites[i].text = _mission.requisites[i].statIDNeeded.StatName;
-                missionRequisitesAmounts[i].text = _mission.requisites[i].amountNeeded.ToString("F1");
-                missionRequisites[i].gameObject.SetActive(true);
-                missionRequisitesAmounts[i].gameObject.SetActive(true);
-
-            }
-            else
-            {
-                missionRequisites[i].gameObject.SetActive(false);
-                missionRequisitesAmounts[i].gameObject.SetActive(false);
-            }
-        }
+        
 
         for (int i = 0; i < missionSkillRewards.Length; i++)
         {
@@ -90,12 +76,46 @@ public class ChildMissionButton : MonoBehaviour
 
         if (isAvailable == false)
             button.interactable = false;
+
+        RefreshAvailability(child, isAvailable);
     }
 
-    public void RefreshAvailability(bool isAvailable)
+    public void RefreshAvailability(ChildCharacter child, bool isAvailable)
     {
         if (isAvailable == false)
             button.interactable = false;
+
+        for (int i = 0; i < missionRequisites.Length; i++)
+        {
+            if (i < _mission.requisites.Count)
+            {
+                missionRequisites[i].text = _mission.requisites[i].statIDNeeded.StatName;
+                missionRequisitesAmounts[i].text = _mission.requisites[i].amountNeeded.ToString("F1");
+                missionRequisites[i].gameObject.SetActive(true);
+                missionRequisitesAmounts[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                missionRequisites[i].gameObject.SetActive(false);
+                missionRequisitesAmounts[i].gameObject.SetActive(false);
+            }
+        }
+
+        for (int i = 0; i < missionRequisitiesNotEnoughBigTexts.Length; i++)
+        {
+            if (i < _mission.requisites.Count)
+            {
+                if (!isAvailable && child.statsContainer.GetAChildStatValue(_mission.requisites[i].statIDNeeded) < _mission.requisites[i].amountNeeded)
+                {
+                    missionRequisitiesNotEnoughBigTexts[i].text = "Not enough " + "\n" + _mission.requisites[i].statIDNeeded.StatName;
+                    missionRequisitiesNotEnoughBigTexts[i].gameObject.SetActive(true);
+                }
+                else
+                    missionRequisitiesNotEnoughBigTexts[i].gameObject.SetActive(false);
+            }
+            else
+                missionRequisitiesNotEnoughBigTexts[i].gameObject.SetActive(false);
+        }
     }
 
     public void OnClick()

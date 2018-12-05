@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class ActivityTimed : Activity {
 
-    [Header("___________")]
-    public float duration;
-
-
-
     protected override void UpdateRunningState()
     {
         base.UpdateRunningState();
@@ -17,8 +12,11 @@ public class ActivityTimed : Activity {
 
         foreach (ActivityHolder holder in holders)
         {
-            holder.completionPercentage = Mathf.Clamp01((Time.time - holder.startTime) * (1 + holder.GetActivityModifiersRatios(_inheritedIPType.GetActivityModifiers)) / duration);
-            if ((Time.time - holder.startTime) * (1 + holder.GetActivityModifiersRatios(_inheritedIPType.GetActivityModifiers)) >= duration)
+            Debug.Log("progression: " + ((Time.time - holder.startTime) * (1 + holder.GetActivityModifiersRatios(_inheritedIPType.GetActivityModifiers))));
+            float curDuration = (Time.time - holder.startTime) * (1 + holder.GetActivityModifiersRatios(_inheritedIPType.GetActivityModifiers)) + holder.bonusCompletion;
+            holder.curCompletion = curDuration;
+            holder.completionPercentage = Mathf.Clamp01(curDuration / duration);
+            if (curDuration >= duration)
             {
                 holdersToEnd.Add(holder);
                 holder.completionPercentage = 1f;

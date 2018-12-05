@@ -185,7 +185,7 @@ public class HouseMaster : MonoBehaviour
         ClearPlates();
 
         int roomNeeded = Mathf.CeilToInt((float)childCount / 2f);
-        Debug.Log(childCount + " - " + roomNeeded);
+        //Debug.Log(childCount + " - " + roomNeeded);
         for (int i = 0; i < roomNeeded; i++)
         {
             GameObject inst = GameObject.Instantiate(roomExtensionPrefab.gameObject, roomExtensionPivot.position + roomExtensionPivot.forward * (i * roomExtensionWidth), roomExtensionPivot.rotation);
@@ -224,7 +224,7 @@ public class HouseMaster : MonoBehaviour
         List<ChildCharacter> children = gm.vm.allChildren;
         plates = new List<PlateObject>();
 
-        Debug.Log("child count = " + children.Count + " & all chair pivot count = "+allChairPivots.Count);
+        //Debug.Log("child count = " + children.Count + " & all chair pivot count = "+allChairPivots.Count);
         for (int i = 0; i < children.Count; i++)
         {
             if (i >= allChairPivots.Count) break;

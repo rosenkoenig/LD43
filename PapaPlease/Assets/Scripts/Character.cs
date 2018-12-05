@@ -10,6 +10,6 @@ public class Character : MonoBehaviour {
 
     public virtual void OnActivityEnds()
     {
-
+        currentActivity = null;
     }
 }
