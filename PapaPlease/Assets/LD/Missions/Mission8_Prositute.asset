@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Mission8_Prositute
   m_EditorClassIdentifier: 
   missionName: 'Job: Prostitute'
-  moneyEarned: 6
+  moneyEarned: 7
   requisites:
   - statIDNeeded: {fileID: 11400000, guid: 19c532e912ca9b24b9d4a03a597635dd, type: 2}
     amountNeeded: 10

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Mission3_PickPocket
   m_EditorClassIdentifier: 
   missionName: 'Job: Pickpocket'
-  moneyEarned: 3
+  moneyEarned: 4
   requisites:
   - statIDNeeded: {fileID: 11400000, guid: c7b408b288f9e0441904197be9b9807b, type: 2}
     amountNeeded: 0

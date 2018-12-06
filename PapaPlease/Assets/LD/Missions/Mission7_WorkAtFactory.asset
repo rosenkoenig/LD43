@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Mission7_WorkAtFactory
   m_EditorClassIdentifier: 
   missionName: 'Job: Work at the factory'
-  moneyEarned: 5
+  moneyEarned: 6
   requisites:
   - statIDNeeded: {fileID: 11400000, guid: 24f23feea4e468a438455aaf31419275, type: 2}
     amountNeeded: 10

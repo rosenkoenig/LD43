@@ -9,6 +9,8 @@ public class ChildMissionButton : MonoBehaviour
     [SerializeField]
     Text missionName = null;
 
+    [SerializeField] Text _priceAmoutText;
+
     [SerializeField]
     Text[] missionRequisites = null;
 
@@ -22,10 +24,15 @@ public class ChildMissionButton : MonoBehaviour
     Text[] missionSkillRewardsAmounts = null;
 
     [SerializeField]
-    Text moneyEarning = null;
+    Text moneyEarningAmountText = null;
+
+    [SerializeField]
+    Text moneyEarningText;
 
     [SerializeField]
     Color negativeColor = Color.red;
+
+    [SerializeField] Color _bonusColor;
 
     [SerializeField] Text[] missionRequisitiesNotEnoughBigTexts;
 
@@ -55,7 +62,7 @@ public class ChildMissionButton : MonoBehaviour
                 bool rewardIsPositive = rewardAmount >= 0;
                 missionSkillRewardsAmounts[i].text = (rewardIsPositive ? "+" : "") + rewardAmount.ToString("F0");
                 if (rewardIsPositive == false) missionSkillRewardsAmounts[i].color = negativeColor;
-
+                else missionSkillRewardsAmounts[i].color = _bonusColor;
                 missionSkillRewards[i].gameObject.SetActive(true);
                 missionSkillRewardsAmounts[i].gameObject.SetActive(true);
             }
@@ -66,13 +73,29 @@ public class ChildMissionButton : MonoBehaviour
             }
         }
 
-        if (_mission.moneyEarned != 0f)
-            moneyEarning.text = _mission.moneyEarned.ToString() + "$";
+        if (_mission.moneyEarned > 0f)
+        {
+            moneyEarningAmountText.gameObject.SetActive(true);
+            moneyEarningText.gameObject.SetActive(true);
+            _priceAmoutText.gameObject.SetActive(false);
+            moneyEarningAmountText.text = "+" + _mission.moneyEarned.ToString() + "$";
+            moneyEarningAmountText.color = _bonusColor;
+            //moneyEarningAmountText.color = negativeColor;
+        }
+        else if (mission.moneyEarned < 0f)
+        {
+            moneyEarningAmountText.gameObject.SetActive(false);
+            moneyEarningText.gameObject.SetActive(false);
+            _priceAmoutText.gameObject.SetActive(true);
+            _priceAmoutText.text = (_mission.moneyEarned * -1).ToString() + "$";
+            //_priceAmoutText.color = negativeColor;
+        }
         else
-            moneyEarning.gameObject.SetActive(false);
-
-        if (_mission.moneyEarned < 0)
-            moneyEarning.color = negativeColor;
+        {
+            _priceAmoutText.gameObject.SetActive(false);
+            moneyEarningAmountText.gameObject.SetActive(false);
+            moneyEarningText.gameObject.SetActive(false);
+        }
 
         if (isAvailable == false)
             button.interactable = false;
@@ -89,8 +112,12 @@ public class ChildMissionButton : MonoBehaviour
         {
             if (i < _mission.requisites.Count)
             {
-                missionRequisites[i].text = _mission.requisites[i].statIDNeeded.StatName;
-                missionRequisitesAmounts[i].text = _mission.requisites[i].amountNeeded.ToString("F1");
+                missionRequisites[i].text = _mission.requisites[i].statIDNeeded.StatName + ":";
+                missionRequisitesAmounts[i].text = _mission.requisites[i].amountNeeded.ToString();
+                if (child.statsContainer.GetAChildStatValue(_mission.requisites[i].statIDNeeded) < _mission.requisites[i].amountNeeded)
+                    missionRequisitesAmounts[i].color = negativeColor;
+                else
+                    missionRequisitesAmounts[i].color = Color.white;
                 missionRequisites[i].gameObject.SetActive(true);
                 missionRequisitesAmounts[i].gameObject.SetActive(true);
             }
@@ -101,21 +128,21 @@ public class ChildMissionButton : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < missionRequisitiesNotEnoughBigTexts.Length; i++)
-        {
-            if (i < _mission.requisites.Count)
-            {
-                if (!isAvailable && child.statsContainer.GetAChildStatValue(_mission.requisites[i].statIDNeeded) < _mission.requisites[i].amountNeeded)
-                {
-                    missionRequisitiesNotEnoughBigTexts[i].text = "Not enough " + "\n" + _mission.requisites[i].statIDNeeded.StatName;
-                    missionRequisitiesNotEnoughBigTexts[i].gameObject.SetActive(true);
-                }
-                else
-                    missionRequisitiesNotEnoughBigTexts[i].gameObject.SetActive(false);
-            }
-            else
-                missionRequisitiesNotEnoughBigTexts[i].gameObject.SetActive(false);
-        }
+        //for (int i = 0; i < missionRequisitiesNotEnoughBigTexts.Length; i++)
+        //{
+        //    if (i < _mission.requisites.Count)
+        //    {
+        //        if (!isAvailable && child.statsContainer.GetAChildStatValue(_mission.requisites[i].statIDNeeded) < _mission.requisites[i].amountNeeded)
+        //        {
+        //            missionRequisitiesNotEnoughBigTexts[i].text = "Not enough " + "\n" + _mission.requisites[i].statIDNeeded.StatName;
+        //            missionRequisitiesNotEnoughBigTexts[i].gameObject.SetActive(true);
+        //        }
+        //        else
+        //            missionRequisitiesNotEnoughBigTexts[i].gameObject.SetActive(false);
+        //    }
+        //    else
+        //        missionRequisitiesNotEnoughBigTexts[i].gameObject.SetActive(false);
+        //}
     }
 
     public void OnClick()

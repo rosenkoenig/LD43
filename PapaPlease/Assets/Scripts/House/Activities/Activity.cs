@@ -91,6 +91,9 @@ public class Activity : MonoBehaviour
 
     public void MakeResetActivity()
     {
+        foreach (var item in _itemsToActivateOnRunning)
+            item.SetActive(false);
+
         holdersBestCompletion = 0;
         SetState(ActivityState.WAITING);
     }
@@ -251,6 +254,9 @@ public class Activity : MonoBehaviour
             //Debug.Log("best completion = " + holdersBestCompletion);
             holders.Remove(holder);
         }
+
+        foreach (var item in _itemsToActivateOnRunning)
+            item.SetActive(false);
 
         ChildCharacter child = character.GetComponent<ChildCharacter>();
         if (child)

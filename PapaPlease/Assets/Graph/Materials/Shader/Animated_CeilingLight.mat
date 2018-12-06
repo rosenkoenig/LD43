@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Animated Screen 1
+  m_Name: Animated_CeilingLight
   m_Shader: {fileID: 4800000, guid: cf34f400e8aaea147ac94b491716ed2e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0

@@ -29,6 +29,8 @@ public class UIMaster : MonoBehaviour
 
     [SerializeField] UIGameOver gameoverUI;
 
+    public bool IsDisplayingChildInteractionsMenu { get { return _childInteractionMenu.gameObject.activeSelf && _childInteractionMission.gameObject.activeSelf; } }
+
     ChildCharacter curChild;
     
     public Action HideMenuInteractChildEvent;
@@ -36,6 +38,11 @@ public class UIMaster : MonoBehaviour
     public ActivityProgressInfo GetActivityProgressInfoRef { get { return _activityProgressInfoRef; } }
     public bool childInteractionMenuIsDisplayed {  get { return _childInteractionMenu.isActiveAndEnabled; } }
     public bool childInteractionMissionIsDisplayed {  get { return _childInteractionMission.IsDisplayed; } }
+
+    private void Awake()
+    {
+        DisplayClock(false);
+    }
 
     public void Init ()
     {
@@ -52,7 +59,7 @@ public class UIMaster : MonoBehaviour
 
     void Update ()
     {
-        clockParent.UpdateDayCompletion(GameMaster.Instance.gf.dm.GetDayTimeRatio());
+        clockParent.UpdateDayCompletion(GameMaster.Instance.gf.dm.GetDayTimeRatio(), GameMaster.Instance.gf.dm.GetRemainingDayTime());
     }
 
     public void OnDayStart ()

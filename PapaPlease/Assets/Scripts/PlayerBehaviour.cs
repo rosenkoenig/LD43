@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBehaviour : Character {
+public class PlayerBehaviour : Character
+{
 
     [SerializeField] PlayerMover _playerMover;
     [SerializeField] PlayerHeadBehaviour _playerHeadBehaviour;
@@ -19,10 +20,10 @@ public class PlayerBehaviour : Character {
 
     [SerializeField]
     ChildCharacter hoverChild;
-    
+
     Wallet wallet;
-    
-    void Start ()
+
+    void Start()
     {
         wallet = GameMaster.Instance.wallet;
         statsContainer.Init(true);
@@ -36,10 +37,10 @@ public class PlayerBehaviour : Character {
     {
         isInteractActive = state;
     }
-    
+
     public void Interact()
     {
-        if(currentActivity != null)
+        if (currentActivity != null)
         {
             LockMovement(false);
             currentActivity.CancelActivity(this);
@@ -48,11 +49,11 @@ public class PlayerBehaviour : Character {
         }
         if (isInteractActive == false)
             return;
-        
+
         DoorLocked hoveredDoor = GetHoveredDoor();
         PlateObject hoveredPlate = GetHoveredPlate();
 
-        if (hoverChild)
+        if (hoverChild && GameMaster.Instance.uIMaster.IsDisplayingChildInteractionsMenu == false)
         {
 
             if (hoverChild.ChildState < ChildAIState.AT_TABLE)
@@ -76,7 +77,7 @@ public class PlayerBehaviour : Character {
         }
         else if (hoveredDoor)
         {
-            if(GameMaster.Instance.gf.GetGameState == GameState.TABLE)
+            if (GameMaster.Instance.gf.GetGameState == GameState.TABLE)
             {
                 PlaySoundEvent(OnClickOnDoorEvent);
                 GameMaster.Instance.PlayerWantsToEndTablePhase();
@@ -88,7 +89,7 @@ public class PlayerBehaviour : Character {
         }
     }
 
-    void Update ()
+    void Update()
     {
         UpdateInteractionDisplay();
         RefreshHoveredChild();
@@ -118,7 +119,7 @@ public class PlayerBehaviour : Character {
     }
 
     InterestPoint hoverIp = null;
-    void UpdateInteractionDisplay ()
+    void UpdateInteractionDisplay()
     {
         InterestPoint ip = GetHoveredIP();
 
@@ -137,30 +138,37 @@ public class PlayerBehaviour : Character {
 
 
 
-        
-        if(hoverChild != null)
+        if (GameMaster.Instance.uIMaster.IsDisplayingChildInteractionsMenu == false)
         {
+            if (hoverChild != null)
+            {
 
-            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, (GameMaster.Instance.gf.GetGameState == GameState.DAY ? "Give Order" : "Give Mission"));
+                GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, (GameMaster.Instance.gf.GetGameState == GameState.DAY ? "Give Order" : "Give Mission"));
+            }
+
+            DoorLocked door = GetHoveredDoor();
+            if (door != null)
+            {
+                if (GameMaster.Instance.gf.GetGameState == GameState.TABLE)
+                    GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, "Leave Table (children can be fed only when at table)");
+                else
+                    door = null;
+            }
+
+            PlateObject plate = GetHoveredPlate();
+            if (plate != null)
+            {
+                GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, "Give Food for " + GameMaster.Instance.wallet.foodCost + " $");
+            }
+
+            if (hoverChild == null && ip == null && door == null && plate == null)
+                GameMaster.Instance.uIMaster.DisplayPlayerInteraction(false, "");
         }
-
-        DoorLocked door = GetHoveredDoor();
-        if(door != null)
-        {
-            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, "Leave Table (children can be fed only when at table)");
-        }
-
-        PlateObject plate = GetHoveredPlate();
-        if(plate != null)
-        {
-            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, "Give Food for " + GameMaster.Instance.wallet.foodCost+" $");
-        }
-
-        if (hoverChild == null && ip == null && door == null && plate == null)
+        else
             GameMaster.Instance.uIMaster.DisplayPlayerInteraction(false, "");
     }
 
-    void OnInteractionBegin ()
+    void OnInteractionBegin()
     {
         LockMovement(true);
     }
@@ -172,14 +180,14 @@ public class PlayerBehaviour : Character {
         LockMovement(false);
     }
 
-    public void LockMovement (bool state)
+    public void LockMovement(bool state)
     {
         _playerHeadBehaviour.SetFreezeHeadControl(state);
         _playerMover.FreezeMovement(state);
     }
 
 
-    public InterestPoint GetHoveredIP ()
+    public InterestPoint GetHoveredIP()
     {
         InterestPoint ip = null;
 
@@ -191,11 +199,11 @@ public class PlayerBehaviour : Character {
                 ip = null;
 
         }
-            return ip;
+        return ip;
     }
 
     [SerializeField] LayerMask _childLayerMask;
-    public ChildCharacter GetHoveredChildCharacter ()
+    public ChildCharacter GetHoveredChildCharacter()
     {
         ChildCharacter child = null;
 
@@ -223,7 +231,7 @@ public class PlayerBehaviour : Character {
     }
 
     [SerializeField] LayerMask _plateLayerMask;
-    public PlateObject GetHoveredPlate ()
+    public PlateObject GetHoveredPlate()
     {
         PlateObject child = null;
 
@@ -238,7 +246,7 @@ public class PlayerBehaviour : Character {
 
     bool hasStartedSlap = false;
 
-    public void BeginSlap ()
+    public void BeginSlap()
     {
         if (GameMaster.Instance.uIMaster.childInteractionMenuIsDisplayed || GameMaster.Instance.uIMaster.childInteractionMissionIsDisplayed || GameMaster.Instance.gf.GetGameState == GameState.MORNING_TRANSITIOn || GameMaster.Instance.gf.GetGameState == GameState.NIGHT_TRANSITION) return;
 
@@ -248,14 +256,14 @@ public class PlayerBehaviour : Character {
 
     }
 
-    public void LaunchSlap ()
+    public void LaunchSlap()
     {
         if (!hasStartedSlap) return;
 
         hasStartedSlap = false;
         arm.Play("SlapIt");
         ChildCharacter child = GetHoveredChildCharacter();
-        if(child)
+        if (child)
         {
             child.IsSlapped();
         }
@@ -263,12 +271,12 @@ public class PlayerBehaviour : Character {
         PlaySoundEvent(OnSlapEvent);
     }
 
-    public void CancelSlap ()
+    public void CancelSlap()
     {
         arm.Play("Idle");
     }
 
-    public void BeginDayPhase ()
+    public void BeginDayPhase()
     {
         transform.position = GameMaster.Instance.hm.playerDaySpawnPoint.position;
         transform.rotation = GameMaster.Instance.hm.playerDaySpawnPoint.rotation;
@@ -277,11 +285,11 @@ public class PlayerBehaviour : Character {
     }
 
 
-    void TryInteractWithPlate (PlateObject plate)
+    void TryInteractWithPlate(PlateObject plate)
     {
         bool buyMoneySucceeds = wallet.TryBuyFood();
 
-        if(buyMoneySucceeds)
+        if (buyMoneySucceeds)
         {
             PlaySoundEvent(OnFillPlateEvent);
             plate.Fill();
@@ -299,14 +307,14 @@ public class PlayerBehaviour : Character {
     [SerializeField]
     AK.Wwise.Event OnClickOnDoorEvent = null;
 
-    void PlaySoundEvent (AK.Wwise.Event soundEvent)
+    void PlaySoundEvent(AK.Wwise.Event soundEvent)
     {
         soundEvent.Post(gameObject);
     }
 
 
     #region Table
-    public void BeginTablePhase ()
+    public void BeginTablePhase()
     {
         transform.position = GameMaster.Instance.hm.playerTableSpawnPoint.position;
         transform.rotation = GameMaster.Instance.hm.playerTableSpawnPoint.rotation;

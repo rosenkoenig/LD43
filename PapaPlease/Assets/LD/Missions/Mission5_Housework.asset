@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Mission5_Housework
   m_EditorClassIdentifier: 
   missionName: 'Job: Housework'
-  moneyEarned: 4
+  moneyEarned: 5
   requisites:
   - statIDNeeded: {fileID: 11400000, guid: 40db861030465814d8712bedc1c170a6, type: 2}
     amountNeeded: 10
