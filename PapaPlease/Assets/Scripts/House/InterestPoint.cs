@@ -92,12 +92,15 @@ public class InterestPoint : MonoBehaviour
             return false;
         }
 
-        if (playerInteractor != null)
+        if (playerInteractor != null && _activityProgressInfo != null)
         {
             _activityProgressInfo.transform.position = playerInteractor.GetPlayerHeadBehaviour.GetCamera.transform.position +
-                playerInteractor.GetPlayerHeadBehaviour.GetCamera.transform.forward * 0.3f;
+                playerInteractor.GetPlayerHeadBehaviour.GetCamera.transform.forward * _activityProgressInfo.GetPlayerHeadDistance.z +
+                playerInteractor.GetPlayerHeadBehaviour.GetCamera.transform.up * _activityProgressInfo.GetPlayerHeadDistance.y;
             _activityProgressInfo.transform.LookAt(playerInteractor.GetPlayerHeadBehaviour.GetCamera.transform.position +
-                playerInteractor.GetPlayerHeadBehaviour.GetCamera.transform.forward * 0.5f);
+                playerInteractor.GetPlayerHeadBehaviour.GetCamera.transform.forward * _activityProgressInfo.GetPlayerHeadDistance.z * 2);
+            _activityProgressInfo.SetScaleForPlayer();
+
                 //new Vector3(
                 //    playerInteractor.transform.position.x,
                 //    _activityProgressInfo.transform.position.y,
@@ -113,6 +116,7 @@ public class InterestPoint : MonoBehaviour
             {
                 _activityProgressInfo.transform.position = _activityProgressInfoPos.position;
                 _activityProgressInfo.transform.eulerAngles = _activityProgressInfoPos.eulerAngles;
+                _activityProgressInfo.SetScaleForChild();
             }
         }
 

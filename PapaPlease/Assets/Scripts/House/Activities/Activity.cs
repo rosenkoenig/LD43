@@ -110,7 +110,7 @@ public class Activity : MonoBehaviour
         holder.character = character;
         holder.startTime = Time.time;
         holder.bonusCompletion = holdersBestCompletion;
-        Debug.Log("time.time: " + Mathf.Round(Time.time) + " |||| holdersBestCompletion: " + Mathf.Round(holdersBestCompletion) + " |||| time - holdersBestCompletion = " + Mathf.Round(Time.time - holdersBestCompletion));
+        //Debug.Log("time.time: " + Mathf.Round(Time.time) + " |||| holdersBestCompletion: " + Mathf.Round(holdersBestCompletion) + " |||| time - holdersBestCompletion = " + Mathf.Round(Time.time - holdersBestCompletion));
         //Debug.Log("Start activity ___ holdersBestComp = " + holdersBestCompletion + "__ curTime = " + Time.time + "new startTime = " + holder.startTime);
 
         holders.Add(holder);
@@ -241,7 +241,7 @@ public class Activity : MonoBehaviour
         if (_akEventStop != null && _akEventStop.IsValid())
             _akEventStop.Post(gameObject);
         
-        Debug.Log("Cancel Activity");
+        //Debug.Log("Cancel Activity");
         SetState(ActivityState.WAITING);
         ActivityHolder holder = GetHolderForCharacter(character);
         if (holder != null)

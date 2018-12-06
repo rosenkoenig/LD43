@@ -142,9 +142,22 @@ public class VirtualMother : MonoBehaviour
     
     public void GetChildrenOutOfTable()
     {
+        List<Transform> _possibleSpawnPositions = new List<Transform>();
+        for (int i = 0; i < _childsMorningSpawnPositionsParent.childCount; i++)
+            _possibleSpawnPositions.Add(_childsMorningSpawnPositionsParent.GetChild(i));
+
         for (int i = 0; i < activeChilds.Count; i++)
         {
-            activeChilds[i].transform.position = _childsMorningSpawnPositionsParent.GetChild(i).position;
+            if (_possibleSpawnPositions.Count <= 0)
+            {
+                for (int j = 0; j < _childsMorningSpawnPositionsParent.childCount; j++)
+                    _possibleSpawnPositions.Add(_childsMorningSpawnPositionsParent.GetChild(j));
+            }
+
+            Transform selectPos = _possibleSpawnPositions[UnityEngine.Random.Range(0, _possibleSpawnPositions.Count)];
+            
+            _possibleSpawnPositions.Remove(selectPos);
+            activeChilds[i].transform.position = selectPos.position;
             activeChilds[i].LeaveTable();
 
         }

@@ -12,7 +12,7 @@ public class ActivityTimed : Activity {
 
         foreach (ActivityHolder holder in holders)
         {
-            Debug.Log("progression: " + ((Time.time - holder.startTime) * (1 + holder.GetActivityModifiersRatios(_inheritedIPType.GetActivityModifiers))));
+            //Debug.Log("progression: " + ((Time.time - holder.startTime) * (1 + holder.GetActivityModifiersRatios(_inheritedIPType.GetActivityModifiers))));
             float curDuration = (Time.time - holder.startTime) * (1 + holder.GetActivityModifiersRatios(_inheritedIPType.GetActivityModifiers)) + holder.bonusCompletion;
             holder.curCompletion = curDuration;
             holder.completionPercentage = Mathf.Clamp01(curDuration / duration);

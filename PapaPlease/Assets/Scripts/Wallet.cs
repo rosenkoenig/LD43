@@ -34,7 +34,7 @@ public class Wallet : MonoBehaviour {
 
     public void SpendMoney (float delta)
     {
-        Debug.Log("lose money = " + delta);
+        //Debug.Log("lose money = " + delta);
             _money -= Mathf.Abs(delta);
             GameMaster.Instance.uIMaster.UpdateWalletUI(_money);
             OnSpendMoneyEvent.Post(gameObject);
