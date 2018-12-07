@@ -14,5 +14,6 @@ MonoBehaviour:
   _childStatsModificator:
     statsModifiers:
     - _childStatID: {fileID: 11400000, guid: b093d0660af69114b9e892be318bfda9, type: 2}
-      _factor: 0.01
+      _factor: 0.013
       _refill: 0
+      _relativeChildStatID: {fileID: 0}

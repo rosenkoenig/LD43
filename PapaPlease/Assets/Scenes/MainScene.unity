@@ -971,28 +971,9 @@ MonoBehaviour:
   allChilds: []
   childPrefab: {fileID: 114511833642560058, guid: 27a308ce4c5f83c46b58d55d3aaaa591,
     type: 2}
-  possibleNamesMale:
-  - Abdel
-  - Dylan
-  - Kylian
-  - Kylian
-  - Kylian
-  - Kylian
-  - Kylian
-  - Kylian
-  - Kylian
-  - Kylian
-  possibleNamesFemale:
-  - Rihanna
-  - Christina
-  - Yasmina
-  - Yasmina
-  - Yasmina
-  - Yasmina
-  - Yasmina
-  - Yasmina
-  - Yasmina
-  - Yasmina
+  possibleNamesMale: {fileID: 11400000, guid: 2dd4e71403c7727429c9a0f0d2a949de, type: 2}
+  possibleNamesFemale: {fileID: 11400000, guid: ae2292420d662874a98aadecb59c6791,
+    type: 2}
   baseChildsQuantity: 1
   _passiveChildStatsModificators:
   - {fileID: 11400000, guid: e2fd6512cf540144092b6e867be718a4, type: 2}
@@ -1335,22 +1316,22 @@ Prefab:
     - target: {fileID: 224744959264597710, guid: ee9b5586654a961438af8093fbe995bf,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224744959264597710, guid: ee9b5586654a961438af8093fbe995bf,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224744959264597710, guid: ee9b5586654a961438af8093fbe995bf,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 70
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224744959264597710, guid: ee9b5586654a961438af8093fbe995bf,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -7.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224791138721284088, guid: ee9b5586654a961438af8093fbe995bf,
         type: 2}

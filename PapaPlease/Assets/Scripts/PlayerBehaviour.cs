@@ -248,7 +248,13 @@ public class PlayerBehaviour : Character
 
     public void BeginSlap()
     {
-        if (GameMaster.Instance.uIMaster.childInteractionMenuIsDisplayed || GameMaster.Instance.uIMaster.childInteractionMissionIsDisplayed || GameMaster.Instance.gf.GetGameState == GameState.MORNING_TRANSITIOn || GameMaster.Instance.gf.GetGameState == GameState.NIGHT_TRANSITION) return;
+        if (GameMaster.Instance.uIMaster.childInteractionMenuIsDisplayed ||
+            GameMaster.Instance.uIMaster.childInteractionMissionIsDisplayed ||
+            GameMaster.Instance.gf.GetGameState == GameState.MORNING_TRANSITIOn ||
+            GameMaster.Instance.gf.GetGameState == GameState.NIGHT_TRANSITION)
+        {
+            return;
+        }
 
         hasStartedSlap = true;
         arm.Play("Prepare");

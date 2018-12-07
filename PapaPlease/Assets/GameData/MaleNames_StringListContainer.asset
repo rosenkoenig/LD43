@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 136ec483365a9b14fb923f25c2798e45, type: 3}
+  m_Name: MaleNames_StringListContainer
+  m_EditorClassIdentifier: 
+  _stringList:
+  - Abdel
+  - Dylan
+  - Luc
+  - Ronaldo
+  - Zinedine
+  - Romain
+  - Paul
+  - Damien
+  - Justin
+  - Leo
+  - Kylian
+  - Tom
+  - Matlab
+  - "K\xE9vin"
+  - Sean
+  - Johnny
+  - Manu
+  - Donald
+  - Lee
+  - Kanye
+  - Carlos
+  - "Jos\xE9"
+  - Jimmy
+  - Brian
+  - Jason
+  - Vladimir
+  - Bob
+  - Jun
+  - Rodriguez

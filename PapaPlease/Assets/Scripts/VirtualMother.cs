@@ -15,7 +15,7 @@ public class VirtualMother : MonoBehaviour
     ChildCharacter childPrefab = null;
 
     [SerializeField]
-    string[] possibleNamesMale, possibleNamesFemale;
+    StringListContainer possibleNamesMale, possibleNamesFemale;
     List<string> availableNamesMale = new List<string>(), availableNamesFemale = new List<string>();
 
     public int baseChildsQuantity = 2;
@@ -37,8 +37,8 @@ public class VirtualMother : MonoBehaviour
     // Use this for initialization
     public void Init()
     {
-        availableNamesMale = new List<string>(possibleNamesMale);
-        availableNamesFemale = new List<string>(possibleNamesFemale);
+        availableNamesMale = new List<string>(possibleNamesMale.GetStringList);
+        availableNamesFemale = new List<string>(possibleNamesFemale.GetStringList);
     }
 
     public void SpawnBaseChilds()
