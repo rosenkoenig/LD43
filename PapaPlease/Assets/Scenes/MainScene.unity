@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000064, guid: 0fbe3ff03143985428e84620f7ad5bbb,
+  m_LightingDataAsset: {fileID: 112000066, guid: 0fbe3ff03143985428e84620f7ad5bbb,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -971,28 +971,9 @@ MonoBehaviour:
   allChilds: []
   childPrefab: {fileID: 114511833642560058, guid: 27a308ce4c5f83c46b58d55d3aaaa591,
     type: 2}
-  possibleNamesMale:
-  - Abdel
-  - Dylan
-  - Kylian
-  - Kylian
-  - Kylian
-  - Kylian
-  - Kylian
-  - Kylian
-  - Kylian
-  - Kylian
-  possibleNamesFemale:
-  - Rihanna
-  - Christina
-  - Yasmina
-  - Yasmina
-  - Yasmina
-  - Yasmina
-  - Yasmina
-  - Yasmina
-  - Yasmina
-  - Yasmina
+  possibleNamesMale: {fileID: 11400000, guid: 2dd4e71403c7727429c9a0f0d2a949de, type: 2}
+  possibleNamesFemale: {fileID: 11400000, guid: ae2292420d662874a98aadecb59c6791,
+    type: 2}
   baseChildsQuantity: 1
   _passiveChildStatsModificators:
   - {fileID: 11400000, guid: e2fd6512cf540144092b6e867be718a4, type: 2}
@@ -2106,8 +2087,6 @@ Transform:
   - {fileID: 487510365}
   - {fileID: 659651569}
   - {fileID: 93950011}
-  - {fileID: 1580177109}
-  - {fileID: 1467855646}
   m_Father: {fileID: 13888866}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3473,51 +3452,6 @@ MonoBehaviour:
   _posOffset: {x: 0, y: 0.25, z: 0}
   _scale: {x: 0.1, y: 0.5, z: 0.1}
   _onSelectedOnly: 0
---- !u!1 &1467855645
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1467855646}
-  - component: {fileID: 1467855647}
-  m_Layer: 0
-  m_Name: DirtIPSpawnPos (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1467855646
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1467855645}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.177, y: 0, z: 8.786}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 855552496}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1467855647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1467855645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b214949862e95c419c45f73466366ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gizmoColor: {r: 0, g: 0, b: 1, a: 1}
-  _gizmoType: 0
-  _posOffset: {x: 0, y: 0.25, z: 0}
-  _scale: {x: 0.1, y: 0.5, z: 0.1}
-  _onSelectedOnly: 0
 --- !u!1001 &1484715915
 Prefab:
   m_ObjectHideFlags: 0
@@ -3916,51 +3850,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1580177108
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1580177109}
-  - component: {fileID: 1580177110}
-  m_Layer: 0
-  m_Name: DirtIPSpawnPos (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1580177109
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1580177108}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.819, y: 0, z: 7.505}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 855552496}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1580177110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1580177108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b214949862e95c419c45f73466366ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gizmoColor: {r: 0, g: 0, b: 1, a: 1}
-  _gizmoType: 0
-  _posOffset: {x: 0, y: 0.25, z: 0}
-  _scale: {x: 0.1, y: 0.5, z: 0.1}
-  _onSelectedOnly: 0
 --- !u!1 &1600977574
 GameObject:
   m_ObjectHideFlags: 0
@@ -4353,7 +4242,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: da0873f774ab9fb48a36bc317ecce352, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: da0873f774ab9fb48a36bc317ecce352, type: 3}
       propertyPath: m_Materials.Array.data[1]
