@@ -1,14 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
-	76044170	Play_Player_Slap			\PapaPlease\Player\Play_Player_Slap	
 	98439365	Play_Player_Footsteps			\PapaPlease\Player\Play_Player_Footsteps	
 	449815044	Play_Player_Paint			\PapaPlease\Player\Play_Player_Paint	
+	586279875	Play_Player_Voice_BuyCondom			\PapaPlease\Player\Play_Player_Voice_BuyCondom	
 	2204713990	Play_Player_Slap_Kids			\PapaPlease\Player\Play_Player_Slap_Kids	
 	2284278951	Stop_Player_Footsteps			\PapaPlease\Player\Stop_Player_Footsteps	
+	2770907853	Stop_Player_Voice_BuyCondom			\PapaPlease\Player\Stop_Player_Voice_BuyCondom	
+	2790168988	Play_Player_Slap_Nothing			\PapaPlease\Player\Play_Player_Slap_Nothing	
 	2895733124	Stop_Player_Slap_Kids			\PapaPlease\Player\Stop_Player_Slap_Kids	
-	3216481374	Play_Player_Voice			\PapaPlease\Player\Play_Player_Voice	
-	3374816280	Stop_Player_Slap			\PapaPlease\Player\Stop_Player_Slap	
 	3604926542	Stop_Player_Paint			\PapaPlease\Player\Stop_Player_Paint	
 	3975414246	Play_Player_Give_Food			\PapaPlease\Player\Play_Player_Give_Food	
+	4121123550	Stop_Player_Slap_Nothing			\PapaPlease\Player\Stop_Player_Slap_Nothing	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2722341167	Player_Slap			\Default Work Unit\Player_Slap	
@@ -23,23 +24,28 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	107132586	Player_SlapKid_01_v2	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Slap\Player_Slap_Kids\Player_SlapKid_01_v2_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Slap\Player_Slap_Kids\Player_SlapKid_01_v2		5062
 	121176616	HumanShave 6032_31_3	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\HumanShave 6032_31_3_0265BEE3.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Paint\HumanShave 6032_31_3		240688
 	171004212	Player_Foosteps	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_658E136E.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Footsteps\Footsteps\Footstep_L\Player_Foosteps		3682
-	208192602	Mmm Female Various by AudioRichter Id-169342 1	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Voice\Mmm Female Various by AudioRichter Id-169342 1_4A9AF0C7.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Voice\Mmm Female Various by AudioRichter Id-169342 1		4896
+	208192602	Mmm Female Various by AudioRichter Id-169342 1	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Voice\Mmm Female Various by AudioRichter Id-169342 1_4A9AF0C7.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Voice_BuyCondom\Mmm Female Various by AudioRichter Id-169342 1		4896
 	226423887	Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 1 SND18731	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 1 SND18731_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Give_Food\Give_Food\Plastic Bag, Small, Filled With Water, Place Down On Wood Surface 1 SND18731		7004
 	239875790	Cloth, Brush, Variations SND4085_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Cloth, Brush, Variations SND4085_D62E12A3.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Paint\Player_Painting\Cloth, Brush, Variations SND4085_03		14889
-	292579193	Mmm Female Various by AudioRichter Id-169342 2	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Voice\Mmm Female Various by AudioRichter Id-169342 2_10DFFA44.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Voice\Mmm Female Various by AudioRichter Id-169342 2		4402
+	292579193	Mmm Female Various by AudioRichter Id-169342 2	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Voice\Mmm Female Various by AudioRichter Id-169342 2_10DFFA44.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Voice_BuyCondom\Mmm Female Various by AudioRichter Id-169342 2		4402
+	328017277	Player_SlapNothing_05	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Slap_Nothing\Player_SlapNothing_05_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Slap\Player_Slap_Nothing\Player_SlapNothing_05		3763
 	340403617	Player_Foosteps	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_F50172F3.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Footsteps\Footsteps\Footstep_R\Player_Foosteps		3763
 	377243309	Player_SlapKid_03_v2	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Slap\Player_Slap_Kids\Player_SlapKid_03_v2_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Slap\Player_Slap_Kids\Player_SlapKid_03_v2		4523
+	454683484	Player_SlapNothing_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Slap_Nothing\Player_SlapNothing_01_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Slap\Player_Slap_Nothing\Player_SlapNothing_01		5020
 	461023597	Plastic Bag, Small, Filled With Water, Pick Up From Wood Surface 1 SND18733	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Plastic Bag, Small, Filled With Water, Pick Up From Wood Surface 1 SND18733_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Give_Food\Give_Food\Plastic Bag, Small, Filled With Water, Pick Up From Wood Surface 1 SND18733		7814
 	468389400	Player_Foosteps_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_92543C55.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Footsteps\Footsteps\Footstep_R\Player_Foosteps_02		3429
 	565132539	Player_Foosteps_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_A541049A.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Footsteps\Footsteps\Footstep_L\Player_Foosteps_03		3276
 	597931799	Plastic Bag, Small, Filled With Water, Pick Up From Wood Surface 2 SND18732	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Plastic Bag, Small, Filled With Water, Pick Up From Wood Surface 2 SND18732_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Give_Food\Give_Food\Plastic Bag, Small, Filled With Water, Pick Up From Wood Surface 2 SND18732		9262
 	616743325	Cloth, Brush, Variations SND4085	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Cloth, Brush, Variations SND4085_2C37035C.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Paint\Player_Painting\Cloth, Brush, Variations SND4085		13074
 	629175168	Cloth, Brush, Variations SND4085_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Cloth, Brush, Variations SND4085_EEC87066.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Paint\Player_Painting\Cloth, Brush, Variations SND4085_02		12511
-	658954882	Mmm Female Various by AudioRichter Id-169342	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Voice\Mmm Female Various by AudioRichter Id-169342_F4ADA104.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Voice\Mmm Female Various by AudioRichter Id-169342		4061
+	658954882	Mmm Female Various by AudioRichter Id-169342	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Voice\Mmm Female Various by AudioRichter Id-169342_F4ADA104.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Voice_BuyCondom\Mmm Female Various by AudioRichter Id-169342		4061
 	682061179	Player_SlapKid_04_v2	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Slap\Player_Slap_Kids\Player_SlapKid_04_v2_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Slap\Player_Slap_Kids\Player_SlapKid_04_v2		4756
 	705607437	Cloth, Brush, Variations SND4085_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Cloth, Brush, Variations SND4085_DB6F2AA7.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Paint\Player_Painting\Cloth, Brush, Variations SND4085_01		17038
 	742844808	Player_Foosteps_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_D3F4E0DB.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Footsteps\Footsteps\Footstep_L\Player_Foosteps_01		3343
 	758662162	Player_Foosteps_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_9EDC63F8.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Footsteps\Footsteps\Footstep_L\Player_Foosteps_02		3589
+	759396978	Player_SlapNothing_02	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Slap_Nothing\Player_SlapNothing_02_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Slap\Player_Slap_Nothing\Player_SlapNothing_02		3555
+	776890746	Player_SlapNothing_03	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Slap_Nothing\Player_SlapNothing_03_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Slap\Player_Slap_Nothing\Player_SlapNothing_03		3972
+	851787167	Player_SlapNothing_04	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Slap_Nothing\Player_SlapNothing_04_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Slap\Player_Slap_Nothing\Player_SlapNothing_04		4081
 	858942714	Player_Foosteps_01	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Foosteps_F186E486.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Footsteps\Footsteps\Footstep_R\Player_Foosteps_01		3323
 	973609531	Player_SlapKid_02_v2	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Windows\SFX\Player_Slap\Player_Slap_Kids\Player_SlapKid_02_v2_F52F4675.wem		\Actor-Mixer Hierarchy\PapaPlease\Player\Player_Slap\Player_Slap_Kids\Player_SlapKid_02_v2		4594
 

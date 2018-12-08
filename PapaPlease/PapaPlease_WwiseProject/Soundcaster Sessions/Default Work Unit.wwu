@@ -90,10 +90,6 @@
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Player_Slap" ID="{7B5B9B5C-B661-4AE1-9446-18A6FB799DB4}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Stop_Player_Shower" ID="{4D38A215-AB8B-4E2D-B6B2-E7023D92CE10}" WorkUnitID="{F045409F-76E5-4E75-A80F-87EACAE3AE4B}"/>
 							<Position X="1" Y="1"/>
 						</Module>

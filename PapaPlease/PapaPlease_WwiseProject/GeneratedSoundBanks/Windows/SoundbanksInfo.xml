@@ -47,13 +47,14 @@
 				<Event Id="98439365" Name="Play_Player_Footsteps" ObjectPath="\Events\PapaPlease\Player\Play_Player_Footsteps"/>
 				<Event Id="3975414246" Name="Play_Player_Give_Food" ObjectPath="\Events\PapaPlease\Player\Play_Player_Give_Food"/>
 				<Event Id="449815044" Name="Play_Player_Paint" ObjectPath="\Events\PapaPlease\Player\Play_Player_Paint"/>
-				<Event Id="76044170" Name="Play_Player_Slap" ObjectPath="\Events\PapaPlease\Player\Play_Player_Slap"/>
 				<Event Id="2204713990" Name="Play_Player_Slap_Kids" ObjectPath="\Events\PapaPlease\Player\Play_Player_Slap_Kids"/>
-				<Event Id="3216481374" Name="Play_Player_Voice" ObjectPath="\Events\PapaPlease\Player\Play_Player_Voice"/>
+				<Event Id="2790168988" Name="Play_Player_Slap_Nothing" ObjectPath="\Events\PapaPlease\Player\Play_Player_Slap_Nothing"/>
+				<Event Id="586279875" Name="Play_Player_Voice_BuyCondom" ObjectPath="\Events\PapaPlease\Player\Play_Player_Voice_BuyCondom"/>
 				<Event Id="2284278951" Name="Stop_Player_Footsteps" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Footsteps" MaxAttenuation="0.000000"/>
 				<Event Id="3604926542" Name="Stop_Player_Paint" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Paint" MaxAttenuation="0.000000"/>
-				<Event Id="3374816280" Name="Stop_Player_Slap" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Slap" MaxAttenuation="0.000000"/>
 				<Event Id="2895733124" Name="Stop_Player_Slap_Kids" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Slap_Kids" MaxAttenuation="0.000000"/>
+				<Event Id="4121123550" Name="Stop_Player_Slap_Nothing" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Slap_Nothing" MaxAttenuation="0.000000"/>
+				<Event Id="2770907853" Name="Stop_Player_Voice_BuyCondom" ObjectPath="\Events\PapaPlease\Player\Stop_Player_Voice_BuyCondom" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="107132586" Language="SFX">
@@ -84,6 +85,10 @@
 					<ShortName>Player_Voice\Mmm Female Various by AudioRichter Id-169342 2.wav</ShortName>
 					<Path>SFX\Player_Voice\Mmm Female Various by AudioRichter Id-169342 2_10DFFA44.wem</Path>
 				</File>
+				<File Id="328017277" Language="SFX">
+					<ShortName>Player_Slap_Nothing\Player_SlapNothing_05.wav</ShortName>
+					<Path>SFX\Player_Slap_Nothing\Player_SlapNothing_05_F52F4675.wem</Path>
+				</File>
 				<File Id="340403617" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
 					<Path>SFX\Player_Foosteps_F50172F3.wem</Path>
@@ -91,6 +96,10 @@
 				<File Id="377243309" Language="SFX">
 					<ShortName>Player_Slap\Player_Slap_Kids\Player_SlapKid_03_v2.wav</ShortName>
 					<Path>SFX\Player_Slap\Player_Slap_Kids\Player_SlapKid_03_v2_F52F4675.wem</Path>
+				</File>
+				<File Id="454683484" Language="SFX">
+					<ShortName>Player_Slap_Nothing\Player_SlapNothing_01.wav</ShortName>
+					<Path>SFX\Player_Slap_Nothing\Player_SlapNothing_01_F52F4675.wem</Path>
 				</File>
 				<File Id="461023597" Language="SFX">
 					<ShortName>Plastic Bag, Small, Filled With Water, Pick Up From Wood Surface 1 SND18733.wav</ShortName>
@@ -135,6 +144,18 @@
 				<File Id="758662162" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
 					<Path>SFX\Player_Foosteps_9EDC63F8.wem</Path>
+				</File>
+				<File Id="759396978" Language="SFX">
+					<ShortName>Player_Slap_Nothing\Player_SlapNothing_02.wav</ShortName>
+					<Path>SFX\Player_Slap_Nothing\Player_SlapNothing_02_F52F4675.wem</Path>
+				</File>
+				<File Id="776890746" Language="SFX">
+					<ShortName>Player_Slap_Nothing\Player_SlapNothing_03.wav</ShortName>
+					<Path>SFX\Player_Slap_Nothing\Player_SlapNothing_03_F52F4675.wem</Path>
+				</File>
+				<File Id="851787167" Language="SFX">
+					<ShortName>Player_Slap_Nothing\Player_SlapNothing_04.wav</ShortName>
+					<Path>SFX\Player_Slap_Nothing\Player_SlapNothing_04_F52F4675.wem</Path>
 				</File>
 				<File Id="858942714" Language="SFX">
 					<ShortName>Player_Foosteps.wav</ShortName>
@@ -219,6 +240,16 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Musics</ObjectPath>
 			<ShortName>Musics</ShortName>
 			<Path>Musics.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1699343283" Name="Play_Music_Menu" ObjectPath="\Events\PapaPlease\Musics\Play_Music_Menu"/>
+				<Event Id="106912753" Name="Stop_Music_Menu" ObjectPath="\Events\PapaPlease\Musics\Stop_Music_Menu" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="814078000" Language="SFX">
+					<ShortName>AI_Playing_Console.wav</ShortName>
+					<Path>SFX\AI_Playing_Console_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="1886858547" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\AI</ObjectPath>

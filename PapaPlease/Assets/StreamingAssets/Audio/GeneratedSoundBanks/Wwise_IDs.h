@@ -49,13 +49,14 @@ namespace AK
         static const AkUniqueID PLAY_MENU_QUITGAME = 3592474417U;
         static const AkUniqueID PLAY_MONEY_ADD = 2797631338U;
         static const AkUniqueID PLAY_MONEY_REMOVE = 1733128813U;
+        static const AkUniqueID PLAY_MUSIC_MENU = 1699343283U;
         static const AkUniqueID PLAY_PLANE = 2689642136U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS = 98439365U;
         static const AkUniqueID PLAY_PLAYER_GIVE_FOOD = 3975414246U;
         static const AkUniqueID PLAY_PLAYER_PAINT = 449815044U;
-        static const AkUniqueID PLAY_PLAYER_SLAP = 76044170U;
         static const AkUniqueID PLAY_PLAYER_SLAP_KIDS = 2204713990U;
-        static const AkUniqueID PLAY_PLAYER_VOICE = 3216481374U;
+        static const AkUniqueID PLAY_PLAYER_SLAP_NOTHING = 2790168988U;
+        static const AkUniqueID PLAY_PLAYER_VOICE_BUYCONDOM = 586279875U;
         static const AkUniqueID STOP_AI_ANGRY = 1120423820U;
         static const AkUniqueID STOP_AI_CLEANBIN = 1064386371U;
         static const AkUniqueID STOP_AI_CLEANFLOOR = 1939778946U;
@@ -80,10 +81,12 @@ namespace AK
         static const AkUniqueID STOP_MENU_QUITGAME = 4070450727U;
         static const AkUniqueID STOP_MONEY_ADD = 2002142080U;
         static const AkUniqueID STOP_MONEY_REMOVE = 3510984659U;
+        static const AkUniqueID STOP_MUSIC_MENU = 106912753U;
         static const AkUniqueID STOP_PLAYER_FOOTSTEPS = 2284278951U;
         static const AkUniqueID STOP_PLAYER_PAINT = 3604926542U;
-        static const AkUniqueID STOP_PLAYER_SLAP = 3374816280U;
         static const AkUniqueID STOP_PLAYER_SLAP_KIDS = 2895733124U;
+        static const AkUniqueID STOP_PLAYER_SLAP_NOTHING = 4121123550U;
+        static const AkUniqueID STOP_PLAYER_VOICE_BUYCONDOM = 2770907853U;
     } // namespace EVENTS
 
     namespace SWITCHES

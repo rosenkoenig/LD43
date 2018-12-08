@@ -236,7 +236,38 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Musics" ID="{66D09C36-0569-4144-8D07-51137DA93C37}" ShortID="395366460"/>
+				<Folder Name="Musics" ID="{66D09C36-0569-4144-8D07-51137DA93C37}" ShortID="395366460">
+					<ChildrenList>
+						<Event Name="Stop_Music_Menu" ID="{EDE847C5-2257-4289-87FF-1F5178A4F819}">
+							<ChildrenList>
+								<Action Name="" ID="{9F46BBC9-454C-44EC-AB60-1779859CD09D}" ShortID="189754050">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Menu" ID="{68C5D131-D4AA-42B4-BCC1-49D6C77A6CA3}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Music_Menu" ID="{BC266FE1-8844-4589-A263-F2D409C53D4D}">
+							<ChildrenList>
+								<Action Name="" ID="{0B7E87DA-BC68-4C81-A4A4-C3CD0FE16555}" ShortID="378973162">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Menu" ID="{68C5D131-D4AA-42B4-BCC1-49D6C77A6CA3}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="UI" ID="{E03308B3-CCCC-47B9-9C9C-9E7C4CDD149B}" ShortID="943067793">
 					<ChildrenList>
 						<Event Name="Play_Menu_PlayGame" ID="{C18F8AF7-B3F9-4583-AAE8-A907EEEAFDD7}">
@@ -1153,20 +1184,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Player_Slap" ID="{7B5B9B5C-B661-4AE1-9446-18A6FB799DB4}">
-							<ChildrenList>
-								<Action Name="" ID="{609DAA44-B478-4B29-A394-A96EE29E6A72}" ShortID="457766793">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Player_Slap" ID="{E7F984DA-538B-40CB-AC66-35262FCB39D1}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Start_Player_Shower" ID="{37858FD9-F939-4C68-A46D-E47672FD4721}">
 							<ChildrenList>
 								<Action Name="" ID="{15157211-873C-4D3A-AD86-47053F72DCA9}" ShortID="20619979">
@@ -1232,20 +1249,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Stop_Player_Slap" ID="{C22F49F6-B991-4DFB-829C-2FF537103E69}">
-							<ChildrenList>
-								<Action Name="" ID="{CF775E4F-3DC1-4DC3-8456-23F736020C6A}" ShortID="870526183">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Player_Slap" ID="{E7F984DA-538B-40CB-AC66-35262FCB39D1}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Player_Slap_Kids" ID="{DB30396B-89E5-42C8-97B1-A9AA038B466F}">
 							<ChildrenList>
 								<Action Name="" ID="{BF56A119-5103-4561-B9E5-514CC8B2983B}" ShortID="592419785">
@@ -1288,20 +1291,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Player_Voice" ID="{388EC99C-4186-4992-8375-DFA771D0D737}">
-							<ChildrenList>
-								<Action Name="" ID="{86D6D16D-30DB-42E8-86C3-18B85EFA908D}" ShortID="11482442">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Player_Voice" ID="{3601C9F2-0C7A-444C-9BFE-CC340148DA36}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Stop_Player_Paint" ID="{6B1D4ECA-F506-4E9F-987E-0A23D0337CFB}">
 							<ChildrenList>
 								<Action Name="" ID="{4338C64F-8F7A-4670-B6E4-15E7E7AF7ECA}" ShortID="1041424176">
@@ -1325,6 +1314,62 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Player_Paint" ID="{5B8ED2FF-14F1-42F2-B4EE-9FFE61E099FD}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_Slap_Nothing" ID="{F4D2E595-B614-43CD-A5B5-47AEAE1641EF}">
+							<ChildrenList>
+								<Action Name="" ID="{2AF1F22E-3B05-4C83-A270-BD728CCB82F7}" ShortID="971552946">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Slap_Nothing" ID="{1A2E6F9B-85B4-49C9-B5D3-E39292856FF0}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_Voice_BuyCondom" ID="{E6A412CF-1E11-4922-B8BE-A77E403A9360}">
+							<ChildrenList>
+								<Action Name="" ID="{4D3EF2AF-E883-4BCC-9E4C-8F54A802ACFE}" ShortID="252721569">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Voice_BuyCondom" ID="{3601C9F2-0C7A-444C-9BFE-CC340148DA36}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Player_Voice_BuyCondom" ID="{22A37BE1-AC20-47C1-81F4-305550180FB4}">
+							<ChildrenList>
+								<Action Name="" ID="{61AB6821-B280-4DBB-8EA6-30691F5C44F6}" ShortID="214704527">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Voice_BuyCondom" ID="{3601C9F2-0C7A-444C-9BFE-CC340148DA36}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Player_Slap_Nothing" ID="{54C2843F-4B0C-4FD4-B827-0342A6C7E52F}">
+							<ChildrenList>
+								<Action Name="" ID="{2C9EEBD9-5346-4474-ABC1-D083EAF32330}" ShortID="314432018">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Slap_Nothing" ID="{1A2E6F9B-85B4-49C9-B5D3-E39292856FF0}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
