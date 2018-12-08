@@ -20,3 +20,5 @@ MonoBehaviour:
   _isTitleGauge: 1
   _titleGaugeColor: {r: 0.2028302, g: 0.20595631, b: 1, a: 1}
   _displayReverseValue: 0
+  _isLowStatWarningLogActivated: 1
+  _lowStatWarningLogText: is despressed

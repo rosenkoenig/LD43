@@ -41,7 +41,7 @@ public class ChildStatsContainer
         foreach (var item in _childStatsInfos)
         {
             if (item.childStatID == refID)
-                return Mathf.Round(item.currentValue)   ;
+                return Mathf.Round(item.currentValue);
         }
         Debug.LogError("child stat not found!", refID);
         return 0;
@@ -64,6 +64,9 @@ public class ChildStatsContainer
     {
         public ChildStatID childStatID;
         public float currentValue;
-    }
+        public bool isWarningShown;
+
+        public bool IsLow { get { return Mathf.InverseLerp(childStatID.MinValue, childStatID.MaxValue, currentValue) < 0.25f; } }
+        }
 
 }

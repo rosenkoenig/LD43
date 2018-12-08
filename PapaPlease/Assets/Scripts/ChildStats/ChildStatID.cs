@@ -21,11 +21,12 @@ public class ChildStatID : ScriptableObject {
 
     [SerializeField] bool _isTitleGauge;
     [SerializeField] Color _titleGaugeColor;
-
     
-
     [SerializeField] bool _displayReverseValue;
-    
+
+    [Header("Low Stat warning log")]
+    [SerializeField] bool _isLowStatWarningLogActivated;
+    [SerializeField] string _lowStatWarningLogText;
 
     public string StatName { get { return _statName; } }
 
@@ -45,5 +46,9 @@ public class ChildStatID : ScriptableObject {
     public Color GetTitleGaugeColor { get { return _titleGaugeColor; } }
 
     public bool IsDisplayReverseValue { get { return _displayReverseValue; } }
+
+    public bool IsLowStatWarningLogActivated { get { return _isLowStatWarningLogActivated; } }
+
+    public string LowStatWarningLogText { get { return _lowStatWarningLogText; } }
 
 }

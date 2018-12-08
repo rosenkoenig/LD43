@@ -93,6 +93,8 @@ MonoBehaviour:
   fadeTime: 0.3
   displayDuration: 4
   text: {fileID: 114454958270744898}
+  _logStandardColor: {r: 1, g: 1, b: 0, a: 1}
+  _logUrgentColor: {r: 1, g: 0, b: 0.108383656, a: 1}
 --- !u!114 &114828163301247972
 MonoBehaviour:
   m_ObjectHideFlags: 1

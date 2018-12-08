@@ -5,12 +5,13 @@ using UnityEngine.AI;
 
 
 public enum ChildAIState { WAITING, ROAMING, MOVING_TO_ACTIVITY, IN_ACTIVITY, AT_TABLE, IN_MISSION, DEAD }
-public class ChildCharacter : Character {
+public class ChildCharacter : Character
+{
     public HouseMaster hm = null;
 
     [SerializeField]
     NavMeshAgent navAgent;
-    
+
     InterestPoint currentInterestPoint;
     InterestPoint lastInterestPoint;
 
@@ -71,8 +72,8 @@ public class ChildCharacter : Character {
     [SerializeField]
     ChildStatID obeissanceStatID = null;
 
-    [SerializeField]
-    GameObject isInActivityFeedback = null;
+    [SerializeField] InActivityFeedback isInActivityFeedback = null;
+    [SerializeField] float isInActivityFeedbackDistActivation = 2f;
 
     [SerializeField]
     GameObject[] possibleMaleHaircuts, possibleFemaleHaircurts, possibleConsitution;
@@ -96,11 +97,12 @@ public class ChildCharacter : Character {
     IPType vessieIPType = null;
 
     // Use this for initialization
-    void Start () {
-        
-	}
+    void Start()
+    {
 
-    public void Init ()
+    }
+
+    public void Init()
     {
 
         InitSkins();
@@ -113,7 +115,7 @@ public class ChildCharacter : Character {
         possibleConsitution[cIdx].SetActive(true);
 
         Vector3 ls = possibleConsitution[cIdx].transform.localScale;
-        possibleConsitution[cIdx].transform.localScale = new Vector3(ls.x, Random.Range(.8f,1f), ls.z);
+        possibleConsitution[cIdx].transform.localScale = new Vector3(ls.x, Random.Range(.8f, 1f), ls.z);
 
         SkinnedMeshRenderer renderer = possibleConsitution[cIdx].GetComponent<SkinnedMeshRenderer>();
         Material[] newMaterials = renderer.materials;
@@ -131,18 +133,18 @@ public class ChildCharacter : Character {
         newMaterials[3] = shoesMaterial[randMatIdx];
 
         renderer.materials = newMaterials;
-        
+
 
         randMatIdx = Random.Range(0, hairMaterial.Length);
-        if(randMatIdx == 2) randMatIdx = Random.Range(0, hairMaterial.Length);
+        if (randMatIdx == 2) randMatIdx = Random.Range(0, hairMaterial.Length);
         hc.GetComponent<Renderer>().material = hairMaterial[randMatIdx];
 
-        isInActivityFeedback.SetActive(false);
+        //isInActivityFeedback.gameObject.SetActive(false);
     }
 
-    void InitSkins ()
+    void InitSkins()
     {
-        foreach(GameObject hc in possibleFemaleHaircurts)
+        foreach (GameObject hc in possibleFemaleHaircurts)
         {
             hc.SetActive(false);
         }
@@ -157,14 +159,34 @@ public class ChildCharacter : Character {
             hc.SetActive(false);
         }
     }
-	
-	// Update is called once per frame
-    void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
         GetComponent<Rigidbody>().velocity = Vector3.zero;
 
         extraRotation();
         UpdateStates();
+
+        RefreshCharacterStatsWarningLogs();
+    }
+
+    void RefreshCharacterStatsWarningLogs()
+    {
+        foreach (var item in statsContainer.GetChildStatInfos)
+        {
+            if (item.childStatID.IsLowStatWarningLogActivated)
+            {
+                if (item.isWarningShown == false &&
+                    item.IsLow)
+                {
+                    GameMaster.Instance.AddLog(childName + " " + item.childStatID.LowStatWarningLogText, true);
+                    item.isWarningShown = true;
+                }
+                else if (item.isWarningShown && item.IsLow == false)
+                    item.isWarningShown = false;
+            }
+        }
     }
 
     public void Freeze(bool state)
@@ -173,7 +195,7 @@ public class ChildCharacter : Character {
         if (state)
         {
             isFrozen = true;
-            if(navAgent.isActiveAndEnabled)
+            if (navAgent.isActiveAndEnabled)
                 navAgent.isStopped = true;
         }
         else
@@ -185,12 +207,12 @@ public class ChildCharacter : Character {
         }
     }
 
-    public void GiveOrder (IPType ipType)
+    public void GiveOrder(IPType ipType)
     {
         if (isDoingAnger || state == ChildAIState.AT_TABLE) return;
 
         SetCurrentInterestPoint(hm.GetRandomInterestPoint(ipType, lastInterestPoint));
-        if(!isSlaped)
+        if (!isSlaped)
             Freeze(false);
     }
 
@@ -212,7 +234,7 @@ public class ChildCharacter : Character {
             //Debug.LogWarning(childName + "has received a null IP");
             SetState(ChildAIState.WAITING);
         }
-            
+
     }
 
     Transform curChairTransform = null;
@@ -222,23 +244,23 @@ public class ChildCharacter : Character {
         SetState(ChildAIState.AT_TABLE);
     }
 
-    public void LeaveTable ()
+    public void LeaveTable()
     {
         SetState(ChildAIState.WAITING);
     }
 
-    public void AttributeToMission ()
+    public void AttributeToMission()
     {
         GameMaster.Instance.vm.UnsubscribeFromActiveChilds(this);
         SetState(ChildAIState.IN_MISSION);
     }
 
-    public string GetStateName ()
+    public string GetStateName()
     {
         if (isDoingAnger) return "Is Angry !";
         if (isSlaped) return "Is Recovering";
 
-        switch(state)
+        switch (state)
         {
             case ChildAIState.IN_ACTIVITY:
                 return currentInterestPoint.logActivityName;
@@ -261,7 +283,7 @@ public class ChildCharacter : Character {
     }
 
     #region Slap
-    public void IsSlapped ()
+    public void IsSlapped()
     {
         if (state == ChildAIState.DEAD) return;
 
@@ -269,7 +291,7 @@ public class ChildCharacter : Character {
         isSlaped = true;
         if (waitAndApplySlapHitCoroutine != null) StopCoroutine(waitAndApplySlapHitCoroutine);
         waitAndApplySlapHitCoroutine = StartCoroutine(waitAndApplySlapHit());
-        if(state != ChildAIState.AT_TABLE)
+        if (state != ChildAIState.AT_TABLE)
             LaunchSlapAnim();
 
         StopPotentialAnger();
@@ -278,12 +300,12 @@ public class ChildCharacter : Character {
         {
             SetState(ChildAIState.WAITING);
         }
-        
+
 
     }
 
     Coroutine waitAndApplySlapHitCoroutine = null;
-    IEnumerator waitAndApplySlapHit ()
+    IEnumerator waitAndApplySlapHit()
     {
         yield return new WaitForSeconds(delayForHSlapHit);
 
@@ -291,7 +313,7 @@ public class ChildCharacter : Character {
 
         float animFactor = 0f;
 
-        if(state != ChildAIState.AT_TABLE)
+        if (state != ChildAIState.AT_TABLE)
         {
             Vector3 targetPos = GetHitPosition();
             Vector3 startPos = transform.position;
@@ -317,7 +339,7 @@ public class ChildCharacter : Character {
         Freeze(false);
     }
 
-    Vector3 GetHitPosition ()
+    Vector3 GetHitPosition()
     {
         Vector3 fallDownDest = transform.position + (transform.position - GameMaster.Instance.player.transform.position) * slapFallDownDistance;
 
@@ -329,15 +351,27 @@ public class ChildCharacter : Character {
     }
     #endregion
 
+    public void MakeHug()
+    {
+        if (state == ChildAIState.DEAD) return;
+
+        if (isDoingAnger)
+        { 
+            SetNextAngerTime(0.6f);
+            Freeze(false);
+            StopPotentialAnger();
+        }
+    }
+
     #region PathFinding
 
 
-    void MoveTo (Vector3 destination)
+    void MoveTo(Vector3 destination)
     {
         navAgent.SetDestination(destination);
         SetIsWalking(true);
     }
-    void MoveTo (Transform transform)
+    void MoveTo(Transform transform)
     {
         MoveTo(transform.position);
     }
@@ -345,7 +379,7 @@ public class ChildCharacter : Character {
 
     #region Pipi
     bool autoPipiFailed = false;
-    void CheckPipi ()
+    void CheckPipi()
     {
         if (state >= ChildAIState.IN_ACTIVITY || GameMaster.Instance.gf.GetGameState != GameState.DAY) return;
         if (statsContainer.GetAChildStatValue(vessieID) <= vessieID.MinValue)
@@ -367,14 +401,14 @@ public class ChildCharacter : Character {
             autoPipiFailed = false;
     }
 
-    void DoPipi ()
+    void DoPipi()
     {
         SpawnPipi();
         onPipiModificator.TryModifyStats(this, false);
         GameMaster.Instance.AddLog(childName + " has peed on the floor");
     }
 
-    void SpawnPipi ()
+    void SpawnPipi()
     {
         if (pipiIPPrefab == null) return;
         GameObject inst = GameObject.Instantiate(pipiIPPrefab.gameObject, transform.position, transform.rotation);
@@ -384,11 +418,11 @@ public class ChildCharacter : Character {
     #endregion
 
     #region State Management
-    void SetState (ChildAIState newState)
+    void SetState(ChildAIState newState)
     {
         SetState(newState, false);
     }
-    void SetState (ChildAIState newState, bool force)
+    void SetState(ChildAIState newState, bool force)
     {
         if (force || state != newState)
         {
@@ -398,14 +432,14 @@ public class ChildCharacter : Character {
         }
     }
 
-    void OnStateChange (ChildAIState oldState, ChildAIState newState)
+    void OnStateChange(ChildAIState oldState, ChildAIState newState)
     {
         currentInactivityDuration = Mathf.Lerp(inactivityDurationRange.x, inactivityDurationRange.y, Random.Range(0f, 1f));
         stateBeginTime = Time.time;
 
         //Debug.Log(childName + " changes state for : " + newState, this);
 
-        switch(oldState)
+        switch (oldState)
         {
             case ChildAIState.WAITING:
                 if (waitForIdleCoroutine != null) StopCoroutine(waitForIdleCoroutine);
@@ -425,7 +459,7 @@ public class ChildCharacter : Character {
                 break;
         }
 
-        switch(newState)
+        switch (newState)
         {
             case ChildAIState.WAITING:
                 StartWaiting();
@@ -455,10 +489,22 @@ public class ChildCharacter : Character {
     {
         if (GameMaster.Instance == null)
             Debug.LogError("Game master is null!!");
-        if(statsContainer.GetAChildStatValueRatio(GameMaster.Instance.healthStat) <= 0)
+        if (statsContainer.GetAChildStatValueRatio(GameMaster.Instance.healthStat) <= 0)
         {
             SetState(ChildAIState.DEAD);
         }
+        //if (GameMaster.Instance.gf.GetGameState == GameState.DAY && state == ChildAIState.IN_ACTIVITY &&
+        //    Vector3.Distance(transform.position, GameMaster.Instance.player.transform.position) < isInActivityFeedbackDistActivation)
+        //{
+        //    if (isInActivityFeedback.gameObject.activeSelf == false)
+        //        isInActivityFeedback.gameObject.SetActive(true);
+        //    isInActivityFeedback.SetText(GetStateName());
+        //    isInActivityFeedback.transform.LookAt(isInActivityFeedback.transform.position + isInActivityFeedback.transform.position -
+        //        GameMaster.Instance.player.GetPlayerHeadBehaviour.GetCamera.transform.position);
+        //}
+        //else
+        //    if (isInActivityFeedback.gameObject.activeSelf)
+        //        isInActivityFeedback.gameObject.SetActive(false);
 
         CheckIsWalking();
         CheckPipi();
@@ -492,11 +538,11 @@ public class ChildCharacter : Character {
     }
 
     bool hasWarnedForHealth = false;
-    void CheckHealth ()
+    void CheckHealth() // replaced by RefreshCharacterStatsWarningLogs
     {
-        if(!hasWarnedForHealth && statsContainer.GetAChildStatValueRatio(GameMaster.Instance.healthStat) <= 0.25f)
+        if (!hasWarnedForHealth && statsContainer.GetAChildStatValueRatio(GameMaster.Instance.healthStat) <= 0.25f)
         {
-            GameMaster.Instance.AddLog(childName + " has low health ! He could die...");
+            GameMaster.Instance.AddLog(childName + " has low health ! He could die...", true);
             hasWarnedForHealth = true;
         }
         else
@@ -508,12 +554,12 @@ public class ChildCharacter : Character {
     /// <summary>
     /// WAITING STATE WAITING
     /// </summary>
-    void StartWaiting  ()
+    void StartWaiting()
     {
         StartWaitIdleCoroutine();
     }
 
-    void StartWaitIdleCoroutine ()
+    void StartWaitIdleCoroutine()
     {
         if (waitForIdleCoroutine != null) StopCoroutine(waitForIdleCoroutine);
         waitForIdleCoroutine = StartCoroutine(waitForOutOfAnimToBeEnded());
@@ -539,7 +585,7 @@ public class ChildCharacter : Character {
         }
     }
 
-    void RealStartWaiting ()
+    void RealStartWaiting()
     {
         Vector3 waitingDestination = transform.position + Random.insideUnitSphere * waitingDistance;
 
@@ -562,7 +608,7 @@ public class ChildCharacter : Character {
     /// <summary>
     /// ROAMING STATE ROAMING
     /// </summary>
-    void StartRoaming ()
+    void StartRoaming()
     {
         SetCurrentInterestPoint(hm.GetRandomInterestPoint(IpTypeFun, lastInterestPoint));
     }
@@ -577,13 +623,13 @@ public class ChildCharacter : Character {
     /// <summary>
     /// MOVING TO ACTIVITY STATE MOVING TO ACTIVITY
     /// </summary>
-    void StartMovingToActivity ()
+    void StartMovingToActivity()
     {
         SetNextAngerTime();
         StartWaitIdleCoroutine();
     }
 
-    void RealStartMovingToActivity ()
+    void RealStartMovingToActivity()
     {
         lastAngerTime = Time.time;
         SetNextAngerTime();
@@ -595,7 +641,7 @@ public class ChildCharacter : Character {
         //Debug.Log("remaining distance = " + navAgent.remainingDistance);
         // MoveAlongPath();
 
-        if(currentInterestPoint && currentInterestPoint.iPtype != IpTypeFun)
+        if (currentInterestPoint && currentInterestPoint.iPtype != IpTypeFun)
             CheckAnger();
 
         if (!isDoingAnger && !isFrozen && Vector3.Distance(transform.position, currentInterestPoint.pivotPoint.position) <= 1f)
@@ -606,26 +652,27 @@ public class ChildCharacter : Character {
 
     }
 
-    void SetNextAngerTime ()
+    void SetNextAngerTime(float nextHangerMalusRatio = 0f)
     {
         float rand = Random.Range(0f, 1f);
 
         //TODO : get la state obeissance
         nextAngerTime = Mathf.Lerp(timeBetweenAnger.x, timeBetweenAnger.y, rand);
-        nextAngerTime  += statsContainer.GetAChildStatValue(obeissanceStatID) * timeBetweenAngerIncPerObeissance;
+        nextAngerTime -= Mathf.Clamp01(nextHangerMalusRatio) * nextAngerTime;
+        nextAngerTime += statsContainer.GetAChildStatValue(obeissanceStatID) * timeBetweenAngerIncPerObeissance;
         //Debug.Log("next anger time = " + nextAngerTime);
         lastAngerTime = Time.time;
     }
 
     void CheckAnger()
     {
-        if(Time.time - lastAngerTime > nextAngerTime && !isFrozen && !isLerping && !isSlaped)
+        if (Time.time - lastAngerTime > nextAngerTime && !isFrozen && !isLerping && !isSlaped)
         {
             StartAnger();
         }
     }
 
-    void StartAnger ()
+    void StartAnger()
     {
         Debug.Log("ANGER ANGER ANGER ANGER");
         isDoingAnger = true;
@@ -635,7 +682,7 @@ public class ChildCharacter : Character {
         PlaySoundEvent(OnStartAnger);
 
         Freeze(true);
-        if(state == ChildAIState.AT_TABLE)
+        if (state == ChildAIState.AT_TABLE)
         {
             animator.SetBool("IsDoingAnger", isDoingAnger);
             animator.Play("AtTableAnger");
@@ -649,12 +696,12 @@ public class ChildCharacter : Character {
 
     }
 
-    void UpdateAngerBehaviour ()
+    void UpdateAngerBehaviour()
     {
 
     }
 
-    void StopPotentialAnger ()
+    void StopPotentialAnger()
     {
         if (isDoingAnger)
             PlaySoundEvent(OnStopAnger);
@@ -722,21 +769,22 @@ public class ChildCharacter : Character {
     /// <summary>
     /// IN ACTIVITY STATE IN ACTIVITY
     /// </summary>
-    void StartInActivity ()
+    void StartInActivity()
     {
 
         GameMaster.Instance.AddLog(childName + " starts " + currentInterestPoint.logActivityName);
         currentInterestPoint.Interact(this);
-        isInActivityFeedback.SetActive(true);
+        //isInActivityFeedback.gameObject.SetActive(true);
+        //isInActivityFeedback.SetText(GetStateName());
     }
 
-    void CancelActivity ()
+    void CancelActivity()
     {
-        if(currentActivity)
+        if (currentActivity)
         {
             currentActivity.CancelActivity(this);
             currentActivity = null;
-            isInActivityFeedback.SetActive(false);
+            //isInActivityFeedback.gameObject.SetActive(false);
         }
     }
 
@@ -744,7 +792,7 @@ public class ChildCharacter : Character {
     {
         if (isLerping) return;
         currentInterestPoint.iPtype.TryModifyStats(IPType.StatModificationType.DURING_ACTIVITY, statsContainer);
-                
+
         transform.position = currentInterestPoint.pivotPoint.position;
         transform.rotation = currentInterestPoint.pivotPoint.rotation;
     }
@@ -763,13 +811,13 @@ public class ChildCharacter : Character {
 
         SetState(ChildAIState.WAITING);
 
-        isInActivityFeedback.SetActive(false);
+        //isInActivityFeedback.gameObject.SetActive(false);
     }
 
     /// <summary>
     /// AT TABLE STATE AT TABLE
     /// </summary>
-    void StartAtTable ()
+    void StartAtTable()
     {
         navAgent.enabled = false;
         SetNextAngerTime();
@@ -777,7 +825,7 @@ public class ChildCharacter : Character {
     }
 
     bool wasEating = false;
-    void UpdateAtTable ()
+    void UpdateAtTable()
     {
         CheckAnger();
 
@@ -802,7 +850,7 @@ public class ChildCharacter : Character {
 
     }
 
-    void EndAtTable ()
+    void EndAtTable()
     {
         Freeze(false);
         isDoingAnger = false;
@@ -810,15 +858,15 @@ public class ChildCharacter : Character {
         animator.Play("Idle");
     }
 
-    void EatPlate ()
+    void EatPlate()
     {
         myPlate.IsBeingEaten(this);
-        
+
     }
 
     PlateObject myPlate = null;
 
-    public void SetPlate (PlateObject po)
+    public void SetPlate(PlateObject po)
     {
         myPlate = po;
     }
@@ -839,7 +887,7 @@ public class ChildCharacter : Character {
 
     }
 
-    void EndInMission ()
+    void EndInMission()
     {
         GameMaster.Instance.vm.SubscribeToActiveChilds(this);
     }
@@ -848,7 +896,7 @@ public class ChildCharacter : Character {
     /// <summary>
     /// AT TABLE STATE AT TABLE
     /// </summary>
-    void StartDeath ()
+    void StartDeath()
     {
         Freeze(true);
         navAgent.enabled = false;
@@ -858,14 +906,14 @@ public class ChildCharacter : Character {
         GameMaster.Instance.AddLog(childName + " has died...");
         PlaySoundEvent(OnDeathEvent);
 
-        if(GameMaster.Instance.vm.allChildren.Count <= 0)
+        if (GameMaster.Instance.vm.allChildren.Count <= 0)
         {
             StartCoroutine(waitAndGameOver());
             GameMaster.Instance.AddLog("All your children are dead...");
         }
     }
 
-    IEnumerator waitAndGameOver ()
+    IEnumerator waitAndGameOver()
     {
         GameMaster.Instance.player.LockMovement(true);
 
@@ -874,7 +922,7 @@ public class ChildCharacter : Character {
         GameMaster.Instance.uIMaster.OnGameOver();
     }
 
-    void UpdateDeath ()
+    void UpdateDeath()
     {
 
     }
@@ -906,7 +954,7 @@ public class ChildCharacter : Character {
     [SerializeField]
     Animator animator;
 
-    void SetIsWalking (bool state)
+    void SetIsWalking(bool state)
     {
         animator.SetBool("IsWalking", state);
     }
@@ -920,14 +968,14 @@ public class ChildCharacter : Character {
 
     }
 
-    void LaunchSlapAnim ()
+    void LaunchSlapAnim()
     {
         animator.Play("SlapHit");
     }
 
     public void StartAnimState(string stateName)
     {
-       
+
         animator.Play(stateName);
     }
 
@@ -936,7 +984,7 @@ public class ChildCharacter : Character {
         animator.Play("AtTableIdle");
     }
 
-    void LaunchDeathAnim ()
+    void LaunchDeathAnim()
     {
         //todo anim death
         animator.Play("Death");

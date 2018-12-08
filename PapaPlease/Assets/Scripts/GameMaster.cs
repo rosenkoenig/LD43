@@ -63,10 +63,10 @@ public class GameMaster : MonoBehaviour {
         gf.EndTablePhase();
     }
 
-    public void AddLog(string text)
+    public void AddLog(string text, bool isUrgent = false)
     {
         if (log)
-            log.AddLog(text);
+            log.AddLog(text, isUrgent);
     }
 
     public void SpendMoneyForBills ()

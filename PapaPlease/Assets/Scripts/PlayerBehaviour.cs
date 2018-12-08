@@ -12,6 +12,7 @@ public class PlayerBehaviour : Character
     [SerializeField] LayerMask _interactLayerMask;
 
     [SerializeField] Animator arm;
+    [SerializeField] ChildStatsModificator _slapChildStatsModificator;
 
     public PlayerMover GetPlayerMover { get { return _playerMover; } }
     public PlayerHeadBehaviour GetPlayerHeadBehaviour { get { return _playerHeadBehaviour; } }
@@ -128,14 +129,14 @@ public class PlayerBehaviour : Character
             if (ip)
             {
                 hoverIp = ip;
-                GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, ip.playerActivityName);
             }
             else if (ip == null)
             {
                 hoverIp = ip;
             }
         }
-
+        if(hoverIp != null)
+            GameMaster.Instance.uIMaster.DisplayPlayerInteraction(true, hoverIp.playerActivityName);
 
 
         if (GameMaster.Instance.uIMaster.IsDisplayingChildInteractionsMenu == false)
@@ -261,7 +262,7 @@ public class PlayerBehaviour : Character
 
 
     }
-
+    
     public void LaunchSlap()
     {
         if (!hasStartedSlap) return;
@@ -271,6 +272,7 @@ public class PlayerBehaviour : Character
         ChildCharacter child = GetHoveredChildCharacter();
         if (child)
         {
+            _slapChildStatsModificator.TryModifyStats(child);
             child.IsSlapped();
         }
 

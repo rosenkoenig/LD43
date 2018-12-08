@@ -10,13 +10,16 @@ public class ChildInteractionMenu : MonoBehaviour
     [SerializeField] RectTransform childOrderButtonsParent;
     //[SerializeField] Text _childNameText;
 
-    
+    [SerializeField] IPType _childOrderButtonIPType;
+    ChildOrderButton _childOrderButtonHug;
+
     //[SerializeField] ChildStatIDsContainer _childStatIdsContainer;
     //[SerializeField] ChildStatGauge _childStatGaugeRef;
     //[SerializeField] ChildStatGauge _childStatSkillRef;
     //[SerializeField] RectTransform _childStatGaugesParent;
 
     List<ChildOrderButton> _childOrderButtons;
+    
     List<IPTypeInfo> allIPTypeInfos { get { return GameMaster.Instance.hm.GetAllIPTypeInfos(); } }
 
     //List<ChildStatGauge> _childStatsGaugesList;
@@ -56,6 +59,8 @@ public class ChildInteractionMenu : MonoBehaviour
             childOrderButton.InitButton(item, MakeGiveOrder);
             _childOrderButtons.Add(childOrderButton);
         }
+        _childOrderButtonHug = Instantiate(_childOrderButtonRef, childOrderButtonsParent);
+        _childOrderButtonHug.InitButton(new IPTypeInfo() { IPType = _childOrderButtonIPType }, MakeHug);
 
 
         RefreshButtons(curChild);
@@ -91,6 +96,8 @@ public class ChildInteractionMenu : MonoBehaviour
         {
             Destroy(btn.gameObject);
         }
+
+        Destroy(_childOrderButtonHug.gameObject);
     }
 
     public void MakeHideMenuInteractChild()
@@ -102,6 +109,13 @@ public class ChildInteractionMenu : MonoBehaviour
     {
         Debug.Log("Give Order " + ipTypeInfo.IPType.name + " to " + curChild.childName);
         curChild.GiveOrder(ipTypeInfo.IPType);
+        MakeHideMenuInteractChild();
+    }
+
+    public void MakeHug(IPTypeInfo ipTypeInfo)
+    {
+        Debug.Log("Give hug to " + curChild.childName);
+        curChild.MakeHug();
         MakeHideMenuInteractChild();
     }
 

@@ -715,6 +715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentActivity: {fileID: 0}
   statsContainer:
+    _childStatsInfos: []
     _childStatsIdContainer: {fileID: 11400000, guid: 325898cad7d46bb448f71a10de5ab027,
       type: 2}
     _childInitialSkillsPacks:
@@ -726,6 +727,16 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   arm: {fileID: 95436815968028034}
+  _slapChildStatsModificator:
+    statsModifiers:
+    - _childStatID: {fileID: 11400000, guid: 13507abb539c6bf44aa224ffe9cb8f27, type: 2}
+      _factor: -0.34
+      _refill: 0
+      _relativeChildStatID: {fileID: 0}
+    - _childStatID: {fileID: 11400000, guid: c7b408b288f9e0441904197be9b9807b, type: 2}
+      _factor: -0.34
+      _refill: 0
+      _relativeChildStatID: {fileID: 0}
   hoverChild: {fileID: 0}
   _childLayerMask:
     serializedVersion: 2

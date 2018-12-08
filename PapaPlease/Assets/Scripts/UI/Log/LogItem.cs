@@ -13,10 +13,24 @@ public class LogItem : MonoBehaviour {
     [SerializeField]
     Text text;
 
+    [SerializeField] Color _logStandardColor;
+    [SerializeField] Color _logUrgentColor;
+
     bool isDisplayed = false;
 
-    public void SetText(string newText)
+    public void SetText(string newText, bool isUrgent = false)
     {
+        if (isUrgent)
+        {
+            text.color = _logUrgentColor;
+            text.fontStyle = FontStyle.Bold;
+        }
+        else
+        {
+            text.color = _logStandardColor;
+            text.fontStyle = FontStyle.Normal;
+        }
+
         text.text = newText;
         Display();
     }

@@ -47,6 +47,15 @@ public class ChildStatsMenu : MonoBehaviour {
         RefreshGauges(curChild);
     }
 
+    public void HighlightAGauge(ChildStatID childStatID, bool b)
+    {
+        foreach (var item in _childStatsGaugesList)
+        {
+            if (item.GetChildStatID == childStatID)
+                item.MakeHighlight(b);
+        }
+    }
+
     private void Update()
     {
         if(curChild != null)

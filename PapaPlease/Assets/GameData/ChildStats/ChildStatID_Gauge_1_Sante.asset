@@ -13,10 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _statName: Health
   _maxValue: 50
+  _isBetweenNegativeAndPositive: 0
   _startValue: 50
   _playerValue: 50
   _addedJaugeText: 
   _isTitleGauge: 1
   _titleGaugeColor: {r: 0, g: 0.7254902, b: 0.08235294, a: 1}
-  _isBetweenNegativeAndPositive: 0
   _displayReverseValue: 0
+  _isLowStatWarningLogActivated: 1
+  _lowStatWarningLogText: is in poor health!

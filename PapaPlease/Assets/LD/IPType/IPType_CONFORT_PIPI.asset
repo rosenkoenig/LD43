@@ -19,6 +19,10 @@ MonoBehaviour:
     _factor: 2
     _refill: 0
     _relativeChildStatID: {fileID: 0}
+  - _childStatID: {fileID: 11400000, guid: 2d1aff0eb8d9dbd42a0f26c94a55d466, type: 2}
+    _factor: 2
+    _refill: 0
+    _relativeChildStatID: {fileID: 0}
   _activityModifiers:
   - _childStat: {fileID: 11400000, guid: 40db861030465814d8712bedc1c170a6, type: 2}
     _factor: 2

@@ -211,7 +211,7 @@ public class UIMaster : MonoBehaviour
 
         if (_childInteractionMission.IsDisplayed == false)
         {
-            _childInteractionMission.Init(child);
+            _childInteractionMission.Init(child, _childStatsMenu.HighlightAGauge);
             ShowOrHideCursor(true);
             _centerCursor.SetActive(false);
             GameMaster.Instance.player.GetPlayerMover.FreezeMovement(true);

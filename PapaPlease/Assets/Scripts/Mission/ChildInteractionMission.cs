@@ -17,7 +17,7 @@ public class ChildInteractionMission : MonoBehaviour {
 
     List<ChildMissionButton> childMissionBtns = new List<ChildMissionButton>();
 
-    public void Init (ChildCharacter child)
+    public void Init (ChildCharacter child, System.Action<ChildStatID, bool> highlightStatIDAction)
     {
         //GameMaster.Instance.AddLog("Display Mission selection menu");
         _child = child;
@@ -29,7 +29,7 @@ public class ChildInteractionMission : MonoBehaviour {
 
         foreach(Mission mission in availableMission)
         {
-            CreateButton(mission);
+            CreateButton(mission, highlightStatIDAction);
         }
 
         gameObject.SetActive(true);
@@ -45,7 +45,7 @@ public class ChildInteractionMission : MonoBehaviour {
         childMissionBtns = new List<ChildMissionButton>();
     }
 
-    void CreateButton (Mission mission)
+    void CreateButton (Mission mission, System.Action<ChildStatID, bool> highlightStatIDAction)
     {
         GameObject inst = GameObject.Instantiate(buttonPrefab.gameObject, buttonListParent);
 
@@ -53,7 +53,7 @@ public class ChildInteractionMission : MonoBehaviour {
 
         bool available = mission.RequisitesAreFullFilledFor(_child);
 
-        btn.Init(_child, mission, this, available);
+        btn.Init(_child, mission, this, available, highlightStatIDAction);
         childMissionBtns.Add(btn);
 
     }

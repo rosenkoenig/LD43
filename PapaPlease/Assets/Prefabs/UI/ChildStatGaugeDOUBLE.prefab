@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 224897151671997984}
   - component: {fileID: 222265621749469734}
   - component: {fileID: 114339253974790286}
+  - component: {fileID: 114416120579051576}
   m_Layer: 5
   m_Name: ValueInfo
   m_TagString: Untagged
@@ -138,6 +139,7 @@ GameObject:
   - component: {fileID: 224660338062547494}
   - component: {fileID: 222037316377547602}
   - component: {fileID: 114116299765398692}
+  - component: {fileID: 114848973806387910}
   m_Layer: 5
   m_Name: StatNameText
   m_TagString: Untagged
@@ -177,7 +179,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Blablibou
+  m_Text: Advertisement
 --- !u!114 &114199169525378730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -238,6 +240,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 1000
+--- !u!114 &114416120579051576
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1339932590360916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.5, y: -0.5}
+  m_UseGraphicAlpha: 1
 --- !u!114 &114465641316092594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -283,6 +299,10 @@ MonoBehaviour:
   _gaugeNegative: {fileID: 224520563830516458}
   _gaugeParent: {fileID: 224650529996006920}
   _titleGaugeToColor: {fileID: 0}
+  _isWarningColorEnabled: 0
+  _standardColor: {r: 1, g: 1, b: 1, a: 1}
+  _warningColor: {r: 0, g: 0, b: 0, a: 0}
+  _statNameOutline: {fileID: 114848973806387910}
 --- !u!114 &114555893466981600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -337,6 +357,20 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114848973806387910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952067892928810}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 0.5, y: -0.5}
+  m_UseGraphicAlpha: 1
 --- !u!222 &222020790735637172
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -459,7 +493,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 10, y: 0}
-  m_SizeDelta: {x: 75, y: 15}
+  m_SizeDelta: {x: 90, y: 15}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!224 &224845200315040976
 RectTransform:

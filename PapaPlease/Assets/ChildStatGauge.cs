@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,8 +14,11 @@ public class ChildStatGauge : MonoBehaviour {
     [SerializeField] RectTransform _gaugePositive;
     [SerializeField] RectTransform _gaugeNegative;
     [SerializeField] RectTransform _gaugeParent;
-
     [SerializeField] Image _titleGaugeToColor;
+    [SerializeField] bool _isWarningColorEnabled;
+    [SerializeField] Color _standardColor;
+    [SerializeField] Color _warningColor;
+    [SerializeField] Outline _statNameOutline;
 
     ChildStatID _childStatID;
 
@@ -36,7 +40,7 @@ public class ChildStatGauge : MonoBehaviour {
         float valueToDisplay = childStatInfo.currentValue;
         if (childStatInfo.childStatID.IsDisplayReverseValue)
         {
-            if(childStatInfo.childStatID.IsDoubleGauge && childStatInfo.childStatID.IsTitleGauge == false)
+            if (childStatInfo.childStatID.IsDoubleGauge && childStatInfo.childStatID.IsTitleGauge == false)
                 valueToDisplay = (childStatInfo.childStatID.MaxValue - childStatInfo.childStatID.MinValue) - valueToDisplay;
             else
                 valueToDisplay = childStatInfo.childStatID.MaxValue - valueToDisplay;
@@ -45,11 +49,15 @@ public class ChildStatGauge : MonoBehaviour {
         _valueText.text = Mathf.Round(valueToDisplay).ToString();
         if (childStatInfo.childStatID.GetAddedJaugeText != "")
             _valueText.text += " " + childStatInfo.childStatID.GetAddedJaugeText;
+
+        if(_isWarningColorEnabled)
+            RefreshTextColor(childStatInfo);
+
         if (_isFromCenter)
         {
-            if(valueToDisplay < 0)
+            if (valueToDisplay < 0)
             {
-                _gaugePositive.sizeDelta = new Vector2 (0, _gaugePositive.sizeDelta.y);
+                _gaugePositive.sizeDelta = new Vector2(0, _gaugePositive.sizeDelta.y);
                 _gaugeNegative.sizeDelta = new Vector2((_gaugeParent.sizeDelta.x / 2) * Mathf.Abs(valueToDisplay) / childStatInfo.childStatID.MaxValue,
                     _gaugeNegative.sizeDelta.y);
             }
@@ -67,4 +75,23 @@ public class ChildStatGauge : MonoBehaviour {
         }
     }
 
+    internal void MakeHighlight(bool b)
+    {
+        if(_statNameOutline.enabled != b)
+            _statNameOutline.enabled = b;
+    }
+
+    private void RefreshTextColor(ChildStatsContainer.ChildStatInfo childStatInfo)
+    {
+        if (childStatInfo.IsLow)
+        {
+            if (_valueText.color != _warningColor)
+                _valueText.color = _warningColor;
+        }
+        else
+        {
+            if (_valueText.color != _standardColor)
+                _valueText.color = _standardColor;
+        }
+    }
 }

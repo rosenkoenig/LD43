@@ -96,7 +96,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _AjustColor: {r: 0.5754717, g: 0.14284897, b: 0.12215203, a: 0}
+    - _AjustColor: {r: 0.97199994, g: 0.93797994, b: 0.93797994, a: 0}
     - _Color: {r: 0.49568352, g: 0.6934422, b: 0.745283, a: 1}
     - _DetailColorAjust: {r: 0.24313726, g: 0.4115825, b: 0.4627451, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

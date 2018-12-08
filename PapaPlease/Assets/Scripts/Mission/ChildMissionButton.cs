@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class ChildMissionButton : MonoBehaviour
+public class ChildMissionButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-
     [SerializeField]
     Text missionName = null;
 
@@ -43,22 +43,37 @@ public class ChildMissionButton : MonoBehaviour
 
     [SerializeField]
     Button button;
+    System.Action<ChildStatID, bool> _highlightStatIDAction;
 
-    public void Init(ChildCharacter child, Mission mission, ChildInteractionMission master, bool isAvailable)
+    bool isHovered = false;
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        isHovered = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        isHovered = false;
+    }
+
+    public void Init(ChildCharacter child, Mission mission, ChildInteractionMission master, bool isAvailable, System.Action<ChildStatID, bool> highlightStatIDAction)
     {
         _mission = mission;
         _master = master;
+
+        _highlightStatIDAction = highlightStatIDAction;
 
         missionName.text = _mission.missionName;
         
 
         for (int i = 0; i < missionSkillRewards.Length; i++)
         {
-            if (i < _mission.onCompleteSkillStatModifier.GetStatModifier.Count)
+            if (i < _mission.onCompleteSkillStatModifier.GetStatModifiers.Count)
             {
-                missionSkillRewards[i].text = _mission.onCompleteSkillStatModifier.GetStatModifier[i]._childStatID.StatName;
+                missionSkillRewards[i].text = _mission.onCompleteSkillStatModifier.GetStatModifiers[i]._childStatID.StatName + ":";
 
-                float rewardAmount = _mission.onCompleteSkillStatModifier.GetStatModifier[i]._factor;
+                float rewardAmount = _mission.onCompleteSkillStatModifier.GetStatModifiers[i]._factor;
                 bool rewardIsPositive = rewardAmount >= 0;
                 missionSkillRewardsAmounts[i].text = (rewardIsPositive ? "+" : "") + rewardAmount.ToString("F0");
                 if (rewardIsPositive == false) missionSkillRewardsAmounts[i].color = negativeColor;
@@ -108,6 +123,8 @@ public class ChildMissionButton : MonoBehaviour
         if (isAvailable == false)
             button.interactable = false;
 
+        RefreshHighlights(isHovered);
+
         for (int i = 0; i < missionRequisites.Length; i++)
         {
             if (i < _mission.requisites.Count)
@@ -143,6 +160,15 @@ public class ChildMissionButton : MonoBehaviour
         //    else
         //        missionRequisitiesNotEnoughBigTexts[i].gameObject.SetActive(false);
         //}
+    }
+
+    private void RefreshHighlights(bool b)
+    {
+        return;
+        foreach (var item in _mission.requisites)
+            _highlightStatIDAction(item.statIDNeeded, b);
+        foreach (var item in _mission.onCompleteSkillStatModifier.GetStatModifiers)
+            _highlightStatIDAction(item._childStatID, b);
     }
 
     public void OnClick()

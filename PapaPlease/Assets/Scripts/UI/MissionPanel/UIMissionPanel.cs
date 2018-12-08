@@ -48,7 +48,7 @@ public class UIMissionPanel : Popup {
             item.Init(rm.mission.missionName, rm.mission.moneyEarned.ToString());
             allMissionItems.Add(item);
 
-            foreach(StatModifier statModifier in rm.mission.onCompleteSkillStatModifier.GetStatModifier)
+            foreach(StatModifier statModifier in rm.mission.onCompleteSkillStatModifier.GetStatModifiers)
             {
                 UIMissionSkillItem skillItem = CreateMissionSkillItem();
                 skillItem.Init(rm.child.childName, statModifier._childStatID.StatName, rm.child.statsContainer.GetAChildStatValue(statModifier._childStatID), statModifier._factor);

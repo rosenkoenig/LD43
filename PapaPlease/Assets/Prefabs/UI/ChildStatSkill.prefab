@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 224739851977410834}
   - component: {fileID: 222211214195745576}
   - component: {fileID: 114467502674327530}
+  - component: {fileID: 114738522281598178}
   m_Layer: 5
   m_Name: ValueInfo
   m_TagString: Untagged
@@ -87,8 +88,9 @@ GameObject:
   - component: {fileID: 224511394103133822}
   - component: {fileID: 222309052315925178}
   - component: {fileID: 114706669667385560}
+  - component: {fileID: 114407835854892024}
   m_Layer: 5
-  m_Name: Text
+  m_Name: StatNameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,6 +123,20 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114407835854892024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1991858904464296}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 0.5, y: -0.5}
+  m_UseGraphicAlpha: 1
 --- !u!114 &114467502674327530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,7 +202,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Blablibou
+  m_Text: myStat
+--- !u!114 &114738522281598178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1496755357948444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.5, y: -0.5}
+  m_UseGraphicAlpha: 1
 --- !u!114 &114776934761782858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,6 +234,11 @@ MonoBehaviour:
   _gaugePositive: {fileID: 224514019268868338}
   _gaugeNegative: {fileID: 0}
   _gaugeParent: {fileID: 224558566119666746}
+  _titleGaugeToColor: {fileID: 0}
+  _isWarningColorEnabled: 0
+  _standardColor: {r: 1, g: 1, b: 1, a: 1}
+  _warningColor: {r: 0, g: 0, b: 0, a: 0}
+  _statNameOutline: {fileID: 114407835854892024}
 --- !u!222 &222211214195745576
 CanvasRenderer:
   m_ObjectHideFlags: 1

@@ -170,7 +170,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1052108852602400}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.000000029802319}
-  m_LocalPosition: {x: 1.572, y: 0, z: -3.905}
+  m_LocalPosition: {x: 1.932, y: 0, z: -3.905}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4570314492744576}
@@ -185,13 +185,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1732424667832344}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000020861623}
+  m_LocalPosition: {x: -0, y: 0.2, z: 0.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4412618260165610}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
 --- !u!23 &23576149368109654
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -311,9 +311,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a59238232791c048858afcd76d98503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holders: []
   maxHolder: 1
   doOnce: 0
-  animStateName: Idle
+  animStateName: Toilet
   money: 0
   _activityResetDelay: 100
   curActivityResetDelay: 0

@@ -20,3 +20,5 @@ MonoBehaviour:
   _isTitleGauge: 1
   _titleGaugeColor: {r: 0.9056604, g: 0.62965614, b: 0, a: 1}
   _displayReverseValue: 1
+  _isLowStatWarningLogActivated: 1
+  _lowStatWarningLogText: needs to pee urgently
