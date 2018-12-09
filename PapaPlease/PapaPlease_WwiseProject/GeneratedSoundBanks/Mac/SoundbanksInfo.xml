@@ -779,6 +779,7 @@
 			<ShortName>Menu</ShortName>
 			<Path>Menu.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4284259320" Name="Play_Clock_EndDay" ObjectPath="\Events\PapaPlease\UI\Play_Clock_EndDay"/>
 				<Event Id="455571771" Name="Play_Menu_Back" ObjectPath="\Events\PapaPlease\UI\Play_Menu_Back"/>
 				<Event Id="1982372943" Name="Play_Menu_Clic" ObjectPath="\Events\PapaPlease\UI\Play_Menu_Clic"/>
 				<Event Id="1871533573" Name="Play_Menu_Move" ObjectPath="\Events\PapaPlease\UI\Play_Menu_Move"/>
@@ -786,6 +787,7 @@
 				<Event Id="3592474417" Name="Play_Menu_QuitGame" ObjectPath="\Events\PapaPlease\UI\Play_Menu_QuitGame"/>
 				<Event Id="2797631338" Name="Play_Money_Add" ObjectPath="\Events\PapaPlease\UI\Play_Money_Add"/>
 				<Event Id="1733128813" Name="Play_Money_Remove" ObjectPath="\Events\PapaPlease\UI\Play_Money_Remove"/>
+				<Event Id="3863657902" Name="Stop_Clock_EndDay" ObjectPath="\Events\PapaPlease\UI\Stop_Clock_EndDay" MaxAttenuation="0.000000"/>
 				<Event Id="3141480553" Name="Stop_Menu_Back" ObjectPath="\Events\PapaPlease\UI\Stop_Menu_Back" MaxAttenuation="0.000000"/>
 				<Event Id="830185121" Name="Stop_Menu_Clic" ObjectPath="\Events\PapaPlease\UI\Stop_Menu_Clic" MaxAttenuation="0.000000"/>
 				<Event Id="1649266127" Name="Stop_Menu_Move" ObjectPath="\Events\PapaPlease\UI\Stop_Menu_Move" MaxAttenuation="0.000000"/>
@@ -823,6 +825,14 @@
 					<ShortName>CashRegister 6028_25_3.wav</ShortName>
 					<Path>SFX\CashRegister 6028_25_3_CDEA549D.wem</Path>
 				</File>
+				<File Id="642023234" Language="SFX">
+					<ShortName>Clock_EndDay.wav</ShortName>
+					<Path>SFX\Clock_EndDay_C4C4CECD.wem</Path>
+				</File>
+				<File Id="654383896" Language="SFX">
+					<ShortName>Clock_EndDay.wav</ShortName>
+					<Path>SFX\Clock_EndDay_BAFF9B0A.wem</Path>
+				</File>
 				<File Id="685672182" Language="SFX">
 					<ShortName>UI\Menu_Back_01.wav</ShortName>
 					<Path>SFX\UI\Menu_Back_01_56D34C19.wem</Path>
@@ -842,6 +852,10 @@
 				<File Id="984199050" Language="SFX">
 					<ShortName>UI\Menu_Clic_01.wav</ShortName>
 					<Path>SFX\UI\Menu_Clic_01_56D34C19.wem</Path>
+				</File>
+				<File Id="1037208411" Language="SFX">
+					<ShortName>Clock_EndDay.wav</ShortName>
+					<Path>SFX\Clock_EndDay_E7EE9233.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

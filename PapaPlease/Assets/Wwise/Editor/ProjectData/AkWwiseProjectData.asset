@@ -118,12 +118,12 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 977a627e74acd84a9f6dacd27fa04f19
-    m_lastTime: -8586573224936627856
+    m_lastTime: -8586572304988149852
     List: []
   - PhysicalPath: Events\PapaPlease.wwu
     ParentPhysicalPath: 
     guid: 9f4045f0e576754ea80f87eacae3ae4b
-    m_lastTime: -8586572433275960122
+    m_lastTime: -8586572304987910492
     List:
     - name: Play_AI_Angry
       guid: 91b471132feb34448a9dc111c120785b
@@ -501,6 +501,20 @@ MonoBehaviour:
         ObjectType: 3
       Path: PapaPlease\Ambiances\Play_AmbOut_Wall_Neighborhood_Lp
       maxAttenuation: 4
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Clock_EndDay
+      guid: 77d7bc1babdb1047a72f4c20de8c3482
+      id: 4284259320
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Clock_EndDay
+        ObjectType: 3
+      Path: PapaPlease\UI\Play_Clock_EndDay
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - name: Play_Door
@@ -1074,6 +1088,20 @@ MonoBehaviour:
       - ElementName: Stop_AI_Wash
         ObjectType: 3
       Path: PapaPlease\AI\Stop_AI_Wash
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Clock_EndDay
+      guid: 48033e12fec9cd41a83bea6a114fc26f
+      id: 3863657902
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Stop_Clock_EndDay
+        ObjectType: 3
+      Path: PapaPlease\UI\Stop_Clock_EndDay
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

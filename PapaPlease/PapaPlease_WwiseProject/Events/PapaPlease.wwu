@@ -466,6 +466,34 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Clock_EndDay" ID="{1BBCD777-DBAB-4710-A72F-4C20DE8C3482}">
+							<ChildrenList>
+								<Action Name="" ID="{CA706ED4-CFBE-4F65-99D5-75FC2978625F}" ShortID="629448257">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Clock_EndDay" ID="{9EFDEC4E-A12E-4DF3-8736-876AE62281E4}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Clock_EndDay" ID="{123E0348-C9FE-41CD-A83B-EA6A114FC26F}">
+							<ChildrenList>
+								<Action Name="" ID="{D83A8D45-63A0-4775-A81B-C71EF318A882}" ShortID="127345545">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Clock_EndDay" ID="{9EFDEC4E-A12E-4DF3-8736-876AE62281E4}" WorkUnitID="{AC6A5C59-A0BC-4438-8A6E-7557926F53EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AI" ID="{47E05068-59E1-499F-8439-855E6DCB674D}" ShortID="270590388">
