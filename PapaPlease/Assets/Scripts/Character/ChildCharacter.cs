@@ -405,6 +405,8 @@ public class ChildCharacter : Character
     {
         SpawnPipi();
         onPipiModificator.TryModifyStats(this, false);
+        if(OnPipiParterreEvent != null)
+            PlaySoundEvent(OnPipiParterreEvent);
         GameMaster.Instance.AddLog(childName + " has peed on the floor");
     }
 
@@ -1012,6 +1014,8 @@ public class ChildCharacter : Character
 
     [SerializeField]
     AK.Wwise.Event OnDeathEvent = null;
+
+    [SerializeField] AK.Wwise.Event OnPipiParterreEvent = null;
 
     void PlaySoundEvent(AK.Wwise.Event soundEvent)
     {

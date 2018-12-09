@@ -811,6 +811,10 @@ MonoBehaviour:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: e0e30e25c98a9534b8e989a51732c600,
       type: 2}
+  OnSlapWindEvent:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: d8d985ac6b7c4ad43a9bf5613981d7be,
+      type: 2}
   OnFillPlateEvent:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: 96b43a8806816dc4c9b17d82c2c39359,
