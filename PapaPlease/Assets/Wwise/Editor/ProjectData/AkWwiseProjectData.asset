@@ -1467,5 +1467,6 @@ MonoBehaviour:
   - /PapaPlease_WwiseProject
   - /PapaPlease_WwiseProject/Events
   - /PapaPlease_WwiseProject/Events/PapaPlease
+  - /PapaPlease_WwiseProject/Events/PapaPlease/Musics
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
