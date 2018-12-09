@@ -6,14 +6,19 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour {
     [SerializeField]
     Animator charAnimator;
-
+    [SerializeField] AK.Wwise.Event MenuMusicStartEvent = null;
+    [SerializeField] AK.Wwise.Event MenuMusicStopEvent = null;
     void Start ()
     {
+        if (MenuMusicStartEvent != null)
+            MenuMusicStartEvent.Post(gameObject);
         charAnimator.Play("HipHop");
     }
 
 	public void OnClick ()
     {
+        if (MenuMusicStopEvent != null)
+            MenuMusicStopEvent.Post(gameObject);
         Load();
     }
 

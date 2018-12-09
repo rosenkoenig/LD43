@@ -10,6 +10,7 @@ public class UiCondom : Popup {
 
     [SerializeField]
     Button YesButton = null;
+    [SerializeField] AK.Wwise.Event BuyCondomYesSoundEvent = null;
 
     public override void Init(object[] args)
     {
@@ -22,6 +23,8 @@ public class UiCondom : Popup {
 
     public void OnButtonYes ()
     {
+        if (BuyCondomYesSoundEvent != null)
+            BuyCondomYesSoundEvent.Post(gameObject);
         GameMaster.Instance.wallet.BuyCondom();
         GameMaster.Instance.vm.hasCondom = true;
         GameMaster.Instance.uIMaster.OnHideCondomUI();
