@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -100,8 +101,10 @@ public class ChildInteractionMenu : MonoBehaviour
         Destroy(_childOrderButtonHug.gameObject);
     }
 
-    public void MakeHideMenuInteractChild()
+    public void MakeHideMenuInteractChild(bool unfreezeChild = false)
     {
+        if (unfreezeChild) // if hidden from order, child will already be unfreezed by order
+            MakeUnfreezeChild();
         GameMaster.Instance.uIMaster.HideMenuInteractChild();
     }
 
@@ -110,6 +113,11 @@ public class ChildInteractionMenu : MonoBehaviour
         Debug.Log("Give Order " + ipTypeInfo.IPType.name + " to " + curChild.childName);
         curChild.GiveOrder(ipTypeInfo.IPType);
         MakeHideMenuInteractChild();
+    }
+
+    void MakeUnfreezeChild()
+    {
+        curChild.Freeze(false);
     }
 
     public void MakeHug(IPTypeInfo ipTypeInfo)
