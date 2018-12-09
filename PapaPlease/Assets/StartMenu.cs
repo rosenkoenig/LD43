@@ -11,6 +11,7 @@ public class StartMenu : MonoBehaviour {
     [SerializeField] AK.Wwise.Event PlayGameEvent = null;
     void Start ()
     {
+        SceneManager.LoadScene(3, LoadSceneMode.Additive);
         if (MenuMusicStartEvent != null)
             MenuMusicStartEvent.Post(gameObject);
         charAnimator.Play("HipHop");
