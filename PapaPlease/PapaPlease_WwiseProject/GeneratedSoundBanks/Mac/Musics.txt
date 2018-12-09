@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	106912753	Stop_Music_Menu			\PapaPlease\Musics\Stop_Music_Menu	
+	1699343283	Play_Music_Menu			\PapaPlease\Musics\Play_Music_Menu	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	814078000	AI_Playing_Console	D:\Boulot\GameJam\LD43\PapaPlease\PapaPlease_WwiseProject\.cache\Mac\SFX\AI_Playing_Console_8956FC97.wem		\Actor-Mixer Hierarchy\PapaPlease\Musics\Music_Menu\AI_Playing_Console		2998592
+

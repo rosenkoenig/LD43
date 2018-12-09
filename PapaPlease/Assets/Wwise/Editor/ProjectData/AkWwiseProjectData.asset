@@ -11,14 +11,1458 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915f3e3ba35bc4d46a39eb9f94d831fd, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: ba6e0470ca50ae4c9ec6557aac707c6e
+    m_lastTime: -8586579309364471671
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 113e7d036b66dc4198f959140bea53d3
+    m_lastTime: -8586577300606492317
+    List:
+    - name: Appartment_Reverb
+      guid: f740ee9d4962874a9ddade88b71efc65
+      id: 2315521272
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Appartment_Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Appartment_Reverb
+    - name: Bathroom_Reverb
+      guid: 6d06004383f6474a85bf1d3f86ed0c8b
+      id: 2419867174
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Bathroom_Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Bathroom_Reverb
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 6f132defb2c71049a6f53d87da95cd84
+    m_lastTime: -8586577569807189769
+    List:
+    - name: AI
+      guid: d7e0c7d8669dc7479cc9ea43ba635552
+      id: 1886858547
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 7
+      Path: Default Work Unit\AI
+    - name: Ambiances
+      guid: 8028889b358b3748a27b8bc8a2c86684
+      id: 1404066300
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 7
+      Path: Default Work Unit\Ambiances
+    - name: Ambiances_Out
+      guid: 691eaf09fa12cc4786e8df9e3e702e9b
+      id: 1911419817
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiances_Out
+        ObjectType: 7
+      Path: Default Work Unit\Ambiances_Out
+    - name: Menu
+      guid: 7bf7c1a6f5b29146b9c0f3f60e5cdaa6
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 7
+      Path: Default Work Unit\Menu
+    - name: Musics
+      guid: 1e6d6b68b9b0274a9ab431e049fe32f9
+      id: 1730564753
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Musics
+        ObjectType: 7
+      Path: Default Work Unit\Musics
+    - name: Player
+      guid: 92313e67d1a3a741b2a1d65f103cec33
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 7
+      Path: Default Work Unit\Player
+    - name: SFX
+      guid: 79c9bdf8ed4d314195d1e0bb76f7c22a
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 7
+      Path: Default Work Unit\SFX
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 977a627e74acd84a9f6dacd27fa04f19
+    m_lastTime: -8586573224936627856
+    List: []
+  - PhysicalPath: Events\PapaPlease.wwu
+    ParentPhysicalPath: 
+    guid: 9f4045f0e576754ea80f87eacae3ae4b
+    m_lastTime: -8586573223219857523
+    List:
+    - name: Play_AI_Angry
+      guid: 91b471132feb34448a9dc111c120785b
+      id: 3376672086
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Angry
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Angry
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_CleanBin
+      guid: df9363a7145f454884de6f9df574c512
+      id: 3636964221
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_CleanBin
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_CleanBin
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_CleanFloor
+      guid: 6e337b1dce9e244fbf243a1a827a6cdb
+      id: 3782358412
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_CleanFloor
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_CleanFloor
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_CleanWindow
+      guid: d5c634345072a743801535f2761e6591
+      id: 1459777202
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_CleanWindow
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_CleanWindow
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Console
+      guid: 4c1734716623b747bb25037ca029b40f
+      id: 1202448914
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Console
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Console
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Cooking
+      guid: cc39dc2373ebef489fa309d4b78d966b
+      id: 1056168201
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Cooking
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Cooking
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Die
+      guid: 8bce1a2a7a5f7541991221cbc37d111a
+      id: 2713837207
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Die
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Die
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Dishes
+      guid: 18d58444c4594440bd978161d53177cc
+      id: 2890421503
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Dishes
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Dishes
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Eat
+      guid: dd373c44dd3f0744b2771a79c0ab9087
+      id: 3317684595
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Eat
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Eat
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_FS_BF_Walk
+      guid: 1ff877143067d64ebc4e77edb948d39c
+      id: 1188548511
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_FS_BF_Walk
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_FS_BF_Walk
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Hit
+      guid: f5fb00b89e67be43844154c82f2ce6f1
+      id: 3117191778
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Hit
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Hit
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Lavabo
+      guid: 8d4f22116086e54ab9f4ece3ed213757
+      id: 1558212960
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Lavabo
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Lavabo
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Panier
+      guid: a53189d8597494488daeb436f541ac31
+      id: 312518768
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Panier
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Panier
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Peeing
+      guid: 6e0a3d3e081805439f1b4b04ef0c6168
+      id: 1614196089
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Peeing
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Peeing
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_PeeingFloor
+      guid: 6f1e0e52d50b3742aa0ae8976840a74a
+      id: 636593309
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_PeeingFloor
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_PeeingFloor
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Playing
+      guid: e6186bf4f1e549488e771e40e488ab05
+      id: 3511894251
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Playing
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Playing
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Shower
+      guid: 6d9ccc53342b384495241eb894639c24
+      id: 2950347541
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Shower
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Shower
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Television
+      guid: 8b03032ec09f3948be0c99a5d35edaf9
+      id: 861642119
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Television
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Television
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AI_Wash
+      guid: 3daeb12547bdf747bcf5efa814f0fd63
+      id: 3563372582
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_AI_Wash
+        ObjectType: 3
+      Path: PapaPlease\AI\Play_AI_Wash
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Amb_Bathroom_Lp
+      guid: c5a02c34fcc44b4a89341b2b8ad799e7
+      id: 2257634154
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Play_Amb_Bathroom_Lp
+        ObjectType: 3
+      Path: PapaPlease\Ambiances\Play_Amb_Bathroom_Lp
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Amb_KidsBedroom_Lp
+      guid: 574e1059782dee4db294ba404925b4ec
+      id: 1402976205
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Play_Amb_KidsBedroom_Lp
+        ObjectType: 3
+      Path: PapaPlease\Ambiances\Play_Amb_KidsBedroom_Lp
+      maxAttenuation: 4
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Amb_Kitchen_Lp
+      guid: 2c240afadeb85642853fa5aa9b7cb6e9
+      id: 4028544478
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Play_Amb_Kitchen_Lp
+        ObjectType: 3
+      Path: PapaPlease\Ambiances\Play_Amb_Kitchen_Lp
+      maxAttenuation: 6
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Amb_LivingRoom_Lp
+      guid: 39d6dbb1d17971469eae8bad92281c55
+      id: 2639863138
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Play_Amb_LivingRoom_Lp
+        ObjectType: 3
+      Path: PapaPlease\Ambiances\Play_Amb_LivingRoom_Lp
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Amb_Outside_Balcony_Lp
+      guid: 0f15de54bcaa2a439f8344d85918a481
+      id: 3232971858
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Play_Amb_Outside_Balcony_Lp
+        ObjectType: 3
+      Path: PapaPlease\Ambiances\Play_Amb_Outside_Balcony_Lp
+      maxAttenuation: 8
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Amb_ParentsBedroom_Lp
+      guid: bd4574e1281c8d45a5035fe5be7b4c63
+      id: 525979915
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Play_Amb_ParentsBedroom_Lp
+        ObjectType: 3
+      Path: PapaPlease\Ambiances\Play_Amb_ParentsBedroom_Lp
+      maxAttenuation: 4
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AmbOut_Bathroom_Neighborhood_Lp
+      guid: 52cc9815be111147a9b8d206cedb5161
+      id: 1945404897
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Play_AmbOut_Bathroom_Neighborhood_Lp
+        ObjectType: 3
+      Path: PapaPlease\Ambiances\Play_AmbOut_Bathroom_Neighborhood_Lp
+      maxAttenuation: 8
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AmbOut_Wall_Neighborhood_Lp
+      guid: 084b9a04ae0eb045bf632ef67b8845df
+      id: 1682472951
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Play_AmbOut_Wall_Neighborhood_Lp
+        ObjectType: 3
+      Path: PapaPlease\Ambiances\Play_AmbOut_Wall_Neighborhood_Lp
+      maxAttenuation: 4
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Door
+      guid: e0eb509bce334e46b17bfcf73596c7a3
+      id: 2547633870
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Play_Door
+        ObjectType: 3
+      Path: PapaPlease\SFX\Play_Door
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Door_Close
+      guid: 9eee361717722b4aa771f3f512bf1787
+      id: 2292458263
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Play_Door_Close
+        ObjectType: 3
+      Path: PapaPlease\SFX\Play_Door_Close
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Door_Open
+      guid: 65002e463435b044ae6893d139238210
+      id: 1660008929
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Play_Door_Open
+        ObjectType: 3
+      Path: PapaPlease\SFX\Play_Door_Open
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Menu_Back
+      guid: f490473acb6d564bb114eacf0bee3138
+      id: 455571771
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Menu_Back
+        ObjectType: 3
+      Path: PapaPlease\UI\Play_Menu_Back
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Menu_Clic
+      guid: 9a0f469e4c5bb64e8a5f92a5792385a8
+      id: 1982372943
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Menu_Clic
+        ObjectType: 3
+      Path: PapaPlease\UI\Play_Menu_Clic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Menu_Move
+      guid: f5cf5094a722364397654dfc9c41e11f
+      id: 1871533573
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Menu_Move
+        ObjectType: 3
+      Path: PapaPlease\UI\Play_Menu_Move
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Menu_PlayGame
+      guid: f78a8fc1f9b38345aae8a907eeeafdd7
+      id: 1761891682
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Menu_PlayGame
+        ObjectType: 3
+      Path: PapaPlease\UI\Play_Menu_PlayGame
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Menu_QuitGame
+      guid: b5017b311efb1a4ea8de446145d43bba
+      id: 3592474417
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Menu_QuitGame
+        ObjectType: 3
+      Path: PapaPlease\UI\Play_Menu_QuitGame
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Money_Add
+      guid: 9364acacb61cce469d24be4670522da2
+      id: 2797631338
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Money_Add
+        ObjectType: 3
+      Path: PapaPlease\UI\Play_Money_Add
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Money_Remove
+      guid: 46cebc3eca67f7408d1d84d7b93f4832
+      id: 1733128813
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Money_Remove
+        ObjectType: 3
+      Path: PapaPlease\UI\Play_Money_Remove
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Music_Menu
+      guid: e16f26bc44888945a263f2d409c53d4d
+      id: 1699343283
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Musics
+        ObjectType: 4
+      - ElementName: Play_Music_Menu
+        ObjectType: 3
+      Path: PapaPlease\Musics\Play_Music_Menu
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Plane
+      guid: 00e3ff4bacfa884db2fa189bad25b5ff
+      id: 2689642136
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Play_Plane
+        ObjectType: 3
+      Path: PapaPlease\Ambiances\Play_Plane
+      maxAttenuation: 15
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Player_Footsteps
+      guid: 860b51159b2aac4b968b7ecc3121162d
+      id: 98439365
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Player_Footsteps
+        ObjectType: 3
+      Path: PapaPlease\Player\Play_Player_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Player_Give_Food
+      guid: 811890089b096f45865c341bf5418708
+      id: 3975414246
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Player_Give_Food
+        ObjectType: 3
+      Path: PapaPlease\Player\Play_Player_Give_Food
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Player_Paint
+      guid: 007329fb5b1e2f48b66f99a15e8900f7
+      id: 449815044
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Player_Paint
+        ObjectType: 3
+      Path: PapaPlease\Player\Play_Player_Paint
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Player_Slap_Kids
+      guid: 6b3930dbe589c84297b1a9aa038b466f
+      id: 2204713990
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Player_Slap_Kids
+        ObjectType: 3
+      Path: PapaPlease\Player\Play_Player_Slap_Kids
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Player_Slap_Nothing
+      guid: 95e5d2f414b6cd43a5b547aeae1641ef
+      id: 2790168988
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Player_Slap_Nothing
+        ObjectType: 3
+      Path: PapaPlease\Player\Play_Player_Slap_Nothing
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Player_Voice_BuyCondom
+      guid: cf12a4e6111e2249b8bea77e403a9360
+      id: 586279875
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Player_Voice_BuyCondom
+        ObjectType: 3
+      Path: PapaPlease\Player\Play_Player_Voice_BuyCondom
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Washer_Close
+      guid: cad455bd2e98e24c9d9d534b3a490dbf
+      id: 55201595
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Play_Washer_Close
+        ObjectType: 3
+      Path: PapaPlease\SFX\Play_Washer_Close
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Washer_Open
+      guid: b58b45961e537c4d964706c74cb6047d
+      id: 3531545949
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Play_Washer_Open
+        ObjectType: 3
+      Path: PapaPlease\SFX\Play_Washer_Open
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Window_Close
+      guid: e3b0966226e7054c94d09b90a224c409
+      id: 4244658871
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Play_Window_Close
+        ObjectType: 3
+      Path: PapaPlease\SFX\Play_Window_Close
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Window_Open
+      guid: d162faeda5550349a77fda2428de1be4
+      id: 4135004417
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: Play_Window_Open
+        ObjectType: 3
+      Path: PapaPlease\SFX\Play_Window_Open
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Start_Player_Shower
+      guid: d98f853739f9684ca46de47672fd4721
+      id: 2279351454
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Start_Player_Shower
+        ObjectType: 3
+      Path: PapaPlease\Player\Start_Player_Shower
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Angry
+      guid: b877eb353ade5a45a5277e320ade3ed6
+      id: 1120423820
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Angry
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Angry
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_CleanBin
+      guid: 63ad4448e4aea04fb616c5f9e0e33cb5
+      id: 1064386371
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_CleanBin
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_CleanBin
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_CleanFloor
+      guid: 9af15a40f2cf5e42a2aa61b71939f27d
+      id: 1939778946
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_CleanFloor
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_CleanFloor
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_CleanWindow
+      guid: c4d3494941ee304eaba769522ec2ad8e
+      id: 1693507588
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_CleanWindow
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_CleanWindow
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Console
+      guid: 95a6c3dad529244aaaed6266652e342a
+      id: 1744950656
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Console
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Console
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Cooking
+      guid: f65afa2543a16f4e83a65536bc953a69
+      id: 2408563091
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Cooking
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Cooking
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Dishes
+      guid: a1b213f13c2ea14480699c5586d9a337
+      id: 2349360669
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Dishes
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Dishes
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Eat
+      guid: b9ca27667fae214590141f9dbb2959c9
+      id: 2292933557
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Eat
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Eat
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_FS_BF_Walk
+      guid: 1f290545e219464f97cc1afbc8ef849f
+      id: 1488764589
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_FS_BF_Walk
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_FS_BF_Walk
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Hit
+      guid: 3f3c90dbf150194f828901c5d02cdeca
+      id: 1552894068
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Hit
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Hit
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Lavabo
+      guid: 11f1d4593a6acd479f761ee5b376e7a5
+      id: 3877824914
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Lavabo
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Lavabo
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Panier
+      guid: 59dc7589ffb8b74eb748cd4e0af03226
+      id: 1950993718
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Panier
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Panier
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Peeing
+      guid: 5599c263fe394445858d936687366106
+      id: 3353979151
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Peeing
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Peeing
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_PeeingFloor
+      guid: 932a1f87f85b5540be511ebce3dbe195
+      id: 4242556375
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_PeeingFloor
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_PeeingFloor
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Playing
+      guid: cfcf7f9420407c46832155a64f0146b9
+      id: 2698630197
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Playing
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Playing
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Shower
+      guid: dd81578156b582499deef8a118764933
+      id: 60512483
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Shower
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Shower
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Television
+      guid: ef2785b4e70fa44787cd148617db99c4
+      id: 4134788725
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Television
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Television
+      maxAttenuation: 5
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_AI_Wash
+      guid: a8df84fc669e3b41886d3e5f7af8ee75
+      id: 1180166316
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Stop_AI_Wash
+        ObjectType: 3
+      Path: PapaPlease\AI\Stop_AI_Wash
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Menu_Back
+      guid: 0574cc2edaa0e74a979be19b2a11334f
+      id: 3141480553
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Stop_Menu_Back
+        ObjectType: 3
+      Path: PapaPlease\UI\Stop_Menu_Back
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Menu_Clic
+      guid: 9da11bebf0bbce4abc3cb6ef61bd8e54
+      id: 830185121
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Stop_Menu_Clic
+        ObjectType: 3
+      Path: PapaPlease\UI\Stop_Menu_Clic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Menu_Move
+      guid: 28a54d77aebc3c45964a667620e58e6f
+      id: 1649266127
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Stop_Menu_Move
+        ObjectType: 3
+      Path: PapaPlease\UI\Stop_Menu_Move
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Menu_PlayGame
+      guid: 2fe3354ffa791846bbbba4acc922b311
+      id: 1551739232
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Stop_Menu_PlayGame
+        ObjectType: 3
+      Path: PapaPlease\UI\Stop_Menu_PlayGame
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Menu_QuitGame
+      guid: eaf601d8f0fad248acda15540a8d50ce
+      id: 4070450727
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Stop_Menu_QuitGame
+        ObjectType: 3
+      Path: PapaPlease\UI\Stop_Menu_QuitGame
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Money_Add
+      guid: ab7c89c463f29f4fa8310a7da841f1c0
+      id: 2002142080
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Stop_Money_Add
+        ObjectType: 3
+      Path: PapaPlease\UI\Stop_Money_Add
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Money_Remove
+      guid: 99199494ba72834fac0f1256740941f7
+      id: 3510984659
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Stop_Money_Remove
+        ObjectType: 3
+      Path: PapaPlease\UI\Stop_Money_Remove
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music_Menu
+      guid: c547e8ed5722894287ff1f5178a4f819
+      id: 106912753
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Musics
+        ObjectType: 4
+      - ElementName: Stop_Music_Menu
+        ObjectType: 3
+      Path: PapaPlease\Musics\Stop_Music_Menu
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Player_Footsteps
+      guid: 825a27f185b47643a57b85fc58828fcb
+      id: 2284278951
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Stop_Player_Footsteps
+        ObjectType: 3
+      Path: PapaPlease\Player\Stop_Player_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Player_Paint
+      guid: ca4e1d6b06f59f4e987e0a23d0337cfb
+      id: 3604926542
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Stop_Player_Paint
+        ObjectType: 3
+      Path: PapaPlease\Player\Stop_Player_Paint
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Player_Shower
+      guid: 15a2384d8bab2d4eb6b2e7023d92ce10
+      id: 3703971576
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Stop_Player_Shower
+        ObjectType: 3
+      Path: PapaPlease\Player\Stop_Player_Shower
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Player_Slap_Kids
+      guid: 1ed67cb38a74734cb152f32b6b8f3188
+      id: 2895733124
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Stop_Player_Slap_Kids
+        ObjectType: 3
+      Path: PapaPlease\Player\Stop_Player_Slap_Kids
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Player_Slap_Nothing
+      guid: 3f84c2540c4bd44fb8270342a6c7e52f
+      id: 4121123550
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Stop_Player_Slap_Nothing
+        ObjectType: 3
+      Path: PapaPlease\Player\Stop_Player_Slap_Nothing
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Player_Voice_BuyCondom
+      guid: e17ba32220acc14781f4305550180fb4
+      id: 2770907853
+      PathAndIcons:
+      - ElementName: PapaPlease
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Stop_Player_Voice_BuyCondom
+        ObjectType: 3
+      Path: PapaPlease\Player\Stop_Player_Voice_BuyCondom
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: ef15d11cc07d234785a2cefa5888678d
+    m_lastTime: -8586579309364873608
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 8365a82de9493c4e89f42dac2fa1c04e
+    m_lastTime: -8586579309364079851
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 974c102ed40b1846818d82dec6008181
+    m_lastTime: -8586578106419596773
+    List:
+    - name: AI_Activity
+      guid: e0582736d7a8fc4e9b83db740dd4ff34
+      id: 2723820741
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AI_Activity
+        ObjectType: 11
+      Path: Default Work Unit\AI_Activity
+      values:
+      - name: AI_CleanBin
+        guid: 3142b65a28460b4cabf1459b333626a2
+        id: 1845088756
+        PathAndIcons:
+        - ElementName: AI_CleanBin
+          ObjectType: 10
+      - name: AI_CleanWindow
+        guid: e796f6f90f61f4448d6ee9cda90374cd
+        id: 1375722357
+        PathAndIcons:
+        - ElementName: AI_CleanWindow
+          ObjectType: 10
+      - name: AI_Cooking
+        guid: 1278d6eaf732d0458c9a24199d85ef36
+        id: 2981324486
+        PathAndIcons:
+        - ElementName: AI_Cooking
+          ObjectType: 10
+      - name: AI_Dishes
+        guid: b3b85aa072657a43ae37bbe273aaedfe
+        id: 3730865982
+        PathAndIcons:
+        - ElementName: AI_Dishes
+          ObjectType: 10
+      - name: AI_Flush
+        guid: 3249b6dde6d1c746b2229796939397ca
+        id: 2553892380
+        PathAndIcons:
+        - ElementName: AI_Flush
+          ObjectType: 10
+      - name: AI_Idle
+        guid: a76c87fe092f7d49aa4a50f353ef223d
+        id: 766486940
+        PathAndIcons:
+        - ElementName: AI_Idle
+          ObjectType: 10
+      - name: AI_Peeing
+        guid: cdca3c345eda76488ee14a4adf9f188e
+        id: 3717382428
+        PathAndIcons:
+        - ElementName: AI_Peeing
+          ObjectType: 10
+      - name: AI_PeeingFloor
+        guid: 373044964c0c9e428439ca763a19cbf1
+        id: 719658054
+        PathAndIcons:
+        - ElementName: AI_PeeingFloor
+          ObjectType: 10
+      - name: AI_Playing
+        guid: 4c0882a523e64c4cba412780b98c0853
+        id: 3201920804
+        PathAndIcons:
+        - ElementName: AI_Playing
+          ObjectType: 10
+      - name: AI_Shower
+        guid: 13eb704bdb208b4e90530dece0c12a10
+        id: 1157179748
+        PathAndIcons:
+        - ElementName: AI_Shower
+          ObjectType: 10
+      - name: AI_Television
+        guid: 8f93ac26189f634cae75fb2df7b3ae84
+        id: 1990211566
+        PathAndIcons:
+        - ElementName: AI_Television
+          ObjectType: 10
+    - name: AI_Movements
+      guid: 62f421e9788c634d8a03aecc85f6803e
+      id: 1429789552
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AI_Movements
+        ObjectType: 11
+      Path: Default Work Unit\AI_Movements
+      values:
+      - name: AI_Idle
+        guid: 51bf4e908ec6554f862e62d9edda7e19
+        id: 766486940
+        PathAndIcons:
+        - ElementName: AI_Idle
+          ObjectType: 10
+      - name: AI_Stop
+        guid: f2a1bfd5acaeeb4c9270220f0909a035
+        id: 3628022334
+        PathAndIcons:
+        - ElementName: AI_Stop
+          ObjectType: 10
+      - name: AI_Walking
+        guid: dc94732e589d2a4caf87a48265d143ae
+        id: 4179756143
+        PathAndIcons:
+        - ElementName: AI_Walking
+          ObjectType: 10
+    - name: AI_Shower
+      guid: c4414bdfd166504d8d200da5ea75cfda
+      id: 1157179748
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AI_Shower
+        ObjectType: 11
+      Path: Default Work Unit\AI_Shower
+      values:
+      - name: AI_Shower_Lp
+        guid: 1b1515d7dde5754a9b8724d44e4d8a3b
+        id: 976917071
+        PathAndIcons:
+        - ElementName: AI_Shower_Lp
+          ObjectType: 10
+      - name: AI_Shower_Off
+        guid: 80f3e1cb514f734c82668275e4eca454
+        id: 4046881850
+        PathAndIcons:
+        - ElementName: AI_Shower_Off
+          ObjectType: 10
+      - name: AI_Shower_On
+        guid: 7d6473b2428fc049a096d9253374fe0d
+        id: 993694652
+        PathAndIcons:
+        - ElementName: AI_Shower_On
+          ObjectType: 10
+    - name: Player_Slap
+      guid: b447d279411c7e40bf23e0776a971d1f
+      id: 2722341167
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Slap
+        ObjectType: 11
+      Path: Default Work Unit\Player_Slap
+      values:
+      - name: Concrete
+        guid: fad13a7e805fde4fb827efdf3752f745
+        id: 841620460
+        PathAndIcons:
+        - ElementName: Concrete
+          ObjectType: 10
+      - name: Kid
+        guid: 7aaa5348c7ecd74a8563a5b7d90637f3
+        id: 1115957451
+        PathAndIcons:
+        - ElementName: Kid
+          ObjectType: 10
+      - name: Nothing
+        guid: fb2a335a7a8fe340b94d7963c73bc20a
+        id: 4248742144
+        PathAndIcons:
+        - ElementName: Nothing
+          ObjectType: 10
+      - name: Wood
+        guid: c7fa243cdf055c44900cacff97627173
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Wood
+          ObjectType: 10
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2b81f266f0a2664a8e9f51757991eec9
+    m_lastTime: -8586579309364129447
+    List: []
   ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
