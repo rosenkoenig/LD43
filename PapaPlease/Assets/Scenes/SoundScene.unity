@@ -145,7 +145,7 @@ MonoBehaviour:
   useOtherObject: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6d5b8abd051921c4d833a126acc60dd2,
+    WwiseObjectReference: {fileID: 11400000, guid: ec8f8d8287890c249b775fb8749240cc,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 559cd632e64564348bf15cfcdc7360fc,
+    WwiseObjectReference: {fileID: 11400000, guid: 5d702c827c2fea94eb621547aa6f85e1,
       type: 2}
 --- !u!1 &290262524
 GameObject:
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 059e4236be328874e8e18ee16a51f921,
+    WwiseObjectReference: {fileID: 11400000, guid: e043bd475d73a1d4b957b61402072936,
       type: 2}
 --- !u!1 &434512227
 GameObject:
@@ -430,7 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9004afe2f1dc99b4183c3f6a77ee2abd,
+    WwiseObjectReference: {fileID: 11400000, guid: 359f95fb1fb95f74db61f87ac3f46d6a,
       type: 2}
 --- !u!1 &528825090
 GameObject:
@@ -463,7 +463,7 @@ MonoBehaviour:
   useOtherObject: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1e3a42ba63b9b0242b02fadd0a755396,
+    WwiseObjectReference: {fileID: 11400000, guid: 39ff01dfaa3e6d847898b02d6d92c595,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -515,7 +515,7 @@ MonoBehaviour:
   useOtherObject: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: d49fb2b87bbdab54eb864ab7593a0bd4,
+    WwiseObjectReference: {fileID: 11400000, guid: 0e653e65a2380f94584665f523ca3e02,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -590,7 +590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 43f504e7e7953ad41b964f7f73099289,
+    WwiseObjectReference: {fileID: 11400000, guid: a829fc066676aec468fa70d8fba2a950,
       type: 2}
 --- !u!1 &837889786
 GameObject:
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6e7ce99e33bf4f94ebc46f9a8fa5cf98,
+    WwiseObjectReference: {fileID: 11400000, guid: 6ecd1b673006f0746b3144dbd74043b9,
       type: 2}
 --- !u!135 &837889791
 SphereCollider:
@@ -697,7 +697,7 @@ MonoBehaviour:
   useOtherObject: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: da0af0f288c97a040914ab2095195c1d,
+    WwiseObjectReference: {fileID: 11400000, guid: 9c19dc037e91e5646b70c6655b598d36,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -759,7 +759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: c4e93a2cdc14007419040420983c4587,
+    WwiseObjectReference: {fileID: 11400000, guid: 4bff8916e385fe6429ca0906b3988b52,
       type: 2}
 --- !u!1 &1231765278
 GameObject:
@@ -816,7 +816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 559cd632e64564348bf15cfcdc7360fc,
+    WwiseObjectReference: {fileID: 11400000, guid: 5d702c827c2fea94eb621547aa6f85e1,
       type: 2}
 --- !u!1 &1395159457
 GameObject:
@@ -873,7 +873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 488dff7190cd83849a887851363c1b66,
+    WwiseObjectReference: {fileID: 11400000, guid: 2d0f9b5c9a8e8ad49a6857239497c9d9,
       type: 2}
 --- !u!1 &1526301452
 GameObject:
@@ -918,7 +918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: afb1b0fda924731479e0e2e9b6191cc6,
+    WwiseObjectReference: {fileID: 11400000, guid: 33297ca2a5b449c478b7cf058b1ff993,
       type: 2}
 --- !u!135 &1526301455
 SphereCollider:
@@ -974,7 +974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 189c212244256fe4786bd9e7fdd48cd2,
+    WwiseObjectReference: {fileID: 11400000, guid: 484ce6a8dbf73af42954061e2503b3c9,
       type: 2}
 --- !u!1 &1628401837
 GameObject:
@@ -1007,7 +1007,7 @@ MonoBehaviour:
   useOtherObject: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: a475d5c1bf59bd84f9ec450c7568cd4d,
+    WwiseObjectReference: {fileID: 11400000, guid: 1432ecda12ba2c841a194f8f54ca16b3,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -1077,7 +1077,7 @@ MonoBehaviour:
   useOtherObject: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: cbd889c6b0407a14f83621ea123390f0,
+    WwiseObjectReference: {fileID: 11400000, guid: b0b884b058c63aa48841344374bd69e0,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -1115,7 +1115,7 @@ MonoBehaviour:
   useOtherObject: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3e40853cea6e42545b7f42c0a06da8ad,
+    WwiseObjectReference: {fileID: 11400000, guid: 5f72d0e867415974ca247656a71e3000,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0

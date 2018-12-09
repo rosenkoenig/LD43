@@ -118,7 +118,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 977a627e74acd84a9f6dacd27fa04f19
-    m_lastTime: -8586578376465865132
+    m_lastTime: -8586573224936627856
     List: []
   - PhysicalPath: Events\PapaPlease.wwu
     ParentPhysicalPath: 
@@ -1463,6 +1463,9 @@ MonoBehaviour:
     guid: 2b81f266f0a2664a8e9f51757991eec9
     m_lastTime: -8586579219007429571
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /PapaPlease_WwiseProject
+  - /PapaPlease_WwiseProject/Events
+  - /PapaPlease_WwiseProject/Events/PapaPlease
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

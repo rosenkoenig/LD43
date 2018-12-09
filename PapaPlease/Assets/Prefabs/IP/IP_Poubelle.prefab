@@ -503,11 +503,11 @@ MonoBehaviour:
   - {fileID: 1719849157744946}
   _akEventPlay:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: d2e595645e1489c4984fec6ebefd4010,
+    WwiseObjectReference: {fileID: 11400000, guid: 30adaaaf9e5fc1944bbda611449e1c78,
       type: 2}
   _akEventStop:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: b1b920ffbe59bf44eb2cdb3b9def629c,
+    WwiseObjectReference: {fileID: 11400000, guid: 12aeeaa67d1d1fa45b3c2abaa5ba474d,
       type: 2}
   duration: 10
 --- !u!114 &114672379804962352

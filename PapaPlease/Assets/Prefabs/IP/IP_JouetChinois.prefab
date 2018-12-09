@@ -421,6 +421,10 @@ MonoBehaviour:
   iPtype: {fileID: 11400000, guid: 88b7a2a5fee7ce241b5954fc4ede72f0, type: 2}
   activity: {fileID: 114270215005536230}
   onlyUsableByChild: 1
+  onlyUsableByPlayer: 0
+  destroyOnComplete: 0
+  completionTextures: []
+  textureTarget: {fileID: 0}
   _useActivityProgressInfo: 0
   _activityProgressInfoPos: {fileID: 0}
   globalStatsModificator_OnCompleted: {fileID: 0}
@@ -437,9 +441,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a59238232791c048858afcd76d98503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holders: []
   maxHolder: 1
   doOnce: 0
   animStateName: PlayOnFloor
+  money: 0
   _activityResetDelay: 100
   curActivityResetDelay: 0
   _itemsToActivateOnRunning: []
@@ -447,10 +453,10 @@ MonoBehaviour:
   _dirtyVisualsToActivate: []
   _akEventPlay:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: e5bbcfa96e71e824bbd24f48eeee08aa,
+    WwiseObjectReference: {fileID: 11400000, guid: ea7bd9f21f4f1b443b60fdfd5d2273dc,
       type: 2}
   _akEventStop:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 452c867a86571bd4d87af4f37b5cc8d4,
+    WwiseObjectReference: {fileID: 11400000, guid: 0fbc69cdf97452c49b69eb97e50fddd0,
       type: 2}
   duration: 10

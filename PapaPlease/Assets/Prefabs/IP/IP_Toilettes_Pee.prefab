@@ -323,11 +323,11 @@ MonoBehaviour:
   _dirtyVisualsToActivate: []
   _akEventPlay:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6aa781eb936a7044a9889160e0382589,
+    WwiseObjectReference: {fileID: 11400000, guid: 054199ba5a6634e42895a2b2823889a4,
       type: 2}
   _akEventStop:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: f172c569cf39fed42a8f493027e03fda,
+    WwiseObjectReference: {fileID: 11400000, guid: 0b3652f0e01275847ac4752e6bfc8846,
       type: 2}
   duration: 10
 --- !u!114 &114714079452719500

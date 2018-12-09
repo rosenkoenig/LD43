@@ -265,10 +265,10 @@ MonoBehaviour:
   _dirtyVisualsToActivate: []
   _akEventPlay:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6de5d4bf2977c8544b9b043d32bea3ca,
+    WwiseObjectReference: {fileID: 11400000, guid: 20ed6004ebdc473478bea0823823a8f1,
       type: 2}
   _akEventStop:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3ec5d4221a012274ca898ca02a3b3fa3,
+    WwiseObjectReference: {fileID: 11400000, guid: 3008af34bed48114080c96a2e4e8d131,
       type: 2}
   duration: 5

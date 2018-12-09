@@ -605,10 +605,10 @@ MonoBehaviour:
   - {fileID: 1880117599207702}
   _akEventPlay:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: b8ea39fbf28df45489604fba4ff4e474,
+    WwiseObjectReference: {fileID: 11400000, guid: 66099d9381526034b927ab0a37e53ff6,
       type: 2}
   _akEventStop:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2f676c934c3ee7140978708657d6c6ac,
+    WwiseObjectReference: {fileID: 11400000, guid: 78a34856e669c5b48a91b4a977d4aff5,
       type: 2}
   duration: 10
