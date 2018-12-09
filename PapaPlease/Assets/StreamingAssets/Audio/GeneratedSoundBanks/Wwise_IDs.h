@@ -39,6 +39,7 @@ namespace AK
         static const AkUniqueID PLAY_AMB_PARENTSBEDROOM_LP = 525979915U;
         static const AkUniqueID PLAY_AMBOUT_BATHROOM_NEIGHBORHOOD_LP = 1945404897U;
         static const AkUniqueID PLAY_AMBOUT_WALL_NEIGHBORHOOD_LP = 1682472951U;
+        static const AkUniqueID PLAY_CLOCK_ENDDAY = 4284259320U;
         static const AkUniqueID PLAY_DOOR = 2547633870U;
         static const AkUniqueID PLAY_DOOR_CLOSE = 2292458263U;
         static const AkUniqueID PLAY_DOOR_OPEN = 1660008929U;
@@ -74,6 +75,7 @@ namespace AK
         static const AkUniqueID STOP_AI_SHOWER = 60512483U;
         static const AkUniqueID STOP_AI_TELEVISION = 4134788725U;
         static const AkUniqueID STOP_AI_WASH = 1180166316U;
+        static const AkUniqueID STOP_CLOCK_ENDDAY = 3863657902U;
         static const AkUniqueID STOP_MENU_BACK = 3141480553U;
         static const AkUniqueID STOP_MENU_CLIC = 830185121U;
         static const AkUniqueID STOP_MENU_MOVE = 1649266127U;

@@ -7,15 +7,15 @@
 				<File Name="Ambiances" Hash="418158617" Timestamp="1544368230"/>
 				<File Name="Ambiances_Out" Hash="4240244809" Timestamp="1544368230"/>
 				<File Name="Init" Hash="554492879" Timestamp="1543882454"/>
-				<File Name="Menu" Hash="1506843625" Timestamp="1543900803"/>
-				<File Name="Musics" Hash="35518591" Timestamp="1544368239"/>
+				<File Name="Menu" Hash="2532510986" Timestamp="1544376837"/>
+				<File Name="Musics" Hash="2433513970" Timestamp="1544376837"/>
 				<File Name="Player" Hash="181290769" Timestamp="1544368230"/>
 				<File Name="SFX" Hash="593969603" Timestamp="1543883183"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1897340852" Timestamp="1544369753"/>
+				<File Name="" Hash="165040003" Timestamp="1544376837"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -29,15 +29,15 @@
 				<File Name="Foley" Hash="3565075675" Timestamp="1543767883"/>
 				<File Name="Init" Hash="2113096041" Timestamp="1543877873"/>
 				<File Name="Level1" Hash="77498685" Timestamp="1543754936"/>
-				<File Name="Menu" Hash="1506843625" Timestamp="1543900780"/>
-				<File Name="Musics" Hash="2433513970" Timestamp="1544371093"/>
+				<File Name="Menu" Hash="2532510986" Timestamp="1544376838"/>
+				<File Name="Musics" Hash="2433513970" Timestamp="1544376395"/>
 				<File Name="Player" Hash="181290769" Timestamp="1544284648"/>
 				<File Name="SFX" Hash="593969603" Timestamp="1543882710"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="952519442" Timestamp="1544371093"/>
+				<File Name="" Hash="3570565241" Timestamp="1544376838"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
