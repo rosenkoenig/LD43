@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec3a864aa0ac75c428a3a4fbb4e4e7fc, type: 3}
+  m_Name: E6A412CF-1E11-4922-B8BE-A77E403A9360
+  m_EditorClassIdentifier: 
+  objectName: Play_Player_Voice_BuyCondom
+  id: 586279875
+  guid: E6A412CF-1E11-4922-B8BE-A77E403A9360

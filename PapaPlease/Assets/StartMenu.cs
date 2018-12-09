@@ -8,6 +8,7 @@ public class StartMenu : MonoBehaviour {
     Animator charAnimator;
     [SerializeField] AK.Wwise.Event MenuMusicStartEvent = null;
     [SerializeField] AK.Wwise.Event MenuMusicStopEvent = null;
+    [SerializeField] AK.Wwise.Event PlayGameEvent = null;
     void Start ()
     {
         if (MenuMusicStartEvent != null)
@@ -19,6 +20,8 @@ public class StartMenu : MonoBehaviour {
     {
         if (MenuMusicStopEvent != null)
             MenuMusicStopEvent.Post(gameObject);
+        if (PlayGameEvent != null)
+            PlayGameEvent.Post(gameObject);
         Load();
     }
 

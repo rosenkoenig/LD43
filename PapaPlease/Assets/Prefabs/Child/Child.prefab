@@ -1936,7 +1936,8 @@ MonoBehaviour:
       type: 2}
   OnPipiParterreEvent:
     valueGuid: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 20ed6004ebdc473478bea0823823a8f1,
+      type: 2}
 --- !u!114 &114699262547036820
 MonoBehaviour:
   m_ObjectHideFlags: 1
