@@ -274,9 +274,10 @@ public class PlayerBehaviour : Character
         {
             _slapChildStatsModificator.TryModifyStats(child);
             child.IsSlapped();
+            PlaySoundEvent(OnSlapEvent);
         }
-
-        PlaySoundEvent(OnSlapEvent);
+        else
+            PlaySoundEvent(OnSlapWindEvent);
     }
 
     public void CancelSlap()
@@ -308,6 +309,8 @@ public class PlayerBehaviour : Character
     [Header("Sounds")]
     [SerializeField]
     AK.Wwise.Event OnSlapEvent = null;
+
+    [SerializeField] AK.Wwise.Event OnSlapWindEvent = null;
 
     [SerializeField]
     AK.Wwise.Event OnFillPlateEvent = null;
