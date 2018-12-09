@@ -287,3 +287,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualOpen: {fileID: 1825539412481102}
   visualClosed: {fileID: 1310614139695102}
+  delayBeforeOverture: 0.75

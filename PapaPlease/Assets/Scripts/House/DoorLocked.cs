@@ -10,11 +10,20 @@ public class DoorLocked : MonoBehaviour {
     [SerializeField]
     GameObject visualClosed = null;
 
+    [SerializeField] float delayBeforeOverture;
     public void Open ()
     {
+        StartCoroutine(OpenDoorCoroutine());
+    }
+
+    IEnumerator OpenDoorCoroutine()
+    {
+        yield return new WaitForSeconds(delayBeforeOverture);
         visualOpen.SetActive(true);
         visualClosed.SetActive(false);
     }
+    
+
 
     public void Close ()
     {

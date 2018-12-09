@@ -161,7 +161,7 @@ public class InterestPoint : MonoBehaviour
         if (textureTarget != null)
         {
             int texId = Mathf.FloorToInt(activity.GetCompletionRatio * (float)(completionTextures.Length-1));
-            Debug.Log(texId);
+            //Debug.Log(texId);
 
             Material mat = textureTarget.materials[1];
             mat.mainTexture = completionTextures[texId];

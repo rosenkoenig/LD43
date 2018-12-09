@@ -64,6 +64,10 @@ public class ChildCharacter : Character
     [SerializeField]
     float timeBetweenAngerIncPerObeissance = 1f;
 
+    [SerializeField] float _tableAngerDuration = 5f;
+
+    float curTableAngerDuration = 0f;
+
     float nextAngerTime = 0f;
     float lastAngerTime = 0f;
 
@@ -678,6 +682,8 @@ public class ChildCharacter : Character
     {
         Debug.Log("ANGER ANGER ANGER ANGER");
         isDoingAnger = true;
+        if (state == ChildAIState.AT_TABLE)
+            curTableAngerDuration = _tableAngerDuration;
 
         GameMaster.Instance.AddLog(childName + " is angry and needs a good slap !");
 
@@ -698,9 +704,14 @@ public class ChildCharacter : Character
 
     }
 
-    void UpdateAngerBehaviour()
+    void UpdateTableAngerBehaviour()
     {
-
+        if(isDoingAnger)
+        {
+            curTableAngerDuration -= Time.deltaTime;
+            if (curTableAngerDuration <= 0)
+                StopPotentialAnger();
+        }
     }
 
     void StopPotentialAnger()
@@ -830,6 +841,7 @@ public class ChildCharacter : Character
     void UpdateAtTable()
     {
         CheckAnger();
+        UpdateTableAngerBehaviour();
 
         transform.position = curChairTransform.position;
         transform.rotation = curChairTransform.rotation;

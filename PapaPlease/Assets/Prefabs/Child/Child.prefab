@@ -1851,6 +1851,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   timeBetweenAnger: {x: 5, y: 20}
   timeBetweenAngerIncPerObeissance: 2
+  _tableAngerDuration: 25
   obeissanceStatID: {fileID: 11400000, guid: 2d1aff0eb8d9dbd42a0f26c94a55d466, type: 2}
   isInActivityFeedback: {fileID: 114123251459169188}
   isInActivityFeedbackDistActivation: 2

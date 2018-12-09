@@ -68,7 +68,8 @@ public class VirtualMother : MonoBehaviour
             {
                 foreach (var child in activeChilds)
                 {
-                    item.MakeTryModifyStats(child.statsContainer, true);
+                    if (child.ChildState != ChildAIState.DEAD)
+                        item.MakeTryModifyStats(child.statsContainer, true);
                 }
             }
         }
@@ -135,11 +136,12 @@ public class VirtualMother : MonoBehaviour
         {
             foreach (var item in activeChilds)
             {
-                statsModificator.MakeTryModifyStats(item.statsContainer, useDeltaTime);
+                if (item.ChildState != ChildAIState.DEAD)
+                    statsModificator.MakeTryModifyStats(item.statsContainer, useDeltaTime);
             }
         }
     }
-    
+
     public void GetChildrenOutOfTable()
     {
         List<Transform> _possibleSpawnPositions = new List<Transform>();
@@ -155,7 +157,7 @@ public class VirtualMother : MonoBehaviour
             }
 
             Transform selectPos = _possibleSpawnPositions[UnityEngine.Random.Range(0, _possibleSpawnPositions.Count)];
-            
+
             _possibleSpawnPositions.Remove(selectPos);
             activeChilds[i].transform.position = selectPos.position;
             activeChilds[i].LeaveTable();

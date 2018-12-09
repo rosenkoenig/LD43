@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour {
     public VirtualMother vm;
@@ -41,6 +42,9 @@ public class GameMaster : MonoBehaviour {
     }
 
     void Start () {
+        if(SceneManager.GetSceneByName("MenuScene").isLoaded)
+            SceneManager.UnloadSceneAsync("MenuScene");
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(gameObject.scene.name));
         StartGame();
 	}
 	

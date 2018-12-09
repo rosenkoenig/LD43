@@ -3,21 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartMenu : MonoBehaviour {
+public class StartMenu : MonoBehaviour
+{
     [SerializeField]
     Animator charAnimator;
     [SerializeField] AK.Wwise.Event MenuMusicStartEvent = null;
     [SerializeField] AK.Wwise.Event MenuMusicStopEvent = null;
     [SerializeField] AK.Wwise.Event PlayGameEvent = null;
-    void Start ()
+
+    [SerializeField] UnityEngine.Object _menuScene;
+    [SerializeField] UnityEngine.Object _mainScene;
+    [SerializeField] UnityEngine.Object _graphismScene;
+    [SerializeField] UnityEngine.Object _soundScene;
+
+    [SerializeField] string _menuSceneName;
+    [SerializeField] string _mainSceneName;
+    [SerializeField] string _graphismSceneName;
+    [SerializeField] string _soundSceneName;
+    private void Awake()
     {
-        SceneManager.LoadScene(3, LoadSceneMode.Additive);
-        if (MenuMusicStartEvent != null)
-            MenuMusicStartEvent.Post(gameObject);
+        SceneManager.LoadScene(_soundSceneName, LoadSceneMode.Additive);
+    }
+    void Start()
+    {
+        StartCoroutine(PlayMusic());
         charAnimator.Play("HipHop");
     }
 
-	public void OnClick ()
+    IEnumerator PlayMusic()
+    {
+        yield return new WaitForSeconds(0.2f);
+
+        if (MenuMusicStartEvent != null)
+            MenuMusicStartEvent.Post(gameObject);
+    }
+
+
+    public void OnClick()
     {
         if (MenuMusicStopEvent != null)
             MenuMusicStopEvent.Post(gameObject);
@@ -28,9 +50,8 @@ public class StartMenu : MonoBehaviour {
 
     void Load()
     {
-        
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
-        SceneManager.LoadScene(2, LoadSceneMode.Additive);
-        SceneManager.LoadScene(3, LoadSceneMode.Additive);
+        SceneManager.LoadScene(_mainSceneName, LoadSceneMode.Additive);
+        SceneManager.LoadScene(_graphismSceneName, LoadSceneMode.Additive);
+        //SceneManager.LoadScene(3, LoadSceneMode.Additive);
     }
 }
